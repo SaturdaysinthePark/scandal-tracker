@@ -1608,5 +1608,40 @@
     "ticker": "Private",
     "sector": "Technology",
     "scope": "Other notable"
+  },
+  {
+    "id": "ventas",
+    "name": "Ventas",
+    "ticker": "VTR",
+    "sector": "Real Estate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "nwmint",
+    "name": "Northwest Territorial Mint",
+    "ticker": "Private",
+    "sector": "Manufacturing",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ipa",
+    "name": "International Profit Associates",
+    "ticker": "Private",
+    "sector": "Consulting",
+    "scope": "Other notable"
+  },
+  {
+    "id": "perrigo",
+    "name": "Perrigo",
+    "ticker": "PRGO",
+    "sector": "Pharmaceuticals",
+    "scope": "Other notable"
+  },
+  {
+    "id": "f5",
+    "name": "F5",
+    "ticker": "FFIV",
+    "sector": "Technology",
+    "scope": "Other notable"
   }
 ]

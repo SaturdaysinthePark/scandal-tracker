@@ -38,10 +38,24 @@ QUERIES = [
     '"personal relationship" "resign" "code of conduct"',
     '"non-fraternization"',
     '"fraternization policy"',
+    # conduct-based departures (relationship or misconduct often reported later in the press)
+    '"sexual harassment" "terminated for cause"',
+    '"sexual harassment" "resigned" "chief executive"',
+    '"inappropriate conduct" "chief executive officer" resigned',
+    '"inappropriate behavior" "chief executive officer"',
+    '"personal conduct" "chief executive officer" resigned',
+    '"personal behavior" "code of conduct" resigned',
+    '"violation of the Company\'s Code of Conduct" terminated officer',
+    '"violated the Company\'s Code of Business Conduct"',
+    '"workplace conduct" investigation "chief executive"',
+    '"relationship with an employee"',
+    '"relationship with a subordinate"',
+    '"failed to disclose" "personal relationship"',
+    '"workplace relationships" policy violation officer',
 ]
-FORMS = "8-K,8-K/A"
+FORMS = "8-K"
 KEYWORDS = re.compile(
-    r"(consensual|romantic|intimate|undisclosed|inappropriate)[^.]{0,80}relationship|fraterniz|personal relationship",
+    r"(consensual|romantic|intimate|undisclosed|inappropriate)[^.]{0,80}relationship|fraterniz|personal relationship|sexual harassment|inappropriate (conduct|behavior)|personal (conduct|behavior)",
     re.I,
 )
 
@@ -63,7 +77,9 @@ def get(url, ua, retries=4):
 def search(q, start, end, ua):
     frm, out = 0, []
     while True:
-        params = {"q": q, "forms": FORMS, "dateRange": "custom", "startdt": start, "enddt": end, "from": frm}
+        params = {"q": q, "dateRange": "custom", "category": "custom", "startdt": start, "enddt": end, "from": frm}
+        if FORMS:
+            params["forms"] = FORMS  # NB: "8-K,8-K/A" plus a date range silently returns 0 hits
         data = json.loads(get(SEARCH + "?" + urllib.parse.urlencode(params), ua))
         hits = data.get("hits", {}).get("hits", [])
         if not hits:
@@ -96,8 +112,12 @@ def main():
     ap.add_argument("--until", default=time.strftime("%Y-%m-%d"), help="End date YYYY-MM-DD (default today)")
     ap.add_argument("--snippets", action="store_true", help="Fetch each filing and extract the matching passage")
     ap.add_argument("--out", default="candidates.csv")
+    ap.add_argument("--all-forms", action="store_true", help="Search every form type, not just 8-K")
     args = ap.parse_args()
     ua = f"ScandalTracker research script {args.email}"
+    global FORMS
+    if args.all_forms:
+        FORMS = ""
 
     rows = {}
     for q in QUERIES:

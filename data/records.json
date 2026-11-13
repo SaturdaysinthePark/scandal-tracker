@@ -7644,5 +7644,136 @@
     "verified_on": "2026-11-13",
     "status": "watch",
     "note": "Lawsuit alleging affairs; single source (Christian Science Monitor); company declined comment."
+  },
+  {
+    "id": 270,
+    "type": "relationship",
+    "role_level": "executive",
+    "lost_role": true,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published",
+    "company_id": "ventas",
+    "executive": "Robert J. Brehl",
+    "role": "Chief Accounting Officer and Controller",
+    "disclosed": "2014-07",
+    "category": "Undisclosed relationship with auditor (vendor)",
+    "outcome": "Separated from the company",
+    "evidence": "confirmed",
+    "summary": "Ventas said in July 2014 that Ernst & Young had concluded it was not independent because of an inappropriate personal relationship between an E&Y partner and Ventas's chief accounting officer and controller, Robert J. Brehl. E&Y withdrew its 2012 and 2013 audit reports and Ventas dismissed it and hired KPMG. Ventas announced Brehl's separation in connection with the matter and said it was not due to any disagreement over financial reporting.",
+    "sources": [
+      {
+        "label": "Ventas press release (8-K exhibit 99.1), July 9, 2014",
+        "url": "https://www.sec.gov/Archives/edgar/data/740260/000110465914051209/a14-16895_2ex99d1.htm"
+      },
+      {
+        "label": "Accounting Today, July 2014",
+        "url": "https://www.accountingtoday.com/news/ventas-dismisses-ernst-amp-young-as-auditor-due-to-inappropriate-personal-relationship"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/740260/000110465914051209/a14-16895_2ex99d1.htm"
+  },
+  {
+    "id": 271,
+    "type": "misconduct",
+    "role_level": "executive",
+    "lost_role": false,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published",
+    "company_id": "nwmint",
+    "executive": "Ross Hansen",
+    "role": "Owner",
+    "disclosed": "2016-05",
+    "category": "Sexual harassment",
+    "outcome": "Company settled EEOC suit in bankruptcy",
+    "evidence": "settled",
+    "summary": "The EEOC sued Northwest Territorial Mint alleging that owner Ross Hansen sexually harassed female employees, forcing one to quit while others were fired. The EEOC said its investigation found Hansen repeatedly made lewd sexual comments to and about female employees. The mint, then in Chapter 11, settled with court approval for $725,000 to former employees; settlements are not admissions.",
+    "sources": [
+      {
+        "label": "EEOC press release",
+        "url": "https://www.eeoc.gov/newsroom/northwest-territorial-mint-settles-eeoc-sexual-harassment-suit"
+      }
+    ],
+    "primary_url": "https://www.eeoc.gov/newsroom/northwest-territorial-mint-settles-eeoc-sexual-harassment-suit"
+  },
+  {
+    "id": 272,
+    "type": "misconduct",
+    "role_level": "executive",
+    "lost_role": false,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "company_id": "ipa",
+    "executive": "John Burgess",
+    "role": "Founder, owner and CEO",
+    "disclosed": "2011-03",
+    "category": "Sexual harassment (company culture)",
+    "outcome": "Company paid $8M consent decree; remained in charge",
+    "evidence": "settled",
+    "summary": "International Profit Associates agreed in 2011 to an $8 million EEOC consent decree over sexual harassment of 82 women, with payments personally guaranteed by its owner, John Burgess. EEOC attorneys said Burgess allowed the culture to exist.",
+    "sources": [
+      {
+        "label": "EEOC press release, March 2011",
+        "url": "https://www.eeoc.gov/index%2Ephp/newsroom/international-profit-associates-pay-8-million-sexual-harassment-eighty-two-women"
+      },
+      {
+        "label": "Daily Herald, March 2011",
+        "url": "https://www.dailyherald.com/article/20110328/news/703289825/"
+      }
+    ],
+    "primary_url": "https://www.eeoc.gov/index%2Ephp/newsroom/international-profit-associates-pay-8-million-sexual-harassment-eighty-two-women",
+    "note": "EEOC alleged he allowed the culture; no source establishes his own conduct."
+  },
+  {
+    "id": 273,
+    "type": "relationship",
+    "role_level": "executive",
+    "lost_role": true,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "company_id": "perrigo",
+    "executive": "Patrick Lockwood-Taylor",
+    "role": "President and CEO",
+    "disclosed": "2026-06",
+    "category": "Personal conduct (unspecified)",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "Perrigo said its board determined certain personal conduct was not consistent with its Code of Conduct and core values, and he resigned. The company said it was unrelated to the business.",
+    "sources": [
+      {
+        "label": "Company 8-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1585364/000119312526261809/d102437d8k.htm"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1585364/000119312526261809/d102437d8k.htm",
+    "note": "Vague 'personal conduct' exit; no reporting ties it to a relationship or sexual misconduct."
+  },
+  {
+    "id": 274,
+    "type": "relationship",
+    "role_level": "executive",
+    "lost_role": true,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "company_id": "f5",
+    "executive": "Manuel Rivelo",
+    "role": "President and CEO",
+    "disclosed": "2015-12",
+    "category": "Personal conduct (unspecified)",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "F5 said he resigned for matters regarding personal conduct unrelated to the company's operations or financials.",
+    "sources": [
+      {
+        "label": "Company 8-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/1048695/000119312515402550/d52228dex991.htm"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1048695/000119312515402550/d52228dex991.htm",
+    "note": "Vague 'personal conduct' exit; no reporting ties it to a relationship or sexual misconduct."
   }
 ]
