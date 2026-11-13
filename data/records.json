@@ -3839,5 +3839,470 @@
     "verified_on": null,
     "status": "watch",
     "note": "EEOC settlement unverified; no source opened yet; his 2017 apology unchecked."
+  },
+  {
+    "id": 150,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "comcast",
+    "executive": "Matt Lauer",
+    "role": "Co-anchor, Today",
+    "disclosed": "2017-11",
+    "category": "Sexual misconduct",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "NBC News fired Lauer in November 2017. In a staff memo, NBC News chairman Andrew Lack said the network had received a complaint about Lauer's conduct and concluded he had breached company standards, and that it had reason to believe it may not have been an isolated incident. In 2019 Lauer called a rape allegation by a former colleague \"categorically false\", saying the encounter was consensual, NBC News reported.",
+    "sources": [
+      {
+        "label": "MPR News/AP, Nov 2017",
+        "url": "https://www.mprnews.org/story/2017/11/29/nbc-news-fires-matt-lauer-over-inappropriate-sexual-behavior"
+      },
+      {
+        "label": "ABC7 NY, Nov 2017",
+        "url": "https://abc7ny.com/post/matt-lauer-fired-for-inappropriate-sexual-behavior/2711203/"
+      },
+      {
+        "label": "NPR (timed out)",
+        "url": "https://www.npr.org/2017/11/29/567148852/matt-lauer-fired-by-nbc-for-inappropriate-sexual-behavior"
+      },
+      {
+        "label": "NBC News, October 9, 2019 (Lauer denial)",
+        "url": "https://www.nbcnews.com/news/us-news/matt-lauer-denies-sexual-assault-allegation-n1064206"
+      }
+    ],
+    "primary_url": "https://www.mprnews.org/story/2017/11/29/nbc-news-fires-matt-lauer-over-inappropriate-sexual-behavior",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 151,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "cbs",
+    "executive": "Charlie Rose",
+    "role": "Co-host, CBS This Morning; host, Charlie Rose (PBS)",
+    "disclosed": "2017-11",
+    "category": "Sexual harassment",
+    "outcome": "Terminated by CBS; PBS and Bloomberg ended distribution",
+    "evidence": "confirmed",
+    "summary": "CBS News fired Rose in November 2017 after eight women who had worked with him or sought work on his program accused him of sexual misconduct. CBS News president David Rhodes said nothing was more important than ensuring a safe, professional workplace, and CBS cited extremely disturbing and intolerable behavior. PBS ended its relationship with Rose and dropped his programs the same day. Rose apologized for acting insensitively but said he did not believe all the allegations were accurate.",
+    "sources": [
+      {
+        "label": "CBS New York, Nov 2017",
+        "url": "https://www.cbsnews.com/newyork/news/cbs-news-fires-charlie-rose/"
+      },
+      {
+        "label": "TheWrap, Nov 2017",
+        "url": "https://www.thewrap.com/charlie-rose-fired-pbs-sexual-misconduct/"
+      }
+    ],
+    "primary_url": "https://www.cbsnews.com/newyork/news/cbs-news-fires-charlie-rose/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 152,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "fox",
+    "executive": "Ed Henry",
+    "role": "Co-anchor, America's Newsroom",
+    "disclosed": "2020-07",
+    "category": "Sexual misconduct",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "Fox News fired Henry in July 2020. A memo from CEO Suzanne Scott and president Jay Wallace said Fox received a complaint from a former employee's attorney alleging willful sexual misconduct in the workplace years earlier, retained an outside law firm, and terminated Henry based on investigative findings. Henry's lawyer said he denied the allegations.",
+    "sources": [
+      {
+        "label": "WSB-TV/Cox, Jul 2020",
+        "url": "https://www.wsbtv.com/news/trending/ed-henry-fox-news-morning-co-anchor-fired-over-complaint-willful-sexual-misconduct/SIKY2BSFRRC2RBOWKJEICPOXXY/"
+      },
+      {
+        "label": "ET Online, Jul 2020",
+        "url": "https://www.etonline.com/ed-henry-fired-by-fox-news-over-sexual-misconduct-allegations-149049"
+      },
+      {
+        "label": "CNN (HTTP 451)",
+        "url": "https://www.cnn.com/2020/07/01/media/ed-henry-fired-fox-news"
+      }
+    ],
+    "primary_url": "https://www.wsbtv.com/news/trending/ed-henry-fox-news-morning-co-anchor-fired-over-complaint-willful-sexual-misconduct/SIKY2BSFRRC2RBOWKJEICPOXXY/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 153,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "fox",
+    "executive": "Bill O'Reilly",
+    "role": "Host, The O'Reilly Factor",
+    "disclosed": "2017-04",
+    "category": "Sexual harassment",
+    "outcome": "Exited after company review",
+    "evidence": "reported",
+    "summary": "21st Century Fox said in April 2017 that after a thorough and careful review of allegations against O'Reilly, the company and O'Reilly agreed he would not return to Fox News. The New York Times had reported that five women received about $13 million in settlements; in October 2017 it reported a further $32 million settlement with a Fox News analyst. Fox said it knew a harassment suit had been threatened and that O'Reilly told it he settled personally on confidential terms. O'Reilly denied wrongdoing and called the claims unfounded.",
+    "sources": [
+      {
+        "label": "6abc/AP, Apr 2017",
+        "url": "https://6abc.com/post/bill-oreilly-out-at-fox-news-releases-statement/1892362/"
+      },
+      {
+        "label": "NBC News, Oct 2017",
+        "url": "https://www.nbcnews.com/news/us-news/bill-o-reilly-settled-sex-harassment-claim-32-million-report-n813076"
+      },
+      {
+        "label": "CBS News, Oct 2017",
+        "url": "https://www.cbsnews.com/amp/news/21st-century-fox-knew-of-bill-oreilly-settlement-before-renewing-contract"
+      }
+    ],
+    "primary_url": "https://6abc.com/post/bill-oreilly-out-at-fox-news-releases-statement/1892362/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Fox made no finding on the conduct (only a 'thorough and careful review'); settlements reported by the NYT, not confirmed by Fox. Prominent employees publish only at confirmed/adjudicated."
+  },
+  {
+    "id": 154,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "condenast",
+    "executive": "Ryan Lizza",
+    "role": "Washington correspondent",
+    "disclosed": "2017-12",
+    "category": "Improper sexual conduct",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "The New Yorker said in December 2017 that it had learned Lizza engaged in what it believed was improper sexual conduct and that, after reviewing the matter, it had severed ties with him. Lizza denied wrongdoing, objected to the characterization of a relationship with a woman he had dated, and called the decision a terrible mistake made without a full investigation.",
+    "sources": [
+      {
+        "label": "CNN Money, Dec 2017",
+        "url": "https://money.cnn.com/2017/12/11/media/ryan-lizza-fired-new-yorker/index.html"
+      },
+      {
+        "label": "WPTV/Scripps, Dec 2017",
+        "url": "https://www.wptv.com/news/national/new-yorker-fires-star-political-reporter-over-alleged-improper-sexual-conduct-"
+      }
+    ],
+    "primary_url": "https://money.cnn.com/2017/12/11/media/ryan-lizza-fired-new-yorker/index.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Opened sources do not show the woman was a colleague; the misconduct category covers conduct toward colleagues."
+  },
+  {
+    "id": 155,
+    "type": "relationship",
+    "role_level": "prominent",
+    "company_id": "pbs",
+    "executive": "Tavis Smiley",
+    "role": "Host, Tavis Smiley",
+    "disclosed": "2017-12",
+    "category": "Breach of morals clause (relationships with subordinates)",
+    "outcome": "Show suspended; jury verdict for PBS",
+    "evidence": "adjudicated",
+    "summary": "PBS suspended Smiley's show in December 2017 after an outside investigation. In March 2020 a Washington, D.C. jury found he had violated the morals clause in his PBS contract and awarded PBS about $1.49 million. The investigation report described allegations from women that they had relationships with Smiley while they were his subordinates. Smiley denied the accusations.",
+    "sources": [
+      {
+        "label": "TheWrap, Mar 2020",
+        "url": "https://thewrap.com/tavis-smiley-violated-pbs-morals-clause-jury-finds"
+      },
+      {
+        "label": "UPI, Mar 2020",
+        "url": "https://www.upi.com/Entertainment_News/2020/03/04/Jury-finds-Tavis-Smiley-violated-PBS-contact-after-sexual-harassment-allegations/9431583373161/"
+      },
+      {
+        "label": "Bloomberg Law (paywalled excerpt)",
+        "url": "https://news.bloomberglaw.com/us-law-week/former-pbs-host-must-pay-1-5-million-under-morals-clause-jury"
+      }
+    ],
+    "primary_url": "https://thewrap.com/tavis-smiley-violated-pbs-morals-clause-jury-finds",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Jury found a morals-clause breach, but employee status (via his production company) is unresolved."
+  },
+  {
+    "id": 156,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "nyt",
+    "executive": "Glenn Thrush",
+    "role": "White House correspondent",
+    "disclosed": "2017-11",
+    "category": "Inappropriate conduct",
+    "outcome": "Suspended two months; removed from beat",
+    "evidence": "confirmed",
+    "summary": "The New York Times suspended Thrush in November 2017 over allegations involving younger female journalists from his time at Politico. In December executive editor Dean Baquet said the investigation found Thrush had behaved in ways the paper did not condone and had acted offensively, but did not deserve to be fired; he was given workplace-conduct training and moved to a new beat.",
+    "sources": [
+      {
+        "label": "Salon, Dec 2017",
+        "url": "https://www.salon.com/2017/12/20/new-york-times-reporter-glenn-thrush-suspended-for-misconduct-will-keep-his-job/"
+      },
+      {
+        "label": "CNN Money (503)",
+        "url": "https://money.cnn.com/2017/12/20/media/glenn-thrush-return-new-york-times/index.html"
+      }
+    ],
+    "primary_url": "https://www.salon.com/2017/12/20/new-york-times-reporter-glenn-thrush-suspended-for-misconduct-will-keep-his-job/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Employer said he 'acted offensively' but did not say the conduct was sexual; conduct predates his NYT job."
+  },
+  {
+    "id": 157,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "cbc",
+    "executive": "Jian Ghomeshi",
+    "role": "Host, Q (CBC Radio)",
+    "disclosed": "2014-10",
+    "category": "Sexual misconduct / physical injury",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "CBC fired Ghomeshi in October 2014. CBC executive Heather Conway said the broadcaster had seen evidence that he caused physical injury to a woman, calling it a fundamental breach of CBC's standard of acceptable conduct for any employee. Ghomeshi denied non-consensual conduct and was later acquitted of related criminal charges.",
+    "sources": [
+      {
+        "label": "Globe and Mail, Oct 2014",
+        "url": "https://www.theglobeandmail.com/amp/news/national/cbc-fired-ghomeshi-after-seeing-graphic-evidence-of-physical-injury-to-a-woman-memo/article21412839/"
+      },
+      {
+        "label": "CTV (page had headline only)",
+        "url": "https://www.ctvnews.ca/vancouver/article/cbc-says-it-fired-ghomeshi-after-viewing-graphic-evidence"
+      },
+      {
+        "label": "CBC (403)",
+        "url": "https://www.cbc.ca/1.3035574"
+      }
+    ],
+    "primary_url": "https://www.theglobeandmail.com/amp/news/national/cbc-fired-ghomeshi-after-seeing-graphic-evidence-of-physical-injury-to-a-woman-memo/article21412839/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "CBC cited physical injury to a woman; no opened source links it to the workplace or a colleague; acquitted at criminal trial."
+  },
+  {
+    "id": 158,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "banijay",
+    "executive": "Gregg Wallace",
+    "role": "Presenter, MasterChef",
+    "disclosed": "2025-07",
+    "category": "Inappropriate sexual language; unwanted physical contact",
+    "outcome": "Removed from show",
+    "evidence": "confirmed",
+    "summary": "An investigation by law firm Lewis Silkin, commissioned by MasterChef producer Banijay UK and published in July 2025, substantiated 45 of 83 allegations against Wallace, mostly inappropriate sexual language and humour, being in a state of undress, and one instance of unwelcome physical contact. Banijay said his return to MasterChef was untenable, and the BBC said it had no plans to work with him. Wallace apologised for some language but said he had been cleared of the most serious accusations.",
+    "sources": [
+      {
+        "label": "Banijay UK findings, Jul 2025",
+        "url": "https://banijayuk.com/banijay-uk-release-findings-of-gregg-wallace-investigation/"
+      },
+      {
+        "label": "STV/PA, Jul 2025",
+        "url": "https://news.stv.tv/world/over-40-claims-upheld-against-wallace-including-unwelcome-physical-contact"
+      }
+    ],
+    "primary_url": "https://banijayuk.com/banijay-uk-release-findings-of-gregg-wallace-investigation/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Banijay upheld 45 allegations, but whether he was an employee or engaged via a company is unconfirmed."
+  },
+  {
+    "id": 159,
+    "type": "relationship",
+    "role_level": "prominent",
+    "company_id": "itv",
+    "executive": "Phillip Schofield",
+    "role": "Presenter, This Morning",
+    "disclosed": "2023-05",
+    "category": "Undisclosed relationship with younger colleague",
+    "outcome": "Resigned; contract ended",
+    "evidence": "acknowledged",
+    "summary": "Schofield left ITV's This Morning in May 2023 and admitted he had lied about a consensual relationship with a younger male colleague. ITV chief executive Carolyn McCall said in a letter that both people had repeatedly denied rumours of a relationship when questioned, and ITV commissioned a barrister-led external review.",
+    "sources": [
+      {
+        "label": "Echo Live/PA, May 2023",
+        "url": "https://www.echolive.ie/nationalentertainment/arid-41153341.html"
+      },
+      {
+        "label": "Express & Star (403)",
+        "url": "https://www.expressandstar.com/whats-on/arts-and-entertainment/phillip-schofield-at-centre-of-this-morning-affair-furore-a-timeline-of-events-5862241"
+      },
+      {
+        "label": "BBC (fetch blocked)",
+        "url": "https://www.bbc.com/news/entertainment-arts-65728591"
+      }
+    ],
+    "primary_url": "https://www.echolive.ie/nationalentertainment/arid-41153341.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "He acknowledged a relationship with a younger colleague; no ITV statement naming a policy breach found yet."
+  },
+  {
+    "id": 160,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "mpr",
+    "executive": "Garrison Keillor",
+    "role": "Host/creator, A Prairie Home Companion",
+    "disclosed": "2017-11",
+    "category": "Inappropriate behavior",
+    "outcome": "Contracts terminated",
+    "evidence": "confirmed",
+    "summary": "Minnesota Public Radio terminated its contracts with Keillor and his companies in November 2017, citing allegations of inappropriate behavior with an individual who worked with him. Keillor disputed MPR's account. MPR and Keillor later reached a settlement in 2018.",
+    "sources": [
+      {
+        "label": "MPR statement",
+        "url": "https://mpr.org/press/2017/11/29/statement-from-minnesota-public-radio-regarding-garrison-keillor-and-a-prairie-home-compa"
+      },
+      {
+        "label": "NPR",
+        "url": "https://www.npr.org/2017/11/29/567313578/minnesota-public-radio-cuts-ties-with-garrison-keillor-after-alleged-inappropria"
+      }
+    ],
+    "primary_url": "https://mpr.org/press/2017/11/29/statement-from-minnesota-public-radio-regarding-garrison-keillor-and-a-prairie-home-compa",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Contractor; MPR did not explicitly call the behaviour sexual."
+  },
+  {
+    "id": 161,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "wnyc",
+    "executive": "John Hockenberry",
+    "role": "Host, The Takeaway",
+    "disclosed": "2017-12",
+    "category": "Sexual harassment",
+    "outcome": "Contract not renewed (Jun 2017, before allegations public)",
+    "evidence": "reported",
+    "summary": "New York magazine reported in December 2017 that several former colleagues alleged harassment and bullying by Hockenberry. NYPR said his contract had not been renewed in mid-2017. Hockenberry apologized for some behavior.",
+    "sources": [
+      {
+        "label": "WNYC",
+        "url": "https://wnyc.org/story/former-wnyc-host-accused-harassment/"
+      },
+      {
+        "label": "Current",
+        "url": "https://current.org/2017/12/reports-detail-accounts-of-bullying-sexual-harassment-by-former-takeaway-host/"
+      }
+    ],
+    "primary_url": "https://wnyc.org/story/former-wnyc-host-accused-harassment/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "No employer finding; contract had lapsed."
+  },
+  {
+    "id": 162,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "wnyc",
+    "executive": "Leonard Lopate",
+    "role": "Host, The Leonard Lopate Show",
+    "disclosed": "2017-12",
+    "category": "Inappropriate conduct",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "New York Public Radio fired Lopate in December 2017 after an outside-counsel investigation, saying he violated its standards for an inclusive, appropriate and respectful workplace. WNYC said he had earlier been warned over inappropriate remarks to staff. Lopate denied wrongdoing.",
+    "sources": [
+      {
+        "label": "WNYC",
+        "url": "https://wnyc.org/story/new-york-public-radio-fires-hosts-lopate-schwartz/"
+      },
+      {
+        "label": "Current",
+        "url": "https://current.org/2017/12/new-york-public-radio-fires-leonard-lopate-and-jonathan-schwartz/"
+      }
+    ],
+    "primary_url": "https://wnyc.org/story/new-york-public-radio-fires-hosts-lopate-schwartz/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Fired over workplace standards; employer did not say the conduct was sexual."
+  },
+  {
+    "id": 163,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "wnyc",
+    "executive": "Jonathan Schwartz",
+    "role": "Host",
+    "disclosed": "2017-12",
+    "category": "Inappropriate conduct",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "New York Public Radio fired Schwartz in December 2017 after an outside-counsel investigation, citing violations of its workplace standards following multiple complaints. Earlier reporting described an allegation of inappropriate touching and a sexual comment.",
+    "sources": [
+      {
+        "label": "WNYC",
+        "url": "https://wnyc.org/story/new-york-public-radio-fires-hosts-lopate-schwartz/"
+      },
+      {
+        "label": "CNN Money",
+        "url": "https://money.cnn.com/2017/12/21/media/leonard-lopate-jonathan-schwartz-fired/index.html"
+      }
+    ],
+    "primary_url": "https://wnyc.org/story/new-york-public-radio-fires-hosts-lopate-schwartz/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Fired over workplace standards; employer did not say the conduct was sexual."
+  },
+  {
+    "id": 164,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "comcast",
+    "executive": "Chris Matthews",
+    "role": "Host, Hardball",
+    "disclosed": "2020-03",
+    "category": "Inappropriate comments",
+    "outcome": "Retired",
+    "evidence": "acknowledged",
+    "summary": "Matthews announced his retirement on air in March 2020 after a GQ column described comments he made to a guest. He apologized, saying compliments on women's appearance were never OK. Reporting said a 2017 separation payment followed comments to a subordinate.",
+    "sources": [
+      {
+        "label": "Fortune",
+        "url": "https://fortune.com/2020/03/02/chris-matthews-retires-msnbc-sexist-comments/"
+      }
+    ],
+    "primary_url": "https://fortune.com/2020/03/02/chris-matthews-retires-msnbc-sexist-comments/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Apologised, but no employer finding."
+  },
+  {
+    "id": 165,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "fox",
+    "executive": "Eric Bolling",
+    "role": "Host, The Specialists",
+    "disclosed": "2017-09",
+    "category": "Sexual harassment (alleged lewd messages)",
+    "outcome": "Departed amicably",
+    "evidence": "reported",
+    "summary": "Fox News parted ways with Bolling in September 2017 after HuffPost reported he sent explicit images to colleagues. Fox said outside counsel conducted a privileged review and that the split was amicable. Bolling denied the allegations.",
+    "sources": [
+      {
+        "label": "CBS News",
+        "url": "https://www.cbsnews.com/news/fox-news-and-eric-bolling-officially-part-ways-network-says"
+      }
+    ],
+    "primary_url": "https://www.cbsnews.com/news/fox-news-and-eric-bolling-officially-part-ways-network-says",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Outside review was privileged; departure called amicable."
   }
 ]

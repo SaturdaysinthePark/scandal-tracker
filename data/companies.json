@@ -922,5 +922,61 @@
     "ticker": "Private",
     "sector": "Hospitality",
     "scope": "Other notable"
+  },
+  {
+    "id": "condenast",
+    "name": "Condé Nast",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "pbs",
+    "name": "PBS",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "nyt",
+    "name": "The New York Times Company",
+    "ticker": "NYT",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "cbc",
+    "name": "CBC/Radio-Canada",
+    "ticker": "Crown corporation",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "banijay",
+    "name": "Banijay UK",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "itv",
+    "name": "ITV",
+    "ticker": "ITV",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "mpr",
+    "name": "Minnesota Public Radio",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wnyc",
+    "name": "New York Public Radio (WNYC)",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
   }
 ]
