@@ -1038,7 +1038,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Investigation found 'consensual though inappropriate personal communications', not an established relationship (rule 2)."
+    "note": "Lilly's statement (quoted by IBJ) says the probe began over an alleged 'inappropriate personal relationship' but found only 'consensual though inappropriate personal communications' with certain employees. No established relationship, so the rule 2 gap remains."
   },
   {
     "id": 42,
@@ -1094,8 +1094,8 @@
     "primary_url": "https://www.insurancejournal.com/news/international/2026/07/22/878515.htm",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Lloyd's found a non-disclosure breach but no conclusive evidence of a romantic relationship."
+    "status": "retracted",
+    "note": "Retracted 2026-11-13 from watch: Lloyd's found a non-disclosure breach but no evidence the relationship was romantic; fails rule 2."
   },
   {
     "id": 44,
@@ -1148,7 +1148,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Relationship link rests on one anonymous Bloomberg source; HR head seniority borderline."
+    "note": "Bloomberg (major outlet) reports the relationship via one source familiar with the matter. BlackRock's Fink/Kapito memo confirms the departure for a policy violation, which meets the 'reported' tier. Seniority: global head of HR reporting to the CEO, and per Bloomberg his successor joined the global executive committee. Treat as an editorial call on rule 1. The search did not establish whether the"
   },
   {
     "id": 46,
@@ -1205,7 +1205,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Relationship details come from a shareholder lawsuit, not the company; harassment overlap unresolved."
+    "note": "Bloomberg reports, citing the Delaware complaint, that the board fired him in Sept 2017 after the Skadden probe found romantic relationships with at least 10 employees. The same complaint alleges a hostile work environment, so the harassment overlap still bars publishing. A later settlement added anti-harassment training (Accounting Today, not opened)."
   },
   {
     "id": 48,
@@ -1230,7 +1230,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Code-of-conduct exit over 'personal behavior'; no reporting ties it to a relationship."
+    "note": "Searches (CNBC, Fox Business, Dallas News coverage) found only TI's 'personal behavior' wording, and a spokesman declined to say whether a relationship was involved. Still no tie to a relationship. Pages not opened."
   },
   {
     "id": 49,
@@ -1255,7 +1255,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Unspecified conduct; no reporting ties it to a relationship."
+    "note": "Searches found the Rambus 8-K/Bloomberg 'unspecified conduct' only. No outlet ties the firing to a relationship. Consider retracting if nothing surfaces."
   },
   {
     "id": 50,
@@ -1284,7 +1284,7 @@
     "archive_url": "https://web.archive.org/web/20260305202850/https://caselaw.nationalarchives.gov.uk/ewhc/qb/2011/1437",
     "verified_on": null,
     "status": "watch",
-    "note": "No public admission or RBS confirmation; court judgment records only that he did not contest the relationship's existence."
+    "note": "The court order and the May 2011 coverage describe a 'sexual relationship' with a senior RBS colleague. There is still no admission by Goodwin and no RBS statement; he only did not oppose being named. Pages not opened this round."
   },
   {
     "id": 51,
@@ -1618,7 +1618,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Company confirms exit after probe but names no relationship; only Semafor (not a listed major outlet) reports one; he denies it."
+    "note": "The Reuters story says only 'conduct breach'. No Reuters/WSJ/Bloomberg relationship report was found. Semafor alone, with 2 anonymous sources; he denies it."
   },
   {
     "id": 63,
@@ -1651,7 +1651,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Single source (Bloomberg) below C-suite; needs a second independent outlet."
+    "note": "The Real Deal returned 403; no second independent major outlet found."
   },
   {
     "id": 64,
@@ -1676,7 +1676,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Reasons for firing disputed; WSJ read only via secondary outlet; he denies."
+    "note": "WSJ reports Murati cited performance plus an undisclosed relationship with a junior colleague. Zoph told WSJ he was fired over talks with another company, and OpenAI said it does not share the concerns. The WSJ piece is still only seen secondhand and the reason is disputed."
   },
   {
     "id": 65,
@@ -1705,7 +1705,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "WSJ article not opened; institute declined to confirm a relationship."
+    "note": "InvestmentNews relays a WSJ report that the board looked into an affair with a senior staff member. The CFA spokesman confirmed a board 'rigorous review' of a matter Rogers raised, leading to his departure, but would not confirm a relationship. The CFA release gives no reason. The 'reported' tier is likely met, but the WSJ article itself could not be opened. Promote once it is."
   },
   {
     "id": 66,
@@ -1767,7 +1767,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Acknowledged, but surfaced via a harassment claim; harassment exclusion may apply."
+    "note": "The 1998 CBS/AP coverage records his statement admitting a 'brief consensual sexual relationship' with a Mets employee. The claim was a harassment complaint, settled in Nov 1998 (NYT headline 'Mets Settle Claim of Harassment'). The harassment exclusion likely applies, so this is an editorial call."
   },
   {
     "id": 68,
@@ -1791,8 +1791,8 @@
     "primary_url": "https://technode.com/2020/04/27/alibaba-removes-youngest-partner-jiang-fan-after-affair-goes-public/",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Affair never acknowledged; other party not an employee; Alibaba cited handling of the matter, not a relationship policy."
+    "status": "retracted",
+    "note": "Retracted 2026-11-13 from watch: Other party was not an employee and he never acknowledged an affair; fails rule 2."
   },
   {
     "id": 69,
@@ -1817,7 +1817,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Chairman said no policy breach; disclosure-timing dispute reported only by Australian media."
+    "note": "Marks publicly revealed a relationship with former Nine commercial MD Alexi Baker, who reported to him and left around Oct 2020. The relationship is acknowledged. But chairman Costello said no policy was breached and Nine has no relationship policy. The late-disclosure dispute rests on The Australian (relayed by Mumbrella/B&T). Close to qualifying under 2(c), so it needs an editorial call on 'shou"
   },
   {
     "id": 70,
@@ -1842,7 +1842,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Began as an assault allegation (not corroborated); relationship finding only via Bloomberg; editorial call needed."
+    "note": "Walmart said the probe did not corroborate the complainant's (assault) allegation but found lapses in transparency. The relationship angle is still Bloomberg only, and the case originates in an assault allegation."
   },
   {
     "id": 71,
@@ -2051,7 +2051,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Company press release not opened; only a trade-outlet headline confirms the reason. Re-open the release before publishing."
+    "note": "The BusinessWire release and Becker's returned 403. MedCity reports a firing over an unreported relationship with a subordinate but quotes no company wording naming it."
   },
   {
     "id": 78,
@@ -2080,7 +2080,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Company cited private-life conduct; relationship link is from a tabloid weekly only."
+    "note": "The company TSE notice (Apr 2024) cites improper private-life conduct. Japanese outlets (Nikkan Gendai, Shincho via search) report an extramarital affair, but there is no evidence the other party was an employee and no acknowledgment. Pages not opened."
   },
   {
     "id": 79,
@@ -2105,7 +2105,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "All reporting traces to one outlet (Caixin)."
+    "note": "Searches still trace everything to Caixin, via TechNode and Taibo. The reported finding was an undisclosed relationship with his team's HRBP plus false statements. No ByteDance public statement."
   },
   {
     "id": 80,
@@ -2130,7 +2130,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Single outlet; bank gave no reason for the exit."
+    "note": "Finews/Inside Paradeplatz report that his relationship was with fellow executive-board member Kathrin Wehrli, a peer rather than a subordinate. The exit was reportedly tied to scrutiny of money flows and a mortgage; the bank said only 'mutual agreement'. Leaning retract on rule 2."
   },
   {
     "id": 81,
@@ -2155,7 +2155,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Company cited health reasons; single outlet (Caixin)."
+    "note": "Caixin reported a leaked affair tape with a subordinate. Yicai only notes 'media reports'. CICC's HKEX notice cites health reasons. Still single-sourced."
   },
   {
     "id": 82,
@@ -2184,7 +2184,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Relationship with a subordinate established by sworn testimony, but it was not the cause of his exit; editorial call."
+    "note": "The relationship with Alameda CEO Caroline Ellison was established in sworn testimony, but it did not cause his exit. Editorial call unchanged; no new search beyond the existing sources."
   },
   {
     "id": 83,
@@ -2217,7 +2217,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Same probe substantiated sexual comments about colleagues; overlaps the harassment exclusion."
+    "note": "WSJ (via Reuters/Business Insider) reports the 2017 probe found a consensual affair with a colleague, which breached policy, plus a pattern of sexually suggestive comments. He said he was 'rightfully disciplined'. The harassment overlap remains."
   },
   {
     "id": 84,
@@ -2246,7 +2246,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Romantic nature disputed; no company action or policy finding."
+    "note": "Musk publicly confirmed twins with Zilis, a Neuralink executive (Insider/CBS, 2022). There was no company action or policy finding, and the reporting line and romantic nature are disputed. Unchanged."
   },
   {
     "id": 85,
@@ -2275,7 +2275,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "No source page could be opened; disclosure month unclear."
+    "note": "Axios and The Information (both 403 or paywalled; neither is a listed major outlet) report an undisclosed relationship with an employee. A Greylock spokeswoman cited a 'significant lapse of judgment'. A Trusted Insight URL suggests Aug 2017. Below the 'reported' tier."
   },
   {
     "id": 86,
@@ -2304,7 +2304,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Single trade outlet; company said initial findings did not support the allegation."
+    "note": "Payload reported that the board was probing a relationship with an employee. Firefly said initial findings 'do not support' it, and declined to link the July 2024 exit. No later findings found."
   },
   {
     "id": 87,
@@ -2329,7 +2329,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Single WSJ source; below C-suite; he denies it."
+    "note": "WSJ (relayed by AP/Washington Times, TechCrunch, Cheddar) reports he was fired over an undisclosed relationship with a contractor he hired. He denies it and Snap did not comment. Below C-suite."
   },
   {
     "id": 88,
@@ -2362,7 +2362,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Relationship reported as one of several factors; museum never attributed the exit to it."
+    "note": "NYT (Pogrebin, Apr 2017) reported an 'inappropriate' close relationship with a digital-department staffer, with former staff named on record. A Met internal review found no action needed. The romantic/sexual nature is not stated, and the Met never tied the exit to it."
   },
   {
     "id": 89,
@@ -2387,7 +2387,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Single anonymous-source Bloomberg report; Bridgewater never confirmed; he disputes it."
+    "note": "Still only the Feb 2019 Bloomberg report. Bridgewater declined to comment and Elliott disputes it. No second outlet found."
   },
   {
     "id": 90,
@@ -2416,7 +2416,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Airbnb gave a different reason; reporting pages not opened."
+    "note": "Bloomberg (2 sources) and The Information both report that Airbnb found he breached its code by dating an employee. Airbnb confirmed the departure but gave no reason. The 'reported' tier is likely met, but the Bloomberg pages (bloomberg.com, BloombergQuint, DealStreetAsia) could not be opened. Promote once Bloomberg is read."
   },
   {
     "id": 91,
@@ -3033,7 +3033,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Alleged victim was not a colleague; outside the misconduct category's workplace scope."
+    "note": "Scope issue (complainant not a colleague), not an evidence gap; no new research changes it."
   },
   {
     "id": 114,
@@ -3066,7 +3066,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Apology refers to 'inappropriate' behaviour; the sexual element rests on one outlet (Bloomberg)."
+    "note": "The Register (opened) quotes his apology for being 'inconsiderate' and SAP's mutual-agreement exit; Bloomberg reported a prosecutor harassment probe later closed after he agreed to a payment (per his lawyer). Sexual element still rests on Bloomberg only; probe closure is not a finding."
   },
   {
     "id": 115,
@@ -3080,22 +3080,21 @@
     "outcome": "Resigned June 2010; lawsuit settled Oct 2010 for A$850,000",
     "lost_role": true,
     "evidence": "acknowledged",
-    "summary": "David Jones chief executive Mark McInnes resigned in June 2010 after a sexual harassment complaint by a female employee. The employee sued him and the company, and the case settled in October 2010 for A$850,000. McInnes said most of the allegations in the lawsuit were untrue.",
+    "summary": "Mark McInnes resigned as chief executive of David Jones in June 2010 after a complaint by a female staff member. In a statement he said he had 'committed serious errors of judgment' toward the employee at two company functions and apologised. The chairman said the board had found his behaviour breached its code of ethics. A related sexual harassment lawsuit against him and the company was later settled.",
     "sources": [
       {
-        "label": "Lawyers Weekly, Oct 2010",
-        "url": "https://www.lawyersweekly.com.au/news/7059-djs-sex-case-finally-settles"
+        "label": "AP via Fox News, June 2010",
+        "url": "https://www.foxnews.com/world/scandal-linked-resignation-of-australian-retail-companys-ceo-sends-share-price-diving"
       },
       {
-        "label": "IBTimes Australia, 18 Oct 2010",
-        "url": "https://ibtimes.com.au/david-jones-sex-case-ends-less-million-dollar-settlement-1275290"
+        "label": "Lawyers Weekly, settlement",
+        "url": "https://www.lawyersweekly.com.au/news/7059-djs-sex-case-finally-settles"
       }
     ],
-    "primary_url": "https://www.lawyersweekly.com.au/news/7059-djs-sex-case-finally-settles",
+    "primary_url": "https://www.foxnews.com/world/scandal-linked-resignation-of-australian-retail-companys-ceo-sends-share-price-diving",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "His reported acknowledgement of 'unbecoming' behaviour is not yet verified from an opened source."
+    "status": "published"
   },
   {
     "id": 116,
@@ -3109,22 +3108,25 @@
     "outcome": "Took leave from TERI; ICC found him guilty May 2015; TERI ended association 2016",
     "lost_role": true,
     "evidence": "confirmed",
-    "summary": "In February 2015 a TERI researcher filed a sexual harassment complaint against the institute's head, R. K. Pachauri, who then took leave and stepped down as chair of the UN climate panel. In May 2015 TERI's Internal Complaints Committee found him guilty of sexual harassment. TERI ended its association with him in 2016.",
+    "summary": "R. K. Pachauri, director-general of The Energy and Resources Institute (TERI), was accused of sexual harassment by a researcher at the institute in 2015, and TERI's internal complaints committee reportedly found the complaint valid. He stepped down as chair of the UN climate panel, and TERI replaced him as director-general in July 2015 without giving a reason. He denied the allegations, saying his emails and phone had been hacked.",
     "sources": [
+      {
+        "label": "Al Jazeera, July 2015",
+        "url": "https://www.aljazeera.com/news/2015/7/23/ex-un-climate-panel-chief-loses-indian-think-tank-job"
+      },
       {
         "label": "The Quint",
         "url": "https://www.thequint.com/news/india/how-teri-obeyed-the-law-but-went-against-its-spirt-for-pachauri"
       },
       {
-        "label": "The Wire (page body did not load)",
+        "label": "The Wire",
         "url": "https://thewire.in/30632/over-a-year-after-sexual-harassment-charges-teri-ends-association-with-pachauri"
       }
     ],
-    "primary_url": "https://www.thequint.com/news/india/how-teri-obeyed-the-law-but-went-against-its-spirt-for-pachauri",
+    "primary_url": "https://thewire.in/30632/over-a-year-after-sexual-harassment-charges-teri-ends-association-with-pachauri",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Needs a sourced statement of his denial before publishing."
+    "status": "published"
   },
   {
     "id": 117,
@@ -3149,7 +3151,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "AG finding is strong, but a single restaurant may fall short of the notability bar."
+    "note": "Notability is a policy decision, not a research gap. The AG finding stands."
   },
   {
     "id": 118,
@@ -3178,7 +3180,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Settled with no finding of wrongdoing."
+    "note": "Settled with no finding; nothing new."
   },
   {
     "id": 119,
@@ -3215,7 +3217,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Grounds for the for-cause firing not verified from an opened company source."
+    "note": "Progress: NYT story (opened via Toledo Blade) says the board found he misused funds and failed to stop the posting of a former employee's nude photos; the 8-Ks (opened) say only 'for cause' with no grounds. The sexual-misconduct element is thin (photo posting by another person). Bloomberg not opened. Consider 'reported' if a second list outlet is opened."
   },
   {
     "id": 120,
@@ -3240,7 +3242,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "No second independent major outlet."
+    "note": "TPM and HuffPost (via Yahoo) opened. The NYT obtained his resignation letter, but that story was not opened. The letter acknowledges staff felt 'uncomfortable'; he denied the specific incidents. Still no second opened list outlet."
   },
   {
     "id": 121,
@@ -3265,7 +3267,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "One opened source; may belong in the relationship category."
+    "note": "Vox fired him in Oct 2017. A Vox spokesperson told TheWrap (opened) he 'admitted engaging in conduct that is inconsistent with our core values', but the company declined to describe the conduct. A later memo said an outside investigation found more than one person experienced 'inappropriate' behaviour from him (seen only in search snippets; Business Insider page would not open). No company or Stee"
   },
   {
     "id": 122,
@@ -3290,7 +3292,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Only NPR's own reporting opened; seniority borderline."
+    "note": "CBS (opened) only re-reports NPR's own reporting. NPR ran a formal review and said he 'is no longer on staff' but gave no finding. No independent second outlet did its own reporting, and the seniority of chief news editor is borderline."
   },
   {
     "id": 123,
@@ -3304,18 +3306,25 @@
     "outcome": "Suspended then resigned Oct 2017",
     "lost_role": true,
     "evidence": "reported",
-    "summary": "Producer Isa Hackett publicly alleged in October 2017 that Price made repeated lewd comments and propositions to her in 2015. Amazon placed him on leave and confirmed his resignation days later.",
+    "summary": "Roy Price, head of Amazon Studios, was placed on leave in October 2017 after a producer on one of its series publicly alleged he had repeatedly propositioned her in 2015. Amazon said it had accepted his resignation days later, Reuters reported. Price declined to comment.",
     "sources": [
+      {
+        "label": "Reuters via Yahoo Finance, Oct 2017",
+        "url": "https://ca.finance.yahoo.com/news/amazon-studios-chief-resigns-harassment-005444709.html"
+      },
+      {
+        "label": "CBS News, Oct 2017",
+        "url": "https://www.cbsnews.com/amp/news/amazon-studios-executive-roy-price-resigns-following-sexual-harassment-claim"
+      },
       {
         "label": "Fortune, Oct 2017",
         "url": "https://fortune.com/2017/10/17/amazon-studios-chief-roy-price-resigns-amid-sexual-harassment-claims/"
       }
     ],
-    "primary_url": "https://fortune.com/2017/10/17/amazon-studios-chief-roy-price-resigns-amid-sexual-harassment-claims/",
+    "primary_url": "https://ca.finance.yahoo.com/news/amazon-studios-chief-resigns-harassment-005444709.html",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Needs two opened major outlets."
+    "status": "published"
   },
   {
     "id": 124,
@@ -3340,7 +3349,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Lawsuit settled with no finding; source not opened."
+    "note": "Check whether the 'settled' tier needs settlement by the person himself; Adweek frames it as JWT/WPP settling a suit against both. The settlement date (~2018) is taken from Adweek's 'two years after filing'. The complainant is named in public sources and in the Adweek URL, but not in the summary. JWT itself announced the April 2018 settlement (per search). Second settlement outlet (The Drum, Campa"
   },
   {
     "id": 125,
@@ -3369,7 +3378,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "No source could be opened; seniority borderline."
+    "note": "Progress: The Hill (opened) says he apologised to the NYT for an 'error of judgment', and Google confirmed his departure with no exit package. Blocker is seniority: he was a director at X, below VP, and prominent employees only qualify at confirmed, adjudicated or settled."
   },
   {
     "id": 126,
@@ -3394,7 +3403,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Only Insider originated the reporting."
+    "note": "Insider remains the only originating reporter. Microsoft's departure email did not mention the allegations, and Microsoft declined to confirm or deny them. The Bloomberg page returned 403."
   },
   {
     "id": 127,
@@ -3419,7 +3428,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Only Recode originated the reporting; he denies it."
+    "note": "Fortune (via Yahoo, opened) relies on Recode. The allegation was of a Google-era complaint, and Uber's stated issue was that he did not disclose it. He denies the allegation. The conduct was not at Uber, and Uber declined to comment."
   },
   {
     "id": 128,
@@ -3448,7 +3457,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Single outlet (WSJ); 8-K gives no reason."
+    "note": "Search (no new page opened) found only WSJ-derived coverage; no independent second outlet or company confirmation of the allegation."
   },
   {
     "id": 129,
@@ -3473,7 +3482,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Single outlet; he denies it; seniority doubtful."
+    "note": "Search shows WSJ originated the story (citing the complainant's lawyer). Fidelity declined to discuss him, and he 'strenuously' denies it. He was a star portfolio manager, which makes him a prominent employee, and prominent employees cannot be published at reported or unconfirmed. No page opened this round."
   },
   {
     "id": 130,
@@ -3498,7 +3507,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Riot confirmed misconduct but not a sexual element."
+    "note": "MCV (opened): CEO email said 'some of these claims were, in fact, substantiated' and called it 'inappropriate and unprofessional behaviour'. The sexual-contact specifics are from Kotaku's allegations, not Riot. He was suspended, not removed."
   },
   {
     "id": 131,
@@ -3523,7 +3532,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Single outlet; he denies it."
+    "note": "Search: The Verge (13 employees) and Crain's reported it. Clinc's review said some alleged events 'did not happen as claimed', and he denies the allegations. Neither The Verge nor Crain's is a list outlet. No new page opened."
   },
   {
     "id": 132,
@@ -3536,19 +3545,22 @@
     "category": "Sexual harassment",
     "outcome": "Suspended, then left; suit settled",
     "lost_role": true,
-    "evidence": "unconfirmed",
-    "summary": "Whitney Wolfe sued Tinder and IAC in 2014, alleging sexual harassment and discrimination by co-founder Justin Mateen. IAC suspended him and he later left. The suit settled with no admission of wrongdoing.",
+    "evidence": "settled",
+    "summary": "Justin Mateen, a Tinder co-founder and its chief marketing officer, was suspended in 2014 after a former vice president sued Tinder and parent IAC, alleging sexual harassment and discrimination by him. The suit was settled in September 2014; settlements are not admissions, and IAC said it was 'settled with no admission of wrong doing' after earlier denying the allegations. Reuters and TechCrunch reported he was no longer with the company.",
     "sources": [
       {
-        "label": "TechCrunch, 8 Sep 2014",
+        "label": "TechCrunch, Sep 2014",
         "url": "https://techcrunch.com/2014/09/08/tinder-and-iac-settle-sexual-harassment-suit-with-early-employee-whitney-wolfe"
+      },
+      {
+        "label": "Reuters via Investing.com, Sep 2014",
+        "url": "https://uk.investing.com/news/technology-news/tinder,-former-marketing-executive-settle-sexual-harassment-case-13579"
       }
     ],
     "primary_url": "https://techcrunch.com/2014/09/08/tinder-and-iac-settle-sexual-harassment-suit-with-early-employee-whitney-wolfe",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Suit settled with no admission."
+    "status": "published"
   },
   {
     "id": 133,
@@ -3573,7 +3585,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Partial apology; disputes the account."
+    "note": "He disputes the specific allegation, and his Medium apology is general. Search found no new facts."
   },
   {
     "id": 134,
@@ -3598,7 +3610,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Board found grounds to fire for 'willful malfeasance' but did not name the conduct; check 8-Ks."
+    "note": "Dec 2021 8-K (opened): the board found 'willful malfeasance' that would have justified termination, without describing the conduct. The 2021 employee suit (NYSHRL) alleged sexual harassment of male employees, which he called false. No ruling or settlement was found."
   },
   {
     "id": 135,
@@ -3623,7 +3635,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Source not opened; he denies the allegations."
+    "note": "Search: NYT reported allegations by multiple women (not opened), and he resigned saying the claims were false. Seattle prosecutors later dropped charges (Fox13 headline, not opened). The allegations were largely not workplace ones, and he returned to Gravity in an advisory role in 2024. GeekWire returned 403."
   },
   {
     "id": 136,
@@ -3648,7 +3660,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Nature of conduct undisclosed; no source says it was sexual."
+    "note": "He admitted an 'error of judgment' towards a woman 'in a social environment' (search snippets of Reuters and AP). ABF declined to say what the conduct was or whether she was an employee. No source calls it sexual. The Fidelity/Reuters page failed to load."
   },
   {
     "id": 137,
@@ -3673,7 +3685,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Nature of conduct undisclosed."
+    "note": "Honda cited inappropriate conduct at a private social event and withheld details for the victim's privacy (search only). There is no sexual element or workplace link on the record."
   },
   {
     "id": 138,
@@ -3706,7 +3718,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "CBI's stated reasons were not sexual; he denies sexual conduct."
+    "note": "The CBI said it fired him because his conduct fell short. The initial complaint was 'unwanted contact' by a CBI employee (search). He disputes it, CBI settled his legal claim in Feb 2024, and police are not investigating him. The CBI did not name sexual misconduct. No new page opened."
   },
   {
     "id": 139,
@@ -3731,7 +3743,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Single outlet; he says he does not recall the remark."
+    "note": "Search: Tabcorp said an external investigation found his language inconsistent with continued leadership. The remark was reportedly sexual (Vixio, AFR) but Tabcorp did not say so. He did not recall it, and the Fair Work Commission found he was forced to resign. Still essentially AAP/AFR, and the company did not name a sexual element. No page opened."
   },
   {
     "id": 140,
@@ -3756,7 +3768,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Board-appointed judge found harassment, but the company never confirmed it."
+    "note": "Search found nothing new."
   },
   {
     "id": 141,
@@ -3770,18 +3782,25 @@
     "outcome": "Removed from partnership June 2023; FCA ban (integrity grounds, upheld by Upper Tribunal Sept 2026)",
     "lost_role": true,
     "evidence": "reported",
-    "summary": "The Financial Times and Tortoise Media reported in June 2023 that 13 women accused Crispin Odey of sexual assault or harassment between 1998 and 2021. Odey Asset Management's executive committee removed him from the partnership two days later. Odey denied the allegations, and in 2021 a court acquitted him of a separate indecent assault charge. The FCA later banned him on integrity grounds and made no finding on the sexual misconduct allegations.",
+    "summary": "Crispin Odey left the partnership of Odey Asset Management in June 2023, after a Financial Times and Tortoise Media investigation in which 13 women alleged he had harassed or assaulted them between 1998 and 2021. The firm's executive committee announced his departure, Reuters reported. Odey denied the allegations and told Reuters none had been 'stood up in a courtroom or an investigation'. He was acquitted of an indecent assault charge in 2021.",
     "sources": [
       {
-        "label": "AFP via Malay Mail, 10 Jun 2023",
+        "label": "Reuters via Malay Mail, June 2023",
         "url": "https://www.malaymail.com/news/money/2023/06/10/leading-uk-hedge-fund-boss-quits-after-sex-assault-claims/73644"
+      },
+      {
+        "label": "Reuters via Globe and Mail, June 2023",
+        "url": "https://www.theglobeandmail.com/business/article-schroders-and-canada-life-cut-ties-with-crispen-odey-after-misconduct/"
+      },
+      {
+        "label": "Fortune, Jun 2023",
+        "url": "https://fortune.com/2023/06/12/hedge-fund-giant-crispin-odey-kicked-out-own-firm-bombshell-allegations-decades-sexual-assault/"
       }
     ],
     "primary_url": "https://www.malaymail.com/news/money/2023/06/10/leading-uk-hedge-fund-boss-quits-after-sex-assault-claims/73644",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Second opened major outlet missing; FCA made no finding on the sexual allegations."
+    "status": "published"
   },
   {
     "id": 142,
@@ -3810,7 +3829,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "No finding about him; sources not opened."
+    "note": "Search (Reuters via fashionnetwork, ITV): the investigation turned to company HR practices, and Ted Baker would not comment on the allegations against him. He denies all misconduct. There is no finding about him. Pages not opened this round."
   },
   {
     "id": 143,
@@ -3834,8 +3853,8 @@
     "primary_url": "https://techcrunch.com/2022/10/03/richard-liu-jd-com-sexual-assault-case-settlement-metoo",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Complainant not a colleague; settlement terms undisclosed."
+    "status": "retracted",
+    "note": "Retracted 2026-11-13 from watch: Complainant was not a colleague; outside the misconduct category's workplace scope."
   },
   {
     "id": 144,
@@ -3859,8 +3878,8 @@
     "primary_url": "https://www.mediaweek.com.au/roundup-investigation-at-nine-following-darren-wick-allegations",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Nine says its investigation made no findings against him."
+    "status": "retracted",
+    "note": "Retracted 2026-11-13 from watch: Employer's investigation made no findings against him; falls under the 'cleared' exclusion."
   },
   {
     "id": 145,
@@ -3889,7 +3908,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Bank did not name the conduct; Bloomberg not opened; he denied and later settled with the bank; MD seniority borderline."
+    "note": "Search: Bloomberg reported BofA paid to settle his defamation/discrimination claims. That settlement is his claim against the bank, not a claim over his conduct, so the settled tier does not apply. He disputes the allegation, and MD seniority is borderline. No page opened."
   },
   {
     "id": 146,
@@ -3914,7 +3933,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Company never named the conduct; reporting not from list outlets; civil suit settled with no admission; he denies it."
+    "note": "Downgraded from publish. The settlement is now reported by two outlets (AP and TheWrap, both opened), but the settled tier also needs the company to confirm a departure, an investigation or knowledge of this claim. Neither article shows Arista or Sony was a party or commented. Sony's 2017 one-line exit statement concerned a different (assistant's) claim and did not name it. He made no admission. P"
   },
   {
     "id": 147,
@@ -4177,7 +4196,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Jury found a morals-clause breach, but employee status (via his production company) is unresolved."
+    "note": "Jury (Mar 2020) found TS Media breached the PBS morals clause; judgment of $2.6M (Aug 2020); an appeal was filed with no outcome found. He admitted dating women who worked for his own company. The employer question is unresolved."
   },
   {
     "id": 156,
@@ -4301,7 +4320,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "He acknowledged a relationship with a younger colleague; no ITV statement naming a policy breach found yet."
+    "note": "The ITV external review found the relationship was repeatedly denied until his May 2023 admission. ITV earlier said he 'lied'. No ITV statement names a policy breach (ITV only later introduced a relationships policy). He is a presenter, so the 'prominent employee' bar needs confirmed or better, and this is only 'acknowledged'."
   },
   {
     "id": 160,
@@ -4468,5 +4487,160 @@
     "verified_on": null,
     "status": "watch",
     "note": "Outside review was privileged; departure called amicable."
+  },
+  {
+    "id": 166,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "cma",
+    "executive": "David Franklin",
+    "role": "Director",
+    "disclosed": "2013-10",
+    "category": "Undisclosed relationship with employee",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "Franklin resigned as director of the Cleveland Museum of Art in October 2013, and the museum first cited personal reasons. After Cleveland Scene reported that an affair lay behind the resignation, board chairman R. Steven Kestner said the board had confirmed in early October that a dating relationship had existed with a former employee during and after her employment. Kestner said Franklin had denied the relationship when questioned earlier in 2013, and that an earlier attorney inquiry found no credible evidence.",
+    "sources": [
+      {
+        "label": "Cleveland Scene, 2013",
+        "url": "https://www.clevescene.com/news/turmoil-at-the-museum-inside-the-affair-suicide-and-abrupt-resignation-that-rocked-the-cleveland-museum-of-art-3702915"
+      },
+      {
+        "label": "Cleveland Magazine, 'Art of Deception'",
+        "url": "https://clevelandmagazine.com/articles/art-of-deception/"
+      },
+      {
+        "label": "Hyperallergic, Oct 2013",
+        "url": "https://hyperallergic.com/the-mysterious-resignation-of-the-cleveland-museum-of-art-director"
+      }
+    ],
+    "primary_url": "https://www.clevescene.com/news/turmoil-at-the-museum-inside-the-affair-suicide-and-abrupt-resignation-that-rocked-the-cleveland-museum-of-art-3702915",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 167,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "bidmc",
+    "executive": "Paul Levy",
+    "role": "President and CEO",
+    "disclosed": "2010-05",
+    "category": "Relationship with employee",
+    "outcome": "Fined $50,000; retained; resigned Jan 2011 (board and Levy said unrelated)",
+    "lost_role": false,
+    "evidence": "confirmed",
+    "summary": "In May 2010 the Beth Israel Deaconess board fined CEO Paul Levy $50,000 over a personal relationship with a former employee, calling it a serious lapse of judgment, and kept him in his post. Levy said he had made an error in judgment and that the board acted appropriately. At the hospital's request, the Massachusetts attorney general reviewed the matter, found no misuse of charitable funds and called the fine sufficient. Levy resigned in January 2011, and both he and the board said the departure was unrelated.",
+    "sources": [
+      {
+        "label": "WBUR, May 2010",
+        "url": "https://www.wbur.org/news/2010/05/03/levy-fine"
+      },
+      {
+        "label": "CBS Boston, AG review",
+        "url": "https://www.cbsnews.com/boston/news/ag-fine-sufficient-for-hospital-ceo"
+      },
+      {
+        "label": "Becker's Hospital Review",
+        "url": "https://www.beckershospitalreview.com/hospital-management-administration/bostons-beth-israel-ceo-paul-levy-fined-50k/"
+      }
+    ],
+    "primary_url": "https://www.wbur.org/news/2010/05/03/levy-fine",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 168,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "erieart",
+    "executive": "Joshua Helmer",
+    "role": "Executive Director",
+    "disclosed": "2020-01",
+    "category": "Relationships with subordinates (prior employer)",
+    "outcome": "Departed; board said he is no longer employed",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "The New York Times reported in January 2020 that Helmer had dated and made advances toward women he worked with, including some who reported to him, mostly during his earlier role at the Philadelphia Museum of Art. Days later the Erie Art Museum board said he was no longer employed there, without saying whether he resigned or was fired.",
+    "sources": [
+      {
+        "label": "WHYY, Jan 2020",
+        "url": "https://whyy.org/articles/erie-museum-director-departs-after-reports-of-inappropriate-behavior-at-philadelphia-museum-of-art"
+      },
+      {
+        "label": "Artnet News, Jan 2020",
+        "url": "https://news.artnet.com/art-world/petition-erie-museum-sexual-harassment-allegations-1751190"
+      },
+      {
+        "label": "Philadelphia Inquirer, Jan 2020",
+        "url": "https://www.inquirer.com/arts/asla-alkhafaji-erie-art-museum-joshua-helmer-philadelphia-women-complaints-20200115.html"
+      }
+    ],
+    "primary_url": "https://whyy.org/articles/erie-museum-director-departs-after-reports-of-inappropriate-behavior-at-philadelphia-museum-of-art",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Watch: the conduct is at a prior employer, where he was not an executive, and it is mixed with harassment allegations, which belong to the misconduct bar. The NYT original was not found or opened. WHYY opened: the NYT reported he dated subordinates at the PMA, apparently against museum policy. He declined to discuss it and suggested office politics."
+  },
+  {
+    "id": 169,
+    "type": "relationship",
+    "role_level": "prominent",
+    "company_id": "wachtell",
+    "executive": "Nathaniel Cullerton",
+    "role": "Litigation Partner",
+    "disclosed": "2026-07",
+    "category": "Relationship with junior associate",
+    "outcome": "Left firm (described as mutual parting); Gibson Dunn offer withdrawn",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Cullerton, a Wachtell litigation partner, left the firm in 2026 after a widely shared video showed him with a junior associate. Bloomberg Law, citing the New York Post, reported that he had been on leave for weeks while the firm investigated the relationship.",
+    "sources": [
+      {
+        "label": "Bloomberg Law",
+        "url": "https://news.bloombergtax.com/business-and-practice/wake-up-call-central-park-canoodling-partner-out-at-wachtell"
+      },
+      {
+        "label": "Above the Law, Jul 2026",
+        "url": "https://abovethelaw.com/2026/07/gibson-dunn-snags-wachtell-partners-but-one-planned-lateral-got-literally-figuratively-benched/"
+      }
+    ],
+    "primary_url": "https://news.bloombergtax.com/business-and-practice/wake-up-call-central-park-canoodling-partner-out-at-wachtell",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Watch: a partner is not an executive. Prominent-employee cases need confirmed, adjudicated or settled evidence. The opened Bloomberg excerpt carries no firm statement, and the 'mutual parting' quote is from secondary coverage I did not open. Never name the associate."
+  },
+  {
+    "id": 170,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "harvardpilgrim",
+    "executive": "Eric Schultz",
+    "role": "CEO",
+    "disclosed": "2018-06",
+    "category": "Unspecified code-of-conduct breach",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "acknowledged",
+    "summary": "Schultz resigned as CEO of Harvard Pilgrim in June 2018. In his letter he acknowledged behavior inconsistent with his and the company's core values and code of conduct. Neither he nor the company specified the conduct.",
+    "sources": [
+      {
+        "label": "Becker's, Jun 2018",
+        "url": "https://www.beckershospitalreview.com/hospital-executive-moves/harvard-pilgrim-health-care-ceo-resigns-citing-behavior-inconsistent-with-company-values/"
+      },
+      {
+        "label": "Fortune, Jun 2018",
+        "url": "https://fortune.com/2018/06/13/harvard-pilgrim-ceo-resigns/"
+      }
+    ],
+    "primary_url": "https://fortune.com/2018/06/13/harvard-pilgrim-ceo-resigns/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Watch: vague 'personal conduct' departure with no reporting found that ties it to a relationship."
   }
 ]

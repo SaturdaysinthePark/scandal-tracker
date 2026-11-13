@@ -978,5 +978,40 @@
     "ticker": "Nonprofit",
     "sector": "Media & Entertainment",
     "scope": "Other notable"
+  },
+  {
+    "id": "cma",
+    "name": "Cleveland Museum of Art",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bidmc",
+    "name": "Beth Israel Deaconess Medical Center",
+    "ticker": "Nonprofit",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "erieart",
+    "name": "Erie Art Museum",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wachtell",
+    "name": "Wachtell, Lipton, Rosen & Katz",
+    "ticker": "Private",
+    "sector": "Legal",
+    "scope": "Other notable"
+  },
+  {
+    "id": "harvardpilgrim",
+    "name": "Harvard Pilgrim Health Care",
+    "ticker": "Nonprofit",
+    "sector": "Health Insurance",
+    "scope": "Other notable"
   }
 ]
