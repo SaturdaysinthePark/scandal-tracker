@@ -1,0 +1,1682 @@
+[
+  {
+    "id": 1,
+    "company_id": "boeing",
+    "executive": "Harry Stonecipher",
+    "role": "President & CEO",
+    "disclosed": "2005-03",
+    "category": "Relationship with subordinate",
+    "outcome": "Resigned at board request",
+    "evidence": "confirmed",
+    "summary": "The board asked him to resign after an internal review found a consensual relationship with a female executive. The board said this violated the company code of conduct he had championed.",
+    "sources": [
+      {
+        "label": "Boeing board statement, March 2005"
+      }
+    ],
+    "primary_url": "https://www.cbc.ca/news/business/boeing-ceo-fired-over-affair-with-co-worker-1.547006",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 2,
+    "company_id": "hp",
+    "executive": "Mark Hurd",
+    "role": "Chairman & CEO",
+    "disclosed": "2010-08",
+    "category": "Relationship with contractor",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "He resigned after an investigation into a personal relationship with a marketing contractor. HP said it found no harassment-policy violation but did find inaccurate expense reports, which breached its standards of business conduct.",
+    "sources": [
+      {
+        "label": "HP press release, August 2010"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 3,
+    "company_id": "bestbuy",
+    "executive": "Brian Dunn",
+    "role": "CEO",
+    "disclosed": "2012-04",
+    "category": "Relationship with employee",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "He resigned during an audit committee investigation. The committee later reported an extremely close personal relationship with a female employee that it said was a policy violation.",
+    "sources": [
+      {
+        "label": "Best Buy announcement, April 2012"
+      },
+      {
+        "label": "Audit committee findings, May 2012"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 4,
+    "company_id": "lockheed",
+    "executive": "Christopher Kubasik",
+    "role": "President & COO (CEO-elect)",
+    "disclosed": "2012-11",
+    "category": "Relationship with subordinate",
+    "outcome": "Resigned at board request",
+    "evidence": "confirmed",
+    "summary": "The board asked him to resign after an ethics investigation confirmed a close personal relationship with a subordinate employee. This was weeks before he was due to become CEO.",
+    "sources": [
+      {
+        "label": "Lockheed Martin statement, November 2012"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 27,
+    "company_id": "igate",
+    "executive": "Phaneesh Murthy",
+    "role": "President & CEO",
+    "disclosed": "2013-05",
+    "category": "Relationship with subordinate",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "The board terminated his contract after outside counsel found he had a relationship with a subordinate and failed to report it, violating his contract and company policy. iGATE said the investigation had not found a harassment-policy violation. Murthy acknowledged the relationship but disputed the company’s account of the disclosure, and later sued.",
+    "sources": [
+      {
+        "label": "iGATE press release, May 20, 2013"
+      }
+    ],
+    "primary_url": "https://www.aol.com/2013/05/21/igate-fires-ceo-for-not-reporting-relationship-wit/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 29,
+    "company_id": "alphabet",
+    "executive": "Sergey Brin",
+    "role": "Co-founder",
+    "disclosed": "2013-08",
+    "category": "Extramarital relationship with employee",
+    "outcome": "No company action",
+    "evidence": "unconfirmed",
+    "summary": "Media outlets widely reported in 2013 that he was in a relationship with a Google employee while still married. He and his wife separated that year. Neither Brin nor Google confirmed the reports, and the employee is not named here.",
+    "sources": [
+      {
+        "label": "Multiple outlets, August 2013"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 13,
+    "company_id": "booking",
+    "executive": "Darren Huston",
+    "role": "President & CEO",
+    "disclosed": "2016-04",
+    "category": "Relationship with employee",
+    "outcome": "Resigned at board request",
+    "evidence": "confirmed",
+    "summary": "He resigned after a board investigation found a personal relationship with an employee. The board said it violated the company code of conduct.",
+    "sources": [
+      {
+        "label": "Priceline Group press release, April 2016"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 30,
+    "company_id": "lululemon",
+    "executive": "Laurent Potdevin",
+    "role": "CEO",
+    "disclosed": "2018-02",
+    "category": "Relationship with subordinate",
+    "outcome": "Resigned",
+    "evidence": "reported",
+    "summary": "Lululemon said he resigned as CEO and director because he “fell short” of its standards of conduct. CNBC and CBC, citing sources, reported that the reasons included a years-long relationship with a designer at the company, who later worked as a contractor. He received about $5m under a separation agreement.",
+    "sources": [
+      {
+        "label": "Lululemon press release (SEC exhibit 99.1), February 5, 2018"
+      },
+      {
+        "label": "CNBC, February 6, 2018"
+      },
+      {
+        "label": "CBC News, February 2018"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718718000005/lulu-20180202xex991.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 5,
+    "company_id": "intel",
+    "executive": "Brian Krzanich",
+    "role": "CEO",
+    "disclosed": "2018-06",
+    "category": "Relationship with employee",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "He resigned after Intel learned of a past consensual relationship with an employee. That violated a non-fraternization policy covering all managers.",
+    "sources": [
+      {
+        "label": "Intel statement, June 2018"
+      }
+    ],
+    "primary_url": "https://techcrunch.com/?p=1660794",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 14,
+    "company_id": "alphabet",
+    "executive": "David Drummond",
+    "role": "Chief Legal Officer",
+    "disclosed": "2018-08",
+    "category": "Relationship with subordinate",
+    "outcome": "Departed Jan 2020",
+    "evidence": "acknowledged",
+    "summary": "He acknowledged a past relationship with a subordinate in the legal department after she wrote about it publicly. He retired from Alphabet in January 2020, amid shareholder litigation over how executive misconduct was handled.",
+    "sources": [
+      {
+        "label": "Drummond public statement, August 2018"
+      },
+      {
+        "label": "Alphabet announcement, January 2020"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 24,
+    "company_id": "alphabet",
+    "executive": "Andy Rubin",
+    "role": "SVP, creator of Android",
+    "disclosed": "2018-10",
+    "category": "Relationship with subordinate",
+    "outcome": "Had departed 2014 (reported $90m exit)",
+    "evidence": "reported",
+    "summary": "The New York Times reported that Google investigated a misconduct claim from an employee he had a relationship with, found it credible, and still gave him a $90m exit package in 2014. Rubin denied the misconduct allegation. The report preceded a worldwide employee walkout.",
+    "sources": [
+      {
+        "label": "New York Times, October 25, 2018"
+      },
+      {
+        "label": "Alphabet shareholder litigation, 2019–2020"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 26,
+    "company_id": "kemet",
+    "executive": "Per-Olof Loof",
+    "role": "CEO",
+    "disclosed": "2018-12",
+    "category": "Relationship with employee",
+    "outcome": "Resigned, no severance",
+    "evidence": "confirmed",
+    "summary": "He resigned as CEO and director after a board investigation, supported by an outside law firm, into a consensual relationship with an employee and related actions that went against company policy. The company said the matter did not involve operations or financial statements, and that he would get no severance and would forfeit his unvested equity.",
+    "sources": [
+      {
+        "label": "KEMET SEC 8-K and press release, December 2018"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/887730/000110465918074448/a18-41997_18k.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 6,
+    "company_id": "amazon",
+    "executive": "Jeff Bezos",
+    "role": "Founder & CEO",
+    "disclosed": "2019-01",
+    "category": "Extramarital relationship (non-employee)",
+    "outcome": "No company action",
+    "evidence": "acknowledged",
+    "summary": "The relationship became public alongside his announced divorce. No employee was involved and Amazon took no governance action. It is listed because it was publicly acknowledged by the executive.",
+    "sources": [
+      {
+        "label": "Joint statement by Jeff and MacKenzie Bezos, January 2019"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 7,
+    "company_id": "mcdonalds",
+    "executive": "Steve Easterbrook",
+    "role": "President & CEO",
+    "disclosed": "2019-11",
+    "category": "Relationship with employee",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "He was removed after the board found a consensual relationship with an employee that breached company policy. In 2020 the company sued him, alleging further undisclosed relationships, and later reached a settlement.",
+    "sources": [
+      {
+        "label": "McDonald's SEC filing, November 2019"
+      },
+      {
+        "label": "Delaware Chancery complaint, August 2020"
+      }
+    ],
+    "primary_url": "https://www.forbes.com/sites/jackkelly/2021/12/16/the-story-behind-mcdonalds-former-ceo-returning-over-105-million-to-settle-a-dispute-over-allegations-of-multiple-consensual-sexual-activities/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 8,
+    "company_id": "microsoft",
+    "executive": "Bill Gates",
+    "role": "Co-founder & board member",
+    "disclosed": "2021-05",
+    "category": "Relationship with employee (historical)",
+    "outcome": "Had left board in 2020",
+    "evidence": "reported",
+    "summary": "Reporting in 2021 described a board review, begun in 2019, of a relationship with an employee around 2000. Microsoft confirmed it had investigated. A spokesperson for Gates said his 2020 board departure was unrelated.",
+    "sources": [
+      {
+        "label": "Wall Street Journal, May 2021"
+      },
+      {
+        "label": "Microsoft spokesperson statement, May 2021"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 31,
+    "company_id": "ares",
+    "executive": "Michael McFerran",
+    "role": "CFO & COO",
+    "disclosed": "2021-08",
+    "category": "Relationships with employees",
+    "outcome": "Terminated, forfeited >$50m",
+    "evidence": "confirmed",
+    "summary": "Ares fired him after an outside-counsel investigation found inappropriate personal relationships and interactions with certain employees, in violation of company policies and his agreements. He forfeited all future compensation and unvested awards, including special equity worth over $50m. The company said it was unrelated to operations or financial controls.",
+    "sources": [
+      {
+        "label": "Ares Management SEC 8-K, August 2021"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1176948/000110465921102120/tm2124522d1_8k.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 15,
+    "company_id": "att",
+    "executive": "Jeff Zucker",
+    "role": "President, CNN / WarnerMedia chair of news & sports",
+    "disclosed": "2022-02",
+    "category": "Undisclosed relationship with colleague",
+    "outcome": "Resigned",
+    "evidence": "acknowledged",
+    "summary": "He resigned after acknowledging that he had not disclosed a consensual relationship with a close colleague, as an internal investigation had turned up. WarnerMedia was owned by AT&T at the time.",
+    "sources": [
+      {
+        "label": "Zucker memo to CNN staff, February 2022"
+      }
+    ],
+    "primary_url": "https://www.pbs.org/newshour/politics/cnn-president-jeff-zucker-resigns-admitting-consensual-relationship-with-co-worker",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 25,
+    "company_id": "wwe",
+    "executive": "Vince McMahon",
+    "role": "Chairman & CEO",
+    "disclosed": "2022-06",
+    "category": "Relationship with employee",
+    "outcome": "Retired July 2022",
+    "evidence": "confirmed",
+    "summary": "A board investigation examined millions in undisclosed payments to settle claims from a former employee he had had a relationship with, along with other women. He stepped back and retired in July 2022. The company later restated its financials to record the payments.",
+    "sources": [
+      {
+        "label": "Wall Street Journal, June 2022"
+      },
+      {
+        "label": "WWE SEC filings, 2022"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 20,
+    "company_id": "comcast",
+    "executive": "Jeff Shell",
+    "role": "CEO, NBCUniversal",
+    "disclosed": "2023-04",
+    "category": "Relationship with employee",
+    "outcome": "Terminated",
+    "evidence": "acknowledged",
+    "summary": "He was ousted after an investigation by outside counsel into a complaint from a woman at the company. Shell acknowledged he had had an inappropriate relationship with her and apologized.",
+    "sources": [
+      {
+        "label": "Comcast statement, April 2023"
+      },
+      {
+        "label": "Shell statement, April 2023"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 17,
+    "company_id": "bp",
+    "executive": "Bernard Looney",
+    "role": "CEO",
+    "disclosed": "2023-09",
+    "category": "Undisclosed relationships with colleagues",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "He resigned after admitting he had not been fully transparent about past personal relationships with colleagues. BP later withheld about $40m of his pay, saying he had knowingly given the board inaccurate information.",
+    "sources": [
+      {
+        "label": "BP statement, September 2023"
+      },
+      {
+        "label": "BP announcement on remuneration, December 2023"
+      }
+    ],
+    "primary_url": "https://www.theguardian.com/business/2023/sep/12/bp-boss-bernard-looney-to-resign-after-failing-to-reveal-ties-with-colleagues",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 21,
+    "company_id": "cboe",
+    "executive": "Edward Tilly",
+    "role": "Chairman, President & CEO",
+    "disclosed": "2023-09",
+    "category": "Undisclosed relationships with colleagues",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "He resigned after a board investigation found he had failed to disclose personal relationships with colleagues, in violation of company policy.",
+    "sources": [
+      {
+        "label": "Cboe statement, September 2023"
+      }
+    ],
+    "primary_url": "https://fortune.com/2023/09/20/cboe-ceo-edward-tilly-resigns-ousted-undisclosed-relationships-looney-bp-easterbrook-mcdonalds",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 28,
+    "company_id": "bp",
+    "executive": "Murray Auchincloss",
+    "role": "CFO, then CEO",
+    "disclosed": "2023-09",
+    "category": "Relationship with colleague (disclosed)",
+    "outcome": "No company action",
+    "evidence": "confirmed",
+    "summary": "After Looney’s exit, The Times reported that his successor was also in a relationship with a BP colleague. BP said the relationship had been fully and appropriately disclosed and did not breach its code of conduct. It is included as an example of a disclosed relationship that led to no action.",
+    "sources": [
+      {
+        "label": "The Times, September 2023"
+      },
+      {
+        "label": "BP spokesperson statement, September 2023"
+      }
+    ],
+    "primary_url": "https://www.thetimes.com/article/looneys-replacement-at-bp-also-in-relationship-with-colleague-wpm8t0nvz",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 23,
+    "company_id": "rbc",
+    "executive": "Nadine Ahn",
+    "role": "CFO",
+    "disclosed": "2024-04",
+    "category": "Undisclosed relationship with colleague",
+    "outcome": "Terminated (disputed in court)",
+    "evidence": "confirmed",
+    "summary": "The bank fired her after an investigation found an undisclosed close personal relationship with another executive that it said led to preferential treatment. Both executives deny a romantic relationship, and Ahn sued for wrongful dismissal.",
+    "sources": [
+      {
+        "label": "RBC press release, April 2024"
+      },
+      {
+        "label": "RBC counterclaim, Ontario Superior Court, August 2024"
+      }
+    ],
+    "primary_url": "https://www.cnbc.com/2024/04/07/royal-bank-of-canada-fires-cfo-over-undisclosed-relationship.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 22,
+    "company_id": "helios",
+    "executive": "Josef Matosevic",
+    "role": "President & CEO",
+    "disclosed": "2024-07",
+    "category": "Relationship with employee",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "The company replaced him after an investigation into a consensual relationship with an employee that violated its code of conduct.",
+    "sources": [
+      {
+        "label": "Helios Technologies statement, July 2024"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 19,
+    "company_id": "norfolk",
+    "executive": "Alan Shaw",
+    "role": "President & CEO",
+    "disclosed": "2024-09",
+    "category": "Relationship with subordinate",
+    "outcome": "Terminated for cause",
+    "evidence": "confirmed",
+    "summary": "He was fired after a board investigation found a consensual relationship with the company’s chief legal officer, in violation of company policy. The board said it did not affect the company’s financial reporting.",
+    "sources": [
+      {
+        "label": "Norfolk Southern statement and SEC 8-K, September 2024"
+      }
+    ],
+    "primary_url": "https://www.bnnbloomberg.ca/business/company-news/2024/09/13/ceos-fired-for-office-affairs-are-rarer-than-you-think/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 9,
+    "company_id": "kohls",
+    "executive": "Ashley Buchanan",
+    "role": "CEO",
+    "disclosed": "2025-05",
+    "category": "Undisclosed relationship / conflict of interest",
+    "outcome": "Terminated for cause",
+    "evidence": "confirmed",
+    "summary": "He was dismissed after an audit committee investigation found he directed business to a vendor founded by someone he had a personal relationship with, and failed to disclose it.",
+    "sources": [
+      {
+        "label": "Kohl's SEC 8-K filing, May 2025"
+      }
+    ],
+    "primary_url": "https://www.nytimes.com/2025/05/01/us/kohls-ceo-fired.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 16,
+    "company_id": "astronomer",
+    "executive": "Andy Byron",
+    "role": "CEO",
+    "disclosed": "2025-07",
+    "category": "Relationship with subordinate",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "A concert \"kiss cam\" video that went viral appeared to show him with the company’s head of HR. Astronomer put him on leave, opened a board investigation, and announced his resignation days later, saying leaders are expected to set the standard for conduct and accountability.",
+    "sources": [
+      {
+        "label": "Astronomer statements, July 2025"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 18,
+    "company_id": "nestle",
+    "executive": "Laurent Freixe",
+    "role": "CEO",
+    "disclosed": "2025-09",
+    "category": "Relationship with subordinate",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "He was dismissed after an investigation found an undisclosed romantic relationship with a direct subordinate, in breach of Nestlé’s code of business conduct.",
+    "sources": [
+      {
+        "label": "Nestlé press release, September 2025"
+      }
+    ],
+    "primary_url": "https://www.cnn.com/2025/09/01/business/nestle-ceo-code-of-conduct-breach",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 10,
+    "company_id": "nvidia",
+    "executive": "Jensen Huang",
+    "role": "Co-founder, President & CEO",
+    "disclosed": "2026-11",
+    "category": "Extramarital relationship (business counterparty)",
+    "outcome": "Resigned",
+    "evidence": "acknowledged",
+    "summary": "In November the New York Times and Financial Times reported a relationship with an executive at Megaspeed, a Singapore data-center company that bought Nvidia chips. On November 8 the board opened an independent probe, and Huang told employees in a memo that he had been unfaithful to his wife, NBC News reported. Nvidia's 8-K said he resigned as CEO and director effective November 11, without giving a reason, and the resignation was announced November 12. CFO Colette Kress became interim CEO.",
+    "sources": [
+      {
+        "label": "Nvidia 8-K, November 12, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvda-20261111.htm"
+      },
+      {
+        "label": "Nvidia press release (8-K exhibit), November 12, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
+      },
+      {
+        "label": "NBC News, November 2026 (quotes Huang memo)",
+        "url": "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-resigns-reports-extramarital-relationships-rcna608402"
+      },
+      {
+        "label": "New York Times and Financial Times, November 2026"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvda-20261111.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 11,
+    "company_id": "nvidia",
+    "executive": "Jensen Huang",
+    "role": "Co-founder, President & CEO",
+    "disclosed": "2026-11",
+    "category": "Relationship with subordinate",
+    "outcome": "Resigned",
+    "evidence": "unconfirmed",
+    "summary": "On November 11 the New York Times reported a second affair, with an Nvidia vice president who reported to him. Neither Nvidia, Huang nor the employee has confirmed it. Nvidia announced his resignation the next day. The other person is not named here, under our policy.",
+    "sources": [
+      {
+        "label": "New York Times, November 11, 2026"
+      },
+      {
+        "label": "CBS News, November 2026",
+        "url": "https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/"
+      }
+    ],
+    "primary_url": "https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 12,
+    "company_id": "nvidia",
+    "executive": "Jensen Huang",
+    "role": "Co-founder, President & CEO",
+    "disclosed": "2026-11",
+    "category": "Relationship with employee",
+    "outcome": "Resigned",
+    "evidence": "unconfirmed",
+    "summary": "On November 12 Reuters reported, citing two people familiar with the matter, a separate relationship with another Nvidia employee. Reuters withheld her name. The report is unconfirmed by Nvidia or Huang.",
+    "sources": [
+      {
+        "label": "Reuters, November 12, 2026"
+      },
+      {
+        "label": "TechCrunch, November 12, 2026 (citing Reuters)",
+        "url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/"
+      }
+    ],
+    "primary_url": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 32,
+    "company_id": "zoetis",
+    "executive": "Glenn David",
+    "role": "Executive Vice President and Group President, U.S. Operations",
+    "disclosed": "2023-02",
+    "category": "Undisclosed relationship",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "Zoetis terminated Glenn David, its executive vice president and group president of U.S. operations, on February 5, 2023. In an SEC filing, the company said he had violated company policy by engaging in a consensual personal relationship and failing to disclose it. The company said it had retained independent outside counsel to investigate, and that he would forfeit severance benefits and future equity vesting.",
+    "sources": [
+      {
+        "label": "Zoetis Form 8-K, February 2023",
+        "url": "https://www.sec.gov/Archives/edgar/data/1555280/000110465923011475/tm235694d1_8k.htm"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1555280/000110465923011475/tm235694d1_8k.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 33,
+    "company_id": "exscientia",
+    "executive": "Andrew Hopkins",
+    "role": "CEO and Executive Director",
+    "disclosed": "2024-02",
+    "category": "Relationship with employees",
+    "outcome": "Terminated for cause",
+    "evidence": "confirmed",
+    "summary": "Exscientia said on February 13, 2024 that its board had terminated CEO Andrew Hopkins for cause, effective immediately, and removed him as an executive director. In an SEC filing, the company said a board investigation found he had engaged in relationships with two employees that the board determined were inappropriate.",
+    "sources": [
+      {
+        "label": "Exscientia Form 6-K, February 2024",
+        "url": "https://www.sec.gov/Archives/edgar/data/1865408/000186540824000002/exai-form6xkevenloadfinal1.htm"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1865408/000186540824000002/exai-form6xkevenloadfinal1.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 34,
+    "company_id": "superretail",
+    "executive": "Anthony Heraghty",
+    "role": "Group Managing Director and CEO",
+    "disclosed": "2025-09",
+    "category": "Undisclosed relationship with executive",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "Super Retail Group said on September 16, 2025 that it had terminated CEO Anthony Heraghty's employment with immediate effect. The board said it had received new information about his relationship with the company's former chief human resources officer and found his prior disclosures unsatisfactory. The company said his unvested and vested-but-unexercised incentives had lapsed.",
+    "sources": [
+      {
+        "label": "AAP, September 2025",
+        "url": "https://aapnews.aap.com.au/news/super-retail-chief-fired-over-workplace-relationship"
+      },
+      {
+        "label": "InvestSmart listing of ASX announcement (auto-summary)",
+        "url": "https://www.investsmart.com.au/investment-tools/shares/asx-price-sensitive-announcements/asx-sul/2420744"
+      },
+      {
+        "label": "ASX announcement PDF, 16 Sep 2025",
+        "url": "https://announcements.asx.com.au/asxpdf/20250916/pdf/06p835741wm3h0.pdf"
+      }
+    ],
+    "primary_url": "https://announcements.asx.com.au/asxpdf/20250916/pdf/06p835741wm3h0.pdf",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 35,
+    "company_id": "rsgroup",
+    "executive": "David Egan",
+    "role": "CFO and Executive Director",
+    "disclosed": "2023-05",
+    "category": "Relationship with colleague",
+    "outcome": "Resigned",
+    "evidence": "acknowledged",
+    "summary": "RS Group said on May 3, 2023 that CFO David Egan had stepped down with immediate effect. In a statement released by the company, Egan said he had recently notified the board of a personal relationship with a colleague, Reuters reported. Reuters also reported that the company did not identify the colleague.",
+    "sources": [
+      {
+        "label": "Reuters via Yahoo Finance UK, May 2023",
+        "url": "https://uk.finance.yahoo.com/news/uks-rs-group-cfo-steps-073631720.html"
+      },
+      {
+        "label": "CFO Dive, May 2023",
+        "url": "https://www.cfodive.com/news/rs-group-cfo-resigns-over-relationship-colleague/649376/"
+      }
+    ],
+    "primary_url": "https://uk.finance.yahoo.com/news/uks-rs-group-cfo-steps-073631720.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 36,
+    "company_id": "rei",
+    "executive": "Jerry Stritzke",
+    "role": "President and CEO",
+    "disclosed": "2019-02",
+    "category": "Undisclosed relationship (conflict of interest with industry partner)",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "REI's board said in February 2019 that Jerry Stritzke resigned as CEO after an investigation by an outside law firm into a personal, consensual relationship with the leader of another outdoor-industry organization that he had not disclosed. The company said the relationship created a perceived conflict of interest that he should have disclosed under REI policy, and that the investigation found no financial misconduct. Stritzke apologized to employees for not disclosing it, the Associated Press reported.",
+    "sources": [
+      {
+        "label": "CBS News / AP, Feb 12 2019",
+        "url": "https://www.cbsnews.com/news/rei-ceo-leaves-over-an-undisclosed-relationship"
+      },
+      {
+        "label": "REI media statement (rei.com, returned 403)",
+        "url": "https://www.rei.com/blog/rei-news/jerry-stritzke-resigns-as-rei-ceo-eric-artz-named-interim-ceo"
+      }
+    ],
+    "primary_url": "https://www.cbsnews.com/news/rei-ceo-leaves-over-an-undisclosed-relationship",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 37,
+    "company_id": "blackrock",
+    "executive": "Mark Wiseman",
+    "role": "Global Head of Active Equities; Chairman, BlackRock Alternative Investors",
+    "disclosed": "2019-12",
+    "category": "Undisclosed relationship with colleague",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "BlackRock said in December 2019 that Mark Wiseman had left the firm after failing to disclose a consensual relationship with a colleague, as required by its Relationships at Work Policy, Bloomberg reported. In an internal memo, Wiseman said he regretted his mistake and accepted responsibility. A memo from CEO Larry Fink and President Rob Kapito said the matter had no impact on portfolios or client activities.",
+    "sources": [
+      {
+        "label": "Bloomberg via Al Jazeera, Dec 5 2019",
+        "url": "https://www.aljazeera.com/economy/2019/12/5/blackrock-executive-ousted-over-office-romance"
+      },
+      {
+        "label": "ThinkAdvisor, Dec 6 2019 (403)",
+        "url": "https://www.thinkadvisor.com/2019/12/06/blackrock-fires-exec-over-consensual-affair/"
+      }
+    ],
+    "primary_url": "https://www.aljazeera.com/economy/2019/12/5/blackrock-executive-ousted-over-office-romance",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 38,
+    "company_id": "sevenwest",
+    "executive": "Tim Worner",
+    "role": "CEO",
+    "disclosed": "2016-12",
+    "category": "Extramarital affair with employee, acknowledged",
+    "outcome": "Remained CEO; board inquiry cleared him of misconduct (Feb 2017)",
+    "evidence": "acknowledged",
+    "summary": "In December 2016, Seven West Media CEO Tim Worner publicly acknowledged a past affair with a former company employee, saying he felt \"the deepest shame and regret\", SBS reported. The board ordered an independent inquiry into allegations the former employee made, and in February 2017 said the inquiry had cleared him of misconduct. He remained CEO.",
+    "sources": [
+      {
+        "label": "SBS News, Dec 19 2016",
+        "url": "https://www.sbs.com.au/news/article/seven-west-ceos-shame-over-affair/0l4x01ow8"
+      },
+      {
+        "label": "Mumbrella, Feb 3 2017",
+        "url": "https://mumbrella.com.au/seven-west-media-board-clears-ceo-tim-worner-misconduct-following-probe-423929"
+      }
+    ],
+    "primary_url": "https://www.sbs.com.au/news/article/seven-west-ceos-shame-over-affair/0l4x01ow8",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 39,
+    "company_id": "rh",
+    "executive": "Gary Friedman",
+    "role": "Chairman and Co-CEO",
+    "disclosed": "2012-08",
+    "category": "Relationship with employee",
+    "outcome": "Resigned (reappointed chairman and CEO in July 2013)",
+    "evidence": "confirmed",
+    "summary": "Gary Friedman resigned as chairman and co-chief executive of Restoration Hardware in August 2012 after a special committee of non-management directors investigated. The company's IPO prospectus said the investigation followed disclosure of a personal relationship between Friedman and a company employee, which the parties described as consensual. According to the prospectus, the committee found that he had failed to comply with certain company policies. He became chairman emeritus and returned as chairman and CEO in July 2013.",
+    "sources": [
+      {
+        "label": "Restoration Hardware Holdings 424B4 prospectus, Nov 2012",
+        "url": "https://www.sec.gov/Archives/edgar/data/1528849/000119312512449830/d70987d424b4.htm"
+      },
+      {
+        "label": "NBC News, 17 Aug 2012 (citing NYT)",
+        "url": "https://www.nbcnews.com/business/markets/restoration-hardware-ceo-ousted-amid-reports-relationship-subordinate-flna949680"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1528849/000119312512449830/d70987d424b4.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 40,
+    "company_id": "fluidigm",
+    "executive": "Gajus Worthington",
+    "role": "President and CEO",
+    "disclosed": "2015-07",
+    "category": "Undisclosed relationship with employee",
+    "outcome": "Remained CEO; reimbursed $200,000 of review costs",
+    "evidence": "confirmed",
+    "summary": "Fluidigm said in a July 2015 8-K that its independent directors, working with outside counsel and forensic accountants, had concluded a review of CEO Gajus Worthington's compliance with the company's code of conduct. They found, and he acknowledged, that he had violated the code's conflict-of-interest provisions through an undisclosed personal relationship with a company employee. He agreed to reimburse $200,000 of the review's costs and remained CEO; the directors found no intentional financial misconduct.",
+    "sources": [
+      {
+        "label": "Fluidigm Form 8-K, 23 Jul 2015",
+        "url": "https://www.sec.gov/Archives/edgar/data/1162194/000119312515260658/d87159d8k.htm"
+      },
+      {
+        "label": "Fluidigm 10-K/A, 2016 (Worthington CEO since 1999)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1162194/000119312516559771/d183522d10ka.htm"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1162194/000119312515260658/d87159d8k.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 41,
+    "company_id": "lilly",
+    "executive": "Joshua Smiley",
+    "role": "Senior Vice President and CFO",
+    "disclosed": "2021-02",
+    "category": "Relationship with employee",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "Eli Lilly said in February 2021 that CFO Joshua Smiley had resigned after the company learned of allegations of an inappropriate personal relationship with an employee. The company said an investigation by external counsel found consensual though inappropriate personal communications between Smiley and certain employees, which leadership concluded showed poor judgment. Lilly said he agreed to forfeit his 2020 cash bonus and equity awards it valued at more than $20 million at target.",
+    "sources": [
+      {
+        "label": "Eli Lilly Form 8-K, February 2021",
+        "url": "https://www.sec.gov/Archives/edgar/data/59478/000119312521033302/d111779d8k.htm"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/59478/000119312521033302/d111779d8k.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Investigation found 'consensual though inappropriate personal communications', not an established relationship (rule 2)."
+  },
+  {
+    "id": 42,
+    "company_id": "galp",
+    "executive": "Filipe Silva",
+    "role": "CEO and Vice-Chairman",
+    "disclosed": "2025-01",
+    "category": "Undisclosed relationship with subordinate",
+    "outcome": "Resigned",
+    "evidence": "unconfirmed",
+    "summary": "Galp said on January 7, 2025 that CEO Filipe Silva had resigned for family reasons. Bloomberg and Reuters reported that he resigned amid an internal ethics probe, prompted by an anonymous complaint, into an alleged undisclosed personal relationship with a company director.",
+    "sources": [
+      {
+        "label": "Galp investor notice, 7 Jan 2025",
+        "url": "https://www.galp.com/investidores/publicacoes-e-comunicados/comunicados-investidor/comunicado/id/1580"
+      },
+      {
+        "label": "Portugal Decoded (partial, paywalled)",
+        "url": "https://portugaldecoded.substack.com/p/galp-ceo-resigns-amid-ethics-probe"
+      },
+      {
+        "label": "Bloomberg, Jan 2025",
+        "url": "https://www.bloomberg.com/news/articles/2025-01-07/galp-chief-executive-filipe-silva-resigns-for-family-reasons-m5mz8wg6"
+      }
+    ],
+    "primary_url": "https://www.galp.com/investidores/publicacoes-e-comunicados/comunicados-investidor/comunicado/id/1580",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Company cited family reasons; relationship probe reported by Bloomberg/Reuters but not opened or confirmed."
+  },
+  {
+    "id": 43,
+    "company_id": "aig",
+    "executive": "John Neal",
+    "role": "Incoming President (former Lloyd's of London CEO)",
+    "disclosed": "2025-11",
+    "category": "Undisclosed relationship",
+    "outcome": "AIG offer withdrawn; Lloyd's found compliance breach",
+    "evidence": "confirmed",
+    "summary": "AIG said in November 2025 that its incoming president John Neal would no longer join, after the Wall Street Journal reported an alleged relationship with a former Lloyd's employee. In July 2026 Lloyd's said its investigation found Neal had breached compliance rules by not disclosing a close relationship with a former corporate affairs director that could be seen as a conflict of interest. Lloyd's said it found no conclusive evidence of a romantic relationship during their employment, Bloomberg reported.",
+    "sources": [
+      {
+        "label": "Insurance Journal (Bloomberg), 22 Jul 2026",
+        "url": "https://www.insurancejournal.com/news/international/2026/07/22/878515.htm"
+      }
+    ],
+    "primary_url": "https://www.insurancejournal.com/news/international/2026/07/22/878515.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Lloyd's found a non-disclosure breach but no conclusive evidence of a romantic relationship."
+  },
+  {
+    "id": 44,
+    "company_id": "parkhotels",
+    "executive": "Robert Tanenbaum",
+    "role": "Executive Vice President, Asset Management",
+    "disclosed": "2020-01",
+    "category": "Relationship with employee",
+    "outcome": "Terminated for cause",
+    "evidence": "confirmed",
+    "summary": "Park Hotels & Resorts said in January 2020 that it had terminated Robert Tanenbaum, its executive vice president of asset management, for cause. The company said an investigation found he had engaged in a personal, inappropriate and consensual relationship with a Park employee, as well as inappropriate communications. Park said the termination was unrelated to its operational or financial performance.",
+    "sources": [
+      {
+        "label": "Park Hotels & Resorts press release, Jan 27 2020",
+        "url": "https://www.pkhotelsandresorts.com/investors/news-and-events/press-releases/archive/01-27-2020-215843256"
+      },
+      {
+        "label": "Business Wire release (403)",
+        "url": "https://www.businesswire.com/news/home/20200127005707/en/Park-Hotels-Resorts-Inc.-Announces-Termination-of-Executive-Vice-President-Asset-Management"
+      }
+    ],
+    "primary_url": "https://www.pkhotelsandresorts.com/investors/news-and-events/press-releases/archive/01-27-2020-215843256",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 45,
+    "company_id": "blackrock",
+    "executive": "Jeff Smith",
+    "role": "Global Head of Human Resources",
+    "disclosed": "2019-12",
+    "category": "Relationship with colleague (policy violation)",
+    "outcome": "Terminated",
+    "evidence": "reported",
+    "summary": "BlackRock dismissed its global head of human resources, Jeff Smith, in July 2019 for violating corporate policy, according to a memo from CEO Larry Fink and President Rob Kapito. Bloomberg reported in December 2019, citing a person familiar with the matter, that the violation involved a romantic relationship with a colleague.",
+    "sources": [
+      {
+        "label": "Financial Planning (Bloomberg), Dec 10 2019",
+        "url": "https://www.financial-planning.com/articles/blackrocks-hr-chief-jeff-smith-was-fired-in-july-after-office-relationship"
+      }
+    ],
+    "primary_url": "https://www.financial-planning.com/articles/blackrocks-hr-chief-jeff-smith-was-fired-in-july-after-office-relationship",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Relationship link rests on one anonymous Bloomberg source; HR head seniority borderline."
+  },
+  {
+    "id": 46,
+    "company_id": "markel",
+    "executive": "Anthony Belisle",
+    "role": "CEO, Markel CATCo (subsidiary)",
+    "disclosed": "2019-01",
+    "category": "Undisclosed relationship (policy violation)",
+    "outcome": "Departed",
+    "evidence": "confirmed",
+    "summary": "Markel said in January 2019 that an internal review, opened after government inquiries into loss reserves at its Markel CATCo unit, had found violations by the unit's CEO, Anthony Belisle, and another executive of Markel policies relating to an undisclosed personal relationship. Both left the company.",
+    "sources": [
+      {
+        "label": "Markel 8-K EX-99.1, Jan 18 2019",
+        "url": "https://www.sec.gov/Archives/edgar/data/1096343/000134100419000038/ex99-1.htm"
+      },
+      {
+        "label": "Insurance Journal, Jan 22 2019",
+        "url": "https://amp.insurancejournal.com/news/national/2019/01/22/515401.htm"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1096343/000134100419000038/ex99-1.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 47,
+    "company_id": "libertytax",
+    "executive": "John Hewitt",
+    "role": "CEO and Chairman",
+    "disclosed": "2017-09",
+    "category": "Relationships with employees and franchisees",
+    "outcome": "Terminated as CEO; later left the board",
+    "evidence": "reported",
+    "summary": "Liberty Tax's board terminated John Hewitt as chief executive in September 2017 after an investigation, triggered by an ethics hotline complaint, found what directors called credible evidence of an array of inappropriate personal and business conduct. Press reports and a later shareholder suit said the conduct included romantic relationships with employees and franchisees. The company's own statements did not describe the relationships specifically.",
+    "sources": [
+      {
+        "label": "Liberty Tax 8-K/A EX-99.1, letter from independent director, Nov 2017",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001528930/000117184317006901/exh_991.htm"
+      },
+      {
+        "label": "Fortune (Bloomberg), Dec 13 2017: pension fund suit citing Skadden review",
+        "url": "https://fortune.com/2017/12/13/liberty-tax-sex-scandal/"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/0001528930/000117184317006901/exh_991.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Relationship details come from a shareholder lawsuit, not the company; harassment overlap unresolved."
+  },
+  {
+    "id": 48,
+    "company_id": "ti",
+    "executive": "Brian Crutcher",
+    "role": "President and CEO",
+    "disclosed": "2018-07",
+    "category": "Code of conduct violation (unspecified personal behavior)",
+    "outcome": "Resigned",
+    "evidence": "unconfirmed",
+    "summary": "Texas Instruments said in July 2018 that Brian Crutcher resigned as CEO about six weeks into the role over violations of the company's code of conduct related to personal behavior. The company did not specify the conduct.",
+    "sources": [
+      {
+        "label": "CNBC, July 2018 (search result only)",
+        "url": "https://www.cnbc.com/2018/07/13/texas-instruments-ceo-brian-crutcher-resigns-for-violating-code-of-conduct.html"
+      }
+    ],
+    "primary_url": "https://www.cnbc.com/2018/07/13/texas-instruments-ceo-brian-crutcher-resigns-for-violating-code-of-conduct.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Code-of-conduct exit over 'personal behavior'; no reporting ties it to a relationship."
+  },
+  {
+    "id": 49,
+    "company_id": "rambus",
+    "executive": "Ron Black",
+    "role": "CEO",
+    "disclosed": "2018-06",
+    "category": "Conduct below company standards (unspecified)",
+    "outcome": "Terminated",
+    "evidence": "unconfirmed",
+    "summary": "Rambus said in June 2018 that its board terminated Ron Black as CEO after finding his conduct fell short of company standards, unrelated to financial or business performance. The company did not describe the conduct.",
+    "sources": [
+      {
+        "label": "Rambus 8-K EX-99.1, June 2018 (search result only)",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000917273/000119312518207771/d415443dex991.htm"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/0000917273/000119312518207771/d415443dex991.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Unspecified conduct; no reporting ties it to a relationship."
+  },
+  {
+    "id": 50,
+    "company_id": "natwest",
+    "executive": "Fred Goodwin",
+    "role": "CEO (former at time of disclosure)",
+    "disclosed": "2011-05",
+    "category": "Relationship with senior colleague",
+    "outcome": "No company action (had already departed in 2009)",
+    "evidence": "unconfirmed",
+    "summary": "In May 2011 a member of the House of Lords said under parliamentary privilege that former RBS chief executive Fred Goodwin had obtained an injunction to suppress reporting of an alleged affair with a senior colleague. The High Court then partially lifted the order so that Goodwin could be named. Neither Goodwin nor RBS confirmed the relationship.",
+    "sources": [
+      {
+        "label": "Channel 4 News, 19 May 2011",
+        "url": "https://channel4.com/news/fred-goodwin-anonymity-ruling-lifted-after-lords-reveal"
+      }
+    ],
+    "primary_url": "https://channel4.com/news/fred-goodwin-anonymity-ruling-lifted-after-lords-reveal",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Alleged affair revealed under parliamentary privilege; never confirmed by Goodwin or RBS."
+  },
+  {
+    "id": 51,
+    "company_id": "starwood",
+    "executive": "Steven Heyer",
+    "role": "CEO",
+    "disclosed": "2007-04",
+    "category": "Personal conduct (relationship not established)",
+    "outcome": "Resigned",
+    "evidence": "unconfirmed",
+    "summary": "Starwood said in an April 2007 8-K that CEO Steven Heyer had resigned under a separation agreement, and gave no reason. The Wall Street Journal reported that the board had questioned him about an anonymous letter and about messages with female employees. Heyer denied any impropriety.",
+    "sources": [
+      {
+        "label": "Starwood Form 8-K, April 2007",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000316206/000129993307001984/htm_19291.htm"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/0000316206/000129993307001984/htm_19291.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "retracted",
+    "note": "Retracted 2026-11-13 from watch: no relationship established; reporting concerned an anonymous misconduct letter and messages, closer to the harassment category."
+  },
+  {
+    "id": 52,
+    "company_id": "redcross",
+    "executive": "Mark Everson",
+    "role": "President and CEO",
+    "disclosed": "2007-11",
+    "category": "Relationship with subordinate",
+    "outcome": "Resigned at board's request",
+    "evidence": "confirmed",
+    "summary": "The American Red Cross board asked for and accepted the immediate resignation of president and CEO Mark Everson in November 2007. In a statement, the board said it acted after learning that he had engaged in a personal relationship with a subordinate employee. The board said the situation reflected poor judgment and diminished his ability to lead.",
+    "sources": [
+      {
+        "label": "NBC News/AP, 27 Nov 2007",
+        "url": "https://www.nbcnews.com/news/amp/wbna21994150"
+      }
+    ],
+    "primary_url": "https://www.nbcnews.com/news/amp/wbna21994150",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 53,
+    "company_id": "pegula",
+    "executive": "Russ Brandon",
+    "role": "President, Buffalo Bills and Buffalo Sabres",
+    "disclosed": "2018-05",
+    "category": "Relationship with employee",
+    "outcome": "Resigned",
+    "evidence": "reported",
+    "summary": "Brandon resigned as president of the Buffalo Bills and Buffalo Sabres on May 1, 2018, and the team owners announced they had accepted his resignation without giving a reason. The Associated Press reported, citing two people with direct knowledge, that he resigned after the owners confronted him about an inappropriate relationship with an employee. Brandon told the AP he had been considering leaving for some time and did not respond to questions about the relationship. The NFL later said the club had addressed the matter appropriately.",
+    "sources": [
+      {
+        "label": "AP via KSL, May 2018",
+        "url": "https://www.ksl.com/article/46313398"
+      },
+      {
+        "label": "NFL.com, May 2018",
+        "url": "https://www.nfl.com/news/russ-brandon-resigns-as-bills-sabres-president-0ap3000000930876"
+      },
+      {
+        "label": "ESPN, May 1 2018",
+        "url": "https://www.espn.com/nfl/story/_/id/23377472/president-buffalo-bills-buffalo-sabres-russ-brandon-resigns"
+      }
+    ],
+    "primary_url": "https://www.ksl.com/article/46313398",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 54,
+    "company_id": "pegula",
+    "executive": "John Roth",
+    "role": "Chief Operating Officer",
+    "disclosed": "2023-10",
+    "category": "Relationship with colleague (reported policy breach)",
+    "outcome": "Terminated",
+    "evidence": "unconfirmed",
+    "summary": "The Buffalo Bills and Buffalo Sabres dismissed newly appointed chief operating officer John Roth in October 2023 along with another senior executive. The Associated Press reported, citing a person briefed on the matter, that the two were fired because they were in a romantic relationship, and The Athletic first reported the firings. Roth confirmed his dismissal to the AP but did not give details, and the teams did not announce it.",
+    "sources": [
+      {
+        "label": "AP via WLOS, Oct 11 2023",
+        "url": "https://wlos.com/news/nation-world/bills-sabres-buffallo-coo-john-roth-chief-operating-officer-legal-counsel-kathryn-dangelo-fired-romantic-relationship-ap-source-nfl-nhl"
+      }
+    ],
+    "primary_url": "https://wlos.com/news/nation-world/bills-sabres-buffallo-coo-john-roth-chief-operating-officer-legal-counsel-kathryn-dangelo-fired-romantic-relationship-ap-source-nfl-nhl",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 55,
+    "company_id": "officedepot",
+    "executive": "Charlie Brown",
+    "role": "President, International Division",
+    "disclosed": "2011-09",
+    "category": "Relationship with employee",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "Office Depot terminated Charlie Brown as president of its International Division on September 26, 2011. In a press release filed with the SEC, CEO Neil Austrian said Brown was terminated for having an improper relationship with another associate and that the company had a zero-tolerance policy in this regard. The company's 8-K described the termination as without cause for severance purposes.",
+    "sources": [
+      {
+        "label": "Office Depot press release (8-K Ex. 99.1), Sept. 26, 2011",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000800240/000119312511257518/d237241dex991.htm"
+      },
+      {
+        "label": "Office Depot Form 8-K, Item 5.02, Sept. 27, 2011",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000800240/000119312511257518/d237241d8k.htm"
+      },
+      {
+        "label": "Chain Store Age coverage",
+        "url": "https://chainstoreage.com/news/odp-fires-international-division-head-improper-relationship"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/0000800240/000119312511257518/d237241dex991.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 56,
+    "company_id": "highmark",
+    "executive": "Kenneth Melani",
+    "role": "President and CEO",
+    "disclosed": "2012-04",
+    "category": "Relationship with subordinate",
+    "outcome": "Terminated for cause",
+    "evidence": "reported",
+    "summary": "Highmark's board fired President and CEO Kenneth Melani for cause on April 1, 2012, days after he was charged following a fight with the husband of a Highmark employee, the Associated Press reported. According to trade press coverage, the board cited the alleged March 25 incident, an admitted sexual relationship with a junior employee and the associated conflict and risk to the company, and repeated denials to senior management. Melani later sued Highmark, saying the relationship did not violate company policy.",
+    "sources": [
+      {
+        "label": "AP via Insurance Journal, Apr. 2, 2012",
+        "url": "https://amp.insurancejournal.com/news/east/2012/04/02/241845.htm"
+      },
+      {
+        "label": "CBS Pittsburgh (KDKA), Apr. 1, 2012",
+        "url": "https://www.cbsnews.com/pittsburgh/news/highmark-terminates-ceo-amid-scandal"
+      },
+      {
+        "label": "HealthLeaders Media: Highmark says CEO fired for lies, fistfight",
+        "url": "https://www.healthleadersmedia.com/strategy/highmark-says-ceo-fired-lies-fistfight"
+      },
+      {
+        "label": "FierceHealthcare: Highmark CEO fired for lying, willful misconduct",
+        "url": "https://www.fiercehealthcare.com/payer/highmark-ceo-fired-for-lying-willful-misconduct"
+      }
+    ],
+    "primary_url": "https://amp.insurancejournal.com/news/east/2012/04/02/241845.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 57,
+    "company_id": "axelspringer",
+    "executive": "Julian Reichelt",
+    "role": "Editor-in-chief, Bild (chair of Bild group editorial management)",
+    "disclosed": "2021-10",
+    "category": "Relationship with subordinate",
+    "outcome": "Dismissed",
+    "evidence": "reported",
+    "summary": "Axel Springer removed Bild editor-in-chief Julian Reichelt in October 2021 after The New York Times reported he had relationships with subordinate employees. The company said he had not clearly separated his private and professional lives and had not told the executive board the truth about it. An earlier 2021 compliance review had allowed him to return to work, and AFP reported that he admitted mixing professional and private relationships.",
+    "sources": [
+      {
+        "label": "AFP via Dawn, 19 Oct 2021",
+        "url": "https://www.dawn.com/news/1652897"
+      }
+    ],
+    "primary_url": "https://www.dawn.com/news/1652897",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 58,
+    "company_id": "skgroup",
+    "executive": "Chey Tae-won",
+    "role": "Chairman",
+    "disclosed": "2015-12",
+    "category": "Extramarital relationship (acknowledged)",
+    "outcome": "Remained in role",
+    "evidence": "acknowledged",
+    "summary": "SK Group chairman Chey Tae-won admitted to an extramarital relationship and a child born of it in a letter published by the Segye Ilbo newspaper in December 2015. He called it a shameful confession and said he intended to divorce. He remained chairman, and later divorce litigation in Korean courts followed the disclosure.",
+    "sources": [
+      {
+        "label": "Korea JoongAng Daily, 29 Dec 2015",
+        "url": "https://www.koreajoongangdaily.com/korea/sks-chey-admits-to-mistress-and-love-child/10516024"
+      }
+    ],
+    "primary_url": "https://www.koreajoongangdaily.com/korea/sks-chey-admits-to-mistress-and-love-child/10516024",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 59,
+    "company_id": "afl",
+    "executive": "Simon Lethlean",
+    "role": "General Manager, Football Operations",
+    "disclosed": "2017-07",
+    "category": "Relationship with junior industry staff",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "AFL chief executive Gillon McLachlan announced in July 2017 that football operations manager Simon Lethlean had resigned after an inappropriate relationship with a younger woman working in the AFL industry. McLachlan said the executives had made significant mistakes and been held to account. Lethlean issued a statement apologising.",
+    "sources": [
+      {
+        "label": "SBS News / AAP, 14 Jul 2017",
+        "url": "https://www.sbs.com.au/news/two-high-ranking-afl-executives-resign-over-inappropriate-relationships"
+      }
+    ],
+    "primary_url": "https://www.sbs.com.au/news/two-high-ranking-afl-executives-resign-over-inappropriate-relationships",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 60,
+    "company_id": "afl",
+    "executive": "Richard Simkiss",
+    "role": "General Manager, Commercial Operations",
+    "disclosed": "2017-07",
+    "category": "Relationship with junior industry staff",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "The AFL announced in July 2017 that commercial general manager Richard Simkiss had resigned over an inappropriate relationship with a younger woman working in the AFL industry. Simkiss apologised in a statement for what he called a serious lapse of judgement.",
+    "sources": [
+      {
+        "label": "SBS News / AAP, 14 Jul 2017",
+        "url": "https://www.sbs.com.au/news/two-high-ranking-afl-executives-resign-over-inappropriate-relationships"
+      }
+    ],
+    "primary_url": "https://www.sbs.com.au/news/two-high-ranking-afl-executives-resign-over-inappropriate-relationships",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 61,
+    "company_id": "wisetech",
+    "executive": "Richard White",
+    "role": "Founder, CEO (later executive chair)",
+    "disclosed": "2025-03",
+    "category": "Inaccurate disclosure of relationship with employee",
+    "outcome": "No action by board; had stepped down as CEO Oct 2024; stepped down as executive chair Jul 2026",
+    "evidence": "confirmed",
+    "summary": "WiseTech Global released board review findings to the ASX in March 2025 stating that Richard White made inaccurate and incomplete disclosures about the nature and duration of a relationship with an employee. The review found he had not been fully transparent and candid with the board. The board took no action against him, and he stepped down as executive chair in July 2026, citing media coverage of his personal life. White has denied wrongdoing.",
+    "sources": [
+      {
+        "label": "WiseTech ASX announcement, 19 Mar 2025 (PDF)",
+        "url": "https://announcements.asx.com.au/asxpdf/20250319/pdf/06gs98m3y286q0.pdf"
+      },
+      {
+        "label": "The Nightly, 19 Mar 2025",
+        "url": "https://thenightly.com.au/business/wisetech-ceo-richard-white-misled-board-on-personal-relationships-review-reveals-c-18087484"
+      }
+    ],
+    "primary_url": "https://announcements.asx.com.au/asxpdf/20250319/pdf/06gs98m3y286q0.pdf",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 62,
+    "company_id": "l3harris",
+    "executive": "Christopher Kubasik",
+    "role": "Chairman and CEO",
+    "disclosed": "2026-08",
+    "category": "Relationship with subordinate (reported)",
+    "outcome": "Departed after board investigation (separation agreement)",
+    "evidence": "unconfirmed",
+    "summary": "L3Harris said on August 17, 2026 that Kubasik had stepped down as chairman and CEO after an investigation with independent counsel into conduct the company said was not consistent with its Code of Conduct and values. The company did not describe the conduct and said it was unrelated to financial reporting, controls, customer relationships or operations. Semafor reported, citing two people briefed on the probe, that it found an inappropriate relationship with an employee. Kubasik denied through a spokesperson having a relationship with a subordinate.",
+    "sources": [
+      {
+        "label": "L3Harris press release, Aug 17 2026",
+        "url": "https://www.l3harris.com/newsroom/press-release/2026/08/l3harris-technologies-appoints-sam-mehta-proven-aerospace-and"
+      },
+      {
+        "label": "Semafor, Aug 17 2026",
+        "url": "https://www.semafor.com/article/08/17/2026/l3harris-ceo-ousted-for-relationship-with-subordinate"
+      },
+      {
+        "label": "Fortune, Aug 17 2026",
+        "url": "https://fortune.com/2026/08/17/l3harris-ceo-ousted-chris-kubasik-sam-mehta/"
+      }
+    ],
+    "primary_url": "https://www.l3harris.com/newsroom/press-release/2026/08/l3harris-technologies-appoints-sam-mehta-proven-aerospace-and",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Company confirms exit after probe but names no relationship; only Semafor (not a listed major outlet) reports one; he denies it."
+  },
+  {
+    "id": 63,
+    "company_id": "wework",
+    "executive": "Grant McGrail",
+    "role": "SVP, account sales and strategic alliances",
+    "disclosed": "2020-02",
+    "category": "Relationship with subordinate",
+    "outcome": "Resigned during investigation",
+    "evidence": "unconfirmed",
+    "summary": "Bloomberg reported in February 2020 that McGrail, a WeWork senior vice president, resigned during an internal investigation into allegations that he had a romantic relationship with a member of his team whom he had promoted. Citing people with knowledge of the matter, Bloomberg reported that WeWork had been prepared to fire him for cause. WeWork confirmed his departure but declined to comment further, according to the reporting.",
+    "sources": [
+      {
+        "label": "Bloomberg (syndicated via Benefit News), Feb/Mar 2020",
+        "url": "https://www.benefitnews.com/articles/senior-wework-executive-exits-after-improper-office-relationship"
+      },
+      {
+        "label": "Bloomberg original, Feb 24 2020",
+        "url": "https://www.bloomberg.com/news/articles/2020-02-24/senior-wework-executive-exits-after-improper-office-relationship"
+      },
+      {
+        "label": "The Real Deal, Feb 25 2020",
+        "url": "https://therealdeal.com/2020/02/25/top-wework-sales-exec-resigns-amid-office-relationship-probe"
+      }
+    ],
+    "primary_url": "https://www.benefitnews.com/articles/senior-wework-executive-exits-after-improper-office-relationship",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single source (Bloomberg) below C-suite; needs a second independent outlet."
+  },
+  {
+    "id": 64,
+    "company_id": "thinkingmachines",
+    "executive": "Barret Zoph",
+    "role": "Co-founder and CTO",
+    "disclosed": "2026-01",
+    "category": "Undisclosed relationship with junior colleague (reported)",
+    "outcome": "Terminated",
+    "evidence": "unconfirmed",
+    "summary": "Thinking Machines Lab said in January 2026 that it had parted ways with co-founder and chief technology officer Barret Zoph. The Wall Street Journal reported, citing people familiar with the matter, that the dismissal followed concerns including an undisclosed relationship with a junior colleague. Zoph told the Journal he was fired only after the company learned he was leaving and called suggestions of ethical issues false.",
+    "sources": [
+      {
+        "label": "VnExpress International relaying WSJ, Jan 22 2026",
+        "url": "https://e.vnexpress.net/news/tech/personalities/co-founder-of-12b-ai-startup-thinking-machines-fired-after-workplace-relationship-surfaced-5008732.html"
+      }
+    ],
+    "primary_url": "https://e.vnexpress.net/news/tech/personalities/co-founder-of-12b-ai-startup-thinking-machines-fired-after-workplace-relationship-surfaced-5008732.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Reasons for firing disputed; WSJ read only via secondary outlet; he denies."
+  },
+  {
+    "id": 65,
+    "company_id": "cfainstitute",
+    "executive": "John Rogers",
+    "role": "President and CEO",
+    "disclosed": "2014-05",
+    "category": "Relationship with employee",
+    "outcome": "Departed early",
+    "evidence": "reported",
+    "summary": "CFA Institute announced in March 2014 that President and CEO John Rogers would step down at the end of the fiscal year, then he left early after a board review. The Wall Street Journal reported that the board had looked into an affair between Rogers and a senior staff member. A CFA Institute spokesman told InvestmentNews that Rogers had raised a private matter with the board chair in late March, prompting a review, but declined to confirm that it involved a relationship with a co-worker.",
+    "sources": [
+      {
+        "label": "InvestmentNews, May 2014 (citing WSJ; CFA spokesman interview)",
+        "url": "https://www.investmentnews.com/practice-management/rogers-leaves-cfa-institute-under-cloud-of-alleged-affair/58170"
+      },
+      {
+        "label": "CFA Institute press release, Mar. 19, 2014 (planned departure, no reason)",
+        "url": "https://www.cfainstitute.org/about/press-room/2014/cfa-institute-announces-departure-of-president-and-ceo"
+      }
+    ],
+    "primary_url": "https://www.investmentnews.com/practice-management/rogers-leaves-cfa-institute-under-cloud-of-alleged-affair/58170",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "WSJ article not opened; institute declined to confirm a relationship."
+  },
+  {
+    "id": 66,
+    "company_id": "stryker",
+    "executive": "Stephen MacMillan",
+    "role": "Chairman, President and CEO",
+    "disclosed": "2012-02",
+    "category": "Relationship with former employee",
+    "outcome": "Resigned",
+    "evidence": "unconfirmed",
+    "summary": "Stryker announced on February 8, 2012 that Stephen MacMillan had resigned as chairman, president and CEO for family reasons. The Wall Street Journal later reported, citing people familiar with the matter, that the board had lost confidence in him over a relationship with a former employee. Stryker declined to comment on the report.",
+    "sources": [
+      {
+        "label": "Stryker press release (8-K exhibit), Feb. 8, 2012",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000310764/000031076412000030/sykexhibit021312.htm"
+      },
+      {
+        "label": "MassDevice: rumors swirl over MacMillan's departure",
+        "url": "https://www.massdevice.com/stryker-ceo-rumors-swirl-over-macmillans-departure/"
+      },
+      {
+        "label": "FierceBiotech: Was Stryker's MacMillan ousted?",
+        "url": "https://www.fiercebiotech.com/medical-devices/was-stryker-s-macmillan-ousted"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/0000310764/000031076412000030/sykexhibit021312.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Company cited family reasons; relationship rests on anonymous WSJ sources not opened."
+  },
+  {
+    "id": 67,
+    "company_id": "mets",
+    "executive": "Steve Phillips",
+    "role": "General Manager",
+    "disclosed": "1998-11",
+    "category": "Relationship with employee",
+    "outcome": "Leave of absence; reinstated",
+    "evidence": "acknowledged",
+    "summary": "Mets general manager Steve Phillips took a leave of absence in November 1998 after a former employee from the team's Florida office threatened a sexual harassment lawsuit, CBS News reported. Phillips acknowledged a brief consensual sexual relationship with her but denied harassment. He was reinstated about a week later.",
+    "sources": [
+      {
+        "label": "CBS News, Nov. 8, 1998",
+        "url": "https://www.cbsnews.com/news/mets-gm-phillips-admits-affair/"
+      },
+      {
+        "label": "CBS News: Phillips reinstated as Mets GM",
+        "url": "https://www.cbsnews.com/news/phillips-reinstated-as-mets-gm/"
+      }
+    ],
+    "primary_url": "https://www.cbsnews.com/news/mets-gm-phillips-admits-affair/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Acknowledged, but surfaced via a harassment claim; harassment exclusion may apply."
+  },
+  {
+    "id": 68,
+    "company_id": "alibaba",
+    "executive": "Jiang Fan",
+    "role": "President of Taobao and Tmall; group senior vice president",
+    "disclosed": "2020-04",
+    "category": "Alleged affair with executive of Alibaba-backed business partner",
+    "outcome": "Demoted, removed from Alibaba Partnership, bonus withdrawn",
+    "evidence": "reported",
+    "summary": "Alibaba removed Taobao and Tmall president Jiang Fan from its partnership, demoted him and withdrew his bonus in April 2020 after his wife publicly alleged an affair with a co-founder of an Alibaba-backed influencer agency. An internal investigation found no preferential treatment of that company, but faulted his handling of the matter for causing reputational damage, according to an internal memo reported by Reuters and Bloomberg.",
+    "sources": [
+      {
+        "label": "TechNode, 27 Apr 2020",
+        "url": "https://technode.com/2020/04/27/alibaba-removes-youngest-partner-jiang-fan-after-affair-goes-public/"
+      }
+    ],
+    "primary_url": "https://technode.com/2020/04/27/alibaba-removes-youngest-partner-jiang-fan-after-affair-goes-public/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Affair never acknowledged; other party not an employee; Alibaba cited handling of the matter, not a relationship policy."
+  },
+  {
+    "id": 69,
+    "company_id": "nine",
+    "executive": "Hugh Marks",
+    "role": "CEO",
+    "disclosed": "2020-11",
+    "category": "Relationship with senior executive",
+    "outcome": "Resigned",
+    "evidence": "unconfirmed",
+    "summary": "Nine Entertainment chief executive Hugh Marks announced his resignation in November 2020 as Australian media reported his relationship with a former Nine senior executive. Reports said the board had been split over whether the relationship was disclosed in a timely way, while the chairman had earlier said Marks breached no company policy.",
+    "sources": [
+      {
+        "label": "Mediaweek, 14 Nov 2020",
+        "url": "https://www.mediaweek.com.au/hugh-marks-quits-as-nine-chief-as-speculation-swirls-around-private-life"
+      }
+    ],
+    "primary_url": "https://www.mediaweek.com.au/hugh-marks-quits-as-nine-chief-as-speculation-swirls-around-private-life",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Chairman said no policy breach; disclosure-timing dispute reported only by Australian media."
+  },
+  {
+    "id": 70,
+    "company_id": "walmart",
+    "executive": "Binny Bansal",
+    "role": "Group CEO, Flipkart",
+    "disclosed": "2018-11",
+    "category": "Undisclosed consensual relationship with former employee",
+    "outcome": "Resigned",
+    "evidence": "reported",
+    "summary": "Walmart said in November 2018 that Flipkart group CEO Binny Bansal had resigned after an investigation found no evidence corroborating a complainant's allegation but identified lapses in judgment, particularly a lack of transparency. Bloomberg reported that investigators concluded he had a consensual relationship with a former employee that he had not disclosed.",
+    "sources": [
+      {
+        "label": "Bloomberg via Insurance Journal, 16 Nov 2018",
+        "url": "https://www.insurancejournal.com/news/international/2018/11/16/509450.htm"
+      }
+    ],
+    "primary_url": "https://www.insurancejournal.com/news/international/2018/11/16/509450.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Began as an assault allegation (not corroborated); relationship finding only via Bloomberg; editorial call needed."
+  },
+  {
+    "id": 71,
+    "company_id": "qbe",
+    "executive": "John Neal",
+    "role": "Group CEO",
+    "disclosed": "2017-09",
+    "category": "Undisclosed relationship with employee",
+    "outcome": "Bonus cut 20% (about A$550,000); remained CEO",
+    "evidence": "reported",
+    "summary": "QBE's 2016 annual report said some recent personal decisions by chief executive John Neal had been inconsistent with the board's expectations, and his short-term bonus was cut by about A$550,000. Media reported that the issue was a relationship with his executive assistant that he had not promptly reported as QBE's code of conduct requires. Neal remained CEO until 2018.",
+    "sources": [
+      {
+        "label": "Insurance Journal, 13 Sep 2017",
+        "url": "https://www.insurancejournal.com/news/international/2017/09/13/464078.htm"
+      }
+    ],
+    "primary_url": "https://www.insurancejournal.com/news/international/2017/09/13/464078.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Disclosure month uncertain (annual report Feb 2017, media reports later in 2017); verify before publishing."
+  },
+  {
+    "id": 72,
+    "company_id": "walmart",
+    "executive": "Julie Roehm",
+    "role": "SVP, Marketing Communications",
+    "disclosed": "2007-03",
+    "category": "Relationship with subordinate (alleged by company, denied)",
+    "outcome": "Terminated (Dec 2006)",
+    "evidence": "confirmed",
+    "summary": "Walmart fired Julie Roehm, its senior vice president of marketing communications, in December 2006. In a March 2007 court counterclaim, the company alleged that she had an inappropriate relationship with a subordinate that violated its policy against relationships between supervisors and subordinates, and cited emails between them. Roehm denied having an affair, and her lawsuit against Walmart was later dropped.",
+    "sources": [
+      {
+        "label": "NBC News, 'Wal-Mart fires back against former executive', Mar 2007",
+        "url": "https://www.nbcnews.com/id/wbna17709562"
+      },
+      {
+        "label": "Adweek, 'Wal-Mart Claims Evidence vs. Roehm'",
+        "url": "https://www.adweek.com/brand-marketing/wal-mart-claims-evidence-vs-roehm-87812/"
+      },
+      {
+        "label": "Roehm v. Wal-Mart docket (Justia)",
+        "url": "https://docs.justia.com/cases/federal/district-courts/michigan/miedce/2:2007cv10168/217618/15"
+      }
+    ],
+    "primary_url": "https://www.nbcnews.com/id/wbna17709562",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  }
+]

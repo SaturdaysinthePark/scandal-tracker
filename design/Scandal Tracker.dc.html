@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Scandal Tracker — executive relationship disclosures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f5f4f1;color:#151515;font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#b23a26}a:hover{color:#151515}
+::selection{background:#f3cfc6}
+button,input,select{font-family:inherit}
+:focus-visible{outline:2px solid #c8412b;outline-offset:2px}
+</style>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column">
+  <header style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:16px clamp(16px,3vw,40px);border-bottom:1px solid rgba(21,21,21,0.08);background:#f5f4f1;position:sticky;top:0;z-index:5">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:10px;height:10px;border-radius:50%;background:#c8412b"></div>
+      <div style="font-weight:600;font-size:16px;letter-spacing:-0.01em">Scandal Tracker</div>
+    </div>
+    <nav style="display:flex;gap:2px;background:rgba(21,21,21,0.05);border-radius:8px;padding:3px">
+      <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3">
+        <button onClick="{{ t.go }}" style="border:none;border-radius:6px;padding:6px 14px;font-size:13px;font-weight:500;cursor:pointer;background:{{ t.bg }};color:#151515;box-shadow:{{ t.shadow }}">{{ t.label }}</button>
+      </sc-for>
+    </nav>
+  </header>
+
+  <main style="flex:1;width:100%;max-width:1320px;margin:0 auto;padding:32px clamp(16px,3vw,40px) 64px;box-sizing:border-box">
+
+    <sc-if value="{{ isTimeline }}" hint-placeholder-val="{{ true }}">
+      <section style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px">
+        <div style="max-width:560px">
+          <h1 style="margin:0 0 8px;font-size:clamp(28px,3.4vw,40px);font-weight:600;letter-spacing:-0.025em;line-height:1.05">Executives brought down by workplace relationships</h1>
+          <p style="margin:0;font-size:14px;line-height:1.55;color:#6e6b66;text-wrap:pretty">Each dot is one publicly disclosed relationship involving a senior executive, placed by the month it became public. Click a dot for the details and sources.</p>
+        </div>
+        <div style="display:flex;gap:32px">
+          <sc-for list="{{ stats }}" as="s" hint-placeholder-count="3">
+            <div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:500;letter-spacing:-0.02em;line-height:1">{{ s.value }}</div>
+              <div style="font-size:12px;color:#6e6b66;margin-top:6px">{{ s.label }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <div style="display:flex;gap:2px;background:rgba(21,21,21,0.05);border-radius:8px;padding:3px">
+            <sc-for list="{{ scopes }}" as="s" hint-placeholder-count="4">
+              <button onClick="{{ s.go }}" style="border:none;border-radius:6px;padding:5px 11px;font-size:12px;font-weight:500;cursor:pointer;background:{{ s.bg }};color:#151515;box-shadow:{{ s.shadow }}">{{ s.label }}</button>
+            </sc-for>
+          </div>
+          <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer;color:#3d3b38"><input type="checkbox" checked="{{ showU }}" onChange="{{ toggleU }}" style="accent-color:#c8412b;margin:0">Unconfirmed reports</label>
+          <label style="display:flex;align-items:center;gap:6px;font-size:13px;cursor:pointer;color:#3d3b38"><input type="checkbox" checked="{{ showZero }}" onChange="{{ toggleZero }}" style="accent-color:#c8412b;margin:0">Companies with none</label>
+        </div>
+        <div style="display:flex;align-items:center;gap:6px">
+          <button onClick="{{ back }}" disabled="{{ cantBack }}" aria-label="Earlier years" style="width:30px;height:30px;border-radius:6px;border:1px solid rgba(21,21,21,0.14);background:#fff;cursor:pointer;font-size:15px;color:#151515" style-hover="border-color:#151515">‹</button>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;min-width:92px;text-align:center;color:#3d3b38">{{ rangeLabel }}</div>
+          <button onClick="{{ fwd }}" disabled="{{ cantFwd }}" aria-label="Later years" style="width:30px;height:30px;border-radius:6px;border:1px solid rgba(21,21,21,0.14);background:#fff;cursor:pointer;font-size:15px;color:#151515" style-hover="border-color:#151515">›</button>
+        </div>
+      </div>
+
+      <div style="background:#fff;border:1px solid rgba(21,21,21,0.08);border-radius:12px;overflow-x:auto">
+        <div style="min-width:760px">
+          <div style="display:grid;grid-template-columns:168px 1fr 64px;border-bottom:1px solid rgba(21,21,21,0.08)">
+            <div style="padding:16px 20px;font-size:12px;color:#6e6b66;display:flex;align-items:flex-end;position:sticky;left:0;background:#fff;z-index:2">Per year</div>
+            <div style="display:flex;align-items:flex-end;height:76px;padding-top:12px">
+              <sc-for list="{{ hist }}" as="b" hint-placeholder-count="20">
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;height:100%">
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#6e6b66">{{ b.label }}</div>
+                  <div style="width:50%;max-width:18px;height:{{ b.h }};background:{{ b.color }};border-radius:2px 2px 0 0"></div>
+                </div>
+              </sc-for>
+            </div>
+            <div></div>
+          </div>
+          <div style="display:grid;grid-template-columns:168px 1fr 64px;border-bottom:1px solid rgba(21,21,21,0.08)">
+            <div style="padding:8px 20px;font-size:11px;color:#6e6b66;position:sticky;left:0;background:#fff;z-index:2">Company</div>
+            <div style="display:flex">
+              <sc-for list="{{ hist }}" as="b" hint-placeholder-count="20">
+                <div style="flex:1;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#6e6b66;padding:8px 0">{{ b.year }}</div>
+              </sc-for>
+            </div>
+            <div style="padding:8px 20px 8px 0;font-size:11px;color:#6e6b66;text-align:right">Total</div>
+          </div>
+          <sc-for list="{{ rows }}" as="r" hint-placeholder-count="10">
+            <div style="display:grid;grid-template-columns:168px 1fr 64px;border-bottom:1px solid rgba(21,21,21,0.06);background:#fff" style-hover="background:#faf9f7">
+              <div style="padding:0 20px;height:40px;display:flex;align-items:center;position:sticky;left:0;background:inherit;z-index:2;font-size:14px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.name }}</div>
+              <div style="display:flex">
+                <sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="20">
+                  <div style="flex:1;min-width:0;border-left:1px solid rgba(21,21,21,0.05);display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:3px;padding:4px 2px">
+                    <sc-for list="{{ c.dots }}" as="d" hint-placeholder-count="0">
+                      <button onClick="{{ d.open }}" title="{{ d.title }}" aria-label="{{ d.title }}" style="width:9px;height:9px;border-radius:50%;padding:0;cursor:pointer;flex:none;background:{{ d.bg }};border:{{ d.border }};box-sizing:border-box" style-hover="transform:scale(1.4)"></button>
+                    </sc-for>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:flex-end;gap:6px;padding-right:20px;border-left:1px solid rgba(21,21,21,0.08)">
+                <sc-if value="{{ r.hasEarlier }}" hint-placeholder-val="{{ false }}">
+                  <div title="Earlier records outside this range" style="font-size:10px;color:#8a8680">+{{ r.earlier }}‹</div>
+                </sc-if>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:{{ r.countColor }}">{{ r.count }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-top:14px;font-size:12px;color:#6e6b66">
+        <div style="display:flex;align-items:center;gap:6px"><div style="width:9px;height:9px;border-radius:50%;background:#c8412b"></div>Confirmed or acknowledged</div>
+        <div style="display:flex;align-items:center;gap:6px"><div style="width:9px;height:9px;box-sizing:border-box;border-radius:50%;border:1.5px solid #c8412b"></div>Reported, unconfirmed</div>
+        <div style="margin-left:auto">{{ coverageNote }}</div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isRecords }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:20px">
+        <h1 style="margin:0;font-size:32px;font-weight:600;letter-spacing:-0.02em">All records</h1>
+        <input value="{{ q }}" onChange="{{ setQ }}" placeholder="Search company, executive, keyword" style="flex:0 1 320px;padding:9px 12px;border:1px solid rgba(21,21,21,0.14);border-radius:8px;background:#fff;font-size:14px;color:#151515">
+      </div>
+      <div style="background:#fff;border:1px solid rgba(21,21,21,0.08);border-radius:12px;overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:14px;min-width:760px">
+          <thead>
+            <tr style="text-align:left;border-bottom:1px solid rgba(21,21,21,0.08)">
+              <th style="padding:12px 20px;font-weight:500;font-size:12px;color:#6e6b66">Disclosed</th>
+              <th style="padding:12px;font-weight:500;font-size:12px;color:#6e6b66">Company</th>
+              <th style="padding:12px;font-weight:500;font-size:12px;color:#6e6b66">Executive</th>
+              <th style="padding:12px;font-weight:500;font-size:12px;color:#6e6b66">Category</th>
+              <th style="padding:12px;font-weight:500;font-size:12px;color:#6e6b66">Outcome</th>
+              <th style="padding:12px 20px 12px 12px;font-weight:500;font-size:12px;color:#6e6b66">Evidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <sc-for list="{{ list }}" as="r" hint-placeholder-count="8">
+              <tr onClick="{{ r.open }}" style="border-bottom:1px solid rgba(21,21,21,0.06);cursor:pointer" style-hover="background:#faf9f7">
+                <td style="padding:12px 20px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6e6b66;white-space:nowrap">{{ r.dateLabel }}</td>
+                <td style="padding:12px;font-weight:500">{{ r.company }}</td>
+                <td style="padding:12px"><div>{{ r.exec }}</div><div style="font-size:12px;color:#8a8680">{{ r.role }}</div></td>
+                <td style="padding:12px;color:#3d3b38">{{ r.category }}</td>
+                <td style="padding:12px;color:#3d3b38">{{ r.outcome }}</td>
+                <td style="padding:12px 20px 12px 12px"><div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#3d3b38;white-space:nowrap"><div style="width:8px;height:8px;border-radius:50%;flex:none;background:{{ r.dotBg }};border:{{ r.dotBorder }}"></div>{{ r.evidence }}</div></td>
+              </tr>
+            </sc-for>
+          </tbody>
+        </table>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+      <article style="max-width:680px;display:flex;flex-direction:column;gap:28px">
+        <h1 style="margin:0;font-size:32px;font-weight:600;letter-spacing:-0.02em">About the data</h1>
+        <sc-for list="{{ about }}" as="sec" hint-placeholder-count="4">
+          <section style="display:flex;flex-direction:column;gap:10px">
+            <h2 style="margin:0;font-size:15px;font-weight:600">{{ sec.title }}</h2>
+            <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:14px;line-height:1.6;color:#3d3b38">
+              <sc-for list="{{ sec.items }}" as="it" hint-placeholder-count="3"><li style="text-wrap:pretty">{{ it }}</li></sc-for>
+            </ul>
+          </section>
+        </sc-for>
+      </article>
+    </sc-if>
+  </main>
+
+  <sc-if value="{{ hasSel }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ close }}" style="position:fixed;inset:0;background:rgba(21,21,21,0.25);z-index:10"></div>
+    <aside style="position:fixed;top:0;right:0;bottom:0;width:min(460px,100%);background:#fff;z-index:11;box-shadow:-12px 0 40px rgba(21,21,21,0.12);overflow-y:auto;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px">
+        <div>
+          <div style="font-size:12px;color:#6e6b66">{{ sel.company }} · {{ sel.dateLabel }}</div>
+          <div style="font-size:26px;font-weight:600;letter-spacing:-0.02em;line-height:1.15;margin-top:6px">{{ sel.exec }}</div>
+          <div style="font-size:14px;color:#6e6b66;margin-top:2px">{{ sel.role }}</div>
+        </div>
+        <button onClick="{{ close }}" aria-label="Close" style="border:1px solid rgba(21,21,21,0.14);background:#fff;border-radius:8px;width:32px;height:32px;cursor:pointer;font-size:16px;color:#151515;flex:none">×</button>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;gap:6px;font-size:12px;padding:4px 10px;border-radius:20px;background:#f5f4f1"><div style="width:8px;height:8px;border-radius:50%;background:{{ sel.dotBg }};border:{{ sel.dotBorder }}"></div>{{ sel.evidence }}</div>
+        <div style="font-size:12px;padding:4px 10px;border-radius:20px;background:#f5f4f1">{{ sel.category }}</div>
+        <div style="font-size:12px;padding:4px 10px;border-radius:20px;background:#f5f4f1">{{ sel.outcome }}</div>
+      </div>
+      <p style="margin:0;font-size:14px;line-height:1.65;color:#2a2826">{{ sel.summary }}</p>
+      <div style="border-top:1px solid rgba(21,21,21,0.08);padding-top:16px">
+        <sc-if value="{{ sel.hasUrl }}" hint-placeholder-val="{{ false }}"><a href="{{ sel.url }}" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;border:1px solid rgba(21,21,21,0.12);border-radius:8px;text-decoration:none;color:#151515;margin-bottom:16px" style-hover="border-color:#c8412b">
+          <div><div style="font-size:13px;font-weight:500">{{ sel.urlLabel }}</div><div style="font-size:12px;color:#6e6b66;font-family:'IBM Plex Mono',monospace">{{ sel.urlHost }}</div></div>
+          <div style="font-size:16px;color:#c8412b">↗</div>
+        </a></sc-if>
+        <div style="font-size:12px;color:#6e6b66;margin-bottom:8px">Sources</div>
+        <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px;font-size:13px;color:#3d3b38">
+          <sc-for list="{{ sel.sources }}" as="s" hint-placeholder-count="2"><li>{{ s }}</li></sc-for>
+        </ul>
+      </div>
+    </aside>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;defaultView&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;timeline&quot;,&quot;records&quot;,&quot;about&quot;],&quot;default&quot;:&quot;timeline&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;windowYears&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;10&quot;,&quot;20&quot;,&quot;30&quot;],&quot;default&quot;:&quot;20&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;includeUnconfirmed&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;showEmptyCompanies&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;}}">
+const COMPANIES = [
+  { id:'apple', name:'Apple', ticker:'AAPL', sector:'Technology' },
+  { id:'microsoft', name:'Microsoft', ticker:'MSFT', sector:'Technology' },
+  { id:'nvidia', name:'Nvidia', ticker:'NVDA', sector:'Semiconductors' },
+  { id:'ibm', name:'IBM', ticker:'IBM', sector:'Technology' },
+  { id:'alphabet', name:'Alphabet', ticker:'GOOGL', sector:'Technology' },
+  { id:'meta', name:'Meta', ticker:'META', sector:'Technology' },
+  { id:'amazon', name:'Amazon', ticker:'AMZN', sector:'Retail / Cloud' },
+  { id:'walmart', name:'Walmart', ticker:'WMT', sector:'Retail' },
+  { id:'intel', name:'Intel', ticker:'INTC', sector:'Semiconductors' },
+  { id:'boeing', name:'Boeing', ticker:'BA', sector:'Aerospace & Defense' },
+  { id:'hp', name:'HP', ticker:'HPQ', sector:'Technology' },
+  { id:'bestbuy', name:'Best Buy', ticker:'BBY', sector:'Retail' },
+  { id:'lockheed', name:'Lockheed Martin', ticker:'LMT', sector:'Aerospace & Defense' },
+  { id:'mcdonalds', name:"McDonald's", ticker:'MCD', sector:'Food Service' },
+  { id:'kohls', name:"Kohl's", ticker:'KSS', sector:'Retail' },
+  { id:'booking', name:'Booking Holdings', ticker:'BKNG', sector:'Travel' },
+  { id:'att', name:'AT&T (WarnerMedia)', ticker:'T', sector:'Telecom & Media' },
+  { id:'bp', name:'BP', ticker:'BP', sector:'Energy', list:'Global 500' },
+  { id:'nestle', name:'Nestlé', ticker:'NESN', sector:'Consumer Goods', list:'Global 500' },
+  { id:'norfolk', name:'Norfolk Southern', ticker:'NSC', sector:'Rail' },
+  { id:'comcast', name:'Comcast (NBCUniversal)', ticker:'CMCSA', sector:'Telecom & Media' },
+  { id:'cboe', name:'Cboe Global Markets', ticker:'CBOE', sector:'Exchanges', list:'Other notable' },
+  { id:'helios', name:'Helios Technologies', ticker:'HLIO', sector:'Industrial', list:'Other notable' },
+  { id:'rbc', name:'Royal Bank of Canada', ticker:'RY', sector:'Banking', list:'Other notable' },
+  { id:'wwe', name:'WWE', ticker:'WWE', sector:'Media & Entertainment', list:'Other notable' },
+  { id:'kemet', name:'KEMET', ticker:'KEM', sector:'Electronic Components', list:'Other notable' },
+  { id:'igate', name:'iGATE', ticker:'IGTE', sector:'IT Services', list:'Other notable' },
+  { id:'lululemon', name:'Lululemon', ticker:'LULU', sector:'Apparel', list:'Other notable' },
+  { id:'ares', name:'Ares Management', ticker:'ARES', sector:'Asset Management', list:'Other notable' },
+  { id:'astronomer', name:'Astronomer', ticker:'Private', sector:'Data Software', list:'Other notable' },
+].map(c => ({ list:'Fortune 500', ...c }));
+const EV = { confirmed:'Company-confirmed', acknowledged:'Publicly acknowledged', reported:'Reported, investigation confirmed', unconfirmed:'Reported, unconfirmed' };
+const ALL_RECORDS = [
+  { id:30, co:'lululemon', exec:'Laurent Potdevin', role:'CEO', date:'2018-02', category:'Relationship with subordinate', outcome:'Resigned', ev:'reported', summary:'Lululemon said he resigned as CEO and director because he “fell short” of its standards of conduct. CNBC and CBC, citing sources, reported that the reasons included a years-long relationship with a designer at the company, who later worked as a contractor. He received about $5m under a separation agreement.', sources:['Lululemon press release (SEC exhibit 99.1), February 5, 2018','CNBC, February 6, 2018','CBC News, February 2018'] },
+  { id:31, co:'ares', exec:'Michael McFerran', role:'CFO & COO', date:'2021-08', category:'Relationships with employees', outcome:'Terminated, forfeited >$50m', ev:'confirmed', summary:'Ares fired him after an outside-counsel investigation found inappropriate personal relationships and interactions with certain employees, in violation of company policies and his agreements. He forfeited all future compensation and unvested awards, including special equity worth over $50m. The company said it was unrelated to operations or financial controls.', sources:['Ares Management SEC 8-K, August 2021'] },
+  { id:26, co:'kemet', exec:'Per-Olof Loof', role:'CEO', date:'2018-12', category:'Relationship with employee', outcome:'Resigned, no severance', ev:'confirmed', summary:'He resigned as CEO and director after a board investigation, supported by an outside law firm, into a consensual relationship with an employee and related actions that went against company policy. The company said the matter did not involve operations or financial statements, and that he would get no severance and would forfeit his unvested equity.', sources:['KEMET SEC 8-K and press release, December 2018'] },
+  { id:27, co:'igate', exec:'Phaneesh Murthy', role:'President & CEO', date:'2013-05', category:'Relationship with subordinate', outcome:'Terminated', ev:'confirmed', summary:'The board terminated his contract after outside counsel found he had a relationship with a subordinate and failed to report it, violating his contract and company policy. iGATE said the investigation had not found a harassment-policy violation. Murthy acknowledged the relationship but disputed the company’s account of the disclosure, and later sued.', sources:['iGATE press release, May 20, 2013'] },
+  { id:28, co:'bp', exec:'Murray Auchincloss', role:'CFO, then CEO', date:'2023-09', category:'Relationship with colleague (disclosed)', outcome:'No company action', ev:'confirmed', summary:'After Looney’s exit, The Times reported that his successor was also in a relationship with a BP colleague. BP said the relationship had been fully and appropriately disclosed and did not breach its code of conduct. It is included as an example of a disclosed relationship that led to no action.', sources:['The Times, September 2023','BP spokesperson statement, September 2023'] },
+  { id:29, co:'alphabet', exec:'Sergey Brin', role:'Co-founder', date:'2013-08', category:'Extramarital relationship with employee', outcome:'No company action', ev:'unconfirmed', summary:'Media outlets widely reported in 2013 that he was in a relationship with a Google employee while still married. He and his wife separated that year. Neither Brin nor Google confirmed the reports, and the employee is not named here.', sources:['Multiple outlets, August 2013'] },
+  { id:19, co:'norfolk', exec:'Alan Shaw', role:'President & CEO', date:'2024-09', category:'Relationship with subordinate', outcome:'Terminated for cause', ev:'confirmed', summary:'He was fired after a board investigation found a consensual relationship with the company’s chief legal officer, in violation of company policy. The board said it did not affect the company’s financial reporting.', sources:['Norfolk Southern statement and SEC 8-K, September 2024'] },
+  { id:20, co:'comcast', exec:'Jeff Shell', role:'CEO, NBCUniversal', date:'2023-04', category:'Relationship with employee', outcome:'Terminated', ev:'acknowledged', summary:'He was ousted after an investigation by outside counsel into a complaint from a woman at the company. Shell acknowledged he had had an inappropriate relationship with her and apologized.', sources:['Comcast statement, April 2023','Shell statement, April 2023'] },
+  { id:21, co:'cboe', exec:'Edward Tilly', role:'Chairman, President & CEO', date:'2023-09', category:'Undisclosed relationships with colleagues', outcome:'Resigned', ev:'confirmed', summary:'He resigned after a board investigation found he had failed to disclose personal relationships with colleagues, in violation of company policy.', sources:['Cboe statement, September 2023'] },
+  { id:22, co:'helios', exec:'Josef Matosevic', role:'President & CEO', date:'2024-07', category:'Relationship with employee', outcome:'Terminated', ev:'confirmed', summary:'The company replaced him after an investigation into a consensual relationship with an employee that violated its code of conduct.', sources:['Helios Technologies statement, July 2024'] },
+  { id:23, co:'rbc', exec:'Nadine Ahn', role:'CFO', date:'2024-04', category:'Undisclosed relationship with colleague', outcome:'Terminated (disputed in court)', ev:'confirmed', summary:'The bank fired her after an investigation found an undisclosed close personal relationship with another executive that it said led to preferential treatment. Both executives deny a romantic relationship, and Ahn sued for wrongful dismissal.', sources:['RBC press release, April 2024','RBC counterclaim, Ontario Superior Court, August 2024'] },
+  { id:24, co:'alphabet', exec:'Andy Rubin', role:'SVP, creator of Android', date:'2018-10', category:'Relationship with subordinate', outcome:'Had departed 2014 (reported $90m exit)', ev:'reported', summary:'The New York Times reported that Google investigated a misconduct claim from an employee he had a relationship with, found it credible, and still gave him a $90m exit package in 2014. Rubin denied the misconduct allegation. The report preceded a worldwide employee walkout.', sources:['New York Times, October 25, 2018','Alphabet shareholder litigation, 2019–2020'] },
+  { id:25, co:'wwe', exec:'Vince McMahon', role:'Chairman & CEO', date:'2022-06', category:'Relationship with employee', outcome:'Retired July 2022', ev:'confirmed', summary:'A board investigation examined millions in undisclosed payments to settle claims from a former employee he had had a relationship with, along with other women. He stepped back and retired in July 2022. The company later restated its financials to record the payments.', sources:['Wall Street Journal, June 2022','WWE SEC filings, 2022'] },
+  { id:16, co:'astronomer', exec:'Andy Byron', role:'CEO', date:'2025-07', category:'Relationship with subordinate', outcome:'Resigned', ev:'confirmed', summary:'A concert "kiss cam" video that went viral appeared to show him with the company’s head of HR. Astronomer put him on leave, opened a board investigation, and announced his resignation days later, saying leaders are expected to set the standard for conduct and accountability.', sources:['Astronomer statements, July 2025'] },
+  { id:17, co:'bp', exec:'Bernard Looney', role:'CEO', date:'2023-09', category:'Undisclosed relationships with colleagues', outcome:'Resigned', ev:'confirmed', summary:'He resigned after admitting he had not been fully transparent about past personal relationships with colleagues. BP later withheld about $40m of his pay, saying he had knowingly given the board inaccurate information.', sources:['BP statement, September 2023','BP announcement on remuneration, December 2023'] },
+  { id:18, co:'nestle', exec:'Laurent Freixe', role:'CEO', date:'2025-09', category:'Relationship with subordinate', outcome:'Terminated', ev:'confirmed', summary:'He was dismissed after an investigation found an undisclosed romantic relationship with a direct subordinate, in breach of Nestlé’s code of business conduct.', sources:['Nestlé press release, September 2025'] },
+  { id:10, co:'nvidia', exec:'Jensen Huang', role:'Co-founder, President & CEO', date:'2026-11', category:'Extramarital relationship (business counterparty)', outcome:'Resigned', ev:'acknowledged', summary:'On October 29 the New York Times reported a close relationship with an executive at Megaspeed, a Singapore data-center company that bought Nvidia chips and whom U.S. intelligence suspected of working for China. On November 8 Huang admitted to employees that he had been unfaithful to his wife. The board opened an independent probe, and he resigned as CEO and director on November 12. CFO Colette Kress is interim CEO.', sources:['New York Times, October 29, 2026','Huang message to employees, November 8, 2026 (via Financial Times)','Nvidia board statement, November 2026'] },
+  { id:11, co:'nvidia', exec:'Jensen Huang', role:'Co-founder, President & CEO', date:'2026-11', category:'Relationship with subordinate', outcome:'Resigned', ev:'unconfirmed', summary:'On November 11 the New York Times reported a second affair, with an Nvidia vice president who reported to him. Neither Nvidia, Huang nor the employee has confirmed it. He resigned the next day. The other person is not named here, under our policy.', sources:['New York Times, November 11, 2026'] },
+  { id:12, co:'nvidia', exec:'Jensen Huang', role:'Co-founder, President & CEO', date:'2026-11', category:'Relationship with employee', outcome:'Resigned', ev:'unconfirmed', summary:'On November 12 Reuters reported, citing two people familiar with the matter, a separate relationship with another Nvidia employee. Reuters withheld her name. The report is unconfirmed by Nvidia or Huang.', sources:['Reuters, November 12, 2026'] },
+  { id:13, co:'booking', exec:'Darren Huston', role:'President & CEO', date:'2016-04', category:'Relationship with employee', outcome:'Resigned at board request', ev:'confirmed', summary:'He resigned after a board investigation found a personal relationship with an employee. The board said it violated the company code of conduct.', sources:['Priceline Group press release, April 2016'] },
+  { id:14, co:'alphabet', exec:'David Drummond', role:'Chief Legal Officer', date:'2018-08', category:'Relationship with subordinate', outcome:'Departed Jan 2020', ev:'acknowledged', summary:'He acknowledged a past relationship with a subordinate in the legal department after she wrote about it publicly. He retired from Alphabet in January 2020, amid shareholder litigation over how executive misconduct was handled.', sources:['Drummond public statement, August 2018','Alphabet announcement, January 2020'] },
+  { id:15, co:'att', exec:'Jeff Zucker', role:'President, CNN / WarnerMedia chair of news & sports', date:'2022-02', category:'Undisclosed relationship with colleague', outcome:'Resigned', ev:'acknowledged', summary:'He resigned after acknowledging that he had not disclosed a consensual relationship with a close colleague, as an internal investigation had turned up. WarnerMedia was owned by AT&T at the time.', sources:['Zucker memo to CNN staff, February 2022'] },
+  { id:1, co:'boeing', exec:'Harry Stonecipher', role:'President & CEO', date:'2005-03', category:'Relationship with subordinate', outcome:'Resigned at board request', ev:'confirmed', summary:'The board asked him to resign after an internal review found a consensual relationship with a female executive. The board said this violated the company code of conduct he had championed.', sources:['Boeing board statement, March 2005'] },
+  { id:2, co:'hp', exec:'Mark Hurd', role:'Chairman & CEO', date:'2010-08', category:'Relationship with contractor', outcome:'Resigned', ev:'confirmed', summary:'He resigned after an investigation into a personal relationship with a marketing contractor. HP said it found no harassment-policy violation but did find inaccurate expense reports, which breached its standards of business conduct.', sources:['HP press release, August 2010'] },
+  { id:3, co:'bestbuy', exec:'Brian Dunn', role:'CEO', date:'2012-04', category:'Relationship with employee', outcome:'Resigned', ev:'confirmed', summary:'He resigned during an audit committee investigation. The committee later reported an extremely close personal relationship with a female employee that it said was a policy violation.', sources:['Best Buy announcement, April 2012','Audit committee findings, May 2012'] },
+  { id:4, co:'lockheed', exec:'Christopher Kubasik', role:'President & COO (CEO-elect)', date:'2012-11', category:'Relationship with subordinate', outcome:'Resigned at board request', ev:'confirmed', summary:'The board asked him to resign after an ethics investigation confirmed a close personal relationship with a subordinate employee. This was weeks before he was due to become CEO.', sources:['Lockheed Martin statement, November 2012'] },
+  { id:5, co:'intel', exec:'Brian Krzanich', role:'CEO', date:'2018-06', category:'Relationship with employee', outcome:'Resigned', ev:'confirmed', summary:'He resigned after Intel learned of a past consensual relationship with an employee. That violated a non-fraternization policy covering all managers.', sources:['Intel statement, June 2018'] },
+  { id:6, co:'amazon', exec:'Jeff Bezos', role:'Founder & CEO', date:'2019-01', category:'Extramarital relationship (non-employee)', outcome:'No company action', ev:'acknowledged', summary:'The relationship became public alongside his announced divorce. No employee was involved and Amazon took no governance action. It is listed because it was publicly acknowledged by the executive.', sources:['Joint statement by Jeff and MacKenzie Bezos, January 2019'] },
+  { id:7, co:'mcdonalds', exec:'Steve Easterbrook', role:'President & CEO', date:'2019-11', category:'Relationship with employee', outcome:'Terminated', ev:'confirmed', summary:'He was removed after the board found a consensual relationship with an employee that breached company policy. In 2020 the company sued him, alleging further undisclosed relationships, and later reached a settlement.', sources:["McDonald's SEC filing, November 2019",'Delaware Chancery complaint, August 2020'] },
+  { id:8, co:'microsoft', exec:'Bill Gates', role:'Co-founder & board member', date:'2021-05', category:'Relationship with employee (historical)', outcome:'Had left board in 2020', ev:'reported', summary:'Reporting in 2021 described a board review, begun in 2019, of a relationship with an employee around 2000. Microsoft confirmed it had investigated. A spokesperson for Gates said his 2020 board departure was unrelated.', sources:['Wall Street Journal, May 2021','Microsoft spokesperson statement, May 2021'] },
+  { id:9, co:'kohls', exec:'Ashley Buchanan', role:'CEO', date:'2025-05', category:'Undisclosed relationship / conflict of interest', outcome:'Terminated for cause', ev:'confirmed', summary:'He was dismissed after an audit committee investigation found he directed business to a vendor founded by someone he had a personal relationship with, and failed to disclose it.', sources:["Kohl's SEC 8-K filing, May 2025"] },
+];
+
+const URLS = {
+  1:'https://www.cbc.ca/news/business/boeing-ceo-fired-over-affair-with-co-worker-1.547006',
+  5:'https://techcrunch.com/?p=1660794',
+  7:'https://www.forbes.com/sites/jackkelly/2021/12/16/the-story-behind-mcdonalds-former-ceo-returning-over-105-million-to-settle-a-dispute-over-allegations-of-multiple-consensual-sexual-activities/',
+  9:'https://www.nytimes.com/2025/05/01/us/kohls-ceo-fired.html',
+  10:'https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-resigns-reports-extramarital-relationships-rcna608402',
+  11:'https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/',
+  12:'https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/',
+  15:'https://www.pbs.org/newshour/politics/cnn-president-jeff-zucker-resigns-admitting-consensual-relationship-with-co-worker',
+  17:'https://www.theguardian.com/business/2023/sep/12/bp-boss-bernard-looney-to-resign-after-failing-to-reveal-ties-with-colleagues',
+  18:'https://www.cnn.com/2025/09/01/business/nestle-ceo-code-of-conduct-breach',
+  19:'https://www.bnnbloomberg.ca/business/company-news/2024/09/13/ceos-fired-for-office-affairs-are-rarer-than-you-think/',
+  21:'https://fortune.com/2023/09/20/cboe-ceo-edward-tilly-resigns-ousted-undisclosed-relationships-looney-bp-easterbrook-mcdonalds',
+  23:'https://www.cnbc.com/2024/04/07/royal-bank-of-canada-fires-cfo-over-undisclosed-relationship.html',
+  26:'https://www.sec.gov/Archives/edgar/data/887730/000110465918074448/a18-41997_18k.htm',
+  27:'https://www.aol.com/2013/05/21/igate-fires-ceo-for-not-reporting-relationship-wit/',
+  28:'https://www.thetimes.com/article/looneys-replacement-at-bp-also-in-relationship-with-colleague-wpm8t0nvz',
+  30:'https://www.sec.gov/Archives/edgar/data/1397187/000139718718000005/lulu-20180202xex991.htm',
+  31:'https://www.sec.gov/Archives/edgar/data/1176948/000110465921102120/tm2124522d1_8k.htm',
+};
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const fmt = d => { const [y,m] = d.split('-'); return MONTHS[+m-1] + ' ' + y; };
+const LAST_YEAR = 2026, MIN_YEAR = 1990, STEP = 5;
+const ACCENT = '#c8412b';
+const ABOUT = [
+  { title:'What counts', items:[
+    'Romantic or sexual relationships involving senior executives (C-suite, named officers, board members) that broke company policy: relationships with subordinates, employees, contractors or vendors, or ones they failed to disclose.',
+    'Extramarital relationships with no workplace connection appear only when the executive acknowledged them publicly.',
+    'Harassment and assault allegations are tracked separately and are not shown here.',
+  ]},
+  { title:'Evidence tiers', items:[
+    'Company-confirmed: a filing, press release or board statement.',
+    'Publicly acknowledged: the executive’s own statement.',
+    'Reported, investigation confirmed: reporting from major outlets, with the company confirming that it investigated.',
+    'Reported, unconfirmed: one major outlet with described sourcing. Shown as a hollow dot and can be hidden.',
+    'The other person is never named unless they are a public figure on the record.',
+  ]},
+  { title:'Coverage', items:[
+    'This dataset is incomplete. Cases like these are rare (fewer than 2% of CEO exits involve misconduct), so per-company and per-year counts are small. Treat them as a record of known cases, not a trend line.',
+    'Dates show when a relationship became public, not when it happened.',
+  ]},
+  { title:'Research backlog', items:[
+    'Scan SEC 8-K Item 5.02 filings (officer departures) for every Fortune 500 company since 2000, and flag any that mention code-of-conduct, personal-relationship or policy language.',
+    'Cross-check against exec-departure trackers and news archives (Reuters, WSJ, Bloomberg, FT) for C-suite exits below CEO level, such as CFOs, presidents and division heads.',
+    'Add Fortune Global 500 companies outside the US, which disclose under different rules.',
+  ]},
+];
+
+class Component extends DCLogic {
+  state = { view:null, shift:0, showU:null, showZero:null, scope:'All', sel:null, q:'' };
+
+  renderVals() {
+    const p = this.props, s = this.state, set = o => this.setState(o);
+    const view = s.view ?? p.defaultView ?? 'timeline';
+    const showU = s.showU ?? p.includeUnconfirmed ?? true;
+    const showZero = s.showZero ?? p.showEmptyCompanies ?? false;
+    const win = Number(p.windowYears ?? 20);
+    const endY = LAST_YEAR - s.shift, startY = endY - win + 1, span = win;
+    const inScope = c => s.scope === 'All' || c.list === s.scope;
+    const coById = Object.fromEntries(COMPANIES.map(c => [c.id, c]));
+    const solid = r => r.ev !== 'unconfirmed';
+    const deco = r => ({ ...r, company: coById[r.co].name, dateLabel: fmt(r.date), evidence: EV[r.ev],
+      dotBg: solid(r) ? ACCENT : 'transparent', dotBorder: solid(r) ? 'none' : '1.5px solid ' + ACCENT,
+      open: () => set({ sel: r.id }),
+      ...(() => { const NON_SEC = ['astronomer','bp','nestle','rbc'];
+        const u = URLS[r.id] || (NON_SEC.includes(r.co) ? '' : 'https://www.sec.gov/edgar/search/#/q=%22' + encodeURIComponent(r.exec) + '%22&forms=8-K');
+        return { url: u, hasUrl: !!u, urlLabel: URLS[r.id] ? (u.includes('sec.gov') ? 'SEC filing' : 'Primary report') : 'Search SEC filings for this executive',
+          urlHost: u ? new URL(u).hostname.replace('www.','') : '' }; })() });
+    const RECS = ALL_RECORDS.filter(r => (showU || solid(r)) && inScope(coById[r.co]))
+      .sort((a,b) => b.date.localeCompare(a.date)).map(deco);
+    const yr = r => +r.date.slice(0,4);
+
+    const rows = COMPANIES.filter(inScope).map(c => {
+      const recs = RECS.filter(r => r.co === c.id);
+      const inWin = recs.filter(r => yr(r) >= startY && yr(r) <= endY);
+      const cells = []; for (let y = startY; y <= endY; y++) cells.push({ dots: inWin.filter(r => yr(r) === y).sort((x,z) => x.date.localeCompare(z.date)).map(r => ({
+        bg: r.dotBg, border: solid(r) ? 'none' : '1.5px solid ' + ACCENT, title: r.exec + ' · ' + r.dateLabel + ' · ' + r.evidence, open: r.open })) });
+      const earlier = recs.filter(r => yr(r) < startY).length;
+      return { name: c.name, meta: c.list + ' · ' + c.sector, count: recs.length || '–',
+        countColor: recs.length ? '#151515' : '#c4c0ba', n: recs.length, latest: recs[0]?.date || '',
+        cells, earlier, hasEarlier: earlier > 0 };
+    }).filter(r => showZero || r.n).sort((a,b) => b.n - a.n || b.latest.localeCompare(a.latest) || a.name.localeCompare(b.name));
+
+    const years = []; for (let y = startY; y <= endY; y++) years.push(y);
+    const perYear = years.map(y => RECS.filter(r => yr(r) === y).length);
+    const max = Math.max(1, ...perYear);
+    const hist = years.map((y,i) => ({ year: "'" + String(y).slice(2), label: perYear[i] || '',
+      h: perYear[i] ? Math.max(4, perYear[i] / max * 44) + 'px' : '1px', color: perYear[i] ? ACCENT : 'rgba(21,21,21,0.12)' }));
+
+    const q = s.q.toLowerCase();
+    const list = RECS.filter(r => !q || (r.company + r.exec + r.category + r.summary).toLowerCase().includes(q));
+    const sel = RECS.find(r => r.id === s.sel) || ALL_RECORDS.map(deco).find(r => r.id === s.sel);
+    const pill = on => ({ bg: on ? '#fff' : 'transparent', shadow: on ? '0 1px 2px rgba(21,21,21,0.12)' : 'none' });
+    const withRec = new Set(RECS.map(r => r.co)).size;
+
+    return {
+      tabs: [['timeline','Timeline'],['records','Records'],['about','About']].map(([k,l]) => ({ label:l, go: () => set({ view:k }), ...pill(view===k) })),
+      isTimeline: view==='timeline', isRecords: view==='records', isAbout: view==='about',
+      stats: [
+        { value: RECS.length, label: 'Disclosures' },
+        { value: withRec, label: 'Companies' },
+        { value: RECS.filter(r => /Resign|Terminat|Retired|Departed/.test(r.outcome)).length, label: 'Ended in exit' },
+      ],
+      scopes: ['All','Fortune 500','Global 500','Other notable'].map(k => ({ label: k, go: () => set({ scope:k }), ...pill(s.scope===k) })),
+      showU, toggleU: () => set({ showU: !showU }), showZero, toggleZero: () => set({ showZero: !showZero }),
+      rangeLabel: startY + ' – ' + endY,
+      back: () => set({ shift: Math.min(s.shift + STEP, LAST_YEAR - MIN_YEAR - win + 1) }), fwd: () => set({ shift: Math.max(0, s.shift - STEP) }),
+      cantBack: startY <= MIN_YEAR, cantFwd: s.shift === 0,
+      hist, rows,
+      coverageNote: 'Coverage is incomplete. Research is ongoing.',
+      q: s.q, setQ: e => set({ q: e.target.value }), list,
+      about: ABOUT,
+      hasSel: !!sel, sel: sel || {}, close: () => set({ sel:null }),
+    };
+  }
+}
+</script>
+</body>
+</html>

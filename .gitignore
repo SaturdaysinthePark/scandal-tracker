@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+node_modules/
+dist/
+.env
+# Uncomment to keep raw scan output out of git:
+# data/candidates/*.csv

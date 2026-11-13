@@ -1,0 +1,464 @@
+[
+  {
+    "id": "apple",
+    "name": "Apple",
+    "ticker": "AAPL",
+    "sector": "Technology",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "ticker": "MSFT",
+    "sector": "Technology",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "nvidia",
+    "name": "Nvidia",
+    "ticker": "NVDA",
+    "sector": "Semiconductors",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "ibm",
+    "name": "IBM",
+    "ticker": "IBM",
+    "sector": "Technology",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "alphabet",
+    "name": "Alphabet",
+    "ticker": "GOOGL",
+    "sector": "Technology",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "meta",
+    "name": "Meta",
+    "ticker": "META",
+    "sector": "Technology",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "ticker": "AMZN",
+    "sector": "Retail / Cloud",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "walmart",
+    "name": "Walmart",
+    "ticker": "WMT",
+    "sector": "Retail",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "intel",
+    "name": "Intel",
+    "ticker": "INTC",
+    "sector": "Semiconductors",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "boeing",
+    "name": "Boeing",
+    "ticker": "BA",
+    "sector": "Aerospace & Defense",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "hp",
+    "name": "HP",
+    "ticker": "HPQ",
+    "sector": "Technology",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "bestbuy",
+    "name": "Best Buy",
+    "ticker": "BBY",
+    "sector": "Retail",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "lockheed",
+    "name": "Lockheed Martin",
+    "ticker": "LMT",
+    "sector": "Aerospace & Defense",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "mcdonalds",
+    "name": "McDonald's",
+    "ticker": "MCD",
+    "sector": "Food Service",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "kohls",
+    "name": "Kohl's",
+    "ticker": "KSS",
+    "sector": "Retail",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "booking",
+    "name": "Booking Holdings",
+    "ticker": "BKNG",
+    "sector": "Travel",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "att",
+    "name": "AT&T (WarnerMedia)",
+    "ticker": "T",
+    "sector": "Telecom & Media",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "bp",
+    "name": "BP",
+    "ticker": "BP",
+    "sector": "Energy",
+    "scope": "Global 500"
+  },
+  {
+    "id": "nestle",
+    "name": "Nestlé",
+    "ticker": "NESN",
+    "sector": "Consumer Goods",
+    "scope": "Global 500"
+  },
+  {
+    "id": "norfolk",
+    "name": "Norfolk Southern",
+    "ticker": "NSC",
+    "sector": "Rail",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "comcast",
+    "name": "Comcast (NBCUniversal)",
+    "ticker": "CMCSA",
+    "sector": "Telecom & Media",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "cboe",
+    "name": "Cboe Global Markets",
+    "ticker": "CBOE",
+    "sector": "Exchanges",
+    "scope": "Other notable"
+  },
+  {
+    "id": "helios",
+    "name": "Helios Technologies",
+    "ticker": "HLIO",
+    "sector": "Industrial",
+    "scope": "Other notable"
+  },
+  {
+    "id": "rbc",
+    "name": "Royal Bank of Canada",
+    "ticker": "RY",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wwe",
+    "name": "WWE",
+    "ticker": "WWE",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kemet",
+    "name": "KEMET",
+    "ticker": "KEM",
+    "sector": "Electronic Components",
+    "scope": "Other notable"
+  },
+  {
+    "id": "igate",
+    "name": "iGATE",
+    "ticker": "IGTE",
+    "sector": "IT Services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "lululemon",
+    "name": "Lululemon",
+    "ticker": "LULU",
+    "sector": "Apparel",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ares",
+    "name": "Ares Management",
+    "ticker": "ARES",
+    "sector": "Asset Management",
+    "scope": "Other notable"
+  },
+  {
+    "id": "astronomer",
+    "name": "Astronomer",
+    "ticker": "Private",
+    "sector": "Data Software",
+    "scope": "Other notable"
+  },
+  {
+    "id": "zoetis",
+    "name": "Zoetis",
+    "ticker": "ZTS",
+    "sector": "Pharmaceuticals",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "exscientia",
+    "name": "Exscientia",
+    "ticker": "EXAI",
+    "sector": "Biotechnology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "superretail",
+    "name": "Super Retail Group",
+    "ticker": "SUL",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "rsgroup",
+    "name": "RS Group",
+    "ticker": "RS1",
+    "sector": "Industrial Distribution",
+    "scope": "Other notable"
+  },
+  {
+    "id": "rei",
+    "name": "REI",
+    "ticker": "Private",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "blackrock",
+    "name": "BlackRock",
+    "ticker": "BLK",
+    "sector": "Asset Management",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "sevenwest",
+    "name": "Seven West Media",
+    "ticker": "SWM",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "rh",
+    "name": "Restoration Hardware (RH)",
+    "ticker": "RH",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fluidigm",
+    "name": "Fluidigm",
+    "ticker": "FLDM",
+    "sector": "Life Sciences Tools",
+    "scope": "Other notable"
+  },
+  {
+    "id": "lilly",
+    "name": "Eli Lilly",
+    "ticker": "LLY",
+    "sector": "Pharmaceuticals",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "galp",
+    "name": "Galp Energia",
+    "ticker": "GALP",
+    "sector": "Energy",
+    "scope": "Other notable"
+  },
+  {
+    "id": "aig",
+    "name": "AIG",
+    "ticker": "AIG",
+    "sector": "Insurance",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "parkhotels",
+    "name": "Park Hotels & Resorts",
+    "ticker": "PK",
+    "sector": "Real Estate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "markel",
+    "name": "Markel",
+    "ticker": "MKL",
+    "sector": "Insurance",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "libertytax",
+    "name": "Liberty Tax",
+    "ticker": "TAX",
+    "sector": "Consumer Services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ti",
+    "name": "Texas Instruments",
+    "ticker": "TXN",
+    "sector": "Semiconductors",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "rambus",
+    "name": "Rambus",
+    "ticker": "RMBS",
+    "sector": "Semiconductors",
+    "scope": "Other notable"
+  },
+  {
+    "id": "natwest",
+    "name": "NatWest Group (formerly RBS)",
+    "ticker": "NWG",
+    "sector": "Banking",
+    "scope": "Global 500"
+  },
+  {
+    "id": "starwood",
+    "name": "Starwood Hotels & Resorts",
+    "ticker": "HOT",
+    "sector": "Hospitality",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "redcross",
+    "name": "American Red Cross",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "pegula",
+    "name": "Pegula Sports & Entertainment (Buffalo Bills/Sabres)",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "officedepot",
+    "name": "Office Depot",
+    "ticker": "ODP",
+    "sector": "Retail",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "highmark",
+    "name": "Highmark",
+    "ticker": "Nonprofit",
+    "sector": "Health Insurance",
+    "scope": "Other notable"
+  },
+  {
+    "id": "axelspringer",
+    "name": "Axel Springer",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "skgroup",
+    "name": "SK Group",
+    "ticker": "034730.KS",
+    "sector": "Conglomerate",
+    "scope": "Global 500"
+  },
+  {
+    "id": "afl",
+    "name": "Australian Football League",
+    "ticker": "Nonprofit",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wisetech",
+    "name": "WiseTech Global",
+    "ticker": "WTC",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "l3harris",
+    "name": "L3Harris Technologies",
+    "ticker": "LHX",
+    "sector": "Aerospace & Defense",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "wework",
+    "name": "WeWork",
+    "ticker": "Private",
+    "sector": "Real Estate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "thinkingmachines",
+    "name": "Thinking Machines Lab",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "cfainstitute",
+    "name": "CFA Institute",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "stryker",
+    "name": "Stryker",
+    "ticker": "SYK",
+    "sector": "Medical Devices",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "mets",
+    "name": "New York Mets",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "alibaba",
+    "name": "Alibaba Group",
+    "ticker": "BABA",
+    "sector": "Technology",
+    "scope": "Global 500"
+  },
+  {
+    "id": "nine",
+    "name": "Nine Entertainment",
+    "ticker": "NEC",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "qbe",
+    "name": "QBE Insurance Group",
+    "ticker": "QBE",
+    "sector": "Insurance",
+    "scope": "Global 500"
+  }
+]
