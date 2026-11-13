@@ -894,5 +894,33 @@
     "ticker": "JD",
     "sector": "Technology",
     "scope": "Global 500"
+  },
+  {
+    "id": "bofa",
+    "name": "Bank of America",
+    "ticker": "BAC",
+    "sector": "Banking",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "sony",
+    "name": "Sony Music (Sony Group)",
+    "ticker": "SONY",
+    "sector": "Media & Entertainment",
+    "scope": "Global 500"
+  },
+  {
+    "id": "umg",
+    "name": "Universal Music Group",
+    "ticker": "UMG",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "beshgroup",
+    "name": "Besh Restaurant Group",
+    "ticker": "Private",
+    "sector": "Hospitality",
+    "scope": "Other notable"
   }
 ]

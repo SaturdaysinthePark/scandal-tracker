@@ -403,27 +403,26 @@
   },
   {
     "id": 20,
-    "type": "relationship",
+    "type": "misconduct",
     "company_id": "comcast",
     "executive": "Jeff Shell",
     "role": "CEO, NBCUniversal",
     "disclosed": "2023-04",
-    "category": "Relationship with employee",
+    "category": "Sexual harassment",
     "outcome": "Terminated",
-    "evidence": "acknowledged",
-    "summary": "He was ousted after an investigation by outside counsel into a complaint from a woman at the company. Shell acknowledged he had had an inappropriate relationship with her and apologized.",
+    "evidence": "confirmed",
+    "summary": "Comcast said in an April 2023 filing that it had received a complaint that NBCUniversal CEO Jeff Shell engaged in inappropriate conduct with a female employee, including allegations of sexual harassment. The company said an investigation by outside counsel uncovered evidence that corroborated the allegations, and it terminated Shell for cause. Shell said in a statement that he had an inappropriate relationship with a woman in the company, which he regretted.",
     "sources": [
       {
-        "label": "Comcast statement, April 2023"
-      },
-      {
-        "label": "Shell statement, April 2023"
+        "label": "Comcast Form 8-K, April 23, 2023",
+        "url": "https://www.sec.gov/Archives/edgar/data/1166691/000095010323006065/dp192586_8k.htm"
       }
     ],
-    "primary_url": null,
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/1166691/000095010323006065/dp192586_8k.htm",
     "archive_url": null,
     "verified_on": null,
-    "status": "published"
+    "status": "published",
+    "note": "Moved from relationship to misconduct category 2026-11-13: Comcast 8-K says outside counsel corroborated allegations that included sexual harassment."
   },
   {
     "id": 17,
@@ -3574,5 +3573,122 @@
     "verified_on": null,
     "status": "watch",
     "note": "Nine says its investigation made no findings against him."
+  },
+  {
+    "id": 145,
+    "type": "misconduct",
+    "company_id": "bofa",
+    "executive": "Omeed Malik",
+    "role": "Managing director, head of prime brokerage capital strategies",
+    "disclosed": "2018-01",
+    "category": "Alleged sexual misconduct",
+    "outcome": "Terminated; later settled his defamation claim",
+    "evidence": "unconfirmed",
+    "summary": "Bank of America dismissed prime brokerage executive Omeed Malik in January 2018 after investigating an employee's accusation of inappropriate behaviour at a December 2017 work gathering, according to reports. Malik denied misconduct and filed a FINRA claim seeking $100 million for defamation, and the bank later agreed to settle with him.",
+    "sources": [
+      {
+        "label": "CNBC, July 2, 2018",
+        "url": "https://www.cnbc.com/2018/07/02/ex-bank-of-america-exec-claims-wrongful-termination-defamation.html"
+      },
+      {
+        "label": "Bloomberg, Jan 20, 2018",
+        "url": "https://www.bloomberg.com/news/articles/2018-01-20/bofa-s-malik-said-to-exit-after-complaint-of-sexual-misconduct"
+      }
+    ],
+    "primary_url": "https://www.cnbc.com/2018/07/02/ex-bank-of-america-exec-claims-wrongful-termination-defamation.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Bank did not name the conduct; Bloomberg not opened; he denied and later settled with the bank; MD seniority borderline."
+  },
+  {
+    "id": 146,
+    "type": "misconduct",
+    "company_id": "sony",
+    "executive": "L.A. Reid",
+    "role": "Chairman and CEO, Epic Records",
+    "disclosed": "2017-05",
+    "category": "Alleged sexual harassment",
+    "outcome": "Departed",
+    "evidence": "unconfirmed",
+    "summary": "Sony Music said in May 2017 that L.A. Reid would leave Epic Records; trade outlets reported the exit followed a female assistant's complaint of harassment. A former Arista executive later sued Reid alleging sexual assault in the early 2000s; the case settled confidentially in January 2026 without admission of liability, and Reid has denied the allegations.",
+    "sources": [
+      {
+        "label": "TheWrap, Jan 2026 settlement",
+        "url": "https://www.thewrap.com/industry-news/public-policy-legal/la-reid-settles-sexual-assault-lawsuit"
+      }
+    ],
+    "primary_url": "https://www.thewrap.com/industry-news/public-policy-legal/la-reid-settles-sexual-assault-lawsuit",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Company never named the conduct; reporting not from list outlets; civil suit settled with no admission; he denies it."
+  },
+  {
+    "id": 147,
+    "type": "misconduct",
+    "company_id": "umg",
+    "executive": "Charlie Walk",
+    "role": "President, Republic Records",
+    "disclosed": "2018-01",
+    "category": "Alleged sexual harassment",
+    "outcome": "Departed after investigation (mutual)",
+    "evidence": "unconfirmed",
+    "summary": "Universal Music Group placed Republic Records president Charlie Walk on leave in January 2018 and retained an outside firm to investigate harassment allegations from former colleagues. Republic said in March 2018 that it and Walk had mutually agreed to part ways. Walk denied the allegations.",
+    "sources": [
+      {
+        "label": "Search results only; no source opened yet"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "UMG confirmed an investigation; needs two opened major outlets to reach 'reported'. He denies the allegations."
+  },
+  {
+    "id": 148,
+    "type": "misconduct",
+    "company_id": "fox",
+    "executive": "Jamie Horowitz",
+    "role": "President, Fox Sports national networks",
+    "disclosed": "2017-07",
+    "category": "Alleged sexual harassment",
+    "outcome": "Terminated",
+    "evidence": "unconfirmed",
+    "summary": "Fox Sports fired Jamie Horowitz in July 2017; Sports Illustrated and the Los Angeles Times reported the firing followed an investigation into sexual harassment allegations. Fox's lawyers said the termination was fully warranted, per the New York Times. Horowitz's lawyer disputed the firing and said any accusations would be vigorously defended.",
+    "sources": [
+      {
+        "label": "Fortune, July 4, 2017",
+        "url": "https://fortune.com/2017/07/04/fox-sports-horowitz-sexual-harassment/"
+      }
+    ],
+    "primary_url": "https://fortune.com/2017/07/04/fox-sports-horowitz-sexual-harassment/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Fired after a harassment probe per reports; only one opened source; his lawyer disputes it."
+  },
+  {
+    "id": 149,
+    "type": "misconduct",
+    "company_id": "beshgroup",
+    "executive": "John Besh",
+    "role": "Founder and CEO",
+    "disclosed": "2017-10",
+    "category": "Alleged sexual harassment",
+    "outcome": "Stepped down",
+    "evidence": "unconfirmed",
+    "summary": "The Times-Picayune reported in October 2017 that 25 current and former employees said they experienced sexual harassment at Besh Restaurant Group, and that an EEOC complaint alleged Besh tried to coerce an employee into a sexual relationship. Besh stepped down from the company.",
+    "sources": [
+      {
+        "label": "Search results only; no source opened yet"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "EEOC settlement unverified; no source opened yet; his 2017 apology unchecked."
   }
 ]
