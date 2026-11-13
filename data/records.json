@@ -1713,5 +1713,440 @@
     "archive_url": null,
     "verified_on": null,
     "status": "published"
+  },
+  {
+    "id": 74,
+    "company_id": "thefa",
+    "executive": "Mark Palios",
+    "role": "Chief Executive",
+    "disclosed": "2004-07",
+    "category": "Relationship with employee",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "In July 2004 the Football Association issued a press release acknowledging that chief executive Mark Palios had had sexual relations with an FA secretary, after first denying newspaper reports about the England manager and the same employee. Palios resigned on 1 August 2004, saying he accepted ultimate responsibility for the FA's actions but denying any wrongdoing. The FA's communications director also offered his resignation over the handling of the story.",
+    "sources": [
+      {
+        "label": "Taipei Times (wire), 3 Aug 2004",
+        "url": "https://www.taipeitimes.com/News/sport/archives/2004/08/03/2003181611"
+      },
+      {
+        "label": "VOA News, 2 Aug 2004",
+        "url": "https://www.voanews.com/a/a-13-a-2004-08-02-22-1/293099.html"
+      }
+    ],
+    "primary_url": "https://www.taipeitimes.com/News/sport/archives/2004/08/03/2003181611",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 75,
+    "company_id": "rbc",
+    "executive": "Blair Fleming",
+    "role": "Head of U.S. Investment Banking / U.S. Capital Markets, RBC Capital Markets",
+    "disclosed": "2018-06",
+    "category": "Undisclosed relationship with employee",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "Royal Bank of Canada fired Blair Fleming, the head of its U.S. investment banking business, in June 2018. An RBC spokeswoman said he had not complied with the bank's disclosure and conflict-of-interest policies on workplace relationships, and that the bank investigated and acted promptly once the matter was raised. Bloomberg reported that the relationship was with an employee and was consensual.",
+    "sources": [
+      {
+        "label": "Investment Executive / Canadian Press, Jun 8 2018",
+        "url": "https://www.investmentexecutive.com/news/people/rbc-fires-head-of-u-s-capital-markets-over-workplace-relationship/"
+      },
+      {
+        "label": "Bloomberg, Jun 8 2018",
+        "url": "https://www.bloomberg.com/news/articles/2018-06-08/rbc-fired-u-s-investment-banking-chief-over-affair-with-staffer"
+      }
+    ],
+    "primary_url": "https://www.investmentexecutive.com/news/people/rbc-fires-head-of-u-s-capital-markets-over-workplace-relationship/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 76,
+    "company_id": "comcast",
+    "executive": "Ron Meyer",
+    "role": "Vice Chairman, NBCUniversal",
+    "disclosed": "2020-08",
+    "category": "Extramarital affair (acknowledged)",
+    "outcome": "Resigned",
+    "evidence": "acknowledged",
+    "summary": "NBCUniversal vice chairman Ron Meyer left the company in August 2020 after disclosing that he had made a settlement with a woman outside the company. In his statement Meyer described a brief, consensual affair years earlier and said other parties had since tried to extort him. NBCUniversal CEO Jeff Shell said the company and Meyer had mutually concluded he should leave, saying Meyer had acted in a way not consistent with company policies or values.",
+    "sources": [
+      {
+        "label": "LAist, Aug 18 2020 (Meyer and NBCU statements)",
+        "url": "https://laist.com/news/ron-meyer-resigns-nbcuniversal-affair-extortion"
+      },
+      {
+        "label": "Mediaite, Aug 2020",
+        "url": "https://www.mediaite.com/media/entertainment/nbcuniversal-vice-chairman-ron-meyer-resigns-after-revealing-affair-and-extortion-attempt/"
+      },
+      {
+        "label": "Bloomberg, Aug 2020",
+        "url": "https://www.bloombergquint.com/business/nbc-executive-ron-meyer-steps-down-after-disclosing-affair"
+      }
+    ],
+    "primary_url": "https://laist.com/news/ron-meyer-resigns-nbcuniversal-affair-extortion",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 77,
+    "company_id": "deltadental",
+    "executive": "Tony Barth",
+    "role": "CEO",
+    "disclosed": "2018-10",
+    "category": "Undisclosed relationship with subordinate",
+    "outcome": "Terminated",
+    "evidence": "confirmed",
+    "summary": "Delta Dental of California's board terminated chief executive Tony Barth in October 2018. The company said in a press release that the termination related to his engaging in, and failing to report, a consensual relationship with a subordinate employee. CFO Mike Castro was named acting CEO.",
+    "sources": [
+      {
+        "label": "Delta Dental of California press release (Business Wire), Oct 19 2018",
+        "url": "https://businesswire.com/news/home/20181019005525/en/Delta-Dental-California-Announces-Departure-Chief-Executive"
+      },
+      {
+        "label": "MedCity News, Oct 22 2018",
+        "url": "https://medcitynews.com/2018/10/delta-dental-of-california-ceo-fired-for-failing-to-report-relationship-with-subordinate/"
+      },
+      {
+        "label": "Becker's Dental",
+        "url": "https://www.beckersdental.com/dentists/delta-dental-of-california-terminates-ceo-5-things-to-know/"
+      }
+    ],
+    "primary_url": "https://medcitynews.com/2018/10/delta-dental-of-california-ceo-fired-for-failing-to-report-relationship-with-subordinate/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Company press release not opened; only a trade-outlet headline confirms the reason. Re-open the release before publishing."
+  },
+  {
+    "id": 78,
+    "company_id": "welcia",
+    "executive": "Tadahisa Matsumoto",
+    "role": "President and CEO",
+    "disclosed": "2024-04",
+    "category": "Relationship with vendor employee",
+    "outcome": "Resigned",
+    "evidence": "unconfirmed",
+    "summary": "Welcia Holdings announced on 17 April 2024 that its president had resigned, saying there had been improper conduct in his private life that damaged the company's credibility. Weekly Shincho reported that the resignation followed an affair with an employee of a health-food supplier to Welcia. The company did not describe the conduct.",
+    "sources": [
+      {
+        "label": "Data Max (Japanese), summary of Shincho reporting and company statement",
+        "url": "https://data-max.co.jp/article/70932"
+      },
+      {
+        "label": "Welcia TDnet disclosure PDF",
+        "url": "https://www2.jpx.co.jp/disc/31410/140120240404566272.pdf"
+      }
+    ],
+    "primary_url": "https://data-max.co.jp/article/70932",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Company cited private-life conduct; relationship link is from a tabloid weekly only."
+  },
+  {
+    "id": 79,
+    "company_id": "bytedance",
+    "executive": "Qiao Mu",
+    "role": "Head of Doubao large language model team",
+    "disclosed": "2025-06",
+    "category": "Undisclosed relationship with HR business partner",
+    "outcome": "Dismissed",
+    "evidence": "unconfirmed",
+    "summary": "ByteDance dismissed the head of its Doubao LLM team in June 2025, according to an internal notice reported by Caixin and TechNode. The notice cited a prohibited conflict of interest arising from a personal relationship with a former HR business partner, and said both had made false statements during the investigation. Caixin reported that the probe followed a whistleblower report.",
+    "sources": [
+      {
+        "label": "TechNode (citing Caixin), 25 Jun 2025",
+        "url": "https://technode.com/2025/06/25/bytedance-fires-llm-team-head-over-conflict-of-interest/"
+      }
+    ],
+    "primary_url": "https://technode.com/2025/06/25/bytedance-fires-llm-team-head-over-conflict-of-interest/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "All reporting traces to one outlet (Caixin)."
+  },
+  {
+    "id": 80,
+    "company_id": "raiffeisen",
+    "executive": "Rolf Olmesdahl",
+    "role": "Chief Technology and Operating Officer",
+    "disclosed": "2021-11",
+    "category": "Relationship with fellow executive",
+    "outcome": "Departed by mutual agreement",
+    "evidence": "unconfirmed",
+    "summary": "Raiffeisen said in November 2021 that its chief technology and operating officer would leave by mutual agreement, without giving reasons. Inside Paradeplatz had reported in September 2021 that he was in a relationship with another senior Raiffeisen executive, who had already left. The bank said at the time that her departure had resolved the governance concerns.",
+    "sources": [
+      {
+        "label": "finews.com, 24 Nov 2021",
+        "url": "https://www.finews.com/news/english-news/48927-raiffeisen-switzerland-rolf-olmesdahl-kathrin-wehrli-robert-schleich"
+      }
+    ],
+    "primary_url": "https://www.finews.com/news/english-news/48927-raiffeisen-switzerland-rolf-olmesdahl-kathrin-wehrli-robert-schleich",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single outlet; bank gave no reason for the exit."
+  },
+  {
+    "id": 81,
+    "company_id": "cicc",
+    "executive": "Chen Gang",
+    "role": "Chief Compliance Officer",
+    "disclosed": "2021-04",
+    "category": "Relationship with subordinate",
+    "outcome": "Departed",
+    "evidence": "unconfirmed",
+    "summary": "Caixin reported in April 2021 that a leaked audio recording appeared to show CICC's chief compliance officer in an extramarital relationship with a subordinate. CICC said he had left for health reasons.",
+    "sources": [
+      {
+        "label": "finews.asia (citing Caixin), 9 Apr 2021",
+        "url": "https://finews.asia/people/34218-top-chinese-investment-banker-exits-following-affairs-tape-leak"
+      }
+    ],
+    "primary_url": "https://finews.asia/people/34218-top-chinese-investment-banker-exits-following-affairs-tape-leak",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Company cited health reasons; single outlet (Caixin)."
+  },
+  {
+    "id": 82,
+    "company_id": "ftx",
+    "executive": "Sam Bankman-Fried",
+    "role": "Founder and CEO of FTX; majority owner of Alameda Research",
+    "disclosed": "2023-10",
+    "category": "Relationship with subordinate",
+    "outcome": "Resigned (company collapsed Nov 2022; later convicted on unrelated fraud charges)",
+    "evidence": "acknowledged",
+    "summary": "Caroline Ellison, the former chief executive of Alameda Research, testified at Bankman-Fried's October 2023 criminal trial that she had an on-and-off intimate relationship with him starting in 2018, soon after she joined Alameda. She testified that she reported to him throughout and that he installed her as Alameda's chief executive. Fortune reported that the relationship was kept secret for a period before the two split in 2022.",
+    "sources": [
+      {
+        "label": "Fortune, Oct 11 2023: Ellison testimony",
+        "url": "https://fortune.com/crypto/2023/10/11/ftx-founder-sam-bankman-fried-hedge-fund-chief-ex-girlfriend-caroline-ellison-us-president"
+      },
+      {
+        "label": "AP via WSLS, Oct 10 2023: Ellison starts testimony",
+        "url": "https://www.wsls.com/business/2023/10/10/star-witness-caroline-ellison-starts-testimony-at-ftx-founder-sam-bankman-frieds-trial/"
+      }
+    ],
+    "primary_url": "https://fortune.com/crypto/2023/10/11/ftx-founder-sam-bankman-fried-hedge-fund-chief-ex-girlfriend-caroline-ellison-us-president",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Relationship with a subordinate established by sworn testimony, but it was not the cause of his exit; editorial call."
+  },
+  {
+    "id": 83,
+    "company_id": "uber",
+    "executive": "Cameron Poetzscher",
+    "role": "Head of corporate development",
+    "disclosed": "2018-09",
+    "category": "Relationship with employee (policy breach)",
+    "outcome": "Reprimanded in 2017; resigned Oct 2018",
+    "evidence": "reported",
+    "summary": "The Wall Street Journal reported in September 2018 that a 2017 outside-counsel investigation found Poetzscher had a consensual affair with a co-worker whose annual review he contributed to, in violation of company policy. The investigation also reportedly substantiated sexually suggestive comments about colleagues. Uber said he was reprimanded in 2017, and it confirmed his resignation in October 2018.",
+    "sources": [
+      {
+        "label": "Fortune, Oct 22 2018",
+        "url": "https://fortune.com/2018/10/22/uber-exec-resigns-post-sexual-misconduct-reporting/"
+      },
+      {
+        "label": "Reuters via Business Standard, Oct 23 2018",
+        "url": "https://www.business-standard.com/article/reuters/uber-s-dealmaking-chief-poetzscher-resigns-118102300077_1.html"
+      },
+      {
+        "label": "NBC News",
+        "url": "https://www.nbcnews.com/tech/tech-news/uber-s-dealmaking-chief-resigns-after-sexual-misconduct-allegations-n923211"
+      }
+    ],
+    "primary_url": "https://fortune.com/2018/10/22/uber-exec-resigns-post-sexual-misconduct-reporting/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Same probe substantiated sexual comments about colleagues; overlaps the harassment exclusion."
+  },
+  {
+    "id": 84,
+    "company_id": "neuralink",
+    "executive": "Elon Musk",
+    "role": "Co-founder and CEO",
+    "disclosed": "2022-07",
+    "category": "Undisclosed relationship with subordinate (disputed)",
+    "outcome": "No action; the executive stayed in her role",
+    "evidence": "unconfirmed",
+    "summary": "Court filings first reported by Business Insider in July 2022 showed that Musk had fathered twins with a Neuralink director who reported directly to him. Reuters reported that Neuralink's handbook bans personal relationships between employees in a direct supervisory relationship, and that the company accepted her account that the relationship was not romantic. Reuters could not confirm whether the relationship was disclosed.",
+    "sources": [
+      {
+        "label": "Reuters via The Star, Aug 2022: Musk tests limits of governance",
+        "url": "https://www.thestar.com.my/tech/tech-news/2022/08/29/elon-musk-tests-limits-of-governance-by-having-children-with-aide"
+      },
+      {
+        "label": "CBS News: Musk had twins with Neuralink executive",
+        "url": "https://cbsnews.com/news/elon-musk-twins-shivon-zilis-twins-neuralink-executive"
+      }
+    ],
+    "primary_url": "https://www.thestar.com.my/tech/tech-news/2022/08/29/elon-musk-tests-limits-of-governance-by-having-children-with-aide",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Romantic nature disputed; no company action or policy finding."
+  },
+  {
+    "id": 85,
+    "company_id": "greylock",
+    "executive": "Tom Frangione",
+    "role": "Chief operating officer",
+    "disclosed": "2017-08",
+    "category": "Undisclosed relationship with employee",
+    "outcome": "Left at the firm's request",
+    "evidence": "unconfirmed",
+    "summary": "The Information and Axios reported in 2017 that Frangione left the venture capital firm after it learned of an undisclosed, consensual relationship with another employee. A Greylock spokeswoman said the firm had learned of behavior that would represent a significant lapse of judgment, without giving specifics.",
+    "sources": [
+      {
+        "label": "Axios: Greylock COO out due to inappropriate relationship",
+        "url": "https://www.axios.com/2017/12/15/greylock-coo-out-due-to-inappropriate-relationship-1513304626"
+      },
+      {
+        "label": "The Information (paywalled)",
+        "url": "https://www.theinformation.com/greylock-coo-tom-frangione-left-firm-after-lapse-of-judgement"
+      }
+    ],
+    "primary_url": "https://www.axios.com/2017/12/15/greylock-coo-out-due-to-inappropriate-relationship-1513304626",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "No source page could be opened; disclosure month unclear."
+  },
+  {
+    "id": 86,
+    "company_id": "firefly",
+    "executive": "Bill Weber",
+    "role": "CEO",
+    "disclosed": "2024-07",
+    "category": "Alleged relationship with employee",
+    "outcome": "Departed",
+    "evidence": "unconfirmed",
+    "summary": "Payload reported in July 2024 that Firefly was investigating allegations of an inappropriate relationship between Weber and a female employee. A company spokesperson said initial findings did not support the allegations. Two days later the board announced that Weber had left, and it declined to say whether the departure was related.",
+    "sources": [
+      {
+        "label": "TechCrunch, Jul 17 2024",
+        "url": "https://techcrunch.com/2024/07/17/bill-weber-out-as-ceo-of-firefly-aerospace"
+      },
+      {
+        "label": "Space.com",
+        "url": "https://space.com/firefly-aerospace-ceo-misconduct-investigation"
+      }
+    ],
+    "primary_url": "https://techcrunch.com/2024/07/17/bill-weber-out-as-ceo-of-firefly-aerospace",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single trade outlet; company said initial findings did not support the allegation."
+  },
+  {
+    "id": 87,
+    "company_id": "snap",
+    "executive": "Francis Racioppi",
+    "role": "Head of global security",
+    "disclosed": "2019-01",
+    "category": "Relationship with contractor",
+    "outcome": "Terminated (late 2018)",
+    "evidence": "unconfirmed",
+    "summary": "The Wall Street Journal reported in January 2019 that Snap fired Racioppi at the end of 2018 after a law-firm investigation found he had a relationship with a contractor he had hired, and ended her contract when the relationship ended. Racioppi denied inappropriate conduct and said he would challenge the investigation.",
+    "sources": [
+      {
+        "label": "PYMNTS citing WSJ, Jan 20 2019",
+        "url": "https://www.pymnts.com/personnel/2019/snap-executives-inappropriate-behavior-contractor/"
+      }
+    ],
+    "primary_url": "https://www.pymnts.com/personnel/2019/snap-executives-inappropriate-behavior-contractor/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single WSJ source; below C-suite; he denies it."
+  },
+  {
+    "id": 88,
+    "company_id": "met",
+    "executive": "Thomas Campbell",
+    "role": "Director and CEO",
+    "disclosed": "2017-02",
+    "category": "Relationship with employee",
+    "outcome": "Resigned",
+    "evidence": "reported",
+    "summary": "Thomas P. Campbell announced on February 28, 2017 that he would step down as director and CEO of the Metropolitan Museum of Art. The New York Times reported that a close personal relationship between Campbell and a staff member in the museum's digital department was among the factors in his departure, along with financial problems and staff discord. The museum confirmed his departure but, in the coverage reviewed, did not publicly attribute it to the relationship.",
+    "sources": [
+      {
+        "label": "CultureGrrl (ArtsJournal), Apr 3 2017, citing NYT",
+        "url": "https://www.artsjournal.com/culturegrrl/2017/04/inappropriate-relationship-tom-campbell-must-go-metropolitan-museums-board-must-reform.html"
+      },
+      {
+        "label": "artnet News",
+        "url": "https://news.artnet.com/art-world/thomas-campbell-inappropriate-relationship-staffer-912047"
+      },
+      {
+        "label": "AP via Washington Times, Feb 28 2017",
+        "url": "https://m.washingtontimes.com/news/2017/feb/28/metropolitan-museum-of-art-director-resigns/"
+      }
+    ],
+    "primary_url": "https://www.artsjournal.com/culturegrrl/2017/04/inappropriate-relationship-tom-campbell-must-go-metropolitan-museums-board-must-reform.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Relationship reported as one of several factors; museum never attributed the exit to it."
+  },
+  {
+    "id": 89,
+    "company_id": "bridgewater",
+    "executive": "Bob Elliott",
+    "role": "Head of foreign-exchange research",
+    "disclosed": "2019-02",
+    "category": "Undisclosed relationship with colleague",
+    "outcome": "Terminated",
+    "evidence": "unconfirmed",
+    "summary": "Bloomberg reported in February 2019, citing people familiar with the matter, that Bridgewater Associates fired its head of foreign-exchange research, Bob Elliott, saying he had not properly disclosed a relationship with a colleague. According to the report, Elliott believed he had been dismissed without cause after telling superiors about it. Neither Elliott nor Bridgewater commented on the details.",
+    "sources": [
+      {
+        "label": "Bloomberg, Feb 5 2019",
+        "url": "https://www.bloomberg.com/news/articles/2019-02-05/bridgewater-is-said-to-fire-forex-research-chief-over-romance"
+      }
+    ],
+    "primary_url": "https://www.bloomberg.com/news/articles/2019-02-05/bridgewater-is-said-to-fire-forex-research-chief-over-romance",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single anonymous-source Bloomberg report; Bridgewater never confirmed; he disputes it."
+  },
+  {
+    "id": 90,
+    "company_id": "airbnb",
+    "executive": "Hong Ge",
+    "role": "Head of China",
+    "disclosed": "2017-10",
+    "category": "Relationship with employee (code of conduct)",
+    "outcome": "Resigned",
+    "evidence": "unconfirmed",
+    "summary": "Airbnb's head of China, Hong Ge, left the company in October 2017, four months after taking the role, and Airbnb said he was leaving to pursue another role. Bloomberg, citing two people familiar with the matter, reported that Airbnb had found he violated its code of conduct by dating a female employee. The Information separately reported a similar finding.",
+    "sources": [
+      {
+        "label": "Bloomberg, Oct 26 2017",
+        "url": "https://www.bloomberg.com/news/articles/2017-10-26/airbnb-s-former-china-head-is-said-to-have-violated-company-code"
+      },
+      {
+        "label": "TechNode summarizing The Information, Oct 27 2017",
+        "url": "https://technode.com/2017/10/27/inappropriate-relationship-with-an-employee-may-be-the-reason-behind-airbnb-china-heads-resignation/"
+      }
+    ],
+    "primary_url": "https://www.bloomberg.com/news/articles/2017-10-26/airbnb-s-former-china-head-is-said-to-have-violated-company-code",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Airbnb gave a different reason; reporting pages not opened."
   }
 ]

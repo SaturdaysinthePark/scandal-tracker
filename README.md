@@ -49,7 +49,7 @@ Then ask Claude Code something like:
 
 ## Current state
 
-- 73 records across 67 companies (56 published, 16 watch, 1 retracted), from 1998 to November 2026.
+- 90 records across 82 companies (59 published, 29 watch, 2 retracted), from 1998 to November 2026.
 - The app in `app/` (plain HTML/CSS/JS, no build step) implements the timeline, records table, about page and detail drawer, reading `data/*.json` and `docs/METHODOLOGY.md`. Only `status: "published"` records are shown.
 
 ## Run the app

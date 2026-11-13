@@ -467,5 +467,110 @@
     "ticker": "Nonprofit",
     "sector": "Nonprofit",
     "scope": "Other notable"
+  },
+  {
+    "id": "thefa",
+    "name": "The Football Association",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "welcia",
+    "name": "Welcia Holdings",
+    "ticker": "3141.T",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bytedance",
+    "name": "ByteDance",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "raiffeisen",
+    "name": "Raiffeisen Switzerland",
+    "ticker": "Private",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "cicc",
+    "name": "China International Capital Corporation",
+    "ticker": "3908.HK",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ftx",
+    "name": "FTX",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "uber",
+    "name": "Uber",
+    "ticker": "UBER",
+    "sector": "Technology",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "neuralink",
+    "name": "Neuralink",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "greylock",
+    "name": "Greylock Partners",
+    "ticker": "Private",
+    "sector": "Venture Capital",
+    "scope": "Other notable"
+  },
+  {
+    "id": "firefly",
+    "name": "Firefly Aerospace",
+    "ticker": "FLY",
+    "sector": "Aerospace & Defense",
+    "scope": "Other notable"
+  },
+  {
+    "id": "snap",
+    "name": "Snap",
+    "ticker": "SNAP",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "deltadental",
+    "name": "Delta Dental of California",
+    "ticker": "Nonprofit",
+    "sector": "Health Insurance",
+    "scope": "Other notable"
+  },
+  {
+    "id": "met",
+    "name": "Metropolitan Museum of Art",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bridgewater",
+    "name": "Bridgewater Associates",
+    "ticker": "Private",
+    "sector": "Asset Management",
+    "scope": "Other notable"
+  },
+  {
+    "id": "airbnb",
+    "name": "Airbnb",
+    "ticker": "ABNB",
+    "sector": "Technology",
+    "scope": "Other notable"
   }
 ]
