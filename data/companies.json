@@ -1146,5 +1146,222 @@
     "ticker": "Private",
     "sector": "Media & Entertainment",
     "scope": "Other notable"
+  },
+  {
+    "id": "clarkewillmott",
+    "name": "Clarke Willmott",
+    "ticker": "Private",
+    "sector": "Legal",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ashurst",
+    "name": "Ashurst",
+    "ticker": "Private",
+    "sector": "Legal",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kellerpostman",
+    "name": "Keller Postman UK (KP Law)",
+    "ticker": "Private",
+    "sector": "Legal",
+    "scope": "Other notable"
+  },
+  {
+    "id": "rfef",
+    "name": "Royal Spanish Football Federation",
+    "ticker": "Nonprofit",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "aff",
+    "name": "Afghanistan Football Federation",
+    "ticker": "Nonprofit",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fhf",
+    "name": "Haitian Football Federation",
+    "ticker": "Nonprofit",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "gff",
+    "name": "Guyana Football Federation",
+    "ticker": "Nonprofit",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "cbf",
+    "name": "Brazilian Football Confederation",
+    "ticker": "Nonprofit",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ajax",
+    "name": "AFC Ajax",
+    "ticker": "AJAX",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "pistons",
+    "name": "Detroit Pistons",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ukfast",
+    "name": "UKFast",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "tehelka",
+    "name": "Tehelka",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "hosigi",
+    "name": "Hosigi Two Chicken",
+    "ticker": "Private",
+    "sector": "Restaurants",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kimgane",
+    "name": "Kimgane",
+    "ticker": "Private",
+    "sector": "Restaurants",
+    "scope": "Other notable"
+  },
+  {
+    "id": "hksa",
+    "name": "Hong Kong Shanghai Alliance Holdings",
+    "ticker": "1001.HK",
+    "sector": "Industrial",
+    "scope": "Other notable"
+  },
+  {
+    "id": "westgate",
+    "name": "Westgate Resorts",
+    "ticker": "Private",
+    "sector": "Hospitality",
+    "scope": "Other notable"
+  },
+  {
+    "id": "toyota",
+    "name": "Toyota Motor",
+    "ticker": "TM",
+    "sector": "Automotive",
+    "scope": "Global 500"
+  },
+  {
+    "id": "astra",
+    "name": "Astra USA (AstraZeneca)",
+    "ticker": "AZN",
+    "sector": "Pharmaceuticals",
+    "scope": "Global 500"
+  },
+  {
+    "id": "dellabs",
+    "name": "Del Laboratories",
+    "ticker": "Private",
+    "sector": "Consumer Goods",
+    "scope": "Other notable"
+  },
+  {
+    "id": "keane",
+    "name": "Keane Inc.",
+    "ticker": "Private",
+    "sector": "IT Services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "nra_rest",
+    "name": "National Restaurant Association",
+    "ticker": "Nonprofit",
+    "sector": "Business Association",
+    "scope": "Other notable"
+  },
+  {
+    "id": "worldwidepants",
+    "name": "Worldwide Pants",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ey",
+    "name": "EY",
+    "ticker": "Private",
+    "sector": "Professional Services",
+    "scope": "Global 500"
+  },
+  {
+    "id": "halunen",
+    "name": "Halunen Law",
+    "ticker": "Private",
+    "sector": "Legal",
+    "scope": "Other notable"
+  },
+  {
+    "id": "scottishrugby",
+    "name": "Scottish Rugby Union",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "mlbam",
+    "name": "MLB Advanced Media",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kelectric",
+    "name": "K-Electric",
+    "ticker": "KEL",
+    "sector": "Utilities",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fuwan",
+    "name": "Fu Wan Chocolate",
+    "ticker": "Private",
+    "sector": "Food",
+    "scope": "Other notable"
+  },
+  {
+    "id": "florsheim",
+    "name": "Florsheim Group",
+    "ticker": "FLSC",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wrgrace",
+    "name": "W.R. Grace & Co.",
+    "ticker": "GRA",
+    "sector": "Chemicals",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wellpoint",
+    "name": "WellPoint (Elevance Health)",
+    "ticker": "ELV",
+    "sector": "Health Insurance",
+    "scope": "Fortune 500"
   }
 ]

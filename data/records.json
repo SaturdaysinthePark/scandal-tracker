@@ -5458,5 +5458,1003 @@
     "verified_on": null,
     "status": "watch",
     "note": "Court found sexual assault/harassment of eight women, but sources don't show they were employees or colleagues."
+  },
+  {
+    "id": 199,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "clarkewillmott",
+    "executive": "Matthew Barker",
+    "role": "Partner and member of the firm's management board",
+    "disclosed": "2024-08",
+    "category": "Sexual misconduct toward colleague",
+    "outcome": "Suspended from practice for nine months by tribunal",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "The Solicitors Disciplinary Tribunal found that Matthew Barker, then a partner on Clarke Willmott's management board, made sexually motivated advances to a colleague at a partners' away weekend in June 2012. The tribunal said there was a clear power imbalance and found he acted without integrity. It suspended him from practice for nine months and ordered him to pay £11,000 in costs. He had left the firm in 2013.",
+    "sources": [
+      {
+        "label": "Legal Futures, Aug 2024",
+        "url": "https://www.legalfutures.co.uk/latest-news/partner-suspended-for-sexual-misconduct-at-firm-retreat"
+      },
+      {
+        "label": "Legal Cheek, Aug 2024",
+        "url": "https://www.legalcheek.com/2024/08/partner-avoids-strike-off-over-sexual-misconduct-at-law-firm-retreat"
+      }
+    ],
+    "primary_url": "https://www.legalfutures.co.uk/latest-news/partner-suspended-for-sexual-misconduct-at-firm-retreat",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 200,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "ashurst",
+    "executive": "Manuel Lopez-Martinez",
+    "role": "Partner and head of regulatory, Madrid office",
+    "disclosed": "2025-09",
+    "category": "Sexual misconduct toward colleagues",
+    "outcome": "Section 43 control order; left firm after investigation",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "The Solicitors Disciplinary Tribunal found proved allegations that Manuel Lopez-Martinez, a partner and head of regulatory in Ashurst's Madrid office, engaged in sexually motivated conduct toward two female colleagues between 2018 and 2021, including unwanted touching and an attempted kiss. The tribunal said he crossed professional boundaries but did not abuse his seniority. It made an order barring him from working at SRA-regulated firms without permission and ordered £61,561 in costs. He denied the allegations and left Ashurst after an internal investigation, the Law Society Gazette reported.",
+    "sources": [
+      {
+        "label": "Law Society Gazette, Sep 2025",
+        "url": "https://www.lawgazette.co.uk/news/sdt-restricts-foreign-lawyer-who-crossed-professional-boundaries/5124447.article"
+      },
+      {
+        "label": "SDT judgment 12695-2024",
+        "url": "https://solicitorstribunal.org.uk/wp-content/uploads/2024/11/12695-2024.Lopez-Martinez-Amended-2.pdf"
+      },
+      {
+        "label": "Legal Futures",
+        "url": "https://www.legalfutures.co.uk/latest-news/sdt-makes-order-against-spanish-lawyer-after-jurisdiction-challenge"
+      },
+      {
+        "label": "Law360",
+        "url": "https://www.law360.com/articles/2386872"
+      }
+    ],
+    "primary_url": "https://solicitorstribunal.org.uk/case/12695/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 201,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "kellerpostman",
+    "executive": "Darren Shaw",
+    "role": "Head of financial products and manager of Manchester office",
+    "disclosed": "2026-05",
+    "category": "Sexual harassment of junior colleagues",
+    "outcome": "Section 43 control order; firm had issued final written warning",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "The Solicitors Disciplinary Tribunal found that Darren Shaw, head of financial products at Keller Postman, made unwanted sexualised remarks, advances and physical contact toward junior female colleagues at the firm's October 2022 staff conference. The tribunal found some of the conduct sexually motivated, an abuse of position and harassment, and barred him from working at SRA-regulated firms without permission. He did not take part in the proceedings and had earlier disputed the complaints in an email, Legal Futures reported. The firm had given him a final written warning after an external investigation.",
+    "sources": [
+      {
+        "label": "Legal Futures, May 2026",
+        "url": "https://www.legalfutures.co.uk/latest-news/senior-lawyer-made-unwanted-advances-to-junior-staff-at-firm-event"
+      },
+      {
+        "label": "SRA solicitor check record",
+        "url": "https://news.sra.org.uk/consumers/solicitor-check/7021022/"
+      },
+      {
+        "label": "Solicitor News",
+        "url": "https://solicitornews.co.uk/manager-unwanted-advances/"
+      }
+    ],
+    "primary_url": "https://news.sra.org.uk/consumers/solicitor-check/7021022/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 202,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "rfef",
+    "executive": "Luis Rubiales",
+    "role": "President",
+    "disclosed": "2023-08",
+    "category": "Sexual assault (non-consensual kiss)",
+    "outcome": "Resigned 2023; convicted and fined 2025",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "Rubiales, then president of the Spanish football federation, kissed player Jenni Hermoso without her consent at the 2023 Women's World Cup final ceremony; Hermoso has spoken publicly on the record about it. He resigned in September 2023. On 20 February 2025 Spain's Audiencia Nacional convicted him of sexual assault, fined him about 10,800 euros and acquitted him of coercion, NBC News and other outlets reported. The court's appeals chamber upheld the conviction in June 2025; Rubiales maintained the kiss was consensual and said he would appeal to the Supreme Court.",
+    "sources": [
+      {
+        "label": "NBC News, Feb 2025",
+        "url": "https://www.nbcnews.com/news/amp/rcna192940"
+      },
+      {
+        "label": "CBS News, Feb 2025",
+        "url": "https://www.cbsnews.com/news/luis-rubiales-kiss-jenni-hermoso-spain-soccer-sexual-assault"
+      },
+      {
+        "label": "Al Jazeera, Jun 2025 (appeal upheld)",
+        "url": "https://www.aljazeera.com/sports/2025/6/25/rubiales-to-appeal-fine-for-hermoso-forced-kiss"
+      }
+    ],
+    "primary_url": "https://www.nbcnews.com/news/amp/rcna192940",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 203,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "aff",
+    "executive": "Keramuddin Karim",
+    "role": "President",
+    "disclosed": "2018-11",
+    "category": "Sexual abuse",
+    "outcome": "Life ban and CHF 1m fine (FIFA, 2019); upheld by CAS 2020",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "FIFA's Ethics Committee banned Karim, former president of the Afghanistan Football Federation, from football for life in June 2019 and fined him CHF 1 million after finding he abused his position and sexually abused female players between 2013 and 2018. The Court of Arbitration for Sport dismissed his appeal in 2020. Karim denied the allegations and called them a conspiracy.",
+    "sources": [
+      {
+        "label": "Sport Resolutions, CAS upholds ban, Jul 2020",
+        "url": "https://www.sportresolutions.com/news/view/keramuddin-karim-former-president-of-the-afghanistan-football-federation-has-life-ban-confirmed"
+      },
+      {
+        "label": "ESPN/AP, Jun 2019",
+        "url": "https://global.espn.com/football/story/_/id/38680474/fifa-bans-afghan-official-life-sexual-abuse"
+      },
+      {
+        "label": "Al Jazeera, Jun 2019",
+        "url": "https://www.aljazeera.com/sports/2019/6/8/former-afghan-football-president-gets-life-ban-over-sexual-abuse"
+      }
+    ],
+    "primary_url": "https://www.sportresolutions.com/news/view/keramuddin-karim-former-president-of-the-afghanistan-football-federation-has-life-ban-confirmed",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 204,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "fhf",
+    "executive": "Rosnick Grant",
+    "role": "Vice-president and head of refereeing",
+    "disclosed": "2020-04",
+    "category": "Sexual harassment and abuse",
+    "outcome": "Life ban (FIFA 2021), upheld by CAS March 2023",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "FIFA's Ethics Committee banned Grant, a vice-president of the Haitian Football Federation and its head of refereeing, for life after investigating harassment, sexual abuse, threats and coercion against female referees. On 30 March 2023 the Court of Arbitration for Sport upheld the ban, finding the evidence on the sexual abuse charges sufficiently convincing, but cut his fine to CHF 35,000, ESPN reported. Grant's witnesses had claimed the allegations were a conspiracy.",
+    "sources": [
+      {
+        "label": "ESPN/Reuters, Mar 2023",
+        "url": "https://global.espn.com/football/story/_/id/37637601/cas-upholsd-life-ban-haiti-federation-vp-rosnick-grant"
+      },
+      {
+        "label": "Stabroek News, Mar 2023",
+        "url": "https://stabroeknews.com/2023/03/31/sports/cas-upholds-life-ban-on-former-haiti-federation-vice-president-grant"
+      },
+      {
+        "label": "CAS media release (404 when opened)",
+        "url": "https://www.tas-cas.org/en/media/media-releases/article/cas-confirms-the-life-ban-imposed-on-rosnick-grant-former-vice-president-of-the-haitian-football-fe"
+      }
+    ],
+    "primary_url": "https://global.espn.com/football/story/_/id/37637601/cas-upholsd-life-ban-haiti-federation-vp-rosnick-grant",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 205,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "gff",
+    "executive": "Ian Alves",
+    "role": "General Secretary",
+    "disclosed": "2026-05",
+    "category": "Sexual harassment of staff",
+    "outcome": "Resigned 2024; five-year FIFA ban and CHF 20,000 fine (May 2026)",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "FIFA's independent Ethics Committee found that Alves, former general secretary of the Guyana Football Federation, used his position to sexually harass female federation staff members. On 4 May 2026 it banned him from all football-related activity for five years and fined him CHF 20,000. Alves had left the post in 2024; no public response from him was found.",
+    "sources": [
+      {
+        "label": "FIFA media release, May 2026",
+        "url": "https://inside.fifa.com/en/news/adjudicatory-chamber-independent-ethics-committee-sanctions-ian-alves"
+      },
+      {
+        "label": "Al Jazeera, May 2026",
+        "url": "https://www.aljazeera.com/sports/2026/5/5/fifa-bans-former-guyana-official-alves-for-5-years-over-sexual-harassment"
+      },
+      {
+        "label": "Reuters via The Star, May 2026",
+        "url": "https://www.thestar.com.my/sport/football/2026/05/05/soccer-fifa-bans-former-guyana-football-official-alves-for-five-years-over-harassment"
+      }
+    ],
+    "primary_url": "https://inside.fifa.com/en/news/adjudicatory-chamber-independent-ethics-committee-sanctions-ian-alves",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 206,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "cbf",
+    "executive": "Rogério Caboclo",
+    "role": "President",
+    "disclosed": "2021-06",
+    "category": "Sexual and moral harassment of employee",
+    "outcome": "Suspended June 2021; 21-month suspension ratified by CBF general assembly Sept 2021",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "Caboclo, president of the Brazilian Football Confederation, was suspended in June 2021 after a CBF employee filed a sexual and moral harassment complaint with the confederation's ethics committee. In September 2021 the ethics committee classified his conduct as harassment, 'including moral or sexual', and raised its recommended suspension to 21 months, which the CBF general assembly ratified, CNN Brasil reported. Caboclo denied all the accusations and said the committee was biased and part of a plot to remove him.",
+    "sources": [
+      {
+        "label": "CNN Brasil, Sep 2021",
+        "url": "https://www.cnnbrasil.com.br/esporte/cbf-reconhece-assedio-e-aumenta-punicao-de-caboclo-para-21-meses/"
+      },
+      {
+        "label": "Sports Illustrated, Jun 2021",
+        "url": "https://www.si.com/soccer/2021/06/07/brazil-federation-president-suspended-rogerio-caboclo"
+      },
+      {
+        "label": "Lance!, Sep 2021 (410 when opened)",
+        "url": "https://www.lance.com.br/futebol-nacional/assembleia-geral-cbf-ratifica-suspensao-rogerio-caboclo-ate-marco-2023-por-assedio-sexual-moral.html"
+      }
+    ],
+    "primary_url": "https://www.cnnbrasil.com.br/esporte/cbf-reconhece-assedio-e-aumenta-punicao-de-caboclo-para-21-meses/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 207,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "ajax",
+    "executive": "Marc Overmars",
+    "role": "Director of football affairs (board member)",
+    "disclosed": "2022-02",
+    "category": "Inappropriate sexual messages to colleagues",
+    "outcome": "Resigned Feb 2022; Dutch sports tribunal ban Nov 2023, extended worldwide by FIFA Jan 2024",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "Ajax said in February 2022 that Overmars, its director of football affairs, was leaving after sending a series of inappropriate messages to several female colleagues over an extended period. Overmars said he was ashamed and called his behaviour unacceptable. In November 2023 an independent Dutch sports tribunal banned him from Dutch football for two years, one suspended, and FIFA extended the ban worldwide in January 2024, CNN reported.",
+    "sources": [
+      {
+        "label": "Irish Times, Feb 2022",
+        "url": "https://www.irishtimes.com/sport/soccer/ajax-director-overmars-quits-over-inappropriate-messages-1.4795713"
+      },
+      {
+        "label": "CNN via KESQ, Jan 2024",
+        "url": "https://kesq.com/sports/national-sports/cnn-sports/2024/01/10/he-sent-inappropriate-messages-to-women-colleagues-now-soccer-great-marc-overmars-has-been-banned-from-world-football/"
+      },
+      {
+        "label": "Inside World Football, Jan 2024 (403)",
+        "url": "https://www.insideworldfootball.com/2024/01/10/fifa-makes-overmars-dutch-ban-global-threatening-royal-antwerp-job/"
+      }
+    ],
+    "primary_url": "https://kesq.com/sports/national-sports/cnn-sports/2024/01/10/he-sent-inappropriate-messages-to-women-colleagues-now-soccer-great-marc-overmars-has-been-banned-from-world-football/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 208,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "pistons",
+    "executive": "Rob Murphy",
+    "role": "Assistant general manager",
+    "disclosed": "2022-10",
+    "category": "Sexual harassment of subordinate",
+    "outcome": "Placed on leave Oct 2022; fired May 2023",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "The Pistons placed assistant general manager Murphy on leave in October 2022 and fired him in May 2023 for 'violation of company policy and the terms of his employment agreement' after a law-firm review of allegations from a former employee, ESPN reported. The former employee, who had been his executive assistant, alleged in a lawsuit that he sexually harassed her for months. Murphy did not respond to requests for comment.",
+    "sources": [
+      {
+        "label": "ESPN, May 2023",
+        "url": "https://www.espn.com/nba/story/_/id/37403952/woman-says-fired-pistons-assistant-gm-harassed-months"
+      },
+      {
+        "label": "Fox 2 Detroit, May 2023",
+        "url": "https://fox2detroit.com/news/detroit-pistons-fire-assistant-gm-rob-murphy-after-claims-of-sexual-harassment-and-assault-by-former-employee"
+      }
+    ],
+    "primary_url": "https://www.espn.com/nba/story/_/id/37403952/woman-says-fired-pistons-assistant-gm-harassed-months",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 209,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "ukfast",
+    "executive": "Lawrence Jones",
+    "role": "Founder and CEO",
+    "disclosed": "2023-01",
+    "category": "Criminal conviction: sexual assault of employee",
+    "outcome": "Convicted; jailed (15 years total)",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "A Manchester Crown Court jury convicted UKFast founder and former chief executive Lawrence Jones in January 2023 of sexually assaulting a female employee on a business trip in 2013. In a later trial in November 2023 he was also convicted of two rapes from the 1990s and acquitted of other counts. He was sentenced in December 2023 to 15 years in total, including 12 months for the assault on the employee. Jones denied the allegations.",
+    "sources": [
+      {
+        "label": "UKTN, Dec 2023",
+        "url": "https://www.uktech.news/tech-hubs/north-west/manchester/ukfast-founder-sentenced-15-years-prison-20231204"
+      },
+      {
+        "label": "CPS North West press release",
+        "url": "https://www.cps.gov.uk/north-west/news/businessman-jailed-sexual-offences-against-three-women"
+      },
+      {
+        "label": "ITV Granada, Dec 2023",
+        "url": "https://itv.com/news/granada/2023-12-01/millionaire-tech-boss-receives-15-year-sentence-for-raping-two-women"
+      }
+    ],
+    "primary_url": "https://www.cps.gov.uk/north-west/news/businessman-jailed-sexual-offences-against-three-women",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 210,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "tehelka",
+    "executive": "Tarun Tejpal",
+    "role": "Editor-in-chief and owner",
+    "disclosed": "2013-11",
+    "category": "Criminal conviction: rape of junior colleague",
+    "outcome": "Convicted on appeal; 10 years' imprisonment",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "In August 2026 the Bombay High Court's Goa bench overturned Tarun Tejpal's 2021 acquittal and convicted him of rape and sexual harassment of a junior colleague at Tehelka, where he was editor-in-chief, over incidents at a 2013 company event. The court sentenced him to 10 years' imprisonment and a fine. India's Supreme Court declined to suspend the sentence and ordered him to surrender while it hears his appeal. Tejpal has denied wrongdoing and called the conviction wrong.",
+    "sources": [
+      {
+        "label": "Deccan Chronicle, Aug 2026",
+        "url": "https://www.deccanchronicle.com/amp/nation/current-affairs/bombay-hc-convicts-tarun-tejpal-in-2013-rape-case-overturns-acquittal-1977003"
+      },
+      {
+        "label": "The Wire, SC order",
+        "url": "https://thewire.in/law/supreme-court-dismisses-ex-tehelka-editor-tarun-tejpals-plea-in-rape-case-asks-him-to-surrender-in-two-weeks"
+      },
+      {
+        "label": "Deccan Herald, Tejpal response",
+        "url": "https://www.deccanherald.com/amp/story/india/tejpal-to-knock-on-supreme-court-doors-calls-rape-conviction-in-2013-case-wrong-4101293"
+      }
+    ],
+    "primary_url": "https://www.deccanchronicle.com/amp/nation/current-affairs/bombay-hc-convicts-tarun-tejpal-in-2013-rape-case-overturns-acquittal-1977003",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 211,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "hosigi",
+    "executive": "Choi Ho-sik",
+    "role": "Founder and chairman",
+    "disclosed": "2017-06",
+    "category": "Criminal conviction: sexual harassment of employee",
+    "outcome": "Resigned; suspended sentence",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "A Seoul court in February 2019 convicted Hosigi Two Chicken founder Choi Ho-sik of sexually abusing a young employee of his company by using his position, and gave him a one-year prison term suspended for two years, Aju Business Daily reported. The complaint became public in June 2017, when Choi denied physical contact, the Korea Times reported. He stepped down as chairman after public criticism.",
+    "sources": [
+      {
+        "label": "Aju Business Daily, Feb 2019",
+        "url": "https://www.ajupress.com/view/20190214130350347"
+      },
+      {
+        "label": "Korea Times, June 2017",
+        "url": "https://www.koreatimes.co.kr/southkorea/law-crime/20170605/fried-chicken-chief-accused-of-sexual-harassment-video"
+      },
+      {
+        "label": "Kyunghyang, Feb 2019",
+        "url": "https://www.khan.co.kr/article/201902141059001"
+      }
+    ],
+    "primary_url": "https://www.ajupress.com/view/20190214130350347",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 212,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "kimgane",
+    "executive": "Kim Yong-man",
+    "role": "Chairman and CEO",
+    "disclosed": "2024-04",
+    "category": "Criminal conviction: attempted sexual assault of employee",
+    "outcome": "Removed as CEO; suspended sentence",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "In May 2026 the Seoul Northern District Court convicted Kimgane chairman Kim Yong-man of attempted quasi-rape of a female employee who was intoxicated after a 2023 company dinner, and sentenced him to three years in prison suspended for five years. Kim admitted the charge in court. Korean outlets reported he was removed as Kimgane's chief executive in April 2024.",
+    "sources": [
+      {
+        "label": "Herald Business, May 2026",
+        "url": "https://www.heraldk.com/article/2026052017591665224"
+      },
+      {
+        "label": "Ilyo Sisa",
+        "url": "https://www.ilyosisa.co.kr/news/article.html?no=256027"
+      },
+      {
+        "label": "Asia Economy (English)",
+        "url": "https://www.asiae.co.kr/en/article/2026052110525888411"
+      }
+    ],
+    "primary_url": "https://www.heraldk.com/article/2026052017591665224",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 213,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "hksa",
+    "executive": "Frank Muñoz",
+    "role": "CEO and executive director",
+    "disclosed": "2015-11",
+    "category": "Criminal conviction: indecent assault of subordinate",
+    "outcome": "Resigned; jailed three weeks",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "A Hong Kong court convicted Frank Muñoz, chief executive of Hong Kong Shanghai Alliance Holdings, of indecently assaulting a recently hired female subordinate after a company party in January 2015, and sentenced him to three weeks in jail. The listed company confirmed the conviction in a November 2015 statement, and Muñoz resigned as CEO and executive director that month. The High Court later dismissed his appeal.",
+    "sources": [
+      {
+        "label": "Human Resources Online, Mar 2017",
+        "url": "https://www.humanresourcesonline.net/hong-kong-shanghai-alliance-holdings-ex-ceo-jailed-for-molestation"
+      }
+    ],
+    "primary_url": "https://www.humanresourcesonline.net/hong-kong-shanghai-alliance-holdings-ex-ceo-jailed-for-molestation",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 214,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "westgate",
+    "executive": "David Siegel",
+    "role": "Chairman, President and CEO",
+    "disclosed": "2010-01",
+    "category": "Sexual harassment / battery of employee",
+    "outcome": "Jury found battery; judgment for compensatory and punitive damages affirmed on appeal",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "A federal jury in Florida found that David Siegel, chairman, president and CEO of Central Florida Investments, the parent of Westgate Resorts, committed battery against an employee and subjected her to a hostile work environment based on sex, according to the Eleventh Circuit's opinion. The harassment claims were time-barred, but the jury awarded about $102,000 in compensatory and $5.3 million in punitive damages on the battery claim, which the trial court cut to $500,000 under Florida's cap. In January 2010 the Eleventh Circuit affirmed the judgment in all respects. Siegel remained in his role.",
+    "sources": [
+      {
+        "label": "Myers v. Central Florida Investments, 592 F.3d 1201 (11th Cir. 2010), FindLaw",
+        "url": "https://caselaw.findlaw.com/us-11th-circuit/1496604.html"
+      },
+      {
+        "label": "11th Circuit opinion PDF",
+        "url": "https://media.ca11.uscourts.gov/opinions/pub/files/200816291.pdf"
+      }
+    ],
+    "primary_url": "https://media.ca11.uscourts.gov/opinions/pub/files/200816291.pdf",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 215,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "toyota",
+    "executive": "Hideaki Otaka",
+    "role": "President and CEO, Toyota Motor North America",
+    "disclosed": "2006-05",
+    "category": "Sexual harassment of subordinate (alleged)",
+    "outcome": "Left post; lawsuit settled with confidential terms",
+    "lost_role": true,
+    "evidence": "settled",
+    "summary": "In May 2006 an employee sued Toyota Motor North America president and CEO Hideaki Otaka, the U.S. unit and its Japanese parent in New York State Supreme Court, alleging he sexually harassed her, the Associated Press reported. Otaka said he was innocent and left his post shortly after the suit was filed, saying that staying went against the company's interests. In August 2006 Toyota announced that the suit had been settled on confidential terms. Settlements are not admissions of wrongdoing.",
+    "sources": [
+      {
+        "label": "Toyota Motor North America press release, August 4, 2006",
+        "url": "https://globenewswire.com/fr/news-release/2006/08/04/346664/4790/en/Toyota-Settles-Harassment-Lawsuit.html"
+      },
+      {
+        "label": "NBC News/AP, 2006",
+        "url": "https://www.nbcnews.com/news/amp/wbna14216331"
+      },
+      {
+        "label": "Fox News, May 2006",
+        "url": "https://www.foxnews.com/story/woman-files-190m-sexual-harassment-lawsuit-against-toyota-executive"
+      }
+    ],
+    "primary_url": "https://globenewswire.com/fr/news-release/2006/08/04/346664/4790/en/Toyota-Settles-Harassment-Lawsuit.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 216,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "astra",
+    "executive": "Lars Bildman",
+    "role": "President and CEO, Astra USA",
+    "disclosed": "1996-04",
+    "category": "Sexual harassment",
+    "outcome": "Terminated",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "Astra suspended Bildman, the head of its U.S. subsidiary, in April 1996 and said an independent counsel would investigate claims against him, with a company spokesman saying sexual harassment accusations were the main concern. Astra fired him in June 1996. In 1998 Astra USA agreed to pay $9.85 million to settle an EEOC suit, and the EEOC said its investigation found that management officials, including Bildman, had subjected female employees to a hostile work environment; the settlement contained no admission of liability. In 2009 Massachusetts' highest court ruled that Bildman, whom the company said it fired for sexual harassment and misuse of company funds, must forfeit about $7 million in pay.",
+    "sources": [
+      {
+        "label": "Spokesman-Review (wire services), Apr 30 1996: CEO of Astra USA accused of sex harassment",
+        "url": "https://www.spokesman.com/stories/1996/apr/30/ceo-of-astra-usa-accused-of-sex-harassment/"
+      },
+      {
+        "label": "EEOC press release, Feb 5 1998: Astra USA agrees to provide $10 million",
+        "url": "https://www.eeoc.gov/newsroom/astra-usa-agrees-provide-10-million-victims-discrimination"
+      },
+      {
+        "label": "AP via CBS News, Oct 6 2009: ex-Astra CEO must forfeit nearly $7M",
+        "url": "https://www.cbsnews.com/news/mass-court-ex-astra-ceo-must-forfeit-nearly-7m"
+      },
+      {
+        "label": "Christian Science Monitor, Jul 2 1999: CEOs getting the boot for sexual misconduct",
+        "url": "https://www.csmonitor.com/1999/0702/p1s3.html"
+      },
+      {
+        "label": "Astra USA v. Bildman, 455 Mass. 116 (2009)",
+        "url": "https://law.justia.com/cases/massachusetts/supreme-court/volumes/455/455mass116.html"
+      }
+    ],
+    "primary_url": "https://www.eeoc.gov/newsroom/astra-usa-agrees-provide-10-million-victims-discrimination",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 217,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "dellabs",
+    "executive": "Dan Wassong",
+    "role": "Chairman, President and CEO",
+    "disclosed": "1994-07",
+    "category": "Sexual harassment",
+    "outcome": "Remained in role",
+    "lost_role": false,
+    "evidence": "settled",
+    "summary": "In July 1994 the EEOC sued Del Laboratories, alleging that its chairman and CEO Dan Wassong had engaged in a longstanding practice of sexually harassing female employees, including firing women who would not tolerate it. In August 1995 the company agreed in a federal consent decree to pay $1.185 million to 15 women and to revise its harassment policy, with two new outside directors to oversee investigations. The company's attorney denied all of the allegations, and the settlement contained no finding of wrongdoing; settlements are not admissions. The attorney said Wassong was likely to remain in charge.",
+    "sources": [
+      {
+        "label": "EEOC press release, Aug 3 1995: EEOC settles sexual harassment suit against Del Laboratories",
+        "url": "https://www.eeoc.gov/index%2Ephp/newsroom/eeoc-settles-sexual-harassment-suit-against-del-laboratories"
+      },
+      {
+        "label": "Washington Post via Spokesman-Review, Aug 4 1995: Company will pay in harassment case",
+        "url": "https://www.spokesman.com/stories/1995/aug/04/company-will-pay-in-harassment-case"
+      }
+    ],
+    "primary_url": "https://www.eeoc.gov/index%2Ephp/newsroom/eeoc-settles-sexual-harassment-suit-against-del-laboratories",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 218,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "keane",
+    "executive": "Brian Keane",
+    "role": "President and CEO",
+    "disclosed": "2006-05",
+    "category": "Sexual harassment",
+    "outcome": "Resigned at board's request",
+    "lost_role": true,
+    "evidence": "settled",
+    "summary": "Keane resigned as president and CEO of Keane, Inc. on May 10, 2006, at the board's request, after what the company called employee allegations relating to his personal conduct. In June 2006 the company disclosed in SEC filings that it would pay $1.14 million to settle a vice president's claims that he had sexually harassed her, InformationWeek reported. Keane denied sexual harassment but acknowledged conduct that reflected poor judgment. The settlement included no admission of liability.",
+    "sources": [
+      {
+        "label": "Keane, Inc. resignation agreement (SEC EX-10.2), May 10 2006",
+        "url": "https://www.sec.gov/Archives/edgar/data/54883/000110465906033386/a06-9254_1ex10d2.htm"
+      },
+      {
+        "label": "InformationWeek, June 19 2006",
+        "url": "https://www.informationweek.com/it-leadership/keane-settles-sexual-harassment-claim-for-1-14m"
+      },
+      {
+        "label": "eWeek: Brian Keane resigns",
+        "url": "https://www.eweek.com/it-management/brian-keane-resigns-as-keane-president-ceo/"
+      },
+      {
+        "label": "Settlement agreement (Justia contracts copy of SEC exhibit)",
+        "url": "https://contracts.justia.com/companies/keane-inc-58750/contract/873451"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/54883/000110465906033386/a06-9254_1ex10d2.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 219,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "nra_rest",
+    "executive": "Herman Cain",
+    "role": "President and CEO (1996-1999)",
+    "disclosed": "2011-10",
+    "category": "Sexual harassment",
+    "outcome": "Had already left; association confirmed settlement",
+    "lost_role": false,
+    "evidence": "settled",
+    "summary": "In October 2011 Politico reported that the National Restaurant Association had settled sexual harassment complaints made by employees against Cain while he led the trade group in the late 1990s. In November 2011 the association confirmed that it had settled a formal internal complaint filed in July 1999, without any admission of liability, and released the complainant from a confidentiality agreement. The New York Times and AP also reported on the settlements. Cain denied harassing anyone and called the allegations false.",
+    "sources": [
+      {
+        "label": "Nation's Restaurant News, Nov 7 2011: NRA confirms settlement",
+        "url": "https://nrn.com/restaurant-insights/nra-confirms-former-settlement-with-cain"
+      },
+      {
+        "label": "AJC: trade group confirms paid settlement",
+        "url": "https://www.ajc.com/news/local-govt--politics/trade-group-confirms-paid-settlement-sex-harassment-complaint-against-cain/sGKPxn9UOfnYHzbb9CE18J"
+      },
+      {
+        "label": "NPR, Nov 4 2011",
+        "url": "https://www.npr.org/sections/thetwo-way/2011/11/04/142033499/cain-accuser-says-she-complained-over-a-series-of-unwanted-advances"
+      }
+    ],
+    "primary_url": "https://nrn.com/restaurant-insights/nra-confirms-former-settlement-with-cain",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 220,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "worldwidepants",
+    "executive": "David Letterman",
+    "role": "Owner and chairman, Worldwide Pants; host, Late Show",
+    "disclosed": "2009-10",
+    "category": "Relationship with subordinates",
+    "outcome": "No action; remained",
+    "lost_role": false,
+    "evidence": "acknowledged",
+    "summary": "On October 1, 2009, Letterman told the audience of his CBS program that he had had sexual relationships with women who worked on his staff. He disclosed it while describing an extortion attempt, for which a CBS News producer was arrested. A spokesman for his production company, Worldwide Pants, said the relationships predated Letterman's marriage and that the company's harassment policy did not bar relationships between managers and employees.",
+    "sources": [
+      {
+        "label": "ABC News, Oct 1 2009",
+        "url": "https://abcnews.com/amp/Entertainment/david-letterman-admits-sexual-affairs-staffers-details-extortion/story?id=8728424"
+      },
+      {
+        "label": "Washington Times, Oct 2 2009",
+        "url": "https://www.washingtontimes.com/news/2009/oct/2/letterman-says-he-was-target-extortion-attempt/"
+      },
+      {
+        "label": "Time",
+        "url": "https://content.time.com/time/arts/article/0,8599,1927475,00.html"
+      }
+    ],
+    "primary_url": "https://abcnews.com/amp/Entertainment/david-letterman-admits-sexual-affairs-staffers-details-extortion/story?id=8728424",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 221,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "ey",
+    "executive": "Neil Hutt",
+    "role": "Partner leading TMT transaction support team",
+    "disclosed": "2021-11",
+    "category": "Sexual comments toward trainee",
+    "outcome": "ICAEW severe reprimand and £7,000 fine; EY fined him £75,000",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "An ICAEW disciplinary tribunal found that Neil Hutt, an EY partner leading a transaction support team, made obscene and aggressive sexual remarks to a junior trainee on a company ski trip in January 2019. It gave him a severe reprimand, a £7,000 fine and costs, and said he might have been excluded had he not admitted the conduct and shown remorse. EY said it investigated and imposed sanctions; City AM reported the firm fined him £75,000 and he kept his role.",
+    "sources": [
+      {
+        "label": "City AM, Nov 2021",
+        "url": "https://www.cityam.com/?p=1800964"
+      },
+      {
+        "label": "HR Review",
+        "url": "https://hrreview.co.uk/hr-news/ey-partner-retains-job-after-making-sexual-advances-at-trainee/138844"
+      },
+      {
+        "label": "ICAEW disciplinary update Dec 2021",
+        "url": "https://www.icaew.com/regulation/regulatory-news/2021-dec/du-dec-2021"
+      },
+      {
+        "label": "Daily Telegraph, 13 Nov 2021 (resignation)",
+        "url": "https://www.pressreader.com/uk/the-daily-telegraph/20211113/282385517758838"
+      }
+    ],
+    "primary_url": "https://www.icaew.com/regulation/regulatory-news/2021-dec/du-dec-2021",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Team-leading Big Four partner; seniority below VP-level is doubtful."
+  },
+  {
+    "id": 222,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "halunen",
+    "executive": "Clayton Halunen",
+    "role": "Founder, sole owner and managing partner",
+    "disclosed": "2023-03",
+    "category": "Sexual harassment of subordinates",
+    "outcome": "Indefinitely suspended from practice (reinstated Jan 2026)",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "The Minnesota Supreme Court suspended Clayton Halunen, the managing partner of Minneapolis employment firm Halunen Law, indefinitely in March 2023, after finding that he sexually harassed two male subordinates over about two and a half years and threatened criminal charges if they exposed him. The court said the six-month suspension recommended by the referee was inadequate. A divided court reinstated him in January 2026, Minnesota Lawyer reported.",
+    "sources": [
+      {
+        "label": "Minnesota Lawyer, Mar 2023",
+        "url": "https://minnlawyer.com/2023/03/30/supreme-court-suspends-halunen-indefinitely-for-sex-harassment/"
+      },
+      {
+        "label": "Star Tribune",
+        "url": "https://www.startribune.com/disgraced-lawyer-faces-tougher-punishment-for-sexually-harassing-male-co-workers-clayton-halunen/600263265"
+      },
+      {
+        "label": "Fox 9",
+        "url": "https://www.fox9.com/news/minnesota-supreme-court-6-month-suspension-of-lawyer-too-lenient"
+      }
+    ],
+    "primary_url": "https://minnlawyer.com/2023/03/30/supreme-court-suspends-halunen-indefinitely-for-sex-harassment/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Court suspension is solid, but the firm may not be notable."
+  },
+  {
+    "id": 223,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "scottishrugby",
+    "executive": "Alex Williamson",
+    "role": "Chief executive",
+    "disclosed": "2026-07",
+    "category": "Undisclosed relationship with employee",
+    "outcome": "Dismissed July 2026",
+    "lost_role": true,
+    "evidence": "unconfirmed",
+    "summary": "Scottish Rugby dismissed chief executive Williamson in July 2026 after an independent investigation found conduct that fell significantly below its standards, Reuters reported. STV reported that the conduct involved an undisclosed relationship with a Scottish Rugby employee.",
+    "sources": [
+      {
+        "label": "Scottish Rugby chair statement",
+        "url": "https://scottishrugby.org/news-and-features/statement-from-the-chair-of-scottish-rugby-limited/"
+      },
+      {
+        "label": "STV, Jul 2026",
+        "url": "https://news.stv.tv/sport/scottish-rugby-ceo-sacked-over-inappropriate-behaviour"
+      },
+      {
+        "label": "Reuters via The Star, Jul 2026",
+        "url": "https://www.thestar.com.my/sport/rugby/2026/07/30/rugby-scottish-rugby-ceo-williamson-sacked-after-investigation"
+      }
+    ],
+    "primary_url": "https://scottishrugby.org/news-and-features/statement-from-the-chair-of-scottish-rugby-limited/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Only one outlet ties his dismissal to an undisclosed relationship."
+  },
+  {
+    "id": 224,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "mlbam",
+    "executive": "Bob Bowman",
+    "role": "President and CEO",
+    "disclosed": "2017-12",
+    "category": "Relationships with subordinates; inappropriate conduct",
+    "outcome": "Left at contract end Dec 2017",
+    "lost_role": true,
+    "evidence": "acknowledged",
+    "summary": "The Wall Street Journal reported in December 2017 that Bowman, head of MLB Advanced Media, was pushed out after years of workplace misconduct allegations, including propositioning female colleagues and consensual relationships with subordinates. Bowman told the Journal that his behaviour was at times 'inappropriate' and that he took full responsibility. MLB had announced his departure in November 2017.",
+    "sources": [
+      {
+        "label": "Sports Illustrated, Dec 2017",
+        "url": "https://www.si.com/media/2017/12/21/bob-bowman-mlb-advanced-media-bamtech-forced-out"
+      },
+      {
+        "label": "SportBusiness, Dec 2017",
+        "url": "https://media.sportbusiness.com/news/ex-bamtech-boss-bowman-admits-to-inappropriate-behaviour"
+      }
+    ],
+    "primary_url": "https://www.si.com/media/2017/12/21/bob-bowman-mlb-advanced-media-bamtech-forced-out",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Relationships reported by WSJ only; his admission was general."
+  },
+  {
+    "id": 225,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "kelectric",
+    "executive": "Moonis Alvi",
+    "role": "CEO",
+    "disclosed": "2025-07",
+    "category": "Workplace harassment finding (ombudsperson), later set aside",
+    "outcome": "Finding set aside by governor; resigned Feb 2026",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "In July 2025 Sindh's provincial ombudsperson for workplace harassment found K-Electric CEO Moonis Alvi had harassed a female employee and ordered his removal and a fine; Alvi denied the charges. The Sindh governor set the order aside on appeal in February 2026, and Alvi resigned days later, per a stock exchange disclosure. A challenge to the governor's decision is pending in the Sindh High Court.",
+    "sources": [
+      {
+        "label": "Dawn, July 2025",
+        "url": "https://www.dawn.com/news/1927799/sindh-ombudsperson-orders-removal-of-ke-ceo-for-harassing-female-colleague"
+      },
+      {
+        "label": "Profit/Pakistan Today, Feb 2026",
+        "url": "https://profit.pakistantoday.com.pk/2026/02/03/sindh-governor-sets-aside-provincial-ombudsman-order-against-k-electric-ceo"
+      },
+      {
+        "label": "Dawn, resignation",
+        "url": "https://www.dawn.com/news/1971391"
+      }
+    ],
+    "primary_url": "https://www.dawn.com/news/1927799/sindh-ombudsperson-orders-removal-of-ke-ceo-for-harassing-female-colleague",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Ombudsperson finding set aside by the governor; challenge pending in court."
+  },
+  {
+    "id": 226,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "fuwan",
+    "executive": "Hsu Feng-chia",
+    "role": "Chairman",
+    "disclosed": "2020-12",
+    "category": "Criminal conviction: sexual harassment of intern",
+    "outcome": "Removed; six-month sentence commuted to fine",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "Fu Wan Chocolate's former chairman Hsu Feng-chia was convicted over the sexual harassment of an intern at the company in 2015 and given a six-month sentence that was commuted to a fine, The Star reported. He was removed from his position in 2015. The case drew wide attention in December 2020, when retailers pulled the brand's products.",
+    "sources": [
+      {
+        "label": "The Star (Malaysia), Dec 2020",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2020/12/20/taiwan039s-famous-fu-wan-chocolate-products-boycotted-over-sexual-harassment-scandal"
+      }
+    ],
+    "primary_url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2020/12/20/taiwan039s-famous-fu-wan-chocolate-products-boycotted-over-sexual-harassment-scandal",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single source; judgment not found."
+  },
+  {
+    "id": 227,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "florsheim",
+    "executive": "Charles Campbell",
+    "role": "CEO",
+    "disclosed": "1999-05",
+    "category": "Alleged affairs / misuse of company resources (lawsuit by former assistant)",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "unconfirmed",
+    "summary": "In 1999 a former assistant sued Florsheim CEO Charles Campbell, alleging that he had mistresses join him at the corporate apartment, on business trips and in company limousines, the Christian Science Monitor reported. Campbell resigned about six weeks later, and the company declined to comment.",
+    "sources": [
+      {
+        "label": "Christian Science Monitor, Jul 2 1999: CEOs getting the boot for sexual misconduct",
+        "url": "https://www.csmonitor.com/1999/0702/p1s3.html"
+      }
+    ],
+    "primary_url": "https://www.csmonitor.com/1999/0702/p1s3.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single source; nothing shows the women were employees."
+  },
+  {
+    "id": 228,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "wrgrace",
+    "executive": "J.P. Bolduc",
+    "role": "President and CEO",
+    "disclosed": "1995-04",
+    "category": "Sexual harassment (alleged)",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "unconfirmed",
+    "summary": "Bolduc resigned as W.R. Grace's chief executive in March 1995, with the board citing differences of style and philosophy. Time later reported that he had been forced out partly over alleged harassment of five women employees, none of whom had filed a formal complaint. Bolduc denied the allegations, and his lawyer called them part of a smear campaign by Grace directors.",
+    "sources": [
+      {
+        "label": "Time, Apr 17 1995: Tales from the Elevator",
+        "url": "https://content.time.com/time/subscriber/article/0,33009,982816-1,00.html"
+      }
+    ],
+    "primary_url": "https://content.time.com/time/subscriber/article/0,33009,982816-1,00.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single outlet (Time); board cited other reasons; he denied it."
+  },
+  {
+    "id": 229,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "wellpoint",
+    "executive": "David Colby",
+    "role": "Vice Chairman and CFO",
+    "disclosed": "2007-05",
+    "category": "Code of conduct breach; alleged relationships",
+    "outcome": "Pushed out",
+    "lost_role": true,
+    "evidence": "unconfirmed",
+    "summary": "WellPoint said in May 2007 that Colby had left as vice chairman and CFO after violating its code of conduct through activities 'of a nonbusiness nature'. Later lawsuits, including one by a former employee, alleged he had simultaneous relationships with many women. WellPoint declined to comment on the suits.",
+    "sources": [
+      {
+        "label": "Indianapolis Business Journal",
+        "url": "https://www.ibj.com/articles/12950-wellpoint-cfo-s-affairs-exposed-by-lawsuit"
+      },
+      {
+        "label": "CFO.com: Tangled web for ex-WellPoint CFO",
+        "url": "https://www.cfo.com/news/tangled-web-for-ex-wellpoint-cfo/674619/"
+      },
+      {
+        "label": "Business Insurance, Jun 2007",
+        "url": "https://www.businessinsurance.com/article/20070629/story/200010539/former-worker-sues-wellpoint,-ex-cfo-colby"
+      }
+    ],
+    "primary_url": "https://www.ibj.com/articles/12950-wellpoint-cfo-s-affairs-exposed-by-lawsuit",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Company cited non-business code breaches; affair claims come only from lawsuits."
+  },
+  {
+    "id": 230,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "disney",
+    "executive": "Steve McPherson",
+    "role": "President, ABC Entertainment Group",
+    "disclosed": "2010-07",
+    "category": "Sexual harassment (alleged)",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "unconfirmed",
+    "summary": "McPherson resigned as president of ABC Entertainment in July 2010. The Hollywood Reporter, citing an unnamed source, reported that the company had been investigating harassment complaints against him. Disney gave no reason for his departure, and his representatives called the reports false and defamatory.",
+    "sources": [
+      {
+        "label": "TheWrap",
+        "url": "https://www.thewrap.com/report-mcpherson-resigned-among-sex-harassment-investigation-19666"
+      },
+      {
+        "label": "NBC San Diego",
+        "url": "https://www.nbcsandiego.com/news/national-international/departing-abc-execs-conduct-probed-report/2100798/"
+      }
+    ],
+    "primary_url": "https://www.thewrap.com/report-mcpherson-resigned-among-sex-harassment-investigation-19666",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single anonymous report; Disney gave no reason; he denied it."
   }
 ]

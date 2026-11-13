@@ -13,7 +13,7 @@ Below the C-suite and board, a case is included only if the company or executive
 ## What counts
 Two categories, shown together or separately:
 - **Relationships**: romantic or sexual relationships that broke company policy (with a subordinate, employee, contractor or vendor), relationships that should have been disclosed and weren't, and extramarital affairs the executive acknowledged publicly.
-- **Misconduct**: sexual harassment, assault or abuse, unwanted advances and sexually inappropriate conduct toward colleagues. This category has a stricter bar: the company's own finding, the executive's admission, a court or regulator finding, or at least two independent major outlets plus a company-confirmed investigation or exit. Single-source reports are never published, cases where the executive was cleared are left out, and denials are always noted. Complainants are never named.
+- **Misconduct**: sexual harassment, assault or abuse, unwanted advances and sexually inappropriate conduct toward colleagues or people under their authority at work (for example, players under a sports-federation official). This category has a stricter bar: the company's own finding, the executive's admission, a court or regulator finding, or at least two independent major outlets plus a company-confirmed investigation or exit. Single-source reports are never published, cases where the executive was cleared are left out, and denials are always noted. Complainants are never named.
 
 ## Dates
 Each case is placed by the month it became **public**, not when the conduct happened. Counts per year show when cases came to light, not when they occurred.

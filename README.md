@@ -49,7 +49,7 @@ Then ask Claude Code something like:
 
 ## Current state
 
-- 197 records across 164 companies (103 published: 60 relationship, 43 misconduct; 5 are prominent non-executive employees), from 1998 to November 2026.
+- 229 records across 195 companies (125 published, 107 companies: 61 relationship, 64 misconduct; earliest case 1994), from 1998 to November 2026.
 - The app in `app/` (plain HTML/CSS/JS, no build step) implements the timeline, records table, about page and detail drawer, reading `data/*.json` and `docs/METHODOLOGY.md`. Only `status: "published"` records are shown.
 
 ## Run the app
