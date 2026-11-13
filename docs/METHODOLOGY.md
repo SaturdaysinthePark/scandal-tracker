@@ -6,7 +6,7 @@ Corporate officers and executives at VP level and above, and board members, of:
 - **Global 500**: the largest non-US companies.
 - **Other notable**: smaller or private companies, sports organisations and major nonprofits whose case drew significant coverage, e.g. Astronomer or the American Red Cross.
 
-Prominent non-executive employees (on-air anchors, star editors and producers, star portfolio managers) are included and labelled as such, but only when the company itself confirmed the conduct or a court or regulator found it. Freelancers, contributors, actors and athletes are not included.
+Prominent non-executive employees (on-air anchors, star editors and producers, star portfolio managers) are included and labelled as such, but only when the company itself confirmed the conduct, a court or regulator found it, or it was settled. Freelancers, contributors, actors and athletes are not included.
 
 Below the C-suite and board, a case is included only if the company or executive confirmed it, or at least two independent outlets reported it.
 
@@ -18,12 +18,14 @@ Two categories, shown together or separately:
 ## Dates
 `disclosed` is the month the relationship became **public**, not when it happened. Counts per year therefore measure disclosure, not conduct.
 
-## Evidence tiers
-1. **Company-confirmed**: a filing, press release or board statement.
-2. **Publicly acknowledged**: the executive's own statement.
-3. **Reported, investigation confirmed**: major outlets report it, and the company confirms the departure or investigation.
-4. **Reported, unconfirmed**: one major outlet with described sourcing. Shown as a hollow dot, and can be hidden. Relationship category only.
-5. **Court or regulator finding**: a court, tribunal, regulator or arbitrator finding, a conviction, or a public settlement naming the conduct.
+## Evidence
+Every case carries one label, strongest first:
+1. **Company confirmed**: the company said it in a filing, press release or board statement.
+2. **Court ruling**: a court, regulator or arbitrator found it, or a public settlement names the conduct.
+3. **Admitted**: the person said it themselves.
+4. **Settled**: a lawsuit or legal claim was settled without any finding, several major outlets reported it, and the company confirmed the exit or knew of the claim. A settlement is not an admission.
+5. **Reported**: major outlets reported it, and the company confirmed the exit or an investigation.
+6. **Unconfirmed**: one major outlet reported it with described sourcing. Shown as a hollow mark and can be hidden. Relationships only.
 
 ## Naming
 The other person is never named unless they're a public figure on the record.

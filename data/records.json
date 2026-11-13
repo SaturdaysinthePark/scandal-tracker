@@ -3943,8 +3943,8 @@
     "disclosed": "2017-04",
     "category": "Sexual harassment",
     "outcome": "Exited after company review",
-    "evidence": "reported",
-    "summary": "21st Century Fox said in April 2017 that after a thorough and careful review of allegations against O'Reilly, the company and O'Reilly agreed he would not return to Fox News. The New York Times had reported that five women received about $13 million in settlements; in October 2017 it reported a further $32 million settlement with a Fox News analyst. Fox said it knew a harassment suit had been threatened and that O'Reilly told it he settled personally on confidential terms. O'Reilly denied wrongdoing and called the claims unfounded.",
+    "evidence": "settled",
+    "summary": "21st Century Fox said in April 2017 that, after a thorough and careful review of allegations against him, it and O'Reilly had agreed he would not return to Fox News. The New York Times reported that he or the company had paid about $13 million to settle claims by five women, and in October 2017 a further $32 million settlement with a Fox News analyst. Fox said it knew a harassment suit had been threatened and that O'Reilly told it he had settled personally on confidential terms. The settlements are not admissions; O'Reilly denied wrongdoing and called the claims unfounded.",
     "sources": [
       {
         "label": "6abc/AP, Apr 2017",
@@ -3962,8 +3962,7 @@
     "primary_url": "https://6abc.com/post/bill-oreilly-out-at-fox-news-releases-statement/1892362/",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Fox made no finding on the conduct (only a 'thorough and careful review'); settlements reported by the NYT, not confirmed by Fox. Prominent employees publish only at confirmed/adjudicated."
+    "status": "published"
   },
   {
     "id": 154,

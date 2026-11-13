@@ -226,7 +226,7 @@
   }
 
   async function load() {
-    const get = (p, t) => fetch(p).then((r) => { if (!r.ok) throw new Error(`${p}: ${r.status}`); return t ? r.text() : r.json(); });
+    const get = (p, t) => fetch(p, { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error(`${p}: ${r.status}`); return t ? r.text() : r.json(); });
     try {
       const [c, r, t, md] = await Promise.all([
         get('../data/companies.json'), get('../data/records.json'), get('../data/evidence_tiers.json'), get('../docs/METHODOLOGY.md', true),

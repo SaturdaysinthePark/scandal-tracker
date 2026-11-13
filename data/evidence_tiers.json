@@ -1,7 +1,8 @@
 {
-  "confirmed": "Company-confirmed",
-  "acknowledged": "Publicly acknowledged",
-  "reported": "Reported, investigation confirmed",
-  "unconfirmed": "Reported, unconfirmed",
-  "adjudicated": "Court or regulator finding"
+  "confirmed": "Company confirmed",
+  "acknowledged": "Admitted",
+  "adjudicated": "Court ruling",
+  "settled": "Settled",
+  "reported": "Reported",
+  "unconfirmed": "Unconfirmed"
 }

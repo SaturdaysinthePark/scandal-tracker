@@ -20,13 +20,13 @@ Exclude from the relationship category:
 - Departures for vague "personal conduct" with no reporting that ties them to a relationship. Note these as `status: "watch"` candidates, not published records.
 
 ## Prominent employees (`role_level: "prominent"`)
-Rule 1 normally limits the tracker to executives (`role_level: "executive"`, the default). A **prominent employee** is a non-executive employee of the company who was widely known in their own right: on-air anchors and hosts, star editors and producers, star portfolio managers or traders, and similar. They may be included in either category, but **only** at the `confirmed` or `adjudicated` tier (the company's own finding or statement, or a court/regulator finding). Exclude freelancers, contractors, contributors, actors and athletes. The app labels these records and lets readers hide them.
+Rule 1 normally limits the tracker to executives (`role_level: "executive"`, the default). A **prominent employee** is a non-executive employee of the company who was widely known in their own right: on-air anchors and hosts, star editors and producers, star portfolio managers or traders, and similar. They may be included in either category, but **only** at the `confirmed`, `adjudicated` or `settled` tier. Exclude freelancers, contractors, contributors, actors and athletes. The app labels these records and lets readers hide them.
 
 ## Misconduct category (`type: "misconduct"`)
 Sexual harassment, sexual assault or abuse, unwanted advances, sexually inappropriate conduct or comments toward colleagues, and retaliation tied to them. Not financial or other non-sexual misconduct.
 
 Same seniority rule (rule 1). The evidence bar is **stricter**:
-- Allowed tiers: `confirmed` (the company's own finding or statement names the misconduct or a policy breach tied to it), `acknowledged` (the executive admits the conduct), `adjudicated` (a court, tribunal, regulator or arbitrator finding, a conviction, or a settlement whose terms are public and name the conduct), or `reported` **only if** at least two independent major outlets did their own reporting **and** the company confirmed an investigation or the departure.
+- Allowed tiers: `confirmed` (the company's own finding or statement names the misconduct or a policy breach tied to it), `acknowledged` (the executive admits the conduct), `adjudicated` (a court, tribunal, regulator or arbitrator finding, a conviction, or a settlement whose terms are public and name the conduct), `settled` (see the tier table), or `reported` **only if** at least two independent major outlets did their own reporting **and** the company confirmed an investigation or the departure.
 - `unconfirmed` is never published for misconduct. Single-source cases stay `watch`.
 - Exclude cases where an investigation cleared the executive and nothing else confirms the conduct.
 - If the executive denies the allegations, the summary must say so.
@@ -34,13 +34,16 @@ Same seniority rule (rule 1). The evidence bar is **stricter**:
 - Describe conduct with the words the source uses ("alleged", "the company said"); no graphic detail.
 
 ## Evidence tiers (`evidence` field)
-| value | meaning |
-|---|---|
-| `confirmed` | Company filing, press release, or board statement names the relationship / policy breach |
-| `acknowledged` | The executive's own public statement |
-| `reported` | Major outlets (Reuters, WSJ, NYT, Bloomberg, FT, CNBC, AP) report it **and** the company confirms the departure or investigation |
-| `unconfirmed` | One major outlet with described sourcing, not confirmed by anyone involved (relationship category only) |
-| `adjudicated` | A court, tribunal, regulator or arbitrator finding, a conviction, or a public settlement naming the conduct |
+Strongest first. The app shows the short label; keep labels to one or two plain words.
+
+| value | app label | meaning |
+|---|---|---|
+| `confirmed` | Company confirmed | Company filing, press release, or board statement names the relationship / policy breach / misconduct |
+| `adjudicated` | Court ruling | A court, tribunal, regulator or arbitrator finding, a conviction, or a public settlement naming the conduct |
+| `acknowledged` | Admitted | The person's own public statement |
+| `settled` | Settled | A lawsuit or legal claim over the conduct was settled with no finding, reported by at least two independent major outlets (or shown in court records), **and** the company confirmed the departure, an investigation, or that it knew of the claim. The summary must say settlements are not admissions, and note any denial |
+| `reported` | Reported | Major outlets (Reuters, WSJ, NYT, Bloomberg, FT, CNBC, AP) report it **and** the company confirms the departure or investigation |
+| `unconfirmed` | Unconfirmed | One major outlet with described sourcing, not confirmed by anyone involved (relationship category only) |
 
 Upgrade or retract records as facts change. Never delete a published record silently. Set `status: "retracted"` and add a note.
 
