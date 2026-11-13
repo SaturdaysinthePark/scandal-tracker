@@ -4642,5 +4642,278 @@
     "verified_on": null,
     "status": "watch",
     "note": "Watch: vague 'personal conduct' departure with no reporting found that ties it to a relationship."
+  },
+  {
+    "id": 171,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "comcast",
+    "executive": "Matt Zimmerman",
+    "role": "Senior Vice President, Booking, NBC News",
+    "disclosed": "2017-11",
+    "category": "Inappropriate conduct with colleagues",
+    "outcome": "Terminated",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "NBC News said in November 2017 that it had learned Zimmerman engaged in inappropriate conduct with more than one woman at NBCUniversal, in violation of company policy, and that he had been dismissed. NBC did not describe the conduct further. Zimmerman could not be reached for comment at the time.",
+    "sources": [
+      {
+        "label": "NBC News, Nov 2017",
+        "url": "https://www.nbcnews.com/news/amp/ncna820761"
+      },
+      {
+        "label": "TheWrap, Nov 2017",
+        "url": "https://www.thewrap.com/nbc-senior-vice-president-dismissed-inappropriate-conduct-one-woman/"
+      }
+    ],
+    "primary_url": "https://www.nbcnews.com/news/amp/ncna820761",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 172,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "disney",
+    "executive": "Michael Corn",
+    "role": "Senior executive producer, Good Morning America (former)",
+    "disclosed": "2021-08",
+    "category": "Sexual assault and harassment allegations (lawsuit)",
+    "outcome": "Lawsuit settled; had left ABC in 2021",
+    "lost_role": false,
+    "evidence": "settled",
+    "summary": "A former ABC News producer sued ABC and Corn in 2021, alleging that Corn sexually assaulted her on a 2015 work trip and created a hostile workplace. Corn denied the allegations. ABC said it had investigated her 2021 complaint, and Corn left ABC that year. In October 2023 the parties resolved the case and it was dismissed with prejudice on undisclosed terms; a settlement is not an admission of wrongdoing.",
+    "sources": [
+      {
+        "label": "TheWrap, Oct 2023 (settlement)",
+        "url": "https://thewrap.com/abc-news-settles-sexual-harassment-lawsuit-good-morning-america-michael-corn-kirstyn-crawford"
+      },
+      {
+        "label": "Adweek TVNewser, Oct 2023 (settlement)",
+        "url": "https://www.adweek.com/tvnewser/abc-news-settles-sexual-harassment-lawsuit-with-former-gma-producer/"
+      },
+      {
+        "label": "Hollywood Reporter, Oct 2023",
+        "url": "https://www.hollywoodreporter.com/business/business-news/abc-news-settles-sexual-harassment-1235612706/"
+      }
+    ],
+    "primary_url": "https://thewrap.com/abc-news-settles-sexual-harassment-lawsuit-good-morning-america-michael-corn-kirstyn-crawford",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Sources conflict on settlement terms and whether he was named; exit date and VP-level title unconfirmed."
+  },
+  {
+    "id": 173,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "lbrands",
+    "executive": "Ed Razek",
+    "role": "Chief Marketing Officer",
+    "disclosed": "2020-02",
+    "category": "Harassment allegations",
+    "outcome": "Had already left (Aug 2019); named in derivative suits settled 2021",
+    "lost_role": false,
+    "evidence": "unconfirmed",
+    "summary": "The New York Times reported in February 2020 that Razek had been accused of inappropriate conduct toward models and employees; Razek called the accusations categorically untrue, misconstrued or taken out of context. Shareholder derivative suits naming him, Leslie Wexner and others were settled in 2021 with L Brands committing $90 million to workplace reforms; the settlement contained no finding against him.",
+    "sources": [
+      {
+        "label": "D&O Diary, Aug 2021 (settlement)",
+        "url": "https://www.dandodiary.com/2021/08/articles/director-and-officer-liability/l-brands-establishes-90-million-fund-in-sexual-misconduct-derivative-suit-settlement/"
+      },
+      {
+        "label": "WCBE/NPR on NYT report, Feb 2020",
+        "url": "https://www.wcbe.org/news/2020-02-03/nyt-l-brands-top-official-named-in-sexual-harassment-allegations"
+      }
+    ],
+    "primary_url": "https://www.dandodiary.com/2021/08/articles/director-and-officer-liability/l-brands-establishes-90-million-fund-in-sexual-misconduct-derivative-suit-settlement/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Only the NYT did its own reporting; he denies it; L Brands never confirmed the conduct."
+  },
+  {
+    "id": 175,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "goldman",
+    "executive": "Adam Dell",
+    "role": "Partner (Marcus product head)",
+    "disclosed": "2023-06",
+    "category": "Sexually explicit video sent to junior colleague",
+    "outcome": "Left firm by early 2021",
+    "lost_role": false,
+    "evidence": "unconfirmed",
+    "summary": "Bloomberg reported in June 2023 that Dell paid a multimillion-dollar settlement to a junior colleague after mistakenly sending her a work video that included sexually explicit content. Goldman said the report contained significant factual errors. Dell did not respond to requests for comment.",
+    "sources": [
+      {
+        "label": "WealthManagement (Bloomberg syndication), Jun 2023",
+        "url": "https://www.wealthmanagement.com/ria-news/a-goldman-partner-s-sexually-explicit-video-led-to-millions-in-settlement"
+      }
+    ],
+    "primary_url": "https://www.wealthmanagement.com/ria-news/a-goldman-partner-s-sexually-explicit-video-led-to-millions-in-settlement",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single source (Bloomberg); Goldman disputes the report."
+  },
+  {
+    "id": 176,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "disney",
+    "executive": "Rob King",
+    "role": "Executive Vice President, ESPN",
+    "disclosed": "2023-03",
+    "category": "Harassment allegation",
+    "outcome": "Departed",
+    "lost_role": true,
+    "evidence": "unconfirmed",
+    "summary": "The New York Post reported in March 2023 that ESPN fired King after a harassment complaint was brought to human resources. ESPN did not comment, and King described his exit as his own decision.",
+    "sources": [
+      {
+        "label": "Adweek, Mar 2023",
+        "url": "https://www.adweek.com/blognetwork/espn-fires-executive-vice-president-rob-king-after-alleged-harassment/101177/"
+      }
+    ],
+    "primary_url": "https://www.adweek.com/blognetwork/espn-fires-executive-vice-president-rob-king-after-alleged-harassment/101177/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single NY Post report; no company confirmation."
+  },
+  {
+    "id": 177,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "disney",
+    "executive": "Lee Fitting",
+    "role": "Senior Vice President, Production, ESPN",
+    "disclosed": "2023-08",
+    "category": "Alleged inappropriate conduct toward women",
+    "outcome": "Terminated",
+    "lost_role": true,
+    "evidence": "unconfirmed",
+    "summary": "Media reports in 2023 said ESPN fired Fitting after an HR investigation into complaints that he engaged in inappropriate conduct toward women. He denied some of the allegations.",
+    "sources": [
+      {
+        "label": "F4W Online (secondary)",
+        "url": "https://www.f4wonline.com/news/wwe/report-wwes-lee-fitting-was-fired-from-espn-due-to-misconduct-objectifying-women"
+      }
+    ],
+    "primary_url": "https://www.f4wonline.com/news/wwe/report-wwes-lee-fitting-was-fired-from-espn-due-to-misconduct-objectifying-women",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "One major outlet (The Athletic/NYT); ESPN confirmed only the departure; he partly denies."
+  },
+  {
+    "id": 178,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "kroger",
+    "executive": "Rodney McMullen",
+    "role": "Chairman and CEO",
+    "disclosed": "2025-03",
+    "category": "Personal conduct (unspecified)",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "Kroger said in March 2025 that McMullen resigned after an outside-counsel investigation into his personal conduct. The company said the conduct was unrelated to the business and did not involve Kroger associates, but was inconsistent with its Policy on Business Ethics.",
+    "sources": [
+      {
+        "label": "NBC News, Mar 2025",
+        "url": "https://www.nbcnews.com/business/business-news/kroger-chairman-ceo-resigns-investigation-personal-conduct-rcna194499"
+      }
+    ],
+    "primary_url": "https://www.nbcnews.com/business/business-news/kroger-chairman-ceo-resigns-investigation-personal-conduct-rcna194499",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Vague 'personal conduct' exit; Kroger said no employees were involved; no relationship reported."
+  },
+  {
+    "id": 179,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "ford",
+    "executive": "Raj Nair",
+    "role": "President, North America",
+    "disclosed": "2018-02",
+    "category": "Code of conduct violation (unspecified)",
+    "outcome": "Terminated",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "Ford said in February 2018 that Nair was leaving after an internal investigation, prompted by an anonymous hotline complaint, found behavior inconsistent with its code of conduct. Ford did not specify the conduct; Nair expressed regret in a statement.",
+    "sources": [
+      {
+        "label": "Fortune, Feb 2018",
+        "url": "https://fortune.com/2018/02/21/ford-executive-raj-nair-fired/"
+      }
+    ],
+    "primary_url": "https://fortune.com/2018/02/21/ford-executive-raj-nair-fired/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Unspecified code-of-conduct breach; nothing ties it to a relationship or sexual conduct."
+  },
+  {
+    "id": 180,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "visa",
+    "executive": "Jim McCarthy",
+    "role": "EVP, Innovation and Strategic Partnerships",
+    "disclosed": "2017-12",
+    "category": "Relationships with employees",
+    "outcome": "Terminated",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Visa dismissed McCarthy, its executive vice president of innovation and strategic partnerships, in December 2017, and an internal memo said he had violated company policy. The Wall Street Journal reported that the firing followed an investigation into inappropriate relationships with female Visa employees, which began after the CEO received an anonymous email. Visa did not describe the allegations publicly.",
+    "sources": [
+      {
+        "label": "Fox Business (AP/Recode), Dec 2, 2017",
+        "url": "https://www.foxbusiness.com/markets/report-visa-fires-high-profile-manager-for-violating-policy"
+      },
+      {
+        "label": "American Banker, Dec 2, 2017",
+        "url": "https://www.americanbanker.com/payments/news/visa-evp-jim-mccarthy-reportedly-out-for-violating-company-policy"
+      },
+      {
+        "label": "Digital Transactions brief citing WSJ, Dec 18, 2017",
+        "url": "https://digitaltransactions.net/global-atm-cash-withdrawal-volume-grows-and-other-digital-transactions-news-briefs-from-12-18-17"
+      }
+    ],
+    "primary_url": "https://www.foxbusiness.com/markets/report-visa-fires-high-profile-manager-for-violating-policy",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Visa cited a policy violation; WSJ reported relationships with female employees, seen only second-hand; needs a second independent outlet."
+  },
+  {
+    "id": 181,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "uber",
+    "executive": "Ed Baker",
+    "role": "VP of Product and Growth",
+    "disclosed": "2017-03",
+    "category": "Relationship with employee",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "unconfirmed",
+    "summary": "Baker resigned as Uber's vice president of product and growth in March 2017 during a company-wide culture investigation. Recode reported, citing anonymous sources, that he had been seen kissing another Uber employee at a company event, and said those sources did not describe harassment. Baker's email to staff cited a desire to move into public service, and Uber gave no reason for the departure.",
+    "sources": [
+      {
+        "label": "Fortune, March 4, 2017 (summarizing Recode)",
+        "url": "https://fortune.com/2017/03/04/uber-vp-ed-baker-resigns"
+      }
+    ],
+    "primary_url": "https://fortune.com/2017/03/04/uber-vp-ed-baker-resigns",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single anonymous Recode report; Uber never tied it to his exit."
   }
 ]

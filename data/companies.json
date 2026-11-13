@@ -1013,5 +1013,40 @@
     "ticker": "Nonprofit",
     "sector": "Health Insurance",
     "scope": "Other notable"
+  },
+  {
+    "id": "lbrands",
+    "name": "L Brands (Victoria's Secret)",
+    "ticker": "BBWI",
+    "sector": "Retail",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "goldman",
+    "name": "Goldman Sachs",
+    "ticker": "GS",
+    "sector": "Banking",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "kroger",
+    "name": "Kroger",
+    "ticker": "KR",
+    "sector": "Retail",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "ford",
+    "name": "Ford Motor",
+    "ticker": "F",
+    "sector": "Automotive",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "visa",
+    "name": "Visa",
+    "ticker": "V",
+    "sector": "Financial Services",
+    "scope": "Fortune 500"
   }
 ]
