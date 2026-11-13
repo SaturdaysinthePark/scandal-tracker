@@ -14,6 +14,7 @@
     <div class="brand"><span class="brand-dot"></span><span>Scandal Tracker</span></div>
     <nav class="seg" id="tabs">
       <button data-view="timeline">Timeline</button>
+      <button data-view="calendar">Calendar</button>
       <button data-view="records">Records</button>
       <button data-view="about">About</button>
     </nav>
@@ -46,6 +47,24 @@
         <span><i class="dot ring"></i>Reported, unconfirmed</span>
         <span class="legend-note">Coverage is incomplete. Research is ongoing.</span>
       </div>
+    </section>
+
+    <section id="v-calendar" hidden>
+      <div class="intro">
+        <div class="intro-text">
+          <h1>Disclosures by month</h1>
+          <p class="lede">Every company in one view. Each square is a month; darker means more cases became public that month. Click a month to see its cases.</p>
+        </div>
+        <div class="stats" id="calStats"></div>
+      </div>
+      <div class="controls">
+        <div class="controls-l">
+          <label class="chk"><input type="checkbox" id="calU" checked>Unconfirmed reports</label>
+        </div>
+      </div>
+      <div class="card scroll-x"><div class="heat" id="heat"></div></div>
+      <div class="legend" id="heatLegend"></div>
+      <div id="monthList" class="month-list" hidden></div>
     </section>
 
     <section id="v-records" hidden>

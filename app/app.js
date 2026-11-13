@@ -5,7 +5,7 @@
   const SCOPES = ['All', 'Fortune 500', 'Global 500', 'Other notable'];
   const NO_EXIT = /^(no |remained|leave of absence)/i;
 
-  const st = { view: 'timeline', scope: 'All', showU: true, showZero: false, end: null, q: '', sel: null };
+  const st = { view: 'timeline', scope: 'All', showU: true, showZero: false, end: null, q: '', sel: null, calU: true, calSel: null };
   let companies = [], byCo = {}, records = [], tiers = {}, maxYear = new Date().getFullYear();
 
   const $ = (id) => document.getElementById(id);
@@ -69,13 +69,55 @@
     $('timeline').innerHTML = html;
   }
 
+  // ---------- Calendar heat map (company-agnostic) ----------
+  function renderCalendar() {
+    const recs = records.filter((r) => st.calU || !isU(r));
+    const counts = {};
+    for (const r of recs) counts[r.disclosed] = (counts[r.disclosed] || 0) + 1;
+    const ys = recs.map(yearOf);
+    const first = ys.length ? Math.min(...ys) : maxYear;
+    const years = []; for (let y = maxYear; y >= first; y--) years.push(y);
+    const maxN = Math.max(1, ...Object.values(counts));
+    const shade = (n) => n ? `rgba(200,65,43,${(0.22 + 0.78 * (n / maxN)).toFixed(2)})` : '';
+
+    const busiest = Object.entries(counts).sort((a, b) => b[1] - a[1] || b[0].localeCompare(a[0]))[0];
+    const months = Object.keys(counts).length;
+    $('calStats').innerHTML = [
+      [recs.length, 'Disclosures'],
+      [months, 'Months with a case'],
+      [busiest ? `${MONTHS[+busiest[0].slice(5) - 1]} ’${busiest[0].slice(2, 4)}` : '–', `Busiest month${busiest ? ` (${busiest[1]})` : ''}`],
+    ].map(([v, l]) => `<div><div class="stat-v">${esc(v)}</div><div class="stat-l">${esc(l)}</div></div>`).join('');
+
+    let html = `<div></div>${MONTHS.map((m) => `<div class="hm-h">${m}</div>`).join('')}<div class="hm-h" style="text-align:right">Total</div>`;
+    for (const y of years) {
+      let tot = 0;
+      html += `<div class="hm-y">${y}</div>`;
+      for (let m = 1; m <= 12; m++) {
+        const key = `${y}-${String(m).padStart(2, '0')}`, n = counts[key] || 0; tot += n;
+        const lbl = `${MONTHS[m - 1]} ${y}: ${n} case${n === 1 ? '' : 's'}`;
+        html += n
+          ? `<button class="hm-c has ${st.calSel === key ? 'on' : ''}" data-m="${key}" style="background:${shade(n)};color:${n / maxN > 0.5 ? '#fff' : 'var(--ink)'}" title="${lbl}" aria-label="${lbl}">${n}</button>`
+          : `<div class="hm-c" title="${lbl}"></div>`;
+      }
+      html += `<div class="hm-t ${tot ? '' : 'zero'}">${tot}</div>`;
+    }
+    $('heat').innerHTML = html;
+    const steps = [1, Math.ceil(maxN / 2), maxN].filter((v, i, a) => a.indexOf(v) === i);
+    $('heatLegend').innerHTML = `<span>Fewer</span>${steps.map((n) => `<span><i class="hm-sw" style="background:${shade(n)}"></i>${n}</span>`).join('')}<span>More</span><span class="legend-note">Placed by the month a case became public. Coverage is incomplete.</span>`;
+
+    const box = $('monthList');
+    const sel = st.calSel ? recs.filter((r) => r.disclosed === st.calSel) : [];
+    box.hidden = !sel.length;
+    if (sel.length) {
+      box.innerHTML = `<h2>${MONTHS[+st.calSel.slice(5) - 1]} ${st.calSel.slice(0, 4)} · ${sel.length} case${sel.length === 1 ? '' : 's'}</h2>
+        <div class="card scroll-x"><table class="tbl"><thead><tr><th>Disclosed</th><th>Company</th><th>Executive</th><th>Category</th><th>Outcome</th><th>Evidence</th></tr></thead>
+        <tbody>${rowsHtml(sel)}</tbody></table></div>`;
+    }
+  }
+
   // ---------- Records ----------
-  function renderRecords() {
-    const q = st.q.trim().toLowerCase();
-    const list = records
-      .filter((r) => !q || [byCo[r.company_id]?.name, r.executive, r.role, r.category, r.summary, r.outcome].join(' ').toLowerCase().includes(q))
-      .sort((a, b) => b.disclosed.localeCompare(a.disclosed));
-    $('rows').innerHTML = list.length ? list.map((r) => `
+  function rowsHtml(list) {
+    return list.map((r) => `
       <tr data-id="${r.id}" tabindex="0">
         <td class="td-date">${esc(dateLabel(r))}</td>
         <td class="td-co">${esc(byCo[r.company_id]?.name)}</td>
@@ -83,7 +125,14 @@
         <td>${esc(r.category)}</td>
         <td>${esc(r.outcome)}</td>
         <td><div class="ev">${dotHtml(r, 'sm')}${esc(tiers[r.evidence] || r.evidence)}</div></td>
-      </tr>`).join('') : `<tr><td colspan="6" class="empty">No records match “${esc(st.q)}”.</td></tr>`;
+      </tr>`).join('');
+  }
+  function renderRecords() {
+    const q = st.q.trim().toLowerCase();
+    const list = records
+      .filter((r) => !q || [byCo[r.company_id]?.name, r.executive, r.role, r.category, r.summary, r.outcome].join(' ').toLowerCase().includes(q))
+      .sort((a, b) => b.disclosed.localeCompare(a.disclosed));
+    $('rows').innerHTML = list.length ? rowsHtml(list) : `<tr><td colspan="6" class="empty">No records match “${esc(st.q)}”.</td></tr>`;
   }
 
   // ---------- About (from METHODOLOGY.md) ----------
@@ -136,8 +185,10 @@
   // ---------- Routing / events ----------
   function show() {
     const v = (location.hash.slice(1) || 'timeline');
-    st.view = ['timeline', 'records', 'about'].includes(v) ? v : 'timeline';
-    for (const k of ['timeline', 'records', 'about']) $(`v-${k}`).hidden = k !== st.view;
+    const VIEWS = ['timeline', 'calendar', 'records', 'about'];
+    st.view = VIEWS.includes(v) ? v : 'timeline';
+    for (const k of VIEWS) $(`v-${k}`).hidden = k !== st.view;
+    if (st.view === 'calendar') renderCalendar();
     document.querySelectorAll('#tabs button').forEach((b) => b.classList.toggle('on', b.dataset.view === st.view));
     if (st.view === 'timeline') renderTimeline();
     if (st.view === 'records') renderRecords();
@@ -153,6 +204,9 @@
     $('timeline').addEventListener('click', (e) => { const id = e.target.closest('button.dot')?.dataset.id; if (id) openDrawer(id); });
     $('rows').addEventListener('click', (e) => { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); });
     $('rows').addEventListener('keydown', (e) => { if (e.key === 'Enter') { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); } });
+    $('calU').addEventListener('change', (e) => { st.calU = e.target.checked; renderCalendar(); });
+    $('heat').addEventListener('click', (e) => { const m = e.target.closest('button.hm-c')?.dataset.m; if (m) { st.calSel = st.calSel === m ? null : m; renderCalendar(); } });
+    $('monthList').addEventListener('click', (e) => { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); });
     $('q').addEventListener('input', (e) => { st.q = e.target.value; renderRecords(); });
     $('backdrop').addEventListener('click', closeDrawer);
     $('drawer').addEventListener('click', (e) => { if (e.target.closest('#drClose')) closeDrawer(); });
