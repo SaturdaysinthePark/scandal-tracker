@@ -1,6 +1,8 @@
 // Scandal Tracker — reads data/*.json and docs/METHODOLOGY.md; no records are hard-coded.
 (() => {
-  const WINDOW = 20, STEP = 5, MIN_YEAR = 1990;
+  const STEP = 5, MIN_YEAR = 1990;
+  // Fewer year columns on narrow screens so dots stay tappable.
+  const winYears = () => (window.innerWidth < 640 ? 8 : window.innerWidth < 1000 ? 12 : 20);
   const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   const SCOPES = ['All', 'Fortune 500', 'Global 500', 'Other notable'];
   // Headline stats: how many companies, and how many people lost their role over it.
@@ -34,13 +36,14 @@
   // ---------- Timeline ----------
   function renderTimeline() {
     const recs = visible();
-    const start = st.end - WINDOW + 1;
-    const years = Array.from({ length: WINDOW }, (_, i) => start + i);
+    const W = winYears();
+    const start = st.end - W + 1;
+    const years = Array.from({ length: W }, (_, i) => start + i);
 
     $('stats').innerHTML = statList(recs).map(([v, l]) => `<div><div class="stat-v">${v}</div><div class="stat-l">${l}</div></div>`).join('');
 
     $('scopes').innerHTML = SCOPES.map((s) =>
-      `<button data-scope="${esc(s)}" class="${s === st.scope ? 'on' : ''}">${s === 'All' ? 'All' : esc(s)}</button>`).join('');
+      `<button data-scope="${esc(s)}" class="${s === st.scope ? 'on' : ''}" aria-pressed="${s === st.scope}">${s === 'All' ? 'All' : esc(s)}</button>`).join('');
     $('rangeLabel').textContent = `${start} – ${st.end}`;
     $('back').disabled = start <= MIN_YEAR;
     $('fwd').disabled = st.end >= maxYear;
@@ -109,7 +112,7 @@
     box.hidden = !sel.length;
     if (sel.length) {
       box.innerHTML = `<h2>${MONTHS[+st.calSel.slice(5) - 1]} ${st.calSel.slice(0, 4)} · ${sel.length} case${sel.length === 1 ? '' : 's'}</h2>
-        <div class="card scroll-x"><table class="tbl"><thead><tr><th>Disclosed</th><th>Company</th><th>Executive</th><th>Category</th><th>Outcome</th><th>Evidence</th></tr></thead>
+        <div class="card scroll-x"><table class="tbl"><thead><tr><th>Disclosed</th><th>Company</th><th>Person</th><th>Category</th><th>Outcome</th><th>Evidence</th></tr></thead>
         <tbody>${rowsHtml(sel)}</tbody></table></div>`;
     }
   }
@@ -121,9 +124,9 @@
         <td class="td-date">${esc(dateLabel(r))}</td>
         <td class="td-co">${esc(byCo[r.company_id]?.name)}</td>
         <td class="td-ex"><div>${esc(r.executive)}</div><div class="sub">${roleLine(r)}</div></td>
-        <td>${esc(r.category)}</td>
-        <td>${esc(r.outcome)}</td>
-        <td><div class="ev">${dotHtml(r, 'sm')}${esc(tiers[r.evidence] || r.evidence)}</div></td>
+        <td class="td-cat">${esc(r.category)}</td>
+        <td class="td-out">${esc(r.outcome)}</td>
+        <td class="td-ev"><div class="ev">${dotHtml(r, 'sm')}${esc(tiers[r.evidence] || r.evidence)}</div></td>
       </tr>`).join('');
   }
   function renderRecords() {
@@ -133,6 +136,8 @@
       .filter((r) => !q || [byCo[r.company_id]?.name, r.executive, r.role, r.category, r.summary, r.outcome].join(' ').toLowerCase().includes(q))
       .sort((a, b) => b.disclosed.localeCompare(a.disclosed));
     $('rows').innerHTML = list.length ? rowsHtml(list) : `<tr><td colspan="6" class="empty">No records match “${esc(st.q)}”.</td></tr>`;
+    const lost = list.filter((r) => r.lost_role).length;
+    $('recCount').textContent = `${list.length} case${list.length === 1 ? '' : 's'}${q ? ` matching “${st.q.trim()}”` : ''} · ${lost} lost their role`;
   }
 
   // ---------- About (from METHODOLOGY.md) ----------
@@ -153,10 +158,13 @@
   }
 
   // ---------- Drawer ----------
+  let lastFocus = null;
   function openDrawer(id) {
     const r = records.find((x) => x.id === +id);
     if (!r) return;
+    if (!st.sel) lastFocus = document.activeElement;
     st.sel = r;
+    history.replaceState(null, '', `#${st.view}/${r.id}`);
     const url = safeUrl(r.primary_url);
     let host = '';
     try { host = url ? new URL(url).hostname.replace(/^www\./, '') : ''; } catch { /* ignore */ }
@@ -168,11 +176,13 @@
     $('drawer').innerHTML = `
       <div class="dr-top"><div>
         <div class="dr-meta">${esc(byCo[r.company_id]?.name)} · ${esc(dateLabel(r))}</div>
-        <div class="dr-name">${esc(r.executive)}</div><div class="dr-role">${roleLine(r)}</div></div>
+        <div class="dr-name" id="drName">${esc(r.executive)}</div><div class="dr-role">${roleLine(r)}</div></div>
         <button class="dr-x" id="drClose" aria-label="Close">×</button></div>
-      <div class="pills"><div class="pill">${dotHtml(r, 'sm')}${esc(tiers[r.evidence] || r.evidence)}</div>
-        <div class="pill">${esc(r.category)}</div><div class="pill">${esc(r.outcome)}</div></div>
+      <div class="pills"><div class="pill kind">${dotHtml(r, 'sm')}${isM(r) ? 'Misconduct' : 'Relationship'}</div>
+        <div class="pill">${esc(tiers[r.evidence] || r.evidence)}</div></div>
       <p class="dr-sum">${esc(r.summary)}</p>
+      <dl class="dr-facts"><dt>Category</dt><dd>${esc(r.category)}</dd><dt>Outcome</dt><dd>${esc(r.outcome)}</dd>
+        <dt>Lost their role</dt><dd>${r.lost_role ? 'Yes' : 'No'}</dd><dt>Became public</dt><dd>${esc(dateLabel(r))}</dd></dl>
       <div class="dr-src">
         ${url ? `<a class="src-card" href="${esc(url)}" target="_blank" rel="noopener"><div><div class="src-l">${urlLabel}</div><div class="src-h">${esc(host)}</div></div><div class="src-arrow">↗</div></a>` : ''}
         <div class="src-t">Sources</div><ul>${srcs}</ul>
@@ -180,20 +190,28 @@
     $('drawer').hidden = false; $('backdrop').hidden = false;
     $('drClose').focus();
   }
-  function closeDrawer() { st.sel = null; $('drawer').hidden = true; $('backdrop').hidden = true; }
+  function closeDrawer() {
+    st.sel = null; $('drawer').hidden = true; $('backdrop').hidden = true;
+    history.replaceState(null, '', `#${st.view}`);
+    if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
+  }
 
   // ---------- Routing / events ----------
   function show() {
-    const v = (location.hash.slice(1) || 'timeline');
+    const [v0, idPart] = location.hash.slice(1).split('/');
+    const v = v0 || 'timeline';
     const VIEWS = ['timeline', 'calendar', 'records', 'about'];
+    const prev = st.view;
     st.view = VIEWS.includes(v) ? v : 'timeline';
+    if (prev !== st.view) window.scrollTo(0, 0);
     for (const k of VIEWS) $(`v-${k}`).hidden = k !== st.view;
     document.querySelectorAll('.pChk').forEach((el) => { el.checked = st.showP; });
-    document.querySelectorAll('.typeSeg').forEach((el) => { el.innerHTML = TYPES.map(([k, l]) => `<button data-type="${k}" class="${k === st.type ? 'on' : ''}">${l}</button>`).join(''); });
+    document.querySelectorAll('.typeSeg').forEach((el) => { el.innerHTML = TYPES.map(([k, l]) => `<button data-type="${k}" class="${k === st.type ? 'on' : ''}" aria-pressed="${k === st.type}">${l}</button>`).join(''); });
     if (st.view === 'calendar') renderCalendar();
-    document.querySelectorAll('#tabs button').forEach((b) => b.classList.toggle('on', b.dataset.view === st.view));
+    document.querySelectorAll('#tabs button').forEach((b) => { b.classList.toggle('on', b.dataset.view === st.view); b.setAttribute('aria-current', b.dataset.view === st.view ? 'page' : 'false'); });
     if (st.view === 'timeline') renderTimeline();
     if (st.view === 'records') renderRecords();
+    if (idPart && !st.sel) openDrawer(idPart);
   }
 
   function wire() {
@@ -201,11 +219,11 @@
     $('scopes').addEventListener('click', (e) => { const s = e.target.closest('button')?.dataset.scope; if (s) { st.scope = s; renderTimeline(); } });
     $('showU').addEventListener('change', (e) => { st.showU = e.target.checked; renderTimeline(); });
     $('showZero').addEventListener('change', (e) => { st.showZero = e.target.checked; renderTimeline(); });
-    $('back').addEventListener('click', () => { st.end = Math.max(MIN_YEAR + WINDOW - 1, st.end - STEP); renderTimeline(); });
+    $('back').addEventListener('click', () => { st.end = Math.max(MIN_YEAR + winYears() - 1, st.end - STEP); renderTimeline(); });
     $('fwd').addEventListener('click', () => { st.end = Math.min(maxYear, st.end + STEP); renderTimeline(); });
     $('timeline').addEventListener('click', (e) => { const id = e.target.closest('button.dot')?.dataset.id; if (id) openDrawer(id); });
     $('rows').addEventListener('click', (e) => { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); });
-    $('rows').addEventListener('keydown', (e) => { if (e.key === 'Enter') { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); } });
+    $('rows').addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); } });
     document.addEventListener('click', (e) => { const t = e.target.closest('.typeSeg button')?.dataset.type; if (t) { st.type = t; st.calSel = null; show(); } });
     document.addEventListener('change', (e) => { if (e.target.classList?.contains('pChk')) { st.showP = e.target.checked; st.calSel = null; show(); } });
     $('calU').addEventListener('change', (e) => { st.calU = e.target.checked; renderCalendar(); });
@@ -215,7 +233,9 @@
     $('backdrop').addEventListener('click', closeDrawer);
     $('drawer').addEventListener('click', (e) => { if (e.target.closest('#drClose')) closeDrawer(); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && st.sel) closeDrawer(); });
-    window.addEventListener('hashchange', show);
+    window.addEventListener('hashchange', () => { if (st.sel) closeDrawer(); show(); });
+    let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (st.view === 'timeline') renderTimeline(); }, 150); });
+    $('monthList').addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); } });
   }
 
   async function load() {
@@ -229,6 +249,7 @@
       records = r.filter((x) => x.status === 'published' && byCo[x.company_id] && /^\d{4}-\d{2}$/.test(x.disclosed));
       maxYear = Math.max(new Date().getFullYear(), ...records.map(yearOf));
       st.end = maxYear;
+      document.querySelectorAll('[data-view]').forEach((b) => b.setAttribute('type', 'button'));
       renderAbout(md);
       wire();
       show();

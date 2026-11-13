@@ -16,7 +16,7 @@ Two categories, shown together or separately:
 - **Misconduct**: sexual harassment, assault or abuse, unwanted advances and sexually inappropriate conduct toward colleagues. This category has a stricter bar: the company's own finding, the executive's admission, a court or regulator finding, or at least two independent major outlets plus a company-confirmed investigation or exit. Single-source reports are never published, cases where the executive was cleared are left out, and denials are always noted. Complainants are never named.
 
 ## Dates
-`disclosed` is the month the relationship became **public**, not when it happened. Counts per year therefore measure disclosure, not conduct.
+Each case is placed by the month it became **public**, not when the conduct happened. Counts per year show when cases came to light, not when they occurred.
 
 ## Evidence
 Every case carries one label, strongest first:

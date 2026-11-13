@@ -3,16 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A tracker of publicly documented workplace-relationship and sexual-misconduct cases involving senior executives, with sources.">
 <title>Scandal Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=9">
+<link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="page">
   <header class="hdr">
     <div class="brand"><span class="brand-dot"></span><span>Scandal Tracker</span></div>
-    <nav class="seg" id="tabs">
+    <nav class="seg tabs" id="tabs" aria-label="Views">
       <button data-view="timeline">Timeline</button>
       <button data-view="calendar">Calendar</button>
       <button data-view="records">Records</button>
@@ -20,34 +22,36 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section id="v-timeline" hidden>
       <div class="intro">
         <div class="intro-text">
           <h1>Executives brought down by workplace relationships and misconduct</h1>
-          <p class="lede">Each mark is one publicly disclosed case involving a senior executive, placed by the month it became public: round for relationships, square for sexual misconduct. Click a dot for the details and sources.</p>
+          <p class="lede">Each mark is one case, placed by the month it became public. Circles are relationships, squares are sexual misconduct. Select a mark for details and sources.</p>
         </div>
         <div class="stats" id="stats"></div>
       </div>
-      <div class="controls">
-        <div class="controls-l">
-          <div class="seg seg-sm typeSeg"></div>
-          <div class="seg seg-sm" id="scopes"></div>
-          <label class="chk"><input type="checkbox" id="showU" checked>Unconfirmed reports</label>
-          <label class="chk"><input type="checkbox" id="showZero">Companies with none</label>
-          <label class="chk"><input type="checkbox" class="pChk" checked>Prominent employees</label>
+      <div class="toolbar">
+        <div class="tb-group">
+          <div class="seg seg-sm typeSeg" role="group" aria-label="Case type"></div>
+          <div class="seg seg-sm" id="scopes" role="group" aria-label="Company scope"></div>
         </div>
-        <div class="range">
+        <div class="tb-group tb-checks">
+          <label class="chk"><input type="checkbox" id="showU" checked>Unconfirmed</label>
+          <label class="chk"><input type="checkbox" class="pChk" checked>Prominent employees</label>
+          <label class="chk"><input type="checkbox" id="showZero">Companies with none</label>
+        </div>
+        <div class="range tb-end">
           <button id="back" aria-label="Earlier years">‹</button>
-          <div id="rangeLabel" class="mono"></div>
+          <div id="rangeLabel" class="mono" aria-live="polite"></div>
           <button id="fwd" aria-label="Later years">›</button>
         </div>
       </div>
       <div class="card scroll-x"><div class="tl" id="timeline"></div></div>
       <div class="legend">
         <span><i class="dot"></i>Relationship</span>
-        <span><i class="dot ring"></i>Unconfirmed</span>
         <span><i class="dot sq"></i>Misconduct</span>
+        <span><i class="dot ring"></i>Unconfirmed</span>
         <span class="legend-note">Coverage is incomplete. Research is ongoing.</span>
       </div>
     </section>
@@ -56,30 +60,45 @@
       <div class="intro">
         <div class="intro-text">
           <h1>Cases by month</h1>
-          <p class="lede">Every case across all companies, by the month it became public. Darker means more cases. Click a month to see them.</p>
+          <p class="lede">Every case across all companies, by the month it became public. Darker means more cases. Select a month to see them.</p>
         </div>
         <div class="stats" id="calStats"></div>
       </div>
-      <div class="controls">
-        <div class="controls-l">
-          <div class="seg seg-sm typeSeg"></div>
-          <label class="chk"><input type="checkbox" id="calU" checked>Unconfirmed reports</label>
+      <div class="toolbar">
+        <div class="tb-group">
+          <div class="seg seg-sm typeSeg" role="group" aria-label="Case type"></div>
+        </div>
+        <div class="tb-group tb-checks">
+          <label class="chk"><input type="checkbox" id="calU" checked>Unconfirmed</label>
           <label class="chk"><input type="checkbox" class="pChk" checked>Prominent employees</label>
         </div>
       </div>
-      <div class="card scroll-x"><div class="heat" id="heat"></div></div>
+      <div class="card"><div class="heat" id="heat"></div></div>
       <div class="legend" id="heatLegend"></div>
       <div id="monthList" class="month-list" hidden></div>
     </section>
 
     <section id="v-records" hidden>
-      <div class="rec-head">
-        <h1 class="h1-sm">All records</h1>
-        <div class="controls-l"><div class="seg seg-sm typeSeg"></div><label class="chk"><input type="checkbox" class="pChk" checked>Prominent employees</label><input id="q" type="search" placeholder="Search company, executive, keyword"></div>
+      <div class="intro intro-tight">
+        <div class="intro-text">
+          <h1 class="h1-sm">All records</h1>
+          <p class="lede" id="recCount" aria-live="polite"></p>
+        </div>
       </div>
-      <div class="card scroll-x">
+      <div class="toolbar">
+        <div class="tb-group">
+          <div class="seg seg-sm typeSeg" role="group" aria-label="Case type"></div>
+        </div>
+        <div class="tb-group tb-checks">
+          <label class="chk"><input type="checkbox" class="pChk" checked>Prominent employees</label>
+        </div>
+        <div class="tb-end tb-search">
+          <input id="q" type="search" placeholder="Search name, company, keyword" aria-label="Search records">
+        </div>
+      </div>
+      <div class="card">
         <table class="tbl">
-          <thead><tr><th>Disclosed</th><th>Company</th><th>Executive</th><th>Category</th><th>Outcome</th><th>Evidence</th></tr></thead>
+          <thead><tr><th>Disclosed</th><th>Company</th><th>Person</th><th>Category</th><th>Outcome</th><th>Evidence</th></tr></thead>
           <tbody id="rows"></tbody>
         </table>
       </div>
@@ -93,8 +112,8 @@
   </main>
 
   <div id="backdrop" class="backdrop" hidden></div>
-  <aside id="drawer" class="drawer" hidden aria-modal="true" role="dialog"></aside>
+  <aside id="drawer" class="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="drName"></aside>
 </div>
-<script src="app.js?v=10"></script>
+<script src="app.js?v=14"></script>
 </body>
 </html>
