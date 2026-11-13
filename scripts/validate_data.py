@@ -38,6 +38,7 @@ for r in records:
         errors.append(f"record {rid}: misconduct records cannot be published as unconfirmed")
     if r.get("type") == "relationship" and r.get("evidence") == "adjudicated":
         warnings.append(f"record {rid}: adjudicated tier on a relationship record")
+    if not isinstance(r.get("lost_role"), bool): errors.append(f"record {rid}: lost_role must be true or false")
     if r.get("role_level") not in LEVELS: errors.append(f"record {rid}: bad role_level {r.get('role_level')!r}")
     if r.get("role_level") == "prominent" and r.get("status") == "published" and r.get("evidence") not in ("confirmed", "adjudicated", "settled"):
         errors.append(f"record {rid}: prominent-employee records must be confirmed, adjudicated or settled to publish")

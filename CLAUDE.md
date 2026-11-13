@@ -63,6 +63,7 @@ Upgrade or retract records as facts change. Never delete a published record sile
   "disclosed": "2024-04",          // YYYY-MM: when it became PUBLIC, not when it happened
   "category": "Relationship with subordinate",
   "outcome": "Terminated",
+  "lost_role": true,               // did they leave or lose the role because of this? false if they stayed or had already left
   "evidence": "confirmed",         // confirmed | acknowledged | reported | unconfirmed | adjudicated
   "summary": "2–4 neutral sentences. Facts and attributions only.",
   "sources": [{ "label": "Acme 8-K, April 2024", "url": "https://..." }],

@@ -3,7 +3,11 @@
   const WINDOW = 20, STEP = 5, MIN_YEAR = 1990;
   const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   const SCOPES = ['All', 'Fortune 500', 'Global 500', 'Other notable'];
-  const NO_EXIT = /^(no |remained|leave of absence)/i;
+  // Headline stats: how many companies, and how many people lost their role over it.
+  const statList = (recs) => [
+    [new Set(recs.map((r) => r.company_id)).size, 'Companies'],
+    [recs.filter((r) => r.lost_role).length, 'Lost their role'],
+  ];
 
   const st = { view: 'timeline', scope: 'All', showU: true, showZero: false, end: null, q: '', sel: null, calU: true, calSel: null, type: 'all', showP: true };
   const TYPES = [['all', 'All cases'], ['relationship', 'Relationships'], ['misconduct', 'Misconduct']];
@@ -33,12 +37,7 @@
     const start = st.end - WINDOW + 1;
     const years = Array.from({ length: WINDOW }, (_, i) => start + i);
 
-    const cos = new Set(recs.map((r) => r.company_id));
-    $('stats').innerHTML = [
-      [recs.length, 'Disclosures'],
-      [cos.size, 'Companies'],
-      [recs.filter((r) => !NO_EXIT.test(r.outcome)).length, 'Ended in exit'],
-    ].map(([v, l]) => `<div><div class="stat-v">${v}</div><div class="stat-l">${l}</div></div>`).join('');
+    $('stats').innerHTML = statList(recs).map(([v, l]) => `<div><div class="stat-v">${v}</div><div class="stat-l">${l}</div></div>`).join('');
 
     $('scopes').innerHTML = SCOPES.map((s) =>
       `<button data-scope="${esc(s)}" class="${s === st.scope ? 'on' : ''}">${s === 'All' ? 'All' : esc(s)}</button>`).join('');
@@ -86,13 +85,7 @@
     const maxN = Math.max(1, ...Object.values(counts));
     const shade = (n) => n ? `rgba(200,65,43,${(0.22 + 0.78 * (n / maxN)).toFixed(2)})` : '';
 
-    const busiest = Object.entries(counts).sort((a, b) => b[1] - a[1] || b[0].localeCompare(a[0]))[0];
-    const months = Object.keys(counts).length;
-    $('calStats').innerHTML = [
-      [recs.length, 'Disclosures'],
-      [months, 'Months with a case'],
-      [busiest ? `${MONTHS[+busiest[0].slice(5) - 1]} ’${busiest[0].slice(2, 4)}` : '–', `Busiest month${busiest ? ` (${busiest[1]})` : ''}`],
-    ].map(([v, l]) => `<div><div class="stat-v">${esc(v)}</div><div class="stat-l">${esc(l)}</div></div>`).join('');
+    $('calStats').innerHTML = statList(recs).map(([v, l]) => `<div><div class="stat-v">${esc(v)}</div><div class="stat-l">${esc(l)}</div></div>`).join('');
 
     let html = `<div></div>${MONTHS.map((m) => `<div class="hm-h">${m}</div>`).join('')}<div class="hm-h" style="text-align:right">Total</div>`;
     for (const y of years) {

@@ -9,6 +9,7 @@
     "disclosed": "2005-03",
     "category": "Relationship with subordinate",
     "outcome": "Resigned at board request",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "The board asked him to resign after an internal review found a consensual relationship with a female executive. The board said this violated the company code of conduct he had championed.",
     "sources": [
@@ -31,6 +32,7 @@
     "disclosed": "2010-08",
     "category": "Relationship with contractor",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He resigned after an investigation into a personal relationship with a marketing contractor. HP said it found no harassment-policy violation but did find inaccurate expense reports, which breached its standards of business conduct.",
     "sources": [
@@ -53,6 +55,7 @@
     "disclosed": "2012-04",
     "category": "Relationship with employee",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He resigned during an audit committee investigation. The committee later reported an extremely close personal relationship with a female employee that it said was a policy violation.",
     "sources": [
@@ -78,6 +81,7 @@
     "disclosed": "2012-11",
     "category": "Relationship with subordinate",
     "outcome": "Resigned at board request",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "The board asked him to resign after an ethics investigation confirmed a close personal relationship with a subordinate employee. This was weeks before he was due to become CEO.",
     "sources": [
@@ -100,6 +104,7 @@
     "disclosed": "2013-05",
     "category": "Relationship with subordinate",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "The board terminated his contract after outside counsel found he had a relationship with a subordinate and failed to report it, violating his contract and company policy. iGATE said the investigation had not found a harassment-policy violation. Murthy acknowledged the relationship but disputed the company’s account of the disclosure, and later sued.",
     "sources": [
@@ -122,6 +127,7 @@
     "disclosed": "2013-08",
     "category": "Extramarital relationship with employee",
     "outcome": "No company action",
+    "lost_role": false,
     "evidence": "unconfirmed",
     "summary": "Media outlets widely reported in 2013 that he was in a relationship with a Google employee while still married. He and his wife separated that year. Neither Brin nor Google confirmed the reports, and the employee is not named here.",
     "sources": [
@@ -144,6 +150,7 @@
     "disclosed": "2016-04",
     "category": "Relationship with employee",
     "outcome": "Resigned at board request",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He resigned after a board investigation found a personal relationship with an employee. The board said it violated the company code of conduct.",
     "sources": [
@@ -166,6 +173,7 @@
     "disclosed": "2018-02",
     "category": "Relationship with subordinate",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Lululemon said he resigned as CEO and director because he “fell short” of its standards of conduct. CNBC and CBC, citing sources, reported that the reasons included a years-long relationship with a designer at the company, who later worked as a contractor. He received about $5m under a separation agreement.",
     "sources": [
@@ -194,6 +202,7 @@
     "disclosed": "2018-06",
     "category": "Relationship with employee",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He resigned after Intel learned of a past consensual relationship with an employee. That violated a non-fraternization policy covering all managers.",
     "sources": [
@@ -216,6 +225,7 @@
     "disclosed": "2018-08",
     "category": "Relationship with subordinate",
     "outcome": "Departed Jan 2020",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "He acknowledged a past relationship with a subordinate in the legal department after she wrote about it publicly. He retired from Alphabet in January 2020, amid shareholder litigation over how executive misconduct was handled.",
     "sources": [
@@ -241,6 +251,7 @@
     "disclosed": "2018-10",
     "category": "Relationship with subordinate",
     "outcome": "Had departed 2014 (reported $90m exit)",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "The New York Times reported that Google investigated a misconduct claim from an employee he had a relationship with, found it credible, and still gave him a $90m exit package in 2014. Rubin denied the misconduct allegation. The report preceded a worldwide employee walkout.",
     "sources": [
@@ -266,6 +277,7 @@
     "disclosed": "2018-12",
     "category": "Relationship with employee",
     "outcome": "Resigned, no severance",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He resigned as CEO and director after a board investigation, supported by an outside law firm, into a consensual relationship with an employee and related actions that went against company policy. The company said the matter did not involve operations or financial statements, and that he would get no severance and would forfeit his unvested equity.",
     "sources": [
@@ -288,6 +300,7 @@
     "disclosed": "2019-01",
     "category": "Extramarital relationship (non-employee)",
     "outcome": "No company action",
+    "lost_role": false,
     "evidence": "acknowledged",
     "summary": "The relationship became public alongside his announced divorce. No employee was involved and Amazon took no governance action. It is listed because it was publicly acknowledged by the executive.",
     "sources": [
@@ -310,6 +323,7 @@
     "disclosed": "2019-11",
     "category": "Relationship with employee",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He was removed after the board found a consensual relationship with an employee that breached company policy. In 2020 the company sued him, alleging further undisclosed relationships, and later reached a settlement.",
     "sources": [
@@ -335,6 +349,7 @@
     "disclosed": "2021-05",
     "category": "Relationship with employee (historical)",
     "outcome": "Had left board in 2020",
+    "lost_role": false,
     "evidence": "reported",
     "summary": "Reporting in 2021 described a board review, begun in 2019, of a relationship with an employee around 2000. Microsoft confirmed it had investigated. A spokesperson for Gates said his 2020 board departure was unrelated.",
     "sources": [
@@ -360,6 +375,7 @@
     "disclosed": "2021-08",
     "category": "Relationships with employees",
     "outcome": "Terminated, forfeited >$50m",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Ares fired him after an outside-counsel investigation found inappropriate personal relationships and interactions with certain employees, in violation of company policies and his agreements. He forfeited all future compensation and unvested awards, including special equity worth over $50m. The company said it was unrelated to operations or financial controls.",
     "sources": [
@@ -382,6 +398,7 @@
     "disclosed": "2022-02",
     "category": "Undisclosed relationship with colleague",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "He resigned after acknowledging that he had not disclosed a consensual relationship with a close colleague, as an internal investigation had turned up. WarnerMedia was owned by AT&T at the time.",
     "sources": [
@@ -404,6 +421,7 @@
     "disclosed": "2022-06",
     "category": "Relationship with employee",
     "outcome": "Retired July 2022",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "A board investigation examined millions in undisclosed payments to settle claims from a former employee he had had a relationship with, along with other women. He stepped back and retired in July 2022. The company later restated its financials to record the payments.",
     "sources": [
@@ -429,6 +447,7 @@
     "disclosed": "2023-04",
     "category": "Sexual harassment",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Comcast said in an April 2023 filing that it had received a complaint that NBCUniversal CEO Jeff Shell engaged in inappropriate conduct with a female employee, including allegations of sexual harassment. The company said an investigation by outside counsel uncovered evidence that corroborated the allegations, and it terminated Shell for cause. Shell said in a statement that he had an inappropriate relationship with a woman in the company, which he regretted.",
     "sources": [
@@ -453,6 +472,7 @@
     "disclosed": "2023-09",
     "category": "Undisclosed relationships with colleagues",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He resigned after admitting he had not been fully transparent about past personal relationships with colleagues. BP later withheld about $40m of his pay, saying he had knowingly given the board inaccurate information.",
     "sources": [
@@ -478,6 +498,7 @@
     "disclosed": "2023-09",
     "category": "Undisclosed relationships with colleagues",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He resigned after a board investigation found he had failed to disclose personal relationships with colleagues, in violation of company policy.",
     "sources": [
@@ -500,6 +521,7 @@
     "disclosed": "2023-09",
     "category": "Relationship with colleague (disclosed)",
     "outcome": "No company action",
+    "lost_role": false,
     "evidence": "confirmed",
     "summary": "After Looney’s exit, The Times reported that his successor was also in a relationship with a BP colleague. BP said the relationship had been fully and appropriately disclosed and did not breach its code of conduct. It is included as an example of a disclosed relationship that led to no action.",
     "sources": [
@@ -525,6 +547,7 @@
     "disclosed": "2024-04",
     "category": "Undisclosed relationship with colleague",
     "outcome": "Terminated (disputed in court)",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "The bank fired her after an investigation found an undisclosed close personal relationship with another executive that it said led to preferential treatment. Both executives deny a romantic relationship, and Ahn sued for wrongful dismissal.",
     "sources": [
@@ -550,6 +573,7 @@
     "disclosed": "2024-07",
     "category": "Relationship with employee",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "The company replaced him after an investigation into a consensual relationship with an employee that violated its code of conduct.",
     "sources": [
@@ -572,6 +596,7 @@
     "disclosed": "2024-09",
     "category": "Relationship with subordinate",
     "outcome": "Terminated for cause",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He was fired after a board investigation found a consensual relationship with the company’s chief legal officer, in violation of company policy. The board said it did not affect the company’s financial reporting.",
     "sources": [
@@ -594,6 +619,7 @@
     "disclosed": "2025-05",
     "category": "Undisclosed relationship / conflict of interest",
     "outcome": "Terminated for cause",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He was dismissed after an audit committee investigation found he directed business to a vendor founded by someone he had a personal relationship with, and failed to disclose it.",
     "sources": [
@@ -616,6 +642,7 @@
     "disclosed": "2025-07",
     "category": "Relationship with subordinate",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "A concert \"kiss cam\" video that went viral appeared to show him with the company’s head of HR. Astronomer put him on leave, opened a board investigation, and announced his resignation days later, saying leaders are expected to set the standard for conduct and accountability.",
     "sources": [
@@ -638,6 +665,7 @@
     "disclosed": "2025-09",
     "category": "Relationship with subordinate",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "He was dismissed after an investigation found an undisclosed romantic relationship with a direct subordinate, in breach of Nestlé’s code of business conduct.",
     "sources": [
@@ -660,6 +688,7 @@
     "disclosed": "2026-11",
     "category": "Extramarital relationship (business counterparty)",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "In November the New York Times and Financial Times reported a relationship with an executive at Megaspeed, a Singapore data-center company that bought Nvidia chips. On November 8 the board opened an independent probe, and Huang told employees in a memo that he had been unfaithful to his wife, NBC News reported. Nvidia's 8-K said he resigned as CEO and director effective November 11, without giving a reason, and the resignation was announced November 12. CFO Colette Kress became interim CEO.",
     "sources": [
@@ -694,6 +723,7 @@
     "disclosed": "2026-11",
     "category": "Relationship with subordinate",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "On November 11 the New York Times reported a second affair, with an Nvidia vice president who reported to him. Neither Nvidia, Huang nor the employee has confirmed it. Nvidia announced his resignation the next day. The other person is not named here, under our policy.",
     "sources": [
@@ -720,6 +750,7 @@
     "disclosed": "2026-11",
     "category": "Relationship with employee",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "On November 12 Reuters reported, citing two people familiar with the matter, a separate relationship with another Nvidia employee. Reuters withheld her name. The report is unconfirmed by Nvidia or Huang.",
     "sources": [
@@ -746,6 +777,7 @@
     "disclosed": "2023-02",
     "category": "Undisclosed relationship",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Zoetis terminated Glenn David, its executive vice president and group president of U.S. operations, on February 5, 2023. In an SEC filing, the company said he had violated company policy by engaging in a consensual personal relationship and failing to disclose it. The company said it had retained independent outside counsel to investigate, and that he would forfeit severance benefits and future equity vesting.",
     "sources": [
@@ -769,6 +801,7 @@
     "disclosed": "2024-02",
     "category": "Relationship with employees",
     "outcome": "Terminated for cause",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Exscientia said on February 13, 2024 that its board had terminated CEO Andrew Hopkins for cause, effective immediately, and removed him as an executive director. In an SEC filing, the company said a board investigation found he had engaged in relationships with two employees that the board determined were inappropriate.",
     "sources": [
@@ -792,6 +825,7 @@
     "disclosed": "2025-09",
     "category": "Undisclosed relationship with executive",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Super Retail Group said on September 16, 2025 that it had terminated CEO Anthony Heraghty's employment with immediate effect. The board said it had received new information about his relationship with the company's former chief human resources officer and found his prior disclosures unsatisfactory. The company said his unvested and vested-but-unexercised incentives had lapsed.",
     "sources": [
@@ -823,6 +857,7 @@
     "disclosed": "2023-05",
     "category": "Relationship with colleague",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "RS Group said on May 3, 2023 that CFO David Egan had stepped down with immediate effect. In a statement released by the company, Egan said he had recently notified the board of a personal relationship with a colleague, Reuters reported. Reuters also reported that the company did not identify the colleague.",
     "sources": [
@@ -850,6 +885,7 @@
     "disclosed": "2019-02",
     "category": "Undisclosed relationship (conflict of interest with industry partner)",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "REI's board said in February 2019 that Jerry Stritzke resigned as CEO after an investigation by an outside law firm into a personal, consensual relationship with the leader of another outdoor-industry organization that he had not disclosed. The company said the relationship created a perceived conflict of interest that he should have disclosed under REI policy, and that the investigation found no financial misconduct. Stritzke apologized to employees for not disclosing it, the Associated Press reported.",
     "sources": [
@@ -877,6 +913,7 @@
     "disclosed": "2019-12",
     "category": "Undisclosed relationship with colleague",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "BlackRock said in December 2019 that Mark Wiseman had left the firm after failing to disclose a consensual relationship with a colleague, as required by its Relationships at Work Policy, Bloomberg reported. In an internal memo, Wiseman said he regretted his mistake and accepted responsibility. A memo from CEO Larry Fink and President Rob Kapito said the matter had no impact on portfolios or client activities.",
     "sources": [
@@ -904,6 +941,7 @@
     "disclosed": "2016-12",
     "category": "Extramarital affair with employee, acknowledged",
     "outcome": "Remained CEO; board inquiry cleared him of misconduct (Feb 2017)",
+    "lost_role": false,
     "evidence": "acknowledged",
     "summary": "In December 2016, Seven West Media CEO Tim Worner publicly acknowledged a past affair with a former company employee, saying he felt \"the deepest shame and regret\", SBS reported. The board ordered an independent inquiry into allegations the former employee made, and in February 2017 said the inquiry had cleared him of misconduct. He remained CEO.",
     "sources": [
@@ -931,6 +969,7 @@
     "disclosed": "2012-08",
     "category": "Relationship with employee",
     "outcome": "Resigned (reappointed chairman and CEO in July 2013)",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Gary Friedman resigned as chairman and co-chief executive of Restoration Hardware in August 2012 after a special committee of non-management directors investigated. The company's IPO prospectus said the investigation followed disclosure of a personal relationship between Friedman and a company employee, which the parties described as consensual. According to the prospectus, the committee found that he had failed to comply with certain company policies. He became chairman emeritus and returned as chairman and CEO in July 2013.",
     "sources": [
@@ -958,6 +997,7 @@
     "disclosed": "2015-07",
     "category": "Undisclosed relationship with employee",
     "outcome": "Remained CEO; reimbursed $200,000 of review costs",
+    "lost_role": false,
     "evidence": "confirmed",
     "summary": "Fluidigm said in a July 2015 8-K that its independent directors, working with outside counsel and forensic accountants, had concluded a review of CEO Gajus Worthington's compliance with the company's code of conduct. They found, and he acknowledged, that he had violated the code's conflict-of-interest provisions through an undisclosed personal relationship with a company employee. He agreed to reimburse $200,000 of the review's costs and remained CEO; the directors found no intentional financial misconduct.",
     "sources": [
@@ -985,6 +1025,7 @@
     "disclosed": "2021-02",
     "category": "Relationship with employee",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Eli Lilly said in February 2021 that CFO Joshua Smiley had resigned after the company learned of allegations of an inappropriate personal relationship with an employee. The company said an investigation by external counsel found consensual though inappropriate personal communications between Smiley and certain employees, which leadership concluded showed poor judgment. Lilly said he agreed to forfeit his 2020 cash bonus and equity awards it valued at more than $20 million at target.",
     "sources": [
@@ -1009,6 +1050,7 @@
     "disclosed": "2025-01",
     "category": "Undisclosed relationship with subordinate",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "In January 2025 Reuters and Bloomberg, citing Portuguese outlet ECO, reported that Galp's ethics committee was examining an anonymous complaint alleging an undisclosed personal relationship between CEO Filipe Silva and a senior manager who reported to him. Silva told ECO he had not reported any personal relationship to the ethics committee but said no relationship had threatened the integrity of Galp's decisions. Galp told the Portuguese market regulator CMVM on January 7, 2025 that Silva had resigned with immediate effect, citing family reasons. Galp did not comment publicly on the complaint.",
     "sources": [
@@ -1040,6 +1082,7 @@
     "disclosed": "2025-11",
     "category": "Undisclosed relationship",
     "outcome": "AIG offer withdrawn; Lloyd's found compliance breach",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "AIG said in November 2025 that its incoming president John Neal would no longer join, after the Wall Street Journal reported an alleged relationship with a former Lloyd's employee. In July 2026 Lloyd's said its investigation found Neal had breached compliance rules by not disclosing a close relationship with a former corporate affairs director that could be seen as a conflict of interest. Lloyd's said it found no conclusive evidence of a romantic relationship during their employment, Bloomberg reported.",
     "sources": [
@@ -1064,6 +1107,7 @@
     "disclosed": "2020-01",
     "category": "Relationship with employee",
     "outcome": "Terminated for cause",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Park Hotels & Resorts said in January 2020 that it had terminated Robert Tanenbaum, its executive vice president of asset management, for cause. The company said an investigation found he had engaged in a personal, inappropriate and consensual relationship with a Park employee, as well as inappropriate communications. Park said the termination was unrelated to its operational or financial performance.",
     "sources": [
@@ -1091,6 +1135,7 @@
     "disclosed": "2019-12",
     "category": "Relationship with colleague (policy violation)",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "BlackRock dismissed its global head of human resources, Jeff Smith, in July 2019 for violating corporate policy, according to a memo from CEO Larry Fink and President Rob Kapito. Bloomberg reported in December 2019, citing a person familiar with the matter, that the violation involved a romantic relationship with a colleague.",
     "sources": [
@@ -1115,6 +1160,7 @@
     "disclosed": "2019-01",
     "category": "Undisclosed relationship (policy violation)",
     "outcome": "Departed",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Markel said in January 2019 that an internal review, opened after government inquiries into loss reserves at its Markel CATCo unit, had found violations by the unit's CEO, Anthony Belisle, and another executive of Markel policies relating to an undisclosed personal relationship. Both left the company.",
     "sources": [
@@ -1142,6 +1188,7 @@
     "disclosed": "2017-09",
     "category": "Relationships with employees and franchisees",
     "outcome": "Terminated as CEO; later left the board",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Liberty Tax's board terminated John Hewitt as chief executive in September 2017 after an investigation, triggered by an ethics hotline complaint, found what directors called credible evidence of an array of inappropriate personal and business conduct. Press reports and a later shareholder suit said the conduct included romantic relationships with employees and franchisees. The company's own statements did not describe the relationships specifically.",
     "sources": [
@@ -1170,6 +1217,7 @@
     "disclosed": "2018-07",
     "category": "Code of conduct violation (unspecified personal behavior)",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Texas Instruments said in July 2018 that Brian Crutcher resigned as CEO about six weeks into the role over violations of the company's code of conduct related to personal behavior. The company did not specify the conduct.",
     "sources": [
@@ -1194,6 +1242,7 @@
     "disclosed": "2018-06",
     "category": "Conduct below company standards (unspecified)",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Rambus said in June 2018 that its board terminated Ron Black as CEO after finding his conduct fell short of company standards, unrelated to financial or business performance. The company did not describe the conduct.",
     "sources": [
@@ -1218,6 +1267,7 @@
     "disclosed": "2011-05",
     "category": "Relationship with senior colleague",
     "outcome": "No company action (had already departed in 2009)",
+    "lost_role": false,
     "evidence": "unconfirmed",
     "summary": "In May 2011 a member of the House of Lords, speaking under parliamentary privilege, said an injunction obtained by former RBS chief executive Fred Goodwin concerned an alleged affair with a senior colleague. In a June 2011 High Court judgment, the court said the relationship continued while the woman worked at RBS and Goodwin was its chief executive, and it relaxed the injunction to allow her job description to be reported. Goodwin told the court he was content for it to proceed on the basis that a relationship existed as The Sun described, but he made no further comment.",
     "sources": [
@@ -1246,6 +1296,7 @@
     "disclosed": "2007-04",
     "category": "Personal conduct (relationship not established)",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Starwood said in an April 2007 8-K that CEO Steven Heyer had resigned under a separation agreement, and gave no reason. The Wall Street Journal reported that the board had questioned him about an anonymous letter and about messages with female employees. Heyer denied any impropriety.",
     "sources": [
@@ -1270,6 +1321,7 @@
     "disclosed": "2007-11",
     "category": "Relationship with subordinate",
     "outcome": "Resigned at board's request",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "The American Red Cross board asked for and accepted the immediate resignation of president and CEO Mark Everson in November 2007. In a statement, the board said it acted after learning that he had engaged in a personal relationship with a subordinate employee. The board said the situation reflected poor judgment and diminished his ability to lead.",
     "sources": [
@@ -1293,6 +1345,7 @@
     "disclosed": "2018-05",
     "category": "Relationship with employee",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Brandon resigned as president of the Buffalo Bills and Buffalo Sabres on May 1, 2018, and the team owners announced they had accepted his resignation without giving a reason. The Associated Press reported, citing two people with direct knowledge, that he resigned after the owners confronted him about an inappropriate relationship with an employee. Brandon told the AP he had been considering leaving for some time and did not respond to questions about the relationship. The NFL later said the club had addressed the matter appropriately.",
     "sources": [
@@ -1324,6 +1377,7 @@
     "disclosed": "2023-10",
     "category": "Relationship with colleague (reported policy breach)",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "The Buffalo Bills and Buffalo Sabres dismissed newly appointed chief operating officer John Roth in October 2023 along with another senior executive. The Associated Press reported, citing a person briefed on the matter, that the two were fired because they were in a romantic relationship, and The Athletic first reported the firings. Roth confirmed his dismissal to the AP but did not give details, and the teams did not announce it.",
     "sources": [
@@ -1347,6 +1401,7 @@
     "disclosed": "2011-09",
     "category": "Relationship with employee",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Office Depot terminated Charlie Brown as president of its International Division on September 26, 2011. In a press release filed with the SEC, CEO Neil Austrian said Brown was terminated for having an improper relationship with another associate and that the company had a zero-tolerance policy in this regard. The company's 8-K described the termination as without cause for severance purposes.",
     "sources": [
@@ -1378,6 +1433,7 @@
     "disclosed": "2012-04",
     "category": "Relationship with subordinate",
     "outcome": "Terminated for cause",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Highmark's board fired President and CEO Kenneth Melani for cause on April 1, 2012, days after he was charged following a fight with the husband of a Highmark employee, the Associated Press reported. According to trade press coverage, the board cited the alleged March 25 incident, an admitted sexual relationship with a junior employee and the associated conflict and risk to the company, and repeated denials to senior management. Melani later sued Highmark, saying the relationship did not violate company policy.",
     "sources": [
@@ -1413,6 +1469,7 @@
     "disclosed": "2021-10",
     "category": "Relationship with subordinate",
     "outcome": "Dismissed",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Axel Springer removed Bild editor-in-chief Julian Reichelt in October 2021 after The New York Times reported he had relationships with subordinate employees. The company said he had not clearly separated his private and professional lives and had not told the executive board the truth about it. An earlier 2021 compliance review had allowed him to return to work, and AFP reported that he admitted mixing professional and private relationships.",
     "sources": [
@@ -1436,6 +1493,7 @@
     "disclosed": "2015-12",
     "category": "Extramarital relationship (acknowledged)",
     "outcome": "Remained in role",
+    "lost_role": false,
     "evidence": "acknowledged",
     "summary": "SK Group chairman Chey Tae-won admitted to an extramarital relationship and a child born of it in a letter published by the Segye Ilbo newspaper in December 2015. He called it a shameful confession and said he intended to divorce. He remained chairman, and later divorce litigation in Korean courts followed the disclosure.",
     "sources": [
@@ -1459,6 +1517,7 @@
     "disclosed": "2017-07",
     "category": "Relationship with junior industry staff",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "AFL chief executive Gillon McLachlan announced in July 2017 that football operations manager Simon Lethlean had resigned after an inappropriate relationship with a younger woman working in the AFL industry. McLachlan said the executives had made significant mistakes and been held to account. Lethlean issued a statement apologising.",
     "sources": [
@@ -1482,6 +1541,7 @@
     "disclosed": "2017-07",
     "category": "Relationship with junior industry staff",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "The AFL announced in July 2017 that commercial general manager Richard Simkiss had resigned over an inappropriate relationship with a younger woman working in the AFL industry. Simkiss apologised in a statement for what he called a serious lapse of judgement.",
     "sources": [
@@ -1505,6 +1565,7 @@
     "disclosed": "2025-03",
     "category": "Inaccurate disclosure of relationship with employee",
     "outcome": "No action by board; had stepped down as CEO Oct 2024; stepped down as executive chair Jul 2026",
+    "lost_role": false,
     "evidence": "confirmed",
     "summary": "WiseTech Global released board review findings to the ASX in March 2025 stating that Richard White made inaccurate and incomplete disclosures about the nature and duration of a relationship with an employee. The review found he had not been fully transparent and candid with the board. The board took no action against him, and he stepped down as executive chair in July 2026, citing media coverage of his personal life. White has denied wrongdoing.",
     "sources": [
@@ -1536,6 +1597,7 @@
     "disclosed": "2026-08",
     "category": "Relationship with subordinate (reported)",
     "outcome": "Departed after board investigation (separation agreement)",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "L3Harris said on August 17, 2026 that Kubasik had stepped down as chairman and CEO after an investigation with independent counsel into conduct the company said was not consistent with its Code of Conduct and values. The company did not describe the conduct and said it was unrelated to financial reporting, controls, customer relationships or operations. Semafor reported, citing two people briefed on the probe, that it found an inappropriate relationship with an employee. Kubasik denied through a spokesperson having a relationship with a subordinate.",
     "sources": [
@@ -1568,6 +1630,7 @@
     "disclosed": "2020-02",
     "category": "Relationship with subordinate",
     "outcome": "Resigned during investigation",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Bloomberg reported in February 2020 that McGrail, a WeWork senior vice president, resigned during an internal investigation into allegations that he had a romantic relationship with a member of his team whom he had promoted. Citing people with knowledge of the matter, Bloomberg reported that WeWork had been prepared to fire him for cause. WeWork confirmed his departure but declined to comment further, according to the reporting.",
     "sources": [
@@ -1600,6 +1663,7 @@
     "disclosed": "2026-01",
     "category": "Undisclosed relationship with junior colleague (reported)",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Thinking Machines Lab said in January 2026 that it had parted ways with co-founder and chief technology officer Barret Zoph. The Wall Street Journal reported, citing people familiar with the matter, that the dismissal followed concerns including an undisclosed relationship with a junior colleague. Zoph told the Journal he was fired only after the company learned he was leaving and called suggestions of ethical issues false.",
     "sources": [
@@ -1624,6 +1688,7 @@
     "disclosed": "2014-05",
     "category": "Relationship with employee",
     "outcome": "Departed early",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "CFA Institute announced in March 2014 that President and CEO John Rogers would step down at the end of the fiscal year, then he left early after a board review. The Wall Street Journal reported that the board had looked into an affair between Rogers and a senior staff member. A CFA Institute spokesman told InvestmentNews that Rogers had raised a private matter with the board chair in late March, prompting a review, but declined to confirm that it involved a relationship with a co-worker.",
     "sources": [
@@ -1652,6 +1717,7 @@
     "disclosed": "2012-02",
     "category": "Relationship with former employee",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Stryker announced on February 8, 2012 that Stephen MacMillan had resigned as chairman, president and CEO for family reasons. The Wall Street Journal later reported, citing people familiar with the matter, that some directors objected to how he handled a relationship with a former employee. At the April 2012 annual meeting, Chairman William Parfet said MacMillan had never violated any company policy or code of conduct, according to the Journal.",
     "sources": [
@@ -1684,6 +1750,7 @@
     "disclosed": "1998-11",
     "category": "Relationship with employee",
     "outcome": "Leave of absence; reinstated",
+    "lost_role": false,
     "evidence": "acknowledged",
     "summary": "Mets general manager Steve Phillips took a leave of absence in November 1998 after a former employee from the team's Florida office threatened a sexual harassment lawsuit, CBS News reported. Phillips acknowledged a brief consensual sexual relationship with her but denied harassment. He was reinstated about a week later.",
     "sources": [
@@ -1712,6 +1779,7 @@
     "disclosed": "2020-04",
     "category": "Alleged affair with executive of Alibaba-backed business partner",
     "outcome": "Demoted, removed from Alibaba Partnership, bonus withdrawn",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Alibaba removed Taobao and Tmall president Jiang Fan from its partnership, demoted him and withdrew his bonus in April 2020 after his wife publicly alleged an affair with a co-founder of an Alibaba-backed influencer agency. An internal investigation found no preferential treatment of that company, but faulted his handling of the matter for causing reputational damage, according to an internal memo reported by Reuters and Bloomberg.",
     "sources": [
@@ -1736,6 +1804,7 @@
     "disclosed": "2020-11",
     "category": "Relationship with senior executive",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Nine Entertainment chief executive Hugh Marks announced his resignation in November 2020 as Australian media reported his relationship with a former Nine senior executive. Reports said the board had been split over whether the relationship was disclosed in a timely way, while the chairman had earlier said Marks breached no company policy.",
     "sources": [
@@ -1760,6 +1829,7 @@
     "disclosed": "2018-11",
     "category": "Undisclosed consensual relationship with former employee",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Walmart said in November 2018 that Flipkart group CEO Binny Bansal had resigned after an investigation found no evidence corroborating a complainant's allegation but identified lapses in judgment, particularly a lack of transparency. Bloomberg reported that investigators concluded he had a consensual relationship with a former employee that he had not disclosed.",
     "sources": [
@@ -1784,6 +1854,7 @@
     "disclosed": "2017-02",
     "category": "Undisclosed relationship with employee",
     "outcome": "Bonus cut 20% (about A$550,000); remained CEO",
+    "lost_role": false,
     "evidence": "acknowledged",
     "summary": "QBE's 2016 annual report, released in February 2017, said the board had cut chief executive John Neal's short-term incentive by 20 per cent because some recent personal decisions were inconsistent with the board's expectations. Media reports on February 27, 2017 said the decisions related to a relationship with his executive assistant that he had not disclosed promptly. Neal said he had not been timely in disclosing a personal relationship to the board, The Telegraph reported.",
     "sources": [
@@ -1811,6 +1882,7 @@
     "disclosed": "2007-03",
     "category": "Relationship with subordinate (alleged by company, denied)",
     "outcome": "Terminated (Dec 2006)",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Walmart fired Julie Roehm, its senior vice president of marketing communications, in December 2006. In a March 2007 court counterclaim, the company alleged that she had an inappropriate relationship with a subordinate that violated its policy against relationships between supervisors and subordinates, and cited emails between them. Roehm denied having an affair, and her lawsuit against Walmart was later dropped.",
     "sources": [
@@ -1842,6 +1914,7 @@
     "disclosed": "2016-05",
     "category": "Undisclosed relationship with subordinate",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Jed Bernstein resigned as president of Lincoln Center in April 2016, and the organization said at the time that he wished to return to producing. In May 2016 The New York Times reported that his departure followed an anonymous complaint about a consensual relationship with a woman on his staff whom he had promoted twice. Lincoln Center said an independent investigation found that he had violated its human resources policy by not disclosing the relationship.",
     "sources": [
@@ -1869,6 +1942,7 @@
     "disclosed": "2004-07",
     "category": "Relationship with employee",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "In July 2004 the Football Association issued a press release acknowledging that chief executive Mark Palios had had sexual relations with an FA secretary, after first denying newspaper reports about the England manager and the same employee. Palios resigned on 1 August 2004, saying he accepted ultimate responsibility for the FA's actions but denying any wrongdoing. The FA's communications director also offered his resignation over the handling of the story.",
     "sources": [
@@ -1896,6 +1970,7 @@
     "disclosed": "2018-06",
     "category": "Undisclosed relationship with employee",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Royal Bank of Canada fired Blair Fleming, the head of its U.S. investment banking business, in June 2018. An RBC spokeswoman said he had not complied with the bank's disclosure and conflict-of-interest policies on workplace relationships, and that the bank investigated and acted promptly once the matter was raised. Bloomberg reported that the relationship was with an employee and was consensual.",
     "sources": [
@@ -1923,6 +1998,7 @@
     "disclosed": "2020-08",
     "category": "Extramarital affair (acknowledged)",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "NBCUniversal vice chairman Ron Meyer left the company in August 2020 after disclosing that he had made a settlement with a woman outside the company. In his statement Meyer described a brief, consensual affair years earlier and said other parties had since tried to extort him. NBCUniversal CEO Jeff Shell said the company and Meyer had mutually concluded he should leave, saying Meyer had acted in a way not consistent with company policies or values.",
     "sources": [
@@ -1954,6 +2030,7 @@
     "disclosed": "2018-10",
     "category": "Undisclosed relationship with subordinate",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Delta Dental of California's board terminated chief executive Tony Barth in October 2018. The company said in a press release that the termination related to his engaging in, and failing to report, a consensual relationship with a subordinate employee. CFO Mike Castro was named acting CEO.",
     "sources": [
@@ -1986,6 +2063,7 @@
     "disclosed": "2024-04",
     "category": "Relationship with vendor employee",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Welcia Holdings announced on 17 April 2024 that its president had resigned, saying there had been improper conduct in his private life that damaged the company's credibility. Weekly Shincho reported that the resignation followed an affair with an employee of a health-food supplier to Welcia. The company did not describe the conduct.",
     "sources": [
@@ -2014,6 +2092,7 @@
     "disclosed": "2025-06",
     "category": "Undisclosed relationship with HR business partner",
     "outcome": "Dismissed",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "ByteDance dismissed the head of its Doubao LLM team in June 2025, according to an internal notice reported by Caixin and TechNode. The notice cited a prohibited conflict of interest arising from a personal relationship with a former HR business partner, and said both had made false statements during the investigation. Caixin reported that the probe followed a whistleblower report.",
     "sources": [
@@ -2038,6 +2117,7 @@
     "disclosed": "2021-11",
     "category": "Relationship with fellow executive",
     "outcome": "Departed by mutual agreement",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Raiffeisen said in November 2021 that its chief technology and operating officer would leave by mutual agreement, without giving reasons. Inside Paradeplatz had reported in September 2021 that he was in a relationship with another senior Raiffeisen executive, who had already left. The bank said at the time that her departure had resolved the governance concerns.",
     "sources": [
@@ -2062,6 +2142,7 @@
     "disclosed": "2021-04",
     "category": "Relationship with subordinate",
     "outcome": "Departed",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Caixin reported in April 2021 that a leaked audio recording appeared to show CICC's chief compliance officer in an extramarital relationship with a subordinate. CICC said he had left for health reasons.",
     "sources": [
@@ -2086,6 +2167,7 @@
     "disclosed": "2023-10",
     "category": "Relationship with subordinate",
     "outcome": "Resigned (company collapsed Nov 2022; later convicted on unrelated fraud charges)",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "Caroline Ellison, the former chief executive of Alameda Research, testified at Bankman-Fried's October 2023 criminal trial that she had an on-and-off intimate relationship with him starting in 2018, soon after she joined Alameda. She testified that she reported to him throughout and that he installed her as Alameda's chief executive. Fortune reported that the relationship was kept secret for a period before the two split in 2022.",
     "sources": [
@@ -2114,6 +2196,7 @@
     "disclosed": "2018-09",
     "category": "Relationship with employee (policy breach)",
     "outcome": "Reprimanded in 2017; resigned Oct 2018",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "The Wall Street Journal reported in September 2018 that a 2017 outside-counsel investigation found Poetzscher had a consensual affair with a co-worker whose annual review he contributed to, in violation of company policy. The investigation also reportedly substantiated sexually suggestive comments about colleagues. Uber said he was reprimanded in 2017, and it confirmed his resignation in October 2018.",
     "sources": [
@@ -2146,6 +2229,7 @@
     "disclosed": "2022-07",
     "category": "Undisclosed relationship with subordinate (disputed)",
     "outcome": "No action; the executive stayed in her role",
+    "lost_role": false,
     "evidence": "unconfirmed",
     "summary": "Court filings first reported by Business Insider in July 2022 showed that Musk had fathered twins with a Neuralink director who reported directly to him. Reuters reported that Neuralink's handbook bans personal relationships between employees in a direct supervisory relationship, and that the company accepted her account that the relationship was not romantic. Reuters could not confirm whether the relationship was disclosed.",
     "sources": [
@@ -2174,6 +2258,7 @@
     "disclosed": "2017-08",
     "category": "Undisclosed relationship with employee",
     "outcome": "Left at the firm's request",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "The Information and Axios reported in 2017 that Frangione left the venture capital firm after it learned of an undisclosed, consensual relationship with another employee. A Greylock spokeswoman said the firm had learned of behavior that would represent a significant lapse of judgment, without giving specifics.",
     "sources": [
@@ -2202,6 +2287,7 @@
     "disclosed": "2024-07",
     "category": "Alleged relationship with employee",
     "outcome": "Departed",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Payload reported in July 2024 that Firefly was investigating allegations of an inappropriate relationship between Weber and a female employee. A company spokesperson said initial findings did not support the allegations. Two days later the board announced that Weber had left, and it declined to say whether the departure was related.",
     "sources": [
@@ -2230,6 +2316,7 @@
     "disclosed": "2019-01",
     "category": "Relationship with contractor",
     "outcome": "Terminated (late 2018)",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "The Wall Street Journal reported in January 2019 that Snap fired Racioppi at the end of 2018 after a law-firm investigation found he had a relationship with a contractor he had hired, and ended her contract when the relationship ended. Racioppi denied inappropriate conduct and said he would challenge the investigation.",
     "sources": [
@@ -2254,6 +2341,7 @@
     "disclosed": "2017-02",
     "category": "Relationship with employee",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Thomas P. Campbell announced on February 28, 2017 that he would step down as director and CEO of the Metropolitan Museum of Art. The New York Times reported that a close personal relationship between Campbell and a staff member in the museum's digital department was among the factors in his departure, along with financial problems and staff discord. The museum confirmed his departure but, in the coverage reviewed, did not publicly attribute it to the relationship.",
     "sources": [
@@ -2286,6 +2374,7 @@
     "disclosed": "2019-02",
     "category": "Undisclosed relationship with colleague",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Bloomberg reported in February 2019, citing people familiar with the matter, that Bridgewater Associates fired its head of foreign-exchange research, Bob Elliott, saying he had not properly disclosed a relationship with a colleague. According to the report, Elliott believed he had been dismissed without cause after telling superiors about it. Neither Elliott nor Bridgewater commented on the details.",
     "sources": [
@@ -2310,6 +2399,7 @@
     "disclosed": "2017-10",
     "category": "Relationship with employee (code of conduct)",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Airbnb's head of China, Hong Ge, left the company in October 2017, four months after taking the role, and Airbnb said he was leaving to pursue another role. Bloomberg, citing two people familiar with the matter, reported that Airbnb had found he violated its code of conduct by dating a female employee. The Information separately reported a similar finding.",
     "sources": [
@@ -2338,6 +2428,7 @@
     "disclosed": "2018-07",
     "category": "Sexual harassment",
     "outcome": "Resigned Sept 2018; board terminated for cause Dec 2018, $120M severance denied",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Moonves left CBS in September 2018 after multiple women alleged sexual misconduct. In December 2018 the CBS board said it had grounds to terminate him for cause, citing willful misfeasance, violation of company policies and failure to cooperate fully with its investigation, and denied his $120 million severance. Moonves, through his lawyer, denied any non-consensual sexual relations and called the board's conclusions baseless.",
     "sources": [
@@ -2365,6 +2456,7 @@
     "disclosed": "2016-07",
     "category": "Sexual harassment",
     "outcome": "Resigned July 2016; company settled Carlson suit (~$20M reported) with public apology",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Former anchor Gretchen Carlson sued Ailes in July 2016, alleging he sabotaged her career after she rejected his advances, and he resigned as chairman and CEO weeks later. In September 2016, 21st Century Fox settled her lawsuit and publicly apologized that she had not been treated with the respect she deserved. Ailes denied the allegations.",
     "sources": [
@@ -2392,6 +2484,7 @@
     "disclosed": "2017-10",
     "category": "Sexual assault and harassment",
     "outcome": "Fired Oct 2017; convicted CA 2022 (16 yrs, on appeal); NY 2025 retrial: 1 guilty count; May 2026 mistrial on remaining count",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "The Weinstein Company board fired Weinstein in October 2017, citing new information about misconduct, after the New York Times reported decades of sexual harassment allegations. He was convicted of rape in Los Angeles in 2022 and sentenced to 16 years, a conviction he is appealing. After his 2020 New York conviction was overturned in 2024, a 2025 retrial convicted him on one count and acquitted him on another; a further retrial on the remaining count ended in a mistrial in May 2026. Weinstein has denied non-consensual conduct.",
     "sources": [
@@ -2419,6 +2512,7 @@
     "disclosed": "2018-01",
     "category": "Sexual misconduct",
     "outcome": "Resigned Feb 2018; company fined $20M (Nevada) and $35M (Massachusetts) over handling of allegations",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "The Wall Street Journal reported in January 2018 that Wynn had been accused of sexual misconduct by employees, including a $7.5 million settlement with a salon worker in 2005, and he resigned as CEO weeks later. Regulators in Nevada and Massachusetts fined Wynn Resorts $20 million and $35 million for failing to investigate and disclose the allegations. Massachusetts did not rule on whether the allegations were true. Wynn denied them, saying relationships were consensual.",
     "sources": [
@@ -2450,6 +2544,7 @@
     "disclosed": "2018-02",
     "category": "Sexual harassment",
     "outcome": "Resigned as executive chairman June 2018; $500K settlements with five individuals",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "A board special committee investigated allegations, first raised publicly by model Kate Upton in February 2018, of unwanted advances by Marciano. Guess said in June 2018 that many allegations could not be corroborated but that he exercised poor judgment in communications with models and photographers, and it settled with five individuals for $500,000 without admitting liability. Marciano resigned as executive chairman and denied the allegations.",
     "sources": [
@@ -2477,6 +2572,7 @@
     "disclosed": "2017-11",
     "category": "Unwanted physical contact",
     "outcome": "Leave Nov 2017; departed Disney end of 2018",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "In November 2017 Lasseter took a leave of absence, telling staff in a memo that he apologized to anyone who had received an unwanted hug or other gesture that crossed a line. The Hollywood Reporter reported allegations of grabbing, kissing and comments about physical attributes. Disney said in June 2018 that he would leave at the end of the year.",
     "sources": [
@@ -2504,6 +2600,7 @@
     "disclosed": "2017-12",
     "category": "Sexual and racial workplace misconduct",
     "outcome": "Sold team 2018; fined $2.75M by NFL",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "Sports Illustrated reported in December 2017 that several former employees received confidential settlements over alleged workplace misconduct by Richardson, who then announced he would sell the team. In June 2018 the NFL said an investigation led by Mary Jo White supported the claims and fined him $2.75 million. The league did not detail the specific conduct publicly.",
     "sources": [
@@ -2527,6 +2624,7 @@
     "disclosed": "2018-02",
     "category": "Sexual harassment",
     "outcome": "Had left in 2015; NBA-overseen investigation substantiated misconduct (Sept 2018)",
+    "lost_role": false,
     "evidence": "confirmed",
     "summary": "Sports Illustrated reported in February 2018 on alleged harassment within the Mavericks' business operations. An independent investigation overseen by the NBA found in September 2018 that Ussery, the former president and CEO, engaged in improper conduct toward 15 female employees, including inappropriate comments, touching and forcible kissing. Ussery denied most of the allegations.",
     "sources": [
@@ -2554,6 +2652,7 @@
     "disclosed": "2017-12",
     "category": "Sexual harassment",
     "outcome": "Stepped away 2017; $600K NY AG settlement 2021",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "Batali stepped away from his restaurant group in December 2017 after Eater reported allegations of sexual misconduct, and he apologized, saying the accusations matched how he had acted. In 2021 the New York Attorney General said its investigation found unlawful sex discrimination and retaliation at the group's restaurants, including harassment by Batali, and announced a $600,000 settlement. The settlement did not include an admission of liability.",
     "sources": [
@@ -2581,6 +2680,7 @@
     "disclosed": "2017-10",
     "category": "Sexual harassment",
     "outcome": "Resigned at CEO's request Nov 2017",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "The Washington Post reported in October 2017 that two women accused Oreskes of unwanted advances while he was at the New York Times in the 1990s, and an NPR employee also complained. NPR CEO Jarl Mohn said he asked for Oreskes' resignation. Oreskes apologized, saying his behavior was wrong and inexcusable.",
     "sources": [
@@ -2604,6 +2704,7 @@
     "disclosed": "2021-11",
     "category": "Sexually inappropriate conduct",
     "outcome": "Suspended one year and fined $10M by NBA (Sept 2022); sold teams",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "After ESPN reported allegations about the Suns workplace in 2021, an NBA-commissioned investigation found in September 2022 that Sarver made many sex-related comments in the workplace, commented inappropriately on female employees' appearance and treated female employees unequally. The NBA suspended him for a year and fined him $10 million. The investigation also found racially insensitive language.",
     "sources": [
@@ -2627,6 +2728,7 @@
     "disclosed": "2022-02",
     "category": "Sexual harassment",
     "outcome": "Sold team 2023; fined $60M by NFL",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "A former employee told Congress in 2022 that Snyder touched her leg at a work dinner and pushed her toward his car. An NFL investigation led by Mary Jo White sustained her allegation in July 2023, and the league fined Snyder $60 million, also citing financial improprieties. Snyder denied the allegations.",
     "sources": [
@@ -2650,6 +2752,7 @@
     "disclosed": "2021-11",
     "category": "Sexual harassment and assault",
     "outcome": "Resigned as chairman, CEO and director; arbitration award against him upheld",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "Chishti resigned as Afiniti's chairman, CEO and director in November 2021 after a former employee testified before a congressional committee that he had sexually assaulted her in 2017. A 2019 arbitration award had found in her favour; news reports say the arbitrator found him liable for sexual harassment, assault and battery and ordered him to pay more than $5 million. A US district court dismissed his defamation suit against her in 2024, and the D.C. Circuit affirmed on July 7, 2026, leaving the award in place. Chishti disputed the accusations.",
     "sources": [
@@ -2681,6 +2784,7 @@
     "disclosed": "2021-03",
     "category": "Sexual harassment",
     "outcome": "Removed as chairman; left other boards",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "GSK said in March 2021 that it had removed Slaoui as chairman of its subsidiary Galvani Bioelectronics after an investigation by an outside law firm substantiated allegations of sexual harassment and inappropriate conduct toward a GSK employee, dating from his time at GSK. GSK called the conduct 'wholly unacceptable' and 'an abuse of his leadership position.' Slaoui apologized 'unreservedly to the employee concerned.'",
     "sources": [
@@ -2704,6 +2808,7 @@
     "disclosed": "2017-06",
     "category": "Sexual harassment / unwanted advances",
     "outcome": "Removed from day-to-day role, then resigned as general partner",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "In June 2017, 500 Startups said it had learned that co-founder Dave McClure 'had inappropriate interactions with women in the tech community' and called his behavior unacceptable. CEO Christine Tsai said he had already been removed from day-to-day operations. McClure published a blog post titled 'I'm a Creep. I'm Sorry.' acknowledging advances toward women and resigned as general partner in July 2017.",
     "sources": [
@@ -2727,6 +2832,7 @@
     "disclosed": "2017-06",
     "category": "Sexual harassment / unwanted advances",
     "outcome": "Leave of absence, then resigned",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "In June 2017, The Information reported that several female founders accused Caldbeck of unwanted sexual advances. He first denied the allegations, then said in a statement that it was wrong to 'leverage a position of power in exchange for sexual gain' and 'it is clear to me now that that is exactly what I've done.' He took an indefinite leave and resigned from the firm days later.",
     "sources": [
@@ -2750,6 +2856,7 @@
     "disclosed": "2023-12",
     "category": "Sexual harassment",
     "outcome": "Dismissed by board; pay clawed back",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "ENEOS Holdings' board dismissed President Takeshi Saito in December 2023. The company said an external lawyer's investigation, which began with a compliance hotline report, confirmed that he hugged a woman while drunk at a social gathering. ENEOS said he was unfit to serve as president and that it would claw back part of his pay.",
     "sources": [
@@ -2781,6 +2888,7 @@
     "disclosed": "2020-07",
     "category": "Sexual harassment and attempted sexual assault",
     "outcome": "Fired for gross misconduct (2020); convicted July 2025, 3-year suspended sentence and EUR 30,000 fine",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "Ubisoft fired Tommy François, a vice president in its editorial department, for gross misconduct in 2020 after harassment allegations surfaced. On 2 July 2025 the criminal court in Bobigny convicted him of moral harassment, sexual harassment and attempted sexual assault. He received a three-year suspended prison sentence and a EUR 30,000 fine.",
     "sources": [
@@ -2808,6 +2916,7 @@
     "disclosed": "2020-07",
     "category": "Sexual harassment (complicity) and moral harassment",
     "outcome": "Resigned July 2020; convicted July 2025, 18-month suspended sentence and EUR 45,000 fine",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "Ubisoft's chief creative officer Serge Hascoët resigned in July 2020 amid allegations of misconduct in the company's editorial department. On 2 July 2025 the Bobigny criminal court convicted him of moral harassment and complicity in sexual harassment. He received an 18-month suspended prison sentence and a EUR 45,000 fine. He told the court he had not been aware of the sexist remarks and hazing near his office.",
     "sources": [
@@ -2835,6 +2944,7 @@
     "disclosed": "2017-09",
     "category": "Sexual assault",
     "outcome": "Resigned Sept 2017; convicted April 2020, 2.5-year sentence suspended for 4 years",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "DB Group chairman Kim Jun-ki resigned in September 2017 after his personal secretary accused him of sexual assault. In April 2020 the Seoul Central District Court found him guilty of sexually assaulting the secretary and of raping a housekeeper. It sentenced him to two and a half years in prison, suspended for four years.",
     "sources": [
@@ -2858,6 +2968,7 @@
     "disclosed": "2020-07",
     "category": "Sexual harassment",
     "outcome": "Promotion reversed Aug 2020; chair David Murray and director John Fraser resigned",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "AMP faced shareholder criticism in 2020 after promoting Boe Pahari to lead AMP Capital despite a 2017 sexual harassment complaint from a subordinate. AMP said an independent probe found he had exercised poor judgment amounting to a relatively modest breach of its workplace behaviour policies. In August 2020 his promotion was reversed and the chair resigned. Pahari publicly apologised to the complainant.",
     "sources": [
@@ -2881,6 +2992,7 @@
     "disclosed": "2015-10",
     "category": "Sexual harassment",
     "outcome": "Resigned Oct 2015",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Marcel Aubut resigned as president of the Canadian Olympic Committee in October 2015 after a formal sexual harassment complaint. He apologised and said he would seek counselling. An independent review released in January 2016 found that a majority of staff interviewed had experienced or witnessed harassment of a sexual or personal nature involving him, and that concerns about him had been raised as early as 2008.",
     "sources": [
@@ -2904,6 +3016,7 @@
     "disclosed": "2022-08",
     "category": "Sexual assault",
     "outcome": "Resigned (company asked him to leave)",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "ENEOS said in August 2022 that Chairman Tsutomu Sugimori had resigned for personal reasons. After the weekly Shukan Shincho reported that he had sexually assaulted a woman working at a hostess bar in Okinawa, the company acknowledged inappropriate conduct and said it had asked him to resign.",
     "sources": [
@@ -2932,6 +3045,7 @@
     "disclosed": "2024-09",
     "category": "Sexually inappropriate conduct",
     "outcome": "Left executive board by mutual agreement (effective 2024-09-30)",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "SAP said in September 2024 that CTO Jürgen Müller would leave its executive board by mutual agreement. Müller said in a statement that his behavior at a past company event was inappropriate, and he apologized to everyone affected. Bloomberg later reported that he was accused of touching a female colleague at a company party, and that Heidelberg prosecutors had opened a sexual harassment investigation.",
     "sources": [
@@ -2964,6 +3078,7 @@
     "disclosed": "2010-06",
     "category": "Sexual harassment",
     "outcome": "Resigned June 2010; lawsuit settled Oct 2010 for A$850,000",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "David Jones chief executive Mark McInnes resigned in June 2010 after a sexual harassment complaint by a female employee. The employee sued him and the company, and the case settled in October 2010 for A$850,000. McInnes said most of the allegations in the lawsuit were untrue.",
     "sources": [
@@ -2992,6 +3107,7 @@
     "disclosed": "2015-02",
     "category": "Sexual harassment",
     "outcome": "Took leave from TERI; ICC found him guilty May 2015; TERI ended association 2016",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "In February 2015 a TERI researcher filed a sexual harassment complaint against the institute's head, R. K. Pachauri, who then took leave and stepped down as chair of the UN climate panel. In May 2015 TERI's Internal Complaints Committee found him guilty of sexual harassment. TERI ended its association with him in 2016.",
     "sources": [
@@ -3020,6 +3136,7 @@
     "disclosed": "2017-12",
     "category": "Sexual harassment",
     "outcome": "Stepped down as operator; $240K plus profit-share settlement with NY AG (Jan 2020)",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "The New York Times reported in December 2017 that employees accused Friedman of unwanted sexual advances. In January 2020 the New York Attorney General said its investigation found he subjected female employees to repeated unwanted touching and advances, and announced a settlement requiring $240,000 in payments, a share of profits and his exit from management. Friedman apologized for harm caused while disputing many allegations.",
     "sources": [
@@ -3044,6 +3161,7 @@
     "disclosed": "2018-07",
     "category": "Sexual harassment",
     "outcome": "Fired July 2018; mutual lawsuits settled 2019, no finding of wrongdoing",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Barnes & Noble fired Parneros in July 2018 for policy violations, later alleging in court filings that he sexually harassed an assistant and bullied colleagues. Parneros denied the accusations and sued for wrongful termination. The parties settled in 2019 with a joint statement of no judicial determination of wrongdoing.",
     "sources": [
@@ -3072,6 +3190,7 @@
     "disclosed": "2014-06",
     "category": "Sexual misconduct",
     "outcome": "Suspended June 2014; terminated for cause Dec 2014",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "American Apparel's board suspended Charney in June 2014 and fired him in December 2014 after an investigation. The company said it found he misused company funds and allowed an employee to post nude photos of a former employee who had sued him. Charney denied wrongdoing and contested the firing.",
     "sources": [
@@ -3108,6 +3227,7 @@
     "disclosed": "2017-10",
     "category": "Sexual harassment",
     "outcome": "Placed on leave; resigned Nov 2017",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "The New Republic's owner placed Fish on leave in October 2017, citing concerns about his interactions with a number of women employees, and opened an investigation. Fish resigned in November 2017, acknowledging the complaints in his letter without admitting specific conduct.",
     "sources": [
@@ -3132,6 +3252,7 @@
     "disclosed": "2017-10",
     "category": "Sexual misconduct",
     "outcome": "Fired Oct 2017",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Vox Media fired Steele in October 2017 after a former employee's post described inappropriate sexual conduct by a supervisor. CEO Jim Bankoff told staff Steele had admitted conduct inconsistent with the company's values.",
     "sources": [
@@ -3156,6 +3277,7 @@
     "disclosed": "2017-11",
     "category": "Sexual harassment",
     "outcome": "Left NPR Nov 2017 after internal review",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "NPR said in November 2017 that Sweeney was no longer on staff after three current and former NPR journalists filed formal complaints alleging unwanted advances. NPR did not state the reason for his departure, and Sweeney did not comment.",
     "sources": [
@@ -3180,6 +3302,7 @@
     "disclosed": "2017-10",
     "category": "Sexual harassment",
     "outcome": "Suspended then resigned Oct 2017",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Producer Isa Hackett publicly alleged in October 2017 that Price made repeated lewd comments and propositions to her in 2015. Amazon placed him on leave and confirmed his resignation days later.",
     "sources": [
@@ -3204,6 +3327,7 @@
     "disclosed": "2016-03",
     "category": "Sexual harassment",
     "outcome": "Left CEO post 2016; WPP settled suit 2018; left WPP June 2018",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "JWT's communications chief Erin Johnson sued Martinez in 2016 alleging sexual harassment and a hostile work environment, and he left the CEO post shortly after. WPP and JWT settled the suit in 2018 without disclosing terms. Martinez denied the allegations.",
     "sources": [
@@ -3228,6 +3352,7 @@
     "disclosed": "2018-10",
     "category": "Unwanted advances",
     "outcome": "Resigned without severance",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "The New York Times reported in October 2018 that DeVaul made unwanted advances toward a job applicant in 2013. DeVaul apologized for an 'error of judgment' in a statement to the Times. He left Alphabet days later, and a Google spokesperson confirmed Axios's report that he received no exit package.",
     "sources": [
@@ -3256,6 +3381,7 @@
     "disclosed": "2022-05",
     "category": "Sexual harassment",
     "outcome": "Left company (\"mutually decided\")",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Business Insider reported in May 2022 that current and former employees alleged inappropriate touching and comments by Kipman. Microsoft confirmed in June 2022 that he was leaving but did not address the allegations. Kipman did not comment.",
     "sources": [
@@ -3280,6 +3406,7 @@
     "disclosed": "2017-02",
     "category": "Sexual harassment",
     "outcome": "Asked to resign from Uber",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Recode reported in February 2017 that Google had found credible a sexual harassment complaint against Singhal before he left in 2016, and that Uber asked him to resign for not disclosing it. Singhal denied the allegation.",
     "sources": [
@@ -3304,6 +3431,7 @@
     "disclosed": "2023-09",
     "category": "Sexual harassment / alleged groping",
     "outcome": "Resigned",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Camara resigned as CS Disco's CEO in September 2023. The Wall Street Journal then reported that the board was investigating an allegation that he groped a junior employee at a company dinner. Neither he nor the company commented on the allegation.",
     "sources": [
@@ -3332,6 +3460,7 @@
     "disclosed": "2017-10",
     "category": "Sexual harassment",
     "outcome": "Fired",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "The Wall Street Journal reported in October 2017 that Fidelity fired Baker after a junior employee alleged sexual harassment. Fidelity declined to comment on him specifically, and his spokesman said he strenuously denied the allegations.",
     "sources": [
@@ -3356,6 +3485,7 @@
     "disclosed": "2018-12",
     "category": "Workplace misconduct (alleged sexual element)",
     "outcome": "Two-month unpaid suspension",
+    "lost_role": false,
     "evidence": "unconfirmed",
     "summary": "Riot Games suspended COO Scott Gelb without pay for two months in December 2018 after an investigation into workplace misconduct. Kotaku had reported allegations that he touched subordinates, including hitting their genitals as a joke. Riot's CEO called many allegations against him untrue.",
     "sources": [
@@ -3380,6 +3510,7 @@
     "disclosed": "2020-02",
     "category": "Sexual harassment",
     "outcome": "Resigned as CEO",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "The Verge reported in February 2020 that 13 current and former employees alleged a pattern of sexual harassment and inappropriate conduct by Mars. He stepped down as CEO after an internal investigation of two employee complaints. Mars denied the allegations, saying some were embellished.",
     "sources": [
@@ -3404,6 +3535,7 @@
     "disclosed": "2014-06",
     "category": "Sexual harassment",
     "outcome": "Suspended, then left; suit settled",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Whitney Wolfe sued Tinder and IAC in 2014, alleging sexual harassment and discrimination by co-founder Justin Mateen. IAC suspended him and he later left. The suit settled with no admission of wrongdoing.",
     "sources": [
@@ -3428,6 +3560,7 @@
     "disclosed": "2017-06",
     "category": "Unwanted touching",
     "outcome": "None (already stepping back)",
+    "lost_role": false,
     "evidence": "unconfirmed",
     "summary": "The New York Times reported in June 2017 that an entrepreneur said Sacca touched her face without consent in 2009. Sacca published a post apologizing for past behavior but disputed her account.",
     "sources": [
@@ -3452,6 +3585,7 @@
     "disclosed": "2021-06",
     "category": "Sexual harassment (alleged)",
     "outcome": "Placed on leave; resigned Dec 2021 after board found grounds for termination",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Servotronics placed Trbovich on leave in June 2021 after a former employee's lawsuit alleged sexual harassment and other misconduct. In December 2021, the company said an outside counsel investigation had identified grounds for his termination for 'willful malfeasance', and he resigned. The company did not say which conduct the finding concerned, and his attorney said his actions were in the company's interests.",
     "sources": [
@@ -3476,6 +3610,7 @@
     "disclosed": "2022-08",
     "category": "Sexual assault (alleged)",
     "outcome": "Resigned as CEO",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Price resigned as CEO of Gravity Payments in August 2022, shortly before the New York Times published allegations from several women of abuse and sexual assault. He denied the allegations.",
     "sources": [
@@ -3500,6 +3635,7 @@
     "disclosed": "2025-03",
     "category": "Inappropriate behaviour toward a woman (nature undisclosed)",
     "outcome": "Resigned with immediate effect",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "Associated British Foods said Primark chief executive Paul Marchant resigned in March 2025 after an external investigation into an allegation about his behaviour toward a woman in a social setting. ABF said he acknowledged an error of judgment, accepted his actions fell below expected standards and apologised.",
     "sources": [
@@ -3524,6 +3660,7 @@
     "disclosed": "2025-04",
     "category": "Inappropriate conduct (nature undisclosed)",
     "outcome": "Resigned before disciplinary decision; CEO took 20% pay cut",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Honda said in April 2025 that Executive Vice President Shinji Aoyama resigned after an allegation of inappropriate conduct at a social gathering outside work hours. The board had been preparing disciplinary action. Honda apologised but did not describe the conduct, citing the privacy of the person affected.",
     "sources": [
@@ -3548,6 +3685,7 @@
     "disclosed": "2023-03",
     "category": "Workplace misconduct (alleged sexual harassment)",
     "outcome": "Dismissed April 2023; later settled with CBI",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "The CBI dismissed Director-General Tony Danker in April 2023 after an independent investigation into complaints of workplace misconduct, saying his conduct fell short of that expected of the role. The Guardian reported that a female employee's complaint alleged unwanted contact she considered sexual harassment. Danker apologised for making some staff feel uncomfortable but denied sexually suggestive language, physical contact or propositioning anyone.",
     "sources": [
@@ -3580,6 +3718,7 @@
     "disclosed": "2024-03",
     "category": "Sexually inappropriate comment (alleged)",
     "outcome": "Resigned; forfeited unvested incentives; later defamation dispute",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Tabcorp said in March 2024 that CEO Adam Rytenskild resigned after the board learned of inappropriate and offensive language he allegedly used in the workplace. The Sydney Morning Herald reported that the remark was sexual and concerned a female regulatory official. Rytenskild said he did not recall making the comment.",
     "sources": [
@@ -3604,6 +3743,7 @@
     "disclosed": "2016-09",
     "category": "Sexual harassment",
     "outcome": "Resigned (filing cited personal reasons)",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Globes reported in September 2016 that ICL chief executive Stefan Borgas resigned after a retired judge, appointed by the board, concluded that he had sexually harassed a former senior employee, though at the milder end of the definition. ICL's filing cited personal reasons, and the company said Israeli law barred it from confirming the complaint. Borgas disagreed with the findings and called the kiss at issue an innocent parting gesture.",
     "sources": [
@@ -3628,6 +3768,7 @@
     "disclosed": "2023-06",
     "category": "Sexual harassment and assault (alleged)",
     "outcome": "Removed from partnership June 2023; FCA ban (integrity grounds, upheld by Upper Tribunal Sept 2026)",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "The Financial Times and Tortoise Media reported in June 2023 that 13 women accused Crispin Odey of sexual assault or harassment between 1998 and 2021. Odey Asset Management's executive committee removed him from the partnership two days later. Odey denied the allegations, and in 2021 a court acquitted him of a separate indecent assault charge. The FCA later banned him on integrity grounds and made no finding on the sexual misconduct allegations.",
     "sources": [
@@ -3652,6 +3793,7 @@
     "disclosed": "2018-12",
     "category": "Sexual harassment (alleged, 'forced hugging')",
     "outcome": "Took leave, then resigned March 2019 during investigation",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Ted Baker founder and chief executive Ray Kelvin took leave and then resigned in March 2019 during an independent investigation into staff allegations of harassment, including forced hugging. He denied wrongdoing. The company's review, run by Herbert Smith Freehills, identified areas for improvement in HR policies but was not published.",
     "sources": [
@@ -3680,6 +3822,7 @@
     "disclosed": "2018-09",
     "category": "Sexual assault (alleged)",
     "outcome": "Not charged (Dec 2018); civil suit settled Oct 2022, terms undisclosed",
+    "lost_role": false,
     "evidence": "unconfirmed",
     "summary": "JD.com founder Richard Liu was arrested in Minneapolis in 2018 over a rape allegation by a University of Minnesota student. Prosecutors declined to charge him. Her civil suit against Liu and JD.com settled two days before trial in October 2022, with a joint statement calling the matter a misunderstanding. Liu maintained the encounter was consensual.",
     "sources": [
@@ -3704,6 +3847,7 @@
     "disclosed": "2024-04",
     "category": "Sexual harassment (alleged)",
     "outcome": "Left Nine Mar 2024 with settlement; chair Peter Costello later resigned",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Nine's news chief Darren Wick left the company in March 2024 after a complaint. News Corp and Nine newspapers later reported allegations of inappropriate touching of female staff at company events. Nine said its investigation made no findings against him, and he was approached for comment.",
     "sources": [
@@ -3728,6 +3872,7 @@
     "disclosed": "2018-01",
     "category": "Alleged sexual misconduct",
     "outcome": "Terminated; later settled his defamation claim",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Bank of America dismissed prime brokerage executive Omeed Malik in January 2018 after investigating an employee's accusation of inappropriate behaviour at a December 2017 work gathering, according to reports. Malik denied misconduct and filed a FINRA claim seeking $100 million for defamation, and the bank later agreed to settle with him.",
     "sources": [
@@ -3756,6 +3901,7 @@
     "disclosed": "2017-05",
     "category": "Alleged sexual harassment",
     "outcome": "Departed",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Sony Music said in May 2017 that L.A. Reid would leave Epic Records; trade outlets reported the exit followed a female assistant's complaint of harassment. A former Arista executive later sued Reid alleging sexual assault in the early 2000s; the case settled confidentially in January 2026 without admission of liability, and Reid has denied the allegations.",
     "sources": [
@@ -3780,6 +3926,7 @@
     "disclosed": "2018-01",
     "category": "Alleged sexual harassment",
     "outcome": "Departed after investigation (mutual)",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Universal Music Group placed Republic Records president Charlie Walk on leave in January 2018 and retained an outside firm to investigate harassment allegations from former colleagues. Republic said in March 2018 that it and Walk had mutually agreed to part ways. Walk denied the allegations.",
     "sources": [
@@ -3803,6 +3950,7 @@
     "disclosed": "2017-07",
     "category": "Alleged sexual harassment",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "Fox Sports fired Jamie Horowitz in July 2017; Sports Illustrated and the Los Angeles Times reported the firing followed an investigation into sexual harassment allegations. Fox's lawyers said the termination was fully warranted, per the New York Times. Horowitz's lawyer disputed the firing and said any accusations would be vigorously defended.",
     "sources": [
@@ -3827,6 +3975,7 @@
     "disclosed": "2017-10",
     "category": "Alleged sexual harassment",
     "outcome": "Stepped down",
+    "lost_role": true,
     "evidence": "unconfirmed",
     "summary": "The Times-Picayune reported in October 2017 that 25 current and former employees said they experienced sexual harassment at Besh Restaurant Group, and that an EEOC complaint alleged Besh tried to coerce an employee into a sexual relationship. Besh stepped down from the company.",
     "sources": [
@@ -3850,6 +3999,7 @@
     "disclosed": "2017-11",
     "category": "Sexual misconduct",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "NBC News fired Lauer in November 2017. In a staff memo, NBC News chairman Andrew Lack said the network had received a complaint about Lauer's conduct and concluded he had breached company standards, and that it had reason to believe it may not have been an isolated incident. In 2019 Lauer called a rape allegation by a former colleague \"categorically false\", saying the encounter was consensual, NBC News reported.",
     "sources": [
@@ -3885,6 +4035,7 @@
     "disclosed": "2017-11",
     "category": "Sexual harassment",
     "outcome": "Terminated by CBS; PBS and Bloomberg ended distribution",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "CBS News fired Rose in November 2017 after eight women who had worked with him or sought work on his program accused him of sexual misconduct. CBS News president David Rhodes said nothing was more important than ensuring a safe, professional workplace, and CBS cited extremely disturbing and intolerable behavior. PBS ended its relationship with Rose and dropped his programs the same day. Rose apologized for acting insensitively but said he did not believe all the allegations were accurate.",
     "sources": [
@@ -3912,6 +4063,7 @@
     "disclosed": "2020-07",
     "category": "Sexual misconduct",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Fox News fired Henry in July 2020. A memo from CEO Suzanne Scott and president Jay Wallace said Fox received a complaint from a former employee's attorney alleging willful sexual misconduct in the workplace years earlier, retained an outside law firm, and terminated Henry based on investigative findings. Henry's lawyer said he denied the allegations.",
     "sources": [
@@ -3943,6 +4095,7 @@
     "disclosed": "2017-04",
     "category": "Sexual harassment",
     "outcome": "Exited after company review",
+    "lost_role": true,
     "evidence": "settled",
     "summary": "21st Century Fox said in April 2017 that, after a thorough and careful review of allegations against him, it and O'Reilly had agreed he would not return to Fox News. The New York Times reported that he or the company had paid about $13 million to settle claims by five women, and in October 2017 a further $32 million settlement with a Fox News analyst. Fox said it knew a harassment suit had been threatened and that O'Reilly told it he had settled personally on confidential terms. The settlements are not admissions; O'Reilly denied wrongdoing and called the claims unfounded.",
     "sources": [
@@ -3974,6 +4127,7 @@
     "disclosed": "2017-12",
     "category": "Improper sexual conduct",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "The New Yorker said in December 2017 that it had learned Lizza engaged in what it believed was improper sexual conduct and that, after reviewing the matter, it had severed ties with him. Lizza denied wrongdoing, objected to the characterization of a relationship with a woman he had dated, and called the decision a terrible mistake made without a full investigation.",
     "sources": [
@@ -4002,6 +4156,7 @@
     "disclosed": "2017-12",
     "category": "Breach of morals clause (relationships with subordinates)",
     "outcome": "Show suspended; jury verdict for PBS",
+    "lost_role": true,
     "evidence": "adjudicated",
     "summary": "PBS suspended Smiley's show in December 2017 after an outside investigation. In March 2020 a Washington, D.C. jury found he had violated the morals clause in his PBS contract and awarded PBS about $1.49 million. The investigation report described allegations from women that they had relationships with Smiley while they were his subordinates. Smiley denied the accusations.",
     "sources": [
@@ -4034,6 +4189,7 @@
     "disclosed": "2017-11",
     "category": "Inappropriate conduct",
     "outcome": "Suspended two months; removed from beat",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "The New York Times suspended Thrush in November 2017 over allegations involving younger female journalists from his time at Politico. In December executive editor Dean Baquet said the investigation found Thrush had behaved in ways the paper did not condone and had acted offensively, but did not deserve to be fired; he was given workplace-conduct training and moved to a new beat.",
     "sources": [
@@ -4062,6 +4218,7 @@
     "disclosed": "2014-10",
     "category": "Sexual misconduct / physical injury",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "CBC fired Ghomeshi in October 2014. CBC executive Heather Conway said the broadcaster had seen evidence that he caused physical injury to a woman, calling it a fundamental breach of CBC's standard of acceptable conduct for any employee. Ghomeshi denied non-consensual conduct and was later acquitted of related criminal charges.",
     "sources": [
@@ -4094,6 +4251,7 @@
     "disclosed": "2025-07",
     "category": "Inappropriate sexual language; unwanted physical contact",
     "outcome": "Removed from show",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "An investigation by law firm Lewis Silkin, commissioned by MasterChef producer Banijay UK and published in July 2025, substantiated 45 of 83 allegations against Wallace, mostly inappropriate sexual language and humour, being in a state of undress, and one instance of unwelcome physical contact. Banijay said his return to MasterChef was untenable, and the BBC said it had no plans to work with him. Wallace apologised for some language but said he had been cleared of the most serious accusations.",
     "sources": [
@@ -4122,6 +4280,7 @@
     "disclosed": "2023-05",
     "category": "Undisclosed relationship with younger colleague",
     "outcome": "Resigned; contract ended",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "Schofield left ITV's This Morning in May 2023 and admitted he had lied about a consensual relationship with a younger male colleague. ITV chief executive Carolyn McCall said in a letter that both people had repeatedly denied rumours of a relationship when questioned, and ITV commissioned a barrister-led external review.",
     "sources": [
@@ -4154,6 +4313,7 @@
     "disclosed": "2017-11",
     "category": "Inappropriate behavior",
     "outcome": "Contracts terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "Minnesota Public Radio terminated its contracts with Keillor and his companies in November 2017, citing allegations of inappropriate behavior with an individual who worked with him. Keillor disputed MPR's account. MPR and Keillor later reached a settlement in 2018.",
     "sources": [
@@ -4182,6 +4342,7 @@
     "disclosed": "2017-12",
     "category": "Sexual harassment",
     "outcome": "Contract not renewed (Jun 2017, before allegations public)",
+    "lost_role": false,
     "evidence": "reported",
     "summary": "New York magazine reported in December 2017 that several former colleagues alleged harassment and bullying by Hockenberry. NYPR said his contract had not been renewed in mid-2017. Hockenberry apologized for some behavior.",
     "sources": [
@@ -4210,6 +4371,7 @@
     "disclosed": "2017-12",
     "category": "Inappropriate conduct",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "New York Public Radio fired Lopate in December 2017 after an outside-counsel investigation, saying he violated its standards for an inclusive, appropriate and respectful workplace. WNYC said he had earlier been warned over inappropriate remarks to staff. Lopate denied wrongdoing.",
     "sources": [
@@ -4238,6 +4400,7 @@
     "disclosed": "2017-12",
     "category": "Inappropriate conduct",
     "outcome": "Terminated",
+    "lost_role": true,
     "evidence": "confirmed",
     "summary": "New York Public Radio fired Schwartz in December 2017 after an outside-counsel investigation, citing violations of its workplace standards following multiple complaints. Earlier reporting described an allegation of inappropriate touching and a sexual comment.",
     "sources": [
@@ -4266,6 +4429,7 @@
     "disclosed": "2020-03",
     "category": "Inappropriate comments",
     "outcome": "Retired",
+    "lost_role": true,
     "evidence": "acknowledged",
     "summary": "Matthews announced his retirement on air in March 2020 after a GQ column described comments he made to a guest. He apologized, saying compliments on women's appearance were never OK. Reporting said a 2017 separation payment followed comments to a subordinate.",
     "sources": [
@@ -4290,6 +4454,7 @@
     "disclosed": "2017-09",
     "category": "Sexual harassment (alleged lewd messages)",
     "outcome": "Departed amicably",
+    "lost_role": true,
     "evidence": "reported",
     "summary": "Fox News parted ways with Bolling in September 2017 after HuffPost reported he sent explicit images to colleagues. Fox said outside counsel conducted a privileged review and that the split was amicable. Bolling denied the allegations.",
     "sources": [
