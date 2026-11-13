@@ -1,10 +1,12 @@
 # Methodology
 
 ## Scope
-Senior executives and board members of:
+Corporate officers and executives at VP level and above, and board members, of:
 - **Fortune 500**: US companies by revenue.
 - **Global 500**: the largest non-US companies.
-- **Other notable**: smaller or private companies whose case drew major international coverage, e.g. Astronomer.
+- **Other notable**: smaller or private companies, sports organisations and major nonprofits whose case drew significant coverage, e.g. Astronomer or the American Red Cross.
+
+Below the C-suite and board, a case is included only if the company or executive confirmed it, or at least two independent outlets reported it.
 
 ## What counts
 Romantic or sexual relationships that broke company policy (with a subordinate, employee, contractor or vendor), relationships that should have been disclosed and weren't, and extramarital affairs the executive acknowledged publicly. Harassment and assault are tracked separately (planned).

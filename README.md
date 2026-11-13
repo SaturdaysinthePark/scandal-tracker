@@ -18,6 +18,7 @@ scandal-tracker/
 ├── scripts/
 │   ├── edgar_scan.py         # SEC EDGAR full-text scan → candidates.csv
 │   └── validate_data.py      # Schema + integrity checks for data/*.json
+├── app/                      # The web app (index.html, app.js, styles.css)
 ├── design/
 │   ├── Scandal Tracker.dc.html   # Hi-fi interactive design reference (open in a browser)
 │   └── support.js                # Runtime the design file needs (keep alongside it)
@@ -48,6 +49,13 @@ Then ask Claude Code something like:
 
 ## Current state
 
-- 31 records across 30 companies, from 2005 to November 2026.
-- The design prototype is done: the timeline, records table, about page and detail drawer.
-- The production app isn't built yet. See `docs/ROADMAP.md`.
+- 73 records across 67 companies (56 published, 16 watch, 1 retracted), from 1998 to November 2026.
+- The app in `app/` (plain HTML/CSS/JS, no build step) implements the timeline, records table, about page and detail drawer, reading `data/*.json` and `docs/METHODOLOGY.md`. Only `status: "published"` records are shown.
+
+## Run the app
+
+```bash
+python3 -m http.server 8765
+```
+
+Then open http://localhost:8765/app/.

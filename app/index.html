@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scandal Tracker — executive relationship disclosures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+  <header class="hdr">
+    <div class="brand"><span class="brand-dot"></span><span>Scandal Tracker</span></div>
+    <nav class="seg" id="tabs">
+      <button data-view="timeline">Timeline</button>
+      <button data-view="records">Records</button>
+      <button data-view="about">About</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="v-timeline" hidden>
+      <div class="intro">
+        <div class="intro-text">
+          <h1>Executives brought down by workplace relationships</h1>
+          <p class="lede">Each dot is one publicly disclosed relationship involving a senior executive, placed by the month it became public. Click a dot for the details and sources.</p>
+        </div>
+        <div class="stats" id="stats"></div>
+      </div>
+      <div class="controls">
+        <div class="controls-l">
+          <div class="seg seg-sm" id="scopes"></div>
+          <label class="chk"><input type="checkbox" id="showU" checked>Unconfirmed reports</label>
+          <label class="chk"><input type="checkbox" id="showZero">Companies with none</label>
+        </div>
+        <div class="range">
+          <button id="back" aria-label="Earlier years">‹</button>
+          <div id="rangeLabel" class="mono"></div>
+          <button id="fwd" aria-label="Later years">›</button>
+        </div>
+      </div>
+      <div class="card scroll-x"><div class="tl" id="timeline"></div></div>
+      <div class="legend">
+        <span><i class="dot"></i>Confirmed or acknowledged</span>
+        <span><i class="dot ring"></i>Reported, unconfirmed</span>
+        <span class="legend-note">Coverage is incomplete. Research is ongoing.</span>
+      </div>
+    </section>
+
+    <section id="v-records" hidden>
+      <div class="rec-head">
+        <h1 class="h1-sm">All records</h1>
+        <input id="q" type="search" placeholder="Search company, executive, keyword">
+      </div>
+      <div class="card scroll-x">
+        <table class="tbl">
+          <thead><tr><th>Disclosed</th><th>Company</th><th>Executive</th><th>Category</th><th>Outcome</th><th>Evidence</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="v-about" hidden>
+      <article class="about" id="about"><h1 class="h1-sm">About the data</h1></article>
+    </section>
+
+    <p id="err" class="err" hidden></p>
+  </main>
+
+  <div id="backdrop" class="backdrop" hidden></div>
+  <aside id="drawer" class="drawer" hidden aria-modal="true" role="dialog"></aside>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

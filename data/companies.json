@@ -460,5 +460,12 @@
     "ticker": "QBE",
     "sector": "Insurance",
     "scope": "Global 500"
+  },
+  {
+    "id": "lincolncenter",
+    "name": "Lincoln Center for the Performing Arts",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
   }
 ]

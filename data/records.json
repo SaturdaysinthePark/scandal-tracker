@@ -926,27 +926,26 @@
     "disclosed": "2025-01",
     "category": "Undisclosed relationship with subordinate",
     "outcome": "Resigned",
-    "evidence": "unconfirmed",
-    "summary": "Galp said on January 7, 2025 that CEO Filipe Silva had resigned for family reasons. Bloomberg and Reuters reported that he resigned amid an internal ethics probe, prompted by an anonymous complaint, into an alleged undisclosed personal relationship with a company director.",
+    "evidence": "reported",
+    "summary": "In January 2025 Reuters and Bloomberg, citing Portuguese outlet ECO, reported that Galp's ethics committee was examining an anonymous complaint alleging an undisclosed personal relationship between CEO Filipe Silva and a senior manager who reported to him. Silva told ECO he had not reported any personal relationship to the ethics committee but said no relationship had threatened the integrity of Galp's decisions. Galp told the Portuguese market regulator CMVM on January 7, 2025 that Silva had resigned with immediate effect, citing family reasons. Galp did not comment publicly on the complaint.",
     "sources": [
       {
-        "label": "Galp investor notice, 7 Jan 2025",
-        "url": "https://www.galp.com/investidores/publicacoes-e-comunicados/comunicados-investidor/comunicado/id/1580"
+        "label": "Reuters via Offshore Engineer, Jan 6 2025",
+        "url": "https://www.oedigital.com/news/520804-galp-launches-investigation-into-alleged-ceo-s-conflict-of-interests"
       },
       {
-        "label": "Portugal Decoded (partial, paywalled)",
-        "url": "https://portugaldecoded.substack.com/p/galp-ceo-resigns-amid-ethics-probe"
+        "label": "Bloomberg via The Star, Jan 2025",
+        "url": "https://thestar.com.my/business/business-news/2025/01/07/portuguese-oil-company-probes-anonymous-tip-alleging-a-ceo-relationship"
       },
       {
-        "label": "Bloomberg, Jan 2025",
-        "url": "https://www.bloomberg.com/news/articles/2025-01-07/galp-chief-executive-filipe-silva-resigns-for-family-reasons-m5mz8wg6"
+        "label": "Forbes Portugal, Jan 7 2025 (CMVM resignation filing)",
+        "url": "https://www.forbespt.com/presidente-executivo-da-galp-apresenta-demissao-por-motivos-familiares/"
       }
     ],
-    "primary_url": "https://www.galp.com/investidores/publicacoes-e-comunicados/comunicados-investidor/comunicado/id/1580",
-    "archive_url": null,
+    "primary_url": "https://www.oedigital.com/news/520804-galp-launches-investigation-into-alleged-ceo-s-conflict-of-interests",
+    "archive_url": "https://web.archive.org/web/20260207174408/https://www.oedigital.com/news/520804-galp-launches-investigation-into-alleged-ceo-s-conflict-of-interests",
     "verified_on": null,
-    "status": "watch",
-    "note": "Company cited family reasons; relationship probe reported by Bloomberg/Reuters but not opened or confirmed."
+    "status": "published"
   },
   {
     "id": 43,
@@ -1121,18 +1120,22 @@
     "category": "Relationship with senior colleague",
     "outcome": "No company action (had already departed in 2009)",
     "evidence": "unconfirmed",
-    "summary": "In May 2011 a member of the House of Lords said under parliamentary privilege that former RBS chief executive Fred Goodwin had obtained an injunction to suppress reporting of an alleged affair with a senior colleague. The High Court then partially lifted the order so that Goodwin could be named. Neither Goodwin nor RBS confirmed the relationship.",
+    "summary": "In May 2011 a member of the House of Lords, speaking under parliamentary privilege, said an injunction obtained by former RBS chief executive Fred Goodwin concerned an alleged affair with a senior colleague. In a June 2011 High Court judgment, the court said the relationship continued while the woman worked at RBS and Goodwin was its chief executive, and it relaxed the injunction to allow her job description to be reported. Goodwin told the court he was content for it to proceed on the basis that a relationship existed as The Sun described, but he made no further comment.",
     "sources": [
       {
-        "label": "Channel 4 News, 19 May 2011",
-        "url": "https://channel4.com/news/fred-goodwin-anonymity-ruling-lifted-after-lords-reveal"
+        "label": "Goodwin v NGN Ltd & VBN [2011] EWHC 1437 (QB), 9 Jun 2011",
+        "url": "https://caselaw.nationalarchives.gov.uk/ewhc/qb/2011/1437"
+      },
+      {
+        "label": "iMediaEthics, Jun 16 2011",
+        "url": "https://www.imediaethics.org/sir-fred-goodwin-injunction-amended-media-still-cant-name-woman-in-affair/"
       }
     ],
-    "primary_url": "https://channel4.com/news/fred-goodwin-anonymity-ruling-lifted-after-lords-reveal",
-    "archive_url": null,
+    "primary_url": "https://caselaw.nationalarchives.gov.uk/ewhc/qb/2011/1437",
+    "archive_url": "https://web.archive.org/web/20260305202850/https://caselaw.nationalarchives.gov.uk/ewhc/qb/2011/1437",
     "verified_on": null,
     "status": "watch",
-    "note": "Alleged affair revealed under parliamentary privilege; never confirmed by Goodwin or RBS."
+    "note": "No public admission or RBS confirmation; court judgment records only that he did not contest the relationship's existence."
   },
   {
     "id": 51,
@@ -1633,22 +1636,25 @@
     "company_id": "qbe",
     "executive": "John Neal",
     "role": "Group CEO",
-    "disclosed": "2017-09",
+    "disclosed": "2017-02",
     "category": "Undisclosed relationship with employee",
     "outcome": "Bonus cut 20% (about A$550,000); remained CEO",
-    "evidence": "reported",
-    "summary": "QBE's 2016 annual report said some recent personal decisions by chief executive John Neal had been inconsistent with the board's expectations, and his short-term bonus was cut by about A$550,000. Media reported that the issue was a relationship with his executive assistant that he had not promptly reported as QBE's code of conduct requires. Neal remained CEO until 2018.",
+    "evidence": "acknowledged",
+    "summary": "QBE's 2016 annual report, released in February 2017, said the board had cut chief executive John Neal's short-term incentive by 20 per cent because some recent personal decisions were inconsistent with the board's expectations. Media reports on February 27, 2017 said the decisions related to a relationship with his executive assistant that he had not disclosed promptly. Neal said he had not been timely in disclosing a personal relationship to the board, The Telegraph reported.",
     "sources": [
       {
-        "label": "Insurance Journal, 13 Sep 2017",
-        "url": "https://www.insurancejournal.com/news/international/2017/09/13/464078.htm"
+        "label": "The Telegraph via Yahoo News UK, Feb 27 2017",
+        "url": "https://uk.news.yahoo.com/affair-personal-assistant-leads-340-145007173.html"
+      },
+      {
+        "label": "AAP via SBS News, Feb 27 2017",
+        "url": "https://www.sbs.com.au/news/article/relationship-costs-qbe-boss-550k/eywffbr01"
       }
     ],
-    "primary_url": "https://www.insurancejournal.com/news/international/2017/09/13/464078.htm",
+    "primary_url": "https://uk.news.yahoo.com/affair-personal-assistant-leads-340-145007173.html",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Disclosure month uncertain (annual report Feb 2017, media reports later in 2017); verify before publishing."
+    "status": "published"
   },
   {
     "id": 72,
@@ -1675,6 +1681,31 @@
       }
     ],
     "primary_url": "https://www.nbcnews.com/id/wbna17709562",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 73,
+    "company_id": "lincolncenter",
+    "executive": "Jed Bernstein",
+    "role": "President",
+    "disclosed": "2016-05",
+    "category": "Undisclosed relationship with subordinate",
+    "outcome": "Resigned",
+    "evidence": "confirmed",
+    "summary": "Jed Bernstein resigned as president of Lincoln Center in April 2016, and the organization said at the time that he wished to return to producing. In May 2016 The New York Times reported that his departure followed an anonymous complaint about a consensual relationship with a woman on his staff whom he had promoted twice. Lincoln Center said an independent investigation found that he had violated its human resources policy by not disclosing the relationship.",
+    "sources": [
+      {
+        "label": "Chronicle of Philanthropy, May 4 2016",
+        "url": "https://www.philanthropy.com/news/relationship-with-employee-led-to-lincoln-center-chiefs-exit/"
+      },
+      {
+        "label": "AP via Washington Times, Apr 14 2016 (resignation)",
+        "url": "https://www.washingtontimes.com/news/2016/apr/14/jed-bernstein-resigns-as-president-of-lincoln-cent/"
+      }
+    ],
+    "primary_url": "https://www.philanthropy.com/news/relationship-with-employee-led-to-lincoln-center-chiefs-exit/",
     "archive_url": null,
     "verified_on": null,
     "status": "published"
