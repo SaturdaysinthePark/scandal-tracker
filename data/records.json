@@ -4915,5 +4915,548 @@
     "verified_on": null,
     "status": "watch",
     "note": "Single anonymous Recode report; Uber never tied it to his exit."
+  },
+  {
+    "id": 182,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "fijianholdings",
+    "executive": "Mohammed Nouzab Fareed",
+    "role": "Group CEO",
+    "disclosed": "2026-07",
+    "category": "Sexual assault (criminal conviction)",
+    "outcome": "Convicted; custodial sentence",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "In July 2026 the Suva Magistrates Court convicted Mohammed Nouzab Fareed, former group chief executive of Fijian Holdings Limited, of indecent assault against a young female subordinate in 2019, the Fiji Times reported. The court rejected the defence case that the conduct was innocent greeting or affection. Local reports differ on the counts and the final sentence.",
+    "sources": [
+      {
+        "label": "Fiji Times, 'Court convicts ex-boss', July 2026",
+        "url": "https://www.fijitimes.com.fj/court-convicts-ex-boss/"
+      },
+      {
+        "label": "Fiji Times, 'Eight-month prison sentence for ex-FHL boss'",
+        "url": "https://www.fijitimes.com.fj/eight-month-prison-sentence-for-ex-fhl-boss/"
+      },
+      {
+        "label": "Fiji Sun, 'Former FHL CEO denied bail after conviction'",
+        "url": "https://fijisun.com.fj/news/courts-and-law/former-fhl-ceo-denied-bail-after-conviction"
+      },
+      {
+        "label": "ODPP Weekly Court Bulletin 20-24 July 2026",
+        "url": "https://odpp.com.fj/wp-content/uploads/2026/08/ODPP-Weekly-Court-Bulletin_20-24.7.26.pdf"
+      }
+    ],
+    "primary_url": "https://www.fijitimes.com.fj/court-convicts-ex-boss/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 183,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "filmon",
+    "executive": "Alki David",
+    "role": "Founder and owner/CEO",
+    "disclosed": "2019-04",
+    "category": "Sexual harassment and sexual battery (jury verdicts)",
+    "outcome": "Jury verdicts against him; damages awarded",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "In April 2019 a Los Angeles Superior Court jury found Alki David and his companies liable to a former employee who said she was sexually harassed and fired for refusing his advances, awarding about $11 million, NBC reported. In December 2019 a second jury awarded another former employee $58.25 million against David for sexual battery, the AP reported. David denied the claims and said he would appeal.",
+    "sources": [
+      {
+        "label": "NBC Los Angeles, April 2019 verdict",
+        "url": "https://www.nbclosangeles.com/news/billionaire-hologram-sexual-harassment-loses-lawsuit-pay-millions/136482/"
+      },
+      {
+        "label": "NBC San Diego / AP, $58M verdict, Dec 2019",
+        "url": "https://www.nbcsandiego.com/news/national-international/billionaire-alki-david-sexual-battery-harassment-58-million/2226490/"
+      },
+      {
+        "label": "Special Verdict Phase 2, Dec 16 2019",
+        "url": "https://gloriaallred.com/wp-content/uploads/2021/01/2019-12-16-Special-Verdict-Phase-2.pdf"
+      },
+      {
+        "label": "Law360, 'FilmOn Founder Can't Reverse $11M Sexual Battery Loss'",
+        "url": "https://law360.com/amp/articles/1448698"
+      }
+    ],
+    "primary_url": "https://www.nbcsandiego.com/news/national-international/billionaire-alki-david-sexual-battery-harassment-58-million/2226490/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 184,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "msg",
+    "executive": "Isiah Thomas",
+    "role": "President of basketball operations and head coach, New York Knicks",
+    "disclosed": "2007-10",
+    "category": "Sexual harassment",
+    "outcome": "Remained in role after verdict",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "In October 2007 a federal jury in Manhattan found that Isiah Thomas and Madison Square Garden sexually harassed a former Knicks executive, and that she was fired for complaining. The jury ordered MSG and its chairman to pay $11.6 million; Thomas was not held liable for punitive damages. Thomas said he was innocent and did not do what he was accused of.",
+    "sources": [
+      {
+        "label": "ESPN/AP, October 2007",
+        "url": "https://www.espn.co.uk/nba/news/story?id=3046010"
+      },
+      {
+        "label": "Insurance Journal (AP), October 4, 2007",
+        "url": "https://www.insurancejournal.com/news/east/2007/10/04/84021.htm"
+      }
+    ],
+    "primary_url": "https://www.espn.co.uk/nba/news/story?id=3046010",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 185,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "bikram",
+    "executive": "Bikram Choudhury",
+    "role": "Founder",
+    "disclosed": "2016-01",
+    "category": "Sexual harassment and retaliation",
+    "outcome": "Ordered to pay about $7.4 million",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "In January 2016 a Los Angeles jury found that Bikram Choudhury, founder of Bikram Yoga, harassed and retaliated against his former head of legal affairs, who said she was fired after investigating sexual-abuse claims. The jury awarded about $924,500 in compensatory and $6.5 million in punitive damages, finding he acted with malice, oppression and fraud. His lawyers said he was innocent.",
+    "sources": [
+      {
+        "label": "Claims Journal (AP), January 28, 2016",
+        "url": "https://claimsjournal.com/news/west/2016/01/28/268446.htm"
+      },
+      {
+        "label": "Press Herald (AP), January 27, 2016",
+        "url": "https://www.pressherald.com/2016/01/27/founder-of-bikram-yoga-ordered-to-pay-7-4m-for-sex-harassment/"
+      }
+    ],
+    "primary_url": "https://claimsjournal.com/news/west/2016/01/28/268446.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 186,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "fox",
+    "executive": "Francisco Cortes",
+    "role": "Vice president, Fox News Latino",
+    "disclosed": "2017-03",
+    "category": "Sexual assault allegation (settled)",
+    "outcome": "Terminated",
+    "lost_role": true,
+    "evidence": "settled",
+    "summary": "In March 2017 The New York Times and others reported that 21st Century Fox paid more than $2.5 million to settle a former contributor's claim that Cortes, a Fox News Latino vice president, sexually assaulted her in 2015. In a joint statement Fox said it had promptly investigated and taken decisive action, and people familiar with the matter said Cortes was fired. Cortes later sued Fox, saying the relationship was consensual and that he had been made a scapegoat; settlements are not admissions.",
+    "sources": [
+      {
+        "label": "CNBC (NYT), March 2017",
+        "url": "https://www.cnbc.com/2017/03/09/fox-is-said-to-settle-with-former-contributor-over-sexual-assault-claims.html"
+      },
+      {
+        "label": "AP via Washington Times, March 2017",
+        "url": "https://m.washingtontimes.com/news/2017/mar/9/fox-news-settles-sexual-assault-complaint/"
+      },
+      {
+        "label": "Hollywood Reporter: Cortes lawsuit, July 2017",
+        "url": "https://www.hollywoodreporter.com/thr-esq/fox-hit-48-million-lawsuit-allegedly-scapegoating-executive-sexual-harassment-scandal-1024219"
+      }
+    ],
+    "primary_url": "https://www.cnbc.com/2017/03/09/fox-is-said-to-settle-with-former-contributor-over-sexual-assault-claims.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 187,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "bakermckenzie",
+    "executive": "Gary Senior",
+    "role": "Managing partner, London office",
+    "disclosed": "2020-06",
+    "category": "Sexual harassment of junior employee",
+    "outcome": "Fined by Solicitors Disciplinary Tribunal",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "In June 2020 the Solicitors Disciplinary Tribunal found that Gary Senior, the former managing partner of Baker McKenzie's London office, committed serious professional misconduct by trying to embrace and kiss a junior colleague in a hotel room in 2012 and by trying to influence the firm's investigation. The tribunal called his conduct an extraordinary abuse of position and fined him £55,000 plus costs, but did not suspend him. Legal Futures reported that he accepted the conduct amounted to sexual harassment but disputed that it was serious professional misconduct. Charges against the firm and two other individuals were dismissed.",
+    "sources": [
+      {
+        "label": "Legal Futures, Sept 2020",
+        "url": "https://www.legalfutures.co.uk/latest-news/gary-senior-case-an-extraordinary-abuse-of-position-says-sdt"
+      },
+      {
+        "label": "Law Society Gazette, June 2020",
+        "url": "https://www.lawgazette.co.uk/news/ex-baker-mckenzie-boss-fined-55k-but-avoids-suspension/5104629.article"
+      },
+      {
+        "label": "Legal Cheek: SDT ruling in full",
+        "url": "https://www.legalcheek.com/2020/09/ex-bakers-boss-gary-senior-disciplinary-ruling-in-full"
+      }
+    ],
+    "primary_url": "https://www.legalfutures.co.uk/latest-news/gary-senior-case-an-extraordinary-abuse-of-position-says-sdt",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 188,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "harrods",
+    "executive": "Mohamed Al Fayed",
+    "role": "Owner and chairman",
+    "disclosed": "2024-09",
+    "category": "Sexual assault and abuse of employees",
+    "outcome": "Died 2023; Harrods settling claims",
+    "lost_role": false,
+    "evidence": "confirmed",
+    "summary": "In September 2024 a BBC investigation reported allegations from more than 20 former female Harrods employees that Mohamed Al Fayed, who owned the store from 1985 to 2010, sexually assaulted or raped them. Harrods said it was appalled by the allegations of abuse perpetrated by Al Fayed, that it had failed its employees who were his victims, and that it had been settling claims since 2023. By October 2024 Harrods said more than 250 people had entered its settlement process. Al Fayed died in 2023 and had denied earlier allegations during his lifetime.",
+    "sources": [
+      {
+        "label": "Retail Gazette, Oct 2024",
+        "url": "https://www.retailgazette.co.uk/blog/2024/10/harrods-settling-al-fayed/"
+      },
+      {
+        "label": "Irish Times, Sept 2024",
+        "url": "https://www.irishtimes.com/world/uk/2024/09/19/multiple-women-accuse-mohamed-al-fayed-of-rape-and-sexual-assault"
+      },
+      {
+        "label": "Harrods press page",
+        "url": "https://www.harrods.com/en-gb/press"
+      }
+    ],
+    "primary_url": "https://www.harrods.com/en-gb/press",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 189,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "savethechildren",
+    "executive": "Justin Forsyth",
+    "role": "Chief executive (2010-2015)",
+    "disclosed": "2018-02",
+    "category": "Inappropriate comments and messages to female staff",
+    "outcome": "Resigned as UNICEF deputy executive director",
+    "lost_role": true,
+    "evidence": "acknowledged",
+    "summary": "In February 2018 Save the Children UK said three complaints were made in 2011 and 2015 about former chief executive Justin Forsyth's behaviour toward female staff, and that its reviews led to unreserved apologies from him. Forsyth said he had made unsuitable and thoughtless comments and resigned as UNICEF deputy executive director, saying he did so to avoid damaging UNICEF and Save the Children. A Charity Commission inquiry published in March 2020 found the charity mismanaged the complaints but did not rule on their substance.",
+    "sources": [
+      {
+        "label": "Charity Commission press release, Mar 2020",
+        "url": "https://www.gov.uk/government/news/save-the-children-uk-let-down-complainants-and-public-over-handling-of-allegations-of-workplace-harassment"
+      },
+      {
+        "label": "Charity Commission inquiry report",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/870390/The_Save_the_Children_Fund__Save_the_Children_UK__Inquiry_report.pdf"
+      },
+      {
+        "label": "Al Jazeera, Feb 2018",
+        "url": "https://www.aljazeera.com/news/2018/02/unicef-deputy-resigns-damaging-allegations-180222192632682.html"
+      },
+      {
+        "label": "CNN, Feb 2018",
+        "url": "https://amp.cnn.com/cnn/2018/02/21/europe/save-the-children-ceo-forsyth-intl"
+      }
+    ],
+    "primary_url": "https://www.gov.uk/government/news/save-the-children-uk-let-down-complainants-and-public-over-handling-of-allegations-of-workplace-harassment",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 190,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "savethechildren",
+    "executive": "Brendan Cox",
+    "role": "Director of policy and advocacy",
+    "disclosed": "2018-02",
+    "category": "Inappropriate behaviour toward female colleagues",
+    "outcome": "Resigned before disciplinary hearing (2015); left Jo Cox Foundation and More in Common (2018)",
+    "lost_role": true,
+    "evidence": "acknowledged",
+    "summary": "The Charity Commission said Save the Children UK opened a formal investigation into its director of policy and advocacy in 2015 and that he resigned before a scheduled disciplinary hearing. In February 2018, after a newspaper report, Brendan Cox said his behaviour at Save the Children had at times been inappropriate and apologised deeply and unreservedly, AP reported. He called some claims exaggerated and denied a separate 2015 allegation of inappropriate touching. He stepped down from the Jo Cox Foundation and More in Common.",
+    "sources": [
+      {
+        "label": "AP via Dawn, Feb 2018",
+        "url": "https://www.dawn.com/news/1390264"
+      },
+      {
+        "label": "Charity Commission press release, Mar 2020",
+        "url": "https://www.gov.uk/government/news/save-the-children-uk-let-down-complainants-and-public-over-handling-of-allegations-of-workplace-harassment"
+      },
+      {
+        "label": "ITV News, Feb 2018",
+        "url": "https://itv.com/news/2018-02-17/brendan-cox-husband-of-murdered-mp-jo-cox-quits-charity-roles-over-inappropriate-behaviour"
+      }
+    ],
+    "primary_url": "https://www.dawn.com/news/1390264",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 191,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "russellmcveagh",
+    "executive": "James Gardner-Hopkins",
+    "role": "Partner",
+    "disclosed": "2021-06",
+    "category": "Sexual misconduct toward junior staff",
+    "outcome": "Left firm 2016; found guilty of misconduct; suspended from practice two years",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "The New Zealand Lawyers and Conveyancers Disciplinary Tribunal found in June 2021 that former Russell McVeagh partner James Gardner-Hopkins was guilty of misconduct on six charges involving summer interns and a junior team member, conduct it described as disgraceful or dishonourable. The charges related mainly to a 2015 firm Christmas party, and the tribunal cited the power imbalance between him and the junior staff. He had left the firm in early 2016 after the incidents came to light. In January 2022 the tribunal suspended him from legal practice for two years and ordered him to pay more than NZ$100,000 in costs.",
+    "sources": [
+      {
+        "label": "RNZ, 24 Jun 2021: finding",
+        "url": "https://www.rnz.co.nz/news/national/445452/former-russell-mcveagh-partner-found-guilty-of-sexual-misconduct"
+      },
+      {
+        "label": "RNZ, 17 Jan 2022: penalty",
+        "url": "https://www.rnz.co.nz/news/national/459718/russell-mcveagh-ex-partner-barred-from-law-work-ordered-to-pay-100-000"
+      },
+      {
+        "label": "NZLCDT penalty decision [2022] NZLCDT 2",
+        "url": "https://www.justice.govt.nz/assets/2022-NZLCDT-2-National-Standards-Committee-1-v-Gardner-Hopkins.pdf"
+      },
+      {
+        "label": "NZ Law Society statement",
+        "url": "https://lawsociety.org.nz/news/law-society-statements/tribunal-finds-lawyer-guilty-of-misconduct-for-inappropriate-sexual-behaviour"
+      }
+    ],
+    "primary_url": "https://www.justice.govt.nz/assets/2022-NZLCDT-2-National-Standards-Committee-1-v-Gardner-Hopkins.pdf",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 192,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "mcdonalds",
+    "executive": "David Fairhurst",
+    "role": "Global Chief People Officer",
+    "disclosed": "2019-11",
+    "category": "Alleged sexual harassment",
+    "outcome": "Departed / reportedly terminated",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "David Fairhurst left McDonald's as global chief people officer in November 2019, a day after the CEO's firing; the company declined to give reasons, CNBC reported. In a 2023 derivative-suit ruling, the Delaware Court of Chancery held that shareholders had adequately pleaded that Fairhurst breached his duty of loyalty by engaging in sexual harassment, a pleading-stage decision that made no factual findings. The claim was later dismissed for failure to make a demand on the board.",
+    "sources": [
+      {
+        "label": "Claims Journal / Bloomberg, Jan 2023 ruling",
+        "url": "https://amp.claimsjournal.com/news/national/2023/01/26/315006.htm"
+      },
+      {
+        "label": "CNBC, Nov 2019",
+        "url": "https://www.cnbc.com/2019/11/04/mcdonalds-chief-people-officer-is-leaving-the-company-in-the-wake-of-its-ceos-departure.html"
+      },
+      {
+        "label": "Claims Journal, Mar 2023 dismissal",
+        "url": "https://amp.claimsjournal.com/editors-picks/2023/03/02/315613.htm"
+      }
+    ],
+    "primary_url": "https://amp.claimsjournal.com/news/national/2023/01/26/315006.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Delaware ruling made no factual findings; McDonald's never stated why he left."
+  },
+  {
+    "id": 193,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "outofjoint",
+    "executive": "Max Stafford-Clark",
+    "role": "Founder and artistic director",
+    "disclosed": "2017-10",
+    "category": "Sexualised remarks to staff",
+    "outcome": "Asked to leave after investigation",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "The Guardian reported in October 2017 that Max Stafford-Clark was asked to leave Out of Joint, the theatre company he founded, after an employee made a formal complaint about sexualised remarks and an investigation followed. Other women later told the paper he had made lewd comments to them. A spokesperson apologised for any inappropriate behaviour that made former colleagues uncomfortable and attributed it partly to the effects of a stroke, while denying any intent to harass.",
+    "sources": [
+      {
+        "label": "Wikipedia (cites Guardian, Oct 2017)",
+        "url": "https://en.wikipedia.org/wiki/Max_Stafford-Clark"
+      },
+      {
+        "label": "Guardian via inkl, Oct 2017",
+        "url": "https://www.inkl.com/news/theatre-director-max-stafford-clark-was-ousted-over-inappropriate-behaviour"
+      },
+      {
+        "label": "ArtsProfessional",
+        "url": "https://www.artsprofessional.co.uk/news/newsreel/max-stafford-clark-left-job-following-allegations-inappropriate-conduct"
+      }
+    ],
+    "primary_url": "https://www.inkl.com/news/theatre-director-max-stafford-clark-was-ousted-over-inappropriate-behaviour",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single outlet; apology came through a spokesperson."
+  },
+  {
+    "id": 194,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "gate",
+    "executive": "Michael Colgan",
+    "role": "Artistic director (1983-2017)",
+    "disclosed": "2018-02",
+    "category": "Abuse of power and inappropriate behaviour",
+    "outcome": "Had already left; board apologised",
+    "lost_role": false,
+    "evidence": "confirmed",
+    "summary": "In February 2018 the Gate Theatre board said an independent review it commissioned found credible and consistent testimonies and that former artistic director Michael Colgan had a case to answer on dignity at work, abuse of power and inappropriate behaviours. The board issued an unreserved apology. Colgan rejected allegations of sexual harassment but apologised for causing distress, the Irish Times reported.",
+    "sources": [
+      {
+        "label": "Irish Times, 9 Feb 2018",
+        "url": "https://www.irishtimes.com/culture/stage/michael-colgan-has-case-to-answer-over-behaviour-at-gate-1.3386606"
+      },
+      {
+        "label": "Irish Times: Colgan rejects allegations",
+        "url": "https://www.irishtimes.com/culture/stage/michael-colgan-rejects-allegations-of-sexual-harassment-1.3418771"
+      },
+      {
+        "label": "Gate Theatre review release",
+        "url": "https://gatetheatre.ie/board-gate-theatre-releases-independent-review-prepared-workplace-relations-expert-gaye-cunningham/"
+      }
+    ],
+    "primary_url": "https://gatetheatre.ie/board-gate-theatre-releases-independent-review-prepared-workplace-relations-expert-gaye-cunningham/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Review found a 'case to answer' on abuse of power, not an explicit sexual-misconduct finding; he denies harassment."
+  },
+  {
+    "id": 195,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "barclays",
+    "executive": "Robert Record",
+    "role": "Director",
+    "disclosed": "2023-07",
+    "category": "Sexual harassment (internal finding)",
+    "outcome": "Dismissed 2020; unfair dismissal claim rejected 2023",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Barclays dismissed director Robert Record in 2020 after disciplinary findings including unwelcome physical contact with a female colleague, Reuters reported. In July 2023 an employment tribunal rejected his claims of unfair dismissal and sex discrimination. He denied the allegations.",
+    "sources": [
+      {
+        "label": "Reuters via Insurance Journal, Jul 2023",
+        "url": "https://www.insurancejournal.com/news/international/2023/07/28/732553.htm"
+      }
+    ],
+    "primary_url": "https://www.insurancejournal.com/news/international/2023/07/28/732553.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Tribunal ruled the dismissal fair, not on the harassment itself; seniority unclear."
+  },
+  {
+    "id": 196,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "acadia",
+    "executive": "Robert Scholem",
+    "role": "Senior vice president, director of property management",
+    "disclosed": "2014-08",
+    "category": "Relationship with subordinate",
+    "outcome": "Terminated for cause; severance claim dismissed",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "Acadia Realty fired Scholem, a senior vice president, after a 2009 sexual encounter with his administrative assistant, which the company said violated its policy on supervisor-subordinate relationships. In August 2014 a New York state court ruled that the company had fired him for cause and that he was not entitled to enhanced severance.",
+    "sources": [
+      {
+        "label": "Scholem v. Acadia Realty L.P., 45 Misc.3d 562 (Sup. Ct. Suffolk Cty. 2014), Leagle",
+        "url": "https://www.leagle.com/decision/innyco20140909216"
+      },
+      {
+        "label": "Pospis Law summary, Sept 2014",
+        "url": "https://pospislaw.com/blog/2014/09/10/sex-with-assistant-results-in-termination-for-cause-and-denial-of-severance-benefits/"
+      }
+    ],
+    "primary_url": "https://www.leagle.com/decision/innyco20140909216",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Court held he was fired for cause over a relationship with his assistant, but the full opinion and any news coverage were not opened."
+  },
+  {
+    "id": 197,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "soulpepper",
+    "executive": "Albert Schultz",
+    "role": "Founding artistic director",
+    "disclosed": "2018-01",
+    "category": "Sexual harassment lawsuits (settled)",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "settled",
+    "summary": "In January 2018 four actresses sued Albert Schultz and Soulpepper, Toronto's largest not-for-profit theatre company, alleging sexual harassment between 2000 and 2013. Schultz resigned as artistic director that month and denied the allegations. In August 2018 lawyers for the parties said the lawsuits had been settled on undisclosed terms; the settlements were not admissions of liability. Soulpepper also parted ways with its executive director, Schultz's wife.",
+    "sources": [
+      {
+        "label": "Global News / Canadian Press, Aug 2018",
+        "url": "https://globalnews.ca/news/4364692/soulpepper-lawsuit-resolved-albert-schultz"
+      },
+      {
+        "label": "CBC News, Aug 2018",
+        "url": "https://amp.cbc.ca/news/canada/toronto/soulpepper-schultz-lawsuits-threatre-1.4769595"
+      }
+    ],
+    "primary_url": "https://globalnews.ca/news/4364692/soulpepper-lawsuit-resolved-albert-schultz",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Settled suits; needs a second opened major outlet."
+  },
+  {
+    "id": 198,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "justforlaughs",
+    "executive": "Gilbert Rozon",
+    "role": "Founder and president",
+    "disclosed": "2017-10",
+    "category": "Sexual assault and harassment (civil judgment)",
+    "outcome": "Resigned 2017; ordered to pay damages",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "Gilbert Rozon stepped down as head of Just for Laughs in 2017 after sexual misconduct allegations and later sold the company. On March 31, 2026, Quebec Superior Court Justice Chantal Tremblay found that he had sexually assaulted and harassed eight women between 1980 and 2004, ordered him to pay more than $880,000 including punitive damages, and dismissed his defamation counterclaims. Rozon denied the allegations; he had earlier been acquitted in a separate criminal case.",
+    "sources": [
+      {
+        "label": "CP24 / Canadian Press, 31 Mar 2026",
+        "url": "https://www.cp24.com/news/canada/2026/03/31/gilbert-rozon-just-for-laughs-founder-ordered-to-pay-accusers-880k/"
+      },
+      {
+        "label": "Global News",
+        "url": "https://globalnews.ca/news/11753106/just-for-laughs-gilbert-rozon-ordered-pay-accusers/amp/"
+      },
+      {
+        "label": "Trudel Johnston & Lesperance (plaintiffs' counsel)",
+        "url": "https://tjl.quebec/en/non-classe-en/major-victory-for-les-courageuses-superior-court-rules-gilbert-rozon-committed-sexual-assaults/"
+      }
+    ],
+    "primary_url": "https://www.cp24.com/news/canada/2026/03/31/gilbert-rozon-just-for-laughs-founder-ordered-to-pay-accusers-880k/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Court found sexual assault/harassment of eight women, but sources don't show they were employees or colleagues."
   }
 ]

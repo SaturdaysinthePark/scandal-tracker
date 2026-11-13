@@ -1048,5 +1048,103 @@
     "ticker": "V",
     "sector": "Financial Services",
     "scope": "Fortune 500"
+  },
+  {
+    "id": "fijianholdings",
+    "name": "Fijian Holdings",
+    "ticker": "FHL",
+    "sector": "Conglomerate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "filmon",
+    "name": "FilmOn / Hologram USA",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "msg",
+    "name": "Madison Square Garden (New York Knicks)",
+    "ticker": "MSG",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bikram",
+    "name": "Bikram Yoga",
+    "ticker": "Private",
+    "sector": "Fitness",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bakermckenzie",
+    "name": "Baker McKenzie",
+    "ticker": "Private",
+    "sector": "Legal",
+    "scope": "Other notable"
+  },
+  {
+    "id": "harrods",
+    "name": "Harrods",
+    "ticker": "Private",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "savethechildren",
+    "name": "Save the Children UK",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "russellmcveagh",
+    "name": "Russell McVeagh",
+    "ticker": "Private",
+    "sector": "Legal",
+    "scope": "Other notable"
+  },
+  {
+    "id": "outofjoint",
+    "name": "Out of Joint",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "gate",
+    "name": "Gate Theatre Dublin",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "barclays",
+    "name": "Barclays",
+    "ticker": "BARC",
+    "sector": "Banking",
+    "scope": "Global 500"
+  },
+  {
+    "id": "acadia",
+    "name": "Acadia Realty Trust",
+    "ticker": "AKR",
+    "sector": "Real Estate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "soulpepper",
+    "name": "Soulpepper Theatre Company",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "justforlaughs",
+    "name": "Just for Laughs",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
   }
 ]
