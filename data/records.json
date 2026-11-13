@@ -2238,5 +2238,1341 @@
     "verified_on": null,
     "status": "watch",
     "note": "Airbnb gave a different reason; reporting pages not opened."
+  },
+  {
+    "id": 91,
+    "type": "misconduct",
+    "company_id": "cbs",
+    "executive": "Les Moonves",
+    "role": "Chairman and CEO",
+    "disclosed": "2018-07",
+    "category": "Sexual harassment",
+    "outcome": "Resigned Sept 2018; board terminated for cause Dec 2018, $120M severance denied",
+    "evidence": "confirmed",
+    "summary": "Moonves left CBS in September 2018 after multiple women alleged sexual misconduct. In December 2018 the CBS board said it had grounds to terminate him for cause, citing willful misfeasance, violation of company policies and failure to cooperate fully with its investigation, and denied his $120 million severance. Moonves, through his lawyer, denied any non-consensual sexual relations and called the board's conclusions baseless.",
+    "sources": [
+      {
+        "label": "CBS Corp 8-K, Jan 2019 (recites Dec 17 2018 for-cause finding)",
+        "url": "https://www.sec.gov/Archives/edgar/data/813828/000119312519011209/d656406d8k.htm"
+      },
+      {
+        "label": "ABC7/AP, Dec 2018",
+        "url": "https://abc7ny.com/cbs-ceo-les-moonves-misconduct-investigation/4919130/"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/813828/000119312519011209/d656406d8k.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 92,
+    "type": "misconduct",
+    "company_id": "fox",
+    "executive": "Roger Ailes",
+    "role": "Chairman and CEO, Fox News",
+    "disclosed": "2016-07",
+    "category": "Sexual harassment",
+    "outcome": "Resigned July 2016; company settled Carlson suit (~$20M reported) with public apology",
+    "evidence": "confirmed",
+    "summary": "Former anchor Gretchen Carlson sued Ailes in July 2016, alleging he sabotaged her career after she rejected his advances, and he resigned as chairman and CEO weeks later. In September 2016, 21st Century Fox settled her lawsuit and publicly apologized that she had not been treated with the respect she deserved. Ailes denied the allegations.",
+    "sources": [
+      {
+        "label": "Fortune, Sept 2016 (21st Century Fox apology)",
+        "url": "https://fortune.com/2016/09/06/fox-gretchen-carlson-settlement-apology/"
+      },
+      {
+        "label": "CNN Money, Sept 2016",
+        "url": "https://money.cnn.com/2016/09/06/media/gretchen-carlson-fox-news-lawsuit-settled/"
+      }
+    ],
+    "primary_url": "https://fortune.com/2016/09/06/fox-gretchen-carlson-settlement-apology/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 93,
+    "type": "misconduct",
+    "company_id": "weinsteinco",
+    "executive": "Harvey Weinstein",
+    "role": "Co-founder and co-chairman",
+    "disclosed": "2017-10",
+    "category": "Sexual assault and harassment",
+    "outcome": "Fired Oct 2017; convicted CA 2022 (16 yrs, on appeal); NY 2025 retrial: 1 guilty count; May 2026 mistrial on remaining count",
+    "evidence": "adjudicated",
+    "summary": "The Weinstein Company board fired Weinstein in October 2017, citing new information about misconduct, after the New York Times reported decades of sexual harassment allegations. He was convicted of rape in Los Angeles in 2022 and sentenced to 16 years, a conviction he is appealing. After his 2020 New York conviction was overturned in 2024, a 2025 retrial convicted him on one count and acquitted him on another; a further retrial on the remaining count ended in a mistrial in May 2026. Weinstein has denied non-consensual conduct.",
+    "sources": [
+      {
+        "label": "PBS NewsHour/AP, Oct 2017 (board termination)",
+        "url": "https://www.pbs.org/newshour/nation/film-producer-harvey-weinstein-ousted-weinstein-co-amid-reports-sexual-harassment"
+      },
+      {
+        "label": "ABC7/AP, May 2026 (mistrial on Mann count)",
+        "url": "https://abc7news.com/post/judge-declares-mistrial-harvey-weinsteins-rape-retrial-jury-says-is-deadlocked/19106977/"
+      }
+    ],
+    "primary_url": "https://www.pbs.org/newshour/nation/film-producer-harvey-weinstein-ousted-weinstein-co-amid-reports-sexual-harassment",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 94,
+    "type": "misconduct",
+    "company_id": "wynn",
+    "executive": "Steve Wynn",
+    "role": "Chairman and CEO",
+    "disclosed": "2018-01",
+    "category": "Sexual misconduct",
+    "outcome": "Resigned Feb 2018; company fined $20M (Nevada) and $35M (Massachusetts) over handling of allegations",
+    "evidence": "reported",
+    "summary": "The Wall Street Journal reported in January 2018 that Wynn had been accused of sexual misconduct by employees, including a $7.5 million settlement with a salon worker in 2005, and he resigned as CEO weeks later. Regulators in Nevada and Massachusetts fined Wynn Resorts $20 million and $35 million for failing to investigate and disclose the allegations. Massachusetts did not rule on whether the allegations were true. Wynn denied them, saying relationships were consensual.",
+    "sources": [
+      {
+        "label": "Mass. Gaming Commission decision announcement, Apr 2019",
+        "url": "https://massgaming.com/?p=23598"
+      },
+      {
+        "label": "CNBC, Apr 2019",
+        "url": "https://www.cnbc.com/2019/04/30/gaming-commission-to-allow-wynn-resorts-to-retain-its-gaming-license.html"
+      },
+      {
+        "label": "CBS Boston, May 2019",
+        "url": "https://www.cbsnews.com/amp/boston/news/mass-gaming-commission-wynn-resorts-fined-35m-misconduct-allegations"
+      }
+    ],
+    "primary_url": "https://massgaming.com/?p=23598",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 95,
+    "type": "misconduct",
+    "company_id": "guess",
+    "executive": "Paul Marciano",
+    "role": "Executive chairman and chief creative officer",
+    "disclosed": "2018-02",
+    "category": "Sexual harassment",
+    "outcome": "Resigned as executive chairman June 2018; $500K settlements with five individuals",
+    "evidence": "confirmed",
+    "summary": "A board special committee investigated allegations, first raised publicly by model Kate Upton in February 2018, of unwanted advances by Marciano. Guess said in June 2018 that many allegations could not be corroborated but that he exercised poor judgment in communications with models and photographers, and it settled with five individuals for $500,000 without admitting liability. Marciano resigned as executive chairman and denied the allegations.",
+    "sources": [
+      {
+        "label": "Guess 8-K, June 12 2018",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000912463/000091246318000039/form8kjune122018.htm"
+      },
+      {
+        "label": "CBS News, June 2018",
+        "url": "https://www.cbsnews.com/amp/news/guess-co-founder-steps-down-after-sex-misconduct-investigation"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/0000912463/000091246318000039/form8kjune122018.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 96,
+    "type": "misconduct",
+    "company_id": "disney",
+    "executive": "John Lasseter",
+    "role": "Chief creative officer, Pixar and Walt Disney Animation Studios",
+    "disclosed": "2017-11",
+    "category": "Unwanted physical contact",
+    "outcome": "Leave Nov 2017; departed Disney end of 2018",
+    "evidence": "acknowledged",
+    "summary": "In November 2017 Lasseter took a leave of absence, telling staff in a memo that he apologized to anyone who had received an unwanted hug or other gesture that crossed a line. The Hollywood Reporter reported allegations of grabbing, kissing and comments about physical attributes. Disney said in June 2018 that he would leave at the end of the year.",
+    "sources": [
+      {
+        "label": "CBS News, Nov 2017 (memo text)",
+        "url": "https://www.cbsnews.com/amp/news/john-lasseter-pixar-chief-taking-leave-sexual-misconduct-claims"
+      },
+      {
+        "label": "Hollywood Reporter, Nov 2017",
+        "url": "https://www.hollywoodreporter.com/news/john-lasseter-taking-leave-absence-pixar-missteps-1057113"
+      }
+    ],
+    "primary_url": "https://www.cbsnews.com/amp/news/john-lasseter-pixar-chief-taking-leave-sexual-misconduct-claims",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 97,
+    "type": "misconduct",
+    "company_id": "panthers",
+    "executive": "Jerry Richardson",
+    "role": "Founder and owner",
+    "disclosed": "2017-12",
+    "category": "Sexual and racial workplace misconduct",
+    "outcome": "Sold team 2018; fined $2.75M by NFL",
+    "evidence": "adjudicated",
+    "summary": "Sports Illustrated reported in December 2017 that several former employees received confidential settlements over alleged workplace misconduct by Richardson, who then announced he would sell the team. In June 2018 the NFL said an investigation led by Mary Jo White supported the claims and fined him $2.75 million. The league did not detail the specific conduct publicly.",
+    "sources": [
+      {
+        "label": "NFL.com, June 2018",
+        "url": "https://www.nfl.com/news/nfl-fines-jerry-richardson-2-75m-after-investigation-0ap3000000938897"
+      }
+    ],
+    "primary_url": "https://www.nfl.com/news/nfl-fines-jerry-richardson-2-75m-after-investigation-0ap3000000938897",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 98,
+    "type": "misconduct",
+    "company_id": "mavericks",
+    "executive": "Terdema Ussery",
+    "role": "President and CEO",
+    "disclosed": "2018-02",
+    "category": "Sexual harassment",
+    "outcome": "Had left in 2015; NBA-overseen investigation substantiated misconduct (Sept 2018)",
+    "evidence": "confirmed",
+    "summary": "Sports Illustrated reported in February 2018 on alleged harassment within the Mavericks' business operations. An independent investigation overseen by the NBA found in September 2018 that Ussery, the former president and CEO, engaged in improper conduct toward 15 female employees, including inappropriate comments, touching and forcible kissing. Ussery denied most of the allegations.",
+    "sources": [
+      {
+        "label": "NBA statement, Sept 2018",
+        "url": "https://pr.nba.com/nba-statement-about-independent-investigation-regarding-workplace-mavericks"
+      },
+      {
+        "label": "Independent report PDF",
+        "url": "https://www.lowenstein.com/media/4556/the-report-of-the-independent-investigation-of-dallas-basketball-limited_9-19-2018.pdf"
+      }
+    ],
+    "primary_url": "https://pr.nba.com/nba-statement-about-independent-investigation-regarding-workplace-mavericks",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 99,
+    "type": "misconduct",
+    "company_id": "bbhospitality",
+    "executive": "Mario Batali",
+    "role": "Co-owner",
+    "disclosed": "2017-12",
+    "category": "Sexual harassment",
+    "outcome": "Stepped away 2017; $600K NY AG settlement 2021",
+    "evidence": "adjudicated",
+    "summary": "Batali stepped away from his restaurant group in December 2017 after Eater reported allegations of sexual misconduct, and he apologized, saying the accusations matched how he had acted. In 2021 the New York Attorney General said its investigation found unlawful sex discrimination and retaliation at the group's restaurants, including harassment by Batali, and announced a $600,000 settlement. The settlement did not include an admission of liability.",
+    "sources": [
+      {
+        "label": "NY Attorney General press release, July 2021",
+        "url": "https://ag.ny.gov/press-release/2021/attorney-general-james-delivers-600000-survivors-sexual-harassment-and"
+      },
+      {
+        "label": "NBC News, July 2021",
+        "url": "https://www.nbcnews.com/news/us-news/chefs-mario-batali-joe-bastianich-pay-600k-victims-sexual-harassment-n1274854"
+      }
+    ],
+    "primary_url": "https://ag.ny.gov/press-release/2021/attorney-general-james-delivers-600000-survivors-sexual-harassment-and",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 100,
+    "type": "misconduct",
+    "company_id": "npr",
+    "executive": "Michael Oreskes",
+    "role": "Senior vice president of news and editorial director",
+    "disclosed": "2017-10",
+    "category": "Sexual harassment",
+    "outcome": "Resigned at CEO's request Nov 2017",
+    "evidence": "acknowledged",
+    "summary": "The Washington Post reported in October 2017 that two women accused Oreskes of unwanted advances while he was at the New York Times in the 1990s, and an NPR employee also complained. NPR CEO Jarl Mohn said he asked for Oreskes' resignation. Oreskes apologized, saying his behavior was wrong and inexcusable.",
+    "sources": [
+      {
+        "label": "WHYY/AP, Nov 2017",
+        "url": "https://whyy.org/articles/oreskes-resigns-npr-news-chief-harassment-report"
+      }
+    ],
+    "primary_url": "https://whyy.org/articles/oreskes-resigns-npr-news-chief-harassment-report",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 101,
+    "type": "misconduct",
+    "company_id": "suns",
+    "executive": "Robert Sarver",
+    "role": "Managing partner and governor",
+    "disclosed": "2021-11",
+    "category": "Sexually inappropriate conduct",
+    "outcome": "Suspended one year and fined $10M by NBA (Sept 2022); sold teams",
+    "evidence": "adjudicated",
+    "summary": "After ESPN reported allegations about the Suns workplace in 2021, an NBA-commissioned investigation found in September 2022 that Sarver made many sex-related comments in the workplace, commented inappropriately on female employees' appearance and treated female employees unequally. The NBA suspended him for a year and fined him $10 million. The investigation also found racially insensitive language.",
+    "sources": [
+      {
+        "label": "NBA statement, Sept 2022",
+        "url": "https://pr.nba.com/nba-statement-about-independent-investigation-regarding-robert-sarver-and-the-phoenix-suns-organization"
+      }
+    ],
+    "primary_url": "https://pr.nba.com/nba-statement-about-independent-investigation-regarding-robert-sarver-and-the-phoenix-suns-organization",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 102,
+    "type": "misconduct",
+    "company_id": "commanders",
+    "executive": "Dan Snyder",
+    "role": "Owner",
+    "disclosed": "2022-02",
+    "category": "Sexual harassment",
+    "outcome": "Sold team 2023; fined $60M by NFL",
+    "evidence": "adjudicated",
+    "summary": "A former employee told Congress in 2022 that Snyder touched her leg at a work dinner and pushed her toward his car. An NFL investigation led by Mary Jo White sustained her allegation in July 2023, and the league fined Snyder $60 million, also citing financial improprieties. Snyder denied the allegations.",
+    "sources": [
+      {
+        "label": "ESPN, July 2023",
+        "url": "https://www.espn.com/nfl/story/_/id/38043823"
+      }
+    ],
+    "primary_url": "https://www.espn.com/nfl/story/_/id/38043823",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 103,
+    "type": "misconduct",
+    "company_id": "afiniti",
+    "executive": "Zia Chishti",
+    "role": "Chairman and CEO",
+    "disclosed": "2021-11",
+    "category": "Sexual harassment and assault",
+    "outcome": "Resigned as chairman, CEO and director; arbitration award against him upheld",
+    "evidence": "adjudicated",
+    "summary": "Chishti resigned as Afiniti's chairman, CEO and director in November 2021 after a former employee testified before a congressional committee that he had sexually assaulted her in 2017. A 2019 arbitration award had found in her favour; news reports say the arbitrator found him liable for sexual harassment, assault and battery and ordered him to pay more than $5 million. A US district court dismissed his defamation suit against her in 2024, and the D.C. Circuit affirmed on July 7, 2026, leaving the award in place. Chishti disputed the accusations.",
+    "sources": [
+      {
+        "label": "D.C. Circuit opinion, Chishti v. Spottiswoode, No. 24-7152 (July 7, 2026)",
+        "url": "https://media.cadc.uscourts.gov/opinions/docs/2026/07/24-7152-2182059.pdf"
+      },
+      {
+        "label": "City AM, Nov 2021",
+        "url": "https://www.cityam.com/?p=1810484"
+      },
+      {
+        "label": "Business Recorder, Oct 2024 (district court dismissal)",
+        "url": "https://brecorder.com/news/40327703/afiniti-founder-zia-chishti-loses-defamation-case-against-ex-staffer-in-us"
+      }
+    ],
+    "primary_url": "https://media.cadc.uscourts.gov/opinions/docs/2026/07/24-7152-2182059.pdf",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 104,
+    "type": "misconduct",
+    "company_id": "gsk",
+    "executive": "Moncef Slaoui",
+    "role": "Chairman of the board, Galvani Bioelectronics (GSK subsidiary); former GSK chairman of vaccines",
+    "disclosed": "2021-03",
+    "category": "Sexual harassment",
+    "outcome": "Removed as chairman; left other boards",
+    "evidence": "confirmed",
+    "summary": "GSK said in March 2021 that it had removed Slaoui as chairman of its subsidiary Galvani Bioelectronics after an investigation by an outside law firm substantiated allegations of sexual harassment and inappropriate conduct toward a GSK employee, dating from his time at GSK. GSK called the conduct 'wholly unacceptable' and 'an abuse of his leadership position.' Slaoui apologized 'unreservedly to the employee concerned.'",
+    "sources": [
+      {
+        "label": "NBC News, 24 Mar 2021",
+        "url": "https://www.nbcnews.com/politics/politics-news/moncef-slaoui-ex-trump-vaccine-chief-fired-board-over-sexual-n1261914"
+      }
+    ],
+    "primary_url": "https://www.nbcnews.com/politics/politics-news/moncef-slaoui-ex-trump-vaccine-chief-fired-board-over-sexual-n1261914",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 105,
+    "type": "misconduct",
+    "company_id": "500startups",
+    "executive": "Dave McClure",
+    "role": "Co-founder and general partner (former CEO)",
+    "disclosed": "2017-06",
+    "category": "Sexual harassment / unwanted advances",
+    "outcome": "Removed from day-to-day role, then resigned as general partner",
+    "evidence": "confirmed",
+    "summary": "In June 2017, 500 Startups said it had learned that co-founder Dave McClure 'had inappropriate interactions with women in the tech community' and called his behavior unacceptable. CEO Christine Tsai said he had already been removed from day-to-day operations. McClure published a blog post titled 'I'm a Creep. I'm Sorry.' acknowledging advances toward women and resigned as general partner in July 2017.",
+    "sources": [
+      {
+        "label": "TechCrunch, 30 Jun 2017",
+        "url": "https://techcrunch.com/2017/06/30/mcclure-steps-back-at-500-startups-after-internal-sexual-misconduct-investigation/?ncid=rss"
+      }
+    ],
+    "primary_url": "https://techcrunch.com/2017/06/30/mcclure-steps-back-at-500-startups-after-internal-sexual-misconduct-investigation/?ncid=rss",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 106,
+    "type": "misconduct",
+    "company_id": "binarycapital",
+    "executive": "Justin Caldbeck",
+    "role": "Co-founder and managing partner",
+    "disclosed": "2017-06",
+    "category": "Sexual harassment / unwanted advances",
+    "outcome": "Leave of absence, then resigned",
+    "evidence": "acknowledged",
+    "summary": "In June 2017, The Information reported that several female founders accused Caldbeck of unwanted sexual advances. He first denied the allegations, then said in a statement that it was wrong to 'leverage a position of power in exchange for sexual gain' and 'it is clear to me now that that is exactly what I've done.' He took an indefinite leave and resigned from the firm days later.",
+    "sources": [
+      {
+        "label": "TechCrunch, 23 Jun 2017",
+        "url": "https://techcrunch.com/2017/06/23/vc-justin-caldbeck-is-taking-an-indefinite-leave-of-absence-apologizes-to-the-women-he-made-feel-uncomfortable"
+      }
+    ],
+    "primary_url": "https://techcrunch.com/2017/06/23/vc-justin-caldbeck-is-taking-an-indefinite-leave-of-absence-apologizes-to-the-women-he-made-feel-uncomfortable",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 107,
+    "type": "misconduct",
+    "company_id": "eneos",
+    "executive": "Takeshi Saito",
+    "role": "President and Representative Director",
+    "disclosed": "2023-12",
+    "category": "Sexual harassment",
+    "outcome": "Dismissed by board; pay clawed back",
+    "evidence": "confirmed",
+    "summary": "ENEOS Holdings' board dismissed President Takeshi Saito in December 2023. The company said an external lawyer's investigation, which began with a compliance hotline report, confirmed that he hugged a woman while drunk at a social gathering. ENEOS said he was unfit to serve as president and that it would claw back part of his pay.",
+    "sources": [
+      {
+        "label": "AFP via AFPBB, Dec 2023",
+        "url": "https://www.afpbb.com/articles/-/3496962"
+      },
+      {
+        "label": "Japan Times, 19 Dec 2023 (paywalled, 402)",
+        "url": "https://japantimes.co.jp/business/2023/12/19/companies/eneos-president-dismiss"
+      },
+      {
+        "label": "MONOist (Japanese)",
+        "url": "https://monoist.itmedia.co.jp/mn/articles/2312/20/news065.html"
+      }
+    ],
+    "primary_url": "https://www.afpbb.com/articles/-/3496962",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 108,
+    "type": "misconduct",
+    "company_id": "ubisoft",
+    "executive": "Tommy François",
+    "role": "Vice President, Editorial and Creative Services",
+    "disclosed": "2020-07",
+    "category": "Sexual harassment and attempted sexual assault",
+    "outcome": "Fired for gross misconduct (2020); convicted July 2025, 3-year suspended sentence and EUR 30,000 fine",
+    "evidence": "adjudicated",
+    "summary": "Ubisoft fired Tommy François, a vice president in its editorial department, for gross misconduct in 2020 after harassment allegations surfaced. On 2 July 2025 the criminal court in Bobigny convicted him of moral harassment, sexual harassment and attempted sexual assault. He received a three-year suspended prison sentence and a EUR 30,000 fine.",
+    "sources": [
+      {
+        "label": "VGC, July 2025",
+        "url": "https://www.videogameschronicle.com/news/three-former-ubisoft-execs-receive-suspended-prison-sentences-at-harassment-trial"
+      },
+      {
+        "label": "Brut, July 2025 (French)",
+        "url": "https://www.brut.media/fr/articles/harcelement-chez-ubisoft-jusqua-trois-ans-avec-sursis-pour-trois-ex-cadres"
+      }
+    ],
+    "primary_url": "https://www.brut.media/fr/articles/harcelement-chez-ubisoft-jusqua-trois-ans-avec-sursis-pour-trois-ex-cadres",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 109,
+    "type": "misconduct",
+    "company_id": "ubisoft",
+    "executive": "Serge Hascoët",
+    "role": "Chief Creative Officer",
+    "disclosed": "2020-07",
+    "category": "Sexual harassment (complicity) and moral harassment",
+    "outcome": "Resigned July 2020; convicted July 2025, 18-month suspended sentence and EUR 45,000 fine",
+    "evidence": "adjudicated",
+    "summary": "Ubisoft's chief creative officer Serge Hascoët resigned in July 2020 amid allegations of misconduct in the company's editorial department. On 2 July 2025 the Bobigny criminal court convicted him of moral harassment and complicity in sexual harassment. He received an 18-month suspended prison sentence and a EUR 45,000 fine. He told the court he had not been aware of the sexist remarks and hazing near his office.",
+    "sources": [
+      {
+        "label": "Brut, July 2025 (French)",
+        "url": "https://www.brut.media/fr/articles/harcelement-chez-ubisoft-jusqua-trois-ans-avec-sursis-pour-trois-ex-cadres"
+      },
+      {
+        "label": "VGC, July 2025",
+        "url": "https://www.videogameschronicle.com/news/three-former-ubisoft-execs-receive-suspended-prison-sentences-at-harassment-trial"
+      }
+    ],
+    "primary_url": "https://www.brut.media/fr/articles/harcelement-chez-ubisoft-jusqua-trois-ans-avec-sursis-pour-trois-ex-cadres",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 110,
+    "type": "misconduct",
+    "company_id": "dbgroup",
+    "executive": "Kim Jun-ki",
+    "role": "Chairman",
+    "disclosed": "2017-09",
+    "category": "Sexual assault",
+    "outcome": "Resigned Sept 2017; convicted April 2020, 2.5-year sentence suspended for 4 years",
+    "evidence": "adjudicated",
+    "summary": "DB Group chairman Kim Jun-ki resigned in September 2017 after his personal secretary accused him of sexual assault. In April 2020 the Seoul Central District Court found him guilty of sexually assaulting the secretary and of raping a housekeeper. It sentenced him to two and a half years in prison, suspended for four years.",
+    "sources": [
+      {
+        "label": "Korea Times, 17 Apr 2020",
+        "url": "https://www.koreatimes.co.kr/southkorea/law-crime/20200417/former-db-group-chief-gets-suspended-sentence-over-sex-offenses"
+      }
+    ],
+    "primary_url": "https://www.koreatimes.co.kr/southkorea/law-crime/20200417/former-db-group-chief-gets-suspended-sentence-over-sex-offenses",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 111,
+    "type": "misconduct",
+    "company_id": "amp",
+    "executive": "Boe Pahari",
+    "role": "CEO-designate, AMP Capital (previously head of infrastructure equity)",
+    "disclosed": "2020-07",
+    "category": "Sexual harassment",
+    "outcome": "Promotion reversed Aug 2020; chair David Murray and director John Fraser resigned",
+    "evidence": "confirmed",
+    "summary": "AMP faced shareholder criticism in 2020 after promoting Boe Pahari to lead AMP Capital despite a 2017 sexual harassment complaint from a subordinate. AMP said an independent probe found he had exercised poor judgment amounting to a relatively modest breach of its workplace behaviour policies. In August 2020 his promotion was reversed and the chair resigned. Pahari publicly apologised to the complainant.",
+    "sources": [
+      {
+        "label": "BusinessDay (SA), 24 Aug 2020",
+        "url": "https://www.businessday.co.za/bd/companies/2020-08-24-amp-chair-resigns-over-promotion-of-sexual-harassment-accused/"
+      }
+    ],
+    "primary_url": "https://www.businessday.co.za/bd/companies/2020-08-24-amp-chair-resigns-over-promotion-of-sexual-harassment-accused/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 112,
+    "type": "misconduct",
+    "company_id": "coc",
+    "executive": "Marcel Aubut",
+    "role": "President",
+    "disclosed": "2015-10",
+    "category": "Sexual harassment",
+    "outcome": "Resigned Oct 2015",
+    "evidence": "confirmed",
+    "summary": "Marcel Aubut resigned as president of the Canadian Olympic Committee in October 2015 after a formal sexual harassment complaint. He apologised and said he would seek counselling. An independent review released in January 2016 found that a majority of staff interviewed had experienced or witnessed harassment of a sexual or personal nature involving him, and that concerns about him had been raised as early as 2008.",
+    "sources": [
+      {
+        "label": "Globe and Mail, Jan 2016",
+        "url": "https://www.theglobeandmail.com/sports/olympics/three-senior-officials-leave-canadian-olympic-committee-in-wake-of-harassment-probe/article28254380/"
+      }
+    ],
+    "primary_url": "https://olympique.ca/wp-content/uploads/sites/2/2017/10/summary-report-french.pdf",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 113,
+    "type": "misconduct",
+    "company_id": "eneos",
+    "executive": "Tsutomu Sugimori",
+    "role": "Chairman and CEO",
+    "disclosed": "2022-08",
+    "category": "Sexual assault",
+    "outcome": "Resigned (company asked him to leave)",
+    "evidence": "confirmed",
+    "summary": "ENEOS said in August 2022 that Chairman Tsutomu Sugimori had resigned for personal reasons. After the weekly Shukan Shincho reported that he had sexually assaulted a woman working at a hostess bar in Okinawa, the company acknowledged inappropriate conduct and said it had asked him to resign.",
+    "sources": [
+      {
+        "label": "AFP via AFPBB, Dec 2023 (recaps the Sugimori case)",
+        "url": "https://www.afpbb.com/articles/-/3496962"
+      },
+      {
+        "label": "MarketScreener: Sugimori asked to leave over harassment allegations",
+        "url": "https://ca.marketscreener.com/quote/stock/ENEOS-HOLDINGS-INC-6500951/news/Eneos-ex-Chairman-Sugimori-asked-to-leave-over-harassment-allegations-41822141/"
+      }
+    ],
+    "primary_url": "https://www.afpbb.com/articles/-/3496962",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Alleged victim was not a colleague; outside the misconduct category's workplace scope."
+  },
+  {
+    "id": 114,
+    "type": "misconduct",
+    "company_id": "sap",
+    "executive": "Jürgen Müller",
+    "role": "Chief Technology Officer, Executive Board member",
+    "disclosed": "2024-09",
+    "category": "Sexually inappropriate conduct",
+    "outcome": "Left executive board by mutual agreement (effective 2024-09-30)",
+    "evidence": "acknowledged",
+    "summary": "SAP said in September 2024 that CTO Jürgen Müller would leave its executive board by mutual agreement. Müller said in a statement that his behavior at a past company event was inappropriate, and he apologized to everyone affected. Bloomberg later reported that he was accused of touching a female colleague at a company party, and that Heidelberg prosecutors had opened a sexual harassment investigation.",
+    "sources": [
+      {
+        "label": "The Register, Sep 2024 (SAP and Müller statements)",
+        "url": "https://www.theregister.com/2024/09/03/sap_cto_departs/"
+      },
+      {
+        "label": "Bloomberg via BNN, Dec 2024",
+        "url": "https://bnnbloomberg.ca/business/company-news/2024/12/13/sap-cto-said-to-have-left-after-allegedly-touching-womans-rear"
+      },
+      {
+        "label": "Bloomberg via BNN, Sep 2024: prosecutors open probe",
+        "url": "https://www.bnnbloomberg.ca/business/company-news/2024/09/13/german-prosecutors-open-harassment-probe-into-saps-muller/"
+      }
+    ],
+    "primary_url": "https://news.sap.com/?p=228120",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Apology refers to 'inappropriate' behaviour; the sexual element rests on one outlet (Bloomberg)."
+  },
+  {
+    "id": 115,
+    "type": "misconduct",
+    "company_id": "davidjones",
+    "executive": "Mark McInnes",
+    "role": "Chief Executive Officer",
+    "disclosed": "2010-06",
+    "category": "Sexual harassment",
+    "outcome": "Resigned June 2010; lawsuit settled Oct 2010 for A$850,000",
+    "evidence": "acknowledged",
+    "summary": "David Jones chief executive Mark McInnes resigned in June 2010 after a sexual harassment complaint by a female employee. The employee sued him and the company, and the case settled in October 2010 for A$850,000. McInnes said most of the allegations in the lawsuit were untrue.",
+    "sources": [
+      {
+        "label": "Lawyers Weekly, Oct 2010",
+        "url": "https://www.lawyersweekly.com.au/news/7059-djs-sex-case-finally-settles"
+      },
+      {
+        "label": "IBTimes Australia, 18 Oct 2010",
+        "url": "https://ibtimes.com.au/david-jones-sex-case-ends-less-million-dollar-settlement-1275290"
+      }
+    ],
+    "primary_url": "https://www.lawyersweekly.com.au/news/7059-djs-sex-case-finally-settles",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "His reported acknowledgement of 'unbecoming' behaviour is not yet verified from an opened source."
+  },
+  {
+    "id": 116,
+    "type": "misconduct",
+    "company_id": "teri",
+    "executive": "R. K. Pachauri",
+    "role": "Director-General",
+    "disclosed": "2015-02",
+    "category": "Sexual harassment",
+    "outcome": "Took leave from TERI; ICC found him guilty May 2015; TERI ended association 2016",
+    "evidence": "confirmed",
+    "summary": "In February 2015 a TERI researcher filed a sexual harassment complaint against the institute's head, R. K. Pachauri, who then took leave and stepped down as chair of the UN climate panel. In May 2015 TERI's Internal Complaints Committee found him guilty of sexual harassment. TERI ended its association with him in 2016.",
+    "sources": [
+      {
+        "label": "The Quint",
+        "url": "https://www.thequint.com/news/india/how-teri-obeyed-the-law-but-went-against-its-spirt-for-pachauri"
+      },
+      {
+        "label": "The Wire (page body did not load)",
+        "url": "https://thewire.in/30632/over-a-year-after-sexual-harassment-charges-teri-ends-association-with-pachauri"
+      }
+    ],
+    "primary_url": "https://www.thequint.com/news/india/how-teri-obeyed-the-law-but-went-against-its-spirt-for-pachauri",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Needs a sourced statement of his denial before publishing."
+  },
+  {
+    "id": 117,
+    "type": "misconduct",
+    "company_id": "spottedpig",
+    "executive": "Ken Friedman",
+    "role": "Owner and operator",
+    "disclosed": "2017-12",
+    "category": "Sexual harassment",
+    "outcome": "Stepped down as operator; $240K plus profit-share settlement with NY AG (Jan 2020)",
+    "evidence": "adjudicated",
+    "summary": "The New York Times reported in December 2017 that employees accused Friedman of unwanted sexual advances. In January 2020 the New York Attorney General said its investigation found he subjected female employees to repeated unwanted touching and advances, and announced a settlement requiring $240,000 in payments, a share of profits and his exit from management. Friedman apologized for harm caused while disputing many allegations.",
+    "sources": [
+      {
+        "label": "NY Attorney General press release, Jan 2020",
+        "url": "https://ag.ny.gov/index%2Ephp/press-release/2020/attorney-general-james-secures-settlement-victims-sexual-harassment-and"
+      }
+    ],
+    "primary_url": "https://ag.ny.gov/index%2Ephp/press-release/2020/attorney-general-james-secures-settlement-victims-sexual-harassment-and",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "AG finding is strong, but a single restaurant may fall short of the notability bar."
+  },
+  {
+    "id": 118,
+    "type": "misconduct",
+    "company_id": "barnesnoble",
+    "executive": "Demos Parneros",
+    "role": "CEO",
+    "disclosed": "2018-07",
+    "category": "Sexual harassment",
+    "outcome": "Fired July 2018; mutual lawsuits settled 2019, no finding of wrongdoing",
+    "evidence": "confirmed",
+    "summary": "Barnes & Noble fired Parneros in July 2018 for policy violations, later alleging in court filings that he sexually harassed an assistant and bullied colleagues. Parneros denied the accusations and sued for wrongful termination. The parties settled in 2019 with a joint statement of no judicial determination of wrongdoing.",
+    "sources": [
+      {
+        "label": "Publishers Weekly",
+        "url": "https://www.publishersweekly.com/pw/by-topic/industrynews/publisher-news/article/84718-barnes-noble-fired-ceo-abruptly-end-litigation.html"
+      },
+      {
+        "label": "Chain Store Age",
+        "url": "https://chainstoreage.com/c-suite-1/barnes-noble-reveals-details-on-why-it-fired-ceo"
+      }
+    ],
+    "primary_url": "https://www.publishersweekly.com/pw/by-topic/industrynews/publisher-news/article/84718-barnes-noble-fired-ceo-abruptly-end-litigation.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Settled with no finding of wrongdoing."
+  },
+  {
+    "id": 119,
+    "type": "misconduct",
+    "company_id": "americanapparel",
+    "executive": "Dov Charney",
+    "role": "Founder, CEO and chairman",
+    "disclosed": "2014-06",
+    "category": "Sexual misconduct",
+    "outcome": "Suspended June 2014; terminated for cause Dec 2014",
+    "evidence": "confirmed",
+    "summary": "American Apparel's board suspended Charney in June 2014 and fired him in December 2014 after an investigation. The company said it found he misused company funds and allowed an employee to post nude photos of a former employee who had sued him. Charney denied wrongdoing and contested the firing.",
+    "sources": [
+      {
+        "label": "American Apparel 8-K, Dec 2014",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001336545/000134100414001117/aa8k.htm"
+      },
+      {
+        "label": "American Apparel 8-K, June 2014",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001336545/000133654514000086/a8-k_departureofprincipalo.htm"
+      },
+      {
+        "label": "NYT via Toledo Blade, June 2014",
+        "url": "https://www.toledoblade.com/business/retail/2014/06/21/American-Apparel-Ousts-Its-Founder-Over-Posting-of-Worker-s-Nude-Photos.print"
+      },
+      {
+        "label": "Fortune, June 2014",
+        "url": "https://fortune.com/2014/06/19/american-apparel-ousts-charney-probes-misconduct-allegations/"
+      }
+    ],
+    "primary_url": "https://www.sec.gov/Archives/edgar/data/0001336545/000133654514000086/a8-k_departureofprincipalo.htm",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Grounds for the for-cause firing not verified from an opened company source."
+  },
+  {
+    "id": 120,
+    "type": "misconduct",
+    "company_id": "newrepublic",
+    "executive": "Hamilton Fish",
+    "role": "President and publisher",
+    "disclosed": "2017-10",
+    "category": "Sexual harassment",
+    "outcome": "Placed on leave; resigned Nov 2017",
+    "evidence": "reported",
+    "summary": "The New Republic's owner placed Fish on leave in October 2017, citing concerns about his interactions with a number of women employees, and opened an investigation. Fish resigned in November 2017, acknowledging the complaints in his letter without admitting specific conduct.",
+    "sources": [
+      {
+        "label": "Business Insider, Oct 2017",
+        "url": "https://www.businessinsider.in/the-new-republic-publisher-takes-leave-of-absence-amid-sexual-harassment-allegations/articleshow/61333306.cms"
+      }
+    ],
+    "primary_url": "https://www.businessinsider.in/the-new-republic-publisher-takes-leave-of-absence-amid-sexual-harassment-allegations/articleshow/61333306.cms",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "No second independent major outlet."
+  },
+  {
+    "id": 121,
+    "type": "misconduct",
+    "company_id": "voxmedia",
+    "executive": "Lockhart Steele",
+    "role": "Editorial director",
+    "disclosed": "2017-10",
+    "category": "Sexual misconduct",
+    "outcome": "Fired Oct 2017",
+    "evidence": "confirmed",
+    "summary": "Vox Media fired Steele in October 2017 after a former employee's post described inappropriate sexual conduct by a supervisor. CEO Jim Bankoff told staff Steele had admitted conduct inconsistent with the company's values.",
+    "sources": [
+      {
+        "label": "Slate, Oct 2017",
+        "url": "https://www.slate.com/blogs/the_slatest/2017/10/19/vox_fires_editorial_director_lockhart_steele.html"
+      }
+    ],
+    "primary_url": "https://www.slate.com/blogs/the_slatest/2017/10/19/vox_fires_editorial_director_lockhart_steele.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "One opened source; may belong in the relationship category."
+  },
+  {
+    "id": 122,
+    "type": "misconduct",
+    "company_id": "npr",
+    "executive": "David Sweeney",
+    "role": "Chief news editor",
+    "disclosed": "2017-11",
+    "category": "Sexual harassment",
+    "outcome": "Left NPR Nov 2017 after internal review",
+    "evidence": "reported",
+    "summary": "NPR said in November 2017 that Sweeney was no longer on staff after three current and former NPR journalists filed formal complaints alleging unwanted advances. NPR did not state the reason for his departure, and Sweeney did not comment.",
+    "sources": [
+      {
+        "label": "WGBH (NPR report), Nov 2017",
+        "url": "https://www.wgbh.org/news/2017-11-28/npr-chief-news-editor-departs-after-harassment-allegations"
+      }
+    ],
+    "primary_url": "https://www.wgbh.org/news/2017-11-28/npr-chief-news-editor-departs-after-harassment-allegations",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Only NPR's own reporting opened; seniority borderline."
+  },
+  {
+    "id": 123,
+    "type": "misconduct",
+    "company_id": "amazon",
+    "executive": "Roy Price",
+    "role": "Head of Amazon Studios",
+    "disclosed": "2017-10",
+    "category": "Sexual harassment",
+    "outcome": "Suspended then resigned Oct 2017",
+    "evidence": "reported",
+    "summary": "Producer Isa Hackett publicly alleged in October 2017 that Price made repeated lewd comments and propositions to her in 2015. Amazon placed him on leave and confirmed his resignation days later.",
+    "sources": [
+      {
+        "label": "Fortune, Oct 2017",
+        "url": "https://fortune.com/2017/10/17/amazon-studios-chief-roy-price-resigns-amid-sexual-harassment-claims/"
+      }
+    ],
+    "primary_url": "https://fortune.com/2017/10/17/amazon-studios-chief-roy-price-resigns-amid-sexual-harassment-claims/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Needs two opened major outlets."
+  },
+  {
+    "id": 124,
+    "type": "misconduct",
+    "company_id": "wpp",
+    "executive": "Gustavo Martinez",
+    "role": "Global CEO",
+    "disclosed": "2016-03",
+    "category": "Sexual harassment",
+    "outcome": "Left CEO post 2016; WPP settled suit 2018; left WPP June 2018",
+    "evidence": "unconfirmed",
+    "summary": "JWT's communications chief Erin Johnson sued Martinez in 2016 alleging sexual harassment and a hostile work environment, and he left the CEO post shortly after. WPP and JWT settled the suit in 2018 without disclosing terms. Martinez denied the allegations.",
+    "sources": [
+      {
+        "label": "Adweek, Apr 2018",
+        "url": "https://www.adweek.com/agencies/jwt-and-wpp-reach-settlement-in-erin-johnson-gustavo-martinez-sexual-harassment-suit/"
+      }
+    ],
+    "primary_url": "https://www.adweek.com/agencies/jwt-and-wpp-reach-settlement-in-erin-johnson-gustavo-martinez-sexual-harassment-suit/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Lawsuit settled with no finding; source not opened."
+  },
+  {
+    "id": 125,
+    "type": "misconduct",
+    "company_id": "alphabet",
+    "executive": "Rich DeVaul",
+    "role": "Director, X (Project Loon co-founder)",
+    "disclosed": "2018-10",
+    "category": "Unwanted advances",
+    "outcome": "Resigned without severance",
+    "evidence": "acknowledged",
+    "summary": "The New York Times reported in October 2018 that DeVaul made unwanted advances toward a job applicant in 2013. DeVaul apologized for an 'error of judgment' in a statement to the Times. He left Alphabet days later, and a Google spokesperson confirmed Axios's report that he received no exit package.",
+    "sources": [
+      {
+        "label": "Bloomberg, 31 Oct 2018",
+        "url": "https://www.bloomberg.com/news/articles/2018-10-31/alphabet-exec-out-as-company-grapples-with-harassment-reports"
+      },
+      {
+        "label": "CNN, 30 Oct 2018",
+        "url": "https://www.cnn.com/2018/10/30/tech/google-x-executive-out"
+      }
+    ],
+    "primary_url": "https://www.cnn.com/2018/10/30/tech/google-x-executive-out",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "No source could be opened; seniority borderline."
+  },
+  {
+    "id": 126,
+    "type": "misconduct",
+    "company_id": "microsoft",
+    "executive": "Alex Kipman",
+    "role": "Technical Fellow, head of mixed reality",
+    "disclosed": "2022-05",
+    "category": "Sexual harassment",
+    "outcome": "Left company (\"mutually decided\")",
+    "evidence": "unconfirmed",
+    "summary": "Business Insider reported in May 2022 that current and former employees alleged inappropriate touching and comments by Kipman. Microsoft confirmed in June 2022 that he was leaving but did not address the allegations. Kipman did not comment.",
+    "sources": [
+      {
+        "label": "CNBC, 8 Jun 2022",
+        "url": "https://www.cnbc.com/2022/06/08/microsoft-hololens-creator-alex-kipman-leaving-the-company.html"
+      }
+    ],
+    "primary_url": "https://www.cnbc.com/2022/06/08/microsoft-hololens-creator-alex-kipman-leaving-the-company.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Only Insider originated the reporting."
+  },
+  {
+    "id": 127,
+    "type": "misconduct",
+    "company_id": "uber",
+    "executive": "Amit Singhal",
+    "role": "SVP Engineering (Uber); SVP Search (Google)",
+    "disclosed": "2017-02",
+    "category": "Sexual harassment",
+    "outcome": "Asked to resign from Uber",
+    "evidence": "unconfirmed",
+    "summary": "Recode reported in February 2017 that Google had found credible a sexual harassment complaint against Singhal before he left in 2016, and that Uber asked him to resign for not disclosing it. Singhal denied the allegation.",
+    "sources": [
+      {
+        "label": "Fortune, 27 Feb 2017",
+        "url": "https://fortune.com/2017/02/27/uber-amit-singhal-resigns/"
+      }
+    ],
+    "primary_url": "https://fortune.com/2017/02/27/uber-amit-singhal-resigns/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Only Recode originated the reporting; he denies it."
+  },
+  {
+    "id": 128,
+    "type": "misconduct",
+    "company_id": "csdisco",
+    "executive": "Kiwi Camara",
+    "role": "CEO and director",
+    "disclosed": "2023-09",
+    "category": "Sexual harassment / alleged groping",
+    "outcome": "Resigned",
+    "evidence": "unconfirmed",
+    "summary": "Camara resigned as CS Disco's CEO in September 2023. The Wall Street Journal then reported that the board was investigating an allegation that he groped a junior employee at a company dinner. Neither he nor the company commented on the allegation.",
+    "sources": [
+      {
+        "label": "Fortune, 21 Sep 2023 (relays WSJ)",
+        "url": "https://fortune.com/2023/09/21/kiwi-camara-cs-disco-misconduct-allegations-110-million-pay-package/"
+      },
+      {
+        "label": "CS Disco 8-K, 11 Sep 2023",
+        "url": "https://www.sec.gov/Archives/edgar/data/1625641/000162564123000098/law-20230911.htm"
+      }
+    ],
+    "primary_url": "https://fortune.com/2023/09/21/kiwi-camara-cs-disco-misconduct-allegations-110-million-pay-package/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single outlet (WSJ); 8-K gives no reason."
+  },
+  {
+    "id": 129,
+    "type": "misconduct",
+    "company_id": "fidelity",
+    "executive": "Gavin Baker",
+    "role": "Portfolio manager (OTC Portfolio)",
+    "disclosed": "2017-10",
+    "category": "Sexual harassment",
+    "outcome": "Fired",
+    "evidence": "unconfirmed",
+    "summary": "The Wall Street Journal reported in October 2017 that Fidelity fired Baker after a junior employee alleged sexual harassment. Fidelity declined to comment on him specifically, and his spokesman said he strenuously denied the allegations.",
+    "sources": [
+      {
+        "label": "CNBC, 13 Oct 2017",
+        "url": "https://www.cnbc.com/2017/10/13/fidelitys-gavin-baker-fired-over-sexual-harassment-allegations.html"
+      }
+    ],
+    "primary_url": "https://www.cnbc.com/2017/10/13/fidelitys-gavin-baker-fired-over-sexual-harassment-allegations.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single outlet; he denies it; seniority doubtful."
+  },
+  {
+    "id": 130,
+    "type": "misconduct",
+    "company_id": "riot",
+    "executive": "Scott Gelb",
+    "role": "COO",
+    "disclosed": "2018-12",
+    "category": "Workplace misconduct (alleged sexual element)",
+    "outcome": "Two-month unpaid suspension",
+    "evidence": "unconfirmed",
+    "summary": "Riot Games suspended COO Scott Gelb without pay for two months in December 2018 after an investigation into workplace misconduct. Kotaku had reported allegations that he touched subordinates, including hitting their genitals as a joke. Riot's CEO called many allegations against him untrue.",
+    "sources": [
+      {
+        "label": "PC Gamer, Dec 2018",
+        "url": "https://www.pcgamer.com/riot-games-coo-gets-two-month-unpaid-suspension-following-misconduct-investigation/"
+      }
+    ],
+    "primary_url": "https://www.pcgamer.com/riot-games-coo-gets-two-month-unpaid-suspension-following-misconduct-investigation/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Riot confirmed misconduct but not a sexual element."
+  },
+  {
+    "id": 131,
+    "type": "misconduct",
+    "company_id": "clinc",
+    "executive": "Jason Mars",
+    "role": "Co-founder and CEO",
+    "disclosed": "2020-02",
+    "category": "Sexual harassment",
+    "outcome": "Resigned as CEO",
+    "evidence": "unconfirmed",
+    "summary": "The Verge reported in February 2020 that 13 current and former employees alleged a pattern of sexual harassment and inappropriate conduct by Mars. He stepped down as CEO after an internal investigation of two employee complaints. Mars denied the allegations, saying some were embellished.",
+    "sources": [
+      {
+        "label": "Voicebot.ai, Feb 2020",
+        "url": "https://voicebot.ai/2020/02/12/clinc-ceo-jason-mars-resigns-after-investigation-of-inappropriate-behavior-complaints/"
+      }
+    ],
+    "primary_url": "https://voicebot.ai/2020/02/12/clinc-ceo-jason-mars-resigns-after-investigation-of-inappropriate-behavior-complaints/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single outlet; he denies it."
+  },
+  {
+    "id": 132,
+    "type": "misconduct",
+    "company_id": "tinder",
+    "executive": "Justin Mateen",
+    "role": "Co-founder and CMO",
+    "disclosed": "2014-06",
+    "category": "Sexual harassment",
+    "outcome": "Suspended, then left; suit settled",
+    "evidence": "unconfirmed",
+    "summary": "Whitney Wolfe sued Tinder and IAC in 2014, alleging sexual harassment and discrimination by co-founder Justin Mateen. IAC suspended him and he later left. The suit settled with no admission of wrongdoing.",
+    "sources": [
+      {
+        "label": "TechCrunch, 8 Sep 2014",
+        "url": "https://techcrunch.com/2014/09/08/tinder-and-iac-settle-sexual-harassment-suit-with-early-employee-whitney-wolfe"
+      }
+    ],
+    "primary_url": "https://techcrunch.com/2014/09/08/tinder-and-iac-settle-sexual-harassment-suit-with-early-employee-whitney-wolfe",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Suit settled with no admission."
+  },
+  {
+    "id": 133,
+    "type": "misconduct",
+    "company_id": "lowercase",
+    "executive": "Chris Sacca",
+    "role": "Founder",
+    "disclosed": "2017-06",
+    "category": "Unwanted touching",
+    "outcome": "None (already stepping back)",
+    "evidence": "unconfirmed",
+    "summary": "The New York Times reported in June 2017 that an entrepreneur said Sacca touched her face without consent in 2009. Sacca published a post apologizing for past behavior but disputed her account.",
+    "sources": [
+      {
+        "label": "Sacca blog post, June 2017",
+        "url": "https://medium.com/@sacca/i-have-more-work-to-do-c775c2a2e4f2"
+      }
+    ],
+    "primary_url": "https://medium.com/@sacca/i-have-more-work-to-do-c775c2a2e4f2",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Partial apology; disputes the account."
+  },
+  {
+    "id": 134,
+    "type": "misconduct",
+    "company_id": "servotronics",
+    "executive": "Kenneth Trbovich",
+    "role": "Chairman, President and CEO",
+    "disclosed": "2021-06",
+    "category": "Sexual harassment (alleged)",
+    "outcome": "Placed on leave; resigned Dec 2021 after board found grounds for termination",
+    "evidence": "unconfirmed",
+    "summary": "Servotronics placed Trbovich on leave in June 2021 after a former employee's lawsuit alleged sexual harassment and other misconduct. In December 2021, the company said an outside counsel investigation had identified grounds for his termination for 'willful malfeasance', and he resigned. The company did not say which conduct the finding concerned, and his attorney said his actions were in the company's interests.",
+    "sources": [
+      {
+        "label": "WKBW, Dec 2021",
+        "url": "https://www.wkbw.com/news/local-news/servotronics-leader-resigns-following-investigation"
+      }
+    ],
+    "primary_url": "https://www.wkbw.com/news/local-news/servotronics-leader-resigns-following-investigation",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Board found grounds to fire for 'willful malfeasance' but did not name the conduct; check 8-Ks."
+  },
+  {
+    "id": 135,
+    "type": "misconduct",
+    "company_id": "gravity",
+    "executive": "Dan Price",
+    "role": "Founder and CEO",
+    "disclosed": "2022-08",
+    "category": "Sexual assault (alleged)",
+    "outcome": "Resigned as CEO",
+    "evidence": "unconfirmed",
+    "summary": "Price resigned as CEO of Gravity Payments in August 2022, shortly before the New York Times published allegations from several women of abuse and sexual assault. He denied the allegations.",
+    "sources": [
+      {
+        "label": "BNN Bloomberg, 19 Aug 2022",
+        "url": "https://www.bnnbloomberg.ca/dan-price-resigns-from-gravity-payments-after-abuse-allegations-1.1807960"
+      }
+    ],
+    "primary_url": "https://www.bnnbloomberg.ca/dan-price-resigns-from-gravity-payments-after-abuse-allegations-1.1807960",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Source not opened; he denies the allegations."
+  },
+  {
+    "id": 136,
+    "type": "misconduct",
+    "company_id": "primark",
+    "executive": "Paul Marchant",
+    "role": "Chief Executive, Primark",
+    "disclosed": "2025-03",
+    "category": "Inappropriate behaviour toward a woman (nature undisclosed)",
+    "outcome": "Resigned with immediate effect",
+    "evidence": "acknowledged",
+    "summary": "Associated British Foods said Primark chief executive Paul Marchant resigned in March 2025 after an external investigation into an allegation about his behaviour toward a woman in a social setting. ABF said he acknowledged an error of judgment, accepted his actions fell below expected standards and apologised.",
+    "sources": [
+      {
+        "label": "Irish Times, 31 Mar 2025",
+        "url": "https://www.irishtimes.com/business/2025/03/31/primark-chief-paul-marchant-resigns-after-investigation-into-inappropriate-behaviour"
+      }
+    ],
+    "primary_url": "https://www.irishtimes.com/business/2025/03/31/primark-chief-paul-marchant-resigns-after-investigation-into-inappropriate-behaviour",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Nature of conduct undisclosed; no source says it was sexual."
+  },
+  {
+    "id": 137,
+    "type": "misconduct",
+    "company_id": "honda",
+    "executive": "Shinji Aoyama",
+    "role": "Director, Executive Vice President and Representative Executive Officer",
+    "disclosed": "2025-04",
+    "category": "Inappropriate conduct (nature undisclosed)",
+    "outcome": "Resigned before disciplinary decision; CEO took 20% pay cut",
+    "evidence": "confirmed",
+    "summary": "Honda said in April 2025 that Executive Vice President Shinji Aoyama resigned after an allegation of inappropriate conduct at a social gathering outside work hours. The board had been preparing disciplinary action. Honda apologised but did not describe the conduct, citing the privacy of the person affected.",
+    "sources": [
+      {
+        "label": "Honda notice, 7 Apr 2025",
+        "url": "https://global.honda/en/newsroom/news/2025/c250407eng.html"
+      }
+    ],
+    "primary_url": "https://global.honda/en/newsroom/news/2025/c250407eng.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Nature of conduct undisclosed."
+  },
+  {
+    "id": 138,
+    "type": "misconduct",
+    "company_id": "cbi",
+    "executive": "Tony Danker",
+    "role": "Director-General",
+    "disclosed": "2023-03",
+    "category": "Workplace misconduct (alleged sexual harassment)",
+    "outcome": "Dismissed April 2023; later settled with CBI",
+    "evidence": "reported",
+    "summary": "The CBI dismissed Director-General Tony Danker in April 2023 after an independent investigation into complaints of workplace misconduct, saying his conduct fell short of that expected of the role. The Guardian reported that a female employee's complaint alleged unwanted contact she considered sexual harassment. Danker apologised for making some staff feel uncomfortable but denied sexually suggestive language, physical contact or propositioning anyone.",
+    "sources": [
+      {
+        "label": "Scottish Financial Review, 11 Apr 2023 (CBI statement)",
+        "url": "https://scottishfinancialreview.com/2023/04/11/cbi-fires-director-general-suspends-three-others/"
+      },
+      {
+        "label": "Jewish Chronicle (Danker interview)",
+        "url": "https://www.thejc.com/news/former-cbi-chief-says-his-reputation-has-been-totally-destroyed-by-sacking-xxj8zrna"
+      },
+      {
+        "label": "CBI board announcement (403)",
+        "url": "https://www.cbi.org.uk/media-centre/articles/announcement-from-the-cbi-board"
+      }
+    ],
+    "primary_url": "https://www.cbi.org.uk/media-centre/articles/announcement-from-the-cbi-board",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "CBI's stated reasons were not sexual; he denies sexual conduct."
+  },
+  {
+    "id": 139,
+    "type": "misconduct",
+    "company_id": "tabcorp",
+    "executive": "Adam Rytenskild",
+    "role": "Managing Director and CEO",
+    "disclosed": "2024-03",
+    "category": "Sexually inappropriate comment (alleged)",
+    "outcome": "Resigned; forfeited unvested incentives; later defamation dispute",
+    "evidence": "reported",
+    "summary": "Tabcorp said in March 2024 that CEO Adam Rytenskild resigned after the board learned of inappropriate and offensive language he allegedly used in the workplace. The Sydney Morning Herald reported that the remark was sexual and concerned a female regulatory official. Rytenskild said he did not recall making the comment.",
+    "sources": [
+      {
+        "label": "AAP, Mar 2024",
+        "url": "https://aapnews.aap.com.au/news/tabcorp-ceo-resigns-after-alleged-offensive-comment"
+      }
+    ],
+    "primary_url": "https://aapnews.aap.com.au/news/tabcorp-ceo-resigns-after-alleged-offensive-comment",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Single outlet; he says he does not recall the remark."
+  },
+  {
+    "id": 140,
+    "type": "misconduct",
+    "company_id": "icl",
+    "executive": "Stefan Borgas",
+    "role": "CEO and board member",
+    "disclosed": "2016-09",
+    "category": "Sexual harassment",
+    "outcome": "Resigned (filing cited personal reasons)",
+    "evidence": "unconfirmed",
+    "summary": "Globes reported in September 2016 that ICL chief executive Stefan Borgas resigned after a retired judge, appointed by the board, concluded that he had sexually harassed a former senior employee, though at the milder end of the definition. ICL's filing cited personal reasons, and the company said Israeli law barred it from confirming the complaint. Borgas disagreed with the findings and called the kiss at issue an innocent parting gesture.",
+    "sources": [
+      {
+        "label": "Globes, Sep 2016",
+        "url": "https://en.globes.co.il/en/article-borgas-resigned-following-sexual-harassment-allegations-1001151417"
+      }
+    ],
+    "primary_url": "https://en.globes.co.il/en/article-borgas-resigned-following-sexual-harassment-allegations-1001151417",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Board-appointed judge found harassment, but the company never confirmed it."
+  },
+  {
+    "id": 141,
+    "type": "misconduct",
+    "company_id": "odey",
+    "executive": "Crispin Odey",
+    "role": "Founder, partner",
+    "disclosed": "2023-06",
+    "category": "Sexual harassment and assault (alleged)",
+    "outcome": "Removed from partnership June 2023; FCA ban (integrity grounds, upheld by Upper Tribunal Sept 2026)",
+    "evidence": "reported",
+    "summary": "The Financial Times and Tortoise Media reported in June 2023 that 13 women accused Crispin Odey of sexual assault or harassment between 1998 and 2021. Odey Asset Management's executive committee removed him from the partnership two days later. Odey denied the allegations, and in 2021 a court acquitted him of a separate indecent assault charge. The FCA later banned him on integrity grounds and made no finding on the sexual misconduct allegations.",
+    "sources": [
+      {
+        "label": "AFP via Malay Mail, 10 Jun 2023",
+        "url": "https://www.malaymail.com/news/money/2023/06/10/leading-uk-hedge-fund-boss-quits-after-sex-assault-claims/73644"
+      }
+    ],
+    "primary_url": "https://www.malaymail.com/news/money/2023/06/10/leading-uk-hedge-fund-boss-quits-after-sex-assault-claims/73644",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Second opened major outlet missing; FCA made no finding on the sexual allegations."
+  },
+  {
+    "id": 142,
+    "type": "misconduct",
+    "company_id": "tedbaker",
+    "executive": "Ray Kelvin",
+    "role": "Founder and CEO",
+    "disclosed": "2018-12",
+    "category": "Sexual harassment (alleged, 'forced hugging')",
+    "outcome": "Took leave, then resigned March 2019 during investigation",
+    "evidence": "reported",
+    "summary": "Ted Baker founder and chief executive Ray Kelvin took leave and then resigned in March 2019 during an independent investigation into staff allegations of harassment, including forced hugging. He denied wrongdoing. The company's review, run by Herbert Smith Freehills, identified areas for improvement in HR policies but was not published.",
+    "sources": [
+      {
+        "label": "Irish Times, Apr 2019",
+        "url": "https://www.irishtimes.com/business/retail-and-services/ted-baker-investigation-into-founder-s-conduct-ends-appoints-ceo-1.3856871"
+      },
+      {
+        "label": "ITV, Apr 2019",
+        "url": "https://itv.com/news/2019-04-11/ted-baker-to-overhaul-hr-functions-in-wake-of-ray-kelvin-probe"
+      }
+    ],
+    "primary_url": "https://itv.com/news/2019-04-11/ted-baker-to-overhaul-hr-functions-in-wake-of-ray-kelvin-probe",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "No finding about him; sources not opened."
+  },
+  {
+    "id": 143,
+    "type": "misconduct",
+    "company_id": "jd",
+    "executive": "Richard Liu",
+    "role": "Founder, Chairman and CEO",
+    "disclosed": "2018-09",
+    "category": "Sexual assault (alleged)",
+    "outcome": "Not charged (Dec 2018); civil suit settled Oct 2022, terms undisclosed",
+    "evidence": "unconfirmed",
+    "summary": "JD.com founder Richard Liu was arrested in Minneapolis in 2018 over a rape allegation by a University of Minnesota student. Prosecutors declined to charge him. Her civil suit against Liu and JD.com settled two days before trial in October 2022, with a joint statement calling the matter a misunderstanding. Liu maintained the encounter was consensual.",
+    "sources": [
+      {
+        "label": "TechCrunch, Oct 2022",
+        "url": "https://techcrunch.com/2022/10/03/richard-liu-jd-com-sexual-assault-case-settlement-metoo"
+      }
+    ],
+    "primary_url": "https://techcrunch.com/2022/10/03/richard-liu-jd-com-sexual-assault-case-settlement-metoo",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Complainant not a colleague; settlement terms undisclosed."
+  },
+  {
+    "id": 144,
+    "type": "misconduct",
+    "company_id": "nine",
+    "executive": "Darren Wick",
+    "role": "Director of News and Current Affairs",
+    "disclosed": "2024-04",
+    "category": "Sexual harassment (alleged)",
+    "outcome": "Left Nine Mar 2024 with settlement; chair Peter Costello later resigned",
+    "evidence": "unconfirmed",
+    "summary": "Nine's news chief Darren Wick left the company in March 2024 after a complaint. News Corp and Nine newspapers later reported allegations of inappropriate touching of female staff at company events. Nine said its investigation made no findings against him, and he was approached for comment.",
+    "sources": [
+      {
+        "label": "Mediaweek roundup",
+        "url": "https://www.mediaweek.com.au/roundup-investigation-at-nine-following-darren-wick-allegations"
+      }
+    ],
+    "primary_url": "https://www.mediaweek.com.au/roundup-investigation-at-nine-following-darren-wick-allegations",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Nine says its investigation made no findings against him."
   }
 ]

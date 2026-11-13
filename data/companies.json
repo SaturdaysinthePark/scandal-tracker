@@ -572,5 +572,327 @@
     "ticker": "ABNB",
     "sector": "Technology",
     "scope": "Other notable"
+  },
+  {
+    "id": "cbs",
+    "name": "CBS Corporation",
+    "ticker": "CBS",
+    "sector": "Media & Entertainment",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "fox",
+    "name": "21st Century Fox (Fox News)",
+    "ticker": "FOXA",
+    "sector": "Media & Entertainment",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "weinsteinco",
+    "name": "The Weinstein Company",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wynn",
+    "name": "Wynn Resorts",
+    "ticker": "WYNN",
+    "sector": "Hospitality",
+    "scope": "Other notable"
+  },
+  {
+    "id": "guess",
+    "name": "Guess",
+    "ticker": "GES",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "disney",
+    "name": "The Walt Disney Company",
+    "ticker": "DIS",
+    "sector": "Media & Entertainment",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "panthers",
+    "name": "Carolina Panthers",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "mavericks",
+    "name": "Dallas Mavericks",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bbhospitality",
+    "name": "B&B Hospitality Group",
+    "ticker": "Private",
+    "sector": "Hospitality",
+    "scope": "Other notable"
+  },
+  {
+    "id": "npr",
+    "name": "NPR",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "suns",
+    "name": "Phoenix Suns",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "commanders",
+    "name": "Washington Commanders",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "afiniti",
+    "name": "Afiniti",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "gsk",
+    "name": "GSK",
+    "ticker": "GSK",
+    "sector": "Pharmaceuticals",
+    "scope": "Global 500"
+  },
+  {
+    "id": "500startups",
+    "name": "500 Startups",
+    "ticker": "Private",
+    "sector": "Venture Capital",
+    "scope": "Other notable"
+  },
+  {
+    "id": "binarycapital",
+    "name": "Binary Capital",
+    "ticker": "Private",
+    "sector": "Venture Capital",
+    "scope": "Other notable"
+  },
+  {
+    "id": "eneos",
+    "name": "ENEOS Holdings",
+    "ticker": "5020.T",
+    "sector": "Energy",
+    "scope": "Global 500"
+  },
+  {
+    "id": "ubisoft",
+    "name": "Ubisoft",
+    "ticker": "UBI",
+    "sector": "Gaming",
+    "scope": "Other notable"
+  },
+  {
+    "id": "dbgroup",
+    "name": "DB Group",
+    "ticker": "Private",
+    "sector": "Conglomerate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "amp",
+    "name": "AMP",
+    "ticker": "AMP",
+    "sector": "Financial Services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "coc",
+    "name": "Canadian Olympic Committee",
+    "ticker": "Nonprofit",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "sap",
+    "name": "SAP",
+    "ticker": "SAP",
+    "sector": "Technology",
+    "scope": "Global 500"
+  },
+  {
+    "id": "davidjones",
+    "name": "David Jones",
+    "ticker": "DJS",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "teri",
+    "name": "The Energy and Resources Institute (TERI)",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "spottedpig",
+    "name": "The Spotted Pig",
+    "ticker": "Private",
+    "sector": "Hospitality",
+    "scope": "Other notable"
+  },
+  {
+    "id": "barnesnoble",
+    "name": "Barnes & Noble",
+    "ticker": "BKS",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "americanapparel",
+    "name": "American Apparel",
+    "ticker": "APP",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "newrepublic",
+    "name": "The New Republic",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "voxmedia",
+    "name": "Vox Media",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wpp",
+    "name": "WPP",
+    "ticker": "WPP",
+    "sector": "Advertising",
+    "scope": "Other notable"
+  },
+  {
+    "id": "csdisco",
+    "name": "CS Disco",
+    "ticker": "LAW",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fidelity",
+    "name": "Fidelity Investments",
+    "ticker": "Private",
+    "sector": "Asset Management",
+    "scope": "Other notable"
+  },
+  {
+    "id": "riot",
+    "name": "Riot Games",
+    "ticker": "Private",
+    "sector": "Gaming",
+    "scope": "Other notable"
+  },
+  {
+    "id": "clinc",
+    "name": "Clinc",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "tinder",
+    "name": "Tinder (IAC)",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "lowercase",
+    "name": "Lowercase Capital",
+    "ticker": "Private",
+    "sector": "Venture Capital",
+    "scope": "Other notable"
+  },
+  {
+    "id": "servotronics",
+    "name": "Servotronics",
+    "ticker": "SVT",
+    "sector": "Industrial",
+    "scope": "Other notable"
+  },
+  {
+    "id": "gravity",
+    "name": "Gravity Payments",
+    "ticker": "Private",
+    "sector": "Fintech",
+    "scope": "Other notable"
+  },
+  {
+    "id": "primark",
+    "name": "Primark (Associated British Foods)",
+    "ticker": "ABF",
+    "sector": "Retail",
+    "scope": "Global 500"
+  },
+  {
+    "id": "honda",
+    "name": "Honda Motor",
+    "ticker": "HMC",
+    "sector": "Automotive",
+    "scope": "Global 500"
+  },
+  {
+    "id": "cbi",
+    "name": "Confederation of British Industry",
+    "ticker": "Nonprofit",
+    "sector": "Business Association",
+    "scope": "Other notable"
+  },
+  {
+    "id": "tabcorp",
+    "name": "Tabcorp",
+    "ticker": "TAH",
+    "sector": "Gaming",
+    "scope": "Other notable"
+  },
+  {
+    "id": "icl",
+    "name": "ICL Group",
+    "ticker": "ICL",
+    "sector": "Chemicals",
+    "scope": "Other notable"
+  },
+  {
+    "id": "odey",
+    "name": "Odey Asset Management",
+    "ticker": "Private",
+    "sector": "Asset Management",
+    "scope": "Other notable"
+  },
+  {
+    "id": "tedbaker",
+    "name": "Ted Baker",
+    "ticker": "TED",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "jd",
+    "name": "JD.com",
+    "ticker": "JD",
+    "sector": "Technology",
+    "scope": "Global 500"
   }
 ]
