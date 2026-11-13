@@ -1148,7 +1148,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Bloomberg (major outlet) reports the relationship via one source familiar with the matter. BlackRock's Fink/Kapito memo confirms the departure for a policy violation, which meets the 'reported' tier. Seniority: global head of HR reporting to the CEO, and per Bloomberg his successor joined the global executive committee. Treat as an editorial call on rule 1. The search did not establish whether the"
+    "note": "Bloomberg (one source) only; BlackRock memo said he violated policy. Global head of HR, executive committee, below C-suite under rule 1. Unchanged."
   },
   {
     "id": 46,
@@ -1230,7 +1230,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Searches (CNBC, Fox Business, Dallas News coverage) found only TI's 'personal behavior' wording, and a spokesman declined to say whether a relationship was involved. Still no tie to a relationship. Pages not opened."
+    "note": "Search: TI declined to say whether it involved a relationship. Nothing new."
   },
   {
     "id": 49,
@@ -1618,7 +1618,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "The Reuters story says only 'conduct breach'. No Reuters/WSJ/Bloomberg relationship report was found. Semafor alone, with 2 anonymous sources; he denies it."
+    "note": "Semafor (two sources) reports a relationship with an employee; L3Harris confirmed an independent-counsel probe and code breach but not its nature; Kubasik denies a relationship with a subordinate. Semafor is not a listed major outlet; others relay it. Unchanged; summary must include denial if publis"
   },
   {
     "id": 63,
@@ -1651,7 +1651,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "The Real Deal returned 403; no second independent major outlet found."
+    "note": "Bloomberg (sources) reported the relationship; WeWork confirmed departure; The Real Deal relays Bloomberg. SVP needs two independent outlets. Unchanged."
   },
   {
     "id": 64,
@@ -1676,7 +1676,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "WSJ reports Murati cited performance plus an undisclosed relationship with a junior colleague. Zoph told WSJ he was fired over talks with another company, and OpenAI said it does not share the concerns. The WSJ piece is still only seen secondhand and the reason is disputed."
+    "note": "WSJ and WIRED report the relationship; company cited performance/'unethical conduct' (sharing info); Zoph disputes. No company confirmation of relationship. Unchanged."
   },
   {
     "id": 65,
@@ -1689,23 +1689,22 @@
     "category": "Relationship with employee",
     "outcome": "Departed early",
     "lost_role": true,
-    "evidence": "unconfirmed",
-    "summary": "CFA Institute announced in March 2014 that President and CEO John Rogers would step down at the end of the fiscal year, then he left early after a board review. The Wall Street Journal reported that the board had looked into an affair between Rogers and a senior staff member. A CFA Institute spokesman told InvestmentNews that Rogers had raised a private matter with the board chair in late March, prompting a review, but declined to confirm that it involved a relationship with a co-worker.",
+    "evidence": "reported",
+    "summary": "CFA Institute announced in March 2014 that President and CEO John Rogers would step down at the end of the fiscal year, but he left in early May 2014 after a board review. The Wall Street Journal reported that the board had looked into an affair between Rogers and a senior staff member. A CFA Institute spokesman told InvestmentNews that Rogers had raised the matter with the board chair in late March, that the board began a 'rigorous review', and that the review resulted in his departure; the spokesman declined to confirm that it involved a relationship with a co-worker.",
     "sources": [
       {
         "label": "InvestmentNews, May 2014 (citing WSJ; CFA spokesman interview)",
         "url": "https://www.investmentnews.com/practice-management/rogers-leaves-cfa-institute-under-cloud-of-alleged-affair/58170"
       },
       {
-        "label": "CFA Institute press release, Mar. 19, 2014 (planned departure, no reason)",
+        "label": "CFA Institute press release, Mar. 19, 2014",
         "url": "https://www.cfainstitute.org/about/press-room/2014/cfa-institute-announces-departure-of-president-and-ceo"
       }
     ],
     "primary_url": "https://www.investmentnews.com/practice-management/rogers-leaves-cfa-institute-under-cloud-of-alleged-affair/58170",
     "archive_url": null,
-    "verified_on": null,
-    "status": "watch",
-    "note": "Search: board review followed Rogers disclosing a 'personal matter representing a potential conflict of interest' (search snippet; CFA spokesman). WSJ original still not opened. Arguably meets 'reported' via InvestmentNews relay plus CFA confirming the departure; caller's call."
+    "verified_on": "2026-11-13",
+    "status": "published"
   },
   {
     "id": 66,
@@ -1767,7 +1766,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Search: NYT 26 Nov 1998 'Mets Settle Claim of Harassment' (not opened); settlement terms undisclosed. Gap is editorial (harassment exclusion vs relationship acknowledged), not evidentiary. Unchanged."
+    "note": "Phillips publicly acknowledged a consensual relationship with an employee (CBS); harassment claim settled. Editorial gap unchanged."
   },
   {
     "id": 68,
@@ -1817,7 +1816,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Marks publicly revealed a relationship with former Nine commercial MD Alexi Baker, who reported to him and left around Oct 2020. The relationship is acknowledged. But chairman Costello said no policy was breached and Nine has no relationship policy. The late-disclosure dispute rests on The Australian (relayed by Mumbrella/B&T). Close to qualifying under 2(c), so it needs an editorial call on 'shou"
+    "note": "Search: Marks publicly disclosed relationship with a former direct report who had left Nine weeks earlier; chair said no policy breach. Whether it overlapped her reporting line is not established. Editorial call on rule 2(b)."
   },
   {
     "id": 70,
@@ -2051,7 +2050,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Search snippets attribute to the company the wording 'reasons relating to his engaging in and failing to report a consensual relationship with a subordinate employee', but BusinessWire, Becker's and DrBicuspid all 403; MedCity (opened) quotes only the chair's values line and says company had nothing to add. Very close: one opened copy of the release closes it."
+    "note": "Every copy of the release tried failed (Business Wire 403, PRNewswire 404, Becker's 403, DrBicuspid redirect). Search snippets consistently quote the company wording ('engaging in and failing to report a consensual relationship with a subordinate employee'). Still needs one opened copy; recommend th"
   },
   {
     "id": 78,
@@ -2217,7 +2216,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "WSJ (via Reuters/Business Insider) reports the 2017 probe found a consensual affair with a colleague, which breached policy, plus a pattern of sexually suggestive comments. He said he was 'rightfully disciplined'. The harassment overlap remains."
+    "note": "Fortune (opened) relays WSJ: probe found an affair with an employee whose review he contributed to, plus sexually suggestive comments; he said 'I deeply regret and have learned from this error in judgment'; Uber said complaints were investigated by outside counsel and appropriate action taken. Only "
   },
   {
     "id": 84,
@@ -2304,7 +2303,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Payload reported that the board was probing a relationship with an employee. Firefly said initial findings 'do not support' it, and declined to link the July 2024 exit. No later findings found."
+    "note": "Firefly said initial findings did not support the speculation; departure reason undisclosed. Consider dropping per 'cleared' rule if nothing else emerges."
   },
   {
     "id": 87,
@@ -2329,7 +2328,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "WSJ (relayed by AP/Washington Times, TechCrunch, Cheddar) reports he was fired over an undisclosed relationship with a contractor he hired. He denies it and Snap did not comment. Below C-suite."
+    "note": "Search: WSJ and Cheddar both reported (Cheddar possibly independently); Snap declined comment; he denies. No company confirmation, so tier not met."
   },
   {
     "id": 88,
@@ -2362,7 +2361,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "NYT (Pogrebin, Apr 2017) reported an 'inappropriate' close relationship with a digital-department staffer, with former staff named on record. A Met internal review found no action needed. The romantic/sexual nature is not stated, and the Met never tied the exit to it."
+    "note": "Only NYT (Pogrebin) originated the relationship report; Met did not confirm. Unchanged."
   },
   {
     "id": 89,
@@ -2387,7 +2386,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Still only the Feb 2019 Bloomberg report. Bridgewater declined to comment and Elliott disputes it. No second outlet found."
+    "note": "Still only Bloomberg; Elliott disputes. Unchanged."
   },
   {
     "id": 90,
@@ -2400,12 +2399,16 @@
     "category": "Relationship with employee (code of conduct)",
     "outcome": "Resigned",
     "lost_role": true,
-    "evidence": "unconfirmed",
-    "summary": "Airbnb's head of China, Hong Ge, left the company in October 2017, four months after taking the role, and Airbnb said he was leaving to pursue another role. Bloomberg, citing two people familiar with the matter, reported that Airbnb had found he violated its code of conduct by dating a female employee. The Information separately reported a similar finding.",
+    "evidence": "reported",
+    "summary": "Airbnb's head of China, Hong Ge, left the company in October 2017, four months after taking the role; Airbnb confirmed his departure and CEO Brian Chesky said he was leaving to pursue outside opportunities. Bloomberg, citing two people familiar with the matter, reported that Airbnb had found he violated its code of conduct by dating a female employee. The Information separately reported, citing a person briefed on the decision, that the company found the relationship violated its code of ethics. Airbnb declined to comment further.",
     "sources": [
       {
-        "label": "Bloomberg, Oct 26 2017",
+        "label": "Bloomberg, Oct 26 2017 (Zaleski, Newcomer)",
         "url": "https://www.bloomberg.com/news/articles/2017-10-26/airbnb-s-former-china-head-is-said-to-have-violated-company-code"
+      },
+      {
+        "label": "DealStreetAsia republication of Bloomberg (headline and byline only; body gated)",
+        "url": "https://dealstreetasia.com/stories/airbnbs-former-china-head-said-violated-company-code-85159"
       },
       {
         "label": "TechNode summarizing The Information, Oct 27 2017",
@@ -2414,9 +2417,8 @@
     ],
     "primary_url": "https://www.bloomberg.com/news/articles/2017-10-26/airbnb-s-former-china-head-is-said-to-have-violated-company-code",
     "archive_url": null,
-    "verified_on": null,
-    "status": "watch",
-    "note": "Bloomberg/BloombergQuint/DealStreetAsia/HRGrapevine still not opened (403). Search snippet shows a 2020 report referencing Ge's resignation 'after allegations' of an inappropriate personal relationship, but it was not opened. No court/agency records exist."
+    "verified_on": "2026-11-13",
+    "status": "published"
   },
   {
     "id": 91,
@@ -3242,7 +3244,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "TPM and HuffPost (via Yahoo) opened. The NYT obtained his resignation letter, but that story was not opened. The letter acknowledges staff felt 'uncomfortable'; he denied the specific incidents. Still no second opened list outlet."
+    "note": "Search: NYT, TPM, HuffPost, Daily Beast; owner memo confirmed investigation and resignation; Fish denied specific incidents. Still no second listed major outlet opened."
   },
   {
     "id": 121,
@@ -3267,7 +3269,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Vox fired him in Oct 2017. A Vox spokesperson told TheWrap (opened) he 'admitted engaging in conduct that is inconsistent with our core values', but the company declined to describe the conduct. A later memo said an outside investigation found more than one person experienced 'inappropriate' behaviour from him (seen only in search snippets; Business Insider page would not open). No company or Stee"
+    "note": "Business Insider (via search) reports Bankoff memo: outside investigation found more than one person experienced 'inappropriate and unacceptable' behaviour from Steele. Company still never calls it sexual. Unchanged."
   },
   {
     "id": 122,
@@ -3349,7 +3351,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Second-outlet search: MediaPost, The Drum, Campaign Asia, Business Insider (businessinsider.in DNS failed; MediaPost 403) report JWT announced the April 2018 settlement, terms undisclosed. None of the listed major outlets found; still only Adweek opened. JWT's own statement satisfies company knowledge. Unchanged."
+    "note": "Settlement covered by WSJ (own source: 'substantial settlement'), Adweek, The Drum, Campaign, MediaPost, Business Insider (BI pages 522/DNS fail; Drum page empty). JWT confirmed settlement. Only WSJ is a listed major outlet and it was not opened; no court docket found. Would meet 'settled' if BI or "
   },
   {
     "id": 125,
@@ -3378,7 +3380,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Progress: The Hill (opened) says he apologised to the NYT for an 'error of judgment', and Google confirmed his departure with no exit package. Blocker is seniority: he was a director at X, below VP, and prominent employees only qualify at confirmed, adjudicated or settled."
+    "note": "Seniority blocker unchanged."
   },
   {
     "id": 126,
@@ -3610,7 +3612,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Servotronics FY2022 10-K (seen in search snippet; FY2023 10-K opened but Note 9 not reached) says the June 7 2021 Erie County suit against the company, board and Kenneth D. Trbovich seeks at least $5M and was 'in its earliest stages'; FY2023 10-K says the board treats his exit as a voluntary resignation with no severance due. No ruling or settlement found. The 2014 $4.7M arbitration concerned Nich"
+    "note": "Servotronics: board found 'willful malfeasance' justifying termination; findings undisclosed. Nothing ties it to sexual conduct in sources seen. Unchanged."
   },
   {
     "id": 135,
@@ -3946,18 +3948,26 @@
     "category": "Alleged sexual harassment",
     "outcome": "Departed after investigation (mutual)",
     "lost_role": true,
-    "evidence": "unconfirmed",
-    "summary": "Universal Music Group placed Republic Records president Charlie Walk on leave in January 2018 and retained an outside firm to investigate harassment allegations from former colleagues. Republic said in March 2018 that it and Walk had mutually agreed to part ways. Walk denied the allegations.",
+    "evidence": "reported",
+    "summary": "Universal Music Group placed Republic Records president Charlie Walk on leave in January 2018 and retained an outside law firm to investigate harassment allegations from former colleagues, AFP and NPR reported. Republic said in March 2018 that it and Walk had mutually agreed to part ways, without disclosing the investigation's findings. Walk denied the allegations, calling them false.",
     "sources": [
       {
-        "label": "Search results only; no source opened yet"
+        "label": "NPR, Mar 29 2018 (Andrew Flanagan)",
+        "url": "https://www.wgbh.org/news/2018-03-29/record-company-executive-out-following-sexual-misconduct-investigation"
+      },
+      {
+        "label": "AFP via The Citizen, Feb 2018",
+        "url": "https://www.citizen.co.za/lifestyle/entertainment/entertainment-us-music-harassment-republic/"
+      },
+      {
+        "label": "NPR original",
+        "url": "https://www.npr.org/sections/therecord/2018/03/29/597961697/record-company-executive-out-following-sexual-misconduct-investigation"
       }
     ],
-    "primary_url": null,
+    "primary_url": "https://www.npr.org/sections/therecord/2018/03/29/597961697/record-company-executive-out-following-sexual-misconduct-investigation",
     "archive_url": null,
-    "verified_on": null,
-    "status": "watch",
-    "note": "AP opened (one major outlet). NYT coverage seen only via Jezebel; NPR page timed out. Misconduct 'reported' needs a second independent major outlet opened; NYT is the candidate. Company confirmed investigation and departure."
+    "verified_on": "2026-11-13",
+    "status": "published"
   },
   {
     "id": 148,
@@ -3970,19 +3980,22 @@
     "category": "Alleged sexual harassment",
     "outcome": "Terminated",
     "lost_role": true,
-    "evidence": "unconfirmed",
-    "summary": "Fox Sports fired Jamie Horowitz in July 2017; Sports Illustrated and the Los Angeles Times reported the firing followed an investigation into sexual harassment allegations. Fox's lawyers said the termination was fully warranted, per the New York Times. Horowitz's lawyer disputed the firing and said any accusations would be vigorously defended.",
+    "evidence": "reported",
+    "summary": "Fox Sports fired Jamie Horowitz, president of its national networks, in July 2017, saying only that he was no longer with the company. The Los Angeles Times reported that 21st Century Fox had hired a law firm that interviewed women at Fox Sports about his conduct, and Sports Illustrated, citing three sources, reported that the firing was tied to a sexual harassment investigation. A Fox attorney later said the termination was 'fully warranted'. Horowitz's lawyer called his treatment 'appalling', said no misconduct concerns had been raised during his tenure and said any accusations would be vigorously defended.",
     "sources": [
       {
-        "label": "Fortune, July 4, 2017",
-        "url": "https://fortune.com/2017/07/04/fox-sports-horowitz-sexual-harassment/"
+        "label": "Los Angeles Times (Meg James) via HeraldNet, Jul 3 2017",
+        "url": "https://www.heraldnet.com/2017/07/03/head-of-fox-sports-programming-fired-in-sex-harassment-probe/"
+      },
+      {
+        "label": "Sports Illustrated, Jul 3 2017",
+        "url": "https://www.si.com/media/2017/07/03/jamie-horowitz-fired-fox-sports-sexual-harassment"
       }
     ],
-    "primary_url": "https://fortune.com/2017/07/04/fox-sports-horowitz-sexual-harassment/",
+    "primary_url": "https://www.si.com/media/2017/07/03/jamie-horowitz-fired-fox-sports-sexual-harassment",
     "archive_url": null,
-    "verified_on": null,
-    "status": "watch",
-    "note": "Fired after a harassment probe per reports; only one opened source; his lawyer disputes it."
+    "verified_on": "2026-11-13",
+    "status": "published"
   },
   {
     "id": 149,
@@ -4006,7 +4019,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "EEOC settlement unverified; no source opened yet; his 2017 apology unchecked."
+    "note": "Search for EEOC settlement returned no Besh results. Unverified."
   },
   {
     "id": 150,
@@ -4583,7 +4596,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Search: Inquirer/PhillyVoice relay NYT: 4 women acknowledged consensual relationships, 2 reported directly to him; PMA said 'We believe their stories' and its director later apologised. Erie said he is 'no longer employed'. Scope issue (prior non-exec role) unchanged; no lawsuit found."
+    "note": "Erie confirmed he is no longer employed; scope issue unchanged."
   },
   {
     "id": 169,
@@ -4889,7 +4902,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Search found only WSJ-derived digests and Recode/AP policy-violation coverage (IBTimes, MediaPost, PYMNTS). No court record, lawsuit or second independent outlet. Unchanged."
+    "note": "Two more searches: only WSJ reported the relationships (others relay WSJ or report just 'policy violation'). Visa confirmed firing for policy violation. EVP below C-suite needs two independent outlets; still one. Unchanged."
   },
   {
     "id": 181,
@@ -5410,15 +5423,18 @@
         "url": "https://globalnews.ca/news/4364692/soulpepper-lawsuit-resolved-albert-schultz"
       },
       {
+        "label": "BroadwayWorld, Aug 2 2018 (relaying CBC interview with Schultz's lawyer)",
+        "url": "https://www.broadwayworld.com/toronto/article/Civil-Lawsuits-Against-Soulpepper-Artistic-Director-Accused-of-Sexual-Misconduct-Have-Been-Resolved-20180802"
+      },
+      {
         "label": "CBC News, Aug 2018",
         "url": "https://amp.cbc.ca/news/canada/toronto/soulpepper-schultz-lawsuits-threatre-1.4769595"
       }
     ],
     "primary_url": "https://globalnews.ca/news/4364692/soulpepper-lawsuit-resolved-albert-schultz",
     "archive_url": null,
-    "verified_on": null,
-    "status": "watch",
-    "note": "Global News opened again: Soulpepper statement 'Legal actions commenced against Soulpepper on January 3, 2018 have been resolved'; Schultz's lawyer said settled 'satisfactory to him'; he denied the claims. Company confirmation is satisfied. CBC (both URLs) 403; BroadwayWorld/Vancouver Sun (PressReader) are other candidates. Still one opened outlet."
+    "verified_on": "2026-11-13",
+    "status": "published"
   },
   {
     "id": 198,
@@ -6736,26 +6752,29 @@
     "executive": "Pedro Guimarães",
     "role": "President (CEO)",
     "disclosed": "2022-06",
-    "category": "Sexual harassment allegations by employees",
+    "category": "Sexual harassment (public settlement with labour prosecutors)",
     "outcome": "Resigned; criminal defendant",
     "lost_role": true,
-    "evidence": "reported",
-    "summary": "Pedro Guimarães resigned as president of the Brazilian state bank Caixa Econômica Federal in June 2022 after Metrópoles reported allegations of sexual harassment by employees. A federal court in Brasília accepted prosecutors' charges of sexual and moral harassment, making him a defendant, and he denies the accusations. Caixa agreed with labour prosecutors to pay R$10 million in collective moral damages and said it would seek reimbursement from him.",
+    "evidence": "adjudicated",
+    "summary": "Pedro Guimarães resigned as president of state bank Caixa in June 2022 after Metrópoles reported sexual harassment allegations from employees. In April 2023 Caixa agreed with Brazil's labour prosecutors to pay R$10 million in collective moral damages over the harassment episodes, and a federal court accepted criminal charges against him in 2023; that case is pending. Metrópoles reported that a report by Caixa's internal affairs office corroborated the allegations. Guimarães denies the allegations, and his defence questioned the impartiality of the internal inquiry.",
     "sources": [
       {
-        "label": "Folha Vitória: R$10m agreement",
-        "url": "https://www.folhavitoria.com.br/economia/caso-guimaraes-juiza-homologa-acordo-sobre-assedio-na-caixa-e-banco-tera-que-pagar-r-10-mi/"
+        "label": "Metrópoles, Oct 17 2022, internal investigation findings",
+        "url": "https://www.metropoles.com/colunas/rodrigo-rangel/assedio-na-caixa-o-que-a-investigacao-interna-descobriu"
       },
       {
-        "label": "Itatiaia: becomes defendant",
+        "label": "Congresso em Foco, Apr 27 2023, R$10m MPT agreement",
+        "url": "https://www.congressoemfoco.com.br/area/justica/caixa-e-multada-em-r-10-milhoes-por-escandalo-de-assedios-sexuais"
+      },
+      {
+        "label": "Itatiaia, court accepts charges",
         "url": "https://www.itatiaia.com.br/politica/justica-aceita-denuncia-contra-ex-presidente-da-caixa-que-vira-reu-por-assedio-sexual-e-moral/"
       }
     ],
-    "primary_url": "https://www.itatiaia.com.br/politica/justica-aceita-denuncia-contra-ex-presidente-da-caixa-que-vira-reu-por-assedio-sexual-e-moral/",
+    "primary_url": "https://www.metropoles.com/colunas/rodrigo-rangel/assedio-na-caixa-o-que-a-investigacao-interna-descobriu",
     "archive_url": null,
-    "verified_on": null,
-    "status": "watch",
-    "note": "Bank paid a labour settlement; criminal case has no verdict."
+    "verified_on": "2026-11-13",
+    "status": "published"
   },
   {
     "id": 241,
@@ -7053,7 +7072,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Only the NYT did original reporting."
+    "note": "Germano disputes being fired; Vice confirmed only that he left; AP/CNN relay NYT allegations. Still only NYT original. Unchanged."
   },
   {
     "id": 251,
@@ -7078,6 +7097,552 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Only the NYT did original reporting; he disputes characterisations."
+    "note": "Only NYT originated; Hearst announced resignation. Unchanged."
+  },
+  {
+    "id": 252,
+    "company_id": "emcare",
+    "executive": "Jim McKinney",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "CEO, AnesthesiaCare division",
+    "disclosed": "2014-10",
+    "category": "Sexual harassment (jury verdict)",
+    "outcome": "Left company (timing not stated)",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "In October 2014 a federal jury in Dallas found for the EEOC in a suit alleging that Jim McKinney, CEO of EmCare's AnesthesiaCare division, sexually harassed a subordinate. The jury awarded $250,000 in punitive damages to that employee. It also found that EmCare fired two other employees in retaliation for complaining about the sexually hostile environment. The Fifth Circuit affirmed the retaliation verdict in May 2017 (857 F.3d 678).",
+    "sources": [
+      {
+        "label": "EEOC press release, Oct 2014",
+        "url": "https://www.eeoc.gov/index%2Ephp/newsroom/jury-awards-499000-against-emcare-eeoc-sexual-harassment-and-retaliation-case"
+      },
+      {
+        "label": "Fifth Circuit opinion No. 16-10598 (2017)",
+        "url": "https://cases.justia.com/federal/appellate-courts/ca5/16-10598/514000909/0.pdf"
+      },
+      {
+        "label": "Southeast Texas Record, EmCare loses appeal",
+        "url": "https://setexasrecord.com/stories/511120040-emcare-loses-appeal-in-wrongful-termination-lawsuit"
+      }
+    ],
+    "primary_url": "https://www.eeoc.gov/index%2Ephp/newsroom/jury-awards-499000-against-emcare-eeoc-sexual-harassment-and-retaliation-case",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "published"
+  },
+  {
+    "id": 253,
+    "company_id": "att",
+    "executive": "Peter Fellows",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "Area vice-president",
+    "disclosed": "1993-02",
+    "category": "Sexual harassment (verdict upheld on appeal)",
+    "outcome": "Resigned",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "A Los Angeles jury found AT&T Information Systems liable for sexual harassment and retaliation against an area personnel manager, awarding $1.5 million in compensatory and $500,000 in punitive damages. The California Court of Appeal affirmed the verdict in 1993 (13 Cal.App.4th 976). The opinion describes the harasser as area vice-president Peter Fellows and says company supervisors had received earlier reports about his conduct. According to the opinion, Fellows had resigned by then.",
+    "sources": [
+      {
+        "label": "California Court of Appeal opinion, 13 Cal.App.4th 976 (1993)",
+        "url": "https://hallapproved.com/ca/cases/appeals/1993/2289218"
+      }
+    ],
+    "primary_url": "https://hallapproved.com/ca/cases/appeals/1993/2289218",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "published"
+  },
+  {
+    "id": 254,
+    "company_id": "kureha",
+    "executive": "Hiroyuki Tanaka",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "Director, Managing Executive Officer (head of high-performance products division)",
+    "disclosed": "2025-05",
+    "category": "Sexually inappropriate conduct",
+    "outcome": "Resigned as director and executive officer (2025-05-16); bonus withheld, part of stock compensation forfeited",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "Kureha said in May 2025 that director and managing executive officer Hiroyuki Tanaka had resigned after an internal whistleblower report of inappropriate conduct toward a female employee at an after-hours social gathering. The company said an inquiry led by its corporate auditors with outside experts found the report to be true, and that its nomination committee had concluded the conduct warranted a resignation recommendation as director and dismissal as executive officer. Kureha withheld his bonus and forfeited part of his stock compensation; the president and other directors returned part of their pay.",
+    "sources": [
+      {
+        "label": "Kureha timely disclosure (TDnet/JPX), 16 May 2025",
+        "url": "https://www2.jpx.co.jp/disc/40230/140120250516556802.pdf"
+      },
+      {
+        "label": "coki.jp, 17 May 2025",
+        "url": "https://coki.jp/article/news/52605/"
+      }
+    ],
+    "primary_url": "https://www2.jpx.co.jp/disc/40230/140120250516556802.pdf",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "published"
+  },
+  {
+    "id": 255,
+    "company_id": "orf",
+    "executive": "Roland Weißmann",
+    "type": "relationship",
+    "role_level": "executive",
+    "role": "Director General",
+    "disclosed": "2026-03",
+    "category": "Relationship with subordinate",
+    "outcome": "Resigned as Director General (March 2026); ORF later terminated his employment (April 2026)",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "ORF Director General Roland Weißmann resigned in March 2026 after an employee accused him of sexual harassment; he denied the allegations and said the relationship was of mutual interest. In April 2026 ORF said a compliance review with outside experts found no sexual harassment in the legal sense but found breaches of its internal compliance and conduct standards, and it ended his employment. Weißmann rejects any misconduct and is pursuing legal steps; the employee disputes the review's findings.",
+    "sources": [
+      {
+        "label": "ORF.at, April 2026: compliance report and termination",
+        "url": "https://orf.at/stories/3426266/"
+      },
+      {
+        "label": "profil, March 2026: resignation",
+        "url": "https://www.profil.at/dasfruehstueck/was-der-roland-weissmann-ruecktritt-fuer-den-orf-bedeutet/403139122"
+      },
+      {
+        "label": "Salzburg24: Weißmann says relationship was mutual",
+        "url": "https://www.salzburg24.at/news/oesterreich/roland-weissmann-bricht-schweigen-beziehung-in-beidseitigem-interesse-art-319590"
+      }
+    ],
+    "primary_url": "https://orf.at/stories/3426266/",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "published"
+  },
+  {
+    "id": 256,
+    "company_id": "hansells",
+    "executive": "Timothy Eagle",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "Senior partner",
+    "disclosed": "2026-02",
+    "category": "Sexual misconduct toward colleagues (tribunal finding)",
+    "outcome": "Suspended by firm, retired; SDT 12-month suspension",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "The Solicitors Disciplinary Tribunal suspended Timothy Eagle, former senior partner at Norwich firm Hansells, from practice for 12 months in February 2026 and ordered £30,000 in costs. The tribunal found that at a December 2022 office Christmas gathering he made sexually explicit comments to several female colleagues and engaged in unwanted physical contact. Eagle admitted all four allegations but denied a lack of integrity and denied that one remark was sexually motivated. He self-reported to the regulator, and the firm suspended him; he retired before its internal process ended.",
+    "sources": [
+      {
+        "label": "Legal Cheek, Feb 2026",
+        "url": "https://www.legalcheek.com/2026/02/senior-partner-suspended-after-harassing-female-colleagues-at-christmas-party/"
+      },
+      {
+        "label": "Legal Futures",
+        "url": "https://www.legalfutures.co.uk/latest-news/senior-partner-suspended-over-drunken-conduct-towards-four-women"
+      },
+      {
+        "label": "SDT case 12731",
+        "url": "https://solicitorstribunal.org.uk/case/12731/"
+      }
+    ],
+    "primary_url": "https://solicitorstribunal.org.uk/case/12731/",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "SDT finding (Feb 2026) is solid; held on watch because a regional firm may not meet the notability bar."
+  },
+  {
+    "id": 257,
+    "company_id": "rhp",
+    "executive": "Jason Chang",
+    "type": "relationship",
+    "role_level": "executive",
+    "role": "Chief medical officer",
+    "disclosed": "2019-12",
+    "category": "Relationship with subordinate",
+    "outcome": "Removed as CMO; suspended as physician",
+    "lost_role": true,
+    "evidence": "acknowledged",
+    "summary": "Honolulu Civil Beat reported that the Rehabilitation Hospital of the Pacific removed Dr. Jason Chang as chief medical officer in June 2019, after two employees complained. An outside investigator hired by the hospital concluded that the sexual activity with a subordinate was more likely than not unwelcome. Chang admitted an inappropriate sexual relationship with a subordinate on hospital grounds but maintained it was consensual and denied harassment. A federal judge denied his request to stop the hospital reporting him to the National Practitioner Data Bank.",
+    "sources": [
+      {
+        "label": "Honolulu Civil Beat, Dec 2019",
+        "url": "https://www.civilbeat.org/2019/12/oahu-hospital-struggles-in-the-wake-of-sexual-misconduct-allegations/"
+      },
+      {
+        "label": "Chang v. Rehab. Hospital of Pacific (D. Haw. 2019) summary",
+        "url": "https://www.studicata.com/summaries/united-states-district-court-district-of-hawaii/chang-v-rehab-hospital-of-pacific-2019-fsg1jb"
+      }
+    ],
+    "primary_url": "https://www.civilbeat.org/2019/12/oahu-hospital-struggles-in-the-wake-of-sexual-misconduct-allegations/",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Single outlet (Honolulu Civil Beat); small hospital."
+  },
+  {
+    "id": 258,
+    "company_id": "babcockpower",
+    "executive": "Eric Balles",
+    "type": "relationship",
+    "role_level": "executive",
+    "role": "Senior executive (title unverified)",
+    "disclosed": "2015-01",
+    "category": "Relationship with subordinate",
+    "outcome": "Terminated; court later held firing was not for cause",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "Babcock Power fired executive and stockholder Eric Balles after learning of his affair with a subordinate, which the company treated as cause. A Massachusetts trial court found the firing was not for cause under his stockholders' agreement, and the Supreme Judicial Court affirmed in Balles v. Babcock Power (2017). The courts found that he violated company policies but held that the agreement's notice-and-cure requirements were not met.",
+    "sources": [
+      {
+        "label": "Justia SJC opinion summary, Mar 2017",
+        "url": "https://massachusettssupremecourtopinions.justia.com/2017/03/07/balles-v-babcock-power-inc"
+      },
+      {
+        "label": "Sherin and Lodgen analysis",
+        "url": "https://www.sherin.com/employment-blog/2017/04/04/disproving-cause-in-equity-and-executive-employment-agreements/"
+      }
+    ],
+    "primary_url": "https://massachusettssupremecourtopinions.justia.com/2017/03/07/balles-v-babcock-power-inc",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Mass. SJC 2017 ruling on termination over affair; no source opened, title unverified."
+  },
+  {
+    "id": 259,
+    "company_id": "stripeintl",
+    "executive": "Yasuharu Ishikawa",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "President and CEO",
+    "disclosed": "2020-03",
+    "category": "Sexual harassment allegations",
+    "outcome": "Resigned as president and CEO (2020-03-06)",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Stripe International president Yasuharu Ishikawa resigned in March 2020 after the Asahi Shimbun and others reported allegations that he had sexually harassed company staff. The company announced his resignation; WWD Japan reported that its public relations department had earlier called the report unfounded.",
+    "sources": [
+      {
+        "label": "WWD Japan, March 2020",
+        "url": "https://www.wwdjapan.com/?p=1054056"
+      }
+    ],
+    "primary_url": "https://www.wwdjapan.com/?p=1054056",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Company confirmed departure but called report unfounded; need second major outlet."
+  },
+  {
+    "id": 260,
+    "company_id": "fujitsu",
+    "executive": "Hidenori Furuta",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "Chairman",
+    "disclosed": "2026-06",
+    "category": "Inappropriate conduct",
+    "outcome": "Resigned as chairman (2026-06-16); director candidacy withdrawn",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Fujitsu said in June 2026 that chairman Hidenori Furuta had resigned at the board's request after it learned of what a spokesperson called woman-related inappropriate conduct. The company gave no further details.",
+    "sources": [
+      {
+        "label": "Malay Mail (Reuters/AFP), June 2026",
+        "url": "https://www.malaymail.com/news/money/2026/06/17/fujitsu-chairman-quits-over-woman-related-inappropriate-conduct-scandal/224126"
+      }
+    ],
+    "primary_url": "https://www.malaymail.com/news/money/2026/06/17/fujitsu-chairman-quits-over-woman-related-inappropriate-conduct-scandal/224126",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Company cited \"woman-related inappropriate conduct\"; no indication she was a colleague."
+  },
+  {
+    "id": 261,
+    "company_id": "tvf",
+    "executive": "Arunabh Kumar",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "Founder and CEO",
+    "disclosed": "2017-03",
+    "category": "Sexual harassment allegations",
+    "outcome": "Stepped down as CEO (2017-06-16)",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "TVF founder Arunabh Kumar stepped down as CEO in June 2017 after several women, including a former employee, accused him of sexual harassment, and Mumbai police registered cases. TVF had initially called the allegations false; Kumar later apologised for that response.",
+    "sources": [
+      {
+        "label": "BloombergQuint, June 2017",
+        "url": "https://www.bloombergquint.com/business/2017/06/16/tvf-ceo-arunabh-kumar-steps-down-after-sexual-harassment-allegations"
+      },
+      {
+        "label": "Business Standard, June 2017",
+        "url": "https://business-standard.com/amp/article/companies/broken-by-sexual-harassment-charge-tvf-s-arunabh-kumar-steps-down-as-ceo-117061601068_1.html"
+      }
+    ],
+    "primary_url": "https://www.bloombergquint.com/business/2017/06/16/tvf-ceo-arunabh-kumar-steps-down-after-sexual-harassment-allegations",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Allegations and police complaints only; no finding; sources not opened."
+  },
+  {
+    "id": 262,
+    "company_id": "kochibiennale",
+    "executive": "Bose Krishnamachari",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "President and co-founder",
+    "disclosed": "2026-03",
+    "category": "Sexual harassment complaint",
+    "outcome": "Resigned as president (January 2026)",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Kochi Biennale Foundation chair Venu Vasudevan said in March 2026 that a sexual harassment complaint to the foundation's Internal Committee was one of the reasons co-founder Bose Krishnamachari resigned as president in January. Krishnamachari denied the allegations and called them misleading.",
+    "sources": [
+      {
+        "label": "The Week (PTI), March 2026",
+        "url": "https://www.theweek.in/wire-updates/national/2026/03/25/bose-krishnamachari-quit-kmb-following-sexual-harassment-complaint-biennale-chairperson.html"
+      },
+      {
+        "label": "The News Minute",
+        "url": "https://www.thenewsminute.com/kerala/bose-krishnamachari-resigned-from-kochi-biennale-after-sexual-harassment-complaint"
+      }
+    ],
+    "primary_url": "https://www.theweek.in/wire-updates/national/2026/03/25/bose-krishnamachari-quit-kmb-following-sexual-harassment-complaint-biennale-chairperson.html",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Foundation cited an Internal Committee complaint; he denies it; no finding yet."
+  },
+  {
+    "id": 263,
+    "company_id": "asobancaria",
+    "executive": "Hernando José Gómez",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "President",
+    "disclosed": "2022-11",
+    "category": "Sexual harassment allegation",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Hernando José Gómez resigned as president of Colombia's banking association Asobancaria in November 2022. The association's board said it had received a complaint from an employee, carried out an internal investigation, unanimously accepted his resignation with immediate effect and referred the facts to the competent authorities. El Espectador reported that the complaint alleged sexual harassment of a subordinate; Gómez acknowledged a brief kiss, which he described as a spontaneous greeting, denied using force and denied that his conduct was harassment. Colombian prosecutors closed the criminal file in March 2023 and later reopened it.",
+    "sources": [
+      {
+        "label": "Bloomberg Línea, Nov 12 2022 (board statement)",
+        "url": "https://www.bloomberglinea.com/2022/11/12/asobancaria-se-pronuncia-sobre-la-salida-de-su-presidente-hernando-jose-gomez/"
+      },
+      {
+        "label": "Portafolio, Asobancaria explains exit",
+        "url": "https://www.portafolio.co/economia/finanzas/hernando-jose-gomez-asobancaria-explico-la-salida-de-su-presidente-denuncia-573972"
+      },
+      {
+        "label": "El Espectador, chats and evidence",
+        "url": "https://www.elespectador.com/judicial/los-chats-y-las-pruebas-contra-hernando-jose-gomez-expresidente-de-asobancaria-por-acoso-sexual/"
+      },
+      {
+        "label": "Asuntos Legales, Fiscalía reopened investigation",
+        "url": "https://www.asuntoslegales.com.co/actualidad/fiscalia-abrio-de-nuevo-la-investigacion-contra-expresidente-de-asobancaria-por-acoso-3660225"
+      }
+    ],
+    "primary_url": "https://www.bloomberglinea.com/2022/11/12/asobancaria-se-pronuncia-sobre-la-salida-de-su-presidente-hernando-jose-gomez/",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Board confirmed complaint, investigation and resignation; harassment detail only in Colombian outlets not on the major-outlet list; he denies harassment."
+  },
+  {
+    "id": 264,
+    "company_id": "globo",
+    "executive": "Marcius Melhem",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "Director of comedy (head of humor division)",
+    "disclosed": "2020-12",
+    "category": "Sexual harassment allegations",
+    "outcome": "Left company after leave; criminal case",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Marcius Melhem, head of TV Globo's comedy division, left the network in 2020 after a leave, amid allegations of sexual and moral harassment by actresses on his staff. Globo said in a December 2020 note that its compliance team was investigating and that it does not disclose reasons for dismissals. Metrópoles later reported that a confidential Globo compliance document concluded he had harassed former subordinates and breached its code of conduct. Melhem denies the allegations; Brazilian outlets report a criminal harassment case was later closed through a plea arrangement (transação penal) with Rio prosecutors, which is not a conviction.",
+    "sources": [
+      {
+        "label": "O Povo, Globo note on Jornal Nacional, Dec 2020",
+        "url": "https://www.opovo.com.br/noticias/brasil/2020/12/09/globo-quebra-silencio-sobre-denuncias-envolvendo-marcius-melhem-em-nota-no-jornal-nacional.html"
+      },
+      {
+        "label": "Metrópoles (Leo Dias), Globo compliance document",
+        "url": "https://www.metropoles.com/colunas/leo-dias/globo-investigou-e-comprovou-assedio-de-marcius-melhem"
+      },
+      {
+        "label": "Jornal Opção, transação penal with MP-RJ",
+        "url": "https://www.jornalopcao.com.br/justica/marcius-melhem-encerra-processo-assedio-sexual-acordo-872244/"
+      }
+    ],
+    "primary_url": "https://www.opovo.com.br/noticias/brasil/2020/12/09/globo-quebra-silencio-sobre-denuncias-envolvendo-marcius-melhem-em-nota-no-jornal-nacional.html",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Globo confirmed only an investigation; compliance finding known from one leaked-document column; criminal outcome unclear."
+  },
+  {
+    "id": 265,
+    "company_id": "caracol",
+    "executive": "Jorge Alfredo Vargas",
+    "type": "misconduct",
+    "role_level": "prominent",
+    "role": "Main anchor, Noticias Caracol",
+    "disclosed": "2026-03",
+    "category": "Sexual harassment allegations",
+    "outcome": "Contract ended by mutual agreement; criminally charged",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Caracol Televisión said in March 2026 that it had ended by mutual agreement the contract of Jorge Alfredo Vargas, longtime anchor of Noticias Caracol, after it received sexual harassment complaints from women who worked at the channel; it said the decision was not a judgment on the facts. In August 2026 Colombian prosecutors charged him with sexual harassment involving four women, and he pleaded not guilty. Three of the four women told prosecutors their complaint was a workplace grievance they did not want pursued criminally.",
+    "sources": [
+      {
+        "label": "Publimetro Colombia, Mar 24 2026, Caracol statement",
+        "url": "https://www.publimetro.co/noticias/2026/03/24/atencion-caracol-television-confirma-salida-de-ricardo-orrego-y-jorge-alfredo-vargas-tras-denuncias-de-acoso-sexual/"
+      },
+      {
+        "label": "El Colombiano, imputation",
+        "url": "https://www.elcolombiano.com/colombia/jorge-alfredo-vargas-imputado-fiscalia-acoso-sexual-BH39585765"
+      },
+      {
+        "label": "El Tiempo, complainants decline participation",
+        "url": "https://www.eltiempo.com/justicia/delitos/victimas-en-caso-contra-jorge-alfredo-vargas-revelan-la-razon-por-la-que-no-participaran-en-el-juicio-por-presunto-acoso-sexual-pedimos-respeto-3576424"
+      }
+    ],
+    "primary_url": "https://www.publimetro.co/noticias/2026/03/24/atencion-caracol-television-confirma-salida-de-ricardo-orrego-y-jorge-alfredo-vargas-tras-denuncias-de-acoso-sexual/",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Prominent anchor; Caracol said exit is not a judgment on facts; charged Aug 2026, pleaded not guilty. Needs confirmed/adjudicated tier."
+  },
+  {
+    "id": 266,
+    "company_id": "caracol",
+    "executive": "Ricardo Orrego",
+    "type": "misconduct",
+    "role_level": "prominent",
+    "role": "Deputy sports director / sports journalist",
+    "disclosed": "2026-03",
+    "category": "Sexual harassment and sexual assault allegations",
+    "outcome": "Terminated; criminally charged",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Caracol Televisión said in March 2026 that it had terminated the employment of sports journalist Ricardo Orrego after receiving sexual harassment complaints, adding that the decision was not a judgment on the facts. In October 2026 Colombian prosecutors charged him with sexual harassment and violent sexual acts involving five women over 2012-2024. He did not accept the charges, and his lawyer called the dismissal a unilateral decision by the employer.",
+    "sources": [
+      {
+        "label": "Publimetro Colombia, Mar 24 2026, Caracol statement",
+        "url": "https://www.publimetro.co/noticias/2026/03/24/atencion-caracol-television-confirma-salida-de-ricardo-orrego-y-jorge-alfredo-vargas-tras-denuncias-de-acoso-sexual/"
+      },
+      {
+        "label": "Blu Radio, imputation",
+        "url": "https://www.bluradio.com/judicial/fiscalia-imputo-a-ricardo-orrego-los-delitos-de-acto-sexual-violento-y-acoso-sexual-rg10"
+      },
+      {
+        "label": "El País Cali, imputation",
+        "url": "https://www.elpais.com.co/judicial/fiscalia-imputo-a-ricardo-orrego-por-presunta-violencia-de-genero-contra-cinco-mujeres-1947.html"
+      }
+    ],
+    "primary_url": "https://www.publimetro.co/noticias/2026/03/24/atencion-caracol-television-confirma-salida-de-ricardo-orrego-y-jorge-alfredo-vargas-tras-denuncias-de-acoso-sexual/",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Charged Oct 2026; did not accept charges; seniority (prominent?) unverified."
+  },
+  {
+    "id": 267,
+    "company_id": "televisa",
+    "executive": "Jorge \"Coco\" Levy",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "Executive (content), Videocine",
+    "disclosed": "2022-07",
+    "category": "Sexual abuse allegations",
+    "outcome": "Terminated",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Videocine, the film arm of Grupo Televisa, said in July 2022 that it had terminated the employment of Jorge Levy after public complaints by actresses, following an internal investigation, and that he had no reason to receive actors in his office. He was later formally charged (vinculado a proceso) with sexual abuse in Mexico City. Levy denied the accusations and later issued an apology; Infobae reported the criminal case ended after a private payment and pardon, not a verdict.",
+    "sources": [
+      {
+        "label": "Publimetro México, Jul 15 2022, Videocine statement",
+        "url": "https://www.publimetro.com.mx/entretenimiento/2022/07/15/coco-levy-es-despedido-de-videocine-por-las-denuncias-de-abuso-en-su-contra/"
+      },
+      {
+        "label": "El Financiero, vinculado a proceso",
+        "url": "https://www.elfinanciero.com.mx/espectaculos/2022/10/05/productor-coco-levy-es-vinculado-a-proceso-tras-denuncias-por-abuso-sexual/"
+      },
+      {
+        "label": "Infobae México, Nov 2023, case resolved by payment",
+        "url": "https://www.infobae.com/mexico/2023/11/15/coco-levy-pago-miles-de-pesos-para-obtener-el-perdon-de-danna-ponce/"
+      }
+    ],
+    "primary_url": "https://www.publimetro.com.mx/entretenimiento/2022/07/15/coco-levy-es-despedido-de-videocine-por-las-denuncias-de-abuso-en-su-contra/",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Fired after internal investigation per reports; seniority unverified; criminal case ended by private payment."
+  },
+  {
+    "id": 268,
+    "company_id": "sco",
+    "executive": "Larry Michels",
+    "type": "misconduct",
+    "role_level": "executive",
+    "role": "Co-founder, chairman, president and CEO",
+    "disclosed": "1992-12",
+    "category": "Sexual harassment allegations",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "settled",
+    "summary": "Larry Michels resigned all posts at The Santa Cruz Operation in December 1992 after three former executive secretaries filed a civil suit alleging sexual harassment; a fourth plaintiff later joined. Computergram reported that the company agreed to pay the four women a combined $1.25 million to settle. Michels called the allegations false and unfair. Settlements are not admissions of wrongdoing.",
+    "sources": [
+      {
+        "label": "Computergram/Tech Monitor, Michels resigns",
+        "url": "https://www.techmonitor.ai/?p=264387"
+      },
+      {
+        "label": "Computergram/Tech Monitor, settlement",
+        "url": "https://www.techmonitor.ai/?p=181612"
+      },
+      {
+        "label": "Santa Cruz Sentinel, SCO settles suit (library index)",
+        "url": "https://history.santacruzpl.org/omeka/items/show/76474"
+      },
+      {
+        "label": "Santa Cruz Sentinel, SCO chief accused of harassment (library index)",
+        "url": "https://history.santacruzpl.org/omeka/items/show/76526"
+      }
+    ],
+    "primary_url": "https://www.techmonitor.ai/?p=264387",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Reported $1.25M settlement (1993) in trade/local press only; need two major outlets or court records."
+  },
+  {
+    "id": 269,
+    "company_id": "florsheim",
+    "executive": "Charles Campbell",
+    "type": "relationship",
+    "role_level": "executive",
+    "role": "CEO",
+    "disclosed": "1999-06",
+    "category": "Lawsuit alleging affairs and misuse of company resources",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "unconfirmed",
+    "summary": "Charles Campbell resigned as CEO of Florsheim in June 1999, about six weeks after a former assistant filed suit. The Christian Science Monitor reported that the suit alleged he had women join him at the corporate apartment, on business trips and in company limousines. Florsheim declined to comment.",
+    "sources": [
+      {
+        "label": "Christian Science Monitor, CEOs getting the boot for sexual misconduct, 1999-07-02",
+        "url": "https://www.csmonitor.com/1999/0702/p1s3.html"
+      }
+    ],
+    "primary_url": "https://www.csmonitor.com/1999/0702/p1s3.html",
+    "archive_url": null,
+    "verified_on": "2026-11-13",
+    "status": "watch",
+    "note": "Lawsuit alleging affairs; single source (Christian Science Monitor); company declined comment."
   }
 ]

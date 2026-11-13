@@ -1503,5 +1503,110 @@
     "ticker": "Private",
     "sector": "Media & Entertainment",
     "scope": "Other notable"
+  },
+  {
+    "id": "emcare",
+    "name": "EmCare (Envision Healthcare)",
+    "ticker": "Private",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kureha",
+    "name": "Kureha",
+    "ticker": "TYO:4023",
+    "sector": "Chemicals",
+    "scope": "Other notable"
+  },
+  {
+    "id": "orf",
+    "name": "ORF (Austrian Broadcasting Corporation)",
+    "ticker": "Public broadcaster",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "hansells",
+    "name": "Hansells Solicitors",
+    "ticker": "Private",
+    "sector": "Legal services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "rhp",
+    "name": "Rehabilitation Hospital of the Pacific",
+    "ticker": "Nonprofit",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "babcockpower",
+    "name": "Babcock Power",
+    "ticker": "Private",
+    "sector": "Industrials",
+    "scope": "Other notable"
+  },
+  {
+    "id": "stripeintl",
+    "name": "Stripe International",
+    "ticker": "Private",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fujitsu",
+    "name": "Fujitsu",
+    "ticker": "TYO:6702",
+    "sector": "Technology",
+    "scope": "Global 500"
+  },
+  {
+    "id": "tvf",
+    "name": "The Viral Fever (TVF)",
+    "ticker": "Private",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kochibiennale",
+    "name": "Kochi Biennale Foundation",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "asobancaria",
+    "name": "Asobancaria",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "globo",
+    "name": "Grupo Globo",
+    "ticker": "Private",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "caracol",
+    "name": "Caracol Televisión",
+    "ticker": "Private",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "televisa",
+    "name": "Grupo Televisa",
+    "ticker": "BMV:TLEVISA",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "sco",
+    "name": "The Santa Cruz Operation",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
   }
 ]
