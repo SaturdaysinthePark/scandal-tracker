@@ -19,10 +19,11 @@ Low yield, mostly already covered: company-by-company Fortune 500 news searches,
 - Write candidates to a scratch JSON (one object per case, record-schema fields plus `proposed_status`, `notes`), then review against CLAUDE.md, merge into `data/records.json` with new ids `max(id)+1`, add companies to `data/companies.json`, run `python3 scripts/validate_data.py`, and commit.
 - Web searches are capped per session (`CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`); budget roughly 40 searches per agent and run at most ~5 agents per round.
 
-## Next targets (as of 2026-11-13)
-- **Countries barely covered**: Mexico, Colombia, Peru, Argentina, Austria, Italy, Switzerland; deeper Japan, India and Germany in local languages.
-- **Watch list**: ~80 watch records not researched in the last round. Closest to publishable: Jim McCarthy (Visa), Hong Ge (Airbnb), John Rogers (CFA Institute), Charlie Walk (UMG), Tony Barth (Delta Dental — company release exists but every copy was blocked), Albert Schultz (Soulpepper), Gustavo Martinez (WPP).
-- **US state courts**: state appellate decisions upholding harassment verdicts against executives; wrongful-termination rulings over undisclosed relationships.
-- **More disciplinary bodies**: US state bar discipline of law-firm leaders, accounting tribunals (ICAEW/FRC), medical boards for hospital executives.
-- **Pre-2000 history**: only a handful of cases; try newspaper archives (NYT/LA Times/AP/UPI archive pages) by year.
-- **Data hygiene**: `archive_url` and `verified_on` are empty on most records.
+## Next targets (as of 2026-11-13, after round 4)
+- **Agents stop early.** Round 4 agents quit after 4–8 searches until told "run at least 35 searches and report your count". Put that floor in every brief.
+- **Watch list**: promoted Walk, Schultz, Rogers, Hong Ge, Horowitz, Guimarães. Still close: Tony Barth (Delta Dental: open the Business Wire release in a real browser), Gustavo Martinez (WPP: open the WSJ/Business Insider settlement story), Jim McCarthy (Visa: needs a second outlet beyond WSJ). Consider dropping Bill Weber (Firefly) under the "cleared" rule.
+- **Latin America**: Mexico and Argentina searches found no qualifying corporate cases; Colombia/Brazil media (Caracol, Globo, Televisa) produced watch leads awaiting court outcomes (Vargas, Orrego charged in 2026). Re-check those trials.
+- **Europe/Asia**: Japanese TDnet/JPX timely disclosures ("不適切な行為", "辞任") are a good source of `confirmed` cases; JPX PDFs return 403 to fetchers, so use search snippets plus a second outlet. Italy and Switzerland yielded nothing new.
+- **Courts**: EEOC press releases naming the harasser plus appellate opinions (Cal. Ct. App., 5th Cir.) worked. Label opinions by citation, not the complainant's case name. FINRA, FRC/ICAEW and medical boards found nothing.
+- **Pre-2000**: NYT/LA Times/AP/UPI archive pages could not be fetched; leads (Larry Michels/SCO 1993 settlement, Charles Campbell/Florsheim 1999) need a library database or court docket.
+- **Data hygiene**: `archive_url` is still empty on most records.
