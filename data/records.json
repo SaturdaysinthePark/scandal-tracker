@@ -1394,6 +1394,10 @@
       {
         "label": "The Nightly, 19 Mar 2025",
         "url": "https://thenightly.com.au/business/wisetech-ceo-richard-white-misled-board-on-personal-relationships-review-reveals-c-18087484"
+      },
+      {
+        "label": "Reuters via The Star, 19 Mar 2025",
+        "url": "https://www.thestar.com.my/tech/tech-news/2025/03/19/australia039s-wisetech-founder-white-admits-to-incomplete-disclosure-after-review-findings"
       }
     ],
     "primary_url": "https://announcements.asx.com.au/asxpdf/20250319/pdf/06gs98m3y286q0.pdf",
@@ -1491,7 +1495,7 @@
     "disclosed": "2014-05",
     "category": "Relationship with employee",
     "outcome": "Departed early",
-    "evidence": "reported",
+    "evidence": "unconfirmed",
     "summary": "CFA Institute announced in March 2014 that President and CEO John Rogers would step down at the end of the fiscal year, then he left early after a board review. The Wall Street Journal reported that the board had looked into an affair between Rogers and a senior staff member. A CFA Institute spokesman told InvestmentNews that Rogers had raised a private matter with the board chair in late March, prompting a review, but declined to confirm that it involved a relationship with a co-worker.",
     "sources": [
       {
@@ -1518,7 +1522,7 @@
     "category": "Relationship with former employee",
     "outcome": "Resigned",
     "evidence": "unconfirmed",
-    "summary": "Stryker announced on February 8, 2012 that Stephen MacMillan had resigned as chairman, president and CEO for family reasons. The Wall Street Journal later reported, citing people familiar with the matter, that the board had lost confidence in him over a relationship with a former employee. Stryker declined to comment on the report.",
+    "summary": "Stryker announced on February 8, 2012 that Stephen MacMillan had resigned as chairman, president and CEO for family reasons. The Wall Street Journal later reported, citing people familiar with the matter, that some directors objected to how he handled a relationship with a former employee. At the April 2012 annual meeting, Chairman William Parfet said MacMillan had never violated any company policy or code of conduct, according to the Journal.",
     "sources": [
       {
         "label": "Stryker press release (8-K exhibit), Feb. 8, 2012",
@@ -1536,8 +1540,8 @@
     "primary_url": "https://www.sec.gov/Archives/edgar/data/0000310764/000031076412000030/sykexhibit021312.htm",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Company cited family reasons; relationship rests on anonymous WSJ sources not opened."
+    "status": "retracted",
+    "note": "Retracted 2026-11-13 from watch: relationship was with a former employee, reportedly disclosed to the board, and the chairman said no policy was broken."
   },
   {
     "id": 67,
