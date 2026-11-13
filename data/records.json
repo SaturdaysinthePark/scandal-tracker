@@ -1705,7 +1705,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "InvestmentNews relays a WSJ report that the board looked into an affair with a senior staff member. The CFA spokesman confirmed a board 'rigorous review' of a matter Rogers raised, leading to his departure, but would not confirm a relationship. The CFA release gives no reason. The 'reported' tier is likely met, but the WSJ article itself could not be opened. Promote once it is."
+    "note": "Search: board review followed Rogers disclosing a 'personal matter representing a potential conflict of interest' (search snippet; CFA spokesman). WSJ original still not opened. Arguably meets 'reported' via InvestmentNews relay plus CFA confirming the departure; caller's call."
   },
   {
     "id": 66,
@@ -1767,7 +1767,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "The 1998 CBS/AP coverage records his statement admitting a 'brief consensual sexual relationship' with a Mets employee. The claim was a harassment complaint, settled in Nov 1998 (NYT headline 'Mets Settle Claim of Harassment'). The harassment exclusion likely applies, so this is an editorial call."
+    "note": "Search: NYT 26 Nov 1998 'Mets Settle Claim of Harassment' (not opened); settlement terms undisclosed. Gap is editorial (harassment exclusion vs relationship acknowledged), not evidentiary. Unchanged."
   },
   {
     "id": 68,
@@ -2051,7 +2051,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "The BusinessWire release and Becker's returned 403. MedCity reports a firing over an unreported relationship with a subordinate but quotes no company wording naming it."
+    "note": "Search snippets attribute to the company the wording 'reasons relating to his engaging in and failing to report a consensual relationship with a subordinate employee', but BusinessWire, Becker's and DrBicuspid all 403; MedCity (opened) quotes only the chair's values line and says company had nothing to add. Very close: one opened copy of the release closes it."
   },
   {
     "id": 78,
@@ -2416,7 +2416,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Bloomberg (2 sources) and The Information both report that Airbnb found he breached its code by dating an employee. Airbnb confirmed the departure but gave no reason. The 'reported' tier is likely met, but the Bloomberg pages (bloomberg.com, BloombergQuint, DealStreetAsia) could not be opened. Promote once Bloomberg is read."
+    "note": "Bloomberg/BloombergQuint/DealStreetAsia/HRGrapevine still not opened (403). Search snippet shows a 2020 report referencing Ge's resignation 'after allegations' of an inappropriate personal relationship, but it was not opened. No court/agency records exist."
   },
   {
     "id": 91,
@@ -3349,7 +3349,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Check whether the 'settled' tier needs settlement by the person himself; Adweek frames it as JWT/WPP settling a suit against both. The settlement date (~2018) is taken from Adweek's 'two years after filing'. The complainant is named in public sources and in the Adweek URL, but not in the summary. JWT itself announced the April 2018 settlement (per search). Second settlement outlet (The Drum, Campa"
+    "note": "Second-outlet search: MediaPost, The Drum, Campaign Asia, Business Insider (businessinsider.in DNS failed; MediaPost 403) report JWT announced the April 2018 settlement, terms undisclosed. None of the listed major outlets found; still only Adweek opened. JWT's own statement satisfies company knowledge. Unchanged."
   },
   {
     "id": 125,
@@ -3457,7 +3457,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Search (no new page opened) found only WSJ-derived coverage; no independent second outlet or company confirmation of the allegation."
+    "note": "ABA Journal (opened): all detail traces to WSJ (a dozen+ sources); Cooley investigated for the board; outcome never disclosed; no comment from him. No court record. Unchanged."
   },
   {
     "id": 129,
@@ -3610,7 +3610,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Dec 2021 8-K (opened): the board found 'willful malfeasance' that would have justified termination, without describing the conduct. The 2021 employee suit (NYSHRL) alleged sexual harassment of male employees, which he called false. No ruling or settlement was found."
+    "note": "Servotronics FY2022 10-K (seen in search snippet; FY2023 10-K opened but Note 9 not reached) says the June 7 2021 Erie County suit against the company, board and Kenneth D. Trbovich seeks at least $5M and was 'in its earliest stages'; FY2023 10-K says the board treats his exit as a voluntary resignation with no severance due. No ruling or settlement found. The 2014 $4.7M arbitration concerned Nich"
   },
   {
     "id": 135,
@@ -3933,7 +3933,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Downgraded from publish. The settlement is now reported by two outlets (AP and TheWrap, both opened), but the settled tier also needs the company to confirm a departure, an investigation or knowledge of this claim. Neither article shows Arista or Sony was a party or commented. Sony's 2017 one-line exit statement concerned a different (assistant's) claim and did not name it. He made no admission. P"
+    "note": "Search: 2026 settlement concerns an Arista-era plaintiff (not Sony). Sony's 2017 exit statement was one line; Billboard/THR reported Sony opened an investigation after an assistant's lawyer's letter, outcome unknown. No settlement of the Epic claim found. Gap unchanged."
   },
   {
     "id": 147,
@@ -3957,7 +3957,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "UMG confirmed an investigation; needs two opened major outlets to reach 'reported'. He denies the allegations."
+    "note": "AP opened (one major outlet). NYT coverage seen only via Jezebel; NPR page timed out. Misconduct 'reported' needs a second independent major outlet opened; NYT is the candidate. Company confirmed investigation and departure."
   },
   {
     "id": 148,
@@ -4583,7 +4583,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Watch: the conduct is at a prior employer, where he was not an executive, and it is mixed with harassment allegations, which belong to the misconduct bar. The NYT original was not found or opened. WHYY opened: the NYT reported he dated subordinates at the PMA, apparently against museum policy. He declined to discuss it and suggested office politics."
+    "note": "Search: Inquirer/PhillyVoice relay NYT: 4 women acknowledged consensual relationships, 2 reported directly to him; PMA said 'We believe their stories' and its director later apologised. Erie said he is 'no longer employed'. Scope issue (prior non-exec role) unchanged; no lawsuit found."
   },
   {
     "id": 169,
@@ -4702,7 +4702,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Sources conflict on settlement terms and whether he was named; exit date and VP-level title unconfirmed."
+    "note": "Search: June 2022 NY judge (Jaffe) dismissed assault and quid-pro-quo claims as time-barred; appeals court revived hostile-environment claims; Oct 2023 settlement with ABC, dismissed with prejudice against network and Corn (per search snippets). Deadline fetch blocked. He called the claims fabrications. Title/seniority still unverified; unchanged."
   },
   {
     "id": 173,
@@ -4806,7 +4806,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "One major outlet (The Athletic/NYT); ESPN confirmed only the departure; he partly denies."
+    "note": "Opened Awful Announcing: The Athletic (20+ women, 6 in the 2023 HR probe) is the only originating outlet; ESPN gave no on-record confirmation of firing or investigation; Fitting denied specific claims. Still single-source; unchanged."
   },
   {
     "id": 178,
@@ -4889,7 +4889,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Visa cited a policy violation; WSJ reported relationships with female employees, seen only second-hand; needs a second independent outlet."
+    "note": "Search found only WSJ-derived digests and Recode/AP policy-violation coverage (IBTimes, MediaPost, PYMNTS). No court record, lawsuit or second independent outlet. Unchanged."
   },
   {
     "id": 181,
@@ -5322,26 +5322,21 @@
     "outcome": "Had already left; board apologised",
     "lost_role": false,
     "evidence": "confirmed",
-    "summary": "In February 2018 the Gate Theatre board said an independent review it commissioned found credible and consistent testimonies and that former artistic director Michael Colgan had a case to answer on dignity at work, abuse of power and inappropriate behaviours. The board issued an unreserved apology. Colgan rejected allegations of sexual harassment but apologised for causing distress, the Irish Times reported.",
+    "summary": "In February 2018 the Gate Theatre board said an independent review it commissioned found that former artistic director Michael Colgan had a case to answer on dignity at work, abuse of power and inappropriate behaviours, and the board apologised unreservedly. The amended review published in March 2018 listed conduct including comments and stories of a sexual nature to actresses and unwanted touching, the Irish Times reported. Colgan rejected allegations of sexual harassment, bullying and shouting at staff, saying he is a tactile person.",
     "sources": [
+      {
+        "label": "Irish Times, 8 Mar 2018 (published review)",
+        "url": "https://www.irishtimes.com/culture/stage/michael-colgan-has-case-to-answer-over-sex-harassment-claims-says-report-1.3418759"
+      },
       {
         "label": "Irish Times, 9 Feb 2018",
         "url": "https://www.irishtimes.com/culture/stage/michael-colgan-has-case-to-answer-over-behaviour-at-gate-1.3386606"
-      },
-      {
-        "label": "Irish Times: Colgan rejects allegations",
-        "url": "https://www.irishtimes.com/culture/stage/michael-colgan-rejects-allegations-of-sexual-harassment-1.3418771"
-      },
-      {
-        "label": "Gate Theatre review release",
-        "url": "https://gatetheatre.ie/board-gate-theatre-releases-independent-review-prepared-workplace-relations-expert-gaye-cunningham/"
       }
     ],
-    "primary_url": "https://gatetheatre.ie/board-gate-theatre-releases-independent-review-prepared-workplace-relations-expert-gaye-cunningham/",
+    "primary_url": "https://www.irishtimes.com/culture/stage/michael-colgan-has-case-to-answer-over-sex-harassment-claims-says-report-1.3418759",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Review found a 'case to answer' on abuse of power, not an explicit sexual-misconduct finding; he denies harassment."
+    "status": "published"
   },
   {
     "id": 195,
@@ -5380,10 +5375,10 @@
     "outcome": "Terminated for cause; severance claim dismissed",
     "lost_role": true,
     "evidence": "adjudicated",
-    "summary": "Acadia Realty fired Scholem, a senior vice president, after a 2009 sexual encounter with his administrative assistant, which the company said violated its policy on supervisor-subordinate relationships. In August 2014 a New York state court ruled that the company had fired him for cause and that he was not entitled to enhanced severance.",
+    "summary": "Acadia Realty fired Robert Scholem, its senior vice president and director of property management, in 2009 after an investigation into a sexual encounter with his directly supervised administrative assistant during a business trip. The company's handbook barred sexual relations between supervisors and subordinates, even consensual ones. In August 2014 the New York Supreme Court, Suffolk County, held as a matter of law that he was fired for cause and denied him enhanced severance. Scholem had said the assistant initiated the encounter.",
     "sources": [
       {
-        "label": "Scholem v. Acadia Realty L.P., 45 Misc.3d 562 (Sup. Ct. Suffolk Cty. 2014), Leagle",
+        "label": "Scholem v. Acadia Realty L.P., 45 Misc.3d 562 (Sup. Ct. Suffolk Cty., Aug 7 2014), Leagle",
         "url": "https://www.leagle.com/decision/innyco20140909216"
       },
       {
@@ -5394,8 +5389,7 @@
     "primary_url": "https://www.leagle.com/decision/innyco20140909216",
     "archive_url": null,
     "verified_on": null,
-    "status": "watch",
-    "note": "Court held he was fired for cause over a relationship with his assistant, but the full opinion and any news coverage were not opened."
+    "status": "published"
   },
   {
     "id": 197,
@@ -5424,7 +5418,7 @@
     "archive_url": null,
     "verified_on": null,
     "status": "watch",
-    "note": "Settled suits; needs a second opened major outlet."
+    "note": "Global News opened again: Soulpepper statement 'Legal actions commenced against Soulpepper on January 3, 2018 have been resolved'; Schultz's lawyer said settled 'satisfactory to him'; he denied the claims. Company confirmation is satisfied. CBC (both URLs) 403; BroadwayWorld/Vancouver Sun (PressReader) are other candidates. Still one opened outlet."
   },
   {
     "id": 198,
@@ -6456,5 +6450,634 @@
     "verified_on": null,
     "status": "watch",
     "note": "Single anonymous report; Disney gave no reason; he denied it."
+  },
+  {
+    "id": 231,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "sidneyfrank",
+    "executive": "Sidney Frank",
+    "role": "President and owner",
+    "disclosed": "1999-06",
+    "category": "Sexual harassment",
+    "outcome": "Company paid $2.6M under EEOC consent decree; no exit",
+    "lost_role": false,
+    "evidence": "settled",
+    "summary": "In 1997 the EEOC sued Sidney Frank Importing Co., the US importer of Jägermeister, alleging that more than 100 female employees were sexually harassed by its president and owner, Sidney Frank, and by other managers and customers. In June 1999 the company agreed to a federal consent decree in the Southern District of New York to pay $2.6 million into a claims fund, train supervisors, adopt an anti-harassment policy and drop mandatory arbitration of discrimination claims, the EEOC said. The EEOC release does not state whether the company admitted the allegations.",
+    "sources": [
+      {
+        "label": "EEOC press release, June 3, 1999",
+        "url": "https://www.eeoc.gov/index%2Ephp/newsroom/liquor-importer-pay-26-million-settlement-sex-harassment-lawsuit"
+      },
+      {
+        "label": "Civil Rights Litigation Clearinghouse: EEOC v. Sidney Frank Importing Co. (docket summary)",
+        "url": "https://clearinghouse.net/case/8376/"
+      },
+      {
+        "label": "Consent decree, June 15, 1999 (Clearinghouse)",
+        "url": "https://clearinghouse.net/doc/33394/"
+      }
+    ],
+    "primary_url": "https://www.eeoc.gov/index%2Ephp/newsroom/liquor-importer-pay-26-million-settlement-sex-harassment-lawsuit",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 232,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "troubleyn",
+    "executive": "Jan Fabre",
+    "role": "Founder and artistic director",
+    "disclosed": "2018-09",
+    "category": "Sexual harassment / indecent assault conviction",
+    "outcome": "Convicted; 18-month suspended sentence",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "In April 2022 the Antwerp criminal court convicted Jan Fabre, founder of the Troubleyn performance company, of workplace violence, bullying and sexual harassment toward performers who worked with him, and of indecent assault on one of them, The Art Newspaper and Belgian media reported. He received an 18-month suspended sentence and was acquitted on counts concerning another woman. Fabre denied wrongdoing.",
+    "sources": [
+      {
+        "label": "The Art Newspaper, 29 Apr 2022",
+        "url": "https://www.theartnewspaper.com/2022/04/29/artist-jan-fabre-given-18-month-sentence-by-a-belgian-court"
+      },
+      {
+        "label": "BX1: Jan Fabre condamné à 18 mois avec sursis",
+        "url": "https://bx1.be/categories/news/jan-fabre-condamne-a-18-mois-de-prison-avec-sursis/"
+      },
+      {
+        "label": "ArtReview",
+        "url": "https://artreview.com/belgian-artist-jan-fabre-sentenced-after-harassment-verdict/"
+      }
+    ],
+    "primary_url": "https://www.theartnewspaper.com/2022/04/29/artist-jan-fabre-given-18-month-sentence-by-a-belgian-court",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 233,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "fellesforbundet",
+    "executive": "Jørn Eggum",
+    "role": "Leader (forbundsleder)",
+    "disclosed": "2025-04",
+    "category": "Undisclosed relationship with subordinate",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "acknowledged",
+    "summary": "In April 2025 TV 2 reported that Jørn Eggum, leader of Fellesforbundet, had a sexual relationship from 2017 to 2022 with a union official who led one of its branches. Eggum confirmed the relationship and admitted he had not disclosed it, and the federation board said he should have informed it. He later resigned as federation leader and withdrew his candidacy to lead LO, after criticism of his role in the official's removal and severance talks. Eggum has denied sexually harassing anyone.",
+    "sources": [
+      {
+        "label": "Altinget, 29 Apr 2025",
+        "url": "https://www.altinget.no/statogstyring/artikkel/fellesforbundet-om-eggum-anklagene-burde-ha-informert-om-forhold"
+      },
+      {
+        "label": "Altinget: Eggum trekker seg som lederkandidat",
+        "url": "https://www.altinget.no/statogstyring/artikkel/joern-eggum-trekker-seg-som-lederkandidat"
+      },
+      {
+        "label": "Altinget: Eggum in court",
+        "url": "https://www.altinget.no/artikkel/joern-eggum-i-retten-jeg-har-aldri-seksuelt-trakassert-noen"
+      }
+    ],
+    "primary_url": "https://www.altinget.no/statogstyring/artikkel/fellesforbundet-om-eggum-anklagene-burde-ha-informert-om-forhold",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 234,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "johnnys",
+    "executive": "Johnny Kitagawa",
+    "role": "Founder and president",
+    "disclosed": "2023-09",
+    "category": "Sexual abuse of performers under his authority",
+    "outcome": "Died 2019; company admitted abuse, president resigned, compensation program set up",
+    "lost_role": false,
+    "evidence": "confirmed",
+    "summary": "An investigative panel set up by Johnny & Associates concluded in August 2023 that founder Johnny Kitagawa had repeatedly sexually assaulted trainee performers at the agency over decades. In September 2023 the company acknowledged the abuse, apologized, and said it would compensate victims, and its president resigned, AP and Bloomberg reported. Kitagawa, who died in 2019, was never charged and had denied the accusations while alive.",
+    "sources": [
+      {
+        "label": "AP via ClickOnDetroit, Sept 2023",
+        "url": "https://www.clickondetroit.com/entertainment/2023/09/07/the-president-of-a-japanese-boy-band-company-resigns-and-apologizes-for-late-uncles-sex-abuse/"
+      },
+      {
+        "label": "Bloomberg, Sept 2023",
+        "url": "https://www.bloomberg.com/news/articles/2023-09-07/head-of-j-pop-agency-johnny-s-resigns-over-sex-abuse-scandal"
+      },
+      {
+        "label": "Fortune (AP), Aug 2023 panel findings",
+        "url": "https://fortune.com/2023/08/30/damning-probe-confirms-decades-of-sexual-assault-by-boy-band-talent-agency-founder-johnny-kitagawa/"
+      }
+    ],
+    "primary_url": "https://www.clickondetroit.com/entertainment/2023/09/07/the-president-of-a-japanese-boy-band-company-resigns-and-apologizes-for-late-uncles-sex-abuse/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 235,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "yeonhui",
+    "executive": "Lee Youn-taek",
+    "role": "Founder and artistic director",
+    "disclosed": "2018-02",
+    "category": "Sexual assault of troupe members",
+    "outcome": "Convicted; 7-year prison sentence upheld by Supreme Court 2019",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "The Seoul Central District Court in September 2018 convicted theatre director Lee Youn-taek of sexually assaulting and harassing eight actresses and staff members of his troupe on 25 occasions since 2010, finding they were under his influence, the Korea Times reported. The Seoul High Court raised his sentence to seven years and the Supreme Court upheld it in 2019. Lee had said the contact was acting guidance and consensual.",
+    "sources": [
+      {
+        "label": "Korea Times, Sept 2018",
+        "url": "https://www.koreatimes.co.kr/amp/southkorea/law-crime/20180919/renowned-play-director-lee-sentenced-to-6-years-in-prison"
+      },
+      {
+        "label": "Free Malaysia Today (AFP), Sept 2018",
+        "url": "https://www.freemalaysiatoday.com/category/world/2018/09/19/top-south-korea-theatre-director-sentenced-to-six-years-for-sex-abuse"
+      }
+    ],
+    "primary_url": "https://www.koreatimes.co.kr/amp/southkorea/law-crime/20180919/renowned-play-director-lee-sentenced-to-6-years-in-prison",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 236,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "metopera",
+    "executive": "James Levine",
+    "role": "Music Director Emeritus; Artistic Director, Lindemann Young Artist Development Program",
+    "disclosed": "2018-03",
+    "category": "Sexual abuse and harassment",
+    "outcome": "Terminated",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "The Metropolitan Opera said in March 2018 that an outside-counsel investigation found credible evidence that Levine had engaged in sexually abusive and harassing conduct before and during his Met tenure, including toward early-career artists under his authority. The Met ended its relationship with him after suspending him in December 2017. Levine had denied the allegations; no criminal charges were filed.",
+    "sources": [
+      {
+        "label": "TheWrap, Mar 12 2018",
+        "url": "https://www.thewrap.com/metropolitan-opera-fires-conductor-james-levine-sexual-assault-investigation"
+      },
+      {
+        "label": "Met Opera statement",
+        "url": "https://metopera.org/link/3cdbf0e799e74a9489a99a297f33063f.aspx"
+      },
+      {
+        "label": "Gramophone",
+        "url": "https://www.gramophone.co.uk/classical-music-news/article/the-met-sacks-james-levine"
+      }
+    ],
+    "primary_url": "https://metopera.org/link/3cdbf0e799e74a9489a99a297f33063f.aspx",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 237,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "laopera",
+    "executive": "Plácido Domingo",
+    "role": "General Director",
+    "disclosed": "2020-03",
+    "category": "Sexual harassment",
+    "outcome": "Resigned (Oct 2019) before findings",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "LA Opera said in March 2020 that a Gibson Dunn investigation found credible the accounts of 10 women who alleged inappropriate conduct by Domingo between 1986 and 2019. Investigators found no evidence of quid pro quo or retaliation. Domingo, who resigned as general director in October 2019 after AP reported the allegations, denied unwanted contact; he apologized after a union inquiry and later said the apology gave a false impression.",
+    "sources": [
+      {
+        "label": "AP via WJLA, Mar 10 2020",
+        "url": "https://wjla.com/news/entertainment/la-opera-finds-harassment-reports-against-domingo-credible"
+      }
+    ],
+    "primary_url": "https://wjla.com/news/entertainment/la-opera-finds-harassment-reports-against-domingo-credible",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 238,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "clevelandorch",
+    "executive": "William Preucil",
+    "role": "Concertmaster",
+    "disclosed": "2018-10",
+    "category": "Sexual misconduct and harassment",
+    "outcome": "Terminated",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "The Cleveland Orchestra fired concertmaster Preucil in October 2018 after a Debevoise & Plimpton investigation found he engaged in sexual misconduct and sexually harassing behavior with multiple female students and colleagues over years. The orchestra had suspended him in July 2018 after a Washington Post report. Preucil admitted sexual contact with three students but denied other misconduct.",
+    "sources": [
+      {
+        "label": "WJCT/NPR, Oct 24 2018",
+        "url": "https://wjct.org/?p=115173"
+      },
+      {
+        "label": "NPR",
+        "url": "https://www.npr.org/2018/10/24/660248392/cleveland-orchestra-fires-two-leading-musicians-after-sexual-misconduct-investig"
+      }
+    ],
+    "primary_url": "https://wjct.org/?p=115173",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "published"
+  },
+  {
+    "id": 239,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "fox",
+    "executive": "Joe Chillemi",
+    "role": "Vice President, advertising and promotions, Fox News",
+    "disclosed": "2005-11",
+    "category": "Sexual harassment",
+    "outcome": "EEOC suit settled for $225,000 (2006); Fox denied wrongdoing",
+    "lost_role": false,
+    "evidence": "settled",
+    "summary": "In November 2005 the EEOC sued Fox News Network on behalf of four women who alleged that a vice president in its advertising and promotions department, Joe Chillemi, created a sexually hostile workplace with obscene and derogatory remarks about women, and that one woman was retaliated against for complaining. In July 2006 Fox agreed to a consent decree paying $225,000 to the four women and requiring training and policy changes, the Associated Press reported. Fox denied the claims, and settlements are not admissions of wrongdoing.",
+    "sources": [
+      {
+        "label": "AP via NBC News, July 31, 2006",
+        "url": "https://www.nbcnews.com/id/wbna14121891"
+      },
+      {
+        "label": "Salon, Aug 1, 2006 (names Chillemi)",
+        "url": "https://www.salon.com/2006/08/01/fox_35/"
+      },
+      {
+        "label": "Clearinghouse: EEOC v. Fox News Network LLC",
+        "url": "https://clearinghouse.net/case/8320"
+      },
+      {
+        "label": "Plansponsor: Fox News to Pay $225K",
+        "url": "https://www.plansponsor.com/fox-news-to-pay-225k-in-sexual-harassment-settlement/"
+      }
+    ],
+    "primary_url": "https://clearinghouse.net/case/8320",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "EEOC settlement confirmed, but only one outlet names him; below C-suite needs two."
+  },
+  {
+    "id": 240,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "caixa",
+    "executive": "Pedro Guimarães",
+    "role": "President (CEO)",
+    "disclosed": "2022-06",
+    "category": "Sexual harassment allegations by employees",
+    "outcome": "Resigned; criminal defendant",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Pedro Guimarães resigned as president of the Brazilian state bank Caixa Econômica Federal in June 2022 after Metrópoles reported allegations of sexual harassment by employees. A federal court in Brasília accepted prosecutors' charges of sexual and moral harassment, making him a defendant, and he denies the accusations. Caixa agreed with labour prosecutors to pay R$10 million in collective moral damages and said it would seek reimbursement from him.",
+    "sources": [
+      {
+        "label": "Folha Vitória: R$10m agreement",
+        "url": "https://www.folhavitoria.com.br/economia/caso-guimaraes-juiza-homologa-acordo-sobre-assedio-na-caixa-e-banco-tera-que-pagar-r-10-mi/"
+      },
+      {
+        "label": "Itatiaia: becomes defendant",
+        "url": "https://www.itatiaia.com.br/politica/justica-aceita-denuncia-contra-ex-presidente-da-caixa-que-vira-reu-por-assedio-sexual-e-moral/"
+      }
+    ],
+    "primary_url": "https://www.itatiaia.com.br/politica/justica-aceita-denuncia-contra-ex-presidente-da-caixa-que-vira-reu-por-assedio-sexual-e-moral/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Bank paid a labour settlement; criminal case has no verdict."
+  },
+  {
+    "id": 241,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "principal",
+    "executive": "Saül Gordillo",
+    "role": "Director of Principal; deputy to the CEO of EDC (former director of Catalunya Ràdio)",
+    "disclosed": "2023-05",
+    "category": "Sexual assault conviction",
+    "outcome": "Convicted; one year prison (upheld by Supreme Court)",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "In November 2024 Barcelona Criminal Court No. 7 convicted Saül Gordillo, a former director of Catalunya Ràdio, of sexually assaulting a journalist at the digital outlet he directed, during a company Christmas dinner in December 2022. He was sentenced to one year in prison and two years of supervised release. The Barcelona Provincial Court upheld the conviction in February 2025, and Spain's Supreme Court rejected his appeal in May 2025. In September 2025 a second court approved a plea agreement over a complaint by another journalist about the same night, Ara reported.",
+    "sources": [
+      {
+        "label": "Poder Judicial (TSJ Catalunya) press note, 26 Nov 2024",
+        "url": "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunales-Superiores-de-Justicia/TSJ-Cataluna/Noticias-Judiciales-TSJ-Cataluna/Un-juzgado-de-Barcelona-condena-a-un-exdirector-de-un-medio-de-comunicacion-por-un-delito-de-agresion-sexual-a-una-redactora"
+      },
+      {
+        "label": "El Debate: Supremo confirma, May 2025",
+        "url": "https://www.eldebate.com/espana/cataluna/20250528/supremo-confirma-pena-prision-exdirector-catalunya-radio-agresion-sexual_301483_amp.html"
+      },
+      {
+        "label": "Ara: second case plea deal",
+        "url": "https://es.ara.cat/sociedad/saul-gordillo-evita-carcel-juez-valida-pacto-segunda-agresion-sexual_1_5490501.html"
+      },
+      {
+        "label": "3Cat: complaint filed",
+        "url": "https://www.3cat.cat/3catinfo/saul-gordillo-denunciat-per-agressio-sexual-a-una-periodista-del-mitja-que-dirigeix/noticia/3203314/"
+      }
+    ],
+    "primary_url": "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Tribunales-Superiores-de-Justicia/TSJ-Cataluna/Noticias-Judiciales-TSJ-Cataluna/Un-juzgado-de-Barcelona-condena-a-un-exdirector-de-un-medio-de-comunicacion-por-un-delito-de-agresion-sexual-a-una-redactora",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Conviction final, but the outlet may not be notable."
+  },
+  {
+    "id": 242,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "ptv",
+    "executive": "Khalid Mehmood Lakhan",
+    "role": "General Manager, PTV Multan Centre",
+    "disclosed": "2023-05",
+    "category": "Sexual harassment of a staff member",
+    "outcome": "Dismissed from service and fined Rs1 million",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "Pakistan's Federal Ombudsperson for Protection against Harassment of Women at Workplace found PTV general manager Khalid Mehmood Lakhan guilty of sexually harassing a makeup artist at PTV Centre Multan and ordered his dismissal and a Rs1 million fine, Dawn reported. President Arif Alvi rejected his representation and upheld the penalties in May 2023.",
+    "sources": [
+      {
+        "label": "Dawn, May 2023",
+        "url": "https://dawn.com/news/1754487"
+      },
+      {
+        "label": "President of Pakistan press release",
+        "url": "https://president.gov.pk/president-upholds-dismissal-from-service-rs-1-million-fine-penalty-on-gm-ptv-in-harassment-case-2"
+      },
+      {
+        "label": "Express Tribune",
+        "url": "https://tribune.com.pk/story/2417682/entertainment"
+      }
+    ],
+    "primary_url": "https://president.gov.pk/president-upholds-dismissal-from-service-rs-1-million-fine-penalty-on-gm-ptv-in-harassment-case-2",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Ombudsperson finding upheld; as a regional station GM he is likely below VP level."
+  },
+  {
+    "id": 243,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "article19",
+    "executive": "Henry Maina",
+    "role": "Regional Director, Eastern Africa",
+    "disclosed": "2025-10",
+    "category": "Sexual harassment of a colleague",
+    "outcome": "Dismissed 2019; dismissal upheld by court",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "Kenya's Employment and Labour Relations Court ruled in 2025 that ARTICLE 19's 2019 dismissal of Eastern Africa regional director Henry Maina for gross misconduct was lawful, finding sexual harassment through unwelcome suggestive messages to a female colleague proven, HapaKenya reported. The court rejected his argument that the messages were protected expression and dismissed his damages claims.",
+    "sources": [
+      {
+        "label": "HapaKenya, Oct 2025",
+        "url": "https://hapakenya.com/2025/10/02/court-rules-firing-of-ex-article-19-director-henry-maina-over-sexual-harassment-lawful"
+      }
+    ],
+    "primary_url": "https://hapakenya.com/2025/10/02/court-rules-firing-of-ex-article-19-director-henry-maina-over-sexual-harassment-lawful",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Labour court found harassment proven; judgment not located and only one outlet opened."
+  },
+  {
+    "id": 244,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "nextkitchen",
+    "executive": "Jung Seung-bin",
+    "role": "CEO",
+    "disclosed": "2026-01",
+    "category": "Indecent assault of a trainee employee",
+    "outcome": "Convicted; 6 months suspended 2 years; removed from operations",
+    "lost_role": true,
+    "evidence": "adjudicated",
+    "summary": "The Seoul Eastern District Court in April 2026 sentenced Next Kitchen CEO Jung Seung-bin to six months in prison, suspended for two years, for molesting a trainee employee, the Herald reported. Jung admitted the charge and reached a settlement with the employee. Next Kitchen had said in January 2026 that he would be excluded from operations, though he remained registered as its internal director.",
+    "sources": [
+      {
+        "label": "Herald Economy, Apr 2026",
+        "url": "https://www.heraldk.com/article/2026040622285645136"
+      },
+      {
+        "label": "Seoul Economic Daily, Mar 2026",
+        "url": "https://en.sedaily.com/society/2026/03/10/kurly-ceos-husband-admits-to-groping-employee-prosecutors"
+      },
+      {
+        "label": "Digital Today",
+        "url": "https://www.digitaltoday.co.kr/en/view/1833/nextkitchen-suspends-husband-of-kurly-chief-indicted-for-sexual-assault"
+      }
+    ],
+    "primary_url": "https://www.heraldk.com/article/2026040622285645136",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Convicted and admitted it, but the company is small."
+  },
+  {
+    "id": 245,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "hype",
+    "executive": "Ken Lim",
+    "role": "Executive director",
+    "disclosed": "2023-01",
+    "category": "Molestation of a talent recruit",
+    "outcome": "Convicted Sept 2025; 13 months' jail; appeal pending",
+    "lost_role": false,
+    "evidence": "adjudicated",
+    "summary": "A Singapore district court convicted Hype Records executive director Ken Lim in September 2025 of molesting a 25-year-old woman during a work meeting at the label's office in 2021 and sentenced him to 13 months' jail, The Star reported. He has appealed the conviction.",
+    "sources": [
+      {
+        "label": "The Star, Nov 2025",
+        "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2025/11/18/ex-singapore-idol-judge-ken-lim-gets-13-months-jail-for-molesting-25-year-old-woman"
+      },
+      {
+        "label": "Mothership, Sept 2026 appeal",
+        "url": "https://mothership.sg/2026/09/ken-lim-appeal/"
+      }
+    ],
+    "primary_url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2025/11/18/ex-singapore-idol-judge-ken-lim-gets-13-months-jail-for-molesting-25-year-old-woman",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Convicted, but the woman was a talent recruit, not an employee; appeal pending."
+  },
+  {
+    "id": 246,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "concertgebouw",
+    "executive": "Daniele Gatti",
+    "role": "Chief Conductor",
+    "disclosed": "2018-08",
+    "category": "Inappropriate behavior toward colleagues",
+    "outcome": "Terminated",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "The Royal Concertgebouw Orchestra ended its work with chief conductor Gatti in August 2018, citing reports of inappropriate behavior after a Washington Post article, and said the matter had irreparably damaged trust. Gatti had apologized to women he worked with, then through his lawyer firmly denied the allegations. The orchestra and Gatti later settled the dismissal dispute.",
+    "sources": [
+      {
+        "label": "Classic FM, Aug 2018",
+        "url": "https://www.classicfm.com/music-news/daniele-gatti-sexual-harassment/"
+      },
+      {
+        "label": "NWPB/NPR: settlement",
+        "url": "https://nwpb.org/?p=48958"
+      }
+    ],
+    "primary_url": "https://www.classicfm.com/music-news/daniele-gatti-sexual-harassment/",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Orchestra's wording ('inappropriate behaviour') does not name sexual conduct; dismissal dispute later settled."
+  },
+  {
+    "id": 247,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "emerson",
+    "executive": "Leon Wieseltier",
+    "role": "Editor of planned magazine (Idea)",
+    "disclosed": "2017-10",
+    "category": "Unwanted advances toward colleagues",
+    "outcome": "Terminated; magazine cancelled",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "Emerson Collective said in October 2017 it ended its business relationship with Wieseltier after learning of past inappropriate workplace conduct, and suspended the magazine he was to edit. Wieseltier apologized for offenses against some of his colleagues in the past. The New York Times reported that women who worked with him at The New Republic described harassment and unwanted advances.",
+    "sources": [
+      {
+        "label": "TheWrap, Oct 24 2017",
+        "url": "https://thewrap.com/laurene-powell-jobs-kills-new-magazine-leon-wieseltier-admits-sexual-misconduct"
+      },
+      {
+        "label": "CNN Money",
+        "url": "https://money.cnn.com/2017/10/24/media/leon-wieseltier-emerson-collective/index.html"
+      }
+    ],
+    "primary_url": "https://thewrap.com/laurene-powell-jobs-kills-new-magazine-leon-wieseltier-admits-sexual-misconduct",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Employer cited 'inappropriate workplace conduct' without naming sexual conduct."
+  },
+  {
+    "id": 248,
+    "type": "misconduct",
+    "role_level": "prominent",
+    "company_id": "activision",
+    "executive": "Alex Afrasiabi",
+    "role": "Senior Creative Director, World of Warcraft",
+    "disclosed": "2021-07",
+    "category": "Sexual harassment of employees",
+    "outcome": "Terminated (2020)",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "Activision Blizzard said in 2021 that it had investigated former World of Warcraft creative director Afrasiabi and terminated him in 2020 for misconduct in his treatment of other employees. California's civil-rights lawsuit against the company alleged he made unwanted advances toward female employees at BlizzCon 2013. He did not publicly respond.",
+    "sources": [
+      {
+        "label": "NME, Jul 2021",
+        "url": "https://www.nme.com/news/activision-blizzard-confirm-former-world-of-warcraft-director-was-fired-for-misconduct-3007645"
+      }
+    ],
+    "primary_url": "https://www.nme.com/news/activision-blizzard-confirm-former-world-of-warcraft-director-was-fired-for-misconduct-3007645",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Company confirmed misconduct firing; seniority and sexual element in the company's own words unconfirmed."
+  },
+  {
+    "id": 249,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "wme",
+    "executive": "Adam Venit",
+    "role": "Head of Motion Picture Group",
+    "disclosed": "2017-11",
+    "category": "Sexual assault allegation (groping)",
+    "outcome": "Suspended, demoted; retired after settlement",
+    "lost_role": true,
+    "evidence": "settled",
+    "summary": "Actor Terry Crews, who identified himself publicly, sued Venit and WME alleging Venit groped him at a 2016 party. WME suspended Venit and removed him as head of its motion picture group, and in September 2018 said the parties had settled the lawsuit; Venit retired from the agency. Settlements are not admissions, and prosecutors declined to charge, citing the statute of limitations.",
+    "sources": [
+      {
+        "label": "TheWrap, Sep 2018",
+        "url": "https://thewrap.com/wme-agent-adam-venit-stepping-sexual-harassment-lawsuit-comes-close"
+      },
+      {
+        "label": "Hollywood Reporter",
+        "url": "https://www.hollywoodreporter.com/news/adam-venit-exiting-wme-1058735"
+      }
+    ],
+    "primary_url": "https://thewrap.com/wme-agent-adam-venit-stepping-sexual-harassment-lawsuit-comes-close",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Settled, but the complainant was a client, not a colleague."
+  },
+  {
+    "id": 250,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "vice",
+    "executive": "Mike Germano",
+    "role": "Chief Digital Officer",
+    "disclosed": "2018-01",
+    "category": "Sexual harassment allegations",
+    "outcome": "Departed",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "The New York Times reported in December 2017 that two women accused Germano of sexual misconduct; Vice placed him on leave and said in January 2018 he would not return. Germano said his exit was planned and denied being fired; he told the Times he apologized for one incident.",
+    "sources": [
+      {
+        "label": "CNN Money",
+        "url": "https://money.cnn.com/2018/01/30/media/vice-media-chief-digital-officer-mike-germano/index.html"
+      },
+      {
+        "label": "TheWrap",
+        "url": "https://thewrap.com/vice-media-fires-chief-digital-officer-mike-germano-sexual-misconduct-accusations-exclusive"
+      }
+    ],
+    "primary_url": "https://money.cnn.com/2018/01/30/media/vice-media-chief-digital-officer-mike-germano/index.html",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Only the NYT did original reporting."
+  },
+  {
+    "id": 251,
+    "type": "misconduct",
+    "role_level": "executive",
+    "company_id": "hearst",
+    "executive": "Troy Young",
+    "role": "President, Hearst Magazines",
+    "disclosed": "2020-07",
+    "category": "Sexual remarks / inappropriate conduct",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "reported",
+    "summary": "Young resigned in July 2020 a day after a New York Times report described lewd and sexist remarks and other conduct. He told the Times the specific allegations were untrue, exaggerated or taken out of context.",
+    "sources": [
+      {
+        "label": "TheWrap",
+        "url": "https://thewrap.com/hearst-magazines-president-troy-young-resigns"
+      }
+    ],
+    "primary_url": "https://thewrap.com/hearst-magazines-president-troy-young-resigns",
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Only the NYT did original reporting; he disputes characterisations."
   }
 ]

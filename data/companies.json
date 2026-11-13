@@ -1363,5 +1363,145 @@
     "ticker": "ELV",
     "sector": "Health Insurance",
     "scope": "Fortune 500"
+  },
+  {
+    "id": "sidneyfrank",
+    "name": "Sidney Frank Importing Co.",
+    "ticker": "Private",
+    "sector": "Beverages",
+    "scope": "Other notable"
+  },
+  {
+    "id": "troubleyn",
+    "name": "Troubleyn (Jan Fabre company)",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fellesforbundet",
+    "name": "Fellesforbundet",
+    "ticker": "Nonprofit",
+    "sector": "Labour Union",
+    "scope": "Other notable"
+  },
+  {
+    "id": "johnnys",
+    "name": "Johnny & Associates (Smile-Up)",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "yeonhui",
+    "name": "Yeonhui Street Troupe",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "metopera",
+    "name": "Metropolitan Opera",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "laopera",
+    "name": "LA Opera",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "clevelandorch",
+    "name": "Cleveland Orchestra",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "caixa",
+    "name": "Caixa Econômica Federal",
+    "ticker": "State-owned",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "principal",
+    "name": "Principal (EDC)",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ptv",
+    "name": "Pakistan Television Corporation",
+    "ticker": "State-owned",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "article19",
+    "name": "ARTICLE 19",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "nextkitchen",
+    "name": "Next Kitchen",
+    "ticker": "Private",
+    "sector": "Food",
+    "scope": "Other notable"
+  },
+  {
+    "id": "hype",
+    "name": "Hype Records",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "concertgebouw",
+    "name": "Royal Concertgebouw Orchestra",
+    "ticker": "Nonprofit",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "emerson",
+    "name": "Emerson Collective",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "activision",
+    "name": "Activision Blizzard",
+    "ticker": "Private",
+    "sector": "Gaming",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wme",
+    "name": "WME (Endeavor)",
+    "ticker": "EDR",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "vice",
+    "name": "Vice Media",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "hearst",
+    "name": "Hearst",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
   }
 ]
