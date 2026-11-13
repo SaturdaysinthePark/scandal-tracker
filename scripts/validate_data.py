@@ -7,8 +7,9 @@ ROOT = Path(__file__).resolve().parent.parent / "data"
 SCOPES = {"Fortune 500", "Global 500", "Other notable"}
 TIERS = {"confirmed", "acknowledged", "reported", "unconfirmed", "adjudicated"}
 TYPES = {"relationship", "misconduct"}
+LEVELS = {"executive", "prominent"}
 STATUSES = {"published", "watch", "retracted"}
-REQ = ["id", "type", "company_id", "executive", "role", "disclosed", "category", "outcome", "evidence", "summary", "sources", "status"]
+REQ = ["id", "type", "role_level", "company_id", "executive", "role", "disclosed", "category", "outcome", "evidence", "summary", "sources", "status"]
 
 errors, warnings = [], []
 companies = json.loads((ROOT / "companies.json").read_text())
@@ -37,6 +38,9 @@ for r in records:
         errors.append(f"record {rid}: misconduct records cannot be published as unconfirmed")
     if r.get("type") == "relationship" and r.get("evidence") == "adjudicated":
         warnings.append(f"record {rid}: adjudicated tier on a relationship record")
+    if r.get("role_level") not in LEVELS: errors.append(f"record {rid}: bad role_level {r.get('role_level')!r}")
+    if r.get("role_level") == "prominent" and r.get("status") == "published" and r.get("evidence") not in ("confirmed", "adjudicated"):
+        errors.append(f"record {rid}: prominent-employee records must be confirmed or adjudicated to publish")
     if r.get("status") not in STATUSES: errors.append(f"record {rid}: bad status {r.get('status')!r}")
     for u in [r.get("primary_url"), r.get("archive_url")] + [s.get("url") for s in r.get("sources", [])]:
         if u and not u.startswith("https://"): errors.append(f"record {rid}: non-https url {u}")

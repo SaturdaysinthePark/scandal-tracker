@@ -5,7 +5,7 @@
   const SCOPES = ['All', 'Fortune 500', 'Global 500', 'Other notable'];
   const NO_EXIT = /^(no |remained|leave of absence)/i;
 
-  const st = { view: 'timeline', scope: 'All', showU: true, showZero: false, end: null, q: '', sel: null, calU: true, calSel: null, type: 'all' };
+  const st = { view: 'timeline', scope: 'All', showU: true, showZero: false, end: null, q: '', sel: null, calU: true, calSel: null, type: 'all', showP: true };
   const TYPES = [['all', 'All cases'], ['relationship', 'Relationships'], ['misconduct', 'Misconduct']];
   let companies = [], byCo = {}, records = [], tiers = {}, maxYear = new Date().getFullYear();
 
@@ -15,7 +15,9 @@
   const dateLabel = (r) => `${MONTHS[+r.disclosed.slice(5, 7) - 1]} ${r.disclosed.slice(0, 4)}`;
   const isU = (r) => r.evidence === 'unconfirmed';
   const isM = (r) => r.type === 'misconduct';
-  const typeOk = (r) => st.type === 'all' || r.type === st.type;
+  const isP = (r) => r.role_level === 'prominent';
+  const typeOk = (r) => (st.type === 'all' || r.type === st.type) && (st.showP || !isP(r));
+  const roleLine = (r) => `${esc(r.role)}${isP(r) ? ' · <span class="ptag">Prominent employee</span>' : ''}`;
   const markCls = (r) => `${isU(r) ? 'ring' : ''} ${isM(r) ? 'sq' : ''}`;
   const dotHtml = (r, cls = '') => `<i class="dot ${cls} ${markCls(r)}"></i>`;
   const safeUrl = (u) => (typeof u === 'string' && /^https:\/\//.test(u) ? u : null);
@@ -125,7 +127,7 @@
       <tr data-id="${r.id}" tabindex="0">
         <td class="td-date">${esc(dateLabel(r))}</td>
         <td class="td-co">${esc(byCo[r.company_id]?.name)}</td>
-        <td class="td-ex"><div>${esc(r.executive)}</div><div class="sub">${esc(r.role)}</div></td>
+        <td class="td-ex"><div>${esc(r.executive)}</div><div class="sub">${roleLine(r)}</div></td>
         <td>${esc(r.category)}</td>
         <td>${esc(r.outcome)}</td>
         <td><div class="ev">${dotHtml(r, 'sm')}${esc(tiers[r.evidence] || r.evidence)}</div></td>
@@ -173,7 +175,7 @@
     $('drawer').innerHTML = `
       <div class="dr-top"><div>
         <div class="dr-meta">${esc(byCo[r.company_id]?.name)} · ${esc(dateLabel(r))}</div>
-        <div class="dr-name">${esc(r.executive)}</div><div class="dr-role">${esc(r.role)}</div></div>
+        <div class="dr-name">${esc(r.executive)}</div><div class="dr-role">${roleLine(r)}</div></div>
         <button class="dr-x" id="drClose" aria-label="Close">×</button></div>
       <div class="pills"><div class="pill">${dotHtml(r, 'sm')}${esc(tiers[r.evidence] || r.evidence)}</div>
         <div class="pill">${esc(r.category)}</div><div class="pill">${esc(r.outcome)}</div></div>
@@ -193,6 +195,7 @@
     const VIEWS = ['timeline', 'calendar', 'records', 'about'];
     st.view = VIEWS.includes(v) ? v : 'timeline';
     for (const k of VIEWS) $(`v-${k}`).hidden = k !== st.view;
+    document.querySelectorAll('.pChk').forEach((el) => { el.checked = st.showP; });
     document.querySelectorAll('.typeSeg').forEach((el) => { el.innerHTML = TYPES.map(([k, l]) => `<button data-type="${k}" class="${k === st.type ? 'on' : ''}">${l}</button>`).join(''); });
     if (st.view === 'calendar') renderCalendar();
     document.querySelectorAll('#tabs button').forEach((b) => b.classList.toggle('on', b.dataset.view === st.view));
@@ -211,6 +214,7 @@
     $('rows').addEventListener('click', (e) => { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); });
     $('rows').addEventListener('keydown', (e) => { if (e.key === 'Enter') { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); } });
     document.addEventListener('click', (e) => { const t = e.target.closest('.typeSeg button')?.dataset.type; if (t) { st.type = t; st.calSel = null; show(); } });
+    document.addEventListener('change', (e) => { if (e.target.classList?.contains('pChk')) { st.showP = e.target.checked; st.calSel = null; show(); } });
     $('calU').addEventListener('change', (e) => { st.calU = e.target.checked; renderCalendar(); });
     $('heat').addEventListener('click', (e) => { const m = e.target.closest('button.hm-c')?.dataset.m; if (m) { st.calSel = st.calSel === m ? null : m; renderCalendar(); } });
     $('monthList').addEventListener('click', (e) => { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); });

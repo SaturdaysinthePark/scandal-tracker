@@ -19,6 +19,9 @@ Exclude from the relationship category:
 - Rumors, tabloids, social media posts and anonymous forums on their own.
 - Departures for vague "personal conduct" with no reporting that ties them to a relationship. Note these as `status: "watch"` candidates, not published records.
 
+## Prominent employees (`role_level: "prominent"`)
+Rule 1 normally limits the tracker to executives (`role_level: "executive"`, the default). A **prominent employee** is a non-executive employee of the company who was widely known in their own right: on-air anchors and hosts, star editors and producers, star portfolio managers or traders, and similar. They may be included in either category, but **only** at the `confirmed` or `adjudicated` tier (the company's own finding or statement, or a court/regulator finding). Exclude freelancers, contractors, contributors, actors and athletes. The app labels these records and lets readers hide them.
+
 ## Misconduct category (`type: "misconduct"`)
 Sexual harassment, sexual assault or abuse, unwanted advances, sexually inappropriate conduct or comments toward colleagues, and retaliation tied to them. Not financial or other non-sexual misconduct.
 
@@ -50,6 +53,7 @@ Upgrade or retract records as facts change. Never delete a published record sile
 {
   "id": 32,
   "type": "relationship",          // relationship | misconduct
+  "role_level": "executive",       // executive | prominent (see "Prominent employees")
   "company_id": "acme",            // must exist in companies.json
   "executive": "Jane Doe",
   "role": "CFO",                   // role at the time

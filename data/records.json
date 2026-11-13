@@ -2,6 +2,7 @@
   {
     "id": 1,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "boeing",
     "executive": "Harry Stonecipher",
     "role": "President & CEO",
@@ -23,6 +24,7 @@
   {
     "id": 2,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "hp",
     "executive": "Mark Hurd",
     "role": "Chairman & CEO",
@@ -44,6 +46,7 @@
   {
     "id": 3,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "bestbuy",
     "executive": "Brian Dunn",
     "role": "CEO",
@@ -68,6 +71,7 @@
   {
     "id": 4,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "lockheed",
     "executive": "Christopher Kubasik",
     "role": "President & COO (CEO-elect)",
@@ -89,6 +93,7 @@
   {
     "id": 27,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "igate",
     "executive": "Phaneesh Murthy",
     "role": "President & CEO",
@@ -110,6 +115,7 @@
   {
     "id": 29,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "alphabet",
     "executive": "Sergey Brin",
     "role": "Co-founder",
@@ -131,6 +137,7 @@
   {
     "id": 13,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "booking",
     "executive": "Darren Huston",
     "role": "President & CEO",
@@ -152,6 +159,7 @@
   {
     "id": 30,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "lululemon",
     "executive": "Laurent Potdevin",
     "role": "CEO",
@@ -179,6 +187,7 @@
   {
     "id": 5,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "intel",
     "executive": "Brian Krzanich",
     "role": "CEO",
@@ -200,6 +209,7 @@
   {
     "id": 14,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "alphabet",
     "executive": "David Drummond",
     "role": "Chief Legal Officer",
@@ -224,6 +234,7 @@
   {
     "id": 24,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "alphabet",
     "executive": "Andy Rubin",
     "role": "SVP, creator of Android",
@@ -248,6 +259,7 @@
   {
     "id": 26,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "kemet",
     "executive": "Per-Olof Loof",
     "role": "CEO",
@@ -269,6 +281,7 @@
   {
     "id": 6,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "amazon",
     "executive": "Jeff Bezos",
     "role": "Founder & CEO",
@@ -290,6 +303,7 @@
   {
     "id": 7,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "mcdonalds",
     "executive": "Steve Easterbrook",
     "role": "President & CEO",
@@ -314,6 +328,7 @@
   {
     "id": 8,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "microsoft",
     "executive": "Bill Gates",
     "role": "Co-founder & board member",
@@ -338,6 +353,7 @@
   {
     "id": 31,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "ares",
     "executive": "Michael McFerran",
     "role": "CFO & COO",
@@ -359,6 +375,7 @@
   {
     "id": 15,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "att",
     "executive": "Jeff Zucker",
     "role": "President, CNN / WarnerMedia chair of news & sports",
@@ -380,6 +397,7 @@
   {
     "id": 25,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "wwe",
     "executive": "Vince McMahon",
     "role": "Chairman & CEO",
@@ -404,6 +422,7 @@
   {
     "id": 20,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "comcast",
     "executive": "Jeff Shell",
     "role": "CEO, NBCUniversal",
@@ -427,6 +446,7 @@
   {
     "id": 17,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "bp",
     "executive": "Bernard Looney",
     "role": "CEO",
@@ -451,6 +471,7 @@
   {
     "id": 21,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "cboe",
     "executive": "Edward Tilly",
     "role": "Chairman, President & CEO",
@@ -472,6 +493,7 @@
   {
     "id": 28,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "bp",
     "executive": "Murray Auchincloss",
     "role": "CFO, then CEO",
@@ -496,6 +518,7 @@
   {
     "id": 23,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "rbc",
     "executive": "Nadine Ahn",
     "role": "CFO",
@@ -520,6 +543,7 @@
   {
     "id": 22,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "helios",
     "executive": "Josef Matosevic",
     "role": "President & CEO",
@@ -541,6 +565,7 @@
   {
     "id": 19,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "norfolk",
     "executive": "Alan Shaw",
     "role": "President & CEO",
@@ -562,6 +587,7 @@
   {
     "id": 9,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "kohls",
     "executive": "Ashley Buchanan",
     "role": "CEO",
@@ -583,6 +609,7 @@
   {
     "id": 16,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "astronomer",
     "executive": "Andy Byron",
     "role": "CEO",
@@ -604,6 +631,7 @@
   {
     "id": 18,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "nestle",
     "executive": "Laurent Freixe",
     "role": "CEO",
@@ -625,6 +653,7 @@
   {
     "id": 10,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "nvidia",
     "executive": "Jensen Huang",
     "role": "Co-founder, President & CEO",
@@ -658,6 +687,7 @@
   {
     "id": 11,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "nvidia",
     "executive": "Jensen Huang",
     "role": "Co-founder, President & CEO",
@@ -683,6 +713,7 @@
   {
     "id": 12,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "nvidia",
     "executive": "Jensen Huang",
     "role": "Co-founder, President & CEO",
@@ -708,6 +739,7 @@
   {
     "id": 32,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "zoetis",
     "executive": "Glenn David",
     "role": "Executive Vice President and Group President, U.S. Operations",
@@ -730,6 +762,7 @@
   {
     "id": 33,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "exscientia",
     "executive": "Andrew Hopkins",
     "role": "CEO and Executive Director",
@@ -752,6 +785,7 @@
   {
     "id": 34,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "superretail",
     "executive": "Anthony Heraghty",
     "role": "Group Managing Director and CEO",
@@ -782,6 +816,7 @@
   {
     "id": 35,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "rsgroup",
     "executive": "David Egan",
     "role": "CFO and Executive Director",
@@ -808,6 +843,7 @@
   {
     "id": 36,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "rei",
     "executive": "Jerry Stritzke",
     "role": "President and CEO",
@@ -834,6 +870,7 @@
   {
     "id": 37,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "blackrock",
     "executive": "Mark Wiseman",
     "role": "Global Head of Active Equities; Chairman, BlackRock Alternative Investors",
@@ -860,6 +897,7 @@
   {
     "id": 38,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "sevenwest",
     "executive": "Tim Worner",
     "role": "CEO",
@@ -886,6 +924,7 @@
   {
     "id": 39,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "rh",
     "executive": "Gary Friedman",
     "role": "Chairman and Co-CEO",
@@ -912,6 +951,7 @@
   {
     "id": 40,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "fluidigm",
     "executive": "Gajus Worthington",
     "role": "President and CEO",
@@ -938,6 +978,7 @@
   {
     "id": 41,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "lilly",
     "executive": "Joshua Smiley",
     "role": "Senior Vice President and CFO",
@@ -961,6 +1002,7 @@
   {
     "id": 42,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "galp",
     "executive": "Filipe Silva",
     "role": "CEO and Vice-Chairman",
@@ -991,6 +1033,7 @@
   {
     "id": 43,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "aig",
     "executive": "John Neal",
     "role": "Incoming President (former Lloyd's of London CEO)",
@@ -1014,6 +1057,7 @@
   {
     "id": 44,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "parkhotels",
     "executive": "Robert Tanenbaum",
     "role": "Executive Vice President, Asset Management",
@@ -1040,6 +1084,7 @@
   {
     "id": 45,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "blackrock",
     "executive": "Jeff Smith",
     "role": "Global Head of Human Resources",
@@ -1063,6 +1108,7 @@
   {
     "id": 46,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "markel",
     "executive": "Anthony Belisle",
     "role": "CEO, Markel CATCo (subsidiary)",
@@ -1089,6 +1135,7 @@
   {
     "id": 47,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "libertytax",
     "executive": "John Hewitt",
     "role": "CEO and Chairman",
@@ -1116,6 +1163,7 @@
   {
     "id": 48,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "ti",
     "executive": "Brian Crutcher",
     "role": "President and CEO",
@@ -1139,6 +1187,7 @@
   {
     "id": 49,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "rambus",
     "executive": "Ron Black",
     "role": "CEO",
@@ -1162,6 +1211,7 @@
   {
     "id": 50,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "natwest",
     "executive": "Fred Goodwin",
     "role": "CEO (former at time of disclosure)",
@@ -1189,6 +1239,7 @@
   {
     "id": 51,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "starwood",
     "executive": "Steven Heyer",
     "role": "CEO",
@@ -1212,6 +1263,7 @@
   {
     "id": 52,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "redcross",
     "executive": "Mark Everson",
     "role": "President and CEO",
@@ -1234,6 +1286,7 @@
   {
     "id": 53,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "pegula",
     "executive": "Russ Brandon",
     "role": "President, Buffalo Bills and Buffalo Sabres",
@@ -1264,6 +1317,7 @@
   {
     "id": 54,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "pegula",
     "executive": "John Roth",
     "role": "Chief Operating Officer",
@@ -1286,6 +1340,7 @@
   {
     "id": 55,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "officedepot",
     "executive": "Charlie Brown",
     "role": "President, International Division",
@@ -1316,6 +1371,7 @@
   {
     "id": 56,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "highmark",
     "executive": "Kenneth Melani",
     "role": "President and CEO",
@@ -1350,6 +1406,7 @@
   {
     "id": 57,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "axelspringer",
     "executive": "Julian Reichelt",
     "role": "Editor-in-chief, Bild (chair of Bild group editorial management)",
@@ -1372,6 +1429,7 @@
   {
     "id": 58,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "skgroup",
     "executive": "Chey Tae-won",
     "role": "Chairman",
@@ -1394,6 +1452,7 @@
   {
     "id": 59,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "afl",
     "executive": "Simon Lethlean",
     "role": "General Manager, Football Operations",
@@ -1416,6 +1475,7 @@
   {
     "id": 60,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "afl",
     "executive": "Richard Simkiss",
     "role": "General Manager, Commercial Operations",
@@ -1438,6 +1498,7 @@
   {
     "id": 61,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "wisetech",
     "executive": "Richard White",
     "role": "Founder, CEO (later executive chair)",
@@ -1468,6 +1529,7 @@
   {
     "id": 62,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "l3harris",
     "executive": "Christopher Kubasik",
     "role": "Chairman and CEO",
@@ -1499,6 +1561,7 @@
   {
     "id": 63,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "wework",
     "executive": "Grant McGrail",
     "role": "SVP, account sales and strategic alliances",
@@ -1530,6 +1593,7 @@
   {
     "id": 64,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "thinkingmachines",
     "executive": "Barret Zoph",
     "role": "Co-founder and CTO",
@@ -1553,6 +1617,7 @@
   {
     "id": 65,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "cfainstitute",
     "executive": "John Rogers",
     "role": "President and CEO",
@@ -1580,6 +1645,7 @@
   {
     "id": 66,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "stryker",
     "executive": "Stephen MacMillan",
     "role": "Chairman, President and CEO",
@@ -1611,6 +1677,7 @@
   {
     "id": 67,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "mets",
     "executive": "Steve Phillips",
     "role": "General Manager",
@@ -1638,6 +1705,7 @@
   {
     "id": 68,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "alibaba",
     "executive": "Jiang Fan",
     "role": "President of Taobao and Tmall; group senior vice president",
@@ -1661,6 +1729,7 @@
   {
     "id": 69,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "nine",
     "executive": "Hugh Marks",
     "role": "CEO",
@@ -1684,6 +1753,7 @@
   {
     "id": 70,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "walmart",
     "executive": "Binny Bansal",
     "role": "Group CEO, Flipkart",
@@ -1707,6 +1777,7 @@
   {
     "id": 71,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "qbe",
     "executive": "John Neal",
     "role": "Group CEO",
@@ -1733,6 +1804,7 @@
   {
     "id": 72,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "walmart",
     "executive": "Julie Roehm",
     "role": "SVP, Marketing Communications",
@@ -1763,6 +1835,7 @@
   {
     "id": 73,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "lincolncenter",
     "executive": "Jed Bernstein",
     "role": "President",
@@ -1789,6 +1862,7 @@
   {
     "id": 74,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "thefa",
     "executive": "Mark Palios",
     "role": "Chief Executive",
@@ -1815,6 +1889,7 @@
   {
     "id": 75,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "rbc",
     "executive": "Blair Fleming",
     "role": "Head of U.S. Investment Banking / U.S. Capital Markets, RBC Capital Markets",
@@ -1841,6 +1916,7 @@
   {
     "id": 76,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "comcast",
     "executive": "Ron Meyer",
     "role": "Vice Chairman, NBCUniversal",
@@ -1871,6 +1947,7 @@
   {
     "id": 77,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "deltadental",
     "executive": "Tony Barth",
     "role": "CEO",
@@ -1902,6 +1979,7 @@
   {
     "id": 78,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "welcia",
     "executive": "Tadahisa Matsumoto",
     "role": "President and CEO",
@@ -1929,6 +2007,7 @@
   {
     "id": 79,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "bytedance",
     "executive": "Qiao Mu",
     "role": "Head of Doubao large language model team",
@@ -1952,6 +2031,7 @@
   {
     "id": 80,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "raiffeisen",
     "executive": "Rolf Olmesdahl",
     "role": "Chief Technology and Operating Officer",
@@ -1975,6 +2055,7 @@
   {
     "id": 81,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "cicc",
     "executive": "Chen Gang",
     "role": "Chief Compliance Officer",
@@ -1998,6 +2079,7 @@
   {
     "id": 82,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "ftx",
     "executive": "Sam Bankman-Fried",
     "role": "Founder and CEO of FTX; majority owner of Alameda Research",
@@ -2025,6 +2107,7 @@
   {
     "id": 83,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "uber",
     "executive": "Cameron Poetzscher",
     "role": "Head of corporate development",
@@ -2056,6 +2139,7 @@
   {
     "id": 84,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "neuralink",
     "executive": "Elon Musk",
     "role": "Co-founder and CEO",
@@ -2083,6 +2167,7 @@
   {
     "id": 85,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "greylock",
     "executive": "Tom Frangione",
     "role": "Chief operating officer",
@@ -2110,6 +2195,7 @@
   {
     "id": 86,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "firefly",
     "executive": "Bill Weber",
     "role": "CEO",
@@ -2137,6 +2223,7 @@
   {
     "id": 87,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "snap",
     "executive": "Francis Racioppi",
     "role": "Head of global security",
@@ -2160,6 +2247,7 @@
   {
     "id": 88,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "met",
     "executive": "Thomas Campbell",
     "role": "Director and CEO",
@@ -2191,6 +2279,7 @@
   {
     "id": 89,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "bridgewater",
     "executive": "Bob Elliott",
     "role": "Head of foreign-exchange research",
@@ -2214,6 +2303,7 @@
   {
     "id": 90,
     "type": "relationship",
+    "role_level": "executive",
     "company_id": "airbnb",
     "executive": "Hong Ge",
     "role": "Head of China",
@@ -2241,6 +2331,7 @@
   {
     "id": 91,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "cbs",
     "executive": "Les Moonves",
     "role": "Chairman and CEO",
@@ -2267,6 +2358,7 @@
   {
     "id": 92,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "fox",
     "executive": "Roger Ailes",
     "role": "Chairman and CEO, Fox News",
@@ -2293,6 +2385,7 @@
   {
     "id": 93,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "weinsteinco",
     "executive": "Harvey Weinstein",
     "role": "Co-founder and co-chairman",
@@ -2319,6 +2412,7 @@
   {
     "id": 94,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "wynn",
     "executive": "Steve Wynn",
     "role": "Chairman and CEO",
@@ -2349,6 +2443,7 @@
   {
     "id": 95,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "guess",
     "executive": "Paul Marciano",
     "role": "Executive chairman and chief creative officer",
@@ -2375,6 +2470,7 @@
   {
     "id": 96,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "disney",
     "executive": "John Lasseter",
     "role": "Chief creative officer, Pixar and Walt Disney Animation Studios",
@@ -2401,6 +2497,7 @@
   {
     "id": 97,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "panthers",
     "executive": "Jerry Richardson",
     "role": "Founder and owner",
@@ -2423,6 +2520,7 @@
   {
     "id": 98,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "mavericks",
     "executive": "Terdema Ussery",
     "role": "President and CEO",
@@ -2449,6 +2547,7 @@
   {
     "id": 99,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "bbhospitality",
     "executive": "Mario Batali",
     "role": "Co-owner",
@@ -2475,6 +2574,7 @@
   {
     "id": 100,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "npr",
     "executive": "Michael Oreskes",
     "role": "Senior vice president of news and editorial director",
@@ -2497,6 +2597,7 @@
   {
     "id": 101,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "suns",
     "executive": "Robert Sarver",
     "role": "Managing partner and governor",
@@ -2519,6 +2620,7 @@
   {
     "id": 102,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "commanders",
     "executive": "Dan Snyder",
     "role": "Owner",
@@ -2541,6 +2643,7 @@
   {
     "id": 103,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "afiniti",
     "executive": "Zia Chishti",
     "role": "Chairman and CEO",
@@ -2571,6 +2674,7 @@
   {
     "id": 104,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "gsk",
     "executive": "Moncef Slaoui",
     "role": "Chairman of the board, Galvani Bioelectronics (GSK subsidiary); former GSK chairman of vaccines",
@@ -2593,6 +2697,7 @@
   {
     "id": 105,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "500startups",
     "executive": "Dave McClure",
     "role": "Co-founder and general partner (former CEO)",
@@ -2615,6 +2720,7 @@
   {
     "id": 106,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "binarycapital",
     "executive": "Justin Caldbeck",
     "role": "Co-founder and managing partner",
@@ -2637,6 +2743,7 @@
   {
     "id": 107,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "eneos",
     "executive": "Takeshi Saito",
     "role": "President and Representative Director",
@@ -2667,6 +2774,7 @@
   {
     "id": 108,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "ubisoft",
     "executive": "Tommy François",
     "role": "Vice President, Editorial and Creative Services",
@@ -2693,6 +2801,7 @@
   {
     "id": 109,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "ubisoft",
     "executive": "Serge Hascoët",
     "role": "Chief Creative Officer",
@@ -2719,6 +2828,7 @@
   {
     "id": 110,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "dbgroup",
     "executive": "Kim Jun-ki",
     "role": "Chairman",
@@ -2741,6 +2851,7 @@
   {
     "id": 111,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "amp",
     "executive": "Boe Pahari",
     "role": "CEO-designate, AMP Capital (previously head of infrastructure equity)",
@@ -2763,6 +2874,7 @@
   {
     "id": 112,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "coc",
     "executive": "Marcel Aubut",
     "role": "President",
@@ -2785,6 +2897,7 @@
   {
     "id": 113,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "eneos",
     "executive": "Tsutomu Sugimori",
     "role": "Chairman and CEO",
@@ -2812,6 +2925,7 @@
   {
     "id": 114,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "sap",
     "executive": "Jürgen Müller",
     "role": "Chief Technology Officer, Executive Board member",
@@ -2843,6 +2957,7 @@
   {
     "id": 115,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "davidjones",
     "executive": "Mark McInnes",
     "role": "Chief Executive Officer",
@@ -2870,6 +2985,7 @@
   {
     "id": 116,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "teri",
     "executive": "R. K. Pachauri",
     "role": "Director-General",
@@ -2897,6 +3013,7 @@
   {
     "id": 117,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "spottedpig",
     "executive": "Ken Friedman",
     "role": "Owner and operator",
@@ -2920,6 +3037,7 @@
   {
     "id": 118,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "barnesnoble",
     "executive": "Demos Parneros",
     "role": "CEO",
@@ -2947,6 +3065,7 @@
   {
     "id": 119,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "americanapparel",
     "executive": "Dov Charney",
     "role": "Founder, CEO and chairman",
@@ -2982,6 +3101,7 @@
   {
     "id": 120,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "newrepublic",
     "executive": "Hamilton Fish",
     "role": "President and publisher",
@@ -3005,6 +3125,7 @@
   {
     "id": 121,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "voxmedia",
     "executive": "Lockhart Steele",
     "role": "Editorial director",
@@ -3028,6 +3149,7 @@
   {
     "id": 122,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "npr",
     "executive": "David Sweeney",
     "role": "Chief news editor",
@@ -3051,6 +3173,7 @@
   {
     "id": 123,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "amazon",
     "executive": "Roy Price",
     "role": "Head of Amazon Studios",
@@ -3074,6 +3197,7 @@
   {
     "id": 124,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "wpp",
     "executive": "Gustavo Martinez",
     "role": "Global CEO",
@@ -3097,6 +3221,7 @@
   {
     "id": 125,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "alphabet",
     "executive": "Rich DeVaul",
     "role": "Director, X (Project Loon co-founder)",
@@ -3124,6 +3249,7 @@
   {
     "id": 126,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "microsoft",
     "executive": "Alex Kipman",
     "role": "Technical Fellow, head of mixed reality",
@@ -3147,6 +3273,7 @@
   {
     "id": 127,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "uber",
     "executive": "Amit Singhal",
     "role": "SVP Engineering (Uber); SVP Search (Google)",
@@ -3170,6 +3297,7 @@
   {
     "id": 128,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "csdisco",
     "executive": "Kiwi Camara",
     "role": "CEO and director",
@@ -3197,6 +3325,7 @@
   {
     "id": 129,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "fidelity",
     "executive": "Gavin Baker",
     "role": "Portfolio manager (OTC Portfolio)",
@@ -3220,6 +3349,7 @@
   {
     "id": 130,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "riot",
     "executive": "Scott Gelb",
     "role": "COO",
@@ -3243,6 +3373,7 @@
   {
     "id": 131,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "clinc",
     "executive": "Jason Mars",
     "role": "Co-founder and CEO",
@@ -3266,6 +3397,7 @@
   {
     "id": 132,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "tinder",
     "executive": "Justin Mateen",
     "role": "Co-founder and CMO",
@@ -3289,6 +3421,7 @@
   {
     "id": 133,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "lowercase",
     "executive": "Chris Sacca",
     "role": "Founder",
@@ -3312,6 +3445,7 @@
   {
     "id": 134,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "servotronics",
     "executive": "Kenneth Trbovich",
     "role": "Chairman, President and CEO",
@@ -3335,6 +3469,7 @@
   {
     "id": 135,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "gravity",
     "executive": "Dan Price",
     "role": "Founder and CEO",
@@ -3358,6 +3493,7 @@
   {
     "id": 136,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "primark",
     "executive": "Paul Marchant",
     "role": "Chief Executive, Primark",
@@ -3381,6 +3517,7 @@
   {
     "id": 137,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "honda",
     "executive": "Shinji Aoyama",
     "role": "Director, Executive Vice President and Representative Executive Officer",
@@ -3404,6 +3541,7 @@
   {
     "id": 138,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "cbi",
     "executive": "Tony Danker",
     "role": "Director-General",
@@ -3435,6 +3573,7 @@
   {
     "id": 139,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "tabcorp",
     "executive": "Adam Rytenskild",
     "role": "Managing Director and CEO",
@@ -3458,6 +3597,7 @@
   {
     "id": 140,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "icl",
     "executive": "Stefan Borgas",
     "role": "CEO and board member",
@@ -3481,6 +3621,7 @@
   {
     "id": 141,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "odey",
     "executive": "Crispin Odey",
     "role": "Founder, partner",
@@ -3504,6 +3645,7 @@
   {
     "id": 142,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "tedbaker",
     "executive": "Ray Kelvin",
     "role": "Founder and CEO",
@@ -3531,6 +3673,7 @@
   {
     "id": 143,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "jd",
     "executive": "Richard Liu",
     "role": "Founder, Chairman and CEO",
@@ -3554,6 +3697,7 @@
   {
     "id": 144,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "nine",
     "executive": "Darren Wick",
     "role": "Director of News and Current Affairs",
@@ -3577,6 +3721,7 @@
   {
     "id": 145,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "bofa",
     "executive": "Omeed Malik",
     "role": "Managing director, head of prime brokerage capital strategies",
@@ -3604,6 +3749,7 @@
   {
     "id": 146,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "sony",
     "executive": "L.A. Reid",
     "role": "Chairman and CEO, Epic Records",
@@ -3627,6 +3773,7 @@
   {
     "id": 147,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "umg",
     "executive": "Charlie Walk",
     "role": "President, Republic Records",
@@ -3649,6 +3796,7 @@
   {
     "id": 148,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "fox",
     "executive": "Jamie Horowitz",
     "role": "President, Fox Sports national networks",
@@ -3672,6 +3820,7 @@
   {
     "id": 149,
     "type": "misconduct",
+    "role_level": "executive",
     "company_id": "beshgroup",
     "executive": "John Besh",
     "role": "Founder and CEO",

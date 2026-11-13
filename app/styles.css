@@ -135,3 +135,4 @@ button.dot:hover{transform:scale(1.4)}
   .stat-v{font-size:26px}
   .legend-note{margin-left:0}
 }
+.ptag{font-size:11px;padding:1px 6px;border-radius:10px;background:var(--bg);color:var(--ink-2);white-space:nowrap}
