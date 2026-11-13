@@ -5,9 +5,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent / "data"
 SCOPES = {"Fortune 500", "Global 500", "Other notable"}
-TIERS = {"confirmed", "acknowledged", "reported", "unconfirmed"}
+TIERS = {"confirmed", "acknowledged", "reported", "unconfirmed", "adjudicated"}
+TYPES = {"relationship", "misconduct"}
 STATUSES = {"published", "watch", "retracted"}
-REQ = ["id", "company_id", "executive", "role", "disclosed", "category", "outcome", "evidence", "summary", "sources", "status"]
+REQ = ["id", "type", "company_id", "executive", "role", "disclosed", "category", "outcome", "evidence", "summary", "sources", "status"]
 
 errors, warnings = [], []
 companies = json.loads((ROOT / "companies.json").read_text())
@@ -31,6 +32,11 @@ for r in records:
     if r.get("company_id") not in ids: errors.append(f"record {rid}: unknown company_id {r.get('company_id')!r}")
     if not re.fullmatch(r"(19|20)\d\d-(0[1-9]|1[0-2])", r.get("disclosed", "")): errors.append(f"record {rid}: disclosed must be YYYY-MM")
     if r.get("evidence") not in TIERS: errors.append(f"record {rid}: bad evidence {r.get('evidence')!r}")
+    if r.get("type") not in TYPES: errors.append(f"record {rid}: bad type {r.get('type')!r}")
+    if r.get("type") == "misconduct" and r.get("status") == "published" and r.get("evidence") == "unconfirmed":
+        errors.append(f"record {rid}: misconduct records cannot be published as unconfirmed")
+    if r.get("type") == "relationship" and r.get("evidence") == "adjudicated":
+        warnings.append(f"record {rid}: adjudicated tier on a relationship record")
     if r.get("status") not in STATUSES: errors.append(f"record {rid}: bad status {r.get('status')!r}")
     for u in [r.get("primary_url"), r.get("archive_url")] + [s.get("url") for s in r.get("sources", [])]:
         if u and not u.startswith("https://"): errors.append(f"record {rid}: non-https url {u}")

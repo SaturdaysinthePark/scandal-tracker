@@ -14,10 +14,21 @@ Include a case only if **all** of these hold:
 2. It involves a romantic or sexual relationship that (a) broke company policy, (b) was with a subordinate, employee, contractor or vendor, (c) was undisclosed when it should have been disclosed, or (d) is an extramarital affair **publicly acknowledged by the executive**.
 3. It meets an evidence tier (below).
 
-Exclude:
-- Harassment and assault allegations. They belong to a future, separate category with a stricter standard.
+Exclude from the relationship category:
+- Harassment and assault allegations. They go in the misconduct category below, under its stricter standard.
 - Rumors, tabloids, social media posts and anonymous forums on their own.
 - Departures for vague "personal conduct" with no reporting that ties them to a relationship. Note these as `status: "watch"` candidates, not published records.
+
+## Misconduct category (`type: "misconduct"`)
+Sexual harassment, sexual assault or abuse, unwanted advances, sexually inappropriate conduct or comments toward colleagues, and retaliation tied to them. Not financial or other non-sexual misconduct.
+
+Same seniority rule (rule 1). The evidence bar is **stricter**:
+- Allowed tiers: `confirmed` (the company's own finding or statement names the misconduct or a policy breach tied to it), `acknowledged` (the executive admits the conduct), `adjudicated` (a court, tribunal, regulator or arbitrator finding, a conviction, or a settlement whose terms are public and name the conduct), or `reported` **only if** at least two independent major outlets did their own reporting **and** the company confirmed an investigation or the departure.
+- `unconfirmed` is never published for misconduct. Single-source cases stay `watch`.
+- Exclude cases where an investigation cleared the executive and nothing else confirms the conduct.
+- If the executive denies the allegations, the summary must say so.
+- **Never name complainants or alleged victims**, even if other outlets do, unless they have publicly identified themselves on the record.
+- Describe conduct with the words the source uses ("alleged", "the company said"); no graphic detail.
 
 ## Evidence tiers (`evidence` field)
 | value | meaning |
@@ -25,7 +36,8 @@ Exclude:
 | `confirmed` | Company filing, press release, or board statement names the relationship / policy breach |
 | `acknowledged` | The executive's own public statement |
 | `reported` | Major outlets (Reuters, WSJ, NYT, Bloomberg, FT, CNBC, AP) report it **and** the company confirms the departure or investigation |
-| `unconfirmed` | One major outlet with described sourcing, not confirmed by anyone involved |
+| `unconfirmed` | One major outlet with described sourcing, not confirmed by anyone involved (relationship category only) |
+| `adjudicated` | A court, tribunal, regulator or arbitrator finding, a conviction, or a public settlement naming the conduct |
 
 Upgrade or retract records as facts change. Never delete a published record silently. Set `status: "retracted"` and add a note.
 
@@ -37,13 +49,14 @@ Upgrade or retract records as facts change. Never delete a published record sile
 ```jsonc
 {
   "id": 32,
+  "type": "relationship",          // relationship | misconduct
   "company_id": "acme",            // must exist in companies.json
   "executive": "Jane Doe",
   "role": "CFO",                   // role at the time
   "disclosed": "2024-04",          // YYYY-MM: when it became PUBLIC, not when it happened
   "category": "Relationship with subordinate",
   "outcome": "Terminated",
-  "evidence": "confirmed",         // confirmed | acknowledged | reported | unconfirmed
+  "evidence": "confirmed",         // confirmed | acknowledged | reported | unconfirmed | adjudicated
   "summary": "2–4 neutral sentences. Facts and attributions only.",
   "sources": [{ "label": "Acme 8-K, April 2024", "url": "https://..." }],
   "primary_url": "https://www.sec.gov/...",   // the single most authoritative source

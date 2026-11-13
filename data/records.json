@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "type": "relationship",
     "company_id": "boeing",
     "executive": "Harry Stonecipher",
     "role": "President & CEO",
@@ -21,6 +22,7 @@
   },
   {
     "id": 2,
+    "type": "relationship",
     "company_id": "hp",
     "executive": "Mark Hurd",
     "role": "Chairman & CEO",
@@ -41,6 +43,7 @@
   },
   {
     "id": 3,
+    "type": "relationship",
     "company_id": "bestbuy",
     "executive": "Brian Dunn",
     "role": "CEO",
@@ -64,6 +67,7 @@
   },
   {
     "id": 4,
+    "type": "relationship",
     "company_id": "lockheed",
     "executive": "Christopher Kubasik",
     "role": "President & COO (CEO-elect)",
@@ -84,6 +88,7 @@
   },
   {
     "id": 27,
+    "type": "relationship",
     "company_id": "igate",
     "executive": "Phaneesh Murthy",
     "role": "President & CEO",
@@ -104,6 +109,7 @@
   },
   {
     "id": 29,
+    "type": "relationship",
     "company_id": "alphabet",
     "executive": "Sergey Brin",
     "role": "Co-founder",
@@ -124,6 +130,7 @@
   },
   {
     "id": 13,
+    "type": "relationship",
     "company_id": "booking",
     "executive": "Darren Huston",
     "role": "President & CEO",
@@ -144,6 +151,7 @@
   },
   {
     "id": 30,
+    "type": "relationship",
     "company_id": "lululemon",
     "executive": "Laurent Potdevin",
     "role": "CEO",
@@ -170,6 +178,7 @@
   },
   {
     "id": 5,
+    "type": "relationship",
     "company_id": "intel",
     "executive": "Brian Krzanich",
     "role": "CEO",
@@ -190,6 +199,7 @@
   },
   {
     "id": 14,
+    "type": "relationship",
     "company_id": "alphabet",
     "executive": "David Drummond",
     "role": "Chief Legal Officer",
@@ -213,6 +223,7 @@
   },
   {
     "id": 24,
+    "type": "relationship",
     "company_id": "alphabet",
     "executive": "Andy Rubin",
     "role": "SVP, creator of Android",
@@ -236,6 +247,7 @@
   },
   {
     "id": 26,
+    "type": "relationship",
     "company_id": "kemet",
     "executive": "Per-Olof Loof",
     "role": "CEO",
@@ -256,6 +268,7 @@
   },
   {
     "id": 6,
+    "type": "relationship",
     "company_id": "amazon",
     "executive": "Jeff Bezos",
     "role": "Founder & CEO",
@@ -276,6 +289,7 @@
   },
   {
     "id": 7,
+    "type": "relationship",
     "company_id": "mcdonalds",
     "executive": "Steve Easterbrook",
     "role": "President & CEO",
@@ -299,6 +313,7 @@
   },
   {
     "id": 8,
+    "type": "relationship",
     "company_id": "microsoft",
     "executive": "Bill Gates",
     "role": "Co-founder & board member",
@@ -322,6 +337,7 @@
   },
   {
     "id": 31,
+    "type": "relationship",
     "company_id": "ares",
     "executive": "Michael McFerran",
     "role": "CFO & COO",
@@ -342,6 +358,7 @@
   },
   {
     "id": 15,
+    "type": "relationship",
     "company_id": "att",
     "executive": "Jeff Zucker",
     "role": "President, CNN / WarnerMedia chair of news & sports",
@@ -362,6 +379,7 @@
   },
   {
     "id": 25,
+    "type": "relationship",
     "company_id": "wwe",
     "executive": "Vince McMahon",
     "role": "Chairman & CEO",
@@ -385,6 +403,7 @@
   },
   {
     "id": 20,
+    "type": "relationship",
     "company_id": "comcast",
     "executive": "Jeff Shell",
     "role": "CEO, NBCUniversal",
@@ -408,6 +427,7 @@
   },
   {
     "id": 17,
+    "type": "relationship",
     "company_id": "bp",
     "executive": "Bernard Looney",
     "role": "CEO",
@@ -431,6 +451,7 @@
   },
   {
     "id": 21,
+    "type": "relationship",
     "company_id": "cboe",
     "executive": "Edward Tilly",
     "role": "Chairman, President & CEO",
@@ -451,6 +472,7 @@
   },
   {
     "id": 28,
+    "type": "relationship",
     "company_id": "bp",
     "executive": "Murray Auchincloss",
     "role": "CFO, then CEO",
@@ -474,6 +496,7 @@
   },
   {
     "id": 23,
+    "type": "relationship",
     "company_id": "rbc",
     "executive": "Nadine Ahn",
     "role": "CFO",
@@ -497,6 +520,7 @@
   },
   {
     "id": 22,
+    "type": "relationship",
     "company_id": "helios",
     "executive": "Josef Matosevic",
     "role": "President & CEO",
@@ -517,6 +541,7 @@
   },
   {
     "id": 19,
+    "type": "relationship",
     "company_id": "norfolk",
     "executive": "Alan Shaw",
     "role": "President & CEO",
@@ -537,6 +562,7 @@
   },
   {
     "id": 9,
+    "type": "relationship",
     "company_id": "kohls",
     "executive": "Ashley Buchanan",
     "role": "CEO",
@@ -557,6 +583,7 @@
   },
   {
     "id": 16,
+    "type": "relationship",
     "company_id": "astronomer",
     "executive": "Andy Byron",
     "role": "CEO",
@@ -577,6 +604,7 @@
   },
   {
     "id": 18,
+    "type": "relationship",
     "company_id": "nestle",
     "executive": "Laurent Freixe",
     "role": "CEO",
@@ -597,6 +625,7 @@
   },
   {
     "id": 10,
+    "type": "relationship",
     "company_id": "nvidia",
     "executive": "Jensen Huang",
     "role": "Co-founder, President & CEO",
@@ -629,6 +658,7 @@
   },
   {
     "id": 11,
+    "type": "relationship",
     "company_id": "nvidia",
     "executive": "Jensen Huang",
     "role": "Co-founder, President & CEO",
@@ -653,6 +683,7 @@
   },
   {
     "id": 12,
+    "type": "relationship",
     "company_id": "nvidia",
     "executive": "Jensen Huang",
     "role": "Co-founder, President & CEO",
@@ -677,6 +708,7 @@
   },
   {
     "id": 32,
+    "type": "relationship",
     "company_id": "zoetis",
     "executive": "Glenn David",
     "role": "Executive Vice President and Group President, U.S. Operations",
@@ -698,6 +730,7 @@
   },
   {
     "id": 33,
+    "type": "relationship",
     "company_id": "exscientia",
     "executive": "Andrew Hopkins",
     "role": "CEO and Executive Director",
@@ -719,6 +752,7 @@
   },
   {
     "id": 34,
+    "type": "relationship",
     "company_id": "superretail",
     "executive": "Anthony Heraghty",
     "role": "Group Managing Director and CEO",
@@ -748,6 +782,7 @@
   },
   {
     "id": 35,
+    "type": "relationship",
     "company_id": "rsgroup",
     "executive": "David Egan",
     "role": "CFO and Executive Director",
@@ -773,6 +808,7 @@
   },
   {
     "id": 36,
+    "type": "relationship",
     "company_id": "rei",
     "executive": "Jerry Stritzke",
     "role": "President and CEO",
@@ -798,6 +834,7 @@
   },
   {
     "id": 37,
+    "type": "relationship",
     "company_id": "blackrock",
     "executive": "Mark Wiseman",
     "role": "Global Head of Active Equities; Chairman, BlackRock Alternative Investors",
@@ -823,6 +860,7 @@
   },
   {
     "id": 38,
+    "type": "relationship",
     "company_id": "sevenwest",
     "executive": "Tim Worner",
     "role": "CEO",
@@ -848,6 +886,7 @@
   },
   {
     "id": 39,
+    "type": "relationship",
     "company_id": "rh",
     "executive": "Gary Friedman",
     "role": "Chairman and Co-CEO",
@@ -873,6 +912,7 @@
   },
   {
     "id": 40,
+    "type": "relationship",
     "company_id": "fluidigm",
     "executive": "Gajus Worthington",
     "role": "President and CEO",
@@ -898,6 +938,7 @@
   },
   {
     "id": 41,
+    "type": "relationship",
     "company_id": "lilly",
     "executive": "Joshua Smiley",
     "role": "Senior Vice President and CFO",
@@ -920,6 +961,7 @@
   },
   {
     "id": 42,
+    "type": "relationship",
     "company_id": "galp",
     "executive": "Filipe Silva",
     "role": "CEO and Vice-Chairman",
@@ -949,6 +991,7 @@
   },
   {
     "id": 43,
+    "type": "relationship",
     "company_id": "aig",
     "executive": "John Neal",
     "role": "Incoming President (former Lloyd's of London CEO)",
@@ -971,6 +1014,7 @@
   },
   {
     "id": 44,
+    "type": "relationship",
     "company_id": "parkhotels",
     "executive": "Robert Tanenbaum",
     "role": "Executive Vice President, Asset Management",
@@ -996,6 +1040,7 @@
   },
   {
     "id": 45,
+    "type": "relationship",
     "company_id": "blackrock",
     "executive": "Jeff Smith",
     "role": "Global Head of Human Resources",
@@ -1018,6 +1063,7 @@
   },
   {
     "id": 46,
+    "type": "relationship",
     "company_id": "markel",
     "executive": "Anthony Belisle",
     "role": "CEO, Markel CATCo (subsidiary)",
@@ -1043,6 +1089,7 @@
   },
   {
     "id": 47,
+    "type": "relationship",
     "company_id": "libertytax",
     "executive": "John Hewitt",
     "role": "CEO and Chairman",
@@ -1069,6 +1116,7 @@
   },
   {
     "id": 48,
+    "type": "relationship",
     "company_id": "ti",
     "executive": "Brian Crutcher",
     "role": "President and CEO",
@@ -1091,6 +1139,7 @@
   },
   {
     "id": 49,
+    "type": "relationship",
     "company_id": "rambus",
     "executive": "Ron Black",
     "role": "CEO",
@@ -1113,6 +1162,7 @@
   },
   {
     "id": 50,
+    "type": "relationship",
     "company_id": "natwest",
     "executive": "Fred Goodwin",
     "role": "CEO (former at time of disclosure)",
@@ -1139,6 +1189,7 @@
   },
   {
     "id": 51,
+    "type": "relationship",
     "company_id": "starwood",
     "executive": "Steven Heyer",
     "role": "CEO",
@@ -1161,6 +1212,7 @@
   },
   {
     "id": 52,
+    "type": "relationship",
     "company_id": "redcross",
     "executive": "Mark Everson",
     "role": "President and CEO",
@@ -1182,6 +1234,7 @@
   },
   {
     "id": 53,
+    "type": "relationship",
     "company_id": "pegula",
     "executive": "Russ Brandon",
     "role": "President, Buffalo Bills and Buffalo Sabres",
@@ -1211,6 +1264,7 @@
   },
   {
     "id": 54,
+    "type": "relationship",
     "company_id": "pegula",
     "executive": "John Roth",
     "role": "Chief Operating Officer",
@@ -1232,6 +1286,7 @@
   },
   {
     "id": 55,
+    "type": "relationship",
     "company_id": "officedepot",
     "executive": "Charlie Brown",
     "role": "President, International Division",
@@ -1261,6 +1316,7 @@
   },
   {
     "id": 56,
+    "type": "relationship",
     "company_id": "highmark",
     "executive": "Kenneth Melani",
     "role": "President and CEO",
@@ -1294,6 +1350,7 @@
   },
   {
     "id": 57,
+    "type": "relationship",
     "company_id": "axelspringer",
     "executive": "Julian Reichelt",
     "role": "Editor-in-chief, Bild (chair of Bild group editorial management)",
@@ -1315,6 +1372,7 @@
   },
   {
     "id": 58,
+    "type": "relationship",
     "company_id": "skgroup",
     "executive": "Chey Tae-won",
     "role": "Chairman",
@@ -1336,6 +1394,7 @@
   },
   {
     "id": 59,
+    "type": "relationship",
     "company_id": "afl",
     "executive": "Simon Lethlean",
     "role": "General Manager, Football Operations",
@@ -1357,6 +1416,7 @@
   },
   {
     "id": 60,
+    "type": "relationship",
     "company_id": "afl",
     "executive": "Richard Simkiss",
     "role": "General Manager, Commercial Operations",
@@ -1378,6 +1438,7 @@
   },
   {
     "id": 61,
+    "type": "relationship",
     "company_id": "wisetech",
     "executive": "Richard White",
     "role": "Founder, CEO (later executive chair)",
@@ -1407,6 +1468,7 @@
   },
   {
     "id": 62,
+    "type": "relationship",
     "company_id": "l3harris",
     "executive": "Christopher Kubasik",
     "role": "Chairman and CEO",
@@ -1437,6 +1499,7 @@
   },
   {
     "id": 63,
+    "type": "relationship",
     "company_id": "wework",
     "executive": "Grant McGrail",
     "role": "SVP, account sales and strategic alliances",
@@ -1467,6 +1530,7 @@
   },
   {
     "id": 64,
+    "type": "relationship",
     "company_id": "thinkingmachines",
     "executive": "Barret Zoph",
     "role": "Co-founder and CTO",
@@ -1489,6 +1553,7 @@
   },
   {
     "id": 65,
+    "type": "relationship",
     "company_id": "cfainstitute",
     "executive": "John Rogers",
     "role": "President and CEO",
@@ -1515,6 +1580,7 @@
   },
   {
     "id": 66,
+    "type": "relationship",
     "company_id": "stryker",
     "executive": "Stephen MacMillan",
     "role": "Chairman, President and CEO",
@@ -1545,6 +1611,7 @@
   },
   {
     "id": 67,
+    "type": "relationship",
     "company_id": "mets",
     "executive": "Steve Phillips",
     "role": "General Manager",
@@ -1571,6 +1638,7 @@
   },
   {
     "id": 68,
+    "type": "relationship",
     "company_id": "alibaba",
     "executive": "Jiang Fan",
     "role": "President of Taobao and Tmall; group senior vice president",
@@ -1593,6 +1661,7 @@
   },
   {
     "id": 69,
+    "type": "relationship",
     "company_id": "nine",
     "executive": "Hugh Marks",
     "role": "CEO",
@@ -1615,6 +1684,7 @@
   },
   {
     "id": 70,
+    "type": "relationship",
     "company_id": "walmart",
     "executive": "Binny Bansal",
     "role": "Group CEO, Flipkart",
@@ -1637,6 +1707,7 @@
   },
   {
     "id": 71,
+    "type": "relationship",
     "company_id": "qbe",
     "executive": "John Neal",
     "role": "Group CEO",
@@ -1662,6 +1733,7 @@
   },
   {
     "id": 72,
+    "type": "relationship",
     "company_id": "walmart",
     "executive": "Julie Roehm",
     "role": "SVP, Marketing Communications",
@@ -1691,6 +1763,7 @@
   },
   {
     "id": 73,
+    "type": "relationship",
     "company_id": "lincolncenter",
     "executive": "Jed Bernstein",
     "role": "President",
@@ -1716,6 +1789,7 @@
   },
   {
     "id": 74,
+    "type": "relationship",
     "company_id": "thefa",
     "executive": "Mark Palios",
     "role": "Chief Executive",
@@ -1741,6 +1815,7 @@
   },
   {
     "id": 75,
+    "type": "relationship",
     "company_id": "rbc",
     "executive": "Blair Fleming",
     "role": "Head of U.S. Investment Banking / U.S. Capital Markets, RBC Capital Markets",
@@ -1766,6 +1841,7 @@
   },
   {
     "id": 76,
+    "type": "relationship",
     "company_id": "comcast",
     "executive": "Ron Meyer",
     "role": "Vice Chairman, NBCUniversal",
@@ -1795,6 +1871,7 @@
   },
   {
     "id": 77,
+    "type": "relationship",
     "company_id": "deltadental",
     "executive": "Tony Barth",
     "role": "CEO",
@@ -1825,6 +1902,7 @@
   },
   {
     "id": 78,
+    "type": "relationship",
     "company_id": "welcia",
     "executive": "Tadahisa Matsumoto",
     "role": "President and CEO",
@@ -1851,6 +1929,7 @@
   },
   {
     "id": 79,
+    "type": "relationship",
     "company_id": "bytedance",
     "executive": "Qiao Mu",
     "role": "Head of Doubao large language model team",
@@ -1873,6 +1952,7 @@
   },
   {
     "id": 80,
+    "type": "relationship",
     "company_id": "raiffeisen",
     "executive": "Rolf Olmesdahl",
     "role": "Chief Technology and Operating Officer",
@@ -1895,6 +1975,7 @@
   },
   {
     "id": 81,
+    "type": "relationship",
     "company_id": "cicc",
     "executive": "Chen Gang",
     "role": "Chief Compliance Officer",
@@ -1917,6 +1998,7 @@
   },
   {
     "id": 82,
+    "type": "relationship",
     "company_id": "ftx",
     "executive": "Sam Bankman-Fried",
     "role": "Founder and CEO of FTX; majority owner of Alameda Research",
@@ -1943,6 +2025,7 @@
   },
   {
     "id": 83,
+    "type": "relationship",
     "company_id": "uber",
     "executive": "Cameron Poetzscher",
     "role": "Head of corporate development",
@@ -1973,6 +2056,7 @@
   },
   {
     "id": 84,
+    "type": "relationship",
     "company_id": "neuralink",
     "executive": "Elon Musk",
     "role": "Co-founder and CEO",
@@ -1999,6 +2083,7 @@
   },
   {
     "id": 85,
+    "type": "relationship",
     "company_id": "greylock",
     "executive": "Tom Frangione",
     "role": "Chief operating officer",
@@ -2025,6 +2110,7 @@
   },
   {
     "id": 86,
+    "type": "relationship",
     "company_id": "firefly",
     "executive": "Bill Weber",
     "role": "CEO",
@@ -2051,6 +2137,7 @@
   },
   {
     "id": 87,
+    "type": "relationship",
     "company_id": "snap",
     "executive": "Francis Racioppi",
     "role": "Head of global security",
@@ -2073,6 +2160,7 @@
   },
   {
     "id": 88,
+    "type": "relationship",
     "company_id": "met",
     "executive": "Thomas Campbell",
     "role": "Director and CEO",
@@ -2103,6 +2191,7 @@
   },
   {
     "id": 89,
+    "type": "relationship",
     "company_id": "bridgewater",
     "executive": "Bob Elliott",
     "role": "Head of foreign-exchange research",
@@ -2125,6 +2214,7 @@
   },
   {
     "id": 90,
+    "type": "relationship",
     "company_id": "airbnb",
     "executive": "Hong Ge",
     "role": "Head of China",

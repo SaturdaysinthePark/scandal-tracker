@@ -5,7 +5,8 @@
   const SCOPES = ['All', 'Fortune 500', 'Global 500', 'Other notable'];
   const NO_EXIT = /^(no |remained|leave of absence)/i;
 
-  const st = { view: 'timeline', scope: 'All', showU: true, showZero: false, end: null, q: '', sel: null, calU: true, calSel: null };
+  const st = { view: 'timeline', scope: 'All', showU: true, showZero: false, end: null, q: '', sel: null, calU: true, calSel: null, type: 'all' };
+  const TYPES = [['all', 'All cases'], ['relationship', 'Relationships'], ['misconduct', 'Misconduct']];
   let companies = [], byCo = {}, records = [], tiers = {}, maxYear = new Date().getFullYear();
 
   const $ = (id) => document.getElementById(id);
@@ -13,12 +14,15 @@
   const yearOf = (r) => +r.disclosed.slice(0, 4);
   const dateLabel = (r) => `${MONTHS[+r.disclosed.slice(5, 7) - 1]} ${r.disclosed.slice(0, 4)}`;
   const isU = (r) => r.evidence === 'unconfirmed';
-  const dotHtml = (r, cls = '') => `<i class="dot ${cls} ${isU(r) ? 'ring' : ''}"></i>`;
+  const isM = (r) => r.type === 'misconduct';
+  const typeOk = (r) => st.type === 'all' || r.type === st.type;
+  const markCls = (r) => `${isU(r) ? 'ring' : ''} ${isM(r) ? 'sq' : ''}`;
+  const dotHtml = (r, cls = '') => `<i class="dot ${cls} ${markCls(r)}"></i>`;
   const safeUrl = (u) => (typeof u === 'string' && /^https:\/\//.test(u) ? u : null);
 
   function visible() {
     return records.filter((r) =>
-      (st.scope === 'All' || byCo[r.company_id]?.scope === st.scope) && (st.showU || !isU(r)));
+      typeOk(r) && (st.scope === 'All' || byCo[r.company_id]?.scope === st.scope) && (st.showU || !isU(r)));
   }
 
   // ---------- Timeline ----------
@@ -61,7 +65,7 @@
     html += rows.map(({ c, mine }) => {
       const earlier = mine.filter((r) => yearOf(r) < start).length;
       const cells = years.map((y) => `<div class="cell">${mine.filter((r) => yearOf(r) === y).map((r) =>
-        `<button class="dot ${isU(r) ? 'ring' : ''}" data-id="${r.id}" title="${esc(`${r.executive} · ${dateLabel(r)} · ${tiers[r.evidence] || r.evidence}`)}" aria-label="${esc(`${r.executive}, ${dateLabel(r)}`)}"></button>`).join('')}</div>`).join('');
+        `<button class="dot ${markCls(r)}" data-id="${r.id}" title="${esc(`${r.executive} · ${dateLabel(r)} · ${tiers[r.evidence] || r.evidence}`)}" aria-label="${esc(`${r.executive}, ${dateLabel(r)}`)}"></button>`).join('')}</div>`).join('');
       return `<div class="tl-row co"><div class="tl-name" title="${esc(c.name)}">${esc(c.name)}</div><div class="years">${cells}</div>
         <div class="tot">${earlier ? `<span class="tot-e" title="Earlier records outside this range">+${earlier}‹</span>` : ''}<span class="tot-n ${mine.length ? '' : 'zero'}">${mine.length}</span></div></div>`;
     }).join('');
@@ -71,7 +75,7 @@
 
   // ---------- Calendar heat map (company-agnostic) ----------
   function renderCalendar() {
-    const recs = records.filter((r) => st.calU || !isU(r));
+    const recs = records.filter((r) => typeOk(r) && (st.calU || !isU(r)));
     const counts = {};
     for (const r of recs) counts[r.disclosed] = (counts[r.disclosed] || 0) + 1;
     const ys = recs.map(yearOf);
@@ -130,6 +134,7 @@
   function renderRecords() {
     const q = st.q.trim().toLowerCase();
     const list = records
+      .filter(typeOk)
       .filter((r) => !q || [byCo[r.company_id]?.name, r.executive, r.role, r.category, r.summary, r.outcome].join(' ').toLowerCase().includes(q))
       .sort((a, b) => b.disclosed.localeCompare(a.disclosed));
     $('rows').innerHTML = list.length ? rowsHtml(list) : `<tr><td colspan="6" class="empty">No records match “${esc(st.q)}”.</td></tr>`;
@@ -188,6 +193,7 @@
     const VIEWS = ['timeline', 'calendar', 'records', 'about'];
     st.view = VIEWS.includes(v) ? v : 'timeline';
     for (const k of VIEWS) $(`v-${k}`).hidden = k !== st.view;
+    document.querySelectorAll('.typeSeg').forEach((el) => { el.innerHTML = TYPES.map(([k, l]) => `<button data-type="${k}" class="${k === st.type ? 'on' : ''}">${l}</button>`).join(''); });
     if (st.view === 'calendar') renderCalendar();
     document.querySelectorAll('#tabs button').forEach((b) => b.classList.toggle('on', b.dataset.view === st.view));
     if (st.view === 'timeline') renderTimeline();
@@ -204,6 +210,7 @@
     $('timeline').addEventListener('click', (e) => { const id = e.target.closest('button.dot')?.dataset.id; if (id) openDrawer(id); });
     $('rows').addEventListener('click', (e) => { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); });
     $('rows').addEventListener('keydown', (e) => { if (e.key === 'Enter') { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); } });
+    document.addEventListener('click', (e) => { const t = e.target.closest('.typeSeg button')?.dataset.type; if (t) { st.type = t; st.calSel = null; show(); } });
     $('calU').addEventListener('change', (e) => { st.calU = e.target.checked; renderCalendar(); });
     $('heat').addEventListener('click', (e) => { const m = e.target.closest('button.hm-c')?.dataset.m; if (m) { st.calSel = st.calSel === m ? null : m; renderCalendar(); } });
     $('monthList').addEventListener('click', (e) => { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); });

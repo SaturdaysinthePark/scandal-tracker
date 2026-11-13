@@ -24,13 +24,14 @@
     <section id="v-timeline" hidden>
       <div class="intro">
         <div class="intro-text">
-          <h1>Executives brought down by workplace relationships</h1>
-          <p class="lede">Each dot is one publicly disclosed relationship involving a senior executive, placed by the month it became public. Click a dot for the details and sources.</p>
+          <h1>Executives brought down by workplace relationships and misconduct</h1>
+          <p class="lede">Each mark is one publicly disclosed case involving a senior executive, placed by the month it became public: round for relationships, square for sexual misconduct. Click a dot for the details and sources.</p>
         </div>
         <div class="stats" id="stats"></div>
       </div>
       <div class="controls">
         <div class="controls-l">
+          <div class="seg seg-sm typeSeg"></div>
           <div class="seg seg-sm" id="scopes"></div>
           <label class="chk"><input type="checkbox" id="showU" checked>Unconfirmed reports</label>
           <label class="chk"><input type="checkbox" id="showZero">Companies with none</label>
@@ -43,8 +44,9 @@
       </div>
       <div class="card scroll-x"><div class="tl" id="timeline"></div></div>
       <div class="legend">
-        <span><i class="dot"></i>Confirmed or acknowledged</span>
+        <span><i class="dot"></i>Relationship, confirmed or reported</span>
         <span><i class="dot ring"></i>Reported, unconfirmed</span>
+        <span><i class="dot sq"></i>Sexual misconduct</span>
         <span class="legend-note">Coverage is incomplete. Research is ongoing.</span>
       </div>
     </section>
@@ -59,6 +61,7 @@
       </div>
       <div class="controls">
         <div class="controls-l">
+          <div class="seg seg-sm typeSeg"></div>
           <label class="chk"><input type="checkbox" id="calU" checked>Unconfirmed reports</label>
         </div>
       </div>
@@ -70,7 +73,7 @@
     <section id="v-records" hidden>
       <div class="rec-head">
         <h1 class="h1-sm">All records</h1>
-        <input id="q" type="search" placeholder="Search company, executive, keyword">
+        <div class="controls-l"><div class="seg seg-sm typeSeg"></div><input id="q" type="search" placeholder="Search company, executive, keyword"></div>
       </div>
       <div class="card scroll-x">
         <table class="tbl">

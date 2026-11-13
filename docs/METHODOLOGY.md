@@ -9,7 +9,9 @@ Corporate officers and executives at VP level and above, and board members, of:
 Below the C-suite and board, a case is included only if the company or executive confirmed it, or at least two independent outlets reported it.
 
 ## What counts
-Romantic or sexual relationships that broke company policy (with a subordinate, employee, contractor or vendor), relationships that should have been disclosed and weren't, and extramarital affairs the executive acknowledged publicly. Harassment and assault are tracked separately (planned).
+Two categories, shown together or separately:
+- **Relationships**: romantic or sexual relationships that broke company policy (with a subordinate, employee, contractor or vendor), relationships that should have been disclosed and weren't, and extramarital affairs the executive acknowledged publicly.
+- **Misconduct**: sexual harassment, assault or abuse, unwanted advances and sexually inappropriate conduct toward colleagues. This category has a stricter bar: the company's own finding, the executive's admission, a court or regulator finding, or at least two independent major outlets plus a company-confirmed investigation or exit. Single-source reports are never published, cases where the executive was cleared are left out, and denials are always noted. Complainants are never named.
 
 ## Dates
 `disclosed` is the month the relationship became **public**, not when it happened. Counts per year therefore measure disclosure, not conduct.
@@ -18,7 +20,8 @@ Romantic or sexual relationships that broke company policy (with a subordinate, 
 1. **Company-confirmed**: a filing, press release or board statement.
 2. **Publicly acknowledged**: the executive's own statement.
 3. **Reported, investigation confirmed**: major outlets report it, and the company confirms the departure or investigation.
-4. **Reported, unconfirmed**: one major outlet with described sourcing. Shown as a hollow dot, and can be hidden.
+4. **Reported, unconfirmed**: one major outlet with described sourcing. Shown as a hollow dot, and can be hidden. Relationship category only.
+5. **Court or regulator finding**: a court, tribunal, regulator or arbitrator finding, a conviction, or a public settlement naming the conduct.
 
 ## Naming
 The other person is never named unless they're a public figure on the record.
