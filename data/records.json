@@ -7775,5 +7775,53 @@
     ],
     "primary_url": "https://www.sec.gov/Archives/edgar/data/1048695/000119312515402550/d52228dex991.htm",
     "note": "Vague 'personal conduct' exit; no reporting ties it to a relationship or sexual misconduct."
+  },
+  {
+    "id": 275,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "molsoncoors",
+    "executive": "Mauricio Restrepo",
+    "role": "Chief Financial Officer, Molson Coors International",
+    "disclosed": "2016-11",
+    "category": "Personal conduct (unspecified)",
+    "outcome": "Resigned",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "Molson Coors said he resigned because of matters regarding personal conduct unrelated to the operations or financial statements of the company.",
+    "sources": [
+      {
+        "label": "Company 8-K (via SEC EDGAR full-text search)"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Vague conduct exit from an SEC 8-K; a Google News cross-check (60 days before to 13 months after) found no reporting tying it to a relationship or misconduct."
+  },
+  {
+    "id": 276,
+    "type": "relationship",
+    "role_level": "executive",
+    "company_id": "3m",
+    "executive": "Michael G. Vale",
+    "role": "Group President and Chief Business and Country Officer",
+    "disclosed": "2023-05",
+    "category": "Personal conduct (unspecified)",
+    "outcome": "Terminated for cause",
+    "lost_role": true,
+    "evidence": "confirmed",
+    "summary": "3M said it terminated him for cause due to inappropriate personal conduct and violation of company policy, unrelated to the company's business or financial reporting.",
+    "sources": [
+      {
+        "label": "Company 8-K (via SEC EDGAR full-text search)"
+      }
+    ],
+    "primary_url": null,
+    "archive_url": null,
+    "verified_on": null,
+    "status": "watch",
+    "note": "Vague conduct exit from an SEC 8-K; a Google News cross-check (60 days before to 13 months after) found no reporting tying it to a relationship or misconduct."
   }
 ]

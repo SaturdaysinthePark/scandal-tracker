@@ -1643,5 +1643,19 @@
     "ticker": "FFIV",
     "sector": "Technology",
     "scope": "Other notable"
+  },
+  {
+    "id": "molsoncoors",
+    "name": "Molson Coors",
+    "ticker": "TAP",
+    "sector": "Beverages",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "3m",
+    "name": "3M",
+    "ticker": "MMM",
+    "sector": "Industrial",
+    "scope": "Fortune 500"
   }
 ]
