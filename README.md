@@ -52,6 +52,12 @@ Then ask Claude Code something like:
 - 273 records across 235 companies (147 published, 127 companies: 67 relationship, 80 misconduct; earliest case 1993), through November 2026.
 - The app in `app/` (plain HTML/CSS/JS, no build step) implements the timeline, records table, about page and detail drawer, reading `data/*.json` and `docs/METHODOLOGY.md`. Only `status: "published"` records are shown.
 
+## Deploy (Netlify)
+
+The repo includes `netlify.toml`. Netlify runs `sh scripts/build_site.sh`, which validates the data and copies the app, `data/*.json` and the methodology into `dist/`. Research scripts and `data/candidates/` are not published. `/` redirects to `/app/`.
+
+To build locally: `sh scripts/build_site.sh`, then serve `dist/`.
+
 ## Run the app
 
 ```bash

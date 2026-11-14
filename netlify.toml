@@ -1,0 +1,27 @@
+# Netlify: static site, no framework. The build validates the data and copies
+# the app, data and methodology into dist/.
+[build]
+  command = "sh scripts/build_site.sh"
+  publish = "dist"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+[[redirects]]
+  from = "/"
+  to = "/app/"
+  status = 301
+
+# Data changes with every research round: always revalidate.
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
