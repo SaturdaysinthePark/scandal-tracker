@@ -1,49 +1,181 @@
 // Scandal Tracker — reads data/*.json and docs/METHODOLOGY.md; no records are hard-coded.
 (() => {
-  const STEP = 5, MIN_YEAR = 1990;
+  const STEP = 5, MIN_YEAR = 1990, TOP_N = 25;
   // Fewer year columns on narrow screens so dots stay tappable.
   const winYears = () => (window.innerWidth < 640 ? 8 : window.innerWidth < 1000 ? 12 : 20);
   const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const VIEWS = ['timeline', 'calendar', 'records', 'about'];
   const SCOPES = ['All', 'Fortune 500', 'Global 500', 'Other notable'];
-  // Headline stats: how many companies, and how many people lost their role over it.
-  const statList = (recs) => [
-    [new Set(recs.map((r) => r.company_id)).size, 'Companies'],
-    [recs.filter((r) => r.lost_role).length, 'Lost their role'],
-  ];
+  const TYPES = ['all', 'relationship', 'misconduct'];
+  // Strongest first, matching the methodology.
+  const TIER_ORDER = ['confirmed', 'adjudicated', 'acknowledged', 'settled', 'reported', 'unconfirmed'];
+  const SORTS = ['date', 'company', 'person', 'evidence'];
 
-  const st = { view: 'timeline', scope: 'All', showU: true, showZero: false, end: null, q: '', sel: null, calU: true, calSel: null, type: 'all', showP: true };
-  const TYPES = [['all', 'All cases'], ['relationship', 'Relationships'], ['misconduct', 'Misconduct']];
-  let companies = [], byCo = {}, records = [], tiers = {}, maxYear = new Date().getFullYear();
+  // Everything a visitor can change lives in the URL (see urlFor / parseUrl), so views can be shared and survive a reload.
+  const DEF = { type: 'all', scope: 'All', ev: 'all', lost: 'all', p: true, co: '', q: '', sort: 'date-desc', end: null, zero: false, all: false, m: '', find: '' };
+  const st = { ...DEF, view: 'timeline', sel: null };
+  let companies = [], byCo = {}, records = [], tiers = {}, tierDef = {}, maxYear = new Date().getFullYear();
+  let lastFocus = null, justPickedMonth = false;
 
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const yearOf = (r) => +r.disclosed.slice(0, 4);
   const dateLabel = (r) => `${MONTHS[+r.disclosed.slice(5, 7) - 1]} ${r.disclosed.slice(0, 4)}`;
+  const dayLabel = (d) => { const [y, m, dd] = String(d).split('-'); return dd ? `${+dd} ${MONTHS[+m - 1]} ${y}` : d; };
+  const plural = (n, w) => `${n} ${n === 1 ? w : /y$/.test(w) ? `${w.slice(0, -1)}ies` : `${w}s`}`;
   const isU = (r) => r.evidence === 'unconfirmed';
   const isM = (r) => r.type === 'misconduct';
   const isP = (r) => r.role_level === 'prominent';
-  const typeOk = (r) => (st.type === 'all' || r.type === st.type) && (st.showP || !isP(r));
-  const roleLine = (r) => `${esc(r.role)}${isP(r) ? ' · <span class="ptag">Prominent employee</span>' : ''}`;
+  const coName = (id) => byCo[id]?.name || '';
+  const tierLabel = (r) => tiers[r.evidence] || r.evidence;
+  const roleLine = (r) => `${esc(r.role)}${isP(r) ? ' <span class="ptag">Prominent employee</span>' : ''}`;
   const markCls = (r) => `${isU(r) ? 'ring' : ''} ${isM(r) ? 'sq' : ''}`;
-  const dotHtml = (r, cls = '') => `<i class="dot ${cls} ${markCls(r)}"></i>`;
+  const dotHtml = (r, cls = '') => `<i class="dot ${cls} ${markCls(r)}" aria-hidden="true"></i>`;
   const safeUrl = (u) => (typeof u === 'string' && /^https:\/\//.test(u) ? u : null);
+  const byDateDesc = (a, b) => b.disclosed.localeCompare(a.disclosed) || b.id - a.id;
+  const clampEnd = (e) => Math.min(maxYear, Math.max(MIN_YEAR + winYears() - 1, e));
 
-  function visible() {
-    return records.filter((r) =>
-      typeOk(r) && (st.scope === 'All' || byCo[r.company_id]?.scope === st.scope) && (st.showU || !isU(r)));
+  // ---------- URL state ----------
+  function urlFor(view, id, s = st) {
+    const p = new URLSearchParams();
+    if (s.type !== DEF.type) p.set('type', s.type);
+    if (s.scope !== DEF.scope) p.set('scope', s.scope);
+    if (s.ev !== DEF.ev) p.set('ev', s.ev);
+    if (s.lost !== DEF.lost) p.set('lost', s.lost);
+    if (!s.p) p.set('p', '0');
+    if (s.co) p.set('co', s.co);
+    if (s.q) p.set('q', s.q);
+    // View-specific settings only appear in their own view's URL.
+    if (view === 'records' && s.sort !== DEF.sort) p.set('sort', s.sort);
+    if (view === 'timeline') {
+      if (s.end && s.end !== maxYear) p.set('end', s.end);
+      if (s.zero) p.set('zero', '1');
+      if (s.all) p.set('all', '1');
+      if (s.find) p.set('find', s.find);
+    }
+    if (view === 'calendar' && s.m) p.set('m', s.m);
+    const qs = p.toString();
+    return `#${view}${id ? `/${id}` : ''}${qs ? `?${qs}` : ''}`;
   }
+  function parseUrl() {
+    const [path, qs] = location.hash.slice(1).split('?');
+    const [v, id] = path.split('/');
+    const p = new URLSearchParams(qs || '');
+    const pick = (k, ok) => { const x = p.get(k); return x !== null && ok(x) ? x : DEF[k]; };
+    st.view = VIEWS.includes(v) ? v : 'timeline';
+    st.type = pick('type', (x) => TYPES.includes(x));
+    st.scope = pick('scope', (x) => SCOPES.includes(x));
+    st.ev = pick('ev', (x) => x === 'nou' || TIER_ORDER.includes(x));
+    st.lost = pick('lost', (x) => x === 'yes' || x === 'no');
+    st.p = p.get('p') !== '0';
+    st.co = pick('co', (x) => !!byCo[x]);
+    st.q = p.get('q') || '';
+    // Keep the other views' settings when they are not in this URL.
+    if (st.view === 'records') st.sort = pick('sort', (x) => SORTS.includes(x.split('-')[0]) && /-(asc|desc)$/.test(x));
+    if (st.view === 'timeline') {
+      st.end = clampEnd(+p.get('end') || maxYear);
+      st.zero = p.get('zero') === '1';
+      st.all = p.get('all') === '1';
+      st.find = p.get('find') || '';
+    }
+    if (st.view === 'calendar') st.m = pick('m', (x) => /^\d{4}-\d{2}$/.test(x));
+    return id || '';
+  }
+  // Filter or sort change: same history entry, new URL.
+  function commit() {
+    history.replaceState(history.state, '', urlFor(st.view, st.sel?.id));
+    render();
+  }
+  // Move to another view (new history entry), keeping filters.
+  function navTo(view, sec = '') {
+    history.pushState(null, '', urlFor(view, sec));
+    route();
+  }
+
+  // ---------- Filtering ----------
+  const evOk = (r) => st.ev === 'all' || (st.ev === 'nou' ? !isU(r) : r.evidence === st.ev);
+  const passes = (r) =>
+    (st.type === 'all' || r.type === st.type) && (st.p || !isP(r)) &&
+    (st.scope === 'All' || byCo[r.company_id]?.scope === st.scope) && evOk(r) &&
+    (st.lost === 'all' || (st.lost === 'yes') === !!r.lost_role) && (!st.co || r.company_id === st.co);
+  const filtered = () => records.filter(passes);
+  const qMatch = (r, q) => [coName(r.company_id), r.executive, r.role, r.category, r.summary, r.outcome].join(' ').toLowerCase().includes(q);
+
+  function sorter() {
+    const [k, dir] = st.sort.split('-');
+    const f = dir === 'asc' ? 1 : -1;
+    const cmp = {
+      date: (a, b) => a.disclosed.localeCompare(b.disclosed) || a.id - b.id,
+      company: (a, b) => coName(a.company_id).localeCompare(coName(b.company_id)) || byDateDesc(a, b) * -f,
+      person: (a, b) => a.executive.localeCompare(b.executive) || byDateDesc(a, b) * -f,
+      evidence: (a, b) => TIER_ORDER.indexOf(a.evidence) - TIER_ORDER.indexOf(b.evidence) || byDateDesc(a, b) * -f,
+    }[k];
+    return (a, b) => f * cmp(a, b);
+  }
+  function recList() {
+    const q = st.q.trim().toLowerCase();
+    return filtered().filter((r) => !q || qMatch(r, q)).sort(sorter());
+  }
+  // The list the drawer's Prev / Next walks through: whatever the current view shows.
+  function currentList() {
+    if (st.view === 'records') return recList();
+    const list = filtered().sort(byDateDesc);
+    return st.view === 'calendar' && st.m ? list.filter((r) => r.disclosed === st.m) : list;
+  }
+  function activeFilters() {
+    const out = [];
+    if (st.type !== 'all') out.push(['type', st.type === 'misconduct' ? 'Misconduct' : 'Relationships']);
+    if (st.scope !== 'All') out.push(['scope', st.scope]);
+    if (st.ev !== 'all') out.push(['ev', st.ev === 'nou' ? 'Unconfirmed hidden' : tiers[st.ev]]);
+    if (st.lost !== 'all') out.push(['lost', st.lost === 'yes' ? 'Lost their role' : 'Kept their role']);
+    if (!st.p) out.push(['p', 'Prominent employees hidden']);
+    if (st.co) out.push(['co', `Company: ${coName(st.co)}`]);
+    if (st.q && st.view === 'records') out.push(['q', `Search: “${st.q}”`]);
+    return out;
+  }
+  function clearFilter(k) {
+    if (k === 'q') { st.q = ''; $('q').value = ''; } else st[k] = DEF[k];
+  }
+  function resetFilters() {
+    for (const k of ['type', 'scope', 'ev', 'lost', 'p', 'co', 'q', 'find']) st[k] = DEF[k];
+    $('q').value = '';
+  }
+  // "Showing 12 of 147 cases · [chips] · Reset filters"
+  function renderSummary(shown) {
+    const act = activeFilters();
+    $('fsum').innerHTML = act.length ? `<span>Showing <b>${shown}</b> of ${records.length} cases</span>
+      ${act.map(([k, l]) => `<button type="button" class="chip" data-clear="${k}" aria-label="Remove filter: ${esc(l)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('')}
+      <button type="button" class="linkish" data-reset>Reset filters</button>` : '';
+  }
+  function emptyHtml(what) {
+    const act = activeFilters();
+    return `<div class="empty"><p>No ${what} match${act.length ? ' the current filters' : ''}${act.length ? `: ${act.map(([, l]) => esc(l)).join(', ')}` : ''}.</p>
+      ${act.length ? `<div class="empty-act">${st.q && st.view === 'records' ? '<button type="button" class="btn" data-clear="q">Clear search</button>' : ''}<button type="button" class="btn" data-reset>Reset filters</button></div>` : ''}</div>`;
+  }
+  const statsHtml = (recs) => [[recs.length, 'Cases'], [new Set(recs.map((r) => r.company_id)).size, 'Companies'], [recs.filter((r) => r.lost_role).length, 'Lost their role']]
+    .map(([v, l]) => `<div><div class="stat-v">${v}</div><div class="stat-l">${l}</div></div>`).join('');
 
   // ---------- Timeline ----------
   function renderTimeline() {
-    const recs = visible();
+    const recs = filtered();
     const W = winYears();
+    st.end = clampEnd(st.end || maxYear);
     const start = st.end - W + 1;
     const years = Array.from({ length: W }, (_, i) => start + i);
+    const inWin = (r) => yearOf(r) >= start && yearOf(r) <= st.end;
 
-    $('stats').innerHTML = statList(recs).map(([v, l]) => `<div><div class="stat-v">${v}</div><div class="stat-l">${l}</div></div>`).join('');
+    $('stats').innerHTML = statsHtml(recs);
+    renderSummary(recs.length);
 
-    $('scopes').innerHTML = SCOPES.map((s) =>
-      `<button data-scope="${esc(s)}" class="${s === st.scope ? 'on' : ''}" aria-pressed="${s === st.scope}">${s === 'All' ? 'All' : esc(s)}</button>`).join('');
+    const latest = [...recs].sort(byDateDesc).slice(0, 4);
+    $('latest').innerHTML = latest.length ? `<h2 class="latest-h">Latest cases</h2><div class="latest-row">${latest.map((r) => `
+      <button type="button" class="lt-card" data-id="${r.id}">
+        <span class="lt-meta">${esc(dateLabel(r))} · ${esc(coName(r.company_id))}</span>
+        <span class="lt-name">${esc(r.executive)}</span>
+        <span class="lt-cat">${esc(r.category)}</span>
+        <span class="ev">${dotHtml(r, 'sm')}${esc(tierLabel(r))}</span>
+      </button>`).join('')}</div>` : '';
+
     $('rangeLabel').textContent = `${start} – ${st.end}`;
     $('back').disabled = start <= MIN_YEAR;
     $('fwd').disabled = st.end >= maxYear;
@@ -51,44 +183,63 @@
     const perYear = years.map((y) => recs.filter((r) => yearOf(r) === y).length);
     const maxN = Math.max(1, ...perYear);
     const yy = (y) => `'${String(y).slice(2)}`;
+    const find = st.find.trim().toLowerCase();
 
     let rows = companies
-      .filter((c) => st.scope === 'All' || c.scope === st.scope)
+      .filter((c) => (st.scope === 'All' || c.scope === st.scope) && (!st.co || c.id === st.co))
       .map((c) => {
         const mine = recs.filter((r) => r.company_id === c.id).sort((a, b) => a.disclosed.localeCompare(b.disclosed));
-        return { c, mine, latest: mine.length ? mine[mine.length - 1].disclosed : '' };
-      })
-      .filter((x) => st.showZero || x.mine.length)
-      .sort((a, b) => b.mine.length - a.mine.length || b.latest.localeCompare(a.latest) || a.c.name.localeCompare(b.c.name));
+        return { c, mine, win: mine.filter(inWin).length, latest: mine.length ? mine[mine.length - 1].disclosed : '' };
+      });
+    let outside = 0;
+    if (find) rows = rows.filter((x) => x.c.name.toLowerCase().includes(find) && (x.mine.length || st.zero));
+    else {
+      outside = rows.filter((x) => x.mine.length && !x.win).length;
+      rows = rows.filter((x) => x.win || (st.zero && !x.mine.length));
+    }
+    rows.sort((a, b) => b.win - a.win || b.mine.length - a.mine.length || b.latest.localeCompare(a.latest) || a.c.name.localeCompare(b.c.name));
+    const total = rows.length;
+    const capped = !find && !st.all && total > TOP_N;
+    if (capped) rows = rows.slice(0, TOP_N);
 
-    let html = `
+    let html = `<div class="tl-head">
       <div class="tl-row hd"><div class="tl-lab big">Per year</div>
-        <div class="hist">${perYear.map((n) => `<div class="bar-col"><div class="bar-n">${n || ''}</div><div class="bar" style="height:${Math.round((n / maxN) * 44)}px"></div></div>`).join('')}</div><div></div></div>
+        <div class="hist">${perYear.map((n, i) => `<div class="bar-col" title="${years[i]}: ${plural(n, 'case')}"><div class="bar-n">${n || ''}</div><div class="bar" style="height:${Math.round((n / maxN) * 44)}px"></div></div>`).join('')}</div><div></div></div>
       <div class="tl-row hd"><div class="tl-lab">Company</div>
-        <div class="years">${years.map((y) => `<div class="yr">${yy(y)}</div>`).join('')}</div><div class="tot-h">Total</div></div>`;
+        <div class="years">${years.map((y) => `<div class="yr">${yy(y)}</div>`).join('')}</div><div class="tot-h">Total</div></div></div>`;
     html += rows.map(({ c, mine }) => {
-      const earlier = mine.filter((r) => yearOf(r) < start).length;
+      const earlier = mine.filter((r) => yearOf(r) < start), later = mine.filter((r) => yearOf(r) > st.end);
       const cells = years.map((y) => `<div class="cell">${mine.filter((r) => yearOf(r) === y).map((r) =>
-        `<button class="dot ${markCls(r)}" data-id="${r.id}" title="${esc(`${r.executive} · ${dateLabel(r)} · ${tiers[r.evidence] || r.evidence}`)}" aria-label="${esc(`${r.executive}, ${dateLabel(r)}`)}"></button>`).join('')}</div>`).join('');
-      return `<div class="tl-row co"><div class="tl-name" title="${esc(c.name)}">${esc(c.name)}</div><div class="years">${cells}</div>
-        <div class="tot">${earlier ? `<span class="tot-e" title="Earlier records outside this range">+${earlier}‹</span>` : ''}<span class="tot-n ${mine.length ? '' : 'zero'}">${mine.length}</span></div></div>`;
+        `<button type="button" class="dot ${markCls(r)}" data-id="${r.id}" title="${esc(`${r.executive} · ${dateLabel(r)} · ${tierLabel(r)}`)}" aria-label="${esc(`${r.executive}, ${c.name}, ${dateLabel(r)}, ${tierLabel(r)}`)}"></button>`).join('')}</div>`).join('');
+      const chip = (list, dir) => list.length ? `<button type="button" class="shift" data-shift="${yearOf(dir < 0 ? list[list.length - 1] : list[0])}" aria-label="${plural(list.length, `${dir < 0 ? 'earlier' : 'later'} case`)} at ${esc(c.name)}: show ${dir < 0 ? 'earlier' : 'later'} years">${dir < 0 ? '‹' : ''}+${list.length}${dir > 0 ? '›' : ''}</button>` : '';
+      return `<div class="tl-row co"><button type="button" class="tl-name" data-co="${esc(c.id)}" title="All cases at ${esc(c.name)}"><span>${esc(c.name)}</span></button><div class="years">${cells}</div>
+        <div class="tot">${chip(earlier, -1)}${chip(later, 1)}<span class="tot-n ${mine.length ? '' : 'zero'}">${mine.length}</span></div></div>`;
     }).join('');
-    if (!rows.length) html += `<div class="empty">No records match these filters.</div>`;
+    if (!total) html += emptyHtml(find ? `companies named “${esc(st.find)}”` : 'companies');
     $('timeline').innerHTML = html;
+
+    const more = [];
+    if (capped) more.push(`<button type="button" class="btn" data-all="1">Show all ${total} companies</button>`);
+    else if (st.all && total > TOP_N) more.push(`<button type="button" class="btn" data-all="0">Show top ${TOP_N} only</button>`);
+    if (outside) more.push(`<span>${plural(outside, 'more company')} ${outside === 1 ? 'has' : 'have'} cases only outside ${start}–${st.end}.</span>
+      ${start > MIN_YEAR ? '<button type="button" class="linkish" data-earlier>Show earlier years</button>' : ''}`);
+    $('tlMore').innerHTML = more.join('');
   }
 
   // ---------- Calendar heat map (company-agnostic) ----------
   function renderCalendar() {
-    const recs = records.filter((r) => typeOk(r) && (st.calU || !isU(r)));
+    const recs = filtered();
     const counts = {};
     for (const r of recs) counts[r.disclosed] = (counts[r.disclosed] || 0) + 1;
     const ys = recs.map(yearOf);
     const first = ys.length ? Math.min(...ys) : maxYear;
     const years = []; for (let y = maxYear; y >= first; y--) years.push(y);
     const maxN = Math.max(1, ...Object.values(counts));
-    const shade = (n) => n ? `rgba(200,65,43,${(0.22 + 0.78 * (n / maxN)).toFixed(2)})` : '';
+    const pct = (n) => Math.round(22 + 78 * (n / maxN));
+    const shade = (n) => (n ? `color-mix(in srgb, var(--accent) ${pct(n)}%, transparent)` : '');
 
-    $('calStats').innerHTML = statList(recs).map(([v, l]) => `<div><div class="stat-v">${esc(v)}</div><div class="stat-l">${esc(l)}</div></div>`).join('');
+    $('calStats').innerHTML = statsHtml(recs);
+    renderSummary(recs.length);
 
     let html = `<div></div>${MONTHS.map((m) => `<div class="hm-h">${m}</div>`).join('')}<div class="hm-h" style="text-align:right">Total</div>`;
     for (const y of years) {
@@ -96,76 +247,123 @@
       html += `<div class="hm-y">${y}</div>`;
       for (let m = 1; m <= 12; m++) {
         const key = `${y}-${String(m).padStart(2, '0')}`, n = counts[key] || 0; tot += n;
-        const lbl = `${MONTHS[m - 1]} ${y}: ${n} case${n === 1 ? '' : 's'}`;
+        const lbl = `${MONTHS[m - 1]} ${y}: ${plural(n, 'case')}`;
         html += n
-          ? `<button class="hm-c has ${st.calSel === key ? 'on' : ''}" data-m="${key}" style="background:${shade(n)};color:${n / maxN > 0.5 ? '#fff' : 'var(--ink)'}" title="${lbl}" aria-label="${lbl}">${n}</button>`
+          ? `<button type="button" class="hm-c has ${st.m === key ? 'on' : ''}" data-m="${key}" style="background:${shade(n)};color:${n / maxN > 0.5 ? '#fff' : 'var(--ink)'}" title="${lbl}" aria-label="${lbl}" aria-pressed="${st.m === key}">${n}</button>`
           : `<div class="hm-c" title="${lbl}"></div>`;
       }
       html += `<div class="hm-t ${tot ? '' : 'zero'}">${tot}</div>`;
     }
-    $('heat').innerHTML = html;
+    $('heat').innerHTML = recs.length ? html : emptyHtml('cases');
+    $('heat').classList.toggle('is-empty', !recs.length);
     const steps = [1, Math.ceil(maxN / 2), maxN].filter((v, i, a) => a.indexOf(v) === i);
     $('heatLegend').innerHTML = `<span>Fewer</span>${steps.map((n) => `<span><i class="hm-sw" style="background:${shade(n)}"></i>${n}</span>`).join('')}<span>More</span><span class="legend-note">Placed by the month a case became public. Coverage is incomplete.</span>`;
 
     const box = $('monthList');
-    const sel = st.calSel ? recs.filter((r) => r.disclosed === st.calSel) : [];
+    const sel = st.m ? recs.filter((r) => r.disclosed === st.m).sort(byDateDesc) : [];
     box.hidden = !sel.length;
     if (sel.length) {
-      box.innerHTML = `<h2>${MONTHS[+st.calSel.slice(5) - 1]} ${st.calSel.slice(0, 4)} · ${sel.length} case${sel.length === 1 ? '' : 's'}</h2>
-        <div class="card scroll-x"><table class="tbl"><thead><tr><th>Disclosed</th><th>Company</th><th>Person</th><th>Category</th><th>Outcome</th><th>Evidence</th></tr></thead>
-        <tbody>${rowsHtml(sel)}</tbody></table></div>`;
+      box.innerHTML = `<div class="ml-top"><h2>${MONTHS[+st.m.slice(5) - 1]} ${st.m.slice(0, 4)} · ${plural(sel.length, 'case')}</h2>
+        <button type="button" class="btn" data-closemonth>Close</button></div>
+        <div class="card scroll-x">${tableHtml(sel, false)}</div>`;
+      if (justPickedMonth) {
+        box.focus({ preventScroll: true });
+        requestAnimationFrame(() => box.scrollIntoView({ block: 'start' }));
+      }
     }
+    justPickedMonth = false;
   }
 
   // ---------- Records ----------
   function rowsHtml(list) {
     return list.map((r) => `
-      <tr data-id="${r.id}" tabindex="0">
+      <tr data-id="${r.id}" tabindex="0" aria-label="${esc(`${r.executive}, ${coName(r.company_id)}, ${dateLabel(r)}. Open details`)}">
         <td class="td-date">${esc(dateLabel(r))}</td>
-        <td class="td-co">${esc(byCo[r.company_id]?.name)}</td>
+        <td class="td-co"><button type="button" class="co-link" data-co="${esc(r.company_id)}" title="All cases at ${esc(coName(r.company_id))}">${esc(coName(r.company_id))}</button></td>
         <td class="td-ex"><div>${esc(r.executive)}</div><div class="sub">${roleLine(r)}</div></td>
         <td class="td-cat">${esc(r.category)}</td>
         <td class="td-out">${esc(r.outcome)}</td>
-        <td class="td-ev"><div class="ev">${dotHtml(r, 'sm')}${esc(tiers[r.evidence] || r.evidence)}</div></td>
+        <td class="td-ev"><div class="ev">${dotHtml(r, 'sm')}${esc(tierLabel(r))}</div></td>
       </tr>`).join('');
   }
+  const tableHtml = (list) => `<table class="tbl"><thead><tr><th>Disclosed</th><th>Company</th><th>Person</th><th>Category</th><th>Outcome</th><th>Evidence</th></tr></thead><tbody>${rowsHtml(list)}</tbody></table>`;
+
   function renderRecords() {
-    const q = st.q.trim().toLowerCase();
-    const list = records
-      .filter(typeOk)
-      .filter((r) => !q || [byCo[r.company_id]?.name, r.executive, r.role, r.category, r.summary, r.outcome].join(' ').toLowerCase().includes(q))
-      .sort((a, b) => b.disclosed.localeCompare(a.disclosed));
-    $('rows').innerHTML = list.length ? rowsHtml(list) : `<tr><td colspan="6" class="empty">No records match “${esc(st.q)}”.</td></tr>`;
+    const list = recList();
+    $('rows').innerHTML = list.length ? rowsHtml(list) : `<tr class="tr-empty"><td colspan="6">${emptyHtml('cases')}</td></tr>`;
     const lost = list.filter((r) => r.lost_role).length;
-    $('recCount').textContent = `${list.length} case${list.length === 1 ? '' : 's'}${q ? ` matching “${st.q.trim()}”` : ''} · ${lost} lost their role`;
+    $('recCount').textContent = `${plural(list.length, 'case')}${st.q.trim() ? ` matching “${st.q.trim()}”` : ''} · ${lost} lost their role`;
+    renderSummary(list.length);
+    const [k, dir] = st.sort.split('-');
+    document.querySelectorAll('#recTbl th').forEach((th) => {
+      const b = th.querySelector('.th-sort');
+      if (!b) return;
+      const on = b.dataset.sort === k;
+      th.setAttribute('aria-sort', on ? (dir === 'asc' ? 'ascending' : 'descending') : 'none');
+      b.dataset.dir = on ? dir : '';
+    });
   }
 
   // ---------- About (from METHODOLOGY.md) ----------
+  const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   function renderAbout(md) {
     const inline = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(.+?)`/g, '<code>$1</code>');
-    let out = '', list = null;
+    let out = '', list = null, sec = '';
+    const toc = [];
     const close = () => { if (list) { out += `</${list}>`; list = null; } };
     for (const line of md.split('\n')) {
       let m;
       if (/^# /.test(line)) continue;
-      if ((m = line.match(/^## (.+)/))) { close(); out += `${out ? '</section>' : ''}<section><h2>${inline(m[1])}</h2>`; }
-      else if ((m = line.match(/^\s*[-*] (.+)/))) { if (list !== 'ul') { close(); out += '<ul>'; list = 'ul'; } out += `<li>${inline(m[1])}</li>`; }
-      else if ((m = line.match(/^\s*\d+\. (.+)/))) { if (list !== 'ol') { close(); out += '<ol>'; list = 'ol'; } out += `<li>${inline(m[1])}</li>`; }
-      else if (line.trim()) { close(); out += `<p>${inline(line)}</p>`; }
+      if ((m = line.match(/^## (.+)/))) {
+        close(); sec = slug(m[1]); toc.push([sec, m[1]]);
+        out += `${out ? '</section>' : ''}<section id="about-${sec}" tabindex="-1"><h2>${inline(m[1])}</h2>`;
+      } else if ((m = line.match(/^\s*[-*] (.+)/))) { if (list !== 'ul') { close(); out += '<ul>'; list = 'ul'; } out += `<li>${inline(m[1])}</li>`; }
+      else if ((m = line.match(/^\s*\d+\. (.+)/))) {
+        if (list !== 'ol') { close(); out += '<ol>'; list = 'ol'; } out += `<li>${inline(m[1])}</li>`;
+        // Evidence definitions feed the drawer's tier explainer.
+        const d = sec === 'evidence' && m[1].match(/^\*\*(.+?)\*\*:\s*(.+)/);
+        if (d) tierDef[d[1]] = d[2];
+      } else if (line.trim()) { close(); out += `<p>${inline(line)}</p>`; }
     }
     close();
     $('about').insertAdjacentHTML('beforeend', out + (out ? '</section>' : ''));
+    $('toc').innerHTML = `<span class="toc-l">On this page</span>${toc.map(([id, t]) => `<a href="#about/${id}" data-nav="about" data-sec="${id}">${esc(t)}</a>`).join('')}`;
   }
 
   // ---------- Drawer ----------
-  let lastFocus = null;
-  function openDrawer(id) {
-    const r = records.find((x) => x.id === +id);
-    if (!r) return;
+  function openCase(id) {
     if (!st.sel) lastFocus = document.activeElement;
+    // A real history entry, so the phone Back button closes the drawer instead of leaving the view.
+    const view = st.view === 'about' ? 'records' : st.view;
+    history.pushState({ d: 1 }, '', urlFor(view, id));
+    route();
+  }
+  function closeCase() {
+    if (history.state?.d) history.back();
+    else { history.replaceState(null, '', urlFor(st.view, '')); route(); }
+  }
+  function stepCase(dir) {
+    const list = currentList();
+    let i = list.findIndex((r) => r.id === st.sel?.id);
+    const src = i < 0 ? [...records].sort(byDateDesc) : list;
+    if (i < 0) i = src.findIndex((r) => r.id === st.sel?.id);
+    const next = src[i + dir];
+    if (!next) return;
+    history.replaceState(history.state, '', urlFor(st.view, next.id));
+    route();
+  }
+  const setModal = (on) => {
+    for (const el of [$('hdr'), $('main'), $('ftr'), $('toTop')]) el.inert = on;
+    document.body.classList.toggle('locked', on);
+  };
+
+  function showDrawer(r) {
+    const wasOpen = !!st.sel;
+    const stepFocus = document.activeElement?.dataset?.step;
     st.sel = r;
-    history.replaceState(null, '', `#${st.view}/${r.id}`);
-    const url = safeUrl(r.primary_url);
+    let list = currentList(), i = list.findIndex((x) => x.id === r.id);
+    if (i < 0) { list = [...records].sort(byDateDesc); i = list.findIndex((x) => x.id === r.id); }
+    const url = safeUrl(r.primary_url), arch = safeUrl(r.archive_url);
     let host = '';
     try { host = url ? new URL(url).hostname.replace(/^www\./, '') : ''; } catch { /* ignore */ }
     const urlLabel = /sec\.gov$/.test(host) ? 'SEC filing' : 'Primary report';
@@ -173,69 +371,274 @@
       const u = safeUrl(s.url);
       return `<li>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(s.label)}</a>` : esc(s.label)}</li>`;
     }).join('');
+    const related = records.filter((x) => x.id !== r.id && x.executive === r.executive && x.company_id === r.company_id).sort(byDateDesc);
+    const def = tierDef[tierLabel(r)];
     $('drawer').innerHTML = `
-      <div class="dr-top"><div>
-        <div class="dr-meta">${esc(byCo[r.company_id]?.name)} · ${esc(dateLabel(r))}</div>
-        <div class="dr-name" id="drName">${esc(r.executive)}</div><div class="dr-role">${roleLine(r)}</div></div>
-        <button class="dr-x" id="drClose" aria-label="Close">×</button></div>
+      <div class="dr-nav">
+        <button type="button" class="btn btn-sm" data-step="-1" ${i <= 0 ? 'disabled' : ''} aria-label="Previous case">‹ Prev</button>
+        <span class="mono dr-pos">${i + 1} of ${list.length}</span>
+        <button type="button" class="btn btn-sm" data-step="1" ${i >= list.length - 1 ? 'disabled' : ''} aria-label="Next case">Next ›</button>
+        <button type="button" class="dr-x" id="drClose" aria-label="Close">×</button>
+      </div>
+      <div>
+        <div class="dr-meta"><button type="button" class="co-link" data-co="${esc(r.company_id)}">${esc(coName(r.company_id))}</button> · ${esc(dateLabel(r))}</div>
+        <h2 class="dr-name" id="drName">${esc(r.executive)}</h2><div class="dr-role">${roleLine(r)}</div>
+      </div>
       <div class="pills"><div class="pill kind">${dotHtml(r, 'sm')}${isM(r) ? 'Misconduct' : 'Relationship'}</div>
-        <div class="pill">${esc(tiers[r.evidence] || r.evidence)}</div></div>
+        <a class="pill tier" href="#about/evidence" data-nav="about" data-sec="evidence" title="What this evidence level means">${esc(tierLabel(r))}<span aria-hidden="true">ⓘ</span></a></div>
+      ${def ? `<p class="dr-def"><strong>${esc(tierLabel(r))}:</strong> ${esc(def.replace(/\*\*/g, ''))} <a href="#about/evidence" data-nav="about" data-sec="evidence">How evidence is graded</a></p>` : ''}
       <p class="dr-sum">${esc(r.summary)}</p>
       <dl class="dr-facts"><dt>Category</dt><dd>${esc(r.category)}</dd><dt>Outcome</dt><dd>${esc(r.outcome)}</dd>
-        <dt>Lost their role</dt><dd>${r.lost_role ? 'Yes' : 'No'}</dd><dt>Became public</dt><dd>${esc(dateLabel(r))}</dd></dl>
+        <dt>Lost their role</dt><dd>${r.lost_role ? 'Yes' : 'No'}</dd><dt>Became public</dt><dd>${esc(dateLabel(r))}</dd>
+        ${r.verified_on ? `<dt>Last verified</dt><dd>${esc(dayLabel(r.verified_on))}</dd>` : ''}</dl>
+      ${related.length ? `<div class="dr-rel"><div class="src-t">Other records about this person</div><ul>${related.map((x) =>
+        `<li><button type="button" class="linkish" data-id="${x.id}">${esc(dateLabel(x))} · ${esc(x.category)}</button></li>`).join('')}</ul></div>` : ''}
       <div class="dr-src">
-        ${url ? `<a class="src-card" href="${esc(url)}" target="_blank" rel="noopener"><div><div class="src-l">${urlLabel}</div><div class="src-h">${esc(host)}</div></div><div class="src-arrow">↗</div></a>` : ''}
+        ${url ? `<a class="src-card" href="${esc(url)}" target="_blank" rel="noopener"><div><div class="src-l">${urlLabel}</div><div class="src-h">${esc(host)}</div></div><div class="src-arrow" aria-hidden="true">↗</div></a>` : ''}
         <div class="src-t">Sources</div><ul>${srcs}</ul>
-      </div>`;
+        ${arch ? `<p class="dr-arch"><a href="${esc(arch)}" target="_blank" rel="noopener">Archived copy</a></p>` : ''}
+      </div>
+      <div class="dr-act"><button type="button" class="btn" id="copyLink">Copy link to this case</button></div>`;
     $('drawer').hidden = false; $('backdrop').hidden = false;
-    $('drClose').focus();
+    $('drawer').scrollTop = 0;
+    setModal(true);
+    const keep = stepFocus && $('drawer').querySelector(`[data-step="${stepFocus}"]:not(:disabled)`);
+    (keep || (!wasOpen && $('drClose')) || $('drawer').querySelector('[data-step]:not(:disabled)') || $('drClose')).focus();
   }
-  function closeDrawer() {
-    st.sel = null; $('drawer').hidden = true; $('backdrop').hidden = true;
-    history.replaceState(null, '', `#${st.view}`);
-    if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
+  function hideDrawer() {
+    st.sel = null;
+    $('drawer').hidden = true; $('backdrop').hidden = true;
+    setModal(false);
+    if (lastFocus && document.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
+    lastFocus = null;
   }
 
-  // ---------- Routing / events ----------
-  function show() {
-    const [v0, idPart] = location.hash.slice(1).split('/');
-    const v = v0 || 'timeline';
-    const VIEWS = ['timeline', 'calendar', 'records', 'about'];
-    const prev = st.view;
-    st.view = VIEWS.includes(v) ? v : 'timeline';
-    if (prev !== st.view) window.scrollTo(0, 0);
-    for (const k of VIEWS) $(`v-${k}`).hidden = k !== st.view;
-    document.querySelectorAll('.pChk').forEach((el) => { el.checked = st.showP; });
-    document.querySelectorAll('.typeSeg').forEach((el) => { el.innerHTML = TYPES.map(([k, l]) => `<button data-type="${k}" class="${k === st.type ? 'on' : ''}" aria-pressed="${k === st.type}">${l}</button>`).join(''); });
-    if (st.view === 'calendar') renderCalendar();
-    document.querySelectorAll('#tabs button').forEach((b) => { b.classList.toggle('on', b.dataset.view === st.view); b.setAttribute('aria-current', b.dataset.view === st.view ? 'page' : 'false'); });
-    if (st.view === 'timeline') renderTimeline();
-    if (st.view === 'records') renderRecords();
-    if (idPart && !st.sel) openDrawer(idPart);
+  // ---------- Header search ----------
+  let suggIdx = -1, suggItems = [];
+  function suggest() {
+    const q = $('q').value.trim().toLowerCase();
+    if (!q) return closeSugg();
+    const people = new Map();
+    for (const r of [...records].sort(byDateDesc)) {
+      const k = `${r.executive}|${r.company_id}`;
+      if (!people.has(k) && `${r.executive} ${coName(r.company_id)}`.toLowerCase().includes(q)) people.set(k, r);
+    }
+    const cos = companies.filter((c) => c.name.toLowerCase().includes(q))
+      .map((c) => [c, records.filter((r) => r.company_id === c.id).length]).filter(([, n]) => n);
+    suggItems = [
+      ...[...people.values()].slice(0, 5).map((r) => ({ kind: 'case', id: r.id, label: r.executive, sub: `${coName(r.company_id)} · ${dateLabel(r)}` })),
+      ...cos.slice(0, 4).map(([c, n]) => ({ kind: 'co', id: c.id, label: c.name, sub: plural(n, 'case') })),
+      { kind: 'all', label: `Search all records for “${$('q').value.trim()}”`, sub: '' },
+    ];
+    suggIdx = -1;
+    $('sugg').innerHTML = suggItems.map((s, i) => `<li role="option" id="sg-${i}" data-i="${i}" aria-selected="false" class="sg-${s.kind}">
+      <span class="sg-l">${esc(s.label)}</span>${s.sub ? `<span class="sg-s">${esc(s.sub)}</span>` : ''}</li>`).join('');
+    $('sugg').hidden = false;
+    $('q').setAttribute('aria-expanded', 'true');
   }
+  function closeSugg() {
+    $('sugg').hidden = true; suggIdx = -1;
+    $('q').setAttribute('aria-expanded', 'false'); $('q').removeAttribute('aria-activedescendant');
+  }
+  function moveSugg(d) {
+    if ($('sugg').hidden) return suggest();
+    suggIdx = (suggIdx + d + suggItems.length) % suggItems.length;
+    $('sugg').querySelectorAll('li').forEach((li, i) => li.setAttribute('aria-selected', String(i === suggIdx)));
+    $('q').setAttribute('aria-activedescendant', `sg-${suggIdx}`);
+    $(`sg-${suggIdx}`)?.scrollIntoView({ block: 'nearest' });
+  }
+  function pickSugg(i) {
+    const s = suggItems[i];
+    closeSugg();
+    if (!s || s.kind === 'all') {
+      st.q = $('q').value.trim();
+      return navTo('records');
+    }
+    $('q').value = ''; st.q = '';
+    if (s.kind === 'co') { st.co = s.id; navTo('records'); }
+    else openCase(s.id);
+    closeMobileSearch();
+  }
+  const closeMobileSearch = () => { $('hdr').classList.remove('s-open'); $('searchToggle').setAttribute('aria-expanded', 'false'); };
+
+  // ---------- Downloads ----------
+  function download(name, type, text) {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([text], { type }));
+    a.download = name; document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  }
+  function csv() {
+    const cols = ['id', 'disclosed', 'company', 'executive', 'role', 'type', 'role_level', 'category', 'outcome', 'lost_role', 'evidence', 'summary', 'primary_url', 'verified_on'];
+    const cell = (v) => { const s = String(v ?? ''); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
+    const lines = [cols.join(',')].concat([...records].sort(byDateDesc).map((r) =>
+      cols.map((c) => cell(c === 'company' ? coName(r.company_id) : c === 'evidence' ? tierLabel(r) : r[c])).join(',')));
+    return lines.join('\n');
+  }
+  let toastT;
+  function toast(msg) {
+    $('toast').textContent = msg; $('toast').hidden = false;
+    clearTimeout(toastT); toastT = setTimeout(() => { $('toast').hidden = true; }, 2200);
+  }
+
+  // ---------- Routing ----------
+  function syncControls() {
+    document.querySelectorAll('#typeSeg button').forEach((b) => { const on = b.dataset.type === st.type; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); });
+    $('scope').value = st.scope; $('ev').value = st.ev; $('lost').value = st.lost;
+    $('showP').checked = st.p; $('showZero').checked = st.zero;
+    if (document.activeElement !== $('coFind')) $('coFind').value = st.find;
+    document.querySelectorAll('#tabs button').forEach((b) => {
+      const on = b.dataset.view === st.view; b.classList.toggle('on', on);
+      if (on) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current');
+    });
+  }
+  function render() {
+    syncControls();
+    if (st.view === 'timeline') renderTimeline();
+    if (st.view === 'calendar') renderCalendar();
+    if (st.view === 'records') renderRecords();
+  }
+  function route() {
+    const prev = st.view;
+    const id = parseUrl();
+    const changed = prev !== st.view;
+    for (const k of VIEWS) $(`v-${k}`).hidden = k !== st.view;
+    // One filter bar, shared by every data view.
+    const slot = $(`v-${st.view}`).querySelector('.fslot');
+    $('filters').hidden = !slot;
+    if (slot && $('filters').parentElement !== slot) slot.append($('filters'));
+    if (changed && document.activeElement !== $('q')) $('q').value = st.view === 'records' ? st.q : '';
+    render();
+    if (st.view === 'about') {
+      if (st.sel) hideDrawer();
+      const sec = id && $(`about-${id}`);
+      if (sec) { sec.scrollIntoView(); sec.focus({ preventScroll: true }); } else if (changed) window.scrollTo(0, 0);
+      return;
+    }
+    if (changed) window.scrollTo(0, 0);
+    const r = id && records.find((x) => x.id === +id);
+    if (r) { if (st.sel?.id !== r.id) showDrawer(r); }
+    else if (st.sel) hideDrawer();
+  }
+
+  function setHdrH() { document.documentElement.style.setProperty('--hdr-h', `${$('hdr').offsetHeight}px`); }
 
   function wire() {
-    $('tabs').addEventListener('click', (e) => { const v = e.target.closest('button')?.dataset.view; if (v) location.hash = v; });
-    $('scopes').addEventListener('click', (e) => { const s = e.target.closest('button')?.dataset.scope; if (s) { st.scope = s; renderTimeline(); } });
-    $('showU').addEventListener('change', (e) => { st.showU = e.target.checked; renderTimeline(); });
-    $('showZero').addEventListener('change', (e) => { st.showZero = e.target.checked; renderTimeline(); });
-    $('back').addEventListener('click', () => { st.end = Math.max(MIN_YEAR + winYears() - 1, st.end - STEP); renderTimeline(); });
-    $('fwd').addEventListener('click', () => { st.end = Math.min(maxYear, st.end + STEP); renderTimeline(); });
-    $('timeline').addEventListener('click', (e) => { const id = e.target.closest('button.dot')?.dataset.id; if (id) openDrawer(id); });
-    $('rows').addEventListener('click', (e) => { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); });
-    $('rows').addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); } });
-    document.addEventListener('click', (e) => { const t = e.target.closest('.typeSeg button')?.dataset.type; if (t) { st.type = t; st.calSel = null; show(); } });
-    document.addEventListener('change', (e) => { if (e.target.classList?.contains('pChk')) { st.showP = e.target.checked; st.calSel = null; show(); } });
-    $('calU').addEventListener('change', (e) => { st.calU = e.target.checked; renderCalendar(); });
-    $('heat').addEventListener('click', (e) => { const m = e.target.closest('button.hm-c')?.dataset.m; if (m) { st.calSel = st.calSel === m ? null : m; renderCalendar(); } });
-    $('monthList').addEventListener('click', (e) => { const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); });
-    $('q').addEventListener('input', (e) => { st.q = e.target.value; renderRecords(); });
-    $('backdrop').addEventListener('click', closeDrawer);
-    $('drawer').addEventListener('click', (e) => { if (e.target.closest('#drClose')) closeDrawer(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && st.sel) closeDrawer(); });
-    window.addEventListener('hashchange', () => { if (st.sel) closeDrawer(); show(); });
-    let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (st.view === 'timeline') renderTimeline(); }, 150); });
-    $('monthList').addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); const id = e.target.closest('tr')?.dataset.id; if (id) openDrawer(id); } });
+    // Views
+    $('tabs').addEventListener('click', (e) => { const v = e.target.closest('button')?.dataset.view; if (v && v !== st.view) navTo(v); });
+    document.addEventListener('click', (e) => {
+      const nav = e.target.closest('a[data-nav]');
+      if (nav) { e.preventDefault(); navTo(nav.dataset.nav, nav.dataset.sec || ''); closeMobileSearch(); return; }
+      const co = e.target.closest('[data-co]');
+      if (co) { e.stopPropagation(); st.co = co.dataset.co; st.q = ''; st.find = ''; $('q').value = ''; navTo('records'); return; }
+      const clr = e.target.closest('[data-clear]');
+      if (clr) { clearFilter(clr.dataset.clear); commit(); return; }
+      if (e.target.closest('[data-reset]')) { resetFilters(); commit(); return; }
+      const card = e.target.closest('.lt-card, .dr-rel [data-id]');
+      if (card) { if (st.sel) { history.replaceState(history.state, '', urlFor(st.view, card.dataset.id)); route(); } else openCase(card.dataset.id); }
+    });
+    window.addEventListener('popstate', route);
+
+    // Shared filters
+    $('typeSeg').addEventListener('click', (e) => { const t = e.target.closest('button')?.dataset.type; if (t) { st.type = t; st.m = ''; commit(); } });
+    $('scope').addEventListener('change', (e) => { st.scope = e.target.value; commit(); });
+    $('ev').addEventListener('change', (e) => { st.ev = e.target.value; st.m = ''; commit(); });
+    $('lost').addEventListener('change', (e) => { st.lost = e.target.value; st.m = ''; commit(); });
+    $('showP').addEventListener('change', (e) => { st.p = e.target.checked; st.m = ''; commit(); });
+
+    // Timeline
+    $('showZero').addEventListener('change', (e) => { st.zero = e.target.checked; commit(); });
+    $('coFind').addEventListener('input', (e) => { st.find = e.target.value; commit(); });
+    $('back').addEventListener('click', () => { st.end = clampEnd(st.end - STEP); commit(); });
+    $('fwd').addEventListener('click', () => { st.end = clampEnd(st.end + STEP); commit(); });
+    $('timeline').addEventListener('click', (e) => {
+      const id = e.target.closest('button.dot')?.dataset.id; if (id) return openCase(id);
+      const y = e.target.closest('[data-shift]')?.dataset.shift;
+      if (y) { st.end = clampEnd(+y + Math.floor(winYears() / 2)); commit(); }
+    });
+    $('tlMore').addEventListener('click', (e) => {
+      const a = e.target.closest('[data-all]'); if (a) { st.all = a.dataset.all === '1'; commit(); }
+      if (e.target.closest('[data-earlier]')) { st.end = clampEnd(st.end - winYears()); commit(); }
+    });
+
+    // Calendar
+    $('heat').addEventListener('click', (e) => { const m = e.target.closest('button.hm-c')?.dataset.m; if (m) { st.m = st.m === m ? '' : m; justPickedMonth = !!st.m; commit(); } });
+    $('monthList').addEventListener('click', (e) => {
+      if (e.target.closest('[data-closemonth]')) { const k = st.m; st.m = ''; commit(); $('heat').querySelector(`[data-m="${k}"]`)?.focus(); return; }
+      if (e.target.closest('[data-co]')) return;
+      const id = e.target.closest('tr')?.dataset.id; if (id) openCase(id);
+    });
+
+    // Records
+    $('rows').addEventListener('click', (e) => { if (e.target.closest('[data-co],[data-clear],[data-reset]')) return; const id = e.target.closest('tr')?.dataset.id; if (id) openCase(id); });
+    const rowKey = (e) => { if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('tr')) { e.preventDefault(); openCase(e.target.dataset.id); } };
+    $('rows').addEventListener('keydown', rowKey);
+    $('monthList').addEventListener('keydown', rowKey);
+    $('recTbl').querySelector('thead').addEventListener('click', (e) => {
+      const k = e.target.closest('.th-sort')?.dataset.sort; if (!k) return;
+      const [ck, cd] = st.sort.split('-');
+      st.sort = ck === k ? `${k}-${cd === 'asc' ? 'desc' : 'asc'}` : `${k}-${k === 'date' ? 'desc' : 'asc'}`;
+      commit();
+    });
+
+    // Header search
+    $('q').addEventListener('input', () => {
+      if (st.view === 'records') { st.q = $('q').value; commit(); }
+      suggest();
+    });
+    $('q').addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') { e.preventDefault(); moveSugg(1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); moveSugg(-1); }
+      else if (e.key === 'Enter') { e.preventDefault(); if ($('q').value.trim()) pickSugg(suggIdx >= 0 ? suggIdx : suggItems.length - 1); }
+      else if (e.key === 'Escape') { if (!$('sugg').hidden) closeSugg(); else { $('q').blur(); closeMobileSearch(); } }
+    });
+    $('q').addEventListener('focus', () => { if ($('q').value.trim()) suggest(); });
+    $('q').addEventListener('blur', () => setTimeout(() => { closeSugg(); if (!$('q').value) closeMobileSearch(); }, 120));
+    $('sugg').addEventListener('mousedown', (e) => e.preventDefault());
+    $('sugg').addEventListener('click', (e) => { const li = e.target.closest('li'); if (li) pickSugg(+li.dataset.i); });
+    $('searchToggle').addEventListener('click', () => {
+      const open = !$('hdr').classList.contains('s-open');
+      $('hdr').classList.toggle('s-open', open); $('searchToggle').setAttribute('aria-expanded', String(open));
+      if (open) $('q').focus();
+    });
+
+    // Drawer
+    $('backdrop').addEventListener('click', closeCase);
+    $('drawer').addEventListener('click', (e) => {
+      if (e.target.closest('#drClose')) return closeCase();
+      const s = e.target.closest('[data-step]'); if (s) return stepCase(+s.dataset.step);
+      if (e.target.closest('#copyLink')) {
+        const link = `${location.origin}${location.pathname}#${st.view}/${st.sel.id}`;
+        (navigator.clipboard?.writeText(link) || Promise.reject()).then(() => toast('Link copied'), () => toast(link));
+      }
+    });
+
+    // Keyboard
+    document.addEventListener('keydown', (e) => {
+      const typing = /^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName);
+      if (st.sel) {
+        if (e.key === 'Escape') { e.preventDefault(); closeCase(); }
+        else if (!typing && e.key === 'ArrowLeft') stepCase(-1);
+        else if (!typing && e.key === 'ArrowRight') stepCase(1);
+        return;
+      }
+      if (e.key === '/' && !typing && !e.metaKey && !e.ctrlKey) {
+        e.preventDefault();
+        $('hdr').classList.add('s-open'); $('searchToggle').setAttribute('aria-expanded', 'true');
+        $('q').focus();
+      }
+    });
+
+    // Footer and page chrome
+    $('dlCsv').addEventListener('click', () => download('scandal-tracker-records.csv', 'text/csv', csv()));
+    $('dlJson').addEventListener('click', () => download('scandal-tracker-records.json', 'application/json', JSON.stringify(records, null, 2)));
+    $('toTop').addEventListener('click', () => { window.scrollTo({ top: 0 }); $('main').focus({ preventScroll: true }); });
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(() => { $('toTop').hidden = window.scrollY < window.innerHeight * 1.5; ticking = false; });
+    }, { passive: true });
+    let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { setHdrH(); if (st.view === 'timeline') renderTimeline(); }, 150); });
   }
 
   async function load() {
@@ -248,12 +651,17 @@
       byCo = Object.fromEntries(c.map((x) => [x.id, x]));
       records = r.filter((x) => x.status === 'published' && byCo[x.company_id] && /^\d{4}-\d{2}$/.test(x.disclosed));
       maxYear = Math.max(new Date().getFullYear(), ...records.map(yearOf));
-      st.end = maxYear;
-      document.querySelectorAll('[data-view]').forEach((b) => b.setAttribute('type', 'button'));
+      $('ev').innerHTML = `<option value="all">Any evidence</option><option value="nou">Hide unconfirmed</option>${TIER_ORDER.filter((k) => tiers[k]).map((k) => `<option value="${k}">${esc(tiers[k])} only</option>`).join('')}`;
+      const updated = records.map((x) => x.verified_on || '').sort().pop();
+      $('updated').textContent = `${plural(records.length, 'published case')}${updated ? ` · Data last verified ${dayLabel(updated)}` : ''}`;
       renderAbout(md);
+      $('loading').remove();
+      $('ftr').hidden = false;
+      setHdrH();
       wire();
-      show();
+      route();
     } catch (err) {
+      $('loading')?.remove();
       $('err').hidden = false;
       $('err').textContent = `Could not load data (${err.message}). Serve the repo root over HTTP, e.g. python3 -m http.server, and open /app/.`;
     }

@@ -50,7 +50,7 @@ Then ask Claude Code something like:
 ## Current state
 
 - 273 records across 235 companies (147 published, 127 companies: 67 relationship, 80 misconduct; earliest case 1993), through November 2026.
-- The app in `app/` (plain HTML/CSS/JS, no build step) implements the timeline, records table, about page and detail drawer, reading `data/*.json` and `docs/METHODOLOGY.md`. Only `status: "published"` records are shown.
+- The app in `app/` (plain HTML/CSS/JS, no build step) implements the timeline, calendar, records table, about page and detail drawer, reading `data/*.json` and `docs/METHODOLOGY.md`. Only `status: "published"` records are shown. Filters, search and the open case live in the URL, so any view can be shared; see "Navigation and interaction" in `docs/DESIGN.md`.
 
 ## Deploy (Netlify)
 

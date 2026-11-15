@@ -4,56 +4,85 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="A tracker of publicly documented workplace-relationship and sexual-misconduct cases involving senior executives, with sources.">
+<meta name="color-scheme" content="light dark">
 <title>Scandal Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=15">
+<link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="page">
-  <header class="hdr">
-    <div class="brand"><span class="brand-dot"></span><span>Scandal Tracker</span></div>
+  <header class="hdr" id="hdr">
+    <a class="brand" href="#timeline" data-nav="timeline"><span class="brand-dot"></span><span>Scandal Tracker</span></a>
+    <div class="search" id="search">
+      <svg class="search-ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
+      <input id="q" type="search" placeholder="Search people or companies" autocomplete="off"
+        role="combobox" aria-expanded="false" aria-controls="sugg" aria-autocomplete="list" aria-label="Search people or companies">
+      <kbd class="kbd" aria-hidden="true">/</kbd>
+      <ul id="sugg" class="sugg" role="listbox" aria-label="Suggestions" hidden></ul>
+    </div>
+    <button class="search-toggle" id="searchToggle" type="button" aria-label="Search" aria-expanded="false">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
+    </button>
     <nav class="seg tabs" id="tabs" aria-label="Views">
-      <button data-view="timeline">Timeline</button>
-      <button data-view="calendar">Calendar</button>
-      <button data-view="records">Records</button>
-      <button data-view="about">About</button>
+      <button type="button" data-view="timeline">Timeline</button>
+      <button type="button" data-view="calendar">Calendar</button>
+      <button type="button" data-view="records">Records</button>
+      <button type="button" data-view="about">About</button>
     </nav>
   </header>
 
   <main id="main" tabindex="-1">
+    <p id="loading" class="loading" role="status">Loading cases…</p>
+
+    <!-- Shared filter bar: moved into the active view's .fslot by app.js. -->
+    <div class="filters" id="filters" hidden>
+      <div class="toolbar">
+        <div class="seg seg-sm" id="typeSeg" role="group" aria-label="Case type">
+          <button type="button" data-type="all">All cases</button>
+          <button type="button" data-type="relationship">Relationships</button>
+          <button type="button" data-type="misconduct">Misconduct</button>
+        </div>
+        <label class="sel"><span class="vh">Company list</span>
+          <select id="scope"><option value="All">All companies</option><option>Fortune 500</option><option>Global 500</option><option>Other notable</option></select></label>
+        <label class="sel"><span class="vh">Evidence</span>
+          <select id="ev"></select></label>
+        <label class="sel"><span class="vh">Lost their role</span>
+          <select id="lost"><option value="all">Any outcome</option><option value="yes">Lost their role</option><option value="no">Kept their role</option></select></label>
+        <label class="chk"><input type="checkbox" id="showP" checked>Prominent employees</label>
+      </div>
+      <div class="fsum" id="fsum" aria-live="polite"></div>
+    </div>
+
     <section id="v-timeline" hidden>
       <div class="intro">
         <div class="intro-text">
           <h1>Executives brought down by workplace relationships and misconduct</h1>
-          <p class="lede">Each mark is one case, placed by the month it became public. Circles are relationships, squares are sexual misconduct. Select a mark for details and sources.</p>
+          <p class="lede">Each mark is one case, placed by the month it became public. Select a mark, or a company name, for details and sources.</p>
         </div>
         <div class="stats" id="stats"></div>
       </div>
-      <div class="toolbar">
-        <div class="tb-group">
-          <div class="seg seg-sm typeSeg" role="group" aria-label="Case type"></div>
-          <div class="seg seg-sm" id="scopes" role="group" aria-label="Company scope"></div>
-        </div>
-        <div class="tb-group tb-checks">
-          <label class="chk"><input type="checkbox" id="showU" checked>Unconfirmed</label>
-          <label class="chk"><input type="checkbox" class="pChk" checked>Prominent employees</label>
-          <label class="chk"><input type="checkbox" id="showZero">Companies with none</label>
+      <div class="latest" id="latest"></div>
+      <div class="fslot"></div>
+      <div class="toolbar tl-tools">
+        <label class="find"><span class="vh">Find a company</span>
+          <input id="coFind" type="search" placeholder="Find a company" autocomplete="off"></label>
+        <label class="chk"><input type="checkbox" id="showZero">Companies with no cases</label>
+        <div class="legend legend-inline" aria-label="Legend">
+          <span><i class="dot"></i>Relationship</span>
+          <span><i class="dot sq"></i>Misconduct</span>
+          <span><i class="dot ring"></i>Unconfirmed</span>
         </div>
         <div class="range tb-end">
-          <button id="back" aria-label="Earlier years">‹</button>
+          <button type="button" id="back" aria-label="Earlier years">‹</button>
           <div id="rangeLabel" class="mono" aria-live="polite"></div>
-          <button id="fwd" aria-label="Later years">›</button>
+          <button type="button" id="fwd" aria-label="Later years">›</button>
         </div>
       </div>
-      <div class="card scroll-x"><div class="tl" id="timeline"></div></div>
-      <div class="legend">
-        <span><i class="dot"></i>Relationship</span>
-        <span><i class="dot sq"></i>Misconduct</span>
-        <span><i class="dot ring"></i>Unconfirmed</span>
-        <span class="legend-note">Coverage is incomplete. Research is ongoing.</span>
-      </div>
+      <div class="card tl-card"><div class="tl" id="timeline"></div></div>
+      <div class="tl-more" id="tlMore"></div>
+      <p class="note">Coverage is incomplete. Research is ongoing.</p>
     </section>
 
     <section id="v-calendar" hidden>
@@ -64,56 +93,56 @@
         </div>
         <div class="stats" id="calStats"></div>
       </div>
-      <div class="toolbar">
-        <div class="tb-group">
-          <div class="seg seg-sm typeSeg" role="group" aria-label="Case type"></div>
-        </div>
-        <div class="tb-group tb-checks">
-          <label class="chk"><input type="checkbox" id="calU" checked>Unconfirmed</label>
-          <label class="chk"><input type="checkbox" class="pChk" checked>Prominent employees</label>
-        </div>
-      </div>
-      <div class="card"><div class="heat" id="heat"></div></div>
+      <div class="fslot"></div>
+      <div class="card scroll-x"><div class="heat" id="heat"></div></div>
       <div class="legend" id="heatLegend"></div>
-      <div id="monthList" class="month-list" hidden></div>
+      <div id="monthList" class="month-list" hidden tabindex="-1"></div>
     </section>
 
     <section id="v-records" hidden>
       <div class="intro intro-tight">
         <div class="intro-text">
           <h1 class="h1-sm">All records</h1>
-          <p class="lede" id="recCount" aria-live="polite"></p>
+          <p class="lede" id="recCount"></p>
         </div>
       </div>
-      <div class="toolbar">
-        <div class="tb-group">
-          <div class="seg seg-sm typeSeg" role="group" aria-label="Case type"></div>
-        </div>
-        <div class="tb-group tb-checks">
-          <label class="chk"><input type="checkbox" class="pChk" checked>Prominent employees</label>
-        </div>
-        <div class="tb-end tb-search">
-          <input id="q" type="search" placeholder="Search name, company, keyword" aria-label="Search records">
-        </div>
-      </div>
+      <div class="fslot"></div>
       <div class="card">
-        <table class="tbl">
-          <thead><tr><th>Disclosed</th><th>Company</th><th>Person</th><th>Category</th><th>Outcome</th><th>Evidence</th></tr></thead>
+        <table class="tbl" id="recTbl">
+          <thead><tr>
+            <th aria-sort="descending"><button type="button" class="th-sort" data-sort="date">Disclosed</button></th>
+            <th aria-sort="none"><button type="button" class="th-sort" data-sort="company">Company</button></th>
+            <th aria-sort="none"><button type="button" class="th-sort" data-sort="person">Person</button></th>
+            <th>Category</th><th>Outcome</th>
+            <th aria-sort="none"><button type="button" class="th-sort" data-sort="evidence">Evidence</button></th>
+          </tr></thead>
           <tbody id="rows"></tbody>
         </table>
       </div>
     </section>
 
     <section id="v-about" hidden>
-      <article class="about" id="about"><h1 class="h1-sm">About the data</h1></article>
+      <article class="about" id="about"><h1 class="h1-sm">About the data</h1><nav class="toc" id="toc" aria-label="On this page"></nav></article>
     </section>
 
     <p id="err" class="err" hidden></p>
   </main>
 
+  <footer class="ftr" id="ftr" hidden>
+    <div id="updated"></div>
+    <div class="ftr-links">
+      <a href="https://github.com/SaturdaysinthePark/scandal-tracker/issues" target="_blank" rel="noopener">Report an error or correction</a>
+      <a href="#about" data-nav="about">Methodology</a>
+      <button type="button" class="linkish" id="dlCsv">Download CSV</button>
+      <button type="button" class="linkish" id="dlJson">Download JSON</button>
+    </div>
+  </footer>
+
+  <button type="button" class="totop" id="toTop" aria-label="Back to top" hidden>↑</button>
   <div id="backdrop" class="backdrop" hidden></div>
   <aside id="drawer" class="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="drName"></aside>
+  <div id="toast" class="toast" role="status" hidden></div>
 </div>
-<script src="app.js?v=14"></script>
+<script src="app.js?v=15"></script>
 </body>
 </html>

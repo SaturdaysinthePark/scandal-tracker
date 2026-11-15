@@ -1,0 +1,18 @@
+{
+  "review_id": "app_20261115",
+  "target": "app/",
+  "focus_areas": ["visual", "usability", "interaction", "navigation"],
+  "context": "Data display",
+  "platform": "Responsive (desktop + mobile)",
+  "status": "fixed",
+  "fixed_on": "2026-11-15",
+  "fixed_on_branch": "ux/audit-20-fixes",
+  "started_at": "2026-11-15T00:00:00Z",
+  "issues_found": 20,
+  "severity_counts": {
+    "critical": 0,
+    "major": 6,
+    "minor": 11,
+    "suggestion": 3
+  }
+}

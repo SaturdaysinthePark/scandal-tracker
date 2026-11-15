@@ -57,3 +57,17 @@ The drawer slides in from the right at `min(460px,100%)` over a backdrop of `rgb
 - Sources list
 
 Clicking the backdrop or × closes it.
+
+## Navigation and interaction (Nov 2026 UX pass)
+These additions came from the design audit in `.ui-design/reviews/app_20261115.md`.
+
+- **Header:** brand (links home), a global search box (`/` focuses it) with suggestions for people and companies, then the tabs (Timeline / Calendar / Records / About). The header stays sticky on phones, where the search collapses to an icon button. A "Back to top" button appears after 1.5 screens of scroll.
+- **URL is the state.** `#view[/id]?type=&scope=&ev=&lost=&p=0&co=&q=` holds the shared filters. View-only settings are added in their own view: `sort` (Records), `end`, `zero`, `all`, `find` (Timeline) and `m` (Calendar). Default values are left out of the URL. Filter changes replace the history entry; switching views and opening a case push a new one, so Back closes the drawer.
+- **One shared filter bar** (case type, company list, evidence, outcome, prominent employees) sits under the intro in Timeline, Calendar and Records. When anything is off its default, a summary line reads "Showing N of M cases" with removable chips (company, search) and "Reset filters". Empty states name the active filters and offer Clear search / Reset filters.
+- **Timeline:** stats are Cases, Companies, Lost their role. A "Latest cases" strip (4 cards; a swipeable row on phones) sits above the filters. The per-year and year-label rows stick under the header. The legend sits in the timeline toolbar with "Find a company" and "Companies with no cases". Rows are sorted by cases inside the year window. Companies with cases only outside it are counted in a note with "Show earlier years". Only the top 25 rows show until "Show all N companies". `‹+n` / `+n›` chips in the total column move the window to a company's earlier or later cases. Company names wrap to two lines and open Records filtered to that company. Dots keep their 9px look with a ~23px hit area.
+- **Calendar:** selecting a month scrolls its case list into view, with a Close button.
+- **Records:** Disclosed, Company, Person and Evidence headers sort (with `aria-sort`); on phones the header becomes a "Sort by" bar. Company names are links to the company filter.
+- **Drawer:** a modal. The rest of the page is `inert` and body scroll is locked. Top bar: ‹ Prev · n of N · Next › (also ←/→) through the current view's list, then ×. The evidence pill links to About › Evidence, and a one-line definition parsed from `METHODOLOGY.md` sits under the pills. Facts include "Last verified". "Other records about this person", an archived-copy link when `archive_url` exists, and "Copy link to this case" follow.
+- **About:** an "On this page" table of contents; sections are addressable as `#about/<section>`.
+- **Footer:** published-case count, data last verified date (latest `verified_on`), report-an-error link (GitHub issues), Methodology, and CSV / JSON downloads of the published records.
+- **Dark mode:** all colours are tokens on `:root`, redefined under `prefers-color-scheme: dark` (and `:root[data-theme="dark"]`). Dark accent `#e2604a`, surface `#1c1b19`, bg `#141312`.
