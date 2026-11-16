@@ -26,7 +26,7 @@
 <title>Scandal Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=19">
+<link rel="stylesheet" href="styles.css?v=20">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -104,9 +104,12 @@
             <h2 class="tl-title">Cases by year</h2>
             <p class="tl-hint">By the year each case became public. Select a year to see its cases.</p>
           </div>
-          <div class="stats" id="stats"></div>
+          <div class="yc-ctl" id="ycCtl"></div>
         </div>
-        <div class="hy-chart" id="yearChart"></div>
+        <div class="hy-body">
+          <div class="stats stats-col" id="stats"></div>
+          <div class="hy-chart" id="yearChart"></div>
+        </div>
         <div class="hy-foot">
           <div class="legend legend-inline"><span><i class="sw"></i>Relationship</span><span><i class="sw sw-m"></i>Misconduct</span></div>
           <a href="#about/evidence" data-nav="about" data-sec="evidence">How cases are chosen</a>
@@ -198,6 +201,6 @@
   <div id="toast" class="toast" role="status" hidden></div>
   <div id="hovercard" class="hovercard" aria-hidden="true" hidden></div>
 </div>
-<script src="app.js?v=18"></script>
+<script src="app.js?v=19"></script>
 </body>
 </html>

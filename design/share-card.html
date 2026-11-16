@@ -1,51 +1,70 @@
 <!doctype html>
 <!-- Source for app/og.png, the 1200×630 link-preview image.
      To regenerate: serve the repo root (python3 -m http.server 8765), open
-     http://127.0.0.1:8765/design/share-card.html at a 1200×630 viewport, and screenshot it. -->
+     http://127.0.0.1:8765/design/share-card.html at a 1200×630 viewport, and screenshot it.
+     Numbers and bars come from data/records.json, so regenerate after data changes. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Share card</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
 <style>
-  :root{--bg:#f5f4f1;--ink:#151515;--muted:#6e6b66;--rule:rgba(21,21,21,.1);--accent:#c8412b;--misc:#4b51b5}
+  :root{--bg:#f5f4f1;--surface:#fff;--ink:#151515;--ink2:#3d3b38;--muted:#6e6b66;--faint:#8a8680;--rule:rgba(21,21,21,.1);--accent:#c8412b;--misc:#4b51b5}
   *{box-sizing:border-box}
   html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:var(--bg);color:var(--ink);font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-  .card{position:relative;width:1200px;height:630px;padding:64px 72px 0;display:flex;flex-direction:column}
-  .brand{display:flex;align-items:center;gap:14px;font-size:26px;font-weight:600;letter-spacing:-.01em}
-  .dot{width:16px;height:16px;border-radius:50%;background:var(--accent)}
-  h1{margin:40px 0 0;font-size:66px;line-height:1.04;font-weight:600;letter-spacing:-.03em;max-width:1000px}
-  p{margin:20px 0 0;font-size:26px;line-height:1.35;color:var(--muted);max-width:900px}
-  .chart{position:absolute;left:72px;right:72px;bottom:0;height:118px;display:flex;align-items:flex-end;gap:5px}
-  .bar{flex:1;display:flex;flex-direction:column;border-radius:3px 3px 0 0;overflow:hidden;opacity:.95}
+  .card{width:1200px;height:630px;padding:54px 64px 50px;display:flex;flex-direction:column}
+  .top{display:flex;justify-content:space-between;align-items:center}
+  .brand{display:flex;align-items:center;gap:12px;font-size:24px;font-weight:600;letter-spacing:-.01em}
+  .dot{width:14px;height:14px;border-radius:50%;background:var(--accent)}
+  .url{font-family:'IBM Plex Mono',monospace;font-size:19px;color:var(--muted)}
+  h1{margin:26px 0 0;font-size:52px;line-height:1.05;font-weight:600;letter-spacing:-.03em;max-width:1000px}
+  .panel{margin-top:auto;display:grid;grid-template-columns:300px 1fr;gap:40px;align-items:end;background:var(--surface);border:1px solid var(--rule);border-radius:20px;padding:26px 32px 18px}
+  .big{font-family:'IBM Plex Mono',monospace;font-size:104px;font-weight:500;line-height:.9;letter-spacing:-.04em}
+  .big-l{margin-top:12px;font-size:22px;line-height:1.3;color:var(--ink2)}
+  .legend{display:flex;gap:18px;margin-top:16px;font-size:16px;color:var(--muted)}
+  .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:7px;vertical-align:-1px}
+  .chart{display:flex;align-items:flex-end;gap:12px;height:220px}
+  .col{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px;position:relative}
+  .n{font-family:'IBM Plex Mono',monospace;font-size:18px;color:var(--ink2)}
+  .bar{width:78%;display:flex;flex-direction:column;border-radius:6px 6px 0 0;overflow:hidden}
   .bar i{display:block;flex-basis:0}
   .m{background:var(--misc)} .r{background:var(--accent)}
-  .url{position:absolute;right:72px;top:68px;font-family:'IBM Plex Mono',monospace;font-size:20px;color:var(--muted)}
+  .y{font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--muted);margin-top:4px}
+  .partial .bar i{background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.3) 0 4px,transparent 4px 9px)}
 </style>
 </head>
 <body>
 <div class="card">
-  <div class="brand"><span class="dot"></span>Scandal Tracker</div>
-  <div class="url">scandal-tracker.netlify.app</div>
+  <div class="top"><div class="brand"><span class="dot"></span>Scandal Tracker</div><div class="url">scandal-tracker.netlify.app</div></div>
   <h1>Executives brought down by workplace relationships and misconduct</h1>
-  <p>Every case sourced and labelled by how well it is confirmed.</p>
-  <div class="chart" id="chart"></div>
+  <div class="panel">
+    <div>
+      <div class="big" id="big"></div>
+      <div class="big-l" id="bigL"></div>
+      <div class="legend"><span><i class="r"></i>Relationship</span><span><i class="m"></i>Misconduct</span></div>
+    </div>
+    <div class="chart" id="chart"></div>
+  </div>
 </div>
 <script>
-  // Cases per year, relationship vs misconduct, from the published records (decorative; no numbers shown).
+  // Total published cases, and the last 10 years split by type (same window as the home page).
   fetch('../data/records.json').then((r) => r.json()).then((all) => {
     const recs = all.filter((x) => x.status === 'published' && /^\d{4}-\d{2}$/.test(x.disclosed));
     const yr = (r) => +r.disclosed.slice(0, 4);
-    const first = Math.min(...recs.map(yr)), last = Math.max(new Date().getFullYear(), ...recs.map(yr));
+    const first = Math.min(...recs.map(yr));
+    const now = new Date().getFullYear(), last = Math.max(now, ...recs.map(yr));
+    document.getElementById('big').textContent = recs.length;
+    document.getElementById('bigL').textContent = `sourced cases since ${first}, each labelled by evidence`;
     const per = [];
-    for (let y = first; y <= last; y++) {
+    for (let y = last - 9; y <= last; y++) {
       const l = recs.filter((r) => yr(r) === y);
-      per.push({ n: l.length, m: l.filter((r) => r.type === 'misconduct').length });
+      per.push({ y, n: l.length, m: l.filter((r) => r.type === 'misconduct').length });
     }
     const max = Math.max(1, ...per.map((p) => p.n));
-    document.getElementById('chart').innerHTML = per.map(({ n, m }) =>
-      `<div class="bar" style="height:${(n / max) * 100}%"><i class="m" style="flex-grow:${m}"></i><i class="r" style="flex-grow:${n - m}"></i></div>`).join('');
-    document.body.dataset.ready = '1';
+    document.getElementById('chart').innerHTML = per.map(({ y, n, m }) => `<div class="col ${y === now ? 'partial' : ''}">
+      <span class="n">${n}</span>
+      <div class="bar" style="height:${(n / max) * 150}px"><i class="m" style="flex-grow:${m}"></i><i class="r" style="flex-grow:${n - m}"></i></div>
+      <span class="y">'${String(y).slice(2)}</span></div>`).join('');
   });
 </script>
 </body>

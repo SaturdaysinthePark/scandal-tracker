@@ -287,25 +287,64 @@
         <div class="hc-row">${notable.map((x) => caseCard(x, byCo[x.r.company_id].scope)).join('')}</div></div>` : ''}`;
     renderYearChart();
   }
-  function renderYearChart() {
-    if (!records.length) { $('yearChart').innerHTML = ''; return; }
+  // Cases by year: the last YC_W years by default (bars wide enough to label every one),
+  // with ‹ › to step back through earlier years and an "All years" view.
+  const YC_W = 10;
+  // Context notes drawn over the chart when their year is in view.
+  const YC_NOTES = [{ y: 2017, text: '#MeToo, Oct 2017' }];
+  const yc = { all: false, end: null };
+  function renderYearChart(animate = false) {
+    if (!records.length) { $('yearChart').innerHTML = ''; $('ycCtl').innerHTML = ''; return; }
     const first = Math.min(...records.map(yearOf));
-    const years = []; for (let y = first; y <= maxYear; y++) years.push(y);
+    if (yc.end === null) yc.end = maxYear;
+    const start = yc.all ? first : Math.max(first, yc.end - YC_W + 1);
+    const end = yc.all ? maxYear : Math.min(maxYear, Math.max(yc.end, first + YC_W - 1));
+    const years = []; for (let y = start; y <= end; y++) years.push(y);
     const per = years.map((y) => {
       const list = records.filter((r) => yearOf(r) === y);
       return { y, n: list.length, m: list.filter(isM).length };
     });
     const max = Math.max(1, ...per.map((x) => x.n));
     const peak = per.reduce((a, b) => (b.n > a.n ? b : a), per[0]);
-    const label = (y, i) => i === 0 || y === maxYear || y % 5 === 0;
-    $('yearChart').innerHTML = `<div class="yc" role="list">${per.map(({ y, n, m }, i) => {
-      const lbl = `${y}: ${plural(n, 'case')}${n ? ` (${n - m} relationship, ${m} misconduct)` : ''}`;
-      return `<button type="button" class="yc-col ${y === peak.y ? 'peak' : ''}" data-yr="${y}" role="listitem" style="--i:${i}" title="${lbl}" aria-label="${lbl}. Show these cases" ${n ? '' : 'disabled'}>
+    const thisYear = new Date().getFullYear();
+    const wide = !yc.all;
+
+    $('ycCtl').innerHTML = `<div class="seg seg-sm" role="group" aria-label="Years shown">
+        <button type="button" data-yc="recent" class="${wide ? 'on' : ''}" aria-pressed="${wide}">Last ${YC_W} years</button>
+        <button type="button" data-yc="all" class="${wide ? '' : 'on'}" aria-pressed="${!wide}">All years</button></div>
+      ${wide ? `<div class="range"><button type="button" data-ycstep="-1" aria-label="Earlier years" ${start <= first ? 'disabled' : ''}>‹</button>
+        <span class="mono" aria-live="polite">${start}–${end}</span>
+        <button type="button" data-ycstep="1" aria-label="Later years" ${end >= maxYear ? 'disabled' : ''}>›</button></div>` : ''}`;
+
+    $('yearChart').innerHTML = `<div class="yc ${wide ? 'yc-wide' : ''}" role="list">${per.map(({ y, n, m }, i) => {
+      const partial = y === thisYear;
+      const lbl = `${y}${partial ? ' so far' : ''}: ${plural(n, 'case')}${n ? ` (${n - m} relationship, ${m} misconduct)` : ''}`;
+      const note = YC_NOTES.find((x) => x.y === y);
+      return `<button type="button" class="yc-col ${y === peak.y ? 'peak' : ''} ${partial ? 'partial' : ''}" data-yr="${y}" role="listitem" style="--i:${i};--h:${(n / max).toFixed(3)}" title="${lbl}" aria-label="${lbl}. Show these cases" ${n ? '' : 'disabled'}>
+        ${note ? `<span class="yc-note" aria-hidden="true">${esc(note.text)}</span>` : ''}
         <span class="yc-n">${n || ''}</span>
-        <span class="yc-bar" style="--h:${(n / max).toFixed(3)}"><i class="yc-m" style="flex-grow:${m}"></i><i class="yc-r" style="flex-grow:${n - m}"></i></span>
+        <span class="yc-bar"><i class="yc-m" style="flex-grow:${m}"></i><i class="yc-r" style="flex-grow:${n - m}"></i></span>
       </button>`;
     }).join('')}</div>
-      <div class="yc-axis" aria-hidden="true">${per.map(({ y }, i) => `<span>${label(y, i) ? `'${String(y).slice(2)}` : ''}</span>`).join('')}</div>`;
+      <div class="yc-axis ${wide ? 'yc-wide' : ''}" aria-hidden="true">${per.map(({ y }, i) => {
+        const show = wide || i === 0 || y === maxYear || y % 5 === 0;
+        const txt = wide ? y : `'${String(y).slice(2)}`;
+        return `<span>${show ? txt : ''}${wide && y === thisYear ? '<small>so far</small>' : ''}</span>`;
+      }).join('')}</div>`;
+    if (animate && motionOK()) {
+      const el = $('yearChart');
+      el.classList.remove('tl-reveal'); void el.offsetWidth; el.classList.add('tl-reveal');
+      setTimeout(() => el.classList.remove('tl-reveal'), 900);
+    }
+  }
+  function ycControl(e) {
+    const b = e.target.closest('button'); if (!b || b.disabled) return;
+    if (b.dataset.yc) { yc.all = b.dataset.yc === 'all'; if (!yc.all) yc.end = maxYear; }
+    else if (b.dataset.ycstep) yc.end = (yc.end ?? maxYear) + (+b.dataset.ycstep) * YC_W;
+    else return;
+    const first = Math.min(...records.map(yearOf));
+    yc.end = Math.min(maxYear, Math.max(first + YC_W - 1, yc.end ?? maxYear));
+    renderYearChart(true);
   }
 
   // ---------- Timeline ----------
@@ -730,6 +769,7 @@
     $('lost').addEventListener('change', (e) => { st.lost = e.target.value; st.m = ''; commit(); });
     $('showP').addEventListener('change', (e) => { st.p = e.target.checked; st.m = ''; commit(); });
 
+    $('ycCtl').addEventListener('click', ycControl);
     // Home: a year bar opens that year's cases
     $('yearChart').addEventListener('click', (e) => {
       const y = e.target.closest('[data-yr]')?.dataset.yr;
