@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- Source for app/og.png, the 1200×630 link-preview image.
+     To regenerate: serve the repo root (python3 -m http.server 8765), open
+     http://127.0.0.1:8765/design/share-card.html at a 1200×630 viewport, and screenshot it. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Share card</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root{--bg:#f5f4f1;--ink:#151515;--muted:#6e6b66;--rule:rgba(21,21,21,.1);--accent:#c8412b;--misc:#4b51b5}
+  *{box-sizing:border-box}
+  html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:var(--bg);color:var(--ink);font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  .card{position:relative;width:1200px;height:630px;padding:64px 72px 0;display:flex;flex-direction:column}
+  .brand{display:flex;align-items:center;gap:14px;font-size:26px;font-weight:600;letter-spacing:-.01em}
+  .dot{width:16px;height:16px;border-radius:50%;background:var(--accent)}
+  h1{margin:40px 0 0;font-size:66px;line-height:1.04;font-weight:600;letter-spacing:-.03em;max-width:1000px}
+  p{margin:20px 0 0;font-size:26px;line-height:1.35;color:var(--muted);max-width:900px}
+  .chart{position:absolute;left:72px;right:72px;bottom:0;height:118px;display:flex;align-items:flex-end;gap:5px}
+  .bar{flex:1;display:flex;flex-direction:column;border-radius:3px 3px 0 0;overflow:hidden;opacity:.95}
+  .bar i{display:block;flex-basis:0}
+  .m{background:var(--misc)} .r{background:var(--accent)}
+  .url{position:absolute;right:72px;top:68px;font-family:'IBM Plex Mono',monospace;font-size:20px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="brand"><span class="dot"></span>Scandal Tracker</div>
+  <div class="url">scandal-tracker.netlify.app</div>
+  <h1>Executives brought down by workplace relationships and misconduct</h1>
+  <p>Every case sourced and labelled by how well it is confirmed.</p>
+  <div class="chart" id="chart"></div>
+</div>
+<script>
+  // Cases per year, relationship vs misconduct, from the published records (decorative; no numbers shown).
+  fetch('../data/records.json').then((r) => r.json()).then((all) => {
+    const recs = all.filter((x) => x.status === 'published' && /^\d{4}-\d{2}$/.test(x.disclosed));
+    const yr = (r) => +r.disclosed.slice(0, 4);
+    const first = Math.min(...recs.map(yr)), last = Math.max(new Date().getFullYear(), ...recs.map(yr));
+    const per = [];
+    for (let y = first; y <= last; y++) {
+      const l = recs.filter((r) => yr(r) === y);
+      per.push({ n: l.length, m: l.filter((r) => r.type === 'misconduct').length });
+    }
+    const max = Math.max(1, ...per.map((p) => p.n));
+    document.getElementById('chart').innerHTML = per.map(({ n, m }) =>
+      `<div class="bar" style="height:${(n / max) * 100}%"><i class="m" style="flex-grow:${m}"></i><i class="r" style="flex-grow:${n - m}"></i></div>`).join('');
+    document.body.dataset.ready = '1';
+  });
+</script>
+</body>
+</html>
