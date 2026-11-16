@@ -661,20 +661,6 @@
   }
   const closeMobileSearch = () => { $('hdr').classList.remove('s-open'); $('searchToggle').setAttribute('aria-expanded', 'false'); };
 
-  // ---------- Downloads ----------
-  function download(name, type, text) {
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([text], { type }));
-    a.download = name; document.body.append(a); a.click(); a.remove();
-    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-  }
-  function csv() {
-    const cols = ['id', 'disclosed', 'company', 'executive', 'role', 'type', 'role_level', 'category', 'outcome', 'lost_role', 'evidence', 'summary', 'primary_url', 'verified_on'];
-    const cell = (v) => { const s = String(v ?? ''); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
-    const lines = [cols.join(',')].concat([...records].sort(byDateDesc).map((r) =>
-      cols.map((c) => cell(c === 'company' ? coName(r.company_id) : c === 'evidence' ? tierLabel(r) : r[c])).join(',')));
-    return lines.join('\n');
-  }
   let toastT;
   function toast(msg) {
     $('toast').textContent = msg; $('toast').hidden = false;
@@ -873,8 +859,6 @@
     });
 
     // Footer and page chrome
-    $('dlCsv').addEventListener('click', () => download('scandal-tracker-records.csv', 'text/csv', csv()));
-    $('dlJson').addEventListener('click', () => download('scandal-tracker-records.json', 'application/json', JSON.stringify(records, null, 2)));
     $('toTop').addEventListener('click', () => { window.scrollTo({ top: 0 }); $('main').focus({ preventScroll: true }); });
     let ticking = false;
     window.addEventListener('scroll', () => {

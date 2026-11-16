@@ -69,7 +69,7 @@ These additions came from the design audit in `.ui-design/reviews/app_20261115.m
 - **Records:** Disclosed, Company, Person and Evidence headers sort (with `aria-sort`); on phones the header becomes a "Sort by" bar. Company names are links to the company filter.
 - **Drawer:** a modal. The rest of the page is `inert` and body scroll is locked. Top bar: ‹ Prev · n of N · Next › (also ←/→) through the current view's list, then ×. The evidence pill links to About › Evidence, and a one-line definition parsed from `METHODOLOGY.md` sits under the pills. Facts include "Last verified". "Other records about this person", an archived-copy link when `archive_url` exists, and "Copy link to this case" follow.
 - **About:** an "On this page" table of contents; sections are addressable as `#about/<section>`.
-- **Footer:** published-case count, data last verified date (latest `verified_on`), Methodology, and CSV / JSON downloads of the published records. There is deliberately no public corrections link.
+- **Footer:** published-case count, data last verified date (latest `verified_on`), and a Methodology link. There is deliberately no public corrections link and no data download.
 - **Dark mode:** all colours are tokens on `:root`, redefined under `prefers-color-scheme: dark` (and `:root[data-theme="dark"]`). Dark accent `#e2604a`, surface `#1c1b19`, bg `#141312`.
 
 ## Landing and motion (Nov 2026, round 2)
