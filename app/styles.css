@@ -57,7 +57,10 @@ button,input,select{font-family:inherit}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:16px;letter-spacing:-.01em;color:var(--ink);text-decoration:none;white-space:nowrap}
 .brand:hover{color:var(--ink)}
 .brand-dot{width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.hdr-slot{display:contents}
 .search{position:relative;flex:1 1 240px;max-width:380px;margin-left:auto;display:flex;align-items:center}
+.tabs{margin-left:auto}
+.hdr[data-view="home"] .search-toggle{display:none}
 .search input{width:100%;height:36px;padding:0 34px 0 32px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--ink);font-size:14px}
 .search-ic,.search-toggle svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
 .search input:focus-visible{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px var(--seg)}
@@ -191,6 +194,48 @@ main:focus{outline:none}
 .tl-head.stuck .tl-row.hd:last-child{box-shadow:var(--shadow-stuck)}
 .bar{transform-origin:bottom}
 .stat-v{font-variant-numeric:tabular-nums}
+.tl-cap .legend{margin-left:auto}
+
+/* Home */
+.home-hero{max-width:760px;margin:0 auto;padding:28px 0 36px;text-align:center}
+.home-h1{font-size:clamp(30px,4vw,48px);margin:0 0 12px}
+.home-sub{margin:0 auto;max-width:560px;font-size:15.5px;line-height:1.55;color:var(--muted)}
+.home-search{max-width:640px;margin:26px auto 14px}
+.home-search .search{display:flex;max-width:none;margin:0;width:100%}
+.home-search .search input{height:56px;font-size:17px;padding:0 44px 0 48px;border-radius:14px;box-shadow:var(--shadow-pill)}
+.home-search .search-ic{left:17px;width:18px;height:18px}
+.home-search .kbd{right:16px}
+.home-search .sugg{text-align:left;top:calc(100% + 8px)}
+.home-chips{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px}
+.hc-l{font-size:13px;color:var(--muted);margin-right:2px}
+.chip-soft{padding:5px 12px;font-size:13px}
+.home-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;margin-bottom:28px}
+.hc-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lt-kick{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.home-years{padding:20px 24px 16px}
+.hy-top{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px 24px}
+.yc{display:flex;align-items:flex-end;gap:3px;height:160px;margin-top:18px}
+.yc-col{flex:1;min-width:0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:3px;border:none;background:none;padding:0;cursor:pointer;color:inherit}
+.yc-col:disabled{cursor:default}
+.yc-n{font-family:var(--mono);font-size:10px;color:var(--muted);height:13px;opacity:0;transition:opacity .12s}
+.yc-col.peak .yc-n,.yc-col:hover .yc-n,.yc-col:focus-visible .yc-n{opacity:1}
+.yc-bar{height:calc(var(--h) * (100% - 16px));width:72%;max-width:22px;display:flex;flex-direction:column;border-radius:2px 2px 0 0;overflow:hidden;transform-origin:bottom}
+.yc-bar i{display:block;flex-basis:0;min-height:0}
+.yc-m{background:var(--misc)}
+.yc-r{background:var(--accent)}
+.yc-col:not(:disabled):hover .yc-bar{opacity:.75}
+.yc-axis{display:flex;gap:3px;margin-top:6px;padding-top:6px;border-top:1px solid var(--rule)}
+.yc-axis span{flex:1;min-width:0;text-align:center;font-family:var(--mono);font-size:10px;color:var(--muted);white-space:nowrap;overflow:visible}
+.hy-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-size:12px}
+.hy-foot .legend{margin:0}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--accent)}
+.sw-m{background:var(--misc)}
+.home-browse{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+.home-browse a{display:flex;flex-direction:column;gap:3px;padding:14px 16px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none}
+.home-browse a:hover{border-color:var(--ink)}
+.home-browse b{font-size:14px;font-weight:600}
+.home-browse span{font-size:13px;color:var(--muted)}
+
 .tl-more{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;margin-top:14px;font-size:13px;color:var(--muted)}
 .tl-more:empty{display:none}
 .note{margin:12px 0 0;font-size:12px;color:var(--muted)}
@@ -328,6 +373,9 @@ button.dot:hover{transform:scale(1.4)}
 @media (prefers-reduced-motion:no-preference){
   .tl.tl-reveal .bar{animation:st-grow .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i) * 18ms)}
   .tl.tl-reveal .bar-n{animation:st-fade .35s ease-out both;animation-delay:calc(var(--i) * 18ms + 280ms)}
+  #yearChart.tl-reveal .yc-bar{animation:st-grow .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i) * 14ms)}
+  .home-cards .lt-card{transition:transform .15s ease-out,border-color .15s}
+  .home-cards .lt-card:hover{transform:translateY(-2px)}
   .tl.tl-reveal button.dot{animation:st-pop .35s cubic-bezier(.2,.7,.2,1) both;animation-delay:.3s}
   .fpanel:not([hidden]),.sugg:not([hidden]){animation:st-drop .14s ease-out}
 }
@@ -340,6 +388,7 @@ button.dot:hover{transform:scale(1.4)}
 /* Tablet and below */
 @media (max-width:1000px){
   .latest-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .home-cards{grid-template-columns:1fr}
 }
 @media (max-width:900px){
   .tl{min-width:0}
@@ -360,7 +409,7 @@ button.dot:hover{transform:scale(1.4)}
   .hdr.s-open .search{display:flex}
   .kbd{display:none}
   .tabs{order:4;width:100%;overflow-x:auto}
-  .tabs button{flex:1;padding:7px 8px}
+  .tabs button{flex:1;padding:7px 4px;font-size:12.5px;white-space:nowrap}
   main{padding:20px 16px 48px}
   h1{font-size:26px}
   .h1-sm{font-size:26px}
@@ -372,6 +421,14 @@ button.dot:hover{transform:scale(1.4)}
   .seg{max-width:100%;overflow-x:auto}
   .seg-sm button{white-space:nowrap}
   .toolbar{gap:8px 10px}
+  .home-hero{padding:8px 0 24px}
+  .home-search .search input{height:50px;font-size:16px}
+  .hc-row{grid-template-columns:1fr}
+  .home-years{padding:16px}
+  .yc{height:130px;gap:2px}
+  .yc-axis{gap:2px}
+  .yc-axis span{font-size:9px}
+  .home-browse{grid-template-columns:1fr}
   .fbar .range{order:2}
   .find{order:3;flex:1 1 100%;min-width:0}
   .find input{width:100%}

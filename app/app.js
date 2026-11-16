@@ -4,7 +4,7 @@
   // Fewer year columns on narrow screens so dots stay tappable.
   const winYears = () => (window.innerWidth < 640 ? 8 : window.innerWidth < 1000 ? 12 : 20);
   const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  const VIEWS = ['timeline', 'calendar', 'records', 'about'];
+  const VIEWS = ['home', 'records', 'timeline', 'calendar', 'about'];
   const SCOPES = ['All', 'Fortune 500', 'Global 500', 'Other notable'];
   const TYPES = ['all', 'relationship', 'misconduct'];
   // Strongest first, matching the methodology.
@@ -12,8 +12,8 @@
   const SORTS = ['date', 'company', 'person', 'evidence'];
 
   // Everything a visitor can change lives in the URL (see urlFor / parseUrl), so views can be shared and survive a reload.
-  const DEF = { type: 'all', scope: 'All', ev: 'all', lost: 'all', p: true, co: '', q: '', sort: 'date-desc', end: null, zero: false, all: false, m: '', find: '' };
-  const st = { ...DEF, view: 'timeline', sel: null };
+  const DEF = { type: 'all', scope: 'All', ev: 'all', lost: 'all', p: true, co: '', yr: '', q: '', sort: 'date-desc', end: null, zero: false, all: false, m: '', find: '' };
+  const st = { ...DEF, view: 'home', sel: null };
   let companies = [], byCo = {}, records = [], tiers = {}, tierDef = {}, maxYear = new Date().getFullYear();
   let lastFocus = null, justPickedMonth = false;
 
@@ -44,6 +44,7 @@
     if (s.lost !== DEF.lost) p.set('lost', s.lost);
     if (!s.p) p.set('p', '0');
     if (s.co) p.set('co', s.co);
+    if (s.yr) p.set('yr', s.yr);
     if (s.q) p.set('q', s.q);
     // View-specific settings only appear in their own view's URL.
     if (view === 'records' && s.sort !== DEF.sort) p.set('sort', s.sort);
@@ -62,13 +63,14 @@
     const [v, id] = path.split('/');
     const p = new URLSearchParams(qs || '');
     const pick = (k, ok) => { const x = p.get(k); return x !== null && ok(x) ? x : DEF[k]; };
-    st.view = VIEWS.includes(v) ? v : 'timeline';
+    st.view = VIEWS.includes(v) ? v : 'home';
     st.type = pick('type', (x) => TYPES.includes(x));
     st.scope = pick('scope', (x) => SCOPES.includes(x));
     st.ev = pick('ev', (x) => x === 'nou' || TIER_ORDER.includes(x));
     st.lost = pick('lost', (x) => x === 'yes' || x === 'no');
     st.p = p.get('p') !== '0';
     st.co = pick('co', (x) => !!byCo[x]);
+    st.yr = pick('yr', (x) => /^\d{4}$/.test(x));
     st.q = p.get('q') || '';
     // Keep the other views' settings when they are not in this URL.
     if (st.view === 'records') st.sort = pick('sort', (x) => SORTS.includes(x.split('-')[0]) && /-(asc|desc)$/.test(x));
@@ -170,7 +172,7 @@
   const passes = (r) =>
     (st.type === 'all' || r.type === st.type) && (st.p || !isP(r)) &&
     (st.scope === 'All' || byCo[r.company_id]?.scope === st.scope) && evOk(r) &&
-    (st.lost === 'all' || (st.lost === 'yes') === !!r.lost_role) && (!st.co || r.company_id === st.co);
+    (st.lost === 'all' || (st.lost === 'yes') === !!r.lost_role) && (!st.co || r.company_id === st.co) && (!st.yr || yearOf(r) === +st.yr);
   const filtered = () => records.filter(passes);
   const qMatch = (r, q) => [coName(r.company_id), r.executive, r.role, r.category, r.summary, r.outcome].join(' ').toLowerCase().includes(q);
 
@@ -203,6 +205,7 @@
     if (st.lost !== 'all') out.push(['lost', st.lost === 'yes' ? 'Lost their role' : 'Kept their role']);
     if (!st.p) out.push(['p', 'Prominent employees hidden']);
     if (st.co) out.push(['co', `Company: ${coName(st.co)}`]);
+    if (st.yr) out.push(['yr', `Year: ${st.yr}`]);
     if (st.q && st.view === 'records') out.push(['q', `Search: “${st.q}”`]);
     if (st.zero && st.view === 'timeline') out.push(['zero', 'Companies with no cases shown']);
     return out;
@@ -211,7 +214,7 @@
     if (k === 'q') { st.q = ''; $('q').value = ''; } else st[k] = DEF[k];
   }
   function resetFilters() {
-    for (const k of ['type', 'scope', 'ev', 'lost', 'p', 'co', 'q', 'find', 'zero']) st[k] = DEF[k];
+    for (const k of ['type', 'scope', 'ev', 'lost', 'p', 'co', 'yr', 'q', 'find', 'zero']) st[k] = DEF[k];
     $('q').value = '';
   }
   // "Showing 12 of 147 cases · [chips] · Reset filters"
@@ -240,6 +243,71 @@
   const statsHtml = (recs) => [[recs.length, 'Cases'], [new Set(recs.map((r) => r.company_id)).size, 'Companies'], [recs.filter((r) => r.lost_role).length, 'Lost their role']]
     .map(([v, l]) => `<div><div class="stat-v" data-v="${v}" style="min-width:${String(v).length}ch">${v}</div><div class="stat-l">${l}</div></div>`).join('');
 
+  // ---------- Home ----------
+  // Search first, then a few cases to start from, then the count of cases by year.
+  const BIG_ROLE = /\b(CEO|chief executive|chair(?:man|woman|person)?|president|founder|managing director)\b/i;
+  const STRONG = ['confirmed', 'adjudicated', 'acknowledged', 'settled'];
+  function onePerPerson(list) {
+    const seen = new Map();
+    for (const r of list) {
+      const k = `${r.executive}|${r.company_id}`;
+      if (seen.has(k)) seen.get(k).n++; else seen.set(k, { r, n: 1 });
+    }
+    return [...seen.values()];
+  }
+  function caseCard({ r, n }, kicker) {
+    return `<button type="button" class="lt-card" data-id="${r.id}">
+        ${kicker ? `<span class="lt-kick">${esc(kicker)}</span>` : ''}
+        <span class="lt-meta">${esc(dateLabel(r))} · ${esc(coName(r.company_id))}</span>
+        <span class="lt-name">${esc(r.executive)}</span>
+        <span class="lt-cat">${esc(r.role)}</span>
+        <span class="lt-foot"><span class="ev">${dotHtml(r, 'sm')}${esc(tierLabel(r))}</span>${n > 1 ? `<span class="lt-more">+${n - 1} more record${n > 2 ? 's' : ''}</span>` : ''}</span>
+      </button>`;
+  }
+  function renderHome() {
+    $('homeCount').textContent = records.length;
+    $('stats').innerHTML = statsHtml(records);
+    // Shortcuts: the companies with the most cases.
+    const top = companies.map((c) => [c, records.filter((r) => r.company_id === c.id).length])
+      .filter(([, n]) => n > 1).sort((a, b) => b[1] - a[1] || a[0].name.localeCompare(b[0].name)).slice(0, 5);
+    $('homeChips').innerHTML = top.length ? `<span class="hc-l">Try</span>${top.map(([c]) =>
+      `<button type="button" class="chip chip-soft" data-co="${esc(c.id)}">${esc(c.name.replace(/\s*\(.*\)$/, ''))}</button>`).join('')}` : '';
+    // Two latest cases, then two notable ones: a CEO, chair or founder at a Fortune 500 or Global 500
+    // company, with the case confirmed, admitted, ruled on or settled.
+    const byNewest = (a, b) => b.disclosed.localeCompare(a.disclosed) || TIER_ORDER.indexOf(a.evidence) - TIER_ORDER.indexOf(b.evidence) || b.id - a.id;
+    const latest = onePerPerson([...records].sort(byNewest)).slice(0, 2);
+    const taken = new Set(latest.map(({ r }) => `${r.executive}|${r.company_id}`));
+    const notable = onePerPerson([...records].sort(byNewest).filter((r) =>
+      BIG_ROLE.test(r.role) && STRONG.includes(r.evidence) && ['Fortune 500', 'Global 500'].includes(byCo[r.company_id]?.scope)))
+      .filter(({ r }) => !taken.has(`${r.executive}|${r.company_id}`)).slice(0, 2);
+    $('homeCards').innerHTML = `
+      <div class="hc-group"><div class="latest-top"><h2 class="latest-h">Latest</h2><a class="more-link" href="#records" data-nav="records">See all →</a></div>
+        <div class="hc-row">${latest.map((x) => caseCard(x, byCo[x.r.company_id].scope)).join('')}</div></div>
+      ${notable.length ? `<div class="hc-group"><div class="latest-top"><h2 class="latest-h">Notable</h2></div>
+        <div class="hc-row">${notable.map((x) => caseCard(x, byCo[x.r.company_id].scope)).join('')}</div></div>` : ''}`;
+    renderYearChart();
+  }
+  function renderYearChart() {
+    if (!records.length) { $('yearChart').innerHTML = ''; return; }
+    const first = Math.min(...records.map(yearOf));
+    const years = []; for (let y = first; y <= maxYear; y++) years.push(y);
+    const per = years.map((y) => {
+      const list = records.filter((r) => yearOf(r) === y);
+      return { y, n: list.length, m: list.filter(isM).length };
+    });
+    const max = Math.max(1, ...per.map((x) => x.n));
+    const peak = per.reduce((a, b) => (b.n > a.n ? b : a), per[0]);
+    const label = (y, i) => i === 0 || y === maxYear || y % 5 === 0;
+    $('yearChart').innerHTML = `<div class="yc" role="list">${per.map(({ y, n, m }, i) => {
+      const lbl = `${y}: ${plural(n, 'case')}${n ? ` (${n - m} relationship, ${m} misconduct)` : ''}`;
+      return `<button type="button" class="yc-col ${y === peak.y ? 'peak' : ''}" data-yr="${y}" role="listitem" style="--i:${i}" title="${lbl}" aria-label="${lbl}. Show these cases" ${n ? '' : 'disabled'}>
+        <span class="yc-n">${n || ''}</span>
+        <span class="yc-bar" style="--h:${(n / max).toFixed(3)}"><i class="yc-m" style="flex-grow:${m}"></i><i class="yc-r" style="flex-grow:${n - m}"></i></span>
+      </button>`;
+    }).join('')}</div>
+      <div class="yc-axis" aria-hidden="true">${per.map(({ y }, i) => `<span>${label(y, i) ? `'${String(y).slice(2)}` : ''}</span>`).join('')}</div>`;
+  }
+
   // ---------- Timeline ----------
   function renderTimeline() {
     const recs = filtered();
@@ -249,23 +317,7 @@
     const years = Array.from({ length: W }, (_, i) => start + i);
     const inWin = (r) => yearOf(r) >= start && yearOf(r) <= st.end;
 
-    $('stats').innerHTML = statsHtml(recs);
     renderSummary(recs.length);
-
-    const people = new Map();
-    for (const r of [...recs].sort((a, b) => b.disclosed.localeCompare(a.disclosed) || TIER_ORDER.indexOf(a.evidence) - TIER_ORDER.indexOf(b.evidence) || b.id - a.id)) {
-      const k = `${r.executive}|${r.company_id}`;
-      if (people.has(k)) people.get(k).n++; else people.set(k, { r, n: 1 });
-    }
-    const latest = [...people.values()].slice(0, 4);
-    $('latest').innerHTML = latest.length ? `<div class="latest-top"><h2 class="latest-h">Latest cases</h2><a class="more-link" href="#records" data-nav="records">See all →</a></div>
-      <div class="latest-row">${latest.map(({ r, n }) => `
-      <button type="button" class="lt-card" data-id="${r.id}">
-        <span class="lt-meta">${esc(dateLabel(r))} · ${esc(coName(r.company_id))}</span>
-        <span class="lt-name">${esc(r.executive)}</span>
-        <span class="lt-cat">${esc(r.category)}</span>
-        <span class="lt-foot"><span class="ev">${dotHtml(r, 'sm')}${esc(tierLabel(r))}</span>${n > 1 ? `<span class="lt-more">+${n - 1} more record${n > 2 ? 's' : ''}</span>` : ''}</span>
-      </button>`).join('')}</div>` : '';
 
     $('rangeLabel').textContent = `${start} – ${st.end}`;
     $('back').disabled = start <= MIN_YEAR;
@@ -607,6 +659,7 @@
   }
   function render() {
     syncControls();
+    if (st.view === 'home') renderHome();
     if (st.view === 'timeline') renderTimeline();
     if (st.view === 'calendar') renderCalendar();
     if (st.view === 'records') renderRecords();
@@ -620,6 +673,12 @@
     const slot = $(`v-${st.view}`).querySelector('.fslot');
     $('filters').hidden = !slot;
     $('filters').dataset.view = st.view;
+    // On Home the search sits front and centre; everywhere else it lives in the header.
+    const sSlot = st.view === 'home' ? $('homeSlot') : $('hdrSlot');
+    if ($('search').parentElement !== sSlot) { closeSugg(); sSlot.append($('search')); }
+    $('q').placeholder = st.view === 'home' ? 'Search a company or a person' : 'Search people or companies';
+    $('hdr').dataset.view = st.view;
+    setHdrH();
     if (changed) { setPanel(false); hideHover(); }
     if (slot && $('filters').parentElement !== slot) slot.append($('filters'));
     if (changed && document.activeElement !== $('q')) $('q').value = st.view === 'records' ? st.q : '';
@@ -634,10 +693,11 @@
     if (changed) window.scrollTo(0, 0);
     if (!introDone) {
       introDone = true;
-      if (st.view === 'timeline' && motionOK()) {
-        $('timeline').classList.add('tl-reveal');
-        countUp($('stats'));
-        setTimeout(() => $('timeline').classList.remove('tl-reveal'), 1200);
+      const reveal = st.view === 'home' ? $('yearChart') : st.view === 'timeline' ? $('timeline') : null;
+      if (reveal && motionOK()) {
+        reveal.classList.add('tl-reveal');
+        if (st.view === 'home') countUp($('stats'));
+        setTimeout(() => reveal.classList.remove('tl-reveal'), 1400);
       }
     }
     const r = id && records.find((x) => x.id === +id);
@@ -669,6 +729,12 @@
     $('ev').addEventListener('change', (e) => { st.ev = e.target.value; st.m = ''; commit(); });
     $('lost').addEventListener('change', (e) => { st.lost = e.target.value; st.m = ''; commit(); });
     $('showP').addEventListener('change', (e) => { st.p = e.target.checked; st.m = ''; commit(); });
+
+    // Home: a year bar opens that year's cases
+    $('yearChart').addEventListener('click', (e) => {
+      const y = e.target.closest('[data-yr]')?.dataset.yr;
+      if (y) { resetFilters(); st.yr = y; navTo('records'); }
+    });
 
     // Filters pop-over
     $('fBtn').addEventListener('click', () => setPanel($('fPanel').hidden));

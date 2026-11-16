@@ -8,13 +8,14 @@
 <title>Scandal Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=18">
+<link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="page">
   <header class="hdr" id="hdr">
-    <a class="brand" href="#timeline" data-nav="timeline"><span class="brand-dot"></span><span>Scandal Tracker</span></a>
+    <a class="brand" href="#home" data-nav="home"><span class="brand-dot"></span><span>Scandal Tracker</span></a>
+    <div class="hdr-slot" id="hdrSlot">
     <div class="search" id="search">
       <svg class="search-ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
       <input id="q" type="search" placeholder="Search people or companies" autocomplete="off"
@@ -22,13 +23,15 @@
       <kbd class="kbd" aria-hidden="true">/</kbd>
       <ul id="sugg" class="sugg" role="listbox" aria-label="Suggestions" hidden></ul>
     </div>
+    </div>
     <button class="search-toggle" id="searchToggle" type="button" aria-label="Search" aria-expanded="false">
       <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
     </button>
     <nav class="seg tabs" id="tabs" aria-label="Views">
+      <button type="button" data-view="home">Home</button>
+      <button type="button" data-view="records">All cases</button>
       <button type="button" data-view="timeline">Timeline</button>
       <button type="button" data-view="calendar">Calendar</button>
-      <button type="button" data-view="records">Records</button>
       <button type="button" data-view="about">About</button>
     </nav>
   </header>
@@ -69,21 +72,45 @@
       <div class="fsum" id="fsum" aria-live="polite"></div>
     </div>
 
-    <section id="v-timeline" hidden>
-      <div class="intro hero">
-        <h1>Executives brought down by workplace relationships and misconduct</h1>
-        <div class="hero-side">
+    <section id="v-home" hidden>
+      <div class="home-hero">
+        <h1 class="home-h1">Executives brought down by workplace relationships and misconduct</h1>
+        <p class="home-sub">Search <span id="homeCount"></span> sourced cases since <span id="since"></span>, each labelled by how well it is confirmed.</p>
+        <div class="home-search" id="homeSlot"></div>
+        <div class="home-chips" id="homeChips"></div>
+      </div>
+      <div class="home-cards" id="homeCards"></div>
+      <div class="card home-years">
+        <div class="hy-top">
+          <div>
+            <h2 class="tl-title">Cases by year</h2>
+            <p class="tl-hint">By the year each case became public. Select a year to see its cases.</p>
+          </div>
           <div class="stats" id="stats"></div>
-          <p class="hero-note">Since <span id="since">1993</span>. Every case sourced and labelled by evidence. <a href="#about/evidence" data-nav="about" data-sec="evidence">How cases are chosen</a></p>
+        </div>
+        <div class="hy-chart" id="yearChart"></div>
+        <div class="hy-foot">
+          <div class="legend legend-inline"><span><i class="sw"></i>Relationship</span><span><i class="sw sw-m"></i>Misconduct</span></div>
+          <a href="#about/evidence" data-nav="about" data-sec="evidence">How cases are chosen</a>
         </div>
       </div>
-      <div class="latest" id="latest"></div>
+      <nav class="home-browse" aria-label="Browse">
+        <a href="#records" data-nav="records"><b>All cases</b><span>Search, sort and filter every case</span></a>
+        <a href="#timeline" data-nav="timeline"><b>Timeline</b><span>Each company's cases, year by year</span></a>
+        <a href="#calendar" data-nav="calendar"><b>Calendar</b><span>Cases by the month they became public</span></a>
+      </nav>
+      <p class="note">Coverage is incomplete. Research is ongoing.</p>
+    </section>
+
+    <section id="v-timeline" hidden>
+      <div class="intro intro-tight">
+        <div class="intro-text">
+          <h1 class="h1-sm">Cases by company and year</h1>
+          <p class="lede">Each mark is one case, placed by the month it became public. Select a mark for details, or a company for all its cases.</p>
+        </div>
+      </div>
       <div class="fslot"></div>
       <div class="tl-cap">
-        <div>
-          <h2 class="tl-title">Cases by company and year</h2>
-          <p class="tl-hint">Each mark is one case, placed by the month it became public. Select a mark for details, or a company for all its cases.</p>
-        </div>
         <div class="legend legend-inline" aria-label="Legend">
           <span><i class="dot"></i>Relationship</span>
           <span><i class="dot sq"></i>Misconduct</span>
@@ -112,7 +139,7 @@
     <section id="v-records" hidden>
       <div class="intro intro-tight">
         <div class="intro-text">
-          <h1 class="h1-sm">All records</h1>
+          <h1 class="h1-sm">All cases</h1>
           <p class="lede" id="recCount"></p>
         </div>
       </div>
@@ -153,6 +180,6 @@
   <div id="toast" class="toast" role="status" hidden></div>
   <div id="hovercard" class="hovercard" aria-hidden="true" hidden></div>
 </div>
-<script src="app.js?v=17"></script>
+<script src="app.js?v=18"></script>
 </body>
 </html>

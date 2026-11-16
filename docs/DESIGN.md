@@ -84,3 +84,10 @@ These additions came from the design audit in `.ui-design/reviews/app_20261115.m
   - Hover card on dots (mouse, or keyboard focus-visible): company · month, name, role, the summary's first sentence, and the tier. It fades and rises 4px in 120ms, flips below the dot near the header, and replaces the native title tooltip.
   - The header becomes translucent with a blur and a soft shadow once the page scrolls. The timeline's pinned year row gets the same shadow while stuck.
   - The filter pop-over and search suggestions drop in over 140ms.
+
+## Home page (Nov 2026, round 3)
+The default route (`#home`, or no hash) is a home page; the company-by-year grid lives under **Timeline**. Navigation: Home · All cases (the Records table) · Timeline · Calendar · About.
+- **Search first:** a centred H1, a one-line sub ("Search 147 sourced cases since 1993, each labelled by how well it is confirmed") and a large search box. The header's search element is moved into the hero on Home and back into the header on every other view, so there is only ever one. Under it, "Try" chips list the five companies with the most cases.
+- **Cards:** two **Latest** (one per person, newest first; within a month the strongest evidence wins) and two **Notable**: the newest cases where the role is CEO, chief executive, chair, president, founder or managing director, the company is Fortune 500 or Global 500, and the evidence is confirmed, adjudicated, admitted or settled. Each card shows the company list as a kicker.
+- **Cases by year:** a stacked bar per year (relationship in accent, misconduct in `--misc`) from the first case to the current year, with the peak labelled, the Cases / Companies / Lost their role stats (they count up on first load), and a legend. Selecting a bar opens All cases filtered to that year (`yr` URL parameter, shown as a "Year: 2018 ×" chip).
+- **Browse** tiles link to All cases, Timeline and Calendar.
