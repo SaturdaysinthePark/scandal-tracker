@@ -69,8 +69,12 @@ button,input,select{font-family:inherit}
 .sugg li:hover,.sugg li[aria-selected="true"]{background:var(--hover)}
 .sg-l{font-size:14px;color:var(--ink)}
 .sg-s{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sg-co .sg-l::before{content:"Company · ";color:var(--muted)}
-.sg-all .sg-l{color:var(--link)}
+.sg-co .sg-l::before,.sg-co0 .sg-l::before{content:"Company · ";color:var(--muted)}
+.sg-co0 .sg-s{color:var(--faint)}
+.sg-all .sg-l,.sg-about .sg-l{color:var(--link)}
+.sugg li.sg-none{cursor:default;background:none}
+.sg-none .sg-l{color:var(--muted)}
+a.btn{display:inline-flex;align-items:center;text-decoration:none}
 
 .seg{display:flex;gap:2px;background:var(--seg);border-radius:8px;padding:3px}
 .seg button{border:none;border-radius:6px;padding:6px 14px;font-size:13px;font-weight:500;cursor:pointer;background:transparent;color:var(--ink)}

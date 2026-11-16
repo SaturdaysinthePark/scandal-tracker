@@ -22,7 +22,7 @@
   const yearOf = (r) => +r.disclosed.slice(0, 4);
   const dateLabel = (r) => `${MONTHS[+r.disclosed.slice(5, 7) - 1]} ${r.disclosed.slice(0, 4)}`;
   const dayLabel = (d) => { const [y, m, dd] = String(d).split('-'); return dd ? `${+dd} ${MONTHS[+m - 1]} ${y}` : d; };
-  const plural = (n, w) => `${n} ${n === 1 ? w : /y$/.test(w) ? `${w.slice(0, -1)}ies` : `${w}s`}`;
+  const plural = (n, w) => `${n} ${n === 1 ? w : /[^aeiou]y$/.test(w) ? `${w.slice(0, -1)}ies` : /(s|x|ch|sh)$/.test(w) ? `${w}es` : `${w}s`}`;
   const isU = (r) => r.evidence === 'unconfirmed';
   const isM = (r) => r.type === 'misconduct';
   const isP = (r) => r.role_level === 'prominent';
@@ -147,8 +147,19 @@
       ${act.map(([k, l]) => `<button type="button" class="chip" data-clear="${k}" aria-label="Remove filter: ${esc(l)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('')}
       <button type="button" class="linkish" data-reset>Reset filters</button>` : '';
   }
+  // Companies in the list that have no published case at all (e.g. IBM, Apple).
+  const zeroCos = () => {
+    const ids = st.co ? [st.co] : st.q && st.view === 'records'
+      ? companies.filter((c) => c.name.toLowerCase().includes(st.q.trim().toLowerCase())).map((c) => c.id) : [];
+    return ids.filter((id) => !records.some((r) => r.company_id === id)).map(coName);
+  };
   function emptyHtml(what) {
     const act = activeFilters();
+    const zc = zeroCos();
+    if (zc.length) {
+      return `<div class="empty"><p><b>${esc(zc.slice(0, 3).join(', '))}</b> ${zc.length === 1 ? 'has' : 'have'} no published cases in the tracker. A case is listed only once it meets the evidence standard.</p>
+        <div class="empty-act"><a class="btn" href="#about/evidence" data-nav="about" data-sec="evidence">How cases are chosen</a><button type="button" class="btn" data-reset>Show all cases</button></div></div>`;
+    }
     return `<div class="empty"><p>No ${what} match${act.length ? ' the current filters' : ''}${act.length ? `: ${act.map(([, l]) => esc(l)).join(', ')}` : ''}.</p>
       ${act.length ? `<div class="empty-act">${st.q && st.view === 'records' ? '<button type="button" class="btn" data-clear="q">Clear search</button>' : ''}<button type="button" class="btn" data-reset>Reset filters</button></div>` : ''}</div>`;
   }
@@ -326,7 +337,7 @@
       } else if (line.trim()) { close(); out += `<p>${inline(line)}</p>`; }
     }
     close();
-    $('about').insertAdjacentHTML('beforeend', out + (out ? '</section>' : ''));
+    $('aboutDoc').insertAdjacentHTML('beforeend', out + (out ? '</section>' : ''));
     $('toc').innerHTML = `<span class="toc-l">On this page</span>${toc.map(([id, t]) => `<a href="#about/${id}" data-nav="about" data-sec="${id}">${esc(t)}</a>`).join('')}`;
   }
 
@@ -423,15 +434,24 @@
       const k = `${r.executive}|${r.company_id}`;
       if (!people.has(k) && `${r.executive} ${coName(r.company_id)}`.toLowerCase().includes(q)) people.set(k, r);
     }
+    const caseCount = (id) => records.filter((r) => r.company_id === id).length;
+    // Every company in the list is searchable, including ones with no published cases (e.g. IBM).
     const cos = companies.filter((c) => c.name.toLowerCase().includes(q))
-      .map((c) => [c, records.filter((r) => r.company_id === c.id).length]).filter(([, n]) => n);
+      .map((c) => [c, caseCount(c.id)])
+      .sort(([a, n], [b, m]) => b.name.toLowerCase().startsWith(q) - a.name.toLowerCase().startsWith(q) || (m > 0) - (n > 0) || a.name.localeCompare(b.name));
+    const hits = records.filter((r) => qMatch(r, q)).length;
+    const raw = $('q').value.trim();
     suggItems = [
       ...[...people.values()].slice(0, 5).map((r) => ({ kind: 'case', id: r.id, label: r.executive, sub: `${coName(r.company_id)} · ${dateLabel(r)}` })),
-      ...cos.slice(0, 4).map(([c, n]) => ({ kind: 'co', id: c.id, label: c.name, sub: plural(n, 'case') })),
-      { kind: 'all', label: `Search all records for “${$('q').value.trim()}”`, sub: '' },
+      ...cos.slice(0, 4).map(([c, n]) => ({ kind: n ? 'co' : 'co0', id: c.id, label: c.name, sub: n ? plural(n, 'case') : 'No published cases' })),
     ];
+    if (hits) suggItems.push({ kind: 'all', label: `Search all records for “${raw}”`, sub: plural(hits, 'match') });
+    if (!suggItems.length) {
+      suggItems.push({ kind: 'none', label: `Nothing in the tracker matches “${raw}”`, sub: '' });
+      suggItems.push({ kind: 'about', label: 'How companies and cases are chosen', sub: 'Methodology' });
+    }
     suggIdx = -1;
-    $('sugg').innerHTML = suggItems.map((s, i) => `<li role="option" id="sg-${i}" data-i="${i}" aria-selected="false" class="sg-${s.kind}">
+    $('sugg').innerHTML = suggItems.map((s, i) => `<li role="option" id="sg-${i}" data-i="${i}" aria-selected="false" class="sg-${s.kind}"${s.kind === 'none' ? ' aria-disabled="true"' : ''}>
       <span class="sg-l">${esc(s.label)}</span>${s.sub ? `<span class="sg-s">${esc(s.sub)}</span>` : ''}</li>`).join('');
     $('sugg').hidden = false;
     $('q').setAttribute('aria-expanded', 'true');
@@ -442,20 +462,25 @@
   }
   function moveSugg(d) {
     if ($('sugg').hidden) return suggest();
-    suggIdx = (suggIdx + d + suggItems.length) % suggItems.length;
+    const ok = suggItems.map((s, i) => (s.kind === 'none' ? -1 : i)).filter((i) => i >= 0);
+    if (!ok.length) return;
+    const at = ok.indexOf(suggIdx);
+    suggIdx = ok[at < 0 ? (d > 0 ? 0 : ok.length - 1) : (at + d + ok.length) % ok.length];
     $('sugg').querySelectorAll('li').forEach((li, i) => li.setAttribute('aria-selected', String(i === suggIdx)));
     $('q').setAttribute('aria-activedescendant', `sg-${suggIdx}`);
     $(`sg-${suggIdx}`)?.scrollIntoView({ block: 'nearest' });
   }
   function pickSugg(i) {
     const s = suggItems[i];
+    if (!s || s.kind === 'none') return;
     closeSugg();
-    if (!s || s.kind === 'all') {
+    if (s.kind === 'about') { closeMobileSearch(); return navTo('about', 'scope'); }
+    if (s.kind === 'all') {
       st.q = $('q').value.trim();
       return navTo('records');
     }
     $('q').value = ''; st.q = '';
-    if (s.kind === 'co') { st.co = s.id; navTo('records'); }
+    if (s.kind === 'co' || s.kind === 'co0') { st.co = s.id; navTo('records'); }
     else openCase(s.id);
     closeMobileSearch();
   }
@@ -589,7 +614,7 @@
     $('q').addEventListener('keydown', (e) => {
       if (e.key === 'ArrowDown') { e.preventDefault(); moveSugg(1); }
       else if (e.key === 'ArrowUp') { e.preventDefault(); moveSugg(-1); }
-      else if (e.key === 'Enter') { e.preventDefault(); if ($('q').value.trim()) pickSugg(suggIdx >= 0 ? suggIdx : suggItems.length - 1); }
+      else if (e.key === 'Enter') { e.preventDefault(); if ($('q').value.trim()) { if ($('sugg').hidden) suggest(); pickSugg(suggIdx >= 0 ? suggIdx : suggItems.findIndex((x) => x.kind === 'all') >= 0 ? suggItems.findIndex((x) => x.kind === 'all') : suggItems.findIndex((x) => x.kind !== 'none')); } }
       else if (e.key === 'Escape') { if (!$('sugg').hidden) closeSugg(); else { $('q').blur(); closeMobileSearch(); } }
     });
     $('q').addEventListener('focus', () => { if ($('q').value.trim()) suggest(); });
