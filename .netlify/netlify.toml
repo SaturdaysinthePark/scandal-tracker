@@ -1,0 +1,55 @@
+headersOrigin = "config"
+redirectsOrigin = "config"
+plugins = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/sabtain/git/scandal-tracker/dist"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "sh scripts/build_site.sh"
+
+[build.environment]
+PYTHON_VERSION = "3.11"
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[headers]]
+for = "/data/*"
+
+[headers.values]
+Cache-Control = "public, max-age=0, must-revalidate"
+Access-Control-Allow-Origin = "*"
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+X-Frame-Options = "SAMEORIGIN"
+
+[[redirects]]
+from = "/"
+to = "/app/"
+status = 301.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]

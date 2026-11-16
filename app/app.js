@@ -92,7 +92,7 @@
   const motionOK = () => matchMedia('(prefers-reduced-motion: no-preference)').matches;
   const EASE = 'cubic-bezier(.2,.7,.2,1)';
   let introDone = false;
-  // First load: stats count up from zero (the bars rise via the .intro class in CSS).
+  // First load: stats count up from zero (the bars rise via the .tl-reveal class in CSS).
   function countUp(root) {
     root.querySelectorAll('.stat-v[data-v]').forEach((el) => {
       const to = +el.dataset.v, t0 = performance.now(), d = 700;
@@ -238,7 +238,7 @@
       ${act.length ? `<div class="empty-act">${st.q && st.view === 'records' ? '<button type="button" class="btn" data-clear="q">Clear search</button>' : ''}<button type="button" class="btn" data-reset>Reset filters</button></div>` : ''}</div>`;
   }
   const statsHtml = (recs) => [[recs.length, 'Cases'], [new Set(recs.map((r) => r.company_id)).size, 'Companies'], [recs.filter((r) => r.lost_role).length, 'Lost their role']]
-    .map(([v, l]) => `<div><div class="stat-v" data-v="${v}">${v}</div><div class="stat-l">${l}</div></div>`).join('');
+    .map(([v, l]) => `<div><div class="stat-v" data-v="${v}" style="min-width:${String(v).length}ch">${v}</div><div class="stat-l">${l}</div></div>`).join('');
 
   // ---------- Timeline ----------
   function renderTimeline() {
@@ -258,7 +258,7 @@
       if (people.has(k)) people.get(k).n++; else people.set(k, { r, n: 1 });
     }
     const latest = [...people.values()].slice(0, 4);
-    $('latest').innerHTML = latest.length ? `<div class="latest-top"><h2 class="latest-h">Latest cases</h2><a class="more-link" href="#records" data-nav="records">All ${plural(recs.length, 'record')} →</a></div>
+    $('latest').innerHTML = latest.length ? `<div class="latest-top"><h2 class="latest-h">Latest cases</h2><a class="more-link" href="#records" data-nav="records">See all →</a></div>
       <div class="latest-row">${latest.map(({ r, n }) => `
       <button type="button" class="lt-card" data-id="${r.id}">
         <span class="lt-meta">${esc(dateLabel(r))} · ${esc(coName(r.company_id))}</span>
@@ -635,9 +635,9 @@
     if (!introDone) {
       introDone = true;
       if (st.view === 'timeline' && motionOK()) {
-        $('timeline').classList.add('intro');
+        $('timeline').classList.add('tl-reveal');
         countUp($('stats'));
-        setTimeout(() => $('timeline').classList.remove('intro'), 1200);
+        setTimeout(() => $('timeline').classList.remove('tl-reveal'), 1200);
       }
     }
     const r = id && records.find((x) => x.id === +id);
@@ -799,7 +799,7 @@
       $('ev').innerHTML = `<option value="all">Any evidence</option><option value="nou">Hide unconfirmed</option>${TIER_ORDER.filter((k) => tiers[k]).map((k) => `<option value="${k}">${esc(tiers[k])} only</option>`).join('')}`;
       const updated = records.map((x) => x.verified_on || '').sort().pop();
       $('updated').textContent = `${plural(records.length, 'published case')}${updated ? ` · Data last verified ${dayLabel(updated)}` : ''}`;
-      if (records.length) $('since').textContent = `, since ${Math.min(...records.map(yearOf))}`;
+      if (records.length) $('since').textContent = Math.min(...records.map(yearOf));
       renderAbout(md);
       $('loading').remove();
       $('ftr').hidden = false;

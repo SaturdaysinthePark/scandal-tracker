@@ -89,7 +89,10 @@ h1{margin:0 0 8px;font-size:clamp(28px,3.4vw,40px);font-weight:600;letter-spacin
 .lede{margin:0;font-size:14px;line-height:1.55;color:var(--muted);text-wrap:pretty}
 .intro{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:24px}
 .intro-text{max-width:560px}
-.hero .intro-text{max-width:760px}
+.hero{align-items:center}
+.hero h1{max-width:760px;margin:0}
+.hero-side{display:flex;flex-direction:column;align-items:flex-end;gap:10px;text-align:right}
+.hero-note{margin:0;max-width:300px;font-size:12px;line-height:1.5;color:var(--muted)}
 .lede-lg{font-size:15.5px;color:var(--ink-2);max-width:640px}
 .lede a{white-space:nowrap}
 .intro-tight{margin-bottom:16px}
@@ -323,9 +326,9 @@ button.dot:hover{transform:scale(1.4)}
 
 /* Motion: first-load reveal and pop-overs. Skipped entirely under reduced motion. */
 @media (prefers-reduced-motion:no-preference){
-  .tl.intro .bar{animation:st-grow .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i) * 18ms)}
-  .tl.intro .bar-n{animation:st-fade .35s ease-out both;animation-delay:calc(var(--i) * 18ms + 280ms)}
-  .tl.intro button.dot{animation:st-pop .35s cubic-bezier(.2,.7,.2,1) both;animation-delay:.3s}
+  .tl.tl-reveal .bar{animation:st-grow .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i) * 18ms)}
+  .tl.tl-reveal .bar-n{animation:st-fade .35s ease-out both;animation-delay:calc(var(--i) * 18ms + 280ms)}
+  .tl.tl-reveal button.dot{animation:st-pop .35s cubic-bezier(.2,.7,.2,1) both;animation-delay:.3s}
   .fpanel:not([hidden]),.sugg:not([hidden]){animation:st-drop .14s ease-out}
 }
 @keyframes st-grow{from{transform:scaleY(0)}}
@@ -373,7 +376,7 @@ button.dot:hover{transform:scale(1.4)}
   .find{order:3;flex:1 1 100%;min-width:0}
   .find input{width:100%}
   .fpanel{width:min(320px,calc(100vw - 32px))}
-  .lede-lg{font-size:15px}
+  .hero-side{align-items:flex-start;text-align:left}
 
   .latest-row{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px}
   .lt-card{scroll-snap-align:start}
