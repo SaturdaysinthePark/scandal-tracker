@@ -8,7 +8,7 @@
 <title>Scandal Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=16">
+<link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -38,46 +38,56 @@
 
     <!-- Shared filter bar: moved into the active view's .fslot by app.js. -->
     <div class="filters" id="filters" hidden>
-      <div class="toolbar">
+      <div class="fbar">
         <div class="seg seg-sm" id="typeSeg" role="group" aria-label="Case type">
           <button type="button" data-type="all">All cases</button>
           <button type="button" data-type="relationship">Relationships</button>
           <button type="button" data-type="misconduct">Misconduct</button>
         </div>
-        <label class="sel"><span class="vh">Company list</span>
-          <select id="scope"><option value="All">All companies</option><option>Fortune 500</option><option>Global 500</option><option>Other notable</option></select></label>
-        <label class="sel"><span class="vh">Evidence</span>
-          <select id="ev"></select></label>
-        <label class="sel"><span class="vh">Lost their role</span>
-          <select id="lost"><option value="all">Any outcome</option><option value="yes">Lost their role</option><option value="no">Kept their role</option></select></label>
-        <label class="chk"><input type="checkbox" id="showP" checked>Prominent employees</label>
+        <div class="fpop">
+          <button type="button" class="btn fbtn" id="fBtn" aria-expanded="false" aria-controls="fPanel">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M4.5 8h7M7 12h2"/></svg>Filters<span class="fcount" id="fCount" hidden></span></button>
+          <div class="fpanel" id="fPanel" role="group" aria-label="More filters" hidden>
+            <label class="fld"><span>Company list</span>
+              <select id="scope"><option value="All">All companies</option><option>Fortune 500</option><option>Global 500</option><option>Other notable</option></select></label>
+            <label class="fld"><span>Evidence</span><select id="ev"></select></label>
+            <label class="fld"><span>Outcome</span>
+              <select id="lost"><option value="all">Any outcome</option><option value="yes">Lost their role</option><option value="no">Kept their role</option></select></label>
+            <label class="chk"><input type="checkbox" id="showP" checked>Include prominent employees</label>
+            <label class="chk only-tl"><input type="checkbox" id="showZero">Show companies with no cases</label>
+            <div class="fpanel-foot"><button type="button" class="linkish" data-reset>Reset filters</button><button type="button" class="btn btn-sm" id="fDone">Done</button></div>
+          </div>
+        </div>
+        <label class="find only-tl"><span class="vh">Find a company</span>
+          <input id="coFind" type="search" placeholder="Find a company" autocomplete="off"></label>
+        <div class="range only-tl">
+          <button type="button" id="back" aria-label="Earlier years">‹</button>
+          <div id="rangeLabel" class="mono" aria-live="polite"></div>
+          <button type="button" id="fwd" aria-label="Later years">›</button>
+        </div>
       </div>
       <div class="fsum" id="fsum" aria-live="polite"></div>
     </div>
 
     <section id="v-timeline" hidden>
-      <div class="intro">
+      <div class="intro hero">
         <div class="intro-text">
           <h1>Executives brought down by workplace relationships and misconduct</h1>
-          <p class="lede">Each mark is one case, placed by the month it became public. Select a mark, or a company name, for details and sources.</p>
+          <p class="lede lede-lg">A sourced record of senior executives whose workplace relationships or sexual misconduct became public<span id="since"></span>. Every case links to its sources and is labelled by how well it is confirmed. <a href="#about/evidence" data-nav="about" data-sec="evidence">How cases are chosen</a></p>
         </div>
         <div class="stats" id="stats"></div>
       </div>
       <div class="latest" id="latest"></div>
       <div class="fslot"></div>
-      <div class="toolbar tl-tools">
-        <label class="find"><span class="vh">Find a company</span>
-          <input id="coFind" type="search" placeholder="Find a company" autocomplete="off"></label>
-        <label class="chk"><input type="checkbox" id="showZero">Companies with no cases</label>
+      <div class="tl-cap">
+        <div>
+          <h2 class="tl-title">Cases by company and year</h2>
+          <p class="tl-hint">Each mark is one case, placed by the month it became public. Select a mark for details, or a company for all its cases.</p>
+        </div>
         <div class="legend legend-inline" aria-label="Legend">
           <span><i class="dot"></i>Relationship</span>
           <span><i class="dot sq"></i>Misconduct</span>
           <span><i class="dot ring"></i>Unconfirmed</span>
-        </div>
-        <div class="range tb-end">
-          <button type="button" id="back" aria-label="Earlier years">‹</button>
-          <div id="rangeLabel" class="mono" aria-live="polite"></div>
-          <button type="button" id="fwd" aria-label="Later years">›</button>
         </div>
       </div>
       <div class="card tl-card"><div class="tl" id="timeline"></div></div>
@@ -141,7 +151,8 @@
   <div id="backdrop" class="backdrop" hidden></div>
   <aside id="drawer" class="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="drName"></aside>
   <div id="toast" class="toast" role="status" hidden></div>
+  <div id="hovercard" class="hovercard" aria-hidden="true" hidden></div>
 </div>
-<script src="app.js?v=15"></script>
+<script src="app.js?v=16"></script>
 </body>
 </html>

@@ -84,8 +84,81 @@
   // Filter or sort change: same history entry, new URL.
   function commit() {
     history.replaceState(history.state, '', urlFor(st.view, st.sel?.id));
-    render();
+    if (st.view === 'timeline' && introDone && motionOK()) flipTimeline(render); else render();
   }
+
+  // ---------- Motion ----------
+  // All motion is skipped for people who ask for reduced motion.
+  const motionOK = () => matchMedia('(prefers-reduced-motion: no-preference)').matches;
+  const EASE = 'cubic-bezier(.2,.7,.2,1)';
+  let introDone = false;
+  // First load: stats count up from zero (the bars rise via the .intro class in CSS).
+  function countUp(root) {
+    root.querySelectorAll('.stat-v[data-v]').forEach((el) => {
+      const to = +el.dataset.v, t0 = performance.now(), d = 700;
+      const step = (t) => {
+        const p = Math.min(1, (t - t0) / d);
+        el.textContent = Math.round(to * (1 - (1 - p) ** 3));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      el.textContent = '0';
+      requestAnimationFrame(step);
+    });
+  }
+  // Filter changes on the timeline: rows slide to their new places, dots travel with them,
+  // new dots grow in, and the per-year bars resize instead of snapping (FLIP).
+  function flipTimeline(update) {
+    const tl = $('timeline');
+    const rowsBefore = new Map([...tl.querySelectorAll('.tl-row.co')].map((el) => [el.dataset.k, rect(el).top]));
+    const dotsBefore = new Map([...tl.querySelectorAll('button.dot')].map((el) => [el.dataset.id, rect(el)]));
+    const barsBefore = [...tl.querySelectorAll('.bar')].map((el) => el.offsetHeight);
+    update();
+    const opts = { duration: 260, easing: EASE };
+    const rowDy = new Map();
+    tl.querySelectorAll('.tl-row.co').forEach((el) => {
+      const old = rowsBefore.get(el.dataset.k);
+      if (old === undefined) { el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 180, easing: 'ease-out' }); return; }
+      const dy = old - rect(el).top;
+      rowDy.set(el.dataset.k, dy);
+      if (Math.abs(dy) > 0.5) el.animate([{ transform: `translateY(${dy}px)` }, { transform: 'none' }], opts);
+    });
+    tl.querySelectorAll('button.dot').forEach((el) => {
+      const old = dotsBefore.get(el.dataset.id);
+      if (!old) { el.animate([{ opacity: 0, transform: 'scale(.4)' }, { opacity: 1, transform: 'none' }], { duration: 220, easing: EASE }); return; }
+      const now = rect(el);
+      const dx = old.left - now.left, dy = old.top - now.top - (rowDy.get(el.closest('.tl-row')?.dataset.k) || 0);
+      if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) el.animate([{ transform: `translate(${dx}px,${dy}px)` }, { transform: 'none' }], opts);
+    });
+    tl.querySelectorAll('.bar').forEach((el, i) => {
+      const h = el.offsetHeight, was = barsBefore[i];
+      if (h && was !== undefined && was !== h) el.animate([{ transform: `scaleY(${was / h})` }, { transform: 'none' }], opts);
+    });
+  }
+
+  // ---------- Hover card on timeline dots (mouse and keyboard focus) ----------
+  const canHover = () => matchMedia('(hover: hover) and (pointer: fine)').matches;
+  function showHover(el) {
+    const r = records.find((x) => x.id === +el.dataset.id);
+    const hc = $('hovercard');
+    if (!r) return;
+    const first = (r.summary || '').split(/(?<=[.!?])\s+/)[0];
+    hc.innerHTML = `<div class="hc-meta">${esc(coName(r.company_id))} · ${esc(dateLabel(r))}</div>
+      <div class="hc-name">${esc(r.executive)}</div><div class="hc-role">${roleLine(r)}</div>
+      <p class="hc-sum">${esc(first.length > 170 ? `${first.slice(0, 167)}…` : first)}</p>
+      <div class="hc-foot"><span class="ev">${dotHtml(r, 'sm')}${esc(tierLabel(r))}</span><span class="hc-cta">Select for sources</span></div>`;
+    hc.classList.remove('show', 'below');
+    hc.hidden = false;
+    const b = rect(el), w = hc.offsetWidth, h = hc.offsetHeight;
+    const top = $('hdr').offsetHeight + 8;
+    let x = Math.max(8, Math.min(window.innerWidth - w - 8, b.left + b.width / 2 - w / 2));
+    let y = b.top - h - 10;
+    if (y < top) { y = b.bottom + 10; hc.classList.add('below'); }
+    hc.style.left = `${x}px`; hc.style.top = `${y}px`;
+    void hc.offsetWidth;
+    hc.classList.add('show');
+  }
+  function hideHover() { const hc = $('hovercard'); hc.classList.remove('show'); hc.hidden = true; }
+  const rect = (el) => el.getBoundingClientRect();
   // Move to another view (new history entry), keeping filters.
   function navTo(view, sec = '') {
     history.pushState(null, '', urlFor(view, sec));
@@ -131,20 +204,21 @@
     if (!st.p) out.push(['p', 'Prominent employees hidden']);
     if (st.co) out.push(['co', `Company: ${coName(st.co)}`]);
     if (st.q && st.view === 'records') out.push(['q', `Search: “${st.q}”`]);
+    if (st.zero && st.view === 'timeline') out.push(['zero', 'Companies with no cases shown']);
     return out;
   }
   function clearFilter(k) {
     if (k === 'q') { st.q = ''; $('q').value = ''; } else st[k] = DEF[k];
   }
   function resetFilters() {
-    for (const k of ['type', 'scope', 'ev', 'lost', 'p', 'co', 'q', 'find']) st[k] = DEF[k];
+    for (const k of ['type', 'scope', 'ev', 'lost', 'p', 'co', 'q', 'find', 'zero']) st[k] = DEF[k];
     $('q').value = '';
   }
   // "Showing 12 of 147 cases · [chips] · Reset filters"
   function renderSummary(shown) {
     const act = activeFilters();
     $('fsum').innerHTML = act.length ? `<span>Showing <b>${shown}</b> of ${records.length} cases</span>
-      ${act.map(([k, l]) => `<button type="button" class="chip" data-clear="${k}" aria-label="Remove filter: ${esc(l)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('')}
+      ${act.filter(([k]) => k !== 'type').map(([k, l]) => `<button type="button" class="chip" data-clear="${k}" aria-label="Remove filter: ${esc(l)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('')}
       <button type="button" class="linkish" data-reset>Reset filters</button>` : '';
   }
   // Companies in the list that have no published case at all (e.g. IBM, Apple).
@@ -164,7 +238,7 @@
       ${act.length ? `<div class="empty-act">${st.q && st.view === 'records' ? '<button type="button" class="btn" data-clear="q">Clear search</button>' : ''}<button type="button" class="btn" data-reset>Reset filters</button></div>` : ''}</div>`;
   }
   const statsHtml = (recs) => [[recs.length, 'Cases'], [new Set(recs.map((r) => r.company_id)).size, 'Companies'], [recs.filter((r) => r.lost_role).length, 'Lost their role']]
-    .map(([v, l]) => `<div><div class="stat-v">${v}</div><div class="stat-l">${l}</div></div>`).join('');
+    .map(([v, l]) => `<div><div class="stat-v" data-v="${v}">${v}</div><div class="stat-l">${l}</div></div>`).join('');
 
   // ---------- Timeline ----------
   function renderTimeline() {
@@ -178,13 +252,19 @@
     $('stats').innerHTML = statsHtml(recs);
     renderSummary(recs.length);
 
-    const latest = [...recs].sort(byDateDesc).slice(0, 4);
-    $('latest').innerHTML = latest.length ? `<h2 class="latest-h">Latest cases</h2><div class="latest-row">${latest.map((r) => `
+    const people = new Map();
+    for (const r of [...recs].sort((a, b) => b.disclosed.localeCompare(a.disclosed) || TIER_ORDER.indexOf(a.evidence) - TIER_ORDER.indexOf(b.evidence) || b.id - a.id)) {
+      const k = `${r.executive}|${r.company_id}`;
+      if (people.has(k)) people.get(k).n++; else people.set(k, { r, n: 1 });
+    }
+    const latest = [...people.values()].slice(0, 4);
+    $('latest').innerHTML = latest.length ? `<div class="latest-top"><h2 class="latest-h">Latest cases</h2><a class="more-link" href="#records" data-nav="records">All ${plural(recs.length, 'record')} →</a></div>
+      <div class="latest-row">${latest.map(({ r, n }) => `
       <button type="button" class="lt-card" data-id="${r.id}">
         <span class="lt-meta">${esc(dateLabel(r))} · ${esc(coName(r.company_id))}</span>
         <span class="lt-name">${esc(r.executive)}</span>
         <span class="lt-cat">${esc(r.category)}</span>
-        <span class="ev">${dotHtml(r, 'sm')}${esc(tierLabel(r))}</span>
+        <span class="lt-foot"><span class="ev">${dotHtml(r, 'sm')}${esc(tierLabel(r))}</span>${n > 1 ? `<span class="lt-more">+${n - 1} more record${n > 2 ? 's' : ''}</span>` : ''}</span>
       </button>`).join('')}</div>` : '';
 
     $('rangeLabel').textContent = `${start} – ${st.end}`;
@@ -215,15 +295,15 @@
 
     let html = `<div class="tl-head">
       <div class="tl-row hd"><div class="tl-lab big">Per year</div>
-        <div class="hist">${perYear.map((n, i) => `<div class="bar-col" title="${years[i]}: ${plural(n, 'case')}"><div class="bar-n">${n || ''}</div><div class="bar" style="height:${Math.round((n / maxN) * 44)}px"></div></div>`).join('')}</div><div></div></div>
+        <div class="hist">${perYear.map((n, i) => `<div class="bar-col" title="${years[i]}: ${plural(n, 'case')}" style="--i:${i}"><div class="bar-n">${n || ''}</div><div class="bar" style="height:${Math.round((n / maxN) * 44)}px"></div></div>`).join('')}</div><div></div></div>
       <div class="tl-row hd"><div class="tl-lab">Company</div>
         <div class="years">${years.map((y) => `<div class="yr">${yy(y)}</div>`).join('')}</div><div class="tot-h">Total</div></div></div>`;
     html += rows.map(({ c, mine }) => {
       const earlier = mine.filter((r) => yearOf(r) < start), later = mine.filter((r) => yearOf(r) > st.end);
       const cells = years.map((y) => `<div class="cell">${mine.filter((r) => yearOf(r) === y).map((r) =>
-        `<button type="button" class="dot ${markCls(r)}" data-id="${r.id}" title="${esc(`${r.executive} · ${dateLabel(r)} · ${tierLabel(r)}`)}" aria-label="${esc(`${r.executive}, ${c.name}, ${dateLabel(r)}, ${tierLabel(r)}`)}"></button>`).join('')}</div>`).join('');
+        `<button type="button" class="dot ${markCls(r)}" data-id="${r.id}" aria-label="${esc(`${r.executive}, ${c.name}, ${dateLabel(r)}, ${tierLabel(r)}`)}"></button>`).join('')}</div>`).join('');
       const chip = (list, dir) => list.length ? `<button type="button" class="shift" data-shift="${yearOf(dir < 0 ? list[list.length - 1] : list[0])}" aria-label="${plural(list.length, `${dir < 0 ? 'earlier' : 'later'} case`)} at ${esc(c.name)}: show ${dir < 0 ? 'earlier' : 'later'} years">${dir < 0 ? '‹' : ''}+${list.length}${dir > 0 ? '›' : ''}</button>` : '';
-      return `<div class="tl-row co"><button type="button" class="tl-name" data-co="${esc(c.id)}" title="All cases at ${esc(c.name)}"><span>${esc(c.name)}</span></button><div class="years">${cells}</div>
+      return `<div class="tl-row co" data-k="${esc(c.id)}"><button type="button" class="tl-name" data-co="${esc(c.id)}" title="All cases at ${esc(c.name)}"><span>${esc(c.name)}</span></button><div class="years">${cells}</div>
         <div class="tot">${chip(earlier, -1)}${chip(later, 1)}<span class="tot-n ${mine.length ? '' : 'zero'}">${mine.length}</span></div></div>`;
     }).join('');
     if (!total) html += emptyHtml(find ? `companies named “${esc(st.find)}”` : 'companies');
@@ -484,6 +564,10 @@
     else openCase(s.id);
     closeMobileSearch();
   }
+  function setPanel(open) {
+    $('fPanel').hidden = !open; $('fBtn').setAttribute('aria-expanded', String(open));
+    if (open) $('fPanel').querySelector('select')?.focus();
+  }
   const closeMobileSearch = () => { $('hdr').classList.remove('s-open'); $('searchToggle').setAttribute('aria-expanded', 'false'); };
 
   // ---------- Downloads ----------
@@ -511,6 +595,10 @@
     document.querySelectorAll('#typeSeg button').forEach((b) => { const on = b.dataset.type === st.type; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); });
     $('scope').value = st.scope; $('ev').value = st.ev; $('lost').value = st.lost;
     $('showP').checked = st.p; $('showZero').checked = st.zero;
+    const hiddenOn = [st.scope !== DEF.scope, st.ev !== DEF.ev, st.lost !== DEF.lost, !st.p, st.view === 'timeline' && st.zero].filter(Boolean).length;
+    $('fCount').hidden = !hiddenOn; $('fCount').textContent = hiddenOn;
+    $('fBtn').classList.toggle('has', !!hiddenOn);
+    $('fBtn').setAttribute('aria-label', hiddenOn ? `Filters, ${hiddenOn} on` : 'Filters');
     if (document.activeElement !== $('coFind')) $('coFind').value = st.find;
     document.querySelectorAll('#tabs button').forEach((b) => {
       const on = b.dataset.view === st.view; b.classList.toggle('on', on);
@@ -531,16 +619,27 @@
     // One filter bar, shared by every data view.
     const slot = $(`v-${st.view}`).querySelector('.fslot');
     $('filters').hidden = !slot;
+    $('filters').dataset.view = st.view;
+    if (changed) { setPanel(false); hideHover(); }
     if (slot && $('filters').parentElement !== slot) slot.append($('filters'));
     if (changed && document.activeElement !== $('q')) $('q').value = st.view === 'records' ? st.q : '';
     render();
     if (st.view === 'about') {
+      introDone = true;
       if (st.sel) hideDrawer();
       const sec = id && $(`about-${id}`);
       if (sec) { sec.scrollIntoView(); sec.focus({ preventScroll: true }); } else if (changed) window.scrollTo(0, 0);
       return;
     }
     if (changed) window.scrollTo(0, 0);
+    if (!introDone) {
+      introDone = true;
+      if (st.view === 'timeline' && motionOK()) {
+        $('timeline').classList.add('intro');
+        countUp($('stats'));
+        setTimeout(() => $('timeline').classList.remove('intro'), 1200);
+      }
+    }
     const r = id && records.find((x) => x.id === +id);
     if (r) { if (st.sel?.id !== r.id) showDrawer(r); }
     else if (st.sel) hideDrawer();
@@ -570,6 +669,18 @@
     $('ev').addEventListener('change', (e) => { st.ev = e.target.value; st.m = ''; commit(); });
     $('lost').addEventListener('change', (e) => { st.lost = e.target.value; st.m = ''; commit(); });
     $('showP').addEventListener('change', (e) => { st.p = e.target.checked; st.m = ''; commit(); });
+
+    // Filters pop-over
+    $('fBtn').addEventListener('click', () => setPanel($('fPanel').hidden));
+    $('fDone').addEventListener('click', () => { setPanel(false); $('fBtn').focus(); });
+    document.addEventListener('click', (e) => { if (!$('fPanel').hidden && !e.target.closest('.fpop')) setPanel(false); });
+
+    // Hover card
+    $('timeline').addEventListener('mouseover', (e) => { const d = e.target.closest('button.dot'); if (d && canHover()) showHover(d); });
+    $('timeline').addEventListener('mouseout', (e) => { const d = e.target.closest('button.dot'); if (d && !d.contains(e.relatedTarget)) hideHover(); });
+    $('timeline').addEventListener('focusin', (e) => { const d = e.target.closest('button.dot'); if (d && d.matches(':focus-visible')) showHover(d); });
+    $('timeline').addEventListener('focusout', hideHover);
+    $('timeline').addEventListener('click', hideHover, true);
 
     // Timeline
     $('showZero').addEventListener('change', (e) => { st.zero = e.target.checked; commit(); });
@@ -641,6 +752,7 @@
     // Keyboard
     document.addEventListener('keydown', (e) => {
       const typing = /^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName);
+      if (e.key === 'Escape' && !$('fPanel').hidden) { setPanel(false); $('fBtn').focus(); return; }
       if (st.sel) {
         if (e.key === 'Escape') { e.preventDefault(); closeCase(); }
         else if (!typing && e.key === 'ArrowLeft') stepCase(-1);
@@ -661,7 +773,15 @@
     let ticking = false;
     window.addEventListener('scroll', () => {
       if (ticking) return; ticking = true;
-      requestAnimationFrame(() => { $('toTop').hidden = window.scrollY < window.innerHeight * 1.5; ticking = false; });
+      requestAnimationFrame(() => {
+        $('toTop').hidden = window.scrollY < window.innerHeight * 1.5;
+        // Depth cues: the header, and the timeline's sticky year row once it is pinned.
+        $('hdr').classList.toggle('scrolled', window.scrollY > 8);
+        const th = document.querySelector('#v-timeline:not([hidden]) .tl-head');
+        if (th) th.classList.toggle('stuck', th.getBoundingClientRect().top <= $('hdr').offsetHeight + 1 && window.scrollY > 8);
+        hideHover();
+        ticking = false;
+      });
     }, { passive: true });
     let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { setHdrH(); if (st.view === 'timeline') renderTimeline(); }, 150); });
   }
@@ -679,6 +799,7 @@
       $('ev').innerHTML = `<option value="all">Any evidence</option><option value="nou">Hide unconfirmed</option>${TIER_ORDER.filter((k) => tiers[k]).map((k) => `<option value="${k}">${esc(tiers[k])} only</option>`).join('')}`;
       const updated = records.map((x) => x.verified_on || '').sort().pop();
       $('updated').textContent = `${plural(records.length, 'published case')}${updated ? ` · Data last verified ${dayLabel(updated)}` : ''}`;
+      if (records.length) $('since').textContent = `, since ${Math.min(...records.map(yearOf))}`;
       renderAbout(md);
       $('loading').remove();
       $('ftr').hidden = false;

@@ -71,3 +71,16 @@ These additions came from the design audit in `.ui-design/reviews/app_20261115.m
 - **About:** an "On this page" table of contents; sections are addressable as `#about/<section>`.
 - **Footer:** published-case count, data last verified date (latest `verified_on`), Methodology, and CSV / JSON downloads of the published records. There is deliberately no public corrections link.
 - **Dark mode:** all colours are tokens on `:root`, redefined under `prefers-color-scheme: dark` (and `:root[data-theme="dark"]`). Dark accent `#e2604a`, surface `#1c1b19`, bg `#141312`.
+
+## Landing and motion (Nov 2026, round 2)
+- **Hero:** the H1 spans up to 760px (two lines on desktop). The lede says what the tracker is and why to trust it ("A sourced record … since <first year>. Every case links to its sources and is labelled by how well it is confirmed.") and links to the methodology. How to read the chart moved to the chart's own caption.
+- **Latest cases:** one card per person (newest first; if several records share a month, the strongest evidence wins), with "+n more records" when a person has more than one. "All N records →" links to Records.
+- **Filters:** one row: case type, a **Filters** button that opens a pop-over (Company list, Evidence, Outcome, Include prominent employees, and on the timeline Show companies with no cases), then on the timeline "Find a company" and the year range. The button shows a count badge for active pop-over filters, and every active filter except case type also appears as a removable chip under the row.
+- **Chart caption:** "Cases by company and year" with a one-line hint, and the legend on the right.
+- **Misconduct colour:** its own token `--misc` (`#4b51b5` light, `#a3a7f7` dark), instead of `--ink-2`.
+- **Motion** (all off under `prefers-reduced-motion: reduce`):
+  - First load: per-year bars rise (staggered 18ms), counts fade in, dots pop in, and the headline stats count up from zero (700ms, ease-out).
+  - Timeline filter or range changes use FLIP: rows slide to new positions, dots travel with them, new dots scale in, and bars resize, over 260ms `cubic-bezier(.2,.7,.2,1)`.
+  - Hover card on dots (mouse, or keyboard focus-visible): company · month, name, role, the summary's first sentence, and the tier. It fades and rises 4px in 120ms, flips below the dot near the header, and replaces the native title tooltip.
+  - The header becomes translucent with a blur and a soft shadow once the page scrolls. The timeline's pinned year row gets the same shadow while stuck.
+  - The filter pop-over and search suggestions drop in over 140ms.
