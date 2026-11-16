@@ -290,8 +290,8 @@
   // Cases by year: the last YC_W years by default (bars wide enough to label every one),
   // with ‹ › to step back through earlier years and an "All years" view.
   const YC_W = 10;
-  // Context notes drawn over the chart when their year is in view.
-  const YC_NOTES = [{ y: 2017, text: '#MeToo, Oct 2017' }];
+  // Context notes drawn over the chart when their year is in view, e.g. { y: 2017, text: '…' }.
+  const YC_NOTES = [];
   const yc = { all: false, end: null };
   function renderYearChart(animate = false) {
     if (!records.length) { $('yearChart').innerHTML = ''; $('ycCtl').innerHTML = ''; return; }
