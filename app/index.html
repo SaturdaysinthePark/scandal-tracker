@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A tracker of publicly documented workplace-relationship and sexual-misconduct cases involving senior executives, with sources.">
+<meta name="description" content="A tracker of publicly documented workplace-relationship, sexual-misconduct and fraud cases involving senior executives, with sources.">
 <meta name="color-scheme" content="light dark">
 <title>Scandal Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,6 +43,7 @@
           <button type="button" data-type="all">All cases</button>
           <button type="button" data-type="relationship">Relationships</button>
           <button type="button" data-type="misconduct">Misconduct</button>
+          <button type="button" data-type="fraud">Fraud</button>
         </div>
         <label class="sel"><span class="vh">Company list</span>
           <select id="scope"><option value="All">All companies</option><option>Fortune 500</option><option>Global 500</option><option>Other notable</option></select></label>
@@ -58,7 +59,7 @@
     <section id="v-timeline" hidden>
       <div class="intro">
         <div class="intro-text">
-          <h1>Executives brought down by workplace relationships and misconduct</h1>
+          <h1>Executives brought down by workplace relationships, misconduct and fraud</h1>
           <p class="lede">Each mark is one case, placed by the month it became public. Select a mark, or a company name, for details and sources.</p>
         </div>
         <div class="stats" id="stats"></div>
@@ -72,6 +73,7 @@
         <div class="legend legend-inline" aria-label="Legend">
           <span><i class="dot"></i>Relationship</span>
           <span><i class="dot sq"></i>Misconduct</span>
+          <span><i class="dot dia"></i>Fraud</span>
           <span><i class="dot ring"></i>Unconfirmed</span>
         </div>
         <div class="range tb-end">

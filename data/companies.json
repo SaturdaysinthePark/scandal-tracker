@@ -1657,5 +1657,1349 @@
     "ticker": "MMM",
     "sector": "Industrial",
     "scope": "Fortune 500"
+  },
+  {
+    "id": "alameda",
+    "name": "Alameda Research",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "enron",
+    "name": "Enron",
+    "ticker": "ENE",
+    "sector": "Energy",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "worldcom",
+    "name": "WorldCom",
+    "ticker": "WCOM",
+    "sector": "Telecommunications",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "tyco",
+    "name": "Tyco International",
+    "ticker": "TYC",
+    "sector": "Industrials",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "adelphia",
+    "name": "Adelphia Communications",
+    "ticker": "ADLAC",
+    "sector": "Cable",
+    "scope": "Other notable"
+  },
+  {
+    "id": "healthsouth",
+    "name": "HealthSouth",
+    "ticker": "HRC",
+    "sector": "Healthcare",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "qwest",
+    "name": "Qwest Communications",
+    "ticker": "Q",
+    "sector": "Telecommunications",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "computerassociates",
+    "name": "Computer Associates",
+    "ticker": "CA",
+    "sector": "Software",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "refco",
+    "name": "Refco",
+    "ticker": "RFX",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "riteaid",
+    "name": "Rite Aid",
+    "ticker": "RAD",
+    "sector": "Retail",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "cendant",
+    "name": "Cendant",
+    "ticker": "CD",
+    "sector": "Consumer services",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "brocade",
+    "name": "Brocade Communications",
+    "ticker": "BRCD",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "comverse",
+    "name": "Comverse Technology",
+    "ticker": "CMVT",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "gemstar",
+    "name": "Gemstar-TV Guide International",
+    "ticker": "GMST",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "hollinger",
+    "name": "Hollinger International",
+    "ticker": "HLR",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "genre",
+    "name": "General Re",
+    "ticker": "Private",
+    "sector": "Insurance",
+    "scope": "Other notable"
+  },
+  {
+    "id": "imclone",
+    "name": "ImClone Systems",
+    "ticker": "IMCL",
+    "sector": "Biotechnology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "homestore",
+    "name": "Homestore",
+    "ticker": "HOMS",
+    "sector": "Internet",
+    "scope": "Other notable"
+  },
+  {
+    "id": "theranos",
+    "name": "Theranos",
+    "ticker": "Private",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "nikola",
+    "name": "Nikola",
+    "ticker": "NKLA",
+    "sector": "Automotive",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ozy",
+    "name": "Ozy Media",
+    "ticker": "Private",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "frank",
+    "name": "Frank (TAPD Inc.)",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "outcomehealth",
+    "name": "Outcome Health",
+    "ticker": "Private",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "mimedx",
+    "name": "MiMedx Group",
+    "ticker": "MDXG",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wellsfargo",
+    "name": "Wells Fargo",
+    "ticker": "WFC",
+    "sector": "Financial services",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "autonomy",
+    "name": "Autonomy Corporation",
+    "ticker": "Delisted",
+    "sector": "Software",
+    "scope": "Other notable"
+  },
+  {
+    "id": "livewell",
+    "name": "Live Well Financial",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "scana",
+    "name": "SCANA Corporation",
+    "ticker": "SCG",
+    "sector": "Utilities",
+    "scope": "Other notable"
+  },
+  {
+    "id": "arcp",
+    "name": "American Realty Capital Properties (VEREIT)",
+    "ticker": "ARCP",
+    "sector": "Real estate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "deanfoods",
+    "name": "Dean Foods",
+    "ticker": "DF",
+    "sector": "Consumer goods",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "bitwise",
+    "name": "Bitwise Industries",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "innate",
+    "name": "Innate Immunotherapeutics",
+    "ticker": "IIL",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "retrophin",
+    "name": "Retrophin (now Travere Therapeutics)",
+    "ticker": "RTRX",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kubient",
+    "name": "Kubient",
+    "ticker": "KBNT",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "headspin",
+    "name": "HeadSpin",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fyre",
+    "name": "Fyre Media",
+    "ticker": "Private",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kraftheinz",
+    "name": "Kraft Heinz",
+    "ticker": "KHC",
+    "sector": "Consumer goods",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "volkswagen",
+    "name": "Volkswagen",
+    "ticker": "VOW3",
+    "sector": "Automotive",
+    "scope": "Global 500"
+  },
+  {
+    "id": "equifax",
+    "name": "Equifax",
+    "ticker": "EFX",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "celsius",
+    "name": "Celsius Network",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "terraform",
+    "name": "Terraform Labs",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "safemoon",
+    "name": "SafeMoon",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "mtgox",
+    "name": "Mt. Gox",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "madoff",
+    "name": "Bernard L. Madoff Investment Securities",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "stanfordfinancial",
+    "name": "Stanford Financial Group",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "galleon",
+    "name": "Galleon Group",
+    "ticker": "Private",
+    "sector": "Investment management",
+    "scope": "Other notable"
+  },
+  {
+    "id": "petters",
+    "name": "Petters Group Worldwide",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "archegos",
+    "name": "Archegos Capital Management",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "infinityq",
+    "name": "Infinity Q Capital Management",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "allianz",
+    "name": "Allianz",
+    "ticker": "ALV",
+    "sector": "Insurance",
+    "scope": "Global 500"
+  },
+  {
+    "id": "bitconnect",
+    "name": "BitConnect",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "onecoin",
+    "name": "OneCoin",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "gpb",
+    "name": "GPB Capital Holdings",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "eminifx",
+    "name": "EminiFX",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "virgilcapital",
+    "name": "Virgil Capital",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "airbitclub",
+    "name": "AirBit Club",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bayou",
+    "name": "Bayou Hedge Fund Group",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "rra",
+    "name": "Rothstein Rosenfeldt Adler",
+    "ticker": "Private",
+    "sector": "Legal services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ezubao",
+    "name": "Ezubao (Yucheng Group)",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "mmm",
+    "name": "MMM",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "abraaj",
+    "name": "Abraaj Group",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "platinumpartners",
+    "name": "Platinum Partners",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "thodex",
+    "name": "Thodex",
+    "ticker": "Private",
+    "sector": "Crypto",
+    "scope": "Other notable"
+  },
+  {
+    "id": "audi",
+    "name": "Audi",
+    "ticker": "Private (VW subsidiary)",
+    "sector": "Automotive",
+    "scope": "Global 500"
+  },
+  {
+    "id": "wirecard",
+    "name": "Wirecard",
+    "ticker": "Delisted",
+    "sector": "Payments",
+    "scope": "Other notable"
+  },
+  {
+    "id": "parmalat",
+    "name": "Parmalat",
+    "ticker": "Delisted",
+    "sector": "Food",
+    "scope": "Other notable"
+  },
+  {
+    "id": "lernouthauspie",
+    "name": "Lernout & Hauspie",
+    "ticker": "Delisted",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ahold",
+    "name": "Royal Ahold",
+    "ticker": "AD",
+    "sector": "Retail",
+    "scope": "Global 500"
+  },
+  {
+    "id": "kaupthing",
+    "name": "Kaupthing Bank",
+    "ticker": "Delisted",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "angloirish",
+    "name": "Anglo Irish Bank",
+    "ticker": "Delisted",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "irishlife",
+    "name": "Irish Life & Permanent",
+    "ticker": "Delisted",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bes",
+    "name": "Banco Espírito Santo",
+    "ticker": "Delisted",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "carillion",
+    "name": "Carillion",
+    "ticker": "Delisted",
+    "sector": "Construction",
+    "scope": "Other notable"
+  },
+  {
+    "id": "patisserievalerie",
+    "name": "Patisserie Holdings (Patisserie Valerie)",
+    "ticker": "Delisted",
+    "sector": "Restaurants",
+    "scope": "Other notable"
+  },
+  {
+    "id": "steinhoff",
+    "name": "Steinhoff International",
+    "ticker": "Delisted",
+    "sector": "Retail",
+    "scope": "Global 500"
+  },
+  {
+    "id": "nmc",
+    "name": "NMC Health",
+    "ticker": "Delisted",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "pollypeck",
+    "name": "Polly Peck International",
+    "ticker": "Delisted",
+    "sector": "Conglomerate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "guinness",
+    "name": "Guinness plc",
+    "ticker": "Delisted",
+    "sector": "Beverages",
+    "scope": "Other notable"
+  },
+  {
+    "id": "afren",
+    "name": "Afren",
+    "ticker": "Delisted",
+    "sector": "Oil and gas",
+    "scope": "Other notable"
+  },
+  {
+    "id": "independentinsurance",
+    "name": "Independent Insurance",
+    "ticker": "Delisted",
+    "sector": "Insurance",
+    "scope": "Other notable"
+  },
+  {
+    "id": "itfactory",
+    "name": "IT Factory",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "landsbanki",
+    "name": "Landsbanki",
+    "ticker": "Delisted",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bpvi",
+    "name": "Banca Popolare di Vicenza",
+    "ticker": "Private",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "pescanova",
+    "name": "Pescanova",
+    "ticker": "Delisted",
+    "sector": "Food",
+    "scope": "Other notable"
+  },
+  {
+    "id": "vbs",
+    "name": "VBS Mutual Bank",
+    "ticker": "Private",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "cirio",
+    "name": "Cirio",
+    "ticker": "Delisted",
+    "sector": "Food",
+    "scope": "Other notable"
+  },
+  {
+    "id": "torexretail",
+    "name": "Torex Retail",
+    "ticker": "Delisted",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "gowex",
+    "name": "Let's Gowex",
+    "ticker": "Delisted",
+    "sector": "Telecommunications",
+    "scope": "Other notable"
+  },
+  {
+    "id": "satyam",
+    "name": "Satyam Computer Services",
+    "ticker": "SAY",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "olympus",
+    "name": "Olympus",
+    "ticker": "7733",
+    "sector": "Medical devices",
+    "scope": "Other notable"
+  },
+  {
+    "id": "nissan",
+    "name": "Nissan Motor",
+    "ticker": "7201",
+    "sector": "Automotive",
+    "scope": "Global 500"
+  },
+  {
+    "id": "evergrande",
+    "name": "China Evergrande Group",
+    "ticker": "3333",
+    "sector": "Real estate",
+    "scope": "Global 500"
+  },
+  {
+    "id": "daewoo",
+    "name": "Daewoo Group",
+    "ticker": "Private",
+    "sector": "Conglomerate",
+    "scope": "Global 500"
+  },
+  {
+    "id": "livent",
+    "name": "Livent",
+    "ticker": "LVNTF",
+    "sector": "Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "sinoforest",
+    "name": "Sino-Forest Corporation",
+    "ticker": "TRE",
+    "sector": "Forestry",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ubgroup",
+    "name": "UB Group (United Breweries Group)",
+    "ticker": "Private",
+    "sector": "Conglomerate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ogx",
+    "name": "OGX Petróleo e Gás (EBX Group)",
+    "ticker": "OGXP3",
+    "sector": "Oil and gas",
+    "scope": "Other notable"
+  },
+  {
+    "id": "americanas",
+    "name": "Americanas S.A.",
+    "ticker": "AMER3",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "hih",
+    "name": "HIH Insurance",
+    "ticker": "HIH",
+    "sector": "Insurance",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kanebo",
+    "name": "Kanebo",
+    "ticker": "3102",
+    "sector": "Consumer goods",
+    "scope": "Other notable"
+  },
+  {
+    "id": "livedoor",
+    "name": "Livedoor",
+    "ticker": "4753",
+    "sector": "Internet",
+    "scope": "Other notable"
+  },
+  {
+    "id": "murakamifund",
+    "name": "Murakami Fund (MAC Asset Management)",
+    "ticker": "Private",
+    "sector": "Investment management",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kangmei",
+    "name": "Kangmei Pharmaceutical",
+    "ticker": "600518",
+    "sector": "Pharmaceuticals",
+    "scope": "Other notable"
+  },
+  {
+    "id": "hinleong",
+    "name": "Hin Leong Trading",
+    "ticker": "Private",
+    "sector": "Oil trading",
+    "scope": "Other notable"
+  },
+  {
+    "id": "vanthinhphat",
+    "name": "Van Thinh Phat Group",
+    "ticker": "Private",
+    "sector": "Real estate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "norbourg",
+    "name": "Norbourg Financial Group",
+    "ticker": "Private",
+    "sector": "Asset management",
+    "scope": "Other notable"
+  },
+  {
+    "id": "sadia",
+    "name": "Sadia S.A.",
+    "ticker": "SDA",
+    "sector": "Food",
+    "scope": "Other notable"
+  },
+  {
+    "id": "stx",
+    "name": "STX Group",
+    "ticker": "Private",
+    "sector": "Shipbuilding",
+    "scope": "Other notable"
+  },
+  {
+    "id": "telstra",
+    "name": "Telstra",
+    "ticker": "TLS",
+    "sector": "Telecommunications",
+    "scope": "Other notable"
+  },
+  {
+    "id": "crazyeddie",
+    "name": "Crazy Eddie",
+    "ticker": "Private",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "lincolnsavings",
+    "name": "Lincoln Savings and Loan (American Continental Corp.)",
+    "ticker": "Private",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "covenanthouse",
+    "name": "Covenant House",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "pharmor",
+    "name": "Phar-Mor",
+    "ticker": "Private",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "naacp",
+    "name": "NAACP",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "elf",
+    "name": "Elf Aquitaine (now TotalEnergies)",
+    "ticker": "Private",
+    "sector": "Energy",
+    "scope": "Other notable"
+  },
+  {
+    "id": "yamaichi",
+    "name": "Yamaichi Securities",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "emtv",
+    "name": "EM.TV & Merchandising",
+    "ticker": "Private",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "peregrine",
+    "name": "Peregrine Systems",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ncfe",
+    "name": "National Century Financial Enterprises",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "impath",
+    "name": "Impath",
+    "ticker": "Private",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "friedmans",
+    "name": "Friedman's Inc.",
+    "ticker": "Private",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "seibu",
+    "name": "Seibu Railway (Seibu Holdings)",
+    "ticker": "9024.T",
+    "sector": "Transportation",
+    "scope": "Other notable"
+  },
+  {
+    "id": "hyundai",
+    "name": "Hyundai Motor",
+    "ticker": "005380.KS",
+    "sector": "Automotive",
+    "scope": "Global 500"
+  },
+  {
+    "id": "vitesse",
+    "name": "Vitesse Semiconductor",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "opesprime",
+    "name": "Opes Prime",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "arthrocare",
+    "name": "ArthroCare",
+    "ticker": "Private",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "gome",
+    "name": "Gome Electrical Appliances",
+    "ticker": "0493.HK",
+    "sector": "Retail",
+    "scope": "Other notable"
+  },
+  {
+    "id": "colonialbank",
+    "name": "Colonial BancGroup (Colonial Bank)",
+    "ticker": "Private",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "taylorbean",
+    "name": "Taylor, Bean & Whitaker",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "spongetech",
+    "name": "Spongetech Delivery Systems",
+    "ticker": "Private",
+    "sector": "Consumer products",
+    "scope": "Other notable"
+  },
+  {
+    "id": "aij",
+    "name": "AIJ Investment Advisors",
+    "ticker": "Private",
+    "sector": "Asset management",
+    "scope": "Other notable"
+  },
+  {
+    "id": "dole",
+    "name": "Dole Food Company",
+    "ticker": "Private",
+    "sector": "Food",
+    "scope": "Other notable"
+  },
+  {
+    "id": "nygg",
+    "name": "New York Global Group",
+    "ticker": "Private",
+    "sector": "Financials",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bankia",
+    "name": "Bankia (Caja Madrid)",
+    "ticker": "Private",
+    "sector": "Banking",
+    "scope": "Other notable"
+  },
+  {
+    "id": "dsme",
+    "name": "Daewoo Shipbuilding & Marine Engineering (now Hanwha Ocean)",
+    "ticker": "042660.KS",
+    "sector": "Industrials",
+    "scope": "Other notable"
+  },
+  {
+    "id": "roadrunner",
+    "name": "Roadrunner Transportation Systems",
+    "ticker": "Private",
+    "sector": "Transportation",
+    "scope": "Other notable"
+  },
+  {
+    "id": "thinx",
+    "name": "Thinx",
+    "ticker": "Private",
+    "sector": "Consumer Discretionary",
+    "scope": "Other notable"
+  },
+  {
+    "id": "sofi",
+    "name": "SoFi Technologies",
+    "ticker": "SOFI",
+    "sector": "Financials",
+    "scope": "Other notable"
+  },
+  {
+    "id": "martinagency",
+    "name": "The Martin Agency (Interpublic)",
+    "ticker": "IPG",
+    "sector": "Communication Services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "hsus",
+    "name": "Humane Society of the United States",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "wdr",
+    "name": "WDR (Westdeutscher Rundfunk)",
+    "ticker": "Public broadcaster",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "mariners",
+    "name": "Seattle Mariners",
+    "ticker": "Private",
+    "sector": "Sports",
+    "scope": "Other notable"
+  },
+  {
+    "id": "splc",
+    "name": "Southern Poverty Law Center",
+    "ticker": "Nonprofit",
+    "sector": "Nonprofit",
+    "scope": "Other notable"
+  },
+  {
+    "id": "alticemedia",
+    "name": "Altice Media (BFMTV / RMC)",
+    "ticker": "Private",
+    "sector": "Media & Entertainment",
+    "scope": "Other notable"
+  },
+  {
+    "id": "umich",
+    "name": "University of Michigan",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "lotterycom",
+    "name": "Lottery.com",
+    "ticker": "LTRY",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "amphia",
+    "name": "Amphia Hospital",
+    "ticker": "Nonprofit",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "cytodyn",
+    "name": "CytoDyn",
+    "ticker": "CYDY",
+    "sector": "Biotech",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ontrak",
+    "name": "Ontrak",
+    "ticker": "OTRK",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "signa",
+    "name": "Signa Holding",
+    "ticker": "Private",
+    "sector": "Real estate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "qoo10",
+    "name": "Qoo10 (Qoo10 Pte.)",
+    "ticker": "Private",
+    "sector": "E-commerce",
+    "scope": "Other notable"
+  },
+  {
+    "id": "birdbird",
+    "name": "Bird & Bird",
+    "ticker": "Private",
+    "sector": "Legal",
+    "scope": "Other notable"
+  },
+  {
+    "id": "aspiration",
+    "name": "Aspiration Partners",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fujimedia",
+    "name": "Fuji Media Holdings",
+    "ticker": "4676.T",
+    "sector": "Media",
+    "scope": "Other notable"
+  },
+  {
+    "id": "caastle",
+    "name": "CaaStle",
+    "ticker": "Private",
+    "sector": "Retail technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "tyson",
+    "name": "Tyson Foods",
+    "ticker": "TSN",
+    "sector": "Food",
+    "scope": "Fortune 500"
+  },
+  {
+    "id": "gwg",
+    "name": "GWG Holdings",
+    "ticker": "GWGH",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "magellan",
+    "name": "Magellan Financial Group",
+    "ticker": "ASX:MFG",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "kalder",
+    "name": "Kalder",
+    "ticker": "Private",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "caat",
+    "name": "CAAT Pension Plan",
+    "ticker": "Private",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "morrisbrown",
+    "name": "Morris Brown College",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fgcu",
+    "name": "Florida Gulf Coast University",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "brookdale",
+    "name": "Brookdale Community College",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "sunyupstate",
+    "name": "SUNY Upstate Medical University",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "seonam",
+    "name": "Seonam University",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "upei",
+    "name": "University of Prince Edward Island",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ucberkeley",
+    "name": "University of California, Berkeley",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "uttyler",
+    "name": "University of Texas at Tyler",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "sunypoly",
+    "name": "SUNY Polytechnic Institute",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ubuffalo",
+    "name": "University at Buffalo (SUNY)",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "oklahoma",
+    "name": "University of Oklahoma",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "uniadelaide",
+    "name": "University of Adelaide",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "utchattanooga",
+    "name": "University of Tennessee at Chattanooga",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "nihonu",
+    "name": "Nihon University",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fugusau",
+    "name": "Federal University Gusau",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fiu",
+    "name": "Florida International University",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "fresnostate",
+    "name": "California State University, Fresno",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "norwich",
+    "name": "Norwich University",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "twmu",
+    "name": "Tokyo Women's Medical University",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ohiostate",
+    "name": "Ohio State University",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "cscu",
+    "name": "Connecticut State Colleges and Universities",
+    "ticker": "University",
+    "sector": "Higher education",
+    "scope": "Other notable"
+  },
+  {
+    "id": "quadrant4",
+    "name": "Quadrant 4 System Corp",
+    "ticker": "Delisted",
+    "sector": "Technology",
+    "scope": "Other notable"
+  },
+  {
+    "id": "firstcapitalreit",
+    "name": "First Capital Real Estate Trust",
+    "ticker": "Private",
+    "sector": "Real estate",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ingen",
+    "name": "Ingen Technologies",
+    "ticker": "Delisted",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "nwmh",
+    "name": "National Waste Management Holdings",
+    "ticker": "Delisted",
+    "sector": "Industrial",
+    "scope": "Other notable"
+  },
+  {
+    "id": "pattersonuti",
+    "name": "Patterson-UTI Energy",
+    "ticker": "PTEN",
+    "sector": "Energy",
+    "scope": "Other notable"
+  },
+  {
+    "id": "pbsj",
+    "name": "PBSJ Corp (PBS&J)",
+    "ticker": "Private",
+    "sector": "Industrial",
+    "scope": "Other notable"
+  },
+  {
+    "id": "symmetrymedical",
+    "name": "Symmetry Medical",
+    "ticker": "Delisted",
+    "sector": "Healthcare",
+    "scope": "Other notable"
+  },
+  {
+    "id": "bbsi",
+    "name": "Barrett Business Services",
+    "ticker": "BBSI",
+    "sector": "Financial services",
+    "scope": "Other notable"
+  },
+  {
+    "id": "questminerals",
+    "name": "Quest Minerals & Mining",
+    "ticker": "Delisted",
+    "sector": "Energy",
+    "scope": "Other notable"
+  },
+  {
+    "id": "nicor",
+    "name": "Nicor Inc",
+    "ticker": "Delisted",
+    "sector": "Energy",
+    "scope": "Other notable"
+  },
+  {
+    "id": "ironclad",
+    "name": "Ironclad Performance Wear",
+    "ticker": "Delisted",
+    "sector": "Retail",
+    "scope": "Other notable"
   }
 ]

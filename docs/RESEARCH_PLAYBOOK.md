@@ -27,3 +27,18 @@ Low yield, mostly already covered: company-by-company Fortune 500 news searches,
 - **Courts**: EEOC press releases naming the harasser plus appellate opinions (Cal. Ct. App., 5th Cir.) worked. Label opinions by citation, not the complainant's case name. FINRA, FRC/ICAEW and medical boards found nothing.
 - **Pre-2000**: NYT/LA Times/AP/UPI archive pages could not be fetched; leads (Larry Michels/SCO 1993 settlement, Charles Campbell/Florsheim 1999) need a library database or court docket.
 - **Data hygiene**: `archive_url` is still empty on most records.
+
+## Fraud category (added 2026-11-17, round 1)
+- 188 fraud records from five regional batches (US 2000s, US 2010–26, crypto/investment, Europe, Asia/Canada/Australia/LatAm); 159 published, 29 watch.
+- **Fetching:** justice.gov blocks WebFetch/curl (bot check); open DOJ releases in the in-app browser. OSC, AMF, Japan Times and the Federal Court of Australia also returned 403/402.
+- **Held on scope, needs a ruling:** records offences (Karpelès, Michael Rigas), obstructing a regulator (Tolstedt). Held on seniority: Bowe, Jelden, Schelbert, Oliver Schmidt, Jun Ying, Gene Levoff.
+- **Pending verdicts to re-check:** Braun (Wirecard, Munich), Vincenz (Raiffeisen appeal, Jan 2027), Marsh (Patisserie Valerie, Jan 2028), Gutierrez (Americanas), Grobler (Steinhoff tribunal).
+- **Data hygiene:** many `disclosed` months and some `lost_role` values came from background knowledge; each record's `note` says so. Spot-check before the next round. `archive_url` is empty on all fraud records.
+- **Next leads:** co-defendants in existing cases (Sino-Forest, Sadia, Kangmei, Livedoor), Japan TDnet, SEC litigation releases naming officers, UK SFO convictions.
+
+## Round 5 (2026-11-17): all types
+- Added 126 records (recent exits, watch promotions, international, US misconduct, fraud round 2, universities). Universities now count as companies (president/chancellor, provost, VPs, trustees only).
+- **Search budget:** WebSearch is capped at about 200 searches per turn, shared by all agents in that turn. Two agents ran dry mid-pass; keep rounds to 4–5 agents or split them across turns.
+- **EDGAR fraud scan:** `scripts/fraud_scan.py` (search endpoint works with a generic User-Agent) then `SEC_CONTACT=... python3 scripts/fraud_snippets.py` (filing pages need a contact). Agreements' "Cause" definitions cause most false hits and are skipped.
+- **Close to promotion:** #121 Steele (Vox memo, THR 402), #223 Williamson (Scotsman 403), #62 Kubasik (WSJ exclusive), Ted Carter (Ohio State: romantic nature single-sourced), Cagney (SoFi: needs an opened NYT/Bloomberg source).
+- **Policy questions still open:** records offences / obstructing a regulator in fraud scope; rogue traders as prominent employees; China CCDI "improper sexual relations" findings.

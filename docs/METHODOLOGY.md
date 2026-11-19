@@ -4,16 +4,17 @@
 Corporate officers and executives at VP level and above, and board members, of:
 - **Fortune 500**: US companies by revenue.
 - **Global 500**: the largest non-US companies.
-- **Other notable**: smaller or private companies, sports organisations and major nonprofits whose case drew significant coverage, e.g. Astronomer or the American Red Cross.
+- **Other notable**: smaller or private companies, sports organisations, major nonprofits and universities whose case drew significant coverage, e.g. Astronomer, the American Red Cross or the University of Michigan. At universities, only presidents, chancellors, provosts, vice presidents and trustees are included.
 
-Prominent non-executive employees (on-air anchors, star editors and producers, star portfolio managers) are included and labelled as such, but only when the company itself confirmed the conduct, a court or regulator found it, or it was settled. Freelancers, contributors, actors and athletes are not included.
+Prominent non-executive employees (on-air anchors, star editors and producers, star portfolio managers and traders) are included and labelled as such, but only when the company itself confirmed the conduct, a court or regulator found it, or it was settled. Freelancers, contributors, actors and athletes are not included.
 
 Below the C-suite and board, a case is included only if the company or executive confirmed it, or at least two independent outlets reported it.
 
 ## What counts
-Two categories, shown together or separately:
+Three categories, shown together or separately:
 - **Relationships**: romantic or sexual relationships that broke company policy (with a subordinate, employee, contractor or vendor), relationships that should have been disclosed and weren't, and extramarital affairs the executive acknowledged publicly.
 - **Misconduct**: sexual harassment, assault or abuse, unwanted advances and sexually inappropriate conduct toward colleagues or people under their authority at work (for example, players under a sports-federation official). This category has a stricter bar: the company's own finding, the executive's admission, a court or regulator finding, or at least two independent major outlets plus a company-confirmed investigation or exit. Single-source reports are never published, cases where the executive was cleared are left out, and denials are always noted. Complainants are never named.
+- **Fraud**: accounting and securities fraud (including insider trading), fraud against investors, customers or lenders, embezzlement of company funds, and deceiving regulators about products. Bribery, antitrust, tax and sanctions cases are left out. This category has the strictest bar: only a conviction, a guilty plea, or a court or regulator finding against the person is published. Charges and trials still under way are not. If a conviction is later overturned, the case is withdrawn; pardons are noted but do not remove a case.
 
 ## Dates
 Each case is placed by the month it became **public**, not when the conduct happened. Counts per year show when cases came to light, not when they occurred.

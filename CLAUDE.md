@@ -1,7 +1,7 @@
 # CLAUDE.md: working rules for this repo
 
 ## What this project is
-This is a tracker of publicly documented workplace-relationship scandals involving senior executives. The data is the product. Accuracy and fairness matter more than volume.
+This is a tracker of publicly documented scandals involving senior executives: workplace relationships, sexual misconduct, and fraud. The data is the product. Accuracy and fairness matter more than volume.
 
 ## Data is the source of truth
 - `data/records.json` and `data/companies.json` are canonical. The app reads them and never hard-codes records.
@@ -10,7 +10,7 @@ This is a tracker of publicly documented workplace-relationship scandals involvi
 
 ## Inclusion rules
 Include a case only if **all** of these hold:
-1. The person is a corporate officer or executive at VP level or above (including SVPs, EVPs and division heads) or a board member. For executives below C-suite / named-executive-officer / board level, the case must be `confirmed`, `acknowledged`, or corroborated by at least two independent outlets' own reporting (republications of one story count once); single-source cases stay `status: "watch"` and are re-checked each pass. Major nonprofits (e.g. the American Red Cross) count as companies; apply the same seniority, relationship and evidence rules.
+1. The person is a corporate officer or executive at VP level or above (including SVPs, EVPs and division heads) or a board member. For executives below C-suite / named-executive-officer / board level, the case must be `confirmed`, `acknowledged`, or corroborated by at least two independent outlets' own reporting (republications of one story count once); single-source cases stay `status: "watch"` and are re-checked each pass. Major nonprofits (e.g. the American Red Cross) and universities, public or private, count as companies; apply the same seniority, relationship and evidence rules. At a university, qualifying roles are president or chancellor, provost, vice presidents and vice chancellors, and trustees or regents; deans and coaches do not qualify unless they also hold one of those roles.
 2. It involves a romantic or sexual relationship that (a) broke company policy, (b) was with a subordinate, employee, contractor or vendor, (c) was undisclosed when it should have been disclosed, or (d) is an extramarital affair **publicly acknowledged by the executive**.
 3. It meets an evidence tier (below).
 
@@ -20,7 +20,7 @@ Exclude from the relationship category:
 - Departures for vague "personal conduct" with no reporting that ties them to a relationship. Note these as `status: "watch"` candidates, not published records.
 
 ## Prominent employees (`role_level: "prominent"`)
-Rule 1 normally limits the tracker to executives (`role_level: "executive"`, the default). A **prominent employee** is a non-executive employee of the company who was widely known in their own right: on-air anchors and hosts, star editors and producers, star portfolio managers or traders, and similar. They may be included in either category, but **only** at the `confirmed`, `adjudicated` or `settled` tier. Exclude freelancers, contractors, contributors, actors and athletes. The app labels these records and lets readers hide them.
+Rule 1 normally limits the tracker to executives (`role_level: "executive"`, the default). A **prominent employee** is a non-executive employee of the company who was widely known in their own right: on-air anchors and hosts, star editors and producers, star portfolio managers or traders, and similar. They may be included in any category, but **only** at the `confirmed`, `adjudicated` or `settled` tier. Exclude freelancers, contractors, contributors, actors and athletes. The app labels these records and lets readers hide them.
 
 ## Misconduct category (`type: "misconduct"`)
 Sexual harassment, sexual assault or abuse, unwanted advances, sexually inappropriate conduct or comments toward colleagues, and retaliation tied to them. "Colleagues" includes people under the person's authority in the course of the organisation's work, such as players or referees under a sports-federation official. Conduct toward strangers or domestic partners is out of scope, and so is mishandling someone else's case. Not financial or other non-sexual misconduct.
@@ -32,6 +32,18 @@ Same seniority rule (rule 1). The evidence bar is **stricter**:
 - If the executive denies the allegations, the summary must say so.
 - **Never name complainants or alleged victims**, even if other outlets do, unless they have publicly identified themselves on the record.
 - Describe conduct with the words the source uses ("alleged", "the company said"); no graphic detail.
+
+## Fraud category (`type: "fraud"`)
+Accounting fraud, securities fraud (including insider trading), wire or mail fraud against investors, customers or lenders, embezzlement or looting of company funds, and deceiving regulators about products (e.g. emissions cheating). Out of scope: bribery and corruption, antitrust, tax evasion, sanctions or money-laundering violations, and résumé or credential lies, unless the court also convicted the person of one of the in-scope offences.
+
+Same seniority rule (rule 1); founders count as executives. Prominent employees may be included (see above). The evidence bar is the **strictest**:
+- Publish **only** at `adjudicated`: a criminal conviction or guilty plea, or a court or regulator finding of liability against the **person** (not just the company).
+- Charges, indictments, trials in progress, and "neither admit nor deny" SEC settlements stay `status: "watch"`, with a note saying what is pending.
+- A conviction later vacated in full (including abatement on death) goes back to `watch`, or `retracted` if already published, with a note. Partial reversals stay published and the summary says which counts survived.
+- Pardons and commutations do not unpublish a record; the summary notes them.
+- `disclosed` is the month the fraud became public (first major report, restatement or charges), not the conviction date. `outcome` gives the conviction and sentence.
+- Name co-defendants only if they were themselves convicted; describe victims as groups ("investors", "customers").
+- Preferred `primary_url`: Justice Department or national prosecutor press release, SEC/FCA/regulator release, or the judgment; then major-outlet reporting of the verdict.
 
 ## Evidence tiers (`evidence` field)
 Strongest first. The app shows the short label; keep labels to one or two plain words.
@@ -55,7 +67,7 @@ Upgrade or retract records as facts change. Never delete a published record sile
 ```jsonc
 {
   "id": 32,
-  "type": "relationship",          // relationship | misconduct
+  "type": "relationship",          // relationship | misconduct | fraud
   "role_level": "executive",       // executive | prominent (see "Prominent employees")
   "company_id": "acme",            // must exist in companies.json
   "executive": "Jane Doe",
@@ -76,7 +88,7 @@ Upgrade or retract records as facts change. Never delete a published record sile
 Prefer this order for `primary_url`: SEC filing or company press release, then the executive's statement, then a court filing, then the original news report.
 
 ## Company schema (`data/companies.json`)
-`{ "id", "name", "ticker", "sector", "scope" }`, where `scope` is one of `Fortune 500`, `Global 500` or `Other notable`. Use `ticker: "Private"` for private companies, and `ticker: "Nonprofit"`, `sector: "Nonprofit"` for nonprofits. Add a company only when it has a record or is a major watched name, such as Apple, IBM or Meta, which currently have zero records.
+`{ "id", "name", "ticker", "sector", "scope" }`, where `scope` is one of `Fortune 500`, `Global 500` or `Other notable`. Use `ticker: "Private"` for private companies, `ticker: "Nonprofit"`, `sector: "Nonprofit"` for nonprofits, and `ticker: "University"`, `sector: "Higher education"` for universities. Add a company only when it has a record or is a major watched name, such as Apple, IBM or Meta, which currently have zero records.
 
 ## Triage workflow for `data/candidates/*.csv`
 1. Start with rows where `item_5_02 = yes` (officer departures).

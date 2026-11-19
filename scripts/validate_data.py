@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent / "data"
 SCOPES = {"Fortune 500", "Global 500", "Other notable"}
 TIERS = {"confirmed", "acknowledged", "reported", "unconfirmed", "adjudicated", "settled"}
-TYPES = {"relationship", "misconduct"}
+TYPES = {"relationship", "misconduct", "fraud"}
 LEVELS = {"executive", "prominent"}
 STATUSES = {"published", "watch", "retracted"}
 REQ = ["id", "type", "role_level", "company_id", "executive", "role", "disclosed", "category", "outcome", "evidence", "summary", "sources", "status"]
@@ -36,6 +36,8 @@ for r in records:
     if r.get("type") not in TYPES: errors.append(f"record {rid}: bad type {r.get('type')!r}")
     if r.get("type") == "misconduct" and r.get("status") == "published" and r.get("evidence") == "unconfirmed":
         errors.append(f"record {rid}: misconduct records cannot be published as unconfirmed")
+    if r.get("type") == "fraud" and r.get("status") == "published" and r.get("evidence") != "adjudicated":
+        errors.append(f"record {rid}: fraud records can only be published as adjudicated")
     if r.get("type") == "relationship" and r.get("evidence") == "adjudicated":
         warnings.append(f"record {rid}: adjudicated tier on a relationship record")
     if not isinstance(r.get("lost_role"), bool): errors.append(f"record {rid}: lost_role must be true or false")

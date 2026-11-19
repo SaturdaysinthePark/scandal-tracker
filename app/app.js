@@ -6,7 +6,9 @@
   const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   const VIEWS = ['timeline', 'calendar', 'records', 'about'];
   const SCOPES = ['All', 'Fortune 500', 'Global 500', 'Other notable'];
-  const TYPES = ['all', 'relationship', 'misconduct'];
+  const TYPES = ['all', 'relationship', 'misconduct', 'fraud'];
+  const TYPE_LABEL = { relationship: 'Relationship', misconduct: 'Misconduct', fraud: 'Fraud' };
+  const TYPE_PLURAL = { relationship: 'Relationships', misconduct: 'Misconduct', fraud: 'Fraud' };
   // Strongest first, matching the methodology.
   const TIER_ORDER = ['confirmed', 'adjudicated', 'acknowledged', 'settled', 'reported', 'unconfirmed'];
   const SORTS = ['date', 'company', 'person', 'evidence'];
@@ -24,12 +26,11 @@
   const dayLabel = (d) => { const [y, m, dd] = String(d).split('-'); return dd ? `${+dd} ${MONTHS[+m - 1]} ${y}` : d; };
   const plural = (n, w) => `${n} ${n === 1 ? w : /[^aeiou]y$/.test(w) ? `${w.slice(0, -1)}ies` : /(s|x|ch|sh)$/.test(w) ? `${w}es` : `${w}s`}`;
   const isU = (r) => r.evidence === 'unconfirmed';
-  const isM = (r) => r.type === 'misconduct';
-  const isP = (r) => r.role_level === 'prominent';
+    const isP = (r) => r.role_level === 'prominent';
   const coName = (id) => byCo[id]?.name || '';
   const tierLabel = (r) => tiers[r.evidence] || r.evidence;
   const roleLine = (r) => `${esc(r.role)}${isP(r) ? ' <span class="ptag">Prominent employee</span>' : ''}`;
-  const markCls = (r) => `${isU(r) ? 'ring' : ''} ${isM(r) ? 'sq' : ''}`;
+  const markCls = (r) => `${isU(r) ? 'ring' : ''} ${r.type === 'misconduct' ? 'sq' : r.type === 'fraud' ? 'dia' : ''}`;
   const dotHtml = (r, cls = '') => `<i class="dot ${cls} ${markCls(r)}" aria-hidden="true"></i>`;
   const safeUrl = (u) => (typeof u === 'string' && /^https:\/\//.test(u) ? u : null);
   const byDateDesc = (a, b) => b.disclosed.localeCompare(a.disclosed) || b.id - a.id;
@@ -124,7 +125,7 @@
   }
   function activeFilters() {
     const out = [];
-    if (st.type !== 'all') out.push(['type', st.type === 'misconduct' ? 'Misconduct' : 'Relationships']);
+    if (st.type !== 'all') out.push(['type', TYPE_PLURAL[st.type]]);
     if (st.scope !== 'All') out.push(['scope', st.scope]);
     if (st.ev !== 'all') out.push(['ev', st.ev === 'nou' ? 'Unconfirmed hidden' : tiers[st.ev]]);
     if (st.lost !== 'all') out.push(['lost', st.lost === 'yes' ? 'Lost their role' : 'Kept their role']);
@@ -395,7 +396,7 @@
         <div class="dr-meta"><button type="button" class="co-link" data-co="${esc(r.company_id)}">${esc(coName(r.company_id))}</button> · ${esc(dateLabel(r))}</div>
         <h2 class="dr-name" id="drName">${esc(r.executive)}</h2><div class="dr-role">${roleLine(r)}</div>
       </div>
-      <div class="pills"><div class="pill kind">${dotHtml(r, 'sm')}${isM(r) ? 'Misconduct' : 'Relationship'}</div>
+      <div class="pills"><div class="pill kind">${dotHtml(r, 'sm')}${TYPE_LABEL[r.type] || r.type}</div>
         <a class="pill tier" href="#about/evidence" data-nav="about" data-sec="evidence" title="What this evidence level means">${esc(tierLabel(r))}<span aria-hidden="true">ⓘ</span></a></div>
       ${def ? `<p class="dr-def"><strong>${esc(tierLabel(r))}:</strong> ${esc(def.replace(/\*\*/g, ''))} <a href="#about/evidence" data-nav="about" data-sec="evidence">How evidence is graded</a></p>` : ''}
       <p class="dr-sum">${esc(r.summary)}</p>
